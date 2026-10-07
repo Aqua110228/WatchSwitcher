@@ -24,6 +24,7 @@ import nodomain.freeyourgadget.gadgetbridge.devices.huawei.HuaweiConstants
 import nodomain.freeyourgadget.gadgetbridge.devices.huawei.HuaweiCoordinator
 import nodomain.freeyourgadget.gadgetbridge.impl.GBDevice
 import nodomain.freeyourgadget.gadgetbridge.model.RecordedDataTypes
+import nodomain.freeyourgadget.gadgetbridge.ui.huawei.getHuaweiAccount
 
 data class DeviceUiState(
     val name: String = "",
@@ -84,9 +85,10 @@ class DeviceDetailViewModel(app: Application) : AndroidViewModel(app) {
             battery = device.getBatteryLevel(0),
             isHuawei = isHuawei,
             huaweiAccount = if (isHuawei) {
-                GBApplication.getDeviceSpecificSharedPrefs(device.address)
+                val deviceAccount = GBApplication.getDeviceSpecificSharedPrefs(device.address)
                     .getString(HuaweiConstants.PREF_HUAWEI_ACCOUNT, "")
                     .orEmpty()
+                deviceAccount.ifBlank { getHuaweiAccount() }
             } else {
                 ""
             },

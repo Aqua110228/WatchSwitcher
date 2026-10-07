@@ -15,6 +15,8 @@ import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import nodomain.freeyourgadget.gadgetbridge.BuildConfig
 import nodomain.freeyourgadget.gadgetbridge.ui.theme.HuaweiSwitcherTheme
+import nodomain.freeyourgadget.gadgetbridge.ui.huawei.HuaweiIdActivity
+import nodomain.freeyourgadget.gadgetbridge.ui.huawei.getHuaweiAccount
 import nodomain.freeyourgadget.gadgetbridge.activities.SettingsActivity as GbSettingsActivity
 
 /**
@@ -31,9 +33,13 @@ class SettingsActivity : ComponentActivity() {
             HuaweiSwitcherTheme {
                 SettingsScreen(
                     versionName = BuildConfig.VERSION_NAME,
+                    huaweiAccount = getHuaweiAccount(),
                     onBack = { finish() },
                     onOpenFullSettings = {
                         startActivity(Intent(this, GbSettingsActivity::class.java))
+                    },
+                    onOpenHuaweiId = {
+                        startActivity(HuaweiIdActivity.newIntent(this))
                     },
                 )
             }

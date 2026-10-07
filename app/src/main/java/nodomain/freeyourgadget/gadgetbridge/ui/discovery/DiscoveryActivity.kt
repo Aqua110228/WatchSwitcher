@@ -27,14 +27,15 @@ import androidx.activity.viewModels
 import androidx.core.content.ContextCompat
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import androidx.compose.runtime.mutableStateOf
-import nodomain.freeyourgadget.gadgetbridge.GBApplication
 import nodomain.freeyourgadget.gadgetbridge.activities.AuthKeyActivity
 import nodomain.freeyourgadget.gadgetbridge.devices.DeviceCoordinator
-import nodomain.freeyourgadget.gadgetbridge.devices.huawei.HuaweiConstants
 import nodomain.freeyourgadget.gadgetbridge.devices.huawei.HuaweiCoordinator
 import nodomain.freeyourgadget.gadgetbridge.impl.GBDeviceCandidate
 import nodomain.freeyourgadget.gadgetbridge.model.DeviceType
-import nodomain.freeyourgadget.gadgetbridge.ui.huawei.HuaweiLoginActivity
+import nodomain.freeyourgadget.gadgetbridge.ui.huawei.HuaweiIdActivity
+import nodomain.freeyourgadget.gadgetbridge.ui.huawei.applyHuaweiAccountToDevice
+import nodomain.freeyourgadget.gadgetbridge.ui.huawei.getHuaweiAccount
+import nodomain.freeyourgadget.gadgetbridge.ui.huawei.setHuaweiAccount
 import nodomain.freeyourgadget.gadgetbridge.ui.theme.HuaweiSwitcherTheme
 import nodomain.freeyourgadget.gadgetbridge.util.BondingInterface
 import nodomain.freeyourgadget.gadgetbridge.util.BondingUtil
@@ -75,14 +76,11 @@ class DiscoveryActivity : ComponentActivity(), BondingInterface {
         }
     }
 
-    private val huaweiLoginLauncher = registerForActivityResult(
+    private val huaweiIdLauncher = registerForActivityResult(
         ActivityResultContracts.StartActivityForResult()
-    ) { result ->
-        if (result.resultCode != RESULT_OK) return@registerForActivityResult
-        val id = result.data?.getStringExtra(HuaweiLoginActivity.EXTRA_ACCOUNT_ID)
-        if (!id.isNullOrBlank()) {
-            huaweiAccountInput.value = id
-        }
+    ) {
+        val account = getHuaweiAccount()
+        if (account.isNotBlank()) huaweiAccountInput.value = account
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -108,10 +106,13 @@ class DiscoveryActivity : ComponentActivity(), BondingInterface {
                         onAccountChange = { huaweiAccountInput.value = it },
                         onDismiss = { huaweiPrompt.value = null },
                         onAutoGet = {
-                            huaweiLoginLauncher.launch(HuaweiLoginActivity.newIntent(this))
+                            huaweiIdLauncher.launch(HuaweiIdActivity.newIntent(this))
                         },
                         onConfirm = { account ->
-                            saveHuaweiAccountForCandidate(prompt, account)
+                            if (account.isNotBlank()) {
+                                setHuaweiAccount(account)
+                                applyHuaweiAccountToDevice(prompt.macAddress, account)
+                            }
                             huaweiPrompt.value = null
                             pair(prompt)
                         },
@@ -157,19 +158,17 @@ class DiscoveryActivity : ComponentActivity(), BondingInterface {
     private fun onCandidateSelected(candidate: GBDeviceCandidate) {
         val coordinator = DeviceHelper.getInstance().resolveDeviceType(candidate).deviceCoordinator
         if (coordinator is HuaweiCoordinator) {
-            huaweiAccountInput.value = ""
-            huaweiPrompt.value = candidate
+            val global = getHuaweiAccount()
+            if (global.isNotBlank()) {
+                applyHuaweiAccountToDevice(candidate.macAddress, global)
+                pair(candidate)
+            } else {
+                huaweiAccountInput.value = ""
+                huaweiPrompt.value = candidate
+            }
         } else {
             pair(candidate)
         }
-    }
-
-    private fun saveHuaweiAccountForCandidate(candidate: GBDeviceCandidate, account: String) {
-        if (account.isBlank()) return
-        GBApplication.getDeviceSpecificSharedPrefs(candidate.macAddress)
-            .edit()
-            .putString(HuaweiConstants.PREF_HUAWEI_ACCOUNT, account.trim())
-            .apply()
     }
 
     private fun pair(candidate: GBDeviceCandidate) {
