@@ -139,7 +139,7 @@ android {
         //noinspection OldTargetApi
         targetSdk = 35
         // Note: update sourceCompatibility and targetCompatibility when changing minSdk
-        minSdk = 23
+        minSdk = 24
 
         // Note: always bump BOTH versionCode and versionName!
         versionName "0.1.0"
