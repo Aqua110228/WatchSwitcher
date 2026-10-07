@@ -22,7 +22,8 @@ import nodomain.freeyourgadget.gadgetbridge.activities.devicesettings.DeviceSett
 import nodomain.freeyourgadget.gadgetbridge.activities.discovery.DiscoveryActivityV2
 import nodomain.freeyourgadget.gadgetbridge.activities.welcome.WelcomeActivity
 import nodomain.freeyourgadget.gadgetbridge.impl.GBDevice
-import nodomain.freeyourgadget.gadgetbridge.ui.theme.HuaweiSwitcherTheme
+import nodomain.freeyourgadget.gadgetbridge.ui.design.AppTheme
+import nodomain.freeyourgadget.gadgetbridge.ui.design.DesignSystem
 import nodomain.freeyourgadget.gadgetbridge.util.PermissionsUtils
 
 /**
@@ -40,21 +41,48 @@ class HomeActivity : ComponentActivity() {
         GBApplication.deviceService().requestDeviceInfo()
 
         setContent {
-            HuaweiSwitcherTheme {
+            val design = viewModel.design.collectAsStateWithLifecycle().value
+            AppTheme(design) {
                 val devices = viewModel.devices.collectAsStateWithLifecycle().value
-                HomeScreen(
-                    devices = devices,
-                    onAddDevice = { startActivity(Intent(this, DiscoveryActivityV2::class.java)) },
-                    onOpenDevice = { device ->
-                        startActivity(
-                            Intent(this, DeviceSettingsActivity::class.java)
-                                .putExtra(GBDevice.EXTRA_DEVICE, device)
-                        )
-                    },
-                    onToggleConnection = { device -> viewModel.toggleConnection(device) },
-                    onRefresh = { viewModel.refresh() },
-                    onSettings = { startActivity(Intent(this, SettingsActivity::class.java)) },
-                )
+                val onAddDevice: () -> Unit = {
+                    startActivity(Intent(this, DiscoveryActivityV2::class.java))
+                }
+                val onOpenDevice: (GBDevice) -> Unit = { device ->
+                    startActivity(
+                        Intent(this, DeviceSettingsActivity::class.java)
+                            .putExtra(GBDevice.EXTRA_DEVICE, device)
+                    )
+                }
+                val onToggleConnection: (GBDevice) -> Unit = { device ->
+                    viewModel.toggleConnection(device)
+                }
+                val onRefresh: () -> Unit = { viewModel.refresh() }
+                val onSettings: () -> Unit = {
+                    startActivity(Intent(this, SettingsActivity::class.java))
+                }
+                val onToggleDesign: () -> Unit = { viewModel.toggleDesign() }
+
+                when (design) {
+                    DesignSystem.MATERIAL3 -> HomeScreen(
+                        devices = devices,
+                        onAddDevice = onAddDevice,
+                        onOpenDevice = onOpenDevice,
+                        onToggleConnection = onToggleConnection,
+                        onRefresh = onRefresh,
+                        onSettings = onSettings,
+                        onToggleDesign = onToggleDesign,
+                    )
+
+                    DesignSystem.MIUIX -> HomeScreenMiuix(
+                        devices = devices,
+                        onAddDevice = onAddDevice,
+                        onOpenDevice = onOpenDevice,
+                        onToggleConnection = onToggleConnection,
+                        onRefresh = onRefresh,
+                        onSettings = onSettings,
+                        onToggleDesign = onToggleDesign,
+                    )
+                }
             }
         }
     }

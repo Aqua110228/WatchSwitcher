@@ -8,7 +8,6 @@
     (at your option) any later version.  */
 package nodomain.freeyourgadget.gadgetbridge.ui.home
 
-import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.PaddingValues
@@ -24,19 +23,7 @@ import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Add
 import androidx.compose.material.icons.filled.Refresh
 import androidx.compose.material.icons.filled.Settings
-import androidx.compose.material3.AssistChip
-import androidx.compose.material3.Card
-import androidx.compose.material3.CardDefaults
-import androidx.compose.material3.ExperimentalMaterial3Api
-import androidx.compose.material3.ExtendedFloatingActionButton
-import androidx.compose.material3.FilledTonalButton
-import androidx.compose.material3.Icon
-import androidx.compose.material3.IconButton
-import androidx.compose.material3.MaterialTheme
-import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
-import androidx.compose.material3.TextButton
-import androidx.compose.material3.TopAppBar
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -46,10 +33,17 @@ import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import nodomain.freeyourgadget.gadgetbridge.R
 import nodomain.freeyourgadget.gadgetbridge.impl.GBDevice
+import top.yukonga.miuix.kmp.basic.Card
+import top.yukonga.miuix.kmp.basic.FloatingActionButton
+import top.yukonga.miuix.kmp.basic.Icon
+import top.yukonga.miuix.kmp.basic.IconButton
+import top.yukonga.miuix.kmp.basic.Scaffold
+import top.yukonga.miuix.kmp.basic.SmallTopAppBar
+import top.yukonga.miuix.kmp.basic.TextButton
+import top.yukonga.miuix.kmp.theme.MiuixTheme
 
-@OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun HomeScreen(
+fun HomeScreenMiuix(
     devices: List<GBDevice>,
     onAddDevice: () -> Unit,
     onOpenDevice: (GBDevice) -> Unit,
@@ -60,10 +54,10 @@ fun HomeScreen(
 ) {
     Scaffold(
         topBar = {
-            TopAppBar(
-                title = { Text(stringResource(R.string.application_name_generic)) },
+            SmallTopAppBar(
+                title = stringResource(R.string.application_name_generic),
                 actions = {
-                    TextButton(onClick = onToggleDesign) { Text("MiUIX") }
+                    TextButton(text = "M3", onClick = onToggleDesign)
                     IconButton(onClick = onRefresh) {
                         Icon(Icons.Filled.Refresh, contentDescription = "刷新")
                     }
@@ -74,15 +68,17 @@ fun HomeScreen(
             )
         },
         floatingActionButton = {
-            ExtendedFloatingActionButton(
-                text = { Text("添加设备") },
-                icon = { Icon(Icons.Filled.Add, contentDescription = null) },
-                onClick = onAddDevice,
-            )
+            FloatingActionButton(onClick = onAddDevice) {
+                Icon(
+                    Icons.Filled.Add,
+                    contentDescription = "添加设备",
+                    tint = MiuixTheme.colorScheme.onPrimary,
+                )
+            }
         },
     ) { innerPadding ->
         if (devices.isEmpty()) {
-            EmptyState(modifier = Modifier.fillMaxSize().padding(innerPadding))
+            MiuixEmptyState(modifier = Modifier.fillMaxSize().padding(innerPadding))
         } else {
             LazyColumn(
                 modifier = Modifier.fillMaxSize().padding(innerPadding),
@@ -90,7 +86,7 @@ fun HomeScreen(
                 verticalArrangement = Arrangement.spacedBy(12.dp),
             ) {
                 items(items = devices, key = { it.address }) { device ->
-                    DeviceCard(
+                    MiuixDeviceCard(
                         device = device,
                         onClick = { onOpenDevice(device) },
                         onToggleConnection = { onToggleConnection(device) },
@@ -101,69 +97,60 @@ fun HomeScreen(
     }
 }
 
-@OptIn(ExperimentalMaterial3Api::class)
 @Composable
-private fun DeviceCard(
+private fun MiuixDeviceCard(
     device: GBDevice,
     onClick: () -> Unit,
     onToggleConnection: () -> Unit,
 ) {
     val context = LocalContext.current
     val battery = device.getBatteryLevel(0)
-    Card(
-        modifier = Modifier.fillMaxWidth().clickable(onClick = onClick),
-        colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surfaceContainerHigh),
-    ) {
-        Column(
-            modifier = Modifier.padding(16.dp),
-            verticalArrangement = Arrangement.spacedBy(4.dp),
-        ) {
+    Card(modifier = Modifier.fillMaxWidth(), onClick = onClick) {
+        Text(
+            text = device.aliasOrName,
+            color = MiuixTheme.colorScheme.onSurface,
+            maxLines = 1,
+            overflow = TextOverflow.Ellipsis,
+        )
+        val subtitle = listOfNotNull(
+            device.model?.takeIf { it.isNotBlank() },
+            device.firmwareVersion?.takeIf { it.isNotBlank() },
+        ).joinToString(" · ")
+        if (subtitle.isNotEmpty()) {
+            Spacer(Modifier.height(4.dp))
             Text(
-                text = device.aliasOrName,
-                style = MaterialTheme.typography.titleLarge,
+                text = subtitle,
+                color = MiuixTheme.colorScheme.onSurfaceVariantSummary,
                 maxLines = 1,
                 overflow = TextOverflow.Ellipsis,
             )
-            val subtitle = listOfNotNull(
-                device.model?.takeIf { it.isNotBlank() },
-                device.firmwareVersion?.takeIf { it.isNotBlank() },
-            ).joinToString(" · ")
-            if (subtitle.isNotEmpty()) {
+        }
+        Spacer(Modifier.height(12.dp))
+        Row(
+            verticalAlignment = Alignment.CenterVertically,
+            horizontalArrangement = Arrangement.spacedBy(12.dp),
+        ) {
+            TextButton(
+                text = if (device.isConnected) "断开" else "连接",
+                onClick = onToggleConnection,
+            )
+            Text(
+                text = device.getStateString(context),
+                color = MiuixTheme.colorScheme.onSurfaceVariantSummary,
+            )
+            Spacer(Modifier.weight(1f))
+            if (battery in 0..100) {
                 Text(
-                    text = subtitle,
-                    style = MaterialTheme.typography.bodyMedium,
-                    color = MaterialTheme.colorScheme.onSurfaceVariant,
-                    maxLines = 1,
-                    overflow = TextOverflow.Ellipsis,
+                    text = "$battery%",
+                    color = MiuixTheme.colorScheme.onSurfaceVariantSummary,
                 )
-            }
-            Spacer(Modifier.height(4.dp))
-            Row(
-                verticalAlignment = Alignment.CenterVertically,
-                horizontalArrangement = Arrangement.spacedBy(8.dp),
-            ) {
-                FilledTonalButton(onClick = onToggleConnection) {
-                    Text(if (device.isConnected) "断开" else "连接")
-                }
-                AssistChip(
-                    onClick = {},
-                    label = { Text(device.getStateString(context)) },
-                )
-                Spacer(Modifier.weight(1f))
-                if (battery in 0..100) {
-                    Text(
-                        text = "$battery%",
-                        style = MaterialTheme.typography.labelLarge,
-                        color = MaterialTheme.colorScheme.onSurfaceVariant,
-                    )
-                }
             }
         }
     }
 }
 
 @Composable
-private fun EmptyState(modifier: Modifier = Modifier) {
+private fun MiuixEmptyState(modifier: Modifier = Modifier) {
     Column(
         modifier = modifier.padding(32.dp),
         verticalArrangement = Arrangement.Center,
@@ -171,13 +158,12 @@ private fun EmptyState(modifier: Modifier = Modifier) {
     ) {
         Text(
             text = "还没有配对设备",
-            style = MaterialTheme.typography.headlineSmall,
+            color = MiuixTheme.colorScheme.onSurface,
         )
         Spacer(Modifier.height(8.dp))
         Text(
             text = "点击右下角「添加设备」扫描附近的华为/荣耀手表或手环。",
-            style = MaterialTheme.typography.bodyMedium,
-            color = MaterialTheme.colorScheme.onSurfaceVariant,
+            color = MiuixTheme.colorScheme.onSurfaceVariantSummary,
         )
     }
 }
