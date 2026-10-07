@@ -57,7 +57,6 @@ class MiFitnessKeyFetcher(private val region: String = "cn") {
     private fun login(email: String, password: String) {
         val (sign, qs, callback) = getLoginParams(email)
         authenticate(email, password, sign, qs, callback)
-        getServiceToken()
     }
 
     private fun getLoginParams(email: String): Triple<String, String, String> {

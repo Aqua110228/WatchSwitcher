@@ -15,7 +15,7 @@ import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import androidx.compose.runtime.mutableStateOf
-import nodomain.freeyourgadget.gadgetbridge.ui.theme.HuaweiSwitcherTheme
+import nodomain.freeyourgadget.gadgetbridge.ui.theme.WatchSwitcherTheme
 
 /**
  * Logs into the Xiaomi account and lists the auth keys of the bound devices, so the user does not
@@ -42,7 +42,7 @@ class MiAccountActivity : ComponentActivity() {
         enableEdgeToEdge()
 
         setContent {
-            HuaweiSwitcherTheme {
+            WatchSwitcherTheme {
                 MiAccountScreen(
                     email = email.value,
                     password = password.value,
