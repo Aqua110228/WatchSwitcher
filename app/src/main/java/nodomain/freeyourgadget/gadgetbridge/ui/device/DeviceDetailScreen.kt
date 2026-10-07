@@ -36,6 +36,7 @@ import androidx.compose.material3.OutlinedButton
 import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
+import androidx.compose.material3.TextButton
 import androidx.compose.material3.TopAppBar
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
@@ -44,8 +45,10 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.platform.LocalUriHandler
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
+import nodomain.freeyourgadget.gadgetbridge.ui.discovery.HUAWEI_ACCOUNT_HELP_URL
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -148,6 +151,7 @@ private fun HuaweiAccountCard(
 ) {
     var account by remember { mutableStateOf(currentAccount) }
     LaunchedEffect(currentAccount) { account = currentAccount }
+    val uriHandler = LocalUriHandler.current
 
     Card(
         modifier = Modifier.fillMaxWidth(),
@@ -171,6 +175,9 @@ private fun HuaweiAccountCard(
             )
             Button(onClick = { onSave(account) }, modifier = Modifier.fillMaxWidth()) {
                 Text("保存并重连")
+            }
+            TextButton(onClick = { uriHandler.openUri(HUAWEI_ACCOUNT_HELP_URL) }) {
+                Text("如何获取账号 ID？（打开官方说明网页）")
             }
         }
     }

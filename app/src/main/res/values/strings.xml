@@ -2,9 +2,9 @@
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation" tools:language="en">
     <string name="application_name_generic">HuaweiSwitcher</string>
     <string name="title_activity_controlcenter_generic">HuaweiSwitcher</string>
-    <string name="about_activity_title_generic">About Gadgetbridge</string>
+    <string name="about_activity_title_generic">About HuaweiSwitcher</string>
     <string name="about_description_generic">Cloudless copylefted libre replacement for closed source Android gadget apps from vendors.</string>
-    <string name="gadgetbridge_running_generic">Gadgetbridge running</string>
+    <string name="gadgetbridge_running_generic">HuaweiSwitcher running</string>
 
     <string name="application_name_banglejs_main">Bangle.js Gadgetbridge</string>
     <string name="title_activity_controlcenter_banglejs_main">Bangle.js Gadgetbridge</string>
@@ -18,15 +18,15 @@
     <string name="about_description_banglejs_nightly">Android companion app for Bangle.js built on top of the Gadgetbridge project, with added Internet Access.\n\nDue to Google Play Store policies, we are not allowed a donation link in the app itself, but if you like this app please consider donating via the Gadgetbridge homepage below.</string>
     <string name="gadgetbridge_running_banglejs_nightly">Nightly Bangle.js running</string>
 
-    <string name="application_name_main_nightly">Gadgetbridge (Nightly)</string>
-    <string name="title_activity_controlcenter_main_nightly">Gadgetbridge Nightly</string>
-    <string name="about_activity_title_main_nightly">About Gadgetbridge Nightly</string>
+    <string name="application_name_main_nightly">HuaweiSwitcher (Nightly)</string>
+    <string name="title_activity_controlcenter_main_nightly">HuaweiSwitcher Nightly</string>
+    <string name="about_activity_title_main_nightly">About HuaweiSwitcher Nightly</string>
     <string name="about_description_main_nightly">Cloudless copylefted libre replacement for closed source Android gadget apps from vendors. Nightly releases of Gadgetbridge. It cannot be installed if you already have either the Gadgetbridge or the Pebble app installed, due to a conflict in the Pebble provider.</string>
     <string name="gadgetbridge_running_main_nightly">Nightly GB running</string>
 
-    <string name="application_name_main_nopebble">Gadgetbridge (Nightly, No Pebble provider)</string>
-    <string name="title_activity_controlcenter_main_nopebble">Gadgetbridge Nightly No Pebble </string>
-    <string name="about_activity_title_main_nopebble">About Gadgetbridge Nightly No Pebble</string>
+    <string name="application_name_main_nopebble">HuaweiSwitcher (Nightly, No Pebble provider)</string>
+    <string name="title_activity_controlcenter_main_nopebble">HuaweiSwitcher Nightly No Pebble </string>
+    <string name="about_activity_title_main_nopebble">About HuaweiSwitcher Nightly No Pebble</string>
     <string name="about_description_main_nopebble">Cloudless copylefted libre replacement for closed source Android gadget apps from vendors. Nightly releases of Gadgetbridge. This version has the Pebble provider renamed to prevent conflicts, so some Pebble related integrations will not work, but it can be installed alongside existing Gadgetbridge installation.</string>
     <string name="gadgetbridge_running_main_nopebble">Nightly NoPebble GB running</string>
 

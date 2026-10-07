@@ -26,8 +26,12 @@ import androidx.activity.result.contract.ActivityResultContracts
 import androidx.activity.viewModels
 import androidx.core.content.ContextCompat
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
+import androidx.compose.runtime.mutableStateOf
+import nodomain.freeyourgadget.gadgetbridge.GBApplication
 import nodomain.freeyourgadget.gadgetbridge.activities.AuthKeyActivity
 import nodomain.freeyourgadget.gadgetbridge.devices.DeviceCoordinator
+import nodomain.freeyourgadget.gadgetbridge.devices.huawei.HuaweiConstants
+import nodomain.freeyourgadget.gadgetbridge.devices.huawei.HuaweiCoordinator
 import nodomain.freeyourgadget.gadgetbridge.impl.GBDeviceCandidate
 import nodomain.freeyourgadget.gadgetbridge.model.DeviceType
 import nodomain.freeyourgadget.gadgetbridge.ui.theme.HuaweiSwitcherTheme
@@ -49,6 +53,7 @@ class DiscoveryActivity : ComponentActivity(), BondingInterface {
 
     private var deviceTarget: GBDeviceCandidate? = null
     private var bondReceiver: BroadcastReceiver? = null
+    private val huaweiPrompt = mutableStateOf<GBDeviceCandidate?>(null)
 
     private val permissionLauncher = registerForActivityResult(
         ActivityResultContracts.RequestMultiplePermissions()
@@ -81,8 +86,20 @@ class DiscoveryActivity : ComponentActivity(), BondingInterface {
                     scanning = scanning,
                     onBack = { finish() },
                     onToggleScan = { toggleScan() },
-                    onSelect = { pair(it) },
+                    onSelect = { onCandidateSelected(it) },
                 )
+                val prompt = huaweiPrompt.value
+                if (prompt != null) {
+                    HuaweiAccountPromptDialog(
+                        deviceName = prompt.name ?: prompt.macAddress,
+                        onDismiss = { huaweiPrompt.value = null },
+                        onConfirm = { account ->
+                            saveHuaweiAccountForCandidate(prompt, account)
+                            huaweiPrompt.value = null
+                            pair(prompt)
+                        },
+                    )
+                }
             }
         }
 
@@ -118,6 +135,23 @@ class DiscoveryActivity : ComponentActivity(), BondingInterface {
             permissions += Manifest.permission.ACCESS_FINE_LOCATION
         }
         return permissions
+    }
+
+    private fun onCandidateSelected(candidate: GBDeviceCandidate) {
+        val coordinator = DeviceHelper.getInstance().resolveDeviceType(candidate).deviceCoordinator
+        if (coordinator is HuaweiCoordinator) {
+            huaweiPrompt.value = candidate
+        } else {
+            pair(candidate)
+        }
+    }
+
+    private fun saveHuaweiAccountForCandidate(candidate: GBDeviceCandidate, account: String) {
+        if (account.isBlank()) return
+        GBApplication.getDeviceSpecificSharedPrefs(candidate.macAddress)
+            .edit()
+            .putString(HuaweiConstants.PREF_HUAWEI_ACCOUNT, account.trim())
+            .apply()
     }
 
     private fun pair(candidate: GBDeviceCandidate) {
