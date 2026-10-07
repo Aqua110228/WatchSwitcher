@@ -43,7 +43,7 @@ WatchSwitcher 是一个开源的安卓应用，用来**直连各种品牌的手�
 预编译的 debug APK 由 GitHub Actions 构建：
 
 1. 打开本仓库的 **Actions** 页面，进入最新一次成功的运行。
-2. 在页面底部下载 `huaweiswitcher-debug` 工件（zip，解压得到 `app-mainline-debug.apk`）。
+2. 在页面底部下载 `watchswitcher-debug` 工件（zip，解压得到 `app-mainline-debug.apk`）。
 
 ## 从源码构建
 
