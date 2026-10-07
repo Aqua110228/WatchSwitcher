@@ -24,6 +24,7 @@ import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
 import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.OutlinedButton
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.material3.TopAppBar
@@ -39,6 +40,7 @@ fun SettingsScreen(
     onBack: () -> Unit,
     onOpenFullSettings: () -> Unit,
     onOpenHuaweiId: () -> Unit,
+    onOpenClassicUi: () -> Unit,
 ) {
     Scaffold(
         topBar = {
@@ -66,6 +68,10 @@ fun SettingsScreen(
 
             Button(onClick = onOpenFullSettings, modifier = Modifier.fillMaxWidth()) {
                 Text("全部设置（Gadgetbridge）")
+            }
+
+            OutlinedButton(onClick = onOpenClassicUi, modifier = Modifier.fillMaxWidth()) {
+                Text("经典界面（仪表盘 / 日志 / 诊断）")
             }
 
             Card(

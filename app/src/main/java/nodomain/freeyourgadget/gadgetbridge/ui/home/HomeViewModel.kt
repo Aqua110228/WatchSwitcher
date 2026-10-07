@@ -21,6 +21,7 @@ import kotlinx.coroutines.flow.asStateFlow
 import nodomain.freeyourgadget.gadgetbridge.GBApplication
 import nodomain.freeyourgadget.gadgetbridge.devices.DeviceManager
 import nodomain.freeyourgadget.gadgetbridge.impl.GBDevice
+import nodomain.freeyourgadget.gadgetbridge.model.RecordedDataTypes
 
 /**
  * Exposes the list of paired devices and mirrors Gadgetbridge's local device-change broadcasts
@@ -32,6 +33,7 @@ class HomeViewModel(app: Application) : AndroidViewModel(app) {
     val devices: StateFlow<List<GBDevice>> = _devices.asStateFlow()
 
     private var registered = false
+    private val syncedDevices = mutableSetOf<String>()
 
     private val receiver = object : BroadcastReceiver() {
         override fun onReceive(context: Context?, intent: Intent?) = refresh()
@@ -58,7 +60,19 @@ class HomeViewModel(app: Application) : AndroidViewModel(app) {
     }
 
     fun refresh() {
-        _devices.value = GBApplication.app().deviceManager.devices.toList()
+        val devices = GBApplication.app().deviceManager.devices
+        _devices.value = devices.toList()
+        devices.forEach { device ->
+            if (device.isInitialized) {
+                // Pull recorded data once per connection, so the UI is not empty after pairing.
+                if (syncedDevices.add(device.address)) {
+                    GBApplication.deviceService(device)
+                        .onFetchRecordedData(RecordedDataTypes.TYPE_SYNC)
+                }
+            } else {
+                syncedDevices.remove(device.address)
+            }
+        }
     }
 
     fun toggleConnection(device: GBDevice) {

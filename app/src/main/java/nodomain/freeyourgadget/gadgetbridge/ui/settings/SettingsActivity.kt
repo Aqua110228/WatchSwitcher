@@ -14,6 +14,7 @@ import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import nodomain.freeyourgadget.gadgetbridge.BuildConfig
+import nodomain.freeyourgadget.gadgetbridge.activities.ControlCenterv2
 import nodomain.freeyourgadget.gadgetbridge.ui.theme.HuaweiSwitcherTheme
 import nodomain.freeyourgadget.gadgetbridge.ui.huawei.HuaweiIdActivity
 import nodomain.freeyourgadget.gadgetbridge.ui.huawei.getHuaweiAccount
@@ -40,6 +41,9 @@ class SettingsActivity : ComponentActivity() {
                     },
                     onOpenHuaweiId = {
                         startActivity(HuaweiIdActivity.newIntent(this))
+                    },
+                    onOpenClassicUi = {
+                        startActivity(Intent(this, ControlCenterv2::class.java))
                     },
                 )
             }
