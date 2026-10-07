@@ -17,13 +17,13 @@ import androidx.activity.viewModels
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import nodomain.freeyourgadget.gadgetbridge.GBApplication
 import nodomain.freeyourgadget.gadgetbridge.activities.PermissionsActivity
-import nodomain.freeyourgadget.gadgetbridge.activities.SettingsActivity
 import nodomain.freeyourgadget.gadgetbridge.activities.welcome.WelcomeActivity
 import nodomain.freeyourgadget.gadgetbridge.impl.GBDevice
 import nodomain.freeyourgadget.gadgetbridge.ui.design.AppTheme
 import nodomain.freeyourgadget.gadgetbridge.ui.design.DesignSystem
 import nodomain.freeyourgadget.gadgetbridge.ui.device.DeviceDetailActivity
 import nodomain.freeyourgadget.gadgetbridge.ui.discovery.DiscoveryActivity
+import nodomain.freeyourgadget.gadgetbridge.ui.settings.SettingsActivity
 import nodomain.freeyourgadget.gadgetbridge.util.PermissionsUtils
 
 /**
@@ -90,6 +90,7 @@ class HomeActivity : ComponentActivity() {
     override fun onStart() {
         super.onStart()
         viewModel.start()
+        viewModel.refreshDesign()
     }
 
     override fun onStop() {

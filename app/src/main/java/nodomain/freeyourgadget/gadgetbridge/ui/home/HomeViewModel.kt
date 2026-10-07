@@ -47,6 +47,10 @@ class HomeViewModel(app: Application) : AndroidViewModel(app) {
         _design.value = next
     }
 
+    fun refreshDesign() {
+        _design.value = loadDesignSystem()
+    }
+
     private var registered = false
 
     private val receiver = object : BroadcastReceiver() {
