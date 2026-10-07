@@ -76,3 +76,6 @@ app/.cxx/
 *.patch
 
 __pycache__/
+
+# AiCode local AI memory (not project source)
+.aicode/memory/
