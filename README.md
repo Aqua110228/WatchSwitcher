@@ -1,122 +1,80 @@
-Gadgetbridge is hosted on [codeberg.org](https://codeberg.org/Freeyourgadget/Gadgetbridge/).
+HuaweiSwitcher
+==============
 
+HuaweiSwitcher 是一个开源的安卓应用，用来**直连华为 / 荣耀手表与手环**，无需安装臃肿的华为运动健康。
 
-Gadgetbridge
-============
+它基于开源项目 [Gadgetbridge](https://gadgetbridge.org)（AGPL-3.0）的协议栈构建，在其之上提供全新的 **Material 3 Expressive** 界面，并针对华为设备的连接做了易用性改进。
 
-Gadgetbridge is an Android application which will allow you to use your
-Bluetooth gadgets (mostly wearables like smart watches, but many more) without the vendor's closed source application
-and without the need to create an account and transmit any of your data to the
-vendor's servers.
+- 平台：Android（minSdk 24）
+- 包名：`com.huaweiswitcher`
+- 许可：AGPL-3.0（见文末）
 
-[Homepage](https://gadgetbridge.org) - [Blog](https://blog.freeyourgadget.org) - <a rel="me" href="https://social.anoxinon.de/@gadgetbridge">Mastodon</a>
+## 功能
 
-[![Donate](https://liberapay.com/assets/widgets/donate.svg)](https://liberapay.com/Gadgetbridge/donate)
+- **连接华为 / 荣耀手表、手环**（Band 系列、Watch 数字系列、GT 系列等，协议来自 Gadgetbridge）。
+- 读取设备信息：型号、固件、蓝牙地址、电量。
+- 活动数据同步：步数、睡眠、心率等（进入"已初始化"后自动同步一次，也可手动同步）。
+- 通知同步、音乐控制、天气等 Gadgetbridge 提供的设备功能。
+- 查找设备、解绑设备。
+- **华为账号 ID 助手**：华为手表绑定华为账号后，第三方应用直接连接会被要求恢复出厂。本应用可在**首次引导 / 设置页**内获取并保存华为账号 ID，配对时自动套用，从而免恢复出厂连接。
 
+## 首次使用：设置华为账号 ID
 
-[![Translate](https://hosted.weblate.org/widgets/freeyourgadget/-/gadgetbridge/svg-badge.svg)](https://hosted.weblate.org/projects/freeyourgadget/gadgetbridge)
+华为手表在配对时会把**华为账号 ID（17 位数字）**写入手表。若手表此前用华为运动健康配对过，本应用需要同一个账号 ID 才能连接，否则会被要求恢复出厂。
 
-## Download
+获取方式（在应用内选择其一）：
 
-<a href="https://f-droid.org/app/nodomain.freeyourgadget.gadgetbridge">
-    <img alt="Get it on F-Droid" src="https://gadgetbridge.org/assets/static/get-it-on-fdroid.png" height="60">
-</a>
+- **应用内登录华为云自动获取**：登录 `https://cloud.huawei.com/` 后，应用读取 `userId` cookie 得到账号 ID。
+- **手动获取**：参见官方说明 <https://gadgetbridge.org/basics/pairing/huawei-honor-pairing/>。
+  - Root：`grep old_user_id /data/data/com.huawei.health/shared_prefs/login_data.xml`
+  - 无 Root：`adb logcat | grep huid=`
 
-<a href="https://apt.izzysoft.de/fdroid/index/apk/nodomain.freeyourgadget.gadgetbridge">
-    <img alt="Get it on IzzyOnDroid" src="https://gitlab.com/IzzyOnDroid/repo/-/raw/master/assets/IzzyOnDroidButtonGreyBorder_nofont.png" height="60">
-</a>
+在应用内（首启引导或 设置 → 华为账号 ID）填入并保存后，配对手表时会自动套用。
 
-<a href="https://codeberg.org/Freeyourgadget/Gadgetbridge/releases/">
-    <img alt="Get it on Codeberg" src="https://get-it-on.codeberg.org/get-it-on-white-on-black.png" height="60">
-</a>
-<br><br>
+## 下载 / 安装
 
-[<img src="https://shields.rbtlog.dev/simple/nodomain.freeyourgadget.gadgetbridge" alt="RB Status">](https://shields.rbtlog.dev/nodomain.freeyourgadget.gadgetbridge)
+预编译的 debug APK 由 GitHub Actions 构建：
 
-- [Nightly releases](https://freeyourgadget.codeberg.page/fdroid/repo?fingerprint=CD381ECCC465AB324E21BCC335895615E07E70EE11E9FD1DF3C020C5194F00B2)
-    - Nightly releases are updated more frequently and may be less stable than standard releases, and they are distributed by our F-Droid repository unlike standard releases. 
-- [List of changes](https://codeberg.org/Freeyourgadget/Gadgetbridge/src/master/CHANGELOG.md)
+1. 打开本仓库的 **Actions** 页面，进入最新一次成功的运行。
+2. 在页面底部下载 `huaweiswitcher-debug` 工件（zip，解压得到 `app-mainline-debug.apk`）。
 
-## Supported Devices
+> 也可用 Android Studio 直接构建（见下）。
 
-Please see the [Gadgets](https://gadgetbridge.org/gadgets/) page on the website for a complete list of supported devices.
+## 从源码构建
 
-## Features
+命令行：
 
-Please see the [Features](https://gadgetbridge.org/basics/features/) page on the website.
+```bash
+./gradlew assembleMainlineDebug
+```
 
-## Authors
-### Core Team (in order of first code contribution)
+产物位于 `app/build/outputs/apk/mainline/debug/`。
 
-* Andreas Shimokawa
-* Carsten Pfeiffer
-* Daniele Gobbetti
-* Petr Vaněk
+**环境要求**：JDK 21、Android SDK（`compileSdk 37`，即 `platforms;android-37.0` 与 `build-tools;37.0.0`）。
 
-### Additional contributors
-* João Paulo Barraca (HPlus)
-* Vitaly Svyastyn (NO.1 F1)
-* Sami Alaoui (Teclast H30)
-* "ladbsoft" (XWatch)
-* Sebastian Kranz (ZeTime)
-* Vadim Kaushan (ID115)
-* "maxirnilian" (Lenovo Watch 9)
-* "ksiwczynski", "mkusnierz", "mamutcho" (Lenovo Watch X Plus)
-* Andreas Böhler (Casio)
-* Jean-François Greffier (Mi Scale 2)
-* Johannes Schmitt (BFH-16)
-* Lukas Schwichtenberg (Makibes HR3)
-* Daniel Dakhno (Fossil Q Hybrid, Fossil Hybrid HR)
-* Gordon Williams (Bangle.js)
-* Pavel Elagin (JYou Y5)
-* Taavi Eomäe (iTag)
-* Erik Bloß (TLW64)
-* Yukai Li (Lefun)
-* José Rebelo (Roidmi, Sony Headphones, Miband 7)
-* Arjan Schrijver (Fossil Hybrid HR watchfaces)
+本项目使用 GitHub Actions 自动出包，配置见 [.github/workflows/build-apk.yml](.github/workflows/build-apk.yml)。
 
-## Contribute
+## 已知限制
 
-See CONTRIBUTING.md for the contribution policy of Gadgetbridge.
+- 应用的**设备级深层设置**与**全局设置**目前仍复用 Gadgetbridge 原有的界面（可在设备详情 / 设置页通过"全部设置"进入）。
+- 部分新固件（HarmonyOS 6.1+）无法安装第三方表盘。
+- "连接成功但读不到数据"等情况属于协议层问题，需结合日志排查。
 
-Contributions are welcome, be it feedback, bug reports, documentation, translation, research or code. Feel free to work
-on any of the open [issues](https://codeberg.org/Freeyourgadget/Gadgetbridge/issues);
-just leave a comment that you're working on one to avoid duplicated work.
+### 抓取日志
 
-[Developer documentation](https://gadgetbridge.org/internals/development/project-overview/) - [Support for a new Device](https://gadgetbridge.org/internals/topics/support/) - [New Device Tutorial](https://gadgetbridge.org/internals/development/new-gadget/)
+设置 →「经典界面」打开 Gadgetbridge 控制中心，在其中导出日志；或使用 `adb logcat`。
 
-Translations can be contributed via https://hosted.weblate.org/projects/freeyourgadget/gadgetbridge/
+## 许可与致谢
 
-## Community
+HuaweiSwitcher 是 [Gadgetbridge](https://codeberg.org/Freeyourgadget/Gadgetbridge)（AGPL-3.0）的衍生作品，**以 AGPL-3.0 发布**。华为 / 荣耀设备协议的全部逆向工作均由 Gadgetbridge 社区完成，在此致谢。
 
-If you would like to get in touch with other Gadgetbridge users and developers outside of Codeberg, you can do so via:
-* Matrix: [`#gadgetbridge:matrix.org`](https://matrix.to/#/#gadgetbridge:matrix.org)
+完整的第三方代码许可说明（仅在 AGPL 要求范围内保留）：
 
-## Do you have further questions or feedback?
-
-Feel free to open an issue on our issue tracker, but please:
-- do not use the issue tracker as a forum, do not ask for ETAs and read the issue conversation before posting
-- use the search functionality to ensure that your question wasn't already answered. Don't forget to check the **closed** issues as well!
-- remember that this is a community project, people are contributing in their free time because they like doing so: don't take the fun away! Be kind and constructive.
-- Do not ask for help regarding your own projects, unless they are Gadgetbridge related
-
-## Having problems?
-
-0. Phone crashing during device discovery? Disable Privacy Guard (or similarly named functionality) during discovery.
-1. Open Gadgetbridge's settings and check the option to write log files
-2. Reproduce the problem you encountered
-3. Check the logfile at /sdcard/Android/data/nodomain.freeyourgadget.gadgetbridge/files/gadgetbridge.log
-4. File an issue at https://codeberg.org/Freeyourgadget/Gadgetbridge/issues/new/choose and possibly provide the logfile
-
-Alternatively you may use the standard logcat functionality to access the log.
-
-## Code Licenses
-
-* Gadgetbridge is licensed under the [AGPLv3](LICENSE)
-* Files in app/src/main/java/net/osmand/ and app/src/main/aidl/net/osmand/ are taken from the [OsmAnd](https://osmand.net/) project, licensed under the GPLv3 by OsmAnd BV
-* Files in app/src/main/java/org/bouncycastle are taken from the [Bouncy Castle](https://www.bouncycastle.org/java.html) project, licensed under the MIT license by The Legion of the Bouncy Castle Inc.
-* Files in app/src/main/java/com/android/nQuant are taken from the [nQuant.android](https://github.com/mcychan/nQuant.android/) project, licensed under the Apache license by Miller Cy Chan
-* Files in app/src/main/java/lineageos/ are taken from the [LineageOS](https://lineageos.org/) platform (formerly CyanogenMod), licensed under the Apache license by The CyanogenMod Project and LineageOS contributors
-* Files in app/src/main/java/org/concentus are taken from the [Concentus](https://github.com/lostromb/concentus) project, licensed under the BSD-3 license by various holding parties
-* Files in GBDaoGenerator/src/de/greenrobot are taken from the [greenDAO](https://codeberg.org/Freeyourgadget/greenDAO) project (Gadgetbridge's fork), licensed under the GPLv3 by Markus Junginger, greenrobot
-* File app/src/main/java/nodomain/freeyourgadget/gadgetbridge/util/SearchPreferenceHighlighter.java is taken from [SearchPreference](https://github.com/ByteHamster/SearchPreference), licensed under the MIT license by ByteHamster
+* HuaweiSwitcher / Gadgetbridge 采用 [AGPLv3](LICENSE)。
+* `app/src/main/java/net/osmand/` 与 `app/src/main/aidl/net/osmand/` 取自 [OsmAnd](https://osmand.net/) 项目，GPLv3，版权归 OsmAnd BV。
+* `app/src/main/java/org/bouncycastle` 取自 [Bouncy Castle](https://www.bouncycastle.org/java.html) 项目，MIT，版权归 The Legion of the Bouncy Castle Inc.
+* `app/src/main/java/com/android/nQuant` 取自 [nQuant.android](https://github.com/mcychan/nQuant.android/)，Apache，版权归 Miller Cy Chan。
+* `app/src/main/java/lineageos/` 取自 [LineageOS](https://lineageos.org/) 平台（原 CyanogenMod），Apache，版权归 The CyanogenMod Project 与 LineageOS 贡献者。
+* `app/src/main/java/org/concentus` 取自 [Concentus](https://github.com/lostromb/concentus) 项目，BSD-3。
+* `GBDaoGenerator/src/de/greenrobot` 取自 [greenDAO](https://codeberg.org/Freeyourgadget/greenDAO) 项目（Gadgetbridge 的 fork），GPLv3，版权归 Markus Junginger / greenrobot。
+* `app/src/main/java/nodomain/freeyourgadget/gadgetbridge/util/SearchPreferenceHighlighter.java` 取自 [SearchPreference](https://github.com/ByteHamster/SearchPreference)，MIT，版权归 ByteHamster。
