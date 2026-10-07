@@ -18,12 +18,12 @@ import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import nodomain.freeyourgadget.gadgetbridge.GBApplication
 import nodomain.freeyourgadget.gadgetbridge.activities.PermissionsActivity
 import nodomain.freeyourgadget.gadgetbridge.activities.SettingsActivity
-import nodomain.freeyourgadget.gadgetbridge.activities.discovery.DiscoveryActivityV2
 import nodomain.freeyourgadget.gadgetbridge.activities.welcome.WelcomeActivity
 import nodomain.freeyourgadget.gadgetbridge.impl.GBDevice
 import nodomain.freeyourgadget.gadgetbridge.ui.design.AppTheme
 import nodomain.freeyourgadget.gadgetbridge.ui.design.DesignSystem
 import nodomain.freeyourgadget.gadgetbridge.ui.device.DeviceDetailActivity
+import nodomain.freeyourgadget.gadgetbridge.ui.discovery.DiscoveryActivity
 import nodomain.freeyourgadget.gadgetbridge.util.PermissionsUtils
 
 /**
@@ -45,7 +45,7 @@ class HomeActivity : ComponentActivity() {
             AppTheme(design) {
                 val devices = viewModel.devices.collectAsStateWithLifecycle().value
                 val onAddDevice: () -> Unit = {
-                    startActivity(Intent(this, DiscoveryActivityV2::class.java))
+                    startActivity(Intent(this, DiscoveryActivity::class.java))
                 }
                 val onOpenDevice: (GBDevice) -> Unit = { device ->
                     startActivity(
