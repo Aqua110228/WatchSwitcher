@@ -1,0 +1,148 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/date_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:textColor="?attr/textColorPrimary"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/hydration_gauge"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:layout_gravity="center"
+            android:scaleType="fitStart" />
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:background="@color/gauge_line_color"
+            android:columnCount="2">
+
+            <LinearLayout
+                style="@style/GridTile"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="1dp">
+
+                <TextView
+                    android:id="@+id/hydration_total"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/stats_empty_value"
+                    android:textColor="?attr/textColorPrimary"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/hydration_total"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/GridTile"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="2dp">
+
+                <TextView
+                    android:id="@+id/hydration_goal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/stats_empty_value"
+                    android:textColor="?attr/textColorPrimary"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/hydration_goal"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </GridLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:orientation="horizontal">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/hydration_remove_increment"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="4dp"
+                android:layout_weight="1"
+                android:enabled="false"
+                tools:text="-250mL" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/hydration_add"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="4dp"
+                android:layout_weight="1"
+                android:enabled="false"
+                android:text="@string/hydration_add" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/hydration_add_increment"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_weight="1"
+                android:enabled="false"
+                tools:text="+250mL" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:orientation="horizontal">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/hydration_add_container_1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="4dp"
+                android:layout_weight="1"
+                android:enabled="false" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/hydration_add_container_2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="4dp"
+                android:layout_weight="1"
+                android:enabled="false" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/hydration_add_container_3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_weight="1"
+                android:enabled="false" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

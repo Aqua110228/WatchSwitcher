@@ -1,0 +1,97 @@
+syntax = "proto2";
+package xiaomi;
+option java_package = "nodomain.freeyourgadget.gadgetbridge.proto.xiaomi";
+option java_multiple_files = true;
+
+message Weather {
+  optional WeatherCurrent current = 1;
+  optional WeatherForecast forecast = 2;
+
+  // response to 10, 5 (get location list) | payload of 10, 6 (set, update location list) | payload of 10, 8 (remove)
+  optional WeatherLocations locations = 4;
+
+  // indication payload of 10, 3 (requested update) | payload of 10, 7 (set current, add to list)
+  optional WeatherLocation location = 5;
+
+  // 10, 10
+  optional WeatherPrefs prefs = 6;
+}
+
+message WeatherCurrent {
+  optional WeatherMetadata metadata = 1;
+  required uint32 weatherCondition = 2;
+  optional WeatherUnitValue temperature = 3;
+  optional WeatherUnitValue humidity = 4;
+  optional WeatherUnitValue wind = 5;
+  optional WeatherUnitValue uv = 6;
+  optional WeatherUnitValue aqi = 7;
+  optional WeatherWarnings warning = 8; // Seems to be an array?
+  optional float pressure = 9;
+}
+
+message WeatherMetadata {
+  required string publicationTimestamp = 1;
+  required string cityName = 2;
+  required string locationName = 3;
+  optional string locationKey = 4;
+  optional bool isCurrentLocation = 5; // default location?
+}
+
+message WeatherUnitValue {
+  required string unit = 1;
+  required sint32 value = 2;
+}
+
+message WeatherWarnings {
+  repeated WeatherWarning warning = 1;
+}
+
+message WeatherWarning {
+  required string type = 1;
+  required string level = 2;
+  optional string title = 3;
+  optional string description = 4;
+  optional string id = 5;
+}
+
+message WeatherLocations {
+  repeated WeatherLocation location = 1;
+}
+
+message WeatherForecast {
+  required WeatherMetadata metadata = 1;
+  required ForecastEntries entries = 2;
+}
+
+message ForecastEntries {
+  repeated ForecastEntry entry = 1;
+}
+
+message ForecastEntry {
+  optional WeatherUnitValue aqi = 1;
+  optional WeatherRange conditionRange = 2;
+  optional WeatherRange temperatureRange = 3;
+  optional string temperatureSymbol = 4;
+  optional WeatherSunriseSunset sunriseSunset = 5;
+  optional WeatherUnitValue wind = 6;
+}
+
+message WeatherRange {
+  required sint32 from = 1;
+  required sint32 to = 2;
+}
+
+message WeatherSunriseSunset {
+  required string sunrise = 1;
+  required string sunset = 2;
+}
+
+message WeatherLocation {
+  required string code = 1;
+  optional string name = 2;
+}
+
+message WeatherPrefs {
+  optional uint32 temperatureScale = 1; // 1 celsius 2 fahrenheit
+  optional uint32 weatherWarningsEnabled = 2; // 0 = unsupported, 1 = enabled, 2 = disabled
+}

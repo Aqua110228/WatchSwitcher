@@ -1,0 +1,10 @@
+• Support for 21 new devices
+• Experimental support for 59 more Garmin devices
+• Charts: VO2 max, body composition estimation, optimal training load, solar charging
+• Dashboard: Per-widget config, SpO2/weight/BMI widgets
+• Garmin: Watch-initiated sync, multiple stability fixes
+• GloryFit: Weather support
+• Pebble: Support for new weather v4
+• Multiple fixes across Huawei, Sony, UNA Watch, Xiaomi, Zepp OS, and more
+
+Read the full changelog in the project repository.

@@ -1,0 +1,137 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@color/gauge_line_color"
+            android:columnCount="1">
+
+            <LinearLayout style="@style/GridTile">
+                <TextView android:id="@+id/hipee_p1_history_total_corrections" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="?attr/textColorPrimary" android:textSize="20sp" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mi_hipee_p1_history_total_corrections" android:textSize="12sp" />
+            </LinearLayout>
+        </GridLayout>
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@color/gauge_line_color"
+            android:columnCount="3">
+
+            <LinearLayout style="@style/GridTile" android:layout_marginEnd="1dp">
+                <TextView android:id="@+id/hipee_p1_history_forward_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="?attr/textColorPrimary" android:textSize="20sp" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mi_hipee_p1_history_forward" android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/GridTile" android:layout_marginStart="1dp" android:layout_marginEnd="1dp">
+                <TextView android:id="@+id/hipee_p1_history_left_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="?attr/textColorPrimary" android:textSize="20sp" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mi_hipee_p1_history_leftward" android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/GridTile" android:layout_marginStart="1dp">
+                <TextView android:id="@+id/hipee_p1_history_right_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="?attr/textColorPrimary" android:textSize="20sp" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mi_hipee_p1_history_rightward" android:textSize="12sp" />
+            </LinearLayout>
+        </GridLayout>
+
+        <com.github.mikephil.charting.charts.BarChart
+            android:id="@+id/hipee_p1_history_chart"
+            android:layout_width="match_parent"
+            android:layout_height="280dp"
+            android:layout_margin="8dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/hipee_p1_history_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:paddingTop="2dp"
+            android:textColor="?attr/textColorPrimary"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="fill_horizontal"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/hipee_p1_history_previous_month"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="2dp"
+                android:layout_weight="1"
+                android:padding="0dp"
+                android:text="&lt;&lt;&lt;" />
+
+            <Button
+                android:id="@+id/hipee_p1_history_previous_week"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="2dp"
+                android:layout_weight="1"
+                android:padding="0dp"
+                android:text="&lt;&lt;" />
+
+            <Button
+                android:id="@+id/hipee_p1_history_previous_day"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="2dp"
+                android:layout_weight="1"
+                android:padding="0dp"
+                android:text="&lt;" />
+
+            <Button
+                android:id="@+id/hipee_p1_history_next_day"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="2dp"
+                android:layout_weight="1"
+                android:padding="0dp"
+                android:text="&gt;" />
+
+            <Button
+                android:id="@+id/hipee_p1_history_next_week"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="2dp"
+                android:layout_weight="1"
+                android:padding="0dp"
+                android:text="&gt;&gt;" />
+
+            <Button
+                android:id="@+id/hipee_p1_history_next_month"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="2dp"
+                android:layout_weight="1"
+                android:padding="0dp"
+                android:text="&gt;&gt;&gt;" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

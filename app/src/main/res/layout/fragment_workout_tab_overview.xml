@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollViewPage2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/headerphoto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            app:shapeAppearanceOverlay="@style/ShapeAppearance.App.RoundedPhoto"
+            tools:ignore="ContentDescription" />
+
+        <!-- header -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingStart="16dp"
+            android:paddingTop="16dp"
+            android:paddingEnd="16dp">
+
+            <nodomain.freeyourgadget.gadgetbridge.activities.workouts.ActivityIconView
+                android:id="@+id/item_image"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:contentDescription="@string/icon_placeholder"
+                app:srcCompat="@drawable/ic_activity_unknown" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="14dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/activityname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:text="Activity Name"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:lineHeight="22sp"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/activitymeta"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:text="Today, 10:00 - 12:00 · 30min"
+                    android:textColor="?attr/colorOnSurfaceVariant"
+                    android:textSize="13sp"
+                    tools:ignore="HardcodedText" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/upload_status_icon"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="12dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:visibility="gone"
+                tools:ignore="ContentDescription" />
+
+            <ImageView
+                android:id="@+id/health_connect_status_icon"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="12dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="@string/health_connect_workout_sync_failed"
+                android:visibility="gone"
+                app:srcCompat="@drawable/ic_health_connect_sync_problem" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!-- Map for gpx track -->
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/gpsFragmentHolder"
+                android:layout_width="match_parent"
+                android:layout_height="230dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:visibility="gone"
+                app:cardBackgroundColor="@android:color/transparent"
+                app:cardCornerRadius="14dp"
+                app:cardElevation="0dp"
+                app:strokeColor="?attr/row_separator"
+                app:strokeWidth="1dp" />
+
+            <!-- details -->
+            <LinearLayout
+                android:id="@+id/summaryDetails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="16dp"
+                android:paddingBottom="20dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,53 @@
+syntax = "proto2";
+package xiaomi;
+option java_package = "nodomain.freeyourgadget.gadgetbridge.proto.xiaomi";
+option java_multiple_files = true;
+
+message Account {
+  optional string userId = 7;
+  optional uint32 status = 8;
+  // 1, 26
+  optional Auth.AppVerify appVerify = 30;
+  optional Auth.DeviceVerify deviceVerify = 31;
+  // 1, 27
+  optional Auth.AppConfirm appConfirm = 32;
+  optional Auth.DeviceConfirm authStep4 = 33;
+}
+
+
+message CompanionDevice {
+  required uint32 unknown1 = 1; // device type 0 - needs to be serialized explicitly
+  required float phoneApiLevel = 2;
+  required string phoneName = 3; // phone model
+  required uint32 unknown3 = 4; // 224
+  required string region = 5; // 2-letter, upper case
+}
+
+
+message Auth {
+
+  message AppVerify {
+    required bytes nonce = 1;
+    // Phone identity, required by Wear OS watches (eg. Xiaomi Watch 5) - without it they
+    // reply with a status instead of a WatchNonce. Unset elsewhere, so the wire format is unchanged.
+    optional string deviceId = 2;
+    optional bool check_dynamic_code = 3;
+  }
+
+  message DeviceVerify {
+    required bytes nonce = 1;
+    required bytes hmac = 2;
+  }
+
+  message AppConfirm {
+    required bytes encryptedNonces = 1;
+    required bytes encryptedDeviceInfo = 2;  // AuthDeviceInfo
+  }
+
+
+  message DeviceConfirm {
+    required bool unknown1 = 1;
+    optional uint32 device_capability = 2;
+    optional uint32 device_capability_2 = 3;
+  }
+}

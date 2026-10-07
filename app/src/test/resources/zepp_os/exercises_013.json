@@ -1,0 +1,971 @@
+{
+  "sportType": 52,
+  "templateId": 1790193217001011,
+  "templateName": "exercises_013",
+  "intervals": [
+    {
+      "index": 0,
+      "trainingType": 0,
+      "intervalType": 8,
+      "intervalVal": -1,
+      "remindType": 0,
+      "remindUpThreshold": 0,
+      "remindDownThreshold": 0,
+      "groupId": 0,
+      "loopTimes": 1,
+      "lengthUnit": 0,
+      "intervalDesc": "",
+      "strengthWeight": "0-0",
+      "actionType": 0,
+      "actionName": "",
+      "selfWeightType": 0,
+      "mainPositions": [],
+      "subPositions": []
+    },
+    {
+      "index": 1,
+      "trainingType": 1,
+      "intervalType": 8,
+      "intervalVal": 0,
+      "remindType": 0,
+      "remindUpThreshold": 0,
+      "remindDownThreshold": 0,
+      "groupId": 1,
+      "loopTimes": 1,
+      "lengthUnit": 0,
+      "intervalDesc": "",
+      "strengthWeight": "0-0",
+      "actionType": 0,
+      "actionName": "",
+      "selfWeightType": 0,
+      "mainPositions": [],
+      "subPositions": []
+    },
+    {
+      "index": 2,
+      "trainingType": 4,
+      "intervalType": 8,
+      "intervalVal": -1,
+      "remindType": 0,
+      "remindUpThreshold": 0,
+      "remindDownThreshold": 0,
+      "groupId": 2,
+      "loopTimes": 1,
+      "lengthUnit": 0,
+      "intervalDesc": "",
+      "strengthWeight": "0-0",
+      "actionType": 0,
+      "actionName": "",
+      "selfWeightType": 0,
+      "mainPositions": [],
+      "subPositions": []
+    },
+    {
+      "index": 3,
+      "trainingType": 1,
+      "intervalType": 8,
+      "intervalVal": 0,
+      "remindType": 0,
+      "remindUpThreshold": 0,
+      "remindDownThreshold": 0,
+      "groupId": 3,
+      "loopTimes": 1,
+      "lengthUnit": 0,
+      "intervalDesc": "",
+      "strengthWeight": "0-1",
+      "actionType": 1458,
+      "actionName": "Dumbbell Sicilian Crunch",
+      "selfWeightType": 0,
+      "mainPositions": [
+        1,
+        2
+      ],
+      "subPositions": []
+    },
+    {
+      "index": 4,
+      "trainingType": 1,
+      "intervalType": 8,
+      "intervalVal": 0,
+      "remindType": 0,
+      "remindUpThreshold": 0,
+      "remindDownThreshold": 0,
+      "groupId": 4,
+      "loopTimes": 1,
+      "lengthUnit": 0,
+      "intervalDesc": "",
+      "strengthWeight": "0-1",
+      "actionType": 1517,
+      "actionName": "Dumbbell Sicilian Crunch",
+      "selfWeightType": 0,
+      "mainPositions": [
+        1,
+        2
+      ],
+      "subPositions": []
+    },
+    {
+      "index": 5,
+      "trainingType": 1,
+      "intervalType": 8,
+      "intervalVal": 0,
+      "remindType": 0,
+      "remindUpThreshold": 0,
+      "remindDownThreshold": 0,
+      "groupId": 5,
+      "loopTimes": 1,
+      "lengthUnit": 0,
+      "intervalDesc": "",
+      "strengthWeight": "0-1",
+      "actionType": 1473,
+      "actionName": "Diagonal Plank Crunch",
+      "selfWeightType": 0,
+      "mainPositions": [
+        1,
+        2
+      ],
+      "subPositions": [
+        7,
+        8
+      ]
+    },
+    {
+      "index": 6,
+      "trainingType": 1,
+      "intervalType": 8,
+      "intervalVal": 0,
+      "remindType": 0,
+      "remindUpThreshold": 0,
+      "remindDownThreshold": 0,
+      "groupId": 6,
+      "loopTimes": 1,
+      "lengthUnit": 0,
+      "intervalDesc": "",
+      "strengthWeight": "0-1",
+      "actionType": 1483,
+      "actionName": "Dumbbell Supine Single Leg V-Up",
+      "selfWeightType": 0,
+      "mainPositions": [
+        1,
+        2
+      ],
+      "subPositions": [
+        1,
+        2
+      ]
+    },
+    {
+      "index": 7,
+      "trainingType": 1,
+      "intervalType": 8,
+      "intervalVal": 0,
+      "remindType": 0,
+      "remindUpThreshold": 0,
+      "remindDownThreshold": 0,
+      "groupId": 7,
+      "loopTimes": 1,
+      "lengthUnit": 0,
+      "intervalDesc": "",
+      "strengthWeight": "0-1",
+      "actionType": 1486,
+      "actionName": "Dumbbell Assisted V-Leg Raise",
+      "selfWeightType": 0,
+      "mainPositions": [
+        1,
+        2
+      ],
+      "subPositions": [
+        7,
+        8,
+        1,
+        2
+      ]
+    },
+    {
+      "index": 8,
+      "trainingType": 1,
+      "intervalType": 8,
+      "intervalVal": 0,
+      "remindType": 0,
+      "remindUpThreshold": 0,
+      "remindDownThreshold": 0,
+      "groupId": 8,
+      "loopTimes": 1,
+      "lengthUnit": 0,
+      "intervalDesc": "",
+      "strengthWeight": "0-1",
+      "actionType": 1558,
+      "actionName": "Dumbbell Assisted V-Leg Raise",
+      "selfWeightType": 0,
+      "mainPositions": [
+        1,
+        2
+      ],
+      "subPositions": [
+        7,
+        8,
+        1,
+        2
+      ]
+    },
+    {
+      "index": 9,
+      "trainingType": 1,
+      "intervalType": 8,
+      "intervalVal": 0,
+      "remindType": 0,
+      "remindUpThreshold": 0,
+      "remindDownThreshold": 0,
+      "groupId": 9,
+      "loopTimes": 1,
+      "lengthUnit": 0,
+      "intervalDesc": "",
+      "strengthWeight": "0-1",
+      "actionType": 1493,
+      "actionName": "Dumbbell Bicycle Crunch",
+      "selfWeightType": 0,
+      "mainPositions": [
+        1,
+        2
+      ],
+      "subPositions": [
+        1,
+        2
+      ]
+    },
+    {
+      "index": 10,
+      "trainingType": 1,
+      "intervalType": 8,
+      "intervalVal": 0,
+      "remindType": 0,
+      "remindUpThreshold": 0,
+      "remindDownThreshold": 0,
+      "groupId": 10,
+      "loopTimes": 1,
+      "lengthUnit": 0,
+      "intervalDesc": "",
+      "strengthWeight": "0-1",
+      "actionType": 1514,
+      "actionName": "Decline Bent Knee Reverse Crunch",
+      "selfWeightType": 0,
+      "mainPositions": [
+        1,
+        2
+      ],
+      "subPositions": []
+    },
+    {
+      "index": 11,
+      "trainingType": 1,
+      "intervalType": 8,
+      "intervalVal": 0,
+      "remindType": 0,
+      "remindUpThreshold": 0,
+      "remindDownThreshold": 0,
+      "groupId": 11,
+      "loopTimes": 1,
+      "lengthUnit": 0,
+      "intervalDesc": "",
+      "strengthWeight": "0-1",
+      "actionType": 1522,
+      "actionName": "Dumbbell Punch Crunch",
+      "selfWeightType": 0,
+      "mainPositions": [
+        1,
+        2
+      ],
+      "subPositions": []
+    },
+    {
+      "index": 12,
+      "trainingType": 1,
+      "intervalType": 8,
+      "intervalVal": 0,
+      "remindType": 0,
+      "remindUpThreshold": 0,
+      "remindDownThreshold": 0,
+      "groupId": 12,
+      "loopTimes": 1,
+      "lengthUnit": 0,
+      "intervalDesc": "",
+      "strengthWeight": "0-1",
+      "actionType": 1584,
+      "actionName": "Dumbbell Windmill Crunch",
+      "selfWeightType": 0,
+      "mainPositions": [
+        1,
+        2
+      ],
+      "subPositions": [
+        7,
+        8
+      ]
+    },
+    {
+      "index": 13,
+      "trainingType": 1,
+      "intervalType": 8,
+      "intervalVal": 0,
+      "remindType": 0,
+      "remindUpThreshold": 0,
+      "remindDownThreshold": 0,
+      "groupId": 13,
+      "loopTimes": 1,
+      "lengthUnit": 0,
+      "intervalDesc": "",
+      "strengthWeight": "0-1",
+      "actionType": 1621,
+      "actionName": "Decline Diagonal Crunch",
+      "selfWeightType": 0,
+      "mainPositions": [
+        1,
+        2
+      ],
+      "subPositions": [
+        7,
+        8
+      ]
+    },
+    {
+      "index": 14,
+      "trainingType": 1,
+      "intervalType": 8,
+      "intervalVal": 0,
+      "remindType": 0,
+      "remindUpThreshold": 0,
+      "remindDownThreshold": 0,
+      "groupId": 14,
+      "loopTimes": 1,
+      "lengthUnit": 0,
+      "intervalDesc": "",
+      "strengthWeight": "0-1",
+      "actionType": 1741,
+      "actionName": "Dumbbell V-Support Twist",
+      "selfWeightType": 0,
+      "mainPositions": [
+        1,
+        2
+      ],
+      "subPositions": [
+        7,
+        8,
+        1,
+        2
+      ]
+    },
+    {
+      "index": 15,
+      "trainingType": 1,
+      "intervalType": 8,
+      "intervalVal": 0,
+      "remindType": 0,
+      "remindUpThreshold": 0,
+      "remindDownThreshold": 0,
+      "groupId": 15,
+      "loopTimes": 1,
+      "lengthUnit": 0,
+      "intervalDesc": "",
+      "strengthWeight": "0-5",
+      "actionType": 1749,
+      "actionName": "Dumbbell Plank Twist",
+      "selfWeightType": 1,
+      "mainPositions": [
+        1,
+        2
+      ],
+      "subPositions": [
+        1,
+        2,
+        7,
+        8
+      ]
+    },
+    {
+      "index": 16,
+      "trainingType": 1,
+      "intervalType": 8,
+      "intervalVal": 0,
+      "remindType": 0,
+      "remindUpThreshold": 0,
+      "remindDownThreshold": 0,
+      "groupId": 16,
+      "loopTimes": 1,
+      "lengthUnit": 0,
+      "intervalDesc": "",
+      "strengthWeight": "0-1",
+      "actionType": 44,
+      "actionName": "External Oblique Abdominis",
+      "selfWeightType": 0,
+      "mainPositions": [
+        7,
+        8
+      ],
+      "subPositions": []
+    },
+    {
+      "index": 17,
+      "trainingType": 1,
+      "intervalType": 8,
+      "intervalVal": 0,
+      "remindType": 0,
+      "remindUpThreshold": 0,
+      "remindDownThreshold": 0,
+      "groupId": 17,
+      "loopTimes": 1,
+      "lengthUnit": 0,
+      "intervalDesc": "",
+      "strengthWeight": "0-1",
+      "actionType": 1462,
+      "actionName": "Exercise Ball Ab Stretch",
+      "selfWeightType": 0,
+      "mainPositions": [
+        1,
+        2
+      ],
+      "subPositions": [
+        1,
+        2
+      ]
+    },
+    {
+      "index": 18,
+      "trainingType": 1,
+      "intervalType": 8,
+      "intervalVal": 0,
+      "remindType": 0,
+      "remindUpThreshold": 0,
+      "remindDownThreshold": 0,
+      "groupId": 18,
+      "loopTimes": 1,
+      "lengthUnit": 0,
+      "intervalDesc": "",
+      "strengthWeight": "0-5",
+      "actionType": 1356,
+      "actionName": "Four-Point Ab Wheel",
+      "selfWeightType": 1,
+      "mainPositions": [
+        1,
+        2
+      ],
+      "subPositions": [
+        1,
+        2
+      ]
+    },
+    {
+      "index": 19,
+      "trainingType": 1,
+      "intervalType": 8,
+      "intervalVal": 0,
+      "remindType": 0,
+      "remindUpThreshold": 0,
+      "remindDownThreshold": 0,
+      "groupId": 19,
+      "loopTimes": 1,
+      "lengthUnit": 0,
+      "intervalDesc": "",
+      "strengthWeight": "0-1",
+      "actionType": 1468,
+      "actionName": "Fitness Bench Crunch",
+      "selfWeightType": 0,
+      "mainPositions": [
+        1,
+        2
+      ],
+      "subPositions": []
+    },
+    {
+      "index": 20,
+      "trainingType": 1,
+      "intervalType": 8,
+      "intervalVal": 0,
+      "remindType": 0,
+      "remindUpThreshold": 0,
+      "remindDownThreshold": 0,
+      "groupId": 20,
+      "loopTimes": 1,
+      "lengthUnit": 0,
+      "intervalDesc": "",
+      "strengthWeight": "0-5",
+      "actionType": 1630,
+      "actionName": "Fast Plank Rotation Kick",
+      "selfWeightType": 1,
+      "mainPositions": [
+        1,
+        2
+      ],
+      "subPositions": [
+        7,
+        8,
+        1,
+        2
+      ]
+    },
+    {
+      "index": 21,
+      "trainingType": 1,
+      "intervalType": 8,
+      "intervalVal": 0,
+      "remindType": 0,
+      "remindUpThreshold": 0,
+      "remindDownThreshold": 0,
+      "groupId": 21,
+      "loopTimes": 1,
+      "lengthUnit": 0,
+      "intervalDesc": "",
+      "strengthWeight": "0-5",
+      "actionType": 1721,
+      "actionName": "Four-Point Front and Back Slide",
+      "selfWeightType": 1,
+      "mainPositions": [
+        1,
+        2
+      ],
+      "subPositions": [
+        1,
+        2
+      ]
+    },
+    {
+      "index": 22,
+      "trainingType": 1,
+      "intervalType": 8,
+      "intervalVal": 0,
+      "remindType": 0,
+      "remindUpThreshold": 0,
+      "remindDownThreshold": 0,
+      "groupId": 22,
+      "loopTimes": 1,
+      "lengthUnit": 0,
+      "intervalDesc": "",
+      "strengthWeight": "0-1",
+      "actionType": 1678,
+      "actionName": "High Crab Walk",
+      "selfWeightType": 0,
+      "mainPositions": [
+        1,
+        2
+      ],
+      "subPositions": [
+        1,
+        2,
+        34,
+        35,
+        36,
+        37
+      ]
+    },
+    {
+      "index": 23,
+      "trainingType": 1,
+      "intervalType": 8,
+      "intervalVal": 0,
+      "remindType": 0,
+      "remindUpThreshold": 0,
+      "remindDownThreshold": 0,
+      "groupId": 23,
+      "loopTimes": 1,
+      "lengthUnit": 0,
+      "intervalDesc": "",
+      "strengthWeight": "0-1",
+      "actionType": 1718,
+      "actionName": "High Resistance Band Left Crunch",
+      "selfWeightType": 0,
+      "mainPositions": [
+        2,
+        8
+      ],
+      "subPositions": []
+    },
+    {
+      "index": 24,
+      "trainingType": 1,
+      "intervalType": 8,
+      "intervalVal": 0,
+      "remindType": 0,
+      "remindUpThreshold": 0,
+      "remindDownThreshold": 0,
+      "groupId": 24,
+      "loopTimes": 1,
+      "lengthUnit": 0,
+      "intervalDesc": "",
+      "strengthWeight": "0-1",
+      "actionType": 1719,
+      "actionName": "High Resistance Band Right Crunch",
+      "selfWeightType": 0,
+      "mainPositions": [
+        7,
+        8
+      ],
+      "subPositions": []
+    },
+    {
+      "index": 25,
+      "trainingType": 1,
+      "intervalType": 8,
+      "intervalVal": 0,
+      "remindType": 0,
+      "remindUpThreshold": 0,
+      "remindDownThreshold": 0,
+      "groupId": 25,
+      "loopTimes": 1,
+      "lengthUnit": 0,
+      "intervalDesc": "",
+      "strengthWeight": "0-5",
+      "actionType": 8,
+      "actionName": "Knee Touch Sit-ups",
+      "selfWeightType": 1,
+      "mainPositions": [
+        1,
+        2
+      ],
+      "subPositions": []
+    },
+    {
+      "index": 26,
+      "trainingType": 1,
+      "intervalType": 8,
+      "intervalVal": 0,
+      "remindType": 0,
+      "remindUpThreshold": 0,
+      "remindDownThreshold": 0,
+      "groupId": 26,
+      "loopTimes": 1,
+      "lengthUnit": 0,
+      "intervalDesc": "",
+      "strengthWeight": "0-1",
+      "actionType": 1009,
+      "actionName": "Kneeling Ab Wheel Rollout",
+      "selfWeightType": 0,
+      "mainPositions": [
+        1,
+        2
+      ],
+      "subPositions": [
+        1,
+        2
+      ]
+    },
+    {
+      "index": 27,
+      "trainingType": 1,
+      "intervalType": 8,
+      "intervalVal": 0,
+      "remindType": 0,
+      "remindUpThreshold": 0,
+      "remindDownThreshold": 0,
+      "groupId": 27,
+      "loopTimes": 1,
+      "lengthUnit": 0,
+      "intervalDesc": "",
+      "strengthWeight": "0-1",
+      "actionType": 1018,
+      "actionName": "Knee Tuck",
+      "selfWeightType": 0,
+      "mainPositions": [
+        1,
+        2
+      ],
+      "subPositions": [
+        1,
+        2
+      ]
+    },
+    {
+      "index": 28,
+      "trainingType": 1,
+      "intervalType": 8,
+      "intervalVal": 0,
+      "remindType": 0,
+      "remindUpThreshold": 0,
+      "remindDownThreshold": 0,
+      "groupId": 28,
+      "loopTimes": 1,
+      "lengthUnit": 0,
+      "intervalDesc": "",
+      "strengthWeight": "0-1",
+      "actionType": 1023,
+      "actionName": "Knee Touch Crunch",
+      "selfWeightType": 0,
+      "mainPositions": [
+        1,
+        2
+      ],
+      "subPositions": []
+    },
+    {
+      "index": 29,
+      "trainingType": 1,
+      "intervalType": 8,
+      "intervalVal": 0,
+      "remindType": 0,
+      "remindUpThreshold": 0,
+      "remindDownThreshold": 0,
+      "groupId": 29,
+      "loopTimes": 1,
+      "lengthUnit": 0,
+      "intervalDesc": "",
+      "strengthWeight": "0-1",
+      "actionType": 1109,
+      "actionName": "Knee Hug Crunch",
+      "selfWeightType": 0,
+      "mainPositions": [
+        1,
+        2
+      ],
+      "subPositions": [
+        1,
+        2
+      ]
+    },
+    {
+      "index": 30,
+      "trainingType": 1,
+      "intervalType": 8,
+      "intervalVal": 0,
+      "remindType": 0,
+      "remindUpThreshold": 0,
+      "remindDownThreshold": 0,
+      "groupId": 30,
+      "loopTimes": 1,
+      "lengthUnit": 0,
+      "intervalDesc": "",
+      "strengthWeight": "0-5",
+      "actionType": 1127,
+      "actionName": "Kneeling Plank",
+      "selfWeightType": 1,
+      "mainPositions": [
+        1,
+        2
+      ],
+      "subPositions": [
+        1,
+        2
+      ]
+    },
+    {
+      "index": 31,
+      "trainingType": 1,
+      "intervalType": 8,
+      "intervalVal": 0,
+      "remindType": 0,
+      "remindUpThreshold": 0,
+      "remindDownThreshold": 0,
+      "groupId": 31,
+      "loopTimes": 1,
+      "lengthUnit": 0,
+      "intervalDesc": "",
+      "strengthWeight": "0-1",
+      "actionType": 1141,
+      "actionName": "Knee Bent V-Up",
+      "selfWeightType": 0,
+      "mainPositions": [
+        1,
+        2
+      ],
+      "subPositions": [
+        1,
+        2
+      ]
+    },
+    {
+      "index": 32,
+      "trainingType": 1,
+      "intervalType": 8,
+      "intervalVal": 0,
+      "remindType": 0,
+      "remindUpThreshold": 0,
+      "remindDownThreshold": 0,
+      "groupId": 32,
+      "loopTimes": 1,
+      "lengthUnit": 0,
+      "intervalDesc": "",
+      "strengthWeight": "0-1",
+      "actionType": 1178,
+      "actionName": "Kneeling Left Iliopsoas Stretch",
+      "selfWeightType": 0,
+      "mainPositions": [
+        15,
+        33,
+        49
+      ],
+      "subPositions": []
+    },
+    {
+      "index": 33,
+      "trainingType": 1,
+      "intervalType": 8,
+      "intervalVal": 0,
+      "remindType": 0,
+      "remindUpThreshold": 0,
+      "remindDownThreshold": 0,
+      "groupId": 33,
+      "loopTimes": 1,
+      "lengthUnit": 0,
+      "intervalDesc": "",
+      "strengthWeight": "0-5",
+      "actionType": 1242,
+      "actionName": "Kneeling Plank with Rotation",
+      "selfWeightType": 1,
+      "mainPositions": [
+        1,
+        2
+      ],
+      "subPositions": [
+        1,
+        2
+      ]
+    },
+    {
+      "index": 34,
+      "trainingType": 1,
+      "intervalType": 8,
+      "intervalVal": 0,
+      "remindType": 0,
+      "remindUpThreshold": 0,
+      "remindDownThreshold": 0,
+      "groupId": 34,
+      "loopTimes": 1,
+      "lengthUnit": 0,
+      "intervalDesc": "",
+      "strengthWeight": "0-1",
+      "actionType": 1275,
+      "actionName": "Kneeling Half Ab Wheel Rollout",
+      "selfWeightType": 0,
+      "mainPositions": [
+        1,
+        2
+      ],
+      "subPositions": [
+        1,
+        2
+      ]
+    },
+    {
+      "index": 35,
+      "trainingType": 1,
+      "intervalType": 8,
+      "intervalVal": 0,
+      "remindType": 0,
+      "remindUpThreshold": 0,
+      "remindDownThreshold": 0,
+      "groupId": 35,
+      "loopTimes": 1,
+      "lengthUnit": 0,
+      "intervalDesc": "",
+      "strengthWeight": "0-5",
+      "actionType": 1406,
+      "actionName": "Kneeling Ab Wheel Plank",
+      "selfWeightType": 1,
+      "mainPositions": [
+        1,
+        2
+      ],
+      "subPositions": [
+        1,
+        2
+      ]
+    },
+    {
+      "index": 36,
+      "trainingType": 1,
+      "intervalType": 8,
+      "intervalVal": 0,
+      "remindType": 0,
+      "remindUpThreshold": 0,
+      "remindDownThreshold": 0,
+      "groupId": 36,
+      "loopTimes": 1,
+      "lengthUnit": 0,
+      "intervalDesc": "",
+      "strengthWeight": "0-5",
+      "actionType": 1424,
+      "actionName": "Kneeling Left Diagonal Bird Dog",
+      "selfWeightType": 1,
+      "mainPositions": [
+        2,
+        8
+      ],
+      "subPositions": [
+        1,
+        7
+      ]
+    },
+    {
+      "index": 37,
+      "trainingType": 1,
+      "intervalType": 8,
+      "intervalVal": 0,
+      "remindType": 0,
+      "remindUpThreshold": 0,
+      "remindDownThreshold": 0,
+      "groupId": 37,
+      "loopTimes": 1,
+      "lengthUnit": 0,
+      "intervalDesc": "",
+      "strengthWeight": "0-5",
+      "actionType": 1428,
+      "actionName": "Kneeling Right Diagonal Bird Dog",
+      "selfWeightType": 1,
+      "mainPositions": [
+        1,
+        2
+      ],
+      "subPositions": [
+        7,
+        8
+      ]
+    },
+    {
+      "index": 38,
+      "trainingType": 1,
+      "intervalType": 8,
+      "intervalVal": 0,
+      "remindType": 0,
+      "remindUpThreshold": 0,
+      "remindDownThreshold": 0,
+      "groupId": 38,
+      "loopTimes": 1,
+      "lengthUnit": 0,
+      "intervalDesc": "",
+      "strengthWeight": "0-1",
+      "actionType": 1513,
+      "actionName": "Kneeling Resistance Band Crunch",
+      "selfWeightType": 0,
+      "mainPositions": [
+        1,
+        2
+      ],
+      "subPositions": [
+        1,
+        2
+      ]
+    },
+    {
+      "index": 39,
+      "trainingType": 1,
+      "intervalType": 8,
+      "intervalVal": 0,
+      "remindType": 0,
+      "remindUpThreshold": 0,
+      "remindDownThreshold": 0,
+      "groupId": 39,
+      "loopTimes": 1,
+      "lengthUnit": 0,
+      "intervalDesc": "",
+      "strengthWeight": "0-5",
+      "actionType": 1644,
+      "actionName": "Kneeling Stability Ball Saw Plank",
+      "selfWeightType": 1,
+      "mainPositions": [
+        1,
+        2
+      ],
+      "subPositions": [
+        1,
+        2
+      ]
+    }
+  ]
+}

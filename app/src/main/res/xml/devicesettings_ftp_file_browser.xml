@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.preference.PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <Preference
+        android:icon="@drawable/ic_folder"
+        android:key="ftp_server_browse"
+        android:summary="@string/ftp_file_browser_summary"
+        android:title="@string/ftp_file_browser" />
+</androidx.preference.PreferenceScreen>

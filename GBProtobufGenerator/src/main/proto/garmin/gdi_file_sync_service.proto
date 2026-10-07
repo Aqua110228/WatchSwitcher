@@ -1,0 +1,156 @@
+syntax = "proto2";
+
+package garmin_vivomovehr;
+
+option java_package = "nodomain.freeyourgadget.gadgetbridge.proto.garmin";
+
+message FileSyncService {
+  optional FileRequest file_request = 1;
+  optional FileResponse file_response = 2;
+  optional Message4 unk4 = 4;
+  optional TransferStatusRequest transfer_status_request = 5;
+  optional Message7 unk7 = 7;
+  optional FileListRequest file_list_request = 9;
+  optional FileListResponse file_list_response = 10;
+  optional NewFileNotification new_file_notification = 12;
+  optional Message14 unk14 = 14;
+  optional FileSetFlags file_set_flags = 15;
+  optional FileModifiedFlags file_modified_flags = 16;
+  optional FileUpdateNotification file_update_notification = 17;
+  optional Message19 unk19 = 19;
+  optional Notification20 notification20 = 20;
+  optional TransferStatusResponse transfer_status_response = 21;
+  optional StartSyncNotification start_sync_notification = 22;
+  optional Message24 unk24 = 24;
+
+  message Message4 {
+    optional uint32 unk1 = 1;
+    optional uint32 unk6 = 6;
+    optional uint32 unk7 = 7;
+  }
+
+  message Message7 {
+    optional uint32 unk1 = 1;
+  }
+
+  message Message14 {
+    optional uint32 unk1 = 1;
+    optional uint32 unk2 = 2;
+    optional uint32 unk3 = 3;
+  }
+
+  message Message19 {
+    optional uint32 unk1 = 1;
+  }
+
+  message Message24 {
+  }
+}
+
+message Notification20 {
+  optional uint32 unk1 = 1;
+  optional uint32 unk2 = 2;
+}
+
+message FileModifiedFlags {
+  optional uint32 status = 1; // 0: success
+  optional uint32 unk2 = 2;
+  optional uint32 unk3 = 3;
+}
+
+message TransferStatusRequest {
+  optional FileId uid = 1;
+  optional uint32 handle = 2;
+}
+
+message TransferStatusResponse {
+  optional uint32 unk1 = 1;
+}
+
+message StartSyncNotification {
+  // user pressed button on device to start syncing files
+}
+
+message NewFileNotification {
+  repeated File file = 1;
+  optional uint32 unk2 = 2; // 24
+  optional uint32 unk3 = 3; // 0
+  optional uint32 unk4 = 4; // 0
+  optional uint32 unk5 = 5; // 15
+  optional uint32 unk6 = 6; // 1
+}
+
+message FileSetFlags {
+  optional FileId file = 1;
+  optional FileId set_flags = 2;
+  optional FileId remove_flags = 3;
+}
+
+message FileUpdateNotification {
+  optional FileId file = 1;
+  optional FileId flags_set = 2;
+  optional FileId flags_removed = 3;
+}
+
+message FileRequest {
+  optional File file = 1;
+  optional uint32 unk2 = 2; // 24
+  optional uint32 unk3 = 3; // 0
+  optional uint64 unk4 = 4; // 0 - likely a content offset
+  optional uint32 unk5 = 5; // 15
+}
+
+message FileResponse {
+  optional uint32 status = 1; // 0 success 3 failure
+  optional uint32 unk2 = 2; // 0
+  optional uint32 handle = 3; // varies
+  optional uint32 unk5 = 5; // error related
+  optional uint32 unk6 = 6; // error related
+  optional uint32 unk7 = 7; // 11
+}
+
+message FileListRequest {
+  // Set to FileListResponse.cursor_id to continue an in-progress listing.
+  // Mutually exclusive with start_page_id: only set one of the two.
+  optional uint32 cursor_id = 1;
+  optional uint32 start_page_id = 2; // 33737
+  optional uint32 max_count = 3; // maximum per FileListResponse, not total max
+  // Exclusion flags? If we omit this, it sends back already synced files going back months.
+  // 0x000000000000a5a5 / 42405 appears to be the "already synced" flag.
+  repeated FileId flags1 = 4;
+  repeated FileId flags2 = 5; // 0x000000000000a5a5 / 42405
+  repeated FileType types = 6;
+  repeated uint32 include_metadata = 7; // 0: include File.timestamp
+}
+
+message FileListResponse {
+  optional uint32 status = 1; // 0 - OK
+  // Present when more items are pending for *this* listing (> 100 items) - send it back
+  // on the next FileListRequest.cursor_id to get the remaining items.
+  // Mutually exclusive with next_page_id: only one of the two is set.
+  optional uint32 cursor_id = 2; // 2 on venu 4, 1 on venu 3
+  optional uint32 next_page_id = 3; // 33737, incrementing
+  repeated File file = 4;
+  optional uint32 unk6 = 6; // 1 on venu 4
+}
+
+message File {
+  optional FileId id = 1;
+  optional FileType type = 2;
+  optional uint64 size = 3;
+  optional uint32 page_id = 5; // 33652, 33653, ... incrementing
+  optional uint32 unk4 = 4; // 0 on venu 4
+  optional uint32 unk6 = 6; // 2 on venu 4
+  optional uint32 timestamp = 7;
+}
+
+message FileId {
+  optional fixed64 id1 = 1;
+  optional fixed64 id2 = 2;
+}
+
+message FileType {
+  optional uint32 code = 1; // 0 fit, 3 binary
+  optional string name = 2;
+  optional uint32 name_id = 3; // 8 monitor 9 sports
+}

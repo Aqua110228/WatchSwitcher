@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.preference.PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <Preference
+        android:icon="@drawable/ic_file_upload"
+        android:key="pref_debug_navigation_send"
+        android:persistent="false"
+        android:title="Send NavigationInfoSpec" />
+
+    <Preference
+        android:icon="@drawable/ic_refresh"
+        android:key="pref_debug_navigation_reset"
+        android:persistent="false"
+        android:title="@string/reset_fields" />
+
+    <PreferenceCategory
+        android:key="pref_debug_header_navigationinfospec"
+        android:title="NavigationInfoSpec"
+        app:iconSpaceReserved="false">
+
+        <EditTextPreference
+            android:defaultValue="Turn left onto Main Street"
+            android:key="pref_debug_navigation_instruction"
+            android:title="instruction"
+            app:iconSpaceReserved="false"
+            app:useSimpleSummaryProvider="true" />
+
+        <ListPreference
+            android:defaultValue="ACTION_TURN_LEFT"
+            android:entries="@array/empty_array"
+            android:entryValues="@array/empty_array"
+            android:key="pref_debug_navigation_nextAction"
+            android:title="nextAction"
+            app:iconSpaceReserved="false"
+            app:useSimpleSummaryProvider="true" />
+
+        <EditTextPreference
+            android:defaultValue="100m"
+            android:key="pref_debug_navigation_distanceToTurn"
+            android:title="distanceToTurn"
+            app:iconSpaceReserved="false"
+            app:useSimpleSummaryProvider="true" />
+
+        <EditTextPreference
+            android:defaultValue="2.5km"
+            android:key="pref_debug_navigation_distanceToTarget"
+            android:title="distanceToTarget"
+            app:iconSpaceReserved="false"
+            app:useSimpleSummaryProvider="true" />
+
+        <EditTextPreference
+            android:defaultValue="600"
+            android:key="pref_debug_navigation_totalTimeToDestination"
+            android:title="totalTimeToDestination"
+            app:iconSpaceReserved="false"
+            app:useSimpleSummaryProvider="true" />
+
+        <EditTextPreference
+            android:key="pref_debug_navigation_eta"
+            android:title="ETA"
+            app:iconSpaceReserved="false"
+            app:useSimpleSummaryProvider="true" />
+
+        <EditTextPreference
+            android:defaultValue="25"
+            android:key="pref_debug_navigation_completionPercent"
+            android:title="completionPercent"
+            app:iconSpaceReserved="false"
+            app:useSimpleSummaryProvider="true" />
+    </PreferenceCategory>
+
+</androidx.preference.PreferenceScreen>

@@ -1,0 +1,24 @@
+syntax = "proto2";
+package xiaomi;
+option java_package = "nodomain.freeyourgadget.gadgetbridge.proto.xiaomi";
+option java_multiple_files = true;
+
+// Data Upload (watchface, notification icons, firmware)
+message DataUpload {
+  // 22, 0
+  optional DataUploadRequest dataUploadRequest = 1;
+  optional DataUploadAck dataUploadAck = 2;
+}
+
+message DataUploadRequest {
+  optional uint32 type = 1; // 16 for watchface, 50 for notification icons, 32 for firmware?
+  optional bytes md5sum = 2;
+  optional uint32 size = 3;
+}
+
+message DataUploadAck {
+  optional bytes md5sum = 1;
+  optional uint32 errno = 2; // upload response status: 0 = ready for normal upload start; non-zero = unexpected/error condition
+  optional uint32 resumePosition = 4;
+  optional uint32 chunkSize = 5; // 4096 on Redmi Watch 3 Active, Nonexistent on Mi Band 8
+}

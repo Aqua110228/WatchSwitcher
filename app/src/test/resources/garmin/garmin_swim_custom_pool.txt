@@ -1,0 +1,5 @@
+[FitFileId{type=WORKOUTS, manufacturer=1, product=65534, serial_number=1, number=1},
+FitFileCreator{software_version=1},
+FitWorkout{sport=5, capabilities=32, num_valid_steps=2, wkt_name=garmin_swim_custom_pool, duration_type=1, duration_value=20000, sub_sport=17, pool_length=22.5, pool_length_unit=0, distance=200.0, distance_flag=0, message_index=0},
+FitWorkoutStep{duration_type=DISTANCE, duration_value=10000, target_type=SWIM_STROKE, target_value=0, intensity=WARMUP, weight_display_unit=KILOGRAM, secondary_target_type=SWIM_STROKE, secondary_target_value=0, message_index=0},
+FitWorkoutStep{duration_type=DISTANCE, duration_value=10000, target_type=SWIM_STROKE, target_value=0, intensity=COOLDOWN, weight_display_unit=KILOGRAM, secondary_target_type=SWIM_STROKE, secondary_target_value=0, message_index=1}]

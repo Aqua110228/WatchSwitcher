@@ -1,0 +1,79 @@
+syntax = "proto2";
+package xiaomi;
+option java_package = "nodomain.freeyourgadget.gadgetbridge.proto.xiaomi";
+option java_multiple_files = true;
+
+message Notification {
+  // 7, 8
+  optional NotificationId openOnPhone = 2;
+  optional Notification2 notification2 = 3;
+  optional NotificationDismiss notificationDismiss = 4;
+
+  optional bool screenOnOnNotifications = 7;
+  optional uint32 unknown8 = 8; // 1 on canned replies request?
+  // 7, 9 get | 7, 12 set
+  optional ReplyMsg cannedMessages = 9;
+
+  // 7, 13
+  optional NotificationReply notificationReply = 12;
+  // 7, 14
+  optional uint32 notificationReplyStatus = 13; // 0 on success, 1 on failure
+
+  // 7, 15
+  optional NotificationIconPackage notificationIconReply = 14;
+  // 7, 15
+  optional NotificationIconRequest notificationIconRequest = 15;
+  // 7, 16
+  optional NotificationIconPackage notificationIconQuery = 16;
+}
+
+message Notification2 {
+  optional Notification3 notification3 = 1;
+}
+
+message Notification3 {
+  optional string package = 1;
+  optional string appName = 2;
+  optional string title = 3;
+  optional string unknown4 = 4;
+  optional string body = 5;
+  optional string timestamp = 6;
+  optional uint32 id = 7;
+  optional bool isCall = 8;
+  optional bool repliesAllowed = 11; // only for calls?
+  optional string key = 12; // "0|<package>|<id 2 complement>|null|12345"
+  optional bool openOnPhone = 13; // 1 to show "Open on phone", needs key
+}
+
+message NotificationDismiss {
+  repeated NotificationId notificationId = 1;
+}
+
+message NotificationId {
+  optional uint32 id = 1;
+  optional string package = 2; // truncated
+  optional string key = 4; // sometimes ""
+}
+
+message ReplyMsg {
+  optional uint32 minReplies = 1;
+  repeated string reply = 2;
+  optional uint32 maxReplies = 3;
+}
+
+message NotificationIconRequest {
+  optional uint32 status = 1; // 0
+  optional uint32 pixelFormat = 2; // see XiaomiBitmapUtils
+  optional uint32 size = 3;
+}
+
+message NotificationReply {
+  optional uint32 unknown1 = 1; // 1
+  optional string message = 2;
+  optional uint32 unknown3 = 3; // 1
+  optional string number = 4;
+}
+
+message NotificationIconPackage {
+  optional string package = 1;
+}

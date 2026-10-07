@@ -1,0 +1,174 @@
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_swipe_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="nodomain.freeyourgadget.gadgetbridge.activities.charts.ActivityChartsActivity">
+
+    <LinearLayout
+        android:id="@+id/charts_main_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/tab_bar_bg"
+            android:paddingTop="6dp"
+            android:paddingBottom="6dp">
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/charts_pagerTabStrip"
+                style="@style/Widget.App.TabLayout.Pill"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:background="@null"
+                android:layout_gravity="top" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <androidx.viewpager2.widget.ViewPager2
+                android:id="@+id/charts_pager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context="nodomain.freeyourgadget.gadgetbridge.activities.charts.ActivityChartsActivity">
+            </androidx.viewpager2.widget.ViewPager2>
+
+            <View
+                android:id="@+id/charts_tab_shade"
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:background="?attr/bar_shade"
+                android:visibility="gone" />
+
+            <View
+                android:id="@+id/charts_date_bar_shade"
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:layout_gravity="bottom"
+                android:rotation="180"
+                android:background="?attr/bar_shade"
+                android:visibility="gone" />
+        </FrameLayout>
+
+        <ProgressBar
+            android:id="@+id/loading_progressbar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="-8dp"
+            android:layout_marginTop="-4dp"
+            android:layout_gravity="center_horizontal"
+            android:indeterminate="true"
+            android:indeterminateOnly="true"
+            android:visibility="invisible" />
+
+    <LinearLayout
+        android:id="@+id/charts_date_bar"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingHorizontal="8dp"
+        android:background="?attr/datestep_row_bg">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/charts_previous_month"
+            style="@style/Widget.App.DateStep.Primary"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            app:cornerRadius="15dp"
+            app:iconSize="14dp"
+            android:textSize="10sp"
+            android:text="@string/datestep_letter_month"
+            app:icon="@drawable/ic_chevron_3"
+            android:contentDescription="@string/datestep_prev_month"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/charts_previous_week"
+            style="@style/Widget.App.DateStep.Primary"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            app:cornerRadius="15dp"
+            app:iconSize="14dp"
+            android:textSize="10sp"
+            android:layout_marginStart="3dp"
+            android:text="@string/datestep_letter_week"
+            app:icon="@drawable/ic_chevron_2"
+            android:contentDescription="@string/datestep_prev_week"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/charts_previous_day"
+            style="@style/Widget.App.DateStep.Primary"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            app:cornerRadius="15dp"
+            app:iconSize="14dp"
+            android:textSize="10sp"
+            android:layout_marginStart="3dp"
+            android:text="@string/datestep_letter_day"
+            app:icon="@drawable/ic_chevron_1"
+            android:contentDescription="@string/datestep_prev_day"/>
+
+        <TextView
+            android:id="@+id/charts_text_date"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:maxLines="2"
+            android:lineSpacingMultiplier="0.95"
+            android:ellipsize="end"
+            android:textAppearance="@style/TextAppearance.App.DateLabel"
+            app:autoSizeTextType="uniform"
+            app:autoSizeMinTextSize="10sp"
+            app:autoSizeMaxTextSize="13sp"
+            app:autoSizeStepGranularity="1sp"
+            android:text="@string/stats_empty_value" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/charts_next_day"
+            style="@style/Widget.App.DateStep.Primary.End"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            app:cornerRadius="15dp"
+            app:iconSize="14dp"
+            android:textSize="10sp"
+            android:text="@string/datestep_letter_day"
+            app:icon="@drawable/ic_chevron_1_right"
+            android:contentDescription="@string/datestep_next_day"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/charts_next_week"
+            style="@style/Widget.App.DateStep.Primary.End"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            app:cornerRadius="15dp"
+            app:iconSize="14dp"
+            android:textSize="10sp"
+            android:layout_marginStart="3dp"
+            android:text="@string/datestep_letter_week"
+            app:icon="@drawable/ic_chevron_2_right"
+            android:contentDescription="@string/datestep_next_week"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/charts_next_month"
+            style="@style/Widget.App.DateStep.Primary.End"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            app:cornerRadius="15dp"
+            app:iconSize="14dp"
+            android:textSize="10sp"
+            android:layout_marginStart="3dp"
+            android:text="@string/datestep_letter_month"
+            app:icon="@drawable/ic_chevron_3_right"
+            android:contentDescription="@string/datestep_next_month"/>
+    </LinearLayout>
+    </LinearLayout>
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

@@ -1,0 +1,946 @@
+{
+  "sportType": 52,
+  "templateId": 1790193217001018,
+  "templateName": "exercises_020",
+  "intervals": [
+    {
+      "index": 0,
+      "trainingType": 0,
+      "intervalType": 8,
+      "intervalVal": -1,
+      "remindType": 0,
+      "remindUpThreshold": 0,
+      "remindDownThreshold": 0,
+      "groupId": 0,
+      "loopTimes": 1,
+      "lengthUnit": 0,
+      "intervalDesc": "",
+      "strengthWeight": "0-0",
+      "actionType": 0,
+      "actionName": "",
+      "selfWeightType": 0,
+      "mainPositions": [],
+      "subPositions": []
+    },
+    {
+      "index": 1,
+      "trainingType": 1,
+      "intervalType": 8,
+      "intervalVal": 0,
+      "remindType": 0,
+      "remindUpThreshold": 0,
+      "remindDownThreshold": 0,
+      "groupId": 1,
+      "loopTimes": 1,
+      "lengthUnit": 0,
+      "intervalDesc": "",
+      "strengthWeight": "0-0",
+      "actionType": 0,
+      "actionName": "",
+      "selfWeightType": 0,
+      "mainPositions": [],
+      "subPositions": []
+    },
+    {
+      "index": 2,
+      "trainingType": 4,
+      "intervalType": 8,
+      "intervalVal": -1,
+      "remindType": 0,
+      "remindUpThreshold": 0,
+      "remindDownThreshold": 0,
+      "groupId": 2,
+      "loopTimes": 1,
+      "lengthUnit": 0,
+      "intervalDesc": "",
+      "strengthWeight": "0-0",
+      "actionType": 0,
+      "actionName": "",
+      "selfWeightType": 0,
+      "mainPositions": [],
+      "subPositions": []
+    },
+    {
+      "index": 3,
+      "trainingType": 1,
+      "intervalType": 8,
+      "intervalVal": 0,
+      "remindType": 0,
+      "remindUpThreshold": 0,
+      "remindDownThreshold": 0,
+      "groupId": 3,
+      "loopTimes": 1,
+      "lengthUnit": 0,
+      "intervalDesc": "",
+      "strengthWeight": "0-1",
+      "actionType": 1902,
+      "actionName": "Bent Over Reverse Grip Dumbbell Row",
+      "selfWeightType": 0,
+      "mainPositions": [
+        34,
+        35
+      ],
+      "subPositions": [
+        19,
+        20
+      ]
+    },
+    {
+      "index": 4,
+      "trainingType": 1,
+      "intervalType": 8,
+      "intervalVal": 0,
+      "remindType": 0,
+      "remindUpThreshold": 0,
+      "remindDownThreshold": 0,
+      "groupId": 4,
+      "loopTimes": 1,
+      "lengthUnit": 0,
+      "intervalDesc": "",
+      "strengthWeight": "0-1",
+      "actionType": 1892,
+      "actionName": "Bent Over TW-Stretch",
+      "selfWeightType": 0,
+      "mainPositions": [
+        34,
+        35
+      ],
+      "subPositions": [
+        19,
+        20
+      ]
+    },
+    {
+      "index": 5,
+      "trainingType": 1,
+      "intervalType": 8,
+      "intervalVal": 0,
+      "remindType": 0,
+      "remindUpThreshold": 0,
+      "remindDownThreshold": 0,
+      "groupId": 5,
+      "loopTimes": 1,
+      "lengthUnit": 0,
+      "intervalDesc": "",
+      "strengthWeight": "0-1",
+      "actionType": 1907,
+      "actionName": "Bent Over Upper Back Stretch",
+      "selfWeightType": 0,
+      "mainPositions": [
+        34,
+        35
+      ],
+      "subPositions": [
+        19,
+        20
+      ]
+    },
+    {
+      "index": 6,
+      "trainingType": 1,
+      "intervalType": 8,
+      "intervalVal": 0,
+      "remindType": 0,
+      "remindUpThreshold": 0,
+      "remindDownThreshold": 0,
+      "groupId": 6,
+      "loopTimes": 1,
+      "lengthUnit": 0,
+      "intervalDesc": "",
+      "strengthWeight": "0-1",
+      "actionType": 1910,
+      "actionName": "Bent Over Dumbbell External Rotation Row",
+      "selfWeightType": 0,
+      "mainPositions": [
+        34,
+        35
+      ],
+      "subPositions": [
+        19,
+        20
+      ]
+    },
+    {
+      "index": 7,
+      "trainingType": 1,
+      "intervalType": 8,
+      "intervalVal": 0,
+      "remindType": 0,
+      "remindUpThreshold": 0,
+      "remindDownThreshold": 0,
+      "groupId": 7,
+      "loopTimes": 1,
+      "lengthUnit": 0,
+      "intervalDesc": "",
+      "strengthWeight": "0-1",
+      "actionType": 1912,
+      "actionName": "Bent Over YT-Stretch",
+      "selfWeightType": 0,
+      "mainPositions": [
+        34,
+        35
+      ],
+      "subPositions": [
+        34,
+        35,
+        19,
+        20
+      ]
+    },
+    {
+      "index": 8,
+      "trainingType": 1,
+      "intervalType": 8,
+      "intervalVal": 0,
+      "remindType": 0,
+      "remindUpThreshold": 0,
+      "remindDownThreshold": 0,
+      "groupId": 8,
+      "loopTimes": 1,
+      "lengthUnit": 0,
+      "intervalDesc": "",
+      "strengthWeight": "0-1",
+      "actionType": 1915,
+      "actionName": "Bent Over YTW-Stretch",
+      "selfWeightType": 0,
+      "mainPositions": [
+        34,
+        35
+      ],
+      "subPositions": [
+        34,
+        35,
+        19,
+        20
+      ]
+    },
+    {
+      "index": 9,
+      "trainingType": 1,
+      "intervalType": 8,
+      "intervalVal": 0,
+      "remindType": 0,
+      "remindUpThreshold": 0,
+      "remindDownThreshold": 0,
+      "groupId": 9,
+      "loopTimes": 1,
+      "lengthUnit": 0,
+      "intervalDesc": "",
+      "strengthWeight": "0-1",
+      "actionType": 1919,
+      "actionName": "Bent Over Left Single Arm Resistance Band Row",
+      "selfWeightType": 0,
+      "mainPositions": [
+        34
+      ],
+      "subPositions": [
+        19
+      ]
+    },
+    {
+      "index": 10,
+      "trainingType": 1,
+      "intervalType": 8,
+      "intervalVal": 0,
+      "remindType": 0,
+      "remindUpThreshold": 0,
+      "remindDownThreshold": 0,
+      "groupId": 10,
+      "loopTimes": 1,
+      "lengthUnit": 0,
+      "intervalDesc": "",
+      "strengthWeight": "0-1",
+      "actionType": 1924,
+      "actionName": "Bent Over Right Single Arm Resistance Band Row",
+      "selfWeightType": 0,
+      "mainPositions": [
+        35
+      ],
+      "subPositions": [
+        20
+      ]
+    },
+    {
+      "index": 11,
+      "trainingType": 1,
+      "intervalType": 8,
+      "intervalVal": 0,
+      "remindType": 0,
+      "remindUpThreshold": 0,
+      "remindDownThreshold": 0,
+      "groupId": 11,
+      "loopTimes": 1,
+      "lengthUnit": 0,
+      "intervalDesc": "",
+      "strengthWeight": "0-1",
+      "actionType": 1930,
+      "actionName": "Behind the Back Barbell Shrug",
+      "selfWeightType": 0,
+      "mainPositions": [
+        34,
+        35
+      ],
+      "subPositions": []
+    },
+    {
+      "index": 12,
+      "trainingType": 1,
+      "intervalType": 8,
+      "intervalVal": 0,
+      "remindType": 0,
+      "remindUpThreshold": 0,
+      "remindDownThreshold": 0,
+      "groupId": 12,
+      "loopTimes": 1,
+      "lengthUnit": 0,
+      "intervalDesc": "",
+      "strengthWeight": "0-1",
+      "actionType": 1936,
+      "actionName": "Bent Over Left Resistance Band Row",
+      "selfWeightType": 0,
+      "mainPositions": [
+        34
+      ],
+      "subPositions": [
+        19
+      ]
+    },
+    {
+      "index": 13,
+      "trainingType": 1,
+      "intervalType": 8,
+      "intervalVal": 0,
+      "remindType": 0,
+      "remindUpThreshold": 0,
+      "remindDownThreshold": 0,
+      "groupId": 13,
+      "loopTimes": 1,
+      "lengthUnit": 0,
+      "intervalDesc": "",
+      "strengthWeight": "0-1",
+      "actionType": 1943,
+      "actionName": "Bent Over YA-Stretch",
+      "selfWeightType": 0,
+      "mainPositions": [
+        34,
+        35
+      ],
+      "subPositions": [
+        34,
+        35,
+        19,
+        20
+      ]
+    },
+    {
+      "index": 14,
+      "trainingType": 1,
+      "intervalType": 8,
+      "intervalVal": 0,
+      "remindType": 0,
+      "remindUpThreshold": 0,
+      "remindDownThreshold": 0,
+      "groupId": 14,
+      "loopTimes": 1,
+      "lengthUnit": 0,
+      "intervalDesc": "",
+      "strengthWeight": "0-1",
+      "actionType": 1946,
+      "actionName": "Bent Over Dynamic Back Stretch",
+      "selfWeightType": 0,
+      "mainPositions": [
+        19,
+        20
+      ],
+      "subPositions": []
+    },
+    {
+      "index": 15,
+      "trainingType": 1,
+      "intervalType": 8,
+      "intervalVal": 0,
+      "remindType": 0,
+      "remindUpThreshold": 0,
+      "remindDownThreshold": 0,
+      "groupId": 15,
+      "loopTimes": 1,
+      "lengthUnit": 0,
+      "intervalDesc": "",
+      "strengthWeight": "0-1",
+      "actionType": 1950,
+      "actionName": "Bent Over Wide Grip Barbell Row",
+      "selfWeightType": 0,
+      "mainPositions": [
+        19,
+        20
+      ],
+      "subPositions": []
+    },
+    {
+      "index": 16,
+      "trainingType": 1,
+      "intervalType": 8,
+      "intervalVal": 0,
+      "remindType": 0,
+      "remindUpThreshold": 0,
+      "remindDownThreshold": 0,
+      "groupId": 16,
+      "loopTimes": 1,
+      "lengthUnit": 0,
+      "intervalDesc": "",
+      "strengthWeight": "0-5",
+      "actionType": 75,
+      "actionName": "Chin-up",
+      "selfWeightType": 1,
+      "mainPositions": [
+        19,
+        20
+      ],
+      "subPositions": [
+        10,
+        11,
+        34,
+        35
+      ]
+    },
+    {
+      "index": 17,
+      "trainingType": 1,
+      "intervalType": 8,
+      "intervalVal": 0,
+      "remindType": 0,
+      "remindUpThreshold": 0,
+      "remindDownThreshold": 0,
+      "groupId": 17,
+      "loopTimes": 1,
+      "lengthUnit": 0,
+      "intervalDesc": "",
+      "strengthWeight": "0-5",
+      "actionType": 1921,
+      "actionName": "Chair Supported Shoulder Shrug",
+      "selfWeightType": 1,
+      "mainPositions": [
+        34,
+        35
+      ],
+      "subPositions": [
+        34,
+        35
+      ]
+    },
+    {
+      "index": 18,
+      "trainingType": 1,
+      "intervalType": 8,
+      "intervalVal": 0,
+      "remindType": 0,
+      "remindUpThreshold": 0,
+      "remindDownThreshold": 0,
+      "groupId": 18,
+      "loopTimes": 1,
+      "lengthUnit": 0,
+      "intervalDesc": "",
+      "strengthWeight": "0-1",
+      "actionType": 102,
+      "actionName": "Dumbbell Shrug",
+      "selfWeightType": 0,
+      "mainPositions": [
+        34,
+        35
+      ],
+      "subPositions": []
+    },
+    {
+      "index": 19,
+      "trainingType": 1,
+      "intervalType": 8,
+      "intervalVal": 0,
+      "remindType": 0,
+      "remindUpThreshold": 0,
+      "remindDownThreshold": 0,
+      "groupId": 19,
+      "loopTimes": 1,
+      "lengthUnit": 0,
+      "intervalDesc": "",
+      "strengthWeight": "0-1",
+      "actionType": 1317,
+      "actionName": "Dumbbell Row Deadlift",
+      "selfWeightType": 0,
+      "mainPositions": [
+        28,
+        29
+      ],
+      "subPositions": [
+        19,
+        20,
+        26,
+        27
+      ]
+    },
+    {
+      "index": 20,
+      "trainingType": 1,
+      "intervalType": 8,
+      "intervalVal": 0,
+      "remindType": 0,
+      "remindUpThreshold": 0,
+      "remindDownThreshold": 0,
+      "groupId": 20,
+      "loopTimes": 1,
+      "lengthUnit": 0,
+      "intervalDesc": "",
+      "strengthWeight": "0-1",
+      "actionType": 1098,
+      "actionName": "Exercise Ball Back Extension",
+      "selfWeightType": 0,
+      "mainPositions": [
+        34,
+        35,
+        36,
+        37
+      ],
+      "subPositions": []
+    },
+    {
+      "index": 21,
+      "trainingType": 1,
+      "intervalType": 8,
+      "intervalVal": 0,
+      "remindType": 0,
+      "remindUpThreshold": 0,
+      "remindDownThreshold": 0,
+      "groupId": 21,
+      "loopTimes": 1,
+      "lengthUnit": 0,
+      "intervalDesc": "",
+      "strengthWeight": "0-1",
+      "actionType": 1241,
+      "actionName": "Eccentric Pull-Up",
+      "selfWeightType": 0,
+      "mainPositions": [
+        19,
+        20
+      ],
+      "subPositions": [
+        10,
+        11,
+        34,
+        35
+      ]
+    },
+    {
+      "index": 22,
+      "trainingType": 1,
+      "intervalType": 8,
+      "intervalVal": 0,
+      "remindType": 0,
+      "remindUpThreshold": 0,
+      "remindDownThreshold": 0,
+      "groupId": 22,
+      "loopTimes": 1,
+      "lengthUnit": 0,
+      "intervalDesc": "",
+      "strengthWeight": "0-1",
+      "actionType": 1067,
+      "actionName": "Foam Roller Lower Back Relaxation",
+      "selfWeightType": 0,
+      "mainPositions": [
+        34,
+        35,
+        36,
+        37
+      ],
+      "subPositions": []
+    },
+    {
+      "index": 23,
+      "trainingType": 1,
+      "intervalType": 8,
+      "intervalVal": 0,
+      "remindType": 0,
+      "remindUpThreshold": 0,
+      "remindDownThreshold": 0,
+      "groupId": 23,
+      "loopTimes": 1,
+      "lengthUnit": 0,
+      "intervalDesc": "",
+      "strengthWeight": "0-1",
+      "actionType": 1070,
+      "actionName": "Fascia Ball Left Side Waist Relaxation",
+      "selfWeightType": 0,
+      "mainPositions": [
+        34,
+        36
+      ],
+      "subPositions": []
+    },
+    {
+      "index": 24,
+      "trainingType": 1,
+      "intervalType": 8,
+      "intervalVal": 0,
+      "remindType": 0,
+      "remindUpThreshold": 0,
+      "remindDownThreshold": 0,
+      "groupId": 24,
+      "loopTimes": 1,
+      "lengthUnit": 0,
+      "intervalDesc": "",
+      "strengthWeight": "0-1",
+      "actionType": 1083,
+      "actionName": "Fascia Ball Right Side Waist Relaxation",
+      "selfWeightType": 0,
+      "mainPositions": [
+        35,
+        37
+      ],
+      "subPositions": []
+    },
+    {
+      "index": 25,
+      "trainingType": 1,
+      "intervalType": 8,
+      "intervalVal": 0,
+      "remindType": 0,
+      "remindUpThreshold": 0,
+      "remindDownThreshold": 0,
+      "groupId": 25,
+      "loopTimes": 1,
+      "lengthUnit": 0,
+      "intervalDesc": "",
+      "strengthWeight": "0-1",
+      "actionType": 1909,
+      "actionName": "Foam Roller Upper Back Release",
+      "selfWeightType": 0,
+      "mainPositions": [
+        19,
+        20
+      ],
+      "subPositions": [
+        34,
+        35
+      ]
+    },
+    {
+      "index": 26,
+      "trainingType": 1,
+      "intervalType": 8,
+      "intervalVal": 0,
+      "remindType": 0,
+      "remindUpThreshold": 0,
+      "remindDownThreshold": 0,
+      "groupId": 26,
+      "loopTimes": 1,
+      "lengthUnit": 0,
+      "intervalDesc": "",
+      "strengthWeight": "0-1",
+      "actionType": 1934,
+      "actionName": "Foam Roller Left Back Release",
+      "selfWeightType": 0,
+      "mainPositions": [
+        19
+      ],
+      "subPositions": []
+    },
+    {
+      "index": 27,
+      "trainingType": 1,
+      "intervalType": 8,
+      "intervalVal": 0,
+      "remindType": 0,
+      "remindUpThreshold": 0,
+      "remindDownThreshold": 0,
+      "groupId": 27,
+      "loopTimes": 1,
+      "lengthUnit": 0,
+      "intervalDesc": "",
+      "strengthWeight": "0-1",
+      "actionType": 1937,
+      "actionName": "Foam Roller Right Back Release",
+      "selfWeightType": 0,
+      "mainPositions": [
+        20
+      ],
+      "subPositions": []
+    },
+    {
+      "index": 28,
+      "trainingType": 1,
+      "intervalType": 8,
+      "intervalVal": 0,
+      "remindType": 0,
+      "remindUpThreshold": 0,
+      "remindDownThreshold": 0,
+      "groupId": 28,
+      "loopTimes": 1,
+      "lengthUnit": 0,
+      "intervalDesc": "",
+      "strengthWeight": "0-1",
+      "actionType": 16,
+      "actionName": "Incline Dumbbell Row",
+      "selfWeightType": 0,
+      "mainPositions": [
+        19,
+        20
+      ],
+      "subPositions": [
+        10,
+        11
+      ]
+    },
+    {
+      "index": 29,
+      "trainingType": 1,
+      "intervalType": 8,
+      "intervalVal": 0,
+      "remindType": 0,
+      "remindUpThreshold": 0,
+      "remindDownThreshold": 0,
+      "groupId": 29,
+      "loopTimes": 1,
+      "lengthUnit": 0,
+      "intervalDesc": "",
+      "strengthWeight": "0-1",
+      "actionType": 1939,
+      "actionName": "Incline Bent Over Dumbbell Row",
+      "selfWeightType": 0,
+      "mainPositions": [
+        34,
+        35
+      ],
+      "subPositions": [
+        19,
+        20
+      ]
+    },
+    {
+      "index": 30,
+      "trainingType": 1,
+      "intervalType": 8,
+      "intervalVal": 0,
+      "remindType": 0,
+      "remindUpThreshold": 0,
+      "remindDownThreshold": 0,
+      "groupId": 30,
+      "loopTimes": 1,
+      "lengthUnit": 0,
+      "intervalDesc": "",
+      "strengthWeight": "0-1",
+      "actionType": 1948,
+      "actionName": "Incline Prone Dumbbell Shrug",
+      "selfWeightType": 0,
+      "mainPositions": [
+        34,
+        35
+      ],
+      "subPositions": []
+    },
+    {
+      "index": 31,
+      "trainingType": 1,
+      "intervalType": 8,
+      "intervalVal": 0,
+      "remindType": 0,
+      "remindUpThreshold": 0,
+      "remindDownThreshold": 0,
+      "groupId": 31,
+      "loopTimes": 1,
+      "lengthUnit": 0,
+      "intervalDesc": "",
+      "strengthWeight": "0-1",
+      "actionType": 1012,
+      "actionName": "Kneeling Back Stretch",
+      "selfWeightType": 0,
+      "mainPositions": [
+        34,
+        35,
+        36,
+        37
+      ],
+      "subPositions": [
+        19,
+        20
+      ]
+    },
+    {
+      "index": 32,
+      "trainingType": 1,
+      "intervalType": 8,
+      "intervalVal": 0,
+      "remindType": 0,
+      "remindUpThreshold": 0,
+      "remindDownThreshold": 0,
+      "groupId": 32,
+      "loopTimes": 1,
+      "lengthUnit": 0,
+      "intervalDesc": "",
+      "strengthWeight": "0-1",
+      "actionType": 1897,
+      "actionName": "Kneeling Right Back Stretch",
+      "selfWeightType": 0,
+      "mainPositions": [
+        35
+      ],
+      "subPositions": [
+        20
+      ]
+    },
+    {
+      "index": 33,
+      "trainingType": 1,
+      "intervalType": 8,
+      "intervalVal": 0,
+      "remindType": 0,
+      "remindUpThreshold": 0,
+      "remindDownThreshold": 0,
+      "groupId": 33,
+      "loopTimes": 1,
+      "lengthUnit": 0,
+      "intervalDesc": "",
+      "strengthWeight": "0-1",
+      "actionType": 1904,
+      "actionName": "Kneeling Left Back Stretch",
+      "selfWeightType": 0,
+      "mainPositions": [
+        34
+      ],
+      "subPositions": [
+        19
+      ]
+    },
+    {
+      "index": 34,
+      "trainingType": 1,
+      "intervalType": 8,
+      "intervalVal": 0,
+      "remindType": 0,
+      "remindUpThreshold": 0,
+      "remindDownThreshold": 0,
+      "groupId": 34,
+      "loopTimes": 1,
+      "lengthUnit": 0,
+      "intervalDesc": "",
+      "strengthWeight": "0-1",
+      "actionType": 47,
+      "actionName": "lateral Back Muscles",
+      "selfWeightType": 0,
+      "mainPositions": [
+        19,
+        20
+      ],
+      "subPositions": []
+    },
+    {
+      "index": 35,
+      "trainingType": 1,
+      "intervalType": 8,
+      "intervalVal": 0,
+      "remindType": 0,
+      "remindUpThreshold": 0,
+      "remindDownThreshold": 0,
+      "groupId": 35,
+      "loopTimes": 1,
+      "lengthUnit": 0,
+      "intervalDesc": "",
+      "strengthWeight": "0-1",
+      "actionType": 1037,
+      "actionName": "Lower Back Dynamic Stretch",
+      "selfWeightType": 0,
+      "mainPositions": [
+        34,
+        35,
+        36,
+        37
+      ],
+      "subPositions": []
+    },
+    {
+      "index": 36,
+      "trainingType": 1,
+      "intervalType": 8,
+      "intervalVal": 0,
+      "remindType": 0,
+      "remindUpThreshold": 0,
+      "remindDownThreshold": 0,
+      "groupId": 36,
+      "loopTimes": 1,
+      "lengthUnit": 0,
+      "intervalDesc": "",
+      "strengthWeight": "0-1",
+      "actionType": 1863,
+      "actionName": "Left Neck Stretch",
+      "selfWeightType": 0,
+      "mainPositions": [
+        34
+      ],
+      "subPositions": []
+    },
+    {
+      "index": 37,
+      "trainingType": 1,
+      "intervalType": 8,
+      "intervalVal": 0,
+      "remindType": 0,
+      "remindUpThreshold": 0,
+      "remindDownThreshold": 0,
+      "groupId": 37,
+      "loopTimes": 1,
+      "lengthUnit": 0,
+      "intervalDesc": "",
+      "strengthWeight": "0-1",
+      "actionType": 1960,
+      "actionName": "Left Resistance Band Shrug",
+      "selfWeightType": 0,
+      "mainPositions": [
+        34
+      ],
+      "subPositions": []
+    },
+    {
+      "index": 38,
+      "trainingType": 1,
+      "intervalType": 8,
+      "intervalVal": 0,
+      "remindType": 0,
+      "remindUpThreshold": 0,
+      "remindDownThreshold": 0,
+      "groupId": 38,
+      "loopTimes": 1,
+      "lengthUnit": 0,
+      "intervalDesc": "",
+      "strengthWeight": "0-1",
+      "actionType": 1085,
+      "actionName": "Massage Stick Waist Relaxation",
+      "selfWeightType": 0,
+      "mainPositions": [
+        34,
+        35,
+        36,
+        37
+      ],
+      "subPositions": []
+    },
+    {
+      "index": 39,
+      "trainingType": 1,
+      "intervalType": 8,
+      "intervalVal": 0,
+      "remindType": 0,
+      "remindUpThreshold": 0,
+      "remindDownThreshold": 0,
+      "groupId": 39,
+      "loopTimes": 1,
+      "lengthUnit": 0,
+      "intervalDesc": "",
+      "strengthWeight": "0-1",
+      "actionType": 74,
+      "actionName": "Neck Pulldown",
+      "selfWeightType": 0,
+      "mainPositions": [
+        19,
+        20
+      ],
+      "subPositions": []
+    }
+  ]
+}

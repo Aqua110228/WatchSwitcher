@@ -1,0 +1,25 @@
+syntax = "proto2";
+package xiaomi;
+option java_package = "nodomain.freeyourgadget.gadgetbridge.proto.xiaomi";
+option java_multiple_files = true;
+
+message Music {
+  // 18, 1
+  optional MusicInfo musicInfo = 1;
+  // 18, 2
+  optional MediaKey mediaKey = 2;
+}
+
+message MusicInfo {
+  required uint32 state = 1; // 0 not playing, 1 playing, 2 paused
+  optional uint32 volume = 2;
+  optional string track = 4;
+  optional string artist = 5;
+  optional uint32 position = 6;
+  optional uint32 duration = 7;
+}
+
+message MediaKey {
+  required uint32 key = 1; // 0 play, 1 pause, 3 prev, 4 next, 5 vol
+  optional uint32 volume = 2; // 100 vol+, 0 vol-
+}

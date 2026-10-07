@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:context="nodomain.freeyourgadget.gadgetbridge.activities.charts.ActivityChartsActivity$PlaceholderFragment">
+
+        <TextView
+            android:id="@+id/stress_dates"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textColor="?attr/textColorPrimary"
+            android:layout_marginTop="15dp" />
+
+        <com.github.mikephil.charting.charts.PieChart
+            android:id="@+id/stress_pie_chart"
+            android:layout_width="fill_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="@dimen/chart_section_spacing"
+            android:layout_marginBottom="@dimen/chart_section_spacing" />
+
+        <LinearLayout
+            android:id="@+id/stress_stats_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:orientation="vertical" />
+
+        <com.github.mikephil.charting.charts.BarChart
+            android:id="@+id/weekstresschart"
+            android:layout_width="fill_parent"
+            android:layout_height="350dp"
+            android:layout_marginTop="@dimen/chart_section_spacing" />
+
+    </LinearLayout>
+</ScrollView>

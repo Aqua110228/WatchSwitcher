@@ -1,0 +1,81 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="nodomain.freeyourgadget.gadgetbridge.activities.charts.TrainingReadinessFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/training_readiness_date_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textColor="?attr/textColorPrimary"
+            android:layout_marginTop="15dp" />
+
+        <TextView
+            android:id="@+id/training_readiness_last_updated"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="12sp"
+            android:layout_marginTop="4dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="@dimen/chart_section_spacing"
+            android:layout_marginBottom="@dimen/chart_section_spacing">
+
+            <ImageView
+                android:id="@+id/training_readiness_gauge_bar"
+                android:layout_width="150dp"
+                android:layout_height="75dp"
+                android:layout_centerHorizontal="true"
+                android:scaleType="fitStart" />
+
+            <TextView
+                android:id="@+id/training_readiness_gauge_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="28dp"
+                android:text="@string/stats_empty_value"
+                android:textColor="?attr/textColorPrimary"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/training_readiness_gauge_zone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/training_readiness_gauge_value"
+                android:layout_centerHorizontal="true"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/training_readiness_zone_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginBottom="15dp" />
+
+        <LinearLayout
+            android:id="@+id/training_readiness_stats_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:orientation="vertical" />
+
+    </LinearLayout>
+</ScrollView>

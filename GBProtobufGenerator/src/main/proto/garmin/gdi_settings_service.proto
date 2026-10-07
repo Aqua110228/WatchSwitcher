@@ -1,0 +1,668 @@
+syntax = "proto2";
+
+package garmin_vivomovehr;
+
+option java_package = "nodomain.freeyourgadget.gadgetbridge.proto.garmin.GdiSettingsService";
+option java_multiple_files = true;
+
+message SettingsService {
+  optional ScreenDefinitionRequest definitionRequest = 1;
+  optional ScreenDefinitionResponse definitionResponse = 2;
+
+  optional ScreenStateRequest stateRequest = 3;
+  optional ScreenStateResponse stateResponse = 4;
+
+  optional ChangeRequest changeRequest = 5;
+  optional ChangeResponse changeResponse = 6;
+
+  optional ChangeNotification changeNotification = 7;
+
+  optional InitRequest initRequest = 8;
+  optional InitResponse initResponse = 9;
+
+  optional Message11 unk11 = 11;
+  optional Message13 unk13 = 13;
+
+  message Message11 {
+    optional uint32 unk1 = 1;
+  }
+
+  message Message13 {
+  }
+}
+
+message ScreenDefinitionRequest {
+  optional uint32 screenId = 1;
+  optional uint32 unk2 = 2; // 0
+  optional string locale = 3; // en_US
+}
+
+message ScreenDefinitionResponse {
+  optional uint32 status = 1; // 0 = success, 2 = fail
+  optional ScreenDefinition definition = 2;
+}
+
+message ScreenDefinition {
+  optional uint32 screenId = 1;
+  optional uint32 unk2 = 2; // 0
+  optional uint32 unk3 = 3; // 928002
+  optional Label title = 4;
+  repeated ScreenEntry entry = 5;
+  repeated MenuEntry menu_entry = 6;
+}
+
+message Label {
+  optional string id = 1;
+  optional string text = 2;
+  repeated string unk3 = 3;
+  repeated bytes unk4 = 4;
+}
+
+message ScreenEntry {
+  message Message6 {
+    optional uint32 unk1 = 1;
+    optional string unk2 = 2;
+    optional uint32 unk3 = 3;
+  }
+  message Message7 {
+
+  }
+  message Message8 {
+  }
+
+  message Action {
+    optional MenuMessage unk1 = 1;
+  }
+  message Message14 {
+    optional uint32 unk1 = 1;
+    optional uint32 unk2 = 2;
+    optional uint32 unk3 = 3;
+    optional uint32 unk4 = 4;
+  }
+  message Message15 {
+    optional Label unk1 = 1;
+    optional Label unk2 = 2;
+  }
+  message Message18 {
+    optional uint32 unk1 = 1;
+    optional uint32 unk2 = 2;
+  }
+  optional uint32 id = 1;
+  optional RowType rowType = 2;
+  optional Label title = 3;
+  optional uint32 unk4 = 4;
+  optional Icon icon = 5;
+  optional Message6 unk6 = 6;
+  optional Message7 unk7 = 7;
+  optional Message8 unk8 = 8;
+  optional Target target = 9;
+  optional Action action = 10;
+  optional Icon iconRight = 11;
+  optional SortOptions sortOptions = 12;
+  optional TextOption textOption = 13;
+  optional Message14 unk14 = 14;
+  optional Message15 unk15 = 15; // info text if nothing can be set?
+  optional Icon iconLeft = 17;
+  optional Message18 unk18 = 18;
+}
+
+message SortOptions {
+  optional uint32 unk3 = 3; // 1
+  repeated SortEntry entries = 5;
+}
+
+message SortEntry {
+  message Message6 {
+      optional uint32 unk1 = 1;
+      optional uint32 unk2 = 2;
+  }
+  optional uint32 id = 1;
+  optional Label title = 2;
+  optional uint32 unk5 = 5; // 1
+  optional Message6 unk6 = 6;
+}
+
+message TextOption {
+  enum Keyboard {
+      ALPHANUMERIC = 0;
+      INTEGER = 1;
+      FLOAT = 2;
+  }
+  optional TextLimits limits = 1;
+  optional Keyboard keyboard = 2;
+  optional IntegerLimits integerLimits = 3;
+}
+
+message TextLimits {
+  optional uint32 maxLength = 1;
+}
+
+message IntegerLimits {
+    optional int32 minValue = 1;
+    optional int32 maxValue = 2;
+}
+
+message FloatLimits {
+    optional float minValue = 1;
+    optional float maxValue = 2;
+    optional int32 precision = 3;
+}
+
+message Target {
+    enum Activity {
+        ACTIVITY_UNK_0 = 0;
+        ACTIVITY_WIFI_SETUP = 1;
+        ACTIVITY_GARMIN_PAY = 2;
+        ACTIVITY_UNK_3 = 3;
+        ACTIVITY_UNK_4 = 4;
+        ACTIVITY_UNK_5 = 5;
+        ACTIVITY_UNK_6 = 6;
+        ACTIVITY_TEXT_RESPONSE = 7;
+        ACTIVITY_MUSIC_PROVIDERS = 8;
+        ACTIVITY_SAFETY_SETUP = 9;
+        ACTIVITY_STRIDE_LENGTH = 10;
+        ACTIVITY_UNK_11 = 11;
+        ACTIVITY_UNK_12 = 12;
+        ACTIVITY_GOAL_STEPS = 13;
+        ACTIVITY_GOAL_FLOORS = 14;
+        ACTIVITY_GOAL_MINUTES = 15;
+        ACTIVITY_LIVE_TRACK = 16;
+        ACTIVITY_SOLAR_INTENSITY = 17;
+        ACTIVITY_UNK_18 = 18;
+        ACTIVITY_UNK_19 = 19;
+        ACTIVITY_UNK_20 = 20;
+        ACTIVITY_UNK_21 = 21;
+        ACTIVITY_UNK_22 = 22;
+        ACTIVITY_UNK_23 = 23;
+        ACTIVITY_UNK_24 = 24;
+        ACTIVITY_BACKUPS = 25;
+        ACTIVITY_UNK_26 = 26;
+        ACTIVITY_UNK_27 = 27;
+        ACTIVITY_LIVE_EVENT_SHARING = 28;
+        ACTIVITY_ECG_SETUP = 29;
+        ACTIVITY_ECG = 30;
+        ACTIVITY_UNK_31 = 31;
+        ACTIVITY_SET_PASSCODE = 32;
+        ACTIVITY_CHANGE_PASSCODE = 33;
+        ACTIVITY_UNK_34 = 34;
+        ACTIVITY_UNK_35 = 35;
+        ACTIVITY_UNK_36 = 36;
+        ACTIVITY_UNK_37 = 37;
+        ACTIVITY_UNK_38 = 38;
+        ACTIVITY_UNK_39 = 39;
+        ACTIVITY_UNK_40 = 40;
+        ACTIVITY_UNK_41 = 41;
+        ACTIVITY_UNK_42 = 42;
+        ACTIVITY_UNK_43 = 43;
+        ACTIVITY_UNK_44 = 44;
+        ACTIVITY_UNK_45 = 45;
+        ACTIVITY_UNK_46 = 46;
+        ACTIVITY_UNK_47 = 47;
+        ACTIVITY_UNK_48 = 48;
+        ACTIVITY_UNK_49 = 49;
+        ACTIVITY_UNK_50 = 50;
+        ACTIVITY_UNK_51 = 51;
+        ACTIVITY_UNK_52 = 52;
+        ACTIVITY_UNK_53 = 53;
+        ACTIVITY_UNK_54 = 54;
+        ACTIVITY_UNK_55 = 55;
+        ACTIVITY_UNK_56 = 56;
+        ACTIVITY_UNK_57 = 57;
+        ACTIVITY_UNK_58 = 58;
+        ACTIVITY_UNK_59 = 59;
+        ACTIVITY_UNK_60 = 60;
+        ACTIVITY_UNK_61 = 61;
+        ACTIVITY_UNK_62 = 62;
+        ACTIVITY_UNK_63 = 63;
+        ACTIVITY_UNK_64 = 64;
+        ACTIVITY_UNK_65 = 65;
+        ACTIVITY_UNK_66 = 66;
+        ACTIVITY_UNK_67 = 67;
+        ACTIVITY_UNK_68 = 68;
+        ACTIVITY_UNK_69 = 69;
+    }
+
+    enum Type {
+        TYPE_SUBSCREEN = 0;
+        TYPE_LIST = 1;
+        TYPE_DURATION = 2;
+        TYPE_TIME_OF_DAY = 3;
+        TYPE_FLOAT = 4;
+        TYPE_INTEGER = 5;
+        TYPE_ACTIVITY = 6;
+        TYPE_HIDDEN = 7;
+        TYPE_UNK_8 = 8;
+        TYPE_SUBSCREEN_OPTIONS = 9;
+        TYPE_DATE = 10;
+        TYPE_UNK_11 = 11;
+        TYPE_CONNECT_IQ_STORE = 12;
+        TYPE_HEIGHT = 13;
+        TYPE_UNK_14 = 14;
+        SELECT_AND_CONFIRM = 15;
+        TYPE_UNK_16 = 16;
+        TYPE_UNK_17 = 17;
+        TYPE_UNK_18 = 18;
+        TYPE_UNK_19 = 19;
+        TYPE_UNK_20 = 20;
+        TYPE_UNK_21 = 21;
+        TYPE_UNK_22 = 22;
+        TYPE_UNK_23 = 23;
+        TYPE_UNK_24 = 24;
+        TYPE_UNK_25 = 25;
+        TYPE_UNK_26 = 26;
+        TYPE_UNK_27 = 27;
+        TYPE_UNK_28 = 28;
+        TYPE_UNK_29 = 29;
+        TYPE_UNK_30 = 30;
+        TYPE_UNK_31 = 31;
+        TYPE_UNK_32 = 32;
+        TYPE_UNK_33 = 33;
+        TYPE_UNK_34 = 34;
+        TYPE_UNK_35 = 35;
+        TYPE_UNK_36 = 36;
+        TYPE_UNK_37 = 37;
+        TYPE_UNK_38 = 38;
+        TYPE_UNK_39 = 39;
+    }
+
+  message DurationOptions {
+    optional uint32 minSeconds = 1;
+    optional uint32 maxSeconds = 2;
+    optional uint32 stepSize = 3;
+  }
+  message FloatOptions {
+    optional float minValue = 1;
+    optional float maxValue = 2;
+    optional uint32 unk3 = 3;
+    optional float stepSize = 4;
+  }
+  message CIQ {
+    optional int32 unk1 = 1;
+    optional bytes store_app = 2;
+    optional uint32 app_type = 5;
+    optional uint32 unk6 = 6;
+  }
+  optional Type type = 1;
+  optional uint32 subscreen = 2; // when 0
+  optional Activity activity = 3; // when 6
+  optional TargetOptions options = 4; // when 1
+  optional DurationOptions durationOptions = 5;
+  optional FloatOptions floatOptions = 7;
+  optional IntegerPicker integerPicker = 8;
+  optional CIQ ciq = 11;
+}
+
+message ScreenStateRequest {
+  optional uint32 screenId = 1;
+}
+
+message TargetOptions {
+  repeated TargetOptionEntry option = 1;
+  repeated MenuEntry menu_entry = 2;
+  optional uint32 unk3 = 3;
+}
+
+message TargetOptionEntry {
+  message Message7 {
+    optional uint32 unk1 = 1;
+    optional uint32 unk2 = 2;
+    optional uint32 unk3 = 3;
+    optional uint32 unk4 = 4;
+  }
+  optional uint32 unk1 = 1;
+  optional RowType rowType = 2;
+  optional Label title = 3;
+  optional Label subtitle = 4;
+  optional Icon icon = 6;
+  optional Message7 unk7 = 7;
+}
+
+message IntegerPicker {
+  optional uint32 min = 1;
+  optional uint32 max = 2;
+  optional uint32 step = 3; // maybe? 1 on weight
+}
+
+message ScreenStateResponse {
+  optional uint32 unk1 = 1; // 0
+  optional ScreenState state = 2;
+}
+
+message ScreenState {
+  optional uint32 screenId = 1;
+  optional uint32 unk2 = 2; // 0
+  optional uint32 unk3 = 3; // 928002
+  repeated EntryState state = 4;
+}
+
+message EntryState {
+  message Message7 {
+    optional Label label1 = 1;
+    optional Label label2 = 2;
+  }
+  message Message8 {
+    optional uint32 unk1 = 1;
+  }
+  message Message9 {
+    optional Label label1 = 1;
+  }
+  message AlertSettings {
+      optional string dialect = 1;
+  }
+  optional uint32 id = 1;
+  optional uint32 state = 2;
+  optional Switch switch = 3;
+  optional Summary summary = 4;
+  optional AlertSettings alertSettings = 6;
+  optional Message7 unk7 = 7;
+  optional Message8 unk8 = 8;
+  optional Message9 unk9 = 9;
+}
+
+message Switch {
+  optional bool enabled = 1;
+  optional Label title = 2;
+}
+
+message Summary {
+  optional Label title = 1;
+  optional ValueList valueList = 2;
+  optional ValueDuration valueDuration = 3;
+  optional ValueTimeOfDay valueTimeOfDay = 4;
+  optional ValueFloat valueFloat = 5;
+  optional ValueInteger valueInteger = 6;
+  optional ValueDate valueDate = 8;
+  optional ValueHeight valueHeight = 10;
+}
+
+message ValueList {
+  optional uint32 index = 1;
+}
+
+message ValueTimeOfDay {
+  optional uint32 seconds = 1;
+  optional Label formatted = 2;
+  optional uint32 timeFormat = 3; // 0 12h, 1 24h
+}
+
+message ValueDuration {
+  optional uint32 seconds = 1;
+  optional Label formatted = 2;
+  optional Label titel = 3;
+}
+
+message ValueFloat {
+  optional float value = 1;
+  optional Label formatted = 2;
+  optional Label title = 3;
+  optional Label uom = 4;
+}
+
+message ValueInteger {
+  optional uint32 value = 1;
+  optional Label formatted = 2;
+  optional Label title = 3;
+  optional Label unit = 4;
+}
+
+message ValueDate {
+  optional Label subtitle = 1;
+  optional Date currentDate = 2;
+  optional Date minDate = 3;
+  optional Date maxDate = 4;
+}
+
+message ValueHeight {
+  optional Label subtitle = 1;
+  optional uint32 value = 2;
+  optional uint32 unit = 3; // 0 cm
+}
+
+message Date {
+  optional uint32 month = 1;
+  optional uint32 day = 2;
+  optional uint32 year = 3;
+}
+
+message ChangeRequest {
+  optional uint32 screenId = 1;
+  optional uint32 entryId = 2;
+  optional Switch switch = 3;
+  optional Option option = 4;
+  optional Time duration = 5;
+  optional Time timeOfDay = 6;
+  optional FloatValue floatValue = 7;
+  optional IntegerValue integerValue = 8;
+  optional Position position = 11;
+  optional NewDate newDate = 12;
+  optional Text text = 14;
+  optional Height height = 15;
+
+  message Switch {
+    required bool value = 1;
+  }
+  message Option {
+    optional uint32 index = 1;
+  }
+  message Time {
+    optional uint32 seconds = 1;
+  }
+  message IntegerValue {
+    optional uint32 value = 1;
+  }
+  message Position {
+    optional uint32 index = 1;
+    optional bool delete = 2;
+  }
+  message NewDate {
+    optional Date value = 1;
+  }
+  message Text {
+    optional string value = 1;
+  }
+  message Height {
+    optional uint32 value = 1;
+    optional uint32 unit = 2;
+  }
+  message FloatValue {
+    optional float value = 1;
+  }
+}
+
+message ChangeResponse {
+  message Message2 {
+    optional Label unk1 = 1;
+    optional Label unk2 = 2;
+    optional Label unk3 = 3;
+  }
+  optional ResponseStatus status = 1;
+  optional Message2 unk2 = 2;
+  optional ScreenState state = 3;
+  optional bool unk4 = 4;
+  optional bool shouldReturn = 5;
+}
+
+message InitRequest {
+  optional string language = 1; // en_US
+  optional string region = 2; // us
+}
+
+message InitResponse {
+  optional string part_number_1 = 1;
+  optional string part_number_2 = 2;
+  repeated uint32 unk3 = 3;
+  optional uint32 unk4 = 4;
+}
+
+enum ResponseStatus {
+  SUCCESS = 0;
+  GENERIC_ERROR = 1;
+}
+
+message ChangeNotification {
+}
+
+message MenuMessage {
+  optional Label titel = 1;
+  optional Label message = 2;
+  optional Label yes = 3;
+  optional Label no = 4;
+  optional uint32 unk5 = 5;
+  optional uint32 unk6 = 6;
+}
+
+message MenuEntry {
+  optional uint32 unk1 = 1;
+  optional uint32 unk2 = 2;
+  optional Label label = 3;
+  optional uint32 unk4 = 4;
+  optional Target target = 5;
+  optional uint32 unk6 = 6;
+  optional uint32 unk7 = 7;
+  optional MenuMessage menu_message = 9;
+}
+
+enum Icon {
+    ICON_NO_ICON = 0;
+    ICON_ACTIVITIES_AND_APPS = 1;
+    ICON_GLANCES = 2;
+    ICON_CONTROLS = 3;
+    ICON_CLOCKS = 4;
+    ICON_SENSORS_AND_ACCESSORIES = 5;
+    ICON_MAP = 6;
+    ICON_MUSIC = 7;
+    ICON_PHONE = 8;
+    ICON_UNK_9 = 9;
+    ICON_UNK_10 = 10;
+    ICON_CONNECTIVITY = 11;
+    ICON_UNK_12 = 12;
+    ICON_AUDIO_PROMPTS = 13;
+    ICON_USER_PROFILE = 14;
+    ICON_SAFETY_AND_TRACKING = 15;
+    ICON_ACTIVITY_TRACKING = 16;
+    ICON_NAVIGATION = 17;
+    ICON_POWER_MANAGER = 18;
+    ICON_SYSTEM = 19;
+    ICON_GARMIN_PAY = 20;
+    ICON_TEXT_RESPONSES = 21;
+    ICON_SOLAR = 22;
+    ICON_UNK_23 = 23;
+    ICON_UNK_24 = 24;
+    ICON_UNK_25 = 25;
+    ICON_APPEARANCE = 26;
+    ICON_NOTIFICATIONS_AND_ALERTS = 27;
+    ICON_UNK_28 = 28;
+    ICON_UNK_29 = 29;
+    ICON_WRIST_HEARTRATE = 30;
+    ICON_UNK_31 = 31;
+    ICON_UNK_32 = 32;
+    ICON_ACTION_ADD = 33;
+    ICON_ACTION_REMOVE = 34;
+    ICON_INREACH_TRACKING = 35;
+    ICON_INREACH_REMOTE = 36;
+    ICON_SOUND_SETTINGS = 37;
+    ICON_ALARMS = 38;
+    ICON_SHORTCUT = 39;
+    ICON_UNK_40 = 40;
+    ICON_UNK_41 = 41;
+    ICON_DISPLAY = 42;
+    ICON_UNK_43 = 43;
+    ICON_HEALTH_AND_WELLNESS = 44;
+    ICON_UNK_45 = 45;
+    ICON_WATCH_SENSORS = 46;
+    ICON_ACCESSORIES = 47;
+    ICON_UNK_48 = 48;
+    ICON_UNK_49 = 49;
+    ICON_UNK_50 = 50;
+    ICON_UNK_51 = 51;
+    ICON_UNK_52 = 52;
+    ICON_UNK_53 = 53;
+    ICON_UNK_54 = 54;
+    ICON_UNK_55 = 55;
+    ICON_UNK_56 = 56;
+    ICON_UNK_57 = 57;
+    ICON_UNK_58 = 58;
+    ICON_UNK_59 = 59;
+    ICON_SOUND_AND_VIBE = 60;
+    ICON_DISPLAY_AND_BRIGHTNESS = 61;
+    ICON_FOCUS_MODES = 62;
+    ICON_ACCESSIBILITY = 63;
+    ICON_UNK_64 = 64;
+    ICON_UNK_65 = 65;
+    ICON_UNK_66 = 66;
+    ICON_UNK_67 = 67;
+    ICON_UNK_68 = 68;
+    ICON_UNK_69 = 69;
+    ICON_UNK_70 = 70;
+    ICON_UNK_71 = 71;
+    ICON_UNK_72 = 72;
+    ICON_UNK_73 = 73;
+    ICON_UNK_74 = 74;
+    ICON_UNK_75 = 75;
+    ICON_UNK_76 = 76;
+    ICON_UNK_77 = 77;
+    ICON_UNK_78 = 78;
+    ICON_UNK_79 = 79;
+    ICON_UNK_80 = 80;
+    ICON_UNK_81 = 81;
+    ICON_UNK_82 = 82;
+    ICON_UNK_83 = 83;
+    ICON_UNK_84 = 84;
+    ICON_UNK_85 = 85;
+    ICON_UNK_86 = 86;
+    ICON_UNK_87 = 87;
+    ICON_UNK_88 = 88;
+    ICON_UNK_89 = 89;
+    ICON_UNK_90 = 90;
+    ICON_UNK_91 = 91;
+    ICON_UNK_92 = 92;
+    ICON_UNK_93 = 93;
+    ICON_UNK_94 = 94;
+    ICON_UNK_95 = 95;
+    ICON_UNK_96 = 96;
+    ICON_UNK_97 = 97;
+    ICON_UNK_98 = 98;
+    ICON_UNK_99 = 99;
+}
+
+enum RowType {
+    ROW_NOTICE = 0;
+    ROW_CATEGORY = 1;
+    ROW_SPACE = 2;
+    ROW_SWITCH = 3;
+    ROW_SINGLE_LINE = 4;
+    ROW_DOUBLE_LINE = 5;
+    ROW_UNK_6 = 6;
+    ROW_ACTION = 7;
+    ROW_DEVICE = 8;
+    ROW_FINISH_SETUP = 9;
+    ROW_FIND_MY_DEVICE = 10;
+    ROW_PREFERRED_ACTIVITY_TRACKER = 11;
+    ROW_ALERT_VOLUME = 12;
+    ROW_HELP_AND_INFO = 13;
+    ROW_SORTABLE_AND_DELETEABLE = 15;
+    ROW_TEXT = 16;
+    ROW_ICON = 17;
+    ROW_SINGLE_ACTION = 18;
+    ROW_EMPTY = 19;
+    ROW_UNK_20 = 20;
+    ROW_UNK_21 = 21;
+    ROW_UNK_22 = 22;
+    ROW_UNK_23 = 23;
+    ROW_AVAILABLE_ACCESSORIES = 24;
+    ROW_UNK_25 = 25;
+    ROW_UNK_26 = 26;
+    ROW_UNK_27 = 27;
+    ROW_UNK_28 = 28;
+    ROW_UNK_29 = 29;
+    ROW_UNK_30 = 30;
+    ROW_UNK_31 = 31;
+    ROW_UNK_32 = 32;
+    ROW_UNK_33 = 33;
+    ROW_UNK_34 = 34;
+    ROW_UNK_35 = 35;
+    ROW_UNK_36 = 36;
+    ROW_UNK_37 = 37;
+    ROW_UNK_38 = 38;
+    ROW_UNK_39 = 39;
+}

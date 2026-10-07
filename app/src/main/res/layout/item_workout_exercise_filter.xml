@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/workout_exercise_filter_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center_vertical"
+        android:minHeight="56dp"
+        android:orientation="horizontal"
+        android:paddingHorizontal="12dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/workout_exercise_filter_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?attr/textAppearanceBodyLarge" />
+
+            <TextView
+                android:id="@+id/workout_exercise_filter_summary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?attr/textAppearanceBodySmall"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/workout_exercise_filter_caret"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:contentDescription="@null"
+            android:src="@drawable/ic_caret_down_solid" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/workout_exercise_filter_values"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone" />
+</LinearLayout>

@@ -1,0 +1,22 @@
+syntax = "proto2";
+package xiaomi;
+option java_package = "nodomain.freeyourgadget.gadgetbridge.proto.xiaomi";
+option java_multiple_files = true;
+
+message Calendar {
+  optional CalendarInfo.List calendarSync = 2;
+}
+
+message CalendarInfo {
+  message List {
+    repeated CalendarInfo event = 1;
+    optional bool disabled = 2;
+  }
+  optional string title = 1;
+  optional string description = 2;
+  optional string location = 3;
+  optional uint32 start = 4; // unix epoch sec
+  optional uint32 end = 5; // unix epoch sec
+  optional bool allDay = 6;
+  optional uint32 notifyMinutesBefore = 7;
+}

@@ -1,0 +1,922 @@
+{
+  "sportType": 52,
+  "templateId": 1790193217001029,
+  "templateName": "exercises_031",
+  "intervals": [
+    {
+      "index": 0,
+      "trainingType": 0,
+      "intervalType": 8,
+      "intervalVal": -1,
+      "remindType": 0,
+      "remindUpThreshold": 0,
+      "remindDownThreshold": 0,
+      "groupId": 0,
+      "loopTimes": 1,
+      "lengthUnit": 0,
+      "intervalDesc": "",
+      "strengthWeight": "0-0",
+      "actionType": 0,
+      "actionName": "",
+      "selfWeightType": 0,
+      "mainPositions": [],
+      "subPositions": []
+    },
+    {
+      "index": 1,
+      "trainingType": 1,
+      "intervalType": 8,
+      "intervalVal": 0,
+      "remindType": 0,
+      "remindUpThreshold": 0,
+      "remindDownThreshold": 0,
+      "groupId": 1,
+      "loopTimes": 1,
+      "lengthUnit": 0,
+      "intervalDesc": "",
+      "strengthWeight": "0-0",
+      "actionType": 0,
+      "actionName": "",
+      "selfWeightType": 0,
+      "mainPositions": [],
+      "subPositions": []
+    },
+    {
+      "index": 2,
+      "trainingType": 4,
+      "intervalType": 8,
+      "intervalVal": -1,
+      "remindType": 0,
+      "remindUpThreshold": 0,
+      "remindDownThreshold": 0,
+      "groupId": 2,
+      "loopTimes": 1,
+      "lengthUnit": 0,
+      "intervalDesc": "",
+      "strengthWeight": "0-0",
+      "actionType": 0,
+      "actionName": "",
+      "selfWeightType": 0,
+      "mainPositions": [],
+      "subPositions": []
+    },
+    {
+      "index": 3,
+      "trainingType": 1,
+      "intervalType": 8,
+      "intervalVal": 0,
+      "remindType": 0,
+      "remindUpThreshold": 0,
+      "remindDownThreshold": 0,
+      "groupId": 3,
+      "loopTimes": 1,
+      "lengthUnit": 0,
+      "intervalDesc": "",
+      "strengthWeight": "0-1",
+      "actionType": 1641,
+      "actionName": "Right Half Side Lunge",
+      "selfWeightType": 0,
+      "mainPositions": [
+        14
+      ],
+      "subPositions": [
+        27
+      ]
+    },
+    {
+      "index": 4,
+      "trainingType": 1,
+      "intervalType": 8,
+      "intervalVal": 0,
+      "remindType": 0,
+      "remindUpThreshold": 0,
+      "remindDownThreshold": 0,
+      "groupId": 4,
+      "loopTimes": 1,
+      "lengthUnit": 0,
+      "intervalDesc": "",
+      "strengthWeight": "0-5",
+      "actionType": 1647,
+      "actionName": "Right Single Leg Half Squat Tap",
+      "selfWeightType": 1,
+      "mainPositions": [
+        15
+      ],
+      "subPositions": [
+        27
+      ]
+    },
+    {
+      "index": 5,
+      "trainingType": 1,
+      "intervalType": 8,
+      "intervalVal": 0,
+      "remindType": 0,
+      "remindUpThreshold": 0,
+      "remindDownThreshold": 0,
+      "groupId": 5,
+      "loopTimes": 1,
+      "lengthUnit": 0,
+      "intervalDesc": "",
+      "strengthWeight": "0-5",
+      "actionType": 1663,
+      "actionName": "Right Reverse Lunge with Side Knee Raise",
+      "selfWeightType": 1,
+      "mainPositions": [
+        14
+      ],
+      "subPositions": [
+        27
+      ]
+    },
+    {
+      "index": 6,
+      "trainingType": 1,
+      "intervalType": 8,
+      "intervalVal": 0,
+      "remindType": 0,
+      "remindUpThreshold": 0,
+      "remindDownThreshold": 0,
+      "groupId": 6,
+      "loopTimes": 1,
+      "lengthUnit": 0,
+      "intervalDesc": "",
+      "strengthWeight": "0-5",
+      "actionType": 1668,
+      "actionName": "Right Eccentric Explosive Lunge",
+      "selfWeightType": 1,
+      "mainPositions": [
+        14
+      ],
+      "subPositions": [
+        27
+      ]
+    },
+    {
+      "index": 7,
+      "trainingType": 1,
+      "intervalType": 8,
+      "intervalVal": 0,
+      "remindType": 0,
+      "remindUpThreshold": 0,
+      "remindDownThreshold": 0,
+      "groupId": 7,
+      "loopTimes": 1,
+      "lengthUnit": 0,
+      "intervalDesc": "",
+      "strengthWeight": "0-5",
+      "actionType": 1669,
+      "actionName": "Right Lunge Arm Swing",
+      "selfWeightType": 1,
+      "mainPositions": [
+        14
+      ],
+      "subPositions": [
+        27
+      ]
+    },
+    {
+      "index": 8,
+      "trainingType": 1,
+      "intervalType": 8,
+      "intervalVal": 0,
+      "remindType": 0,
+      "remindUpThreshold": 0,
+      "remindDownThreshold": 0,
+      "groupId": 8,
+      "loopTimes": 1,
+      "lengthUnit": 0,
+      "intervalDesc": "",
+      "strengthWeight": "0-5",
+      "actionType": 1672,
+      "actionName": "Right Half Lunge Hold",
+      "selfWeightType": 1,
+      "mainPositions": [
+        14
+      ],
+      "subPositions": [
+        27
+      ]
+    },
+    {
+      "index": 9,
+      "trainingType": 1,
+      "intervalType": 8,
+      "intervalVal": 0,
+      "remindType": 0,
+      "remindUpThreshold": 0,
+      "remindDownThreshold": 0,
+      "groupId": 9,
+      "loopTimes": 1,
+      "lengthUnit": 0,
+      "intervalDesc": "",
+      "strengthWeight": "0-5",
+      "actionType": 1674,
+      "actionName": "Right Lunge Hold",
+      "selfWeightType": 1,
+      "mainPositions": [
+        14
+      ],
+      "subPositions": [
+        27
+      ]
+    },
+    {
+      "index": 10,
+      "trainingType": 1,
+      "intervalType": 8,
+      "intervalVal": 0,
+      "remindType": 0,
+      "remindUpThreshold": 0,
+      "remindDownThreshold": 0,
+      "groupId": 10,
+      "loopTimes": 1,
+      "lengthUnit": 0,
+      "intervalDesc": "",
+      "strengthWeight": "0-1",
+      "actionType": 1697,
+      "actionName": "Right Resistance Band Reverse Lunge Press",
+      "selfWeightType": 0,
+      "mainPositions": [
+        14
+      ],
+      "subPositions": [
+        29,
+        27
+      ]
+    },
+    {
+      "index": 11,
+      "trainingType": 1,
+      "intervalType": 8,
+      "intervalVal": 0,
+      "remindType": 0,
+      "remindUpThreshold": 0,
+      "remindDownThreshold": 0,
+      "groupId": 11,
+      "loopTimes": 1,
+      "lengthUnit": 0,
+      "intervalDesc": "",
+      "strengthWeight": "0-1",
+      "actionType": 1711,
+      "actionName": "Right High Lunge Switch Jump",
+      "selfWeightType": 0,
+      "mainPositions": [
+        14
+      ],
+      "subPositions": [
+        27
+      ]
+    },
+    {
+      "index": 12,
+      "trainingType": 1,
+      "intervalType": 8,
+      "intervalVal": 0,
+      "remindType": 0,
+      "remindUpThreshold": 0,
+      "remindDownThreshold": 0,
+      "groupId": 12,
+      "loopTimes": 1,
+      "lengthUnit": 0,
+      "intervalDesc": "",
+      "strengthWeight": "0-5",
+      "actionType": 1713,
+      "actionName": "Right Single Leg Squat Hold",
+      "selfWeightType": 1,
+      "mainPositions": [
+        14
+      ],
+      "subPositions": [
+        27
+      ]
+    },
+    {
+      "index": 13,
+      "trainingType": 1,
+      "intervalType": 8,
+      "intervalVal": 0,
+      "remindType": 0,
+      "remindUpThreshold": 0,
+      "remindDownThreshold": 0,
+      "groupId": 13,
+      "loopTimes": 1,
+      "lengthUnit": 0,
+      "intervalDesc": "",
+      "strengthWeight": "0-5",
+      "actionType": 2,
+      "actionName": "Straight Arm Front Squats",
+      "selfWeightType": 1,
+      "mainPositions": [
+        14,
+        15
+      ],
+      "subPositions": [
+        26,
+        27
+      ]
+    },
+    {
+      "index": 14,
+      "trainingType": 1,
+      "intervalType": 8,
+      "intervalVal": 0,
+      "remindType": 0,
+      "remindUpThreshold": 0,
+      "remindDownThreshold": 0,
+      "groupId": 14,
+      "loopTimes": 1,
+      "lengthUnit": 0,
+      "intervalDesc": "",
+      "strengthWeight": "0-1",
+      "actionType": 26,
+      "actionName": "Smith Machine Squats",
+      "selfWeightType": 0,
+      "mainPositions": [
+        14,
+        15
+      ],
+      "subPositions": [
+        26,
+        27
+      ]
+    },
+    {
+      "index": 15,
+      "trainingType": 1,
+      "intervalType": 8,
+      "intervalVal": 0,
+      "remindType": 0,
+      "remindUpThreshold": 0,
+      "remindDownThreshold": 0,
+      "groupId": 15,
+      "loopTimes": 1,
+      "lengthUnit": 0,
+      "intervalDesc": "",
+      "strengthWeight": "0-1",
+      "actionType": 1001,
+      "actionName": "Squat",
+      "selfWeightType": 0,
+      "mainPositions": [
+        14,
+        15
+      ],
+      "subPositions": [
+        26,
+        27
+      ]
+    },
+    {
+      "index": 16,
+      "trainingType": 1,
+      "intervalType": 8,
+      "intervalVal": 0,
+      "remindType": 0,
+      "remindUpThreshold": 0,
+      "remindDownThreshold": 0,
+      "groupId": 16,
+      "loopTimes": 1,
+      "lengthUnit": 0,
+      "intervalDesc": "",
+      "strengthWeight": "0-1",
+      "actionType": 1010,
+      "actionName": "Sumo Squat",
+      "selfWeightType": 0,
+      "mainPositions": [
+        14,
+        15
+      ],
+      "subPositions": [
+        26,
+        27
+      ]
+    },
+    {
+      "index": 17,
+      "trainingType": 1,
+      "intervalType": 8,
+      "intervalVal": 0,
+      "remindType": 0,
+      "remindUpThreshold": 0,
+      "remindDownThreshold": 0,
+      "groupId": 17,
+      "loopTimes": 1,
+      "lengthUnit": 0,
+      "intervalDesc": "",
+      "strengthWeight": "0-1",
+      "actionType": 1016,
+      "actionName": "Static Glute Bridge",
+      "selfWeightType": 0,
+      "mainPositions": [
+        26,
+        27
+      ],
+      "subPositions": [
+        26,
+        27
+      ]
+    },
+    {
+      "index": 18,
+      "trainingType": 1,
+      "intervalType": 8,
+      "intervalVal": 0,
+      "remindType": 0,
+      "remindUpThreshold": 0,
+      "remindDownThreshold": 0,
+      "groupId": 18,
+      "loopTimes": 1,
+      "lengthUnit": 0,
+      "intervalDesc": "",
+      "strengthWeight": "0-1",
+      "actionType": 1024,
+      "actionName": "Side-Lying Left Leg Raise",
+      "selfWeightType": 0,
+      "mainPositions": [
+        26
+      ],
+      "subPositions": []
+    },
+    {
+      "index": 19,
+      "trainingType": 1,
+      "intervalType": 8,
+      "intervalVal": 0,
+      "remindType": 0,
+      "remindUpThreshold": 0,
+      "remindDownThreshold": 0,
+      "groupId": 19,
+      "loopTimes": 1,
+      "lengthUnit": 0,
+      "intervalDesc": "",
+      "strengthWeight": "0-1",
+      "actionType": 1029,
+      "actionName": "Side-Lying Left Clam Shell",
+      "selfWeightType": 0,
+      "mainPositions": [
+        26
+      ],
+      "subPositions": [
+        26
+      ]
+    },
+    {
+      "index": 20,
+      "trainingType": 1,
+      "intervalType": 8,
+      "intervalVal": 0,
+      "remindType": 0,
+      "remindUpThreshold": 0,
+      "remindDownThreshold": 0,
+      "groupId": 20,
+      "loopTimes": 1,
+      "lengthUnit": 0,
+      "intervalDesc": "",
+      "strengthWeight": "0-1",
+      "actionType": 1032,
+      "actionName": "Side-Lying Right Clam Shell",
+      "selfWeightType": 0,
+      "mainPositions": [
+        27
+      ],
+      "subPositions": [
+        26
+      ]
+    },
+    {
+      "index": 21,
+      "trainingType": 1,
+      "intervalType": 8,
+      "intervalVal": 0,
+      "remindType": 0,
+      "remindUpThreshold": 0,
+      "remindDownThreshold": 0,
+      "groupId": 21,
+      "loopTimes": 1,
+      "lengthUnit": 0,
+      "intervalDesc": "",
+      "strengthWeight": "0-1",
+      "actionType": 1040,
+      "actionName": "Standing Left Side Leg Raise",
+      "selfWeightType": 0,
+      "mainPositions": [
+        26
+      ],
+      "subPositions": []
+    },
+    {
+      "index": 22,
+      "trainingType": 1,
+      "intervalType": 8,
+      "intervalVal": 0,
+      "remindType": 0,
+      "remindUpThreshold": 0,
+      "remindDownThreshold": 0,
+      "groupId": 22,
+      "loopTimes": 1,
+      "lengthUnit": 0,
+      "intervalDesc": "",
+      "strengthWeight": "0-1",
+      "actionType": 1044,
+      "actionName": "Side-Lying Right Leg Raise",
+      "selfWeightType": 0,
+      "mainPositions": [
+        27
+      ],
+      "subPositions": [
+        26
+      ]
+    },
+    {
+      "index": 23,
+      "trainingType": 1,
+      "intervalType": 8,
+      "intervalVal": 0,
+      "remindType": 0,
+      "remindUpThreshold": 0,
+      "remindDownThreshold": 0,
+      "groupId": 23,
+      "loopTimes": 1,
+      "lengthUnit": 0,
+      "intervalDesc": "",
+      "strengthWeight": "0-1",
+      "actionType": 1059,
+      "actionName": "Standing Right Side Leg Raise",
+      "selfWeightType": 0,
+      "mainPositions": [
+        27
+      ],
+      "subPositions": []
+    },
+    {
+      "index": 24,
+      "trainingType": 1,
+      "intervalType": 8,
+      "intervalVal": 0,
+      "remindType": 0,
+      "remindUpThreshold": 0,
+      "remindDownThreshold": 0,
+      "groupId": 24,
+      "loopTimes": 1,
+      "lengthUnit": 0,
+      "intervalDesc": "",
+      "strengthWeight": "0-1",
+      "actionType": 1166,
+      "actionName": "Standing Right Leg Lift",
+      "selfWeightType": 0,
+      "mainPositions": [
+        27
+      ],
+      "subPositions": []
+    },
+    {
+      "index": 25,
+      "trainingType": 1,
+      "intervalType": 8,
+      "intervalVal": 0,
+      "remindType": 0,
+      "remindUpThreshold": 0,
+      "remindDownThreshold": 0,
+      "groupId": 25,
+      "loopTimes": 1,
+      "lengthUnit": 0,
+      "intervalDesc": "",
+      "strengthWeight": "0-1",
+      "actionType": 1169,
+      "actionName": "Side-Lying Right Leg Lift with Foot Touch",
+      "selfWeightType": 0,
+      "mainPositions": [
+        43
+      ],
+      "subPositions": [
+        26,
+        27,
+        42
+      ]
+    },
+    {
+      "index": 26,
+      "trainingType": 1,
+      "intervalType": 8,
+      "intervalVal": 0,
+      "remindType": 0,
+      "remindUpThreshold": 0,
+      "remindDownThreshold": 0,
+      "groupId": 26,
+      "loopTimes": 1,
+      "lengthUnit": 0,
+      "intervalDesc": "",
+      "strengthWeight": "0-1",
+      "actionType": 1213,
+      "actionName": "Side-Lying Right Leg Lift with Foot Touch",
+      "selfWeightType": 0,
+      "mainPositions": [
+        32
+      ],
+      "subPositions": [
+        26,
+        27,
+        42
+      ]
+    },
+    {
+      "index": 27,
+      "trainingType": 1,
+      "intervalType": 8,
+      "intervalVal": 0,
+      "remindType": 0,
+      "remindUpThreshold": 0,
+      "remindDownThreshold": 0,
+      "groupId": 27,
+      "loopTimes": 1,
+      "lengthUnit": 0,
+      "intervalDesc": "",
+      "strengthWeight": "0-1",
+      "actionType": 1177,
+      "actionName": "Side-Lying Left Leg Lift with Foot Touch",
+      "selfWeightType": 0,
+      "mainPositions": [
+        42
+      ],
+      "subPositions": [
+        26
+      ]
+    },
+    {
+      "index": 28,
+      "trainingType": 1,
+      "intervalType": 8,
+      "intervalVal": 0,
+      "remindType": 0,
+      "remindUpThreshold": 0,
+      "remindDownThreshold": 0,
+      "groupId": 28,
+      "loopTimes": 1,
+      "lengthUnit": 0,
+      "intervalDesc": "",
+      "strengthWeight": "0-5",
+      "actionType": 1183,
+      "actionName": "Squat Thrust",
+      "selfWeightType": 1,
+      "mainPositions": [
+        14,
+        15
+      ],
+      "subPositions": [
+        26,
+        27
+      ]
+    },
+    {
+      "index": 29,
+      "trainingType": 1,
+      "intervalType": 8,
+      "intervalVal": 0,
+      "remindType": 0,
+      "remindUpThreshold": 0,
+      "remindDownThreshold": 0,
+      "groupId": 29,
+      "loopTimes": 1,
+      "lengthUnit": 0,
+      "intervalDesc": "",
+      "strengthWeight": "0-1",
+      "actionType": 1186,
+      "actionName": "Side-Lying Left Rear Leg Lift",
+      "selfWeightType": 0,
+      "mainPositions": [
+        26
+      ],
+      "subPositions": []
+    },
+    {
+      "index": 30,
+      "trainingType": 1,
+      "intervalType": 8,
+      "intervalVal": 0,
+      "remindType": 0,
+      "remindUpThreshold": 0,
+      "remindDownThreshold": 0,
+      "groupId": 30,
+      "loopTimes": 1,
+      "lengthUnit": 0,
+      "intervalDesc": "",
+      "strengthWeight": "0-1",
+      "actionType": 1205,
+      "actionName": "Squat with Alternating Straight Punch",
+      "selfWeightType": 0,
+      "mainPositions": [
+        14,
+        15
+      ],
+      "subPositions": [
+        26,
+        27
+      ]
+    },
+    {
+      "index": 31,
+      "trainingType": 1,
+      "intervalType": 8,
+      "intervalVal": 0,
+      "remindType": 0,
+      "remindUpThreshold": 0,
+      "remindDownThreshold": 0,
+      "groupId": 31,
+      "loopTimes": 1,
+      "lengthUnit": 0,
+      "intervalDesc": "",
+      "strengthWeight": "0-1",
+      "actionType": 1207,
+      "actionName": "Supine Right Glute Stretch",
+      "selfWeightType": 0,
+      "mainPositions": [
+        27
+      ],
+      "subPositions": []
+    },
+    {
+      "index": 32,
+      "trainingType": 1,
+      "intervalType": 8,
+      "intervalVal": 0,
+      "remindType": 0,
+      "remindUpThreshold": 0,
+      "remindDownThreshold": 0,
+      "groupId": 32,
+      "loopTimes": 1,
+      "lengthUnit": 0,
+      "intervalDesc": "",
+      "strengthWeight": "0-1",
+      "actionType": 1220,
+      "actionName": "Seated Forward Bend Left Glute Stretch",
+      "selfWeightType": 0,
+      "mainPositions": [
+        26
+      ],
+      "subPositions": []
+    },
+    {
+      "index": 33,
+      "trainingType": 1,
+      "intervalType": 8,
+      "intervalVal": 0,
+      "remindType": 0,
+      "remindUpThreshold": 0,
+      "remindDownThreshold": 0,
+      "groupId": 33,
+      "loopTimes": 1,
+      "lengthUnit": 0,
+      "intervalDesc": "",
+      "strengthWeight": "0-1",
+      "actionType": 1222,
+      "actionName": "Supine Left Glute Stretch",
+      "selfWeightType": 0,
+      "mainPositions": [
+        26
+      ],
+      "subPositions": []
+    },
+    {
+      "index": 34,
+      "trainingType": 1,
+      "intervalType": 8,
+      "intervalVal": 0,
+      "remindType": 0,
+      "remindUpThreshold": 0,
+      "remindDownThreshold": 0,
+      "groupId": 34,
+      "loopTimes": 1,
+      "lengthUnit": 0,
+      "intervalDesc": "",
+      "strengthWeight": "0-1",
+      "actionType": 1232,
+      "actionName": "Side-Lying Right Rear Leg Lift",
+      "selfWeightType": 0,
+      "mainPositions": [
+        27
+      ],
+      "subPositions": [
+        26
+      ]
+    },
+    {
+      "index": 35,
+      "trainingType": 1,
+      "intervalType": 8,
+      "intervalVal": 0,
+      "remindType": 0,
+      "remindUpThreshold": 0,
+      "remindDownThreshold": 0,
+      "groupId": 35,
+      "loopTimes": 1,
+      "lengthUnit": 0,
+      "intervalDesc": "",
+      "strengthWeight": "0-1",
+      "actionType": 1233,
+      "actionName": "Single Leg Romanian Deadlift Touch Right",
+      "selfWeightType": 0,
+      "mainPositions": [
+        29
+      ],
+      "subPositions": [
+        27
+      ]
+    },
+    {
+      "index": 36,
+      "trainingType": 1,
+      "intervalType": 8,
+      "intervalVal": 0,
+      "remindType": 0,
+      "remindUpThreshold": 0,
+      "remindDownThreshold": 0,
+      "groupId": 36,
+      "loopTimes": 1,
+      "lengthUnit": 0,
+      "intervalDesc": "",
+      "strengthWeight": "0-1",
+      "actionType": 1240,
+      "actionName": "Single Leg Romanian Deadlift Touch Left",
+      "selfWeightType": 0,
+      "mainPositions": [
+        28
+      ],
+      "subPositions": [
+        26
+      ]
+    },
+    {
+      "index": 37,
+      "trainingType": 1,
+      "intervalType": 8,
+      "intervalVal": 0,
+      "remindType": 0,
+      "remindUpThreshold": 0,
+      "remindDownThreshold": 0,
+      "groupId": 37,
+      "loopTimes": 1,
+      "lengthUnit": 0,
+      "intervalDesc": "",
+      "strengthWeight": "0-1",
+      "actionType": 1248,
+      "actionName": "Side-Lying Right Banded Clam Shell",
+      "selfWeightType": 0,
+      "mainPositions": [
+        27
+      ],
+      "subPositions": [
+        26
+      ]
+    },
+    {
+      "index": 38,
+      "trainingType": 1,
+      "intervalType": 8,
+      "intervalVal": 0,
+      "remindType": 0,
+      "remindUpThreshold": 0,
+      "remindDownThreshold": 0,
+      "groupId": 38,
+      "loopTimes": 1,
+      "lengthUnit": 0,
+      "intervalDesc": "",
+      "strengthWeight": "0-1",
+      "actionType": 1266,
+      "actionName": "Squat with Alternating Leg Kick",
+      "selfWeightType": 0,
+      "mainPositions": [
+        14,
+        15
+      ],
+      "subPositions": [
+        26,
+        27
+      ]
+    },
+    {
+      "index": 39,
+      "trainingType": 1,
+      "intervalType": 8,
+      "intervalVal": 0,
+      "remindType": 0,
+      "remindUpThreshold": 0,
+      "remindDownThreshold": 0,
+      "groupId": 39,
+      "loopTimes": 1,
+      "lengthUnit": 0,
+      "intervalDesc": "",
+      "strengthWeight": "0-1",
+      "actionType": 1293,
+      "actionName": "Squat with Twist Punch",
+      "selfWeightType": 0,
+      "mainPositions": [
+        14,
+        15
+      ],
+      "subPositions": [
+        26,
+        27
+      ]
+    }
+  ]
+}

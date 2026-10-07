@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.preference.PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <PreferenceCategory android:title="@string/pref_header_navigation">
+        <SwitchPreferenceCompat
+            android:defaultValue="false"
+            android:icon="@drawable/ic_navigation"
+            android:key="navigation_continuous_updates"
+            android:layout="@layout/preference_checkbox"
+            android:summary="@string/pref_description_navigation_continuous_updates"
+            android:title="@string/pref_title_navigation_continuous_updates" />
+        <EditTextPreference
+            android:defaultValue="5000"
+            android:dependency="navigation_continuous_updates"
+            android:icon="@drawable/ic_sync"
+            android:inputType="number"
+            android:key="navigation_update_rate"
+            android:title="@string/pref_title_navigation_update_rate"
+            app:useSimpleSummaryProvider="true" />
+    </PreferenceCategory>
+</androidx.preference.PreferenceScreen>

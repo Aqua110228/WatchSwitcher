@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/selectableItemBackground"
+    android:clickable="true"
+    android:focusable="true"
+    android:gravity="center_vertical"
+    android:minHeight="64dp"
+    android:orientation="horizontal"
+    android:paddingVertical="8dp"
+    android:paddingStart="16dp"
+    android:paddingEnd="8dp">
+
+    <ImageView
+        android:id="@+id/workout_template_icon"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_marginEnd="16dp"
+        android:contentDescription="@null" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/workout_template_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?attr/textAppearanceListItem"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/workout_template_summary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?attr/textAppearanceBodySmall" />
+
+        <TextView
+            android:id="@+id/workout_template_sync_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:textAppearance="?attr/textAppearanceLabelSmall" />
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/workout_template_sync"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="@string/workout_template_sync"
+        android:src="@drawable/ic_file_upload"
+        app:tint="?android:attr/textColorSecondary" />
+
+    <ImageButton
+        android:id="@+id/workout_template_overflow"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="@string/widgets_more_options"
+        android:src="@drawable/ic_more_vert"
+        app:tint="?android:attr/textColorSecondary" />
+
+</LinearLayout>

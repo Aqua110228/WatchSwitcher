@@ -1,0 +1,938 @@
+{
+  "sportType": 52,
+  "templateId": 1790193217001028,
+  "templateName": "exercises_030",
+  "intervals": [
+    {
+      "index": 0,
+      "trainingType": 0,
+      "intervalType": 8,
+      "intervalVal": -1,
+      "remindType": 0,
+      "remindUpThreshold": 0,
+      "remindDownThreshold": 0,
+      "groupId": 0,
+      "loopTimes": 1,
+      "lengthUnit": 0,
+      "intervalDesc": "",
+      "strengthWeight": "0-0",
+      "actionType": 0,
+      "actionName": "",
+      "selfWeightType": 0,
+      "mainPositions": [],
+      "subPositions": []
+    },
+    {
+      "index": 1,
+      "trainingType": 1,
+      "intervalType": 8,
+      "intervalVal": 0,
+      "remindType": 0,
+      "remindUpThreshold": 0,
+      "remindDownThreshold": 0,
+      "groupId": 1,
+      "loopTimes": 1,
+      "lengthUnit": 0,
+      "intervalDesc": "",
+      "strengthWeight": "0-0",
+      "actionType": 0,
+      "actionName": "",
+      "selfWeightType": 0,
+      "mainPositions": [],
+      "subPositions": []
+    },
+    {
+      "index": 2,
+      "trainingType": 4,
+      "intervalType": 8,
+      "intervalVal": -1,
+      "remindType": 0,
+      "remindUpThreshold": 0,
+      "remindDownThreshold": 0,
+      "groupId": 2,
+      "loopTimes": 1,
+      "lengthUnit": 0,
+      "intervalDesc": "",
+      "strengthWeight": "0-0",
+      "actionType": 0,
+      "actionName": "",
+      "selfWeightType": 0,
+      "mainPositions": [],
+      "subPositions": []
+    },
+    {
+      "index": 3,
+      "trainingType": 1,
+      "intervalType": 8,
+      "intervalVal": 0,
+      "remindType": 0,
+      "remindUpThreshold": 0,
+      "remindDownThreshold": 0,
+      "groupId": 3,
+      "loopTimes": 1,
+      "lengthUnit": 0,
+      "intervalDesc": "",
+      "strengthWeight": "0-5",
+      "actionType": 1128,
+      "actionName": "Reverse Alternating Lunge",
+      "selfWeightType": 1,
+      "mainPositions": [
+        14,
+        15
+      ],
+      "subPositions": [
+        26,
+        27
+      ]
+    },
+    {
+      "index": 4,
+      "trainingType": 1,
+      "intervalType": 8,
+      "intervalVal": 0,
+      "remindType": 0,
+      "remindUpThreshold": 0,
+      "remindDownThreshold": 0,
+      "groupId": 4,
+      "loopTimes": 1,
+      "lengthUnit": 0,
+      "intervalDesc": "",
+      "strengthWeight": "0-1",
+      "actionType": 1135,
+      "actionName": "Right Side Dumbbell Lunge",
+      "selfWeightType": 0,
+      "mainPositions": [
+        14
+      ],
+      "subPositions": [
+        27
+      ]
+    },
+    {
+      "index": 5,
+      "trainingType": 1,
+      "intervalType": 8,
+      "intervalVal": 0,
+      "remindType": 0,
+      "remindUpThreshold": 0,
+      "remindDownThreshold": 0,
+      "groupId": 5,
+      "loopTimes": 1,
+      "lengthUnit": 0,
+      "intervalDesc": "",
+      "strengthWeight": "0-1",
+      "actionType": 1193,
+      "actionName": "Right Side Single Leg Romanian Deadlift",
+      "selfWeightType": 0,
+      "mainPositions": [
+        29
+      ],
+      "subPositions": [
+        27
+      ]
+    },
+    {
+      "index": 6,
+      "trainingType": 1,
+      "intervalType": 8,
+      "intervalVal": 0,
+      "remindType": 0,
+      "remindUpThreshold": 0,
+      "remindDownThreshold": 0,
+      "groupId": 6,
+      "loopTimes": 1,
+      "lengthUnit": 0,
+      "intervalDesc": "",
+      "strengthWeight": "0-5",
+      "actionType": 1210,
+      "actionName": "Right Single Leg Squat",
+      "selfWeightType": 1,
+      "mainPositions": [
+        14
+      ],
+      "subPositions": [
+        43,
+        27
+      ]
+    },
+    {
+      "index": 7,
+      "trainingType": 1,
+      "intervalType": 8,
+      "intervalVal": 0,
+      "remindType": 0,
+      "remindUpThreshold": 0,
+      "remindDownThreshold": 0,
+      "groupId": 7,
+      "loopTimes": 1,
+      "lengthUnit": 0,
+      "intervalDesc": "",
+      "strengthWeight": "0-1",
+      "actionType": 1228,
+      "actionName": "Right Single Leg Glute Bridge",
+      "selfWeightType": 0,
+      "mainPositions": [
+        27
+      ],
+      "subPositions": []
+    },
+    {
+      "index": 8,
+      "trainingType": 1,
+      "intervalType": 8,
+      "intervalVal": 0,
+      "remindType": 0,
+      "remindUpThreshold": 0,
+      "remindDownThreshold": 0,
+      "groupId": 8,
+      "loopTimes": 1,
+      "lengthUnit": 0,
+      "intervalDesc": "",
+      "strengthWeight": "0-5",
+      "actionType": 1273,
+      "actionName": "Right Single Leg Half Squat",
+      "selfWeightType": 1,
+      "mainPositions": [
+        14
+      ],
+      "subPositions": [
+        43,
+        27
+      ]
+    },
+    {
+      "index": 9,
+      "trainingType": 1,
+      "intervalType": 8,
+      "intervalVal": 0,
+      "remindType": 0,
+      "remindUpThreshold": 0,
+      "remindDownThreshold": 0,
+      "groupId": 9,
+      "loopTimes": 1,
+      "lengthUnit": 0,
+      "intervalDesc": "",
+      "strengthWeight": "0-1",
+      "actionType": 1274,
+      "actionName": "Right Glute Bridge with Leg Swing",
+      "selfWeightType": 0,
+      "mainPositions": [
+        27
+      ],
+      "subPositions": []
+    },
+    {
+      "index": 10,
+      "trainingType": 1,
+      "intervalType": 8,
+      "intervalVal": 0,
+      "remindType": 0,
+      "remindUpThreshold": 0,
+      "remindDownThreshold": 0,
+      "groupId": 10,
+      "loopTimes": 1,
+      "lengthUnit": 0,
+      "intervalDesc": "",
+      "strengthWeight": "0-1",
+      "actionType": 1279,
+      "actionName": "Right Simple Single Leg Romanian Deadlift",
+      "selfWeightType": 0,
+      "mainPositions": [
+        29
+      ],
+      "subPositions": [
+        27
+      ]
+    },
+    {
+      "index": 11,
+      "trainingType": 1,
+      "intervalType": 8,
+      "intervalVal": 0,
+      "remindType": 0,
+      "remindUpThreshold": 0,
+      "remindDownThreshold": 0,
+      "groupId": 11,
+      "loopTimes": 1,
+      "lengthUnit": 0,
+      "intervalDesc": "",
+      "strengthWeight": "0-1",
+      "actionType": 1282,
+      "actionName": "Right Dumbbell Single Leg Romanian Deadlift",
+      "selfWeightType": 0,
+      "mainPositions": [
+        28,
+        29
+      ],
+      "subPositions": [
+        26,
+        27
+      ]
+    },
+    {
+      "index": 12,
+      "trainingType": 1,
+      "intervalType": 8,
+      "intervalVal": 0,
+      "remindType": 0,
+      "remindUpThreshold": 0,
+      "remindDownThreshold": 0,
+      "groupId": 12,
+      "loopTimes": 1,
+      "lengthUnit": 0,
+      "intervalDesc": "",
+      "strengthWeight": "0-1",
+      "actionType": 1299,
+      "actionName": "Right Single Leg Romanian Deadlift with Knee Raise",
+      "selfWeightType": 0,
+      "mainPositions": [
+        29
+      ],
+      "subPositions": [
+        27
+      ]
+    },
+    {
+      "index": 13,
+      "trainingType": 1,
+      "intervalType": 8,
+      "intervalVal": 0,
+      "remindType": 0,
+      "remindUpThreshold": 0,
+      "remindDownThreshold": 0,
+      "groupId": 13,
+      "loopTimes": 1,
+      "lengthUnit": 0,
+      "intervalDesc": "",
+      "strengthWeight": "0-1",
+      "actionType": 1306,
+      "actionName": "Right Dumbbell Bulgarian Split Squat",
+      "selfWeightType": 0,
+      "mainPositions": [
+        14,
+        15
+      ],
+      "subPositions": [
+        26,
+        27
+      ]
+    },
+    {
+      "index": 14,
+      "trainingType": 1,
+      "intervalType": 8,
+      "intervalVal": 0,
+      "remindType": 0,
+      "remindUpThreshold": 0,
+      "remindDownThreshold": 0,
+      "groupId": 14,
+      "loopTimes": 1,
+      "lengthUnit": 0,
+      "intervalDesc": "",
+      "strengthWeight": "0-1",
+      "actionType": 1357,
+      "actionName": "Resistance Band Deadlift",
+      "selfWeightType": 0,
+      "mainPositions": [
+        28,
+        29
+      ],
+      "subPositions": [
+        26,
+        27
+      ]
+    },
+    {
+      "index": 15,
+      "trainingType": 1,
+      "intervalType": 8,
+      "intervalVal": 0,
+      "remindType": 0,
+      "remindUpThreshold": 0,
+      "remindDownThreshold": 0,
+      "groupId": 15,
+      "loopTimes": 1,
+      "lengthUnit": 0,
+      "intervalDesc": "",
+      "strengthWeight": "0-1",
+      "actionType": 1396,
+      "actionName": "Resistance Band Deadlift",
+      "selfWeightType": 0,
+      "mainPositions": [
+        26,
+        27
+      ],
+      "subPositions": [
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "index": 16,
+      "trainingType": 1,
+      "intervalType": 8,
+      "intervalVal": 0,
+      "remindType": 0,
+      "remindUpThreshold": 0,
+      "remindDownThreshold": 0,
+      "groupId": 16,
+      "loopTimes": 1,
+      "lengthUnit": 0,
+      "intervalDesc": "",
+      "strengthWeight": "0-1",
+      "actionType": 1362,
+      "actionName": "Right Leg Touch Deadlift",
+      "selfWeightType": 0,
+      "mainPositions": [
+        29
+      ],
+      "subPositions": [
+        27
+      ]
+    },
+    {
+      "index": 17,
+      "trainingType": 1,
+      "intervalType": 8,
+      "intervalVal": 0,
+      "remindType": 0,
+      "remindUpThreshold": 0,
+      "remindDownThreshold": 0,
+      "groupId": 17,
+      "loopTimes": 1,
+      "lengthUnit": 0,
+      "intervalDesc": "",
+      "strengthWeight": "0-5",
+      "actionType": 1389,
+      "actionName": "Right Single Leg Assisted Half Squat",
+      "selfWeightType": 1,
+      "mainPositions": [
+        15
+      ],
+      "subPositions": [
+        43,
+        27
+      ]
+    },
+    {
+      "index": 18,
+      "trainingType": 1,
+      "intervalType": 8,
+      "intervalVal": 0,
+      "remindType": 0,
+      "remindUpThreshold": 0,
+      "remindDownThreshold": 0,
+      "groupId": 18,
+      "loopTimes": 1,
+      "lengthUnit": 0,
+      "intervalDesc": "",
+      "strengthWeight": "0-5",
+      "actionType": 1407,
+      "actionName": "Right Lunge Kick",
+      "selfWeightType": 1,
+      "mainPositions": [
+        14
+      ],
+      "subPositions": [
+        27
+      ]
+    },
+    {
+      "index": 19,
+      "trainingType": 1,
+      "intervalType": 8,
+      "intervalVal": 0,
+      "remindType": 0,
+      "remindUpThreshold": 0,
+      "remindDownThreshold": 0,
+      "groupId": 19,
+      "loopTimes": 1,
+      "lengthUnit": 0,
+      "intervalDesc": "",
+      "strengthWeight": "0-1",
+      "actionType": 1436,
+      "actionName": "Right Lunge with Knee Raise",
+      "selfWeightType": 0,
+      "mainPositions": [
+        14
+      ],
+      "subPositions": [
+        27
+      ]
+    },
+    {
+      "index": 20,
+      "trainingType": 1,
+      "intervalType": 8,
+      "intervalVal": 0,
+      "remindType": 0,
+      "remindUpThreshold": 0,
+      "remindDownThreshold": 0,
+      "groupId": 20,
+      "loopTimes": 1,
+      "lengthUnit": 0,
+      "intervalDesc": "",
+      "strengthWeight": "0-1",
+      "actionType": 1459,
+      "actionName": "Resistance Band Squat",
+      "selfWeightType": 0,
+      "mainPositions": [
+        14,
+        15
+      ],
+      "subPositions": [
+        26,
+        27
+      ]
+    },
+    {
+      "index": 21,
+      "trainingType": 1,
+      "intervalType": 8,
+      "intervalVal": 0,
+      "remindType": 0,
+      "remindUpThreshold": 0,
+      "remindDownThreshold": 0,
+      "groupId": 21,
+      "loopTimes": 1,
+      "lengthUnit": 0,
+      "intervalDesc": "",
+      "strengthWeight": "0-5",
+      "actionType": 1469,
+      "actionName": "Right Reverse Lunge",
+      "selfWeightType": 1,
+      "mainPositions": [
+        14
+      ],
+      "subPositions": [
+        27
+      ]
+    },
+    {
+      "index": 22,
+      "trainingType": 1,
+      "intervalType": 8,
+      "intervalVal": 0,
+      "remindType": 0,
+      "remindUpThreshold": 0,
+      "remindDownThreshold": 0,
+      "groupId": 22,
+      "loopTimes": 1,
+      "lengthUnit": 0,
+      "intervalDesc": "",
+      "strengthWeight": "0-1",
+      "actionType": 1480,
+      "actionName": "Resistance Band Sumo Deadlift",
+      "selfWeightType": 0,
+      "mainPositions": [
+        26,
+        27
+      ],
+      "subPositions": [
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "index": 23,
+      "trainingType": 1,
+      "intervalType": 8,
+      "intervalVal": 0,
+      "remindType": 0,
+      "remindUpThreshold": 0,
+      "remindDownThreshold": 0,
+      "groupId": 23,
+      "loopTimes": 1,
+      "lengthUnit": 0,
+      "intervalDesc": "",
+      "strengthWeight": "0-1",
+      "actionType": 1488,
+      "actionName": "Right Single Leg Hip Thrust",
+      "selfWeightType": 0,
+      "mainPositions": [
+        27
+      ],
+      "subPositions": []
+    },
+    {
+      "index": 24,
+      "trainingType": 1,
+      "intervalType": 8,
+      "intervalVal": 0,
+      "remindType": 0,
+      "remindUpThreshold": 0,
+      "remindDownThreshold": 0,
+      "groupId": 24,
+      "loopTimes": 1,
+      "lengthUnit": 0,
+      "intervalDesc": "",
+      "strengthWeight": "0-1",
+      "actionType": 1509,
+      "actionName": "Right Kettlebell Squat to Press",
+      "selfWeightType": 0,
+      "mainPositions": [
+        27
+      ],
+      "subPositions": [
+        14
+      ]
+    },
+    {
+      "index": 25,
+      "trainingType": 1,
+      "intervalType": 8,
+      "intervalVal": 0,
+      "remindType": 0,
+      "remindUpThreshold": 0,
+      "remindDownThreshold": 0,
+      "groupId": 25,
+      "loopTimes": 1,
+      "lengthUnit": 0,
+      "intervalDesc": "",
+      "strengthWeight": "0-1",
+      "actionType": 1518,
+      "actionName": "Right Dumbbell Lunge",
+      "selfWeightType": 0,
+      "mainPositions": [
+        14
+      ],
+      "subPositions": [
+        27
+      ]
+    },
+    {
+      "index": 26,
+      "trainingType": 1,
+      "intervalType": 8,
+      "intervalVal": 0,
+      "remindType": 0,
+      "remindUpThreshold": 0,
+      "remindDownThreshold": 0,
+      "groupId": 26,
+      "loopTimes": 1,
+      "lengthUnit": 0,
+      "intervalDesc": "",
+      "strengthWeight": "0-1",
+      "actionType": 1520,
+      "actionName": "Right Dumbbell Single Leg Deadlift",
+      "selfWeightType": 0,
+      "mainPositions": [
+        28,
+        29
+      ],
+      "subPositions": [
+        26,
+        27
+      ]
+    },
+    {
+      "index": 27,
+      "trainingType": 1,
+      "intervalType": 8,
+      "intervalVal": 0,
+      "remindType": 0,
+      "remindUpThreshold": 0,
+      "remindDownThreshold": 0,
+      "groupId": 27,
+      "loopTimes": 1,
+      "lengthUnit": 0,
+      "intervalDesc": "",
+      "strengthWeight": "0-1",
+      "actionType": 1531,
+      "actionName": "Resistance Band Half Squat Lateral Walk",
+      "selfWeightType": 0,
+      "mainPositions": [
+        15,
+        14
+      ],
+      "subPositions": [
+        27,
+        26
+      ]
+    },
+    {
+      "index": 28,
+      "trainingType": 1,
+      "intervalType": 8,
+      "intervalVal": 0,
+      "remindType": 0,
+      "remindUpThreshold": 0,
+      "remindDownThreshold": 0,
+      "groupId": 28,
+      "loopTimes": 1,
+      "lengthUnit": 0,
+      "intervalDesc": "",
+      "strengthWeight": "0-5",
+      "actionType": 1533,
+      "actionName": "Right Forward Lunge",
+      "selfWeightType": 1,
+      "mainPositions": [
+        14
+      ],
+      "subPositions": [
+        27
+      ]
+    },
+    {
+      "index": 29,
+      "trainingType": 1,
+      "intervalType": 8,
+      "intervalVal": 0,
+      "remindType": 0,
+      "remindUpThreshold": 0,
+      "remindDownThreshold": 0,
+      "groupId": 29,
+      "loopTimes": 1,
+      "lengthUnit": 0,
+      "intervalDesc": "",
+      "strengthWeight": "0-1",
+      "actionType": 1536,
+      "actionName": "Right Resistance Band Bulgarian Split Squat",
+      "selfWeightType": 0,
+      "mainPositions": [
+        14
+      ],
+      "subPositions": [
+        27
+      ]
+    },
+    {
+      "index": 30,
+      "trainingType": 1,
+      "intervalType": 8,
+      "intervalVal": 0,
+      "remindType": 0,
+      "remindUpThreshold": 0,
+      "remindDownThreshold": 0,
+      "groupId": 30,
+      "loopTimes": 1,
+      "lengthUnit": 0,
+      "intervalDesc": "",
+      "strengthWeight": "0-1",
+      "actionType": 1547,
+      "actionName": "Right Assisted Dumbbell Single Leg Deadlift",
+      "selfWeightType": 0,
+      "mainPositions": [
+        29
+      ],
+      "subPositions": [
+        27
+      ]
+    },
+    {
+      "index": 31,
+      "trainingType": 1,
+      "intervalType": 8,
+      "intervalVal": 0,
+      "remindType": 0,
+      "remindUpThreshold": 0,
+      "remindDownThreshold": 0,
+      "groupId": 31,
+      "loopTimes": 1,
+      "lengthUnit": 0,
+      "intervalDesc": "",
+      "strengthWeight": "0-1",
+      "actionType": 1563,
+      "actionName": "Right Leg Star Drill",
+      "selfWeightType": 0,
+      "mainPositions": [
+        14
+      ],
+      "subPositions": [
+        27
+      ]
+    },
+    {
+      "index": 32,
+      "trainingType": 1,
+      "intervalType": 8,
+      "intervalVal": 0,
+      "remindType": 0,
+      "remindUpThreshold": 0,
+      "remindDownThreshold": 0,
+      "groupId": 32,
+      "loopTimes": 1,
+      "lengthUnit": 0,
+      "intervalDesc": "",
+      "strengthWeight": "0-5",
+      "actionType": 1568,
+      "actionName": "Right Combo Lunge",
+      "selfWeightType": 1,
+      "mainPositions": [
+        14
+      ],
+      "subPositions": [
+        27
+      ]
+    },
+    {
+      "index": 33,
+      "trainingType": 1,
+      "intervalType": 8,
+      "intervalVal": 0,
+      "remindType": 0,
+      "remindUpThreshold": 0,
+      "remindDownThreshold": 0,
+      "groupId": 33,
+      "loopTimes": 1,
+      "lengthUnit": 0,
+      "intervalDesc": "",
+      "strengthWeight": "0-1",
+      "actionType": 1571,
+      "actionName": "Resistance Band Box Squat",
+      "selfWeightType": 0,
+      "mainPositions": [
+        14,
+        15
+      ],
+      "subPositions": [
+        26,
+        27
+      ]
+    },
+    {
+      "index": 34,
+      "trainingType": 1,
+      "intervalType": 8,
+      "intervalVal": 0,
+      "remindType": 0,
+      "remindUpThreshold": 0,
+      "remindDownThreshold": 0,
+      "groupId": 34,
+      "loopTimes": 1,
+      "lengthUnit": 0,
+      "intervalDesc": "",
+      "strengthWeight": "0-1",
+      "actionType": 1574,
+      "actionName": "Right Resistance Band Single Leg Deadlift",
+      "selfWeightType": 0,
+      "mainPositions": [
+        29
+      ],
+      "subPositions": [
+        27
+      ]
+    },
+    {
+      "index": 35,
+      "trainingType": 1,
+      "intervalType": 8,
+      "intervalVal": 0,
+      "remindType": 0,
+      "remindUpThreshold": 0,
+      "remindDownThreshold": 0,
+      "groupId": 35,
+      "loopTimes": 1,
+      "lengthUnit": 0,
+      "intervalDesc": "",
+      "strengthWeight": "0-1",
+      "actionType": 1575,
+      "actionName": "Resistance Band Behind the Neck Squat",
+      "selfWeightType": 0,
+      "mainPositions": [
+        14,
+        15
+      ],
+      "subPositions": [
+        26,
+        27
+      ]
+    },
+    {
+      "index": 36,
+      "trainingType": 1,
+      "intervalType": 8,
+      "intervalVal": 0,
+      "remindType": 0,
+      "remindUpThreshold": 0,
+      "remindDownThreshold": 0,
+      "groupId": 36,
+      "loopTimes": 1,
+      "lengthUnit": 0,
+      "intervalDesc": "",
+      "strengthWeight": "0-1",
+      "actionType": 1595,
+      "actionName": "Right 180° Rotation Circle",
+      "selfWeightType": 0,
+      "mainPositions": [
+        14
+      ],
+      "subPositions": [
+        27
+      ]
+    },
+    {
+      "index": 37,
+      "trainingType": 1,
+      "intervalType": 8,
+      "intervalVal": 0,
+      "remindType": 0,
+      "remindUpThreshold": 0,
+      "remindDownThreshold": 0,
+      "groupId": 37,
+      "loopTimes": 1,
+      "lengthUnit": 0,
+      "intervalDesc": "",
+      "strengthWeight": "0-1",
+      "actionType": 1600,
+      "actionName": "Right Resistance Band Single Leg Tap Deadlift",
+      "selfWeightType": 0,
+      "mainPositions": [
+        29
+      ],
+      "subPositions": [
+        27
+      ]
+    },
+    {
+      "index": 38,
+      "trainingType": 1,
+      "intervalType": 8,
+      "intervalVal": 0,
+      "remindType": 0,
+      "remindUpThreshold": 0,
+      "remindDownThreshold": 0,
+      "groupId": 38,
+      "loopTimes": 1,
+      "lengthUnit": 0,
+      "intervalDesc": "",
+      "strengthWeight": "0-1",
+      "actionType": 1614,
+      "actionName": "Right Resistance Band Reverse Lunge",
+      "selfWeightType": 0,
+      "mainPositions": [
+        14
+      ],
+      "subPositions": [
+        27
+      ]
+    },
+    {
+      "index": 39,
+      "trainingType": 1,
+      "intervalType": 8,
+      "intervalVal": 0,
+      "remindType": 0,
+      "remindUpThreshold": 0,
+      "remindDownThreshold": 0,
+      "groupId": 39,
+      "loopTimes": 1,
+      "lengthUnit": 0,
+      "intervalDesc": "",
+      "strengthWeight": "0-1",
+      "actionType": 1631,
+      "actionName": "Right Leg Circle",
+      "selfWeightType": 0,
+      "mainPositions": [
+        27
+      ],
+      "subPositions": [
+        29
+      ]
+    }
+  ]
+}

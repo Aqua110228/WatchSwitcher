@@ -1,0 +1,131 @@
+syntax = "proto2";
+
+package garmin_vivomovehr;
+
+option java_package = "nodomain.freeyourgadget.gadgetbridge.proto.garmin";
+
+message CoreService {
+    optional SyncRequest sync_request = 1;
+    optional SyncResponse sync_response = 2;
+    optional GetLocationRequest get_location_request = 3;
+    optional GetLocationResponse get_location_response = 4;
+    optional LocationUpdatedSetEnabledRequest location_updated_set_enabled_request = 5;
+    optional LocationUpdatedSetEnabledResponse location_updated_set_enabled_response = 6;
+    optional LocationUpdatedNotification location_updated_notification = 7;
+    optional Message9 unk9 = 9;
+    optional Message11 unk11 = 11;
+    optional ConnectedNotification connected_notification = 14;
+    optional Message18 unk18 = 18;
+
+    message ConnectedNotification {
+    }
+
+    message SyncRequest {
+    }
+
+    message SyncResponse {
+        optional ResponseStatus status = 1;
+
+        enum ResponseStatus {
+            UNKNOWN_RESPONSE_STATUS = 0;
+            OK = 1;
+            UNK2 = 2;
+        }
+    }
+
+    message GetLocationRequest {
+        optional RequestType request_type = 1;
+
+        enum RequestType {
+            STANDARD = 0;
+            EMERGENCY = 1;
+        }
+    }
+
+    message GetLocationResponse {
+        optional Status status = 1;
+        optional LocationData location_data = 2;
+
+        enum Status {
+            OK = 1;
+            NO_VALID_LOCATION = 2;
+            LOCATION_SERVICES_UNAVAILABLE = 3;
+            LOCATION_SERVICES_DISABLED = 4;
+            TRY_AGAIN_LATER = 5;
+        }
+    }
+
+    enum DataType {
+        SIGNIFICANT_LOCATION = 0;
+        GENERAL_LOCATION = 1;
+        REALTIME_TRACKING = 2;
+        INREACH_TRACKING = 3;
+        TRACKING_EVENT = 4;
+    }
+
+    message LocationUpdatedSetEnabledRequest {
+        optional bool enabled = 1;
+        repeated Request requests = 2;
+    }
+
+    message Request {
+        optional DataType requested = 1;
+        optional uint32 min_update_threshold = 2;
+        optional float distance_threshold = 3;
+    }
+
+    message LocationUpdatedSetEnabledResponse {
+        optional Status status = 1;
+        repeated Requested requests = 2;
+
+        enum Status {
+            OK = 1;
+            UNAVAILABLE = 2;
+            UNKNOWN3 = 3;
+            UNKNOWN4 = 4;
+        }
+
+        message Requested {
+                optional DataType requested = 1;
+                optional RequestedStatus status = 2;
+
+                enum RequestedStatus {
+                    OK = 1;
+                    KO = 2;
+                }
+
+        }
+    }
+
+    message LocationUpdatedNotification {
+        repeated LocationData location_data = 1;
+    }
+
+    message LocationData {
+        optional LatLon position=1;
+        optional float altitude=2;
+        optional uint32 timestamp=3;
+        optional float h_accuracy=4;
+        optional float v_accuracy=5;
+        optional DataType position_type=6;
+        optional float bearing=9;
+        optional float speed=10;
+    }
+
+    message LatLon {
+        required sint32 lat = 1;
+        required sint32 lon = 2;
+    }
+
+    message Message9 {
+        optional uint32 unk2 = 2;
+    }
+
+    message Message11 {
+        optional uint32 unk1 = 1;
+    }
+
+    message Message18 {
+        optional uint64 unk1 = 1; // current time ?
+    }
+}

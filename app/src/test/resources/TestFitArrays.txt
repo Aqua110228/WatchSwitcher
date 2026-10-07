@@ -1,0 +1,6 @@
+[FitFileId{type=DEBUG, manufacturer=1, product=2, serial_number=3, time_created=631065604, product_name=GB-TestFitArrays},
+FitDeviceSettings{time_offset=[4294967294,,1,0], time_zone_offset=[126,,-1,0], alarms_time=[65534,,1,0], alarms_mode=[254,,1,0], alarms_repeat=[4294967295,,2,1]},
+FitUserProfile{global_id=[127,,1,0]},
+FitSport{color=[254,,1,0]},
+FitNavigationAlert{distance=[1.5,,-1.5,0.0], time=[2147483646,,-1,0]},
+FitHsaBodyBatteryData{uncharged=[32766,,-1,0]}]

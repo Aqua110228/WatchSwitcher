@@ -1,0 +1,8 @@
+[FitFileId{type=WORKOUTS, manufacturer=1, product=65534, serial_number=1, number=1},
+FitFileCreator{software_version=1},
+FitWorkout{sport=2, capabilities=32, num_valid_steps=5, wkt_name=garmin_bike_secondary, sub_sport=0, message_index=0},
+FitWorkoutStep{duration_type=TIME, duration_value=300000, target_type=OPEN, target_value=0, intensity=WARMUP, weight_display_unit=KILOGRAM, message_index=0},
+FitWorkoutStep{duration_type=TIME, duration_value=600000, target_type=CADENCE, custom_target_value_low=85, custom_target_value_high=95, intensity=ACTIVE, weight_display_unit=KILOGRAM, secondary_target_type=HEART_RATE, secondary_custom_target_value_low=220, secondary_custom_target_value_high=240, message_index=1},
+FitWorkoutStep{duration_type=TIME, duration_value=600000, target_type=CADENCE, custom_target_value_low=85, custom_target_value_high=95, intensity=ACTIVE, weight_display_unit=KILOGRAM, secondary_target_type=POWER_3S, secondary_custom_target_value_low=1280, secondary_custom_target_value_high=1330, message_index=2},
+FitWorkoutStep{duration_type=TIME, duration_value=600000, target_type=CADENCE, custom_target_value_low=85, custom_target_value_high=95, intensity=ACTIVE, weight_display_unit=KILOGRAM, secondary_target_type=HEART_RATE, secondary_target_value=3, message_index=3},
+FitWorkoutStep{duration_type=OPEN, target_type=OPEN, target_value=0, intensity=COOLDOWN, weight_display_unit=KILOGRAM, message_index=4}]

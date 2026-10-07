@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="nodomain.freeyourgadget.gadgetbridge.activities.workouts.templates.WorkoutStepEditActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- The step-type field is added here programmatically. -->
+            <LinearLayout
+                android:id="@+id/workout_step_type_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+
+            <!-- The note field is added here programmatically. -->
+            <LinearLayout
+                android:id="@+id/workout_step_note_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:orientation="vertical" />
+
+            <!--
+                Duration/target/field editors are added here programmatically, following the device's
+                StepSpec for the selected step type.
+            -->
+            <LinearLayout
+                android:id="@+id/workout_step_dynamic_fields"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <com.google.android.material.divider.MaterialDivider
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical|end"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/workout_step_cancel"
+            style="@style/Widget.Material3.Button.TextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cancel" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/workout_step_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="@string/save" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/ftp_file_browser_file_download"
+        android:icon="@drawable/ic_download"
+        android:title="@string/ftp_file_browser_download" />
+    <item
+        android:id="@+id/ftp_file_browser_file_share"
+        android:icon="@drawable/ic_share"
+        android:title="@string/share" />
+    <item
+        android:id="@+id/ftp_file_browser_file_delete"
+        android:icon="@drawable/ic_delete"
+        android:title="@string/delete" />
+</menu>

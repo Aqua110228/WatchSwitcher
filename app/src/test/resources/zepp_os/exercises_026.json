@@ -1,0 +1,988 @@
+{
+  "sportType": 52,
+  "templateId": 1790193217001024,
+  "templateName": "exercises_026",
+  "intervals": [
+    {
+      "index": 0,
+      "trainingType": 0,
+      "intervalType": 8,
+      "intervalVal": -1,
+      "remindType": 0,
+      "remindUpThreshold": 0,
+      "remindDownThreshold": 0,
+      "groupId": 0,
+      "loopTimes": 1,
+      "lengthUnit": 0,
+      "intervalDesc": "",
+      "strengthWeight": "0-0",
+      "actionType": 0,
+      "actionName": "",
+      "selfWeightType": 0,
+      "mainPositions": [],
+      "subPositions": []
+    },
+    {
+      "index": 1,
+      "trainingType": 1,
+      "intervalType": 8,
+      "intervalVal": 0,
+      "remindType": 0,
+      "remindUpThreshold": 0,
+      "remindDownThreshold": 0,
+      "groupId": 1,
+      "loopTimes": 1,
+      "lengthUnit": 0,
+      "intervalDesc": "",
+      "strengthWeight": "0-0",
+      "actionType": 0,
+      "actionName": "",
+      "selfWeightType": 0,
+      "mainPositions": [],
+      "subPositions": []
+    },
+    {
+      "index": 2,
+      "trainingType": 4,
+      "intervalType": 8,
+      "intervalVal": -1,
+      "remindType": 0,
+      "remindUpThreshold": 0,
+      "remindDownThreshold": 0,
+      "groupId": 2,
+      "loopTimes": 1,
+      "lengthUnit": 0,
+      "intervalDesc": "",
+      "strengthWeight": "0-0",
+      "actionType": 0,
+      "actionName": "",
+      "selfWeightType": 0,
+      "mainPositions": [],
+      "subPositions": []
+    },
+    {
+      "index": 3,
+      "trainingType": 1,
+      "intervalType": 8,
+      "intervalVal": 0,
+      "remindType": 0,
+      "remindUpThreshold": 0,
+      "remindDownThreshold": 0,
+      "groupId": 3,
+      "loopTimes": 1,
+      "lengthUnit": 0,
+      "intervalDesc": "",
+      "strengthWeight": "0-1",
+      "actionType": 1229,
+      "actionName": "Banded Squat",
+      "selfWeightType": 0,
+      "mainPositions": [
+        14,
+        15
+      ],
+      "subPositions": [
+        26,
+        27
+      ]
+    },
+    {
+      "index": 4,
+      "trainingType": 1,
+      "intervalType": 8,
+      "intervalVal": 0,
+      "remindType": 0,
+      "remindUpThreshold": 0,
+      "remindDownThreshold": 0,
+      "groupId": 4,
+      "loopTimes": 1,
+      "lengthUnit": 0,
+      "intervalDesc": "",
+      "strengthWeight": "0-1",
+      "actionType": 1354,
+      "actionName": "Banded Squat",
+      "selfWeightType": 0,
+      "mainPositions": [
+        14,
+        15
+      ],
+      "subPositions": [
+        26,
+        27
+      ]
+    },
+    {
+      "index": 5,
+      "trainingType": 1,
+      "intervalType": 8,
+      "intervalVal": 0,
+      "remindType": 0,
+      "remindUpThreshold": 0,
+      "remindDownThreshold": 0,
+      "groupId": 5,
+      "loopTimes": 1,
+      "lengthUnit": 0,
+      "intervalDesc": "",
+      "strengthWeight": "0-1",
+      "actionType": 1301,
+      "actionName": "Barbell Straight Leg Deadlift",
+      "selfWeightType": 0,
+      "mainPositions": [
+        26,
+        27
+      ],
+      "subPositions": [
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "index": 6,
+      "trainingType": 1,
+      "intervalType": 8,
+      "intervalVal": 0,
+      "remindType": 0,
+      "remindUpThreshold": 0,
+      "remindDownThreshold": 0,
+      "groupId": 6,
+      "loopTimes": 1,
+      "lengthUnit": 0,
+      "intervalDesc": "",
+      "strengthWeight": "0-1",
+      "actionType": 1310,
+      "actionName": "Barbell Romanian Deadlift",
+      "selfWeightType": 0,
+      "mainPositions": [
+        26,
+        27
+      ],
+      "subPositions": [
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "index": 7,
+      "trainingType": 1,
+      "intervalType": 8,
+      "intervalVal": 0,
+      "remindType": 0,
+      "remindUpThreshold": 0,
+      "remindDownThreshold": 0,
+      "groupId": 7,
+      "loopTimes": 1,
+      "lengthUnit": 0,
+      "intervalDesc": "",
+      "strengthWeight": "0-5",
+      "actionType": 1313,
+      "actionName": "Banded Squat with Forward-Backward Movement",
+      "selfWeightType": 1,
+      "mainPositions": [
+        14,
+        15
+      ],
+      "subPositions": [
+        26,
+        27
+      ]
+    },
+    {
+      "index": 8,
+      "trainingType": 1,
+      "intervalType": 8,
+      "intervalVal": 0,
+      "remindType": 0,
+      "remindUpThreshold": 0,
+      "remindDownThreshold": 0,
+      "groupId": 8,
+      "loopTimes": 1,
+      "lengthUnit": 0,
+      "intervalDesc": "",
+      "strengthWeight": "0-1",
+      "actionType": 1366,
+      "actionName": "Barbell Sumo Deadlift",
+      "selfWeightType": 0,
+      "mainPositions": [
+        26,
+        27
+      ],
+      "subPositions": [
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "index": 9,
+      "trainingType": 1,
+      "intervalType": 8,
+      "intervalVal": 0,
+      "remindType": 0,
+      "remindUpThreshold": 0,
+      "remindDownThreshold": 0,
+      "groupId": 9,
+      "loopTimes": 1,
+      "lengthUnit": 0,
+      "intervalDesc": "",
+      "strengthWeight": "0-1",
+      "actionType": 1390,
+      "actionName": "Banded Squat with Knee Band",
+      "selfWeightType": 0,
+      "mainPositions": [
+        14,
+        15
+      ],
+      "subPositions": [
+        26,
+        27
+      ]
+    },
+    {
+      "index": 10,
+      "trainingType": 1,
+      "intervalType": 8,
+      "intervalVal": 0,
+      "remindType": 0,
+      "remindUpThreshold": 0,
+      "remindDownThreshold": 0,
+      "groupId": 10,
+      "loopTimes": 1,
+      "lengthUnit": 0,
+      "intervalDesc": "",
+      "strengthWeight": "0-1",
+      "actionType": 1403,
+      "actionName": "Banded Alternating Crab Walk",
+      "selfWeightType": 0,
+      "mainPositions": [
+        14,
+        15
+      ],
+      "subPositions": [
+        26,
+        27
+      ]
+    },
+    {
+      "index": 11,
+      "trainingType": 1,
+      "intervalType": 8,
+      "intervalVal": 0,
+      "remindType": 0,
+      "remindUpThreshold": 0,
+      "remindDownThreshold": 0,
+      "groupId": 11,
+      "loopTimes": 1,
+      "lengthUnit": 0,
+      "intervalDesc": "",
+      "strengthWeight": "0-1",
+      "actionType": 1423,
+      "actionName": "Barbell Forward Alternating Lunge",
+      "selfWeightType": 0,
+      "mainPositions": [
+        14,
+        15
+      ],
+      "subPositions": [
+        26,
+        27
+      ]
+    },
+    {
+      "index": 12,
+      "trainingType": 1,
+      "intervalType": 8,
+      "intervalVal": 0,
+      "remindType": 0,
+      "remindUpThreshold": 0,
+      "remindDownThreshold": 0,
+      "groupId": 12,
+      "loopTimes": 1,
+      "lengthUnit": 0,
+      "intervalDesc": "",
+      "strengthWeight": "0-1",
+      "actionType": 1453,
+      "actionName": "Banded Ankle Alternating Crab Walk",
+      "selfWeightType": 0,
+      "mainPositions": [
+        14,
+        15
+      ],
+      "subPositions": [
+        26,
+        27
+      ]
+    },
+    {
+      "index": 13,
+      "trainingType": 1,
+      "intervalType": 8,
+      "intervalVal": 0,
+      "remindType": 0,
+      "remindUpThreshold": 0,
+      "remindDownThreshold": 0,
+      "groupId": 13,
+      "loopTimes": 1,
+      "lengthUnit": 0,
+      "intervalDesc": "",
+      "strengthWeight": "0-1",
+      "actionType": 1456,
+      "actionName": "Barbell Front Squat",
+      "selfWeightType": 0,
+      "mainPositions": [
+        14,
+        15
+      ],
+      "subPositions": [
+        26,
+        27
+      ]
+    },
+    {
+      "index": 14,
+      "trainingType": 1,
+      "intervalType": 8,
+      "intervalVal": 0,
+      "remindType": 0,
+      "remindUpThreshold": 0,
+      "remindDownThreshold": 0,
+      "groupId": 14,
+      "loopTimes": 1,
+      "lengthUnit": 0,
+      "intervalDesc": "",
+      "strengthWeight": "0-1",
+      "actionType": 1477,
+      "actionName": "Barbell Reverse Alternating Lunge",
+      "selfWeightType": 0,
+      "mainPositions": [
+        14,
+        15
+      ],
+      "subPositions": [
+        26,
+        27
+      ]
+    },
+    {
+      "index": 15,
+      "trainingType": 1,
+      "intervalType": 8,
+      "intervalVal": 0,
+      "remindType": 0,
+      "remindUpThreshold": 0,
+      "remindDownThreshold": 0,
+      "groupId": 15,
+      "loopTimes": 1,
+      "lengthUnit": 0,
+      "intervalDesc": "",
+      "strengthWeight": "0-1",
+      "actionType": 1496,
+      "actionName": "Barbell Overhead Squat",
+      "selfWeightType": 0,
+      "mainPositions": [
+        14,
+        15
+      ],
+      "subPositions": [
+        26,
+        27
+      ]
+    },
+    {
+      "index": 16,
+      "trainingType": 1,
+      "intervalType": 8,
+      "intervalVal": 0,
+      "remindType": 0,
+      "remindUpThreshold": 0,
+      "remindDownThreshold": 0,
+      "groupId": 16,
+      "loopTimes": 1,
+      "lengthUnit": 0,
+      "intervalDesc": "",
+      "strengthWeight": "0-1",
+      "actionType": 1500,
+      "actionName": "Barbell Alternating Side Lunge",
+      "selfWeightType": 0,
+      "mainPositions": [
+        14,
+        15
+      ],
+      "subPositions": [
+        26,
+        27
+      ]
+    },
+    {
+      "index": 17,
+      "trainingType": 1,
+      "intervalType": 8,
+      "intervalVal": 0,
+      "remindType": 0,
+      "remindUpThreshold": 0,
+      "remindDownThreshold": 0,
+      "groupId": 17,
+      "loopTimes": 1,
+      "lengthUnit": 0,
+      "intervalDesc": "",
+      "strengthWeight": "0-1",
+      "actionType": 1506,
+      "actionName": "Barbell Left Bulgarian Split Squat",
+      "selfWeightType": 0,
+      "mainPositions": [
+        15
+      ],
+      "subPositions": [
+        26
+      ]
+    },
+    {
+      "index": 18,
+      "trainingType": 1,
+      "intervalType": 8,
+      "intervalVal": 0,
+      "remindType": 0,
+      "remindUpThreshold": 0,
+      "remindDownThreshold": 0,
+      "groupId": 18,
+      "loopTimes": 1,
+      "lengthUnit": 0,
+      "intervalDesc": "",
+      "strengthWeight": "0-1",
+      "actionType": 1512,
+      "actionName": "Barbell Box Squat",
+      "selfWeightType": 0,
+      "mainPositions": [
+        14,
+        15
+      ],
+      "subPositions": [
+        26,
+        27
+      ]
+    },
+    {
+      "index": 19,
+      "trainingType": 1,
+      "intervalType": 8,
+      "intervalVal": 0,
+      "remindType": 0,
+      "remindUpThreshold": 0,
+      "remindDownThreshold": 0,
+      "groupId": 19,
+      "loopTimes": 1,
+      "lengthUnit": 0,
+      "intervalDesc": "",
+      "strengthWeight": "0-1",
+      "actionType": 1539,
+      "actionName": "Barbell Bulgarian Split Squat",
+      "selfWeightType": 0,
+      "mainPositions": [
+        14,
+        15
+      ],
+      "subPositions": [
+        26,
+        27
+      ]
+    },
+    {
+      "index": 20,
+      "trainingType": 1,
+      "intervalType": 8,
+      "intervalVal": 0,
+      "remindType": 0,
+      "remindUpThreshold": 0,
+      "remindDownThreshold": 0,
+      "groupId": 20,
+      "loopTimes": 1,
+      "lengthUnit": 0,
+      "intervalDesc": "",
+      "strengthWeight": "0-1",
+      "actionType": 1557,
+      "actionName": "BOSU Ball Half Squat Rock",
+      "selfWeightType": 0,
+      "mainPositions": [
+        14,
+        15
+      ],
+      "subPositions": [
+        26,
+        27
+      ]
+    },
+    {
+      "index": 21,
+      "trainingType": 1,
+      "intervalType": 8,
+      "intervalVal": 0,
+      "remindType": 0,
+      "remindUpThreshold": 0,
+      "remindDownThreshold": 0,
+      "groupId": 21,
+      "loopTimes": 1,
+      "lengthUnit": 0,
+      "intervalDesc": "",
+      "strengthWeight": "0-1",
+      "actionType": 1636,
+      "actionName": "Barbell Good Morning",
+      "selfWeightType": 0,
+      "mainPositions": [
+        26,
+        27
+      ],
+      "subPositions": [
+        28,
+        29
+      ]
+    },
+    {
+      "index": 22,
+      "trainingType": 1,
+      "intervalType": 8,
+      "intervalVal": 0,
+      "remindType": 0,
+      "remindUpThreshold": 0,
+      "remindDownThreshold": 0,
+      "groupId": 22,
+      "loopTimes": 1,
+      "lengthUnit": 0,
+      "intervalDesc": "",
+      "strengthWeight": "0-1",
+      "actionType": 1656,
+      "actionName": "BOSU Ball Touchdown Squat",
+      "selfWeightType": 0,
+      "mainPositions": [
+        14,
+        15
+      ],
+      "subPositions": [
+        26,
+        27
+      ]
+    },
+    {
+      "index": 23,
+      "trainingType": 1,
+      "intervalType": 8,
+      "intervalVal": 0,
+      "remindType": 0,
+      "remindUpThreshold": 0,
+      "remindDownThreshold": 0,
+      "groupId": 23,
+      "loopTimes": 1,
+      "lengthUnit": 0,
+      "intervalDesc": "",
+      "strengthWeight": "0-5",
+      "actionType": 1700,
+      "actionName": "BOSU Ball Left Lunge",
+      "selfWeightType": 1,
+      "mainPositions": [
+        15
+      ],
+      "subPositions": [
+        26
+      ]
+    },
+    {
+      "index": 24,
+      "trainingType": 1,
+      "intervalType": 8,
+      "intervalVal": 0,
+      "remindType": 0,
+      "remindUpThreshold": 0,
+      "remindDownThreshold": 0,
+      "groupId": 24,
+      "loopTimes": 1,
+      "lengthUnit": 0,
+      "intervalDesc": "",
+      "strengthWeight": "0-5",
+      "actionType": 1703,
+      "actionName": "BOSU Ball Right Lunge",
+      "selfWeightType": 1,
+      "mainPositions": [
+        14
+      ],
+      "subPositions": [
+        26,
+        27,
+        15
+      ]
+    },
+    {
+      "index": 25,
+      "trainingType": 1,
+      "intervalType": 8,
+      "intervalVal": 0,
+      "remindType": 0,
+      "remindUpThreshold": 0,
+      "remindDownThreshold": 0,
+      "groupId": 25,
+      "loopTimes": 1,
+      "lengthUnit": 0,
+      "intervalDesc": "",
+      "strengthWeight": "0-1",
+      "actionType": 1162,
+      "actionName": "Cushion Squat",
+      "selfWeightType": 0,
+      "mainPositions": [
+        14,
+        15
+      ],
+      "subPositions": [
+        26,
+        27
+      ]
+    },
+    {
+      "index": 26,
+      "trainingType": 1,
+      "intervalType": 8,
+      "intervalVal": 0,
+      "remindType": 0,
+      "remindUpThreshold": 0,
+      "remindDownThreshold": 0,
+      "groupId": 26,
+      "loopTimes": 1,
+      "lengthUnit": 0,
+      "intervalDesc": "",
+      "strengthWeight": "0-5",
+      "actionType": 1172,
+      "actionName": "Cossack Squat",
+      "selfWeightType": 1,
+      "mainPositions": [
+        14,
+        15
+      ],
+      "subPositions": [
+        26,
+        27
+      ]
+    },
+    {
+      "index": 27,
+      "trainingType": 1,
+      "intervalType": 8,
+      "intervalVal": 0,
+      "remindType": 0,
+      "remindUpThreshold": 0,
+      "remindDownThreshold": 0,
+      "groupId": 27,
+      "loopTimes": 1,
+      "lengthUnit": 0,
+      "intervalDesc": "",
+      "strengthWeight": "0-5",
+      "actionType": 1288,
+      "actionName": "Chair Supported Half Squat",
+      "selfWeightType": 1,
+      "mainPositions": [
+        14,
+        15
+      ],
+      "subPositions": [
+        26,
+        27
+      ]
+    },
+    {
+      "index": 28,
+      "trainingType": 1,
+      "intervalType": 8,
+      "intervalVal": 0,
+      "remindType": 0,
+      "remindUpThreshold": 0,
+      "remindDownThreshold": 0,
+      "groupId": 28,
+      "loopTimes": 1,
+      "lengthUnit": 0,
+      "intervalDesc": "",
+      "strengthWeight": "0-1",
+      "actionType": 1011,
+      "actionName": "Dumbbell Squat",
+      "selfWeightType": 0,
+      "mainPositions": [
+        14,
+        15
+      ],
+      "subPositions": [
+        26,
+        27
+      ]
+    },
+    {
+      "index": 29,
+      "trainingType": 1,
+      "intervalType": 8,
+      "intervalVal": 0,
+      "remindType": 0,
+      "remindUpThreshold": 0,
+      "remindDownThreshold": 0,
+      "groupId": 29,
+      "loopTimes": 1,
+      "lengthUnit": 0,
+      "intervalDesc": "",
+      "strengthWeight": "0-5",
+      "actionType": 1026,
+      "actionName": "Diagonal Backward Lunge",
+      "selfWeightType": 1,
+      "mainPositions": [
+        14,
+        15
+      ],
+      "subPositions": [
+        26,
+        27
+      ]
+    },
+    {
+      "index": 30,
+      "trainingType": 1,
+      "intervalType": 8,
+      "intervalVal": 0,
+      "remindType": 0,
+      "remindUpThreshold": 0,
+      "remindDownThreshold": 0,
+      "groupId": 30,
+      "loopTimes": 1,
+      "lengthUnit": 0,
+      "intervalDesc": "",
+      "strengthWeight": "0-1",
+      "actionType": 1039,
+      "actionName": "Dumbbell Straight Leg Deadlift",
+      "selfWeightType": 0,
+      "mainPositions": [
+        28,
+        29
+      ],
+      "subPositions": [
+        26,
+        27
+      ]
+    },
+    {
+      "index": 31,
+      "trainingType": 1,
+      "intervalType": 8,
+      "intervalVal": 0,
+      "remindType": 0,
+      "remindUpThreshold": 0,
+      "remindDownThreshold": 0,
+      "groupId": 31,
+      "loopTimes": 1,
+      "lengthUnit": 0,
+      "intervalDesc": "",
+      "strengthWeight": "0-1",
+      "actionType": 1042,
+      "actionName": "Dumbbell Sumo Squat",
+      "selfWeightType": 0,
+      "mainPositions": [
+        14,
+        15
+      ],
+      "subPositions": [
+        26,
+        27
+      ]
+    },
+    {
+      "index": 32,
+      "trainingType": 1,
+      "intervalType": 8,
+      "intervalVal": 0,
+      "remindType": 0,
+      "remindUpThreshold": 0,
+      "remindDownThreshold": 0,
+      "groupId": 32,
+      "loopTimes": 1,
+      "lengthUnit": 0,
+      "intervalDesc": "",
+      "strengthWeight": "0-1",
+      "actionType": 1071,
+      "actionName": "Dumbbell Glute Bridge",
+      "selfWeightType": 0,
+      "mainPositions": [
+        26,
+        27
+      ],
+      "subPositions": [
+        26,
+        27
+      ]
+    },
+    {
+      "index": 33,
+      "trainingType": 1,
+      "intervalType": 8,
+      "intervalVal": 0,
+      "remindType": 0,
+      "remindUpThreshold": 0,
+      "remindDownThreshold": 0,
+      "groupId": 33,
+      "loopTimes": 1,
+      "lengthUnit": 0,
+      "intervalDesc": "",
+      "strengthWeight": "0-1",
+      "actionType": 1076,
+      "actionName": "Dumbbell Single Leg Deadlift",
+      "selfWeightType": 0,
+      "mainPositions": [
+        28,
+        29
+      ],
+      "subPositions": [
+        26,
+        27
+      ]
+    },
+    {
+      "index": 34,
+      "trainingType": 1,
+      "intervalType": 8,
+      "intervalVal": 0,
+      "remindType": 0,
+      "remindUpThreshold": 0,
+      "remindDownThreshold": 0,
+      "groupId": 34,
+      "loopTimes": 1,
+      "lengthUnit": 0,
+      "intervalDesc": "",
+      "strengthWeight": "0-1",
+      "actionType": 1094,
+      "actionName": "Dumbbell Deadlift",
+      "selfWeightType": 0,
+      "mainPositions": [
+        28,
+        29
+      ],
+      "subPositions": [
+        26,
+        27
+      ]
+    },
+    {
+      "index": 35,
+      "trainingType": 1,
+      "intervalType": 8,
+      "intervalVal": 0,
+      "remindType": 0,
+      "remindUpThreshold": 0,
+      "remindDownThreshold": 0,
+      "groupId": 35,
+      "loopTimes": 1,
+      "lengthUnit": 0,
+      "intervalDesc": "",
+      "strengthWeight": "0-1",
+      "actionType": 1253,
+      "actionName": "Dumbbell Thruster",
+      "selfWeightType": 0,
+      "mainPositions": [
+        14,
+        15
+      ],
+      "subPositions": [
+        28,
+        29,
+        26,
+        27
+      ]
+    },
+    {
+      "index": 36,
+      "trainingType": 1,
+      "intervalType": 8,
+      "intervalVal": 0,
+      "remindType": 0,
+      "remindUpThreshold": 0,
+      "remindDownThreshold": 0,
+      "groupId": 36,
+      "loopTimes": 1,
+      "lengthUnit": 0,
+      "intervalDesc": "",
+      "strengthWeight": "0-1",
+      "actionType": 1322,
+      "actionName": "Dumbbell Forward Alternating Lunge",
+      "selfWeightType": 0,
+      "mainPositions": [
+        14,
+        15
+      ],
+      "subPositions": [
+        26,
+        27
+      ]
+    },
+    {
+      "index": 37,
+      "trainingType": 1,
+      "intervalType": 8,
+      "intervalVal": 0,
+      "remindType": 0,
+      "remindUpThreshold": 0,
+      "remindDownThreshold": 0,
+      "groupId": 37,
+      "loopTimes": 1,
+      "lengthUnit": 0,
+      "intervalDesc": "",
+      "strengthWeight": "0-1",
+      "actionType": 1346,
+      "actionName": "Dumbbell Romanian Deadlift",
+      "selfWeightType": 0,
+      "mainPositions": [
+        28,
+        29
+      ],
+      "subPositions": [
+        26,
+        27
+      ]
+    },
+    {
+      "index": 38,
+      "trainingType": 1,
+      "intervalType": 8,
+      "intervalVal": 0,
+      "remindType": 0,
+      "remindUpThreshold": 0,
+      "remindDownThreshold": 0,
+      "groupId": 38,
+      "loopTimes": 1,
+      "lengthUnit": 0,
+      "intervalDesc": "",
+      "strengthWeight": "0-1",
+      "actionType": 1352,
+      "actionName": "Dumbbell Right Leg Offset Deadlift",
+      "selfWeightType": 0,
+      "mainPositions": [
+        29
+      ],
+      "subPositions": [
+        27
+      ]
+    },
+    {
+      "index": 39,
+      "trainingType": 1,
+      "intervalType": 8,
+      "intervalVal": 0,
+      "remindType": 0,
+      "remindUpThreshold": 0,
+      "remindDownThreshold": 0,
+      "groupId": 39,
+      "loopTimes": 1,
+      "lengthUnit": 0,
+      "intervalDesc": "",
+      "strengthWeight": "0-1",
+      "actionType": 1398,
+      "actionName": "Dumbbell Hip Thrust",
+      "selfWeightType": 0,
+      "mainPositions": [
+        26,
+        27
+      ],
+      "subPositions": []
+    }
+  ]
+}

@@ -1,0 +1,264 @@
+{
+  "sportType": 52,
+  "templateId": 1790193217000011,
+  "templateName": "Strength Training",
+  "intervals": [
+    {
+      "index": 0,
+      "trainingType": 0,
+      "intervalType": 1,
+      "intervalVal": 45,
+      "remindType": 0,
+      "remindUpThreshold": 0,
+      "remindDownThreshold": 0,
+      "groupId": 0,
+      "loopTimes": 1,
+      "lengthUnit": 0,
+      "intervalDesc": "",
+      "strengthWeight": "0-0",
+      "actionType": 0,
+      "actionName": "",
+      "selfWeightType": 0,
+      "mainPositions": [],
+      "subPositions": []
+    },
+    {
+      "index": 1,
+      "trainingType": 1,
+      "intervalType": 8,
+      "intervalVal": 0,
+      "remindType": 0,
+      "remindUpThreshold": 0,
+      "remindDownThreshold": 0,
+      "groupId": 1,
+      "loopTimes": 1,
+      "lengthUnit": 0,
+      "intervalDesc": "",
+      "strengthWeight": "225-1",
+      "actionType": 6,
+      "actionName": "Bench Press",
+      "selfWeightType": 0,
+      "mainPositions": [
+        5,
+        6
+      ],
+      "subPositions": [
+        3,
+        4,
+        22,
+        23
+      ]
+    },
+    {
+      "index": 2,
+      "trainingType": 1,
+      "intervalType": 8,
+      "intervalVal": 0,
+      "remindType": 3,
+      "remindUpThreshold": 113,
+      "remindDownThreshold": 97,
+      "groupId": 2,
+      "loopTimes": 1,
+      "lengthUnit": 0,
+      "intervalDesc": "",
+      "strengthWeight": "875-1",
+      "actionType": 3,
+      "actionName": "Barbell Squats",
+      "selfWeightType": 0,
+      "mainPositions": [
+        14,
+        15
+      ],
+      "subPositions": [
+        26,
+        27
+      ]
+    },
+    {
+      "index": 3,
+      "trainingType": 1,
+      "intervalType": 1,
+      "intervalVal": 1535,
+      "remindType": 0,
+      "remindUpThreshold": 0,
+      "remindDownThreshold": 0,
+      "groupId": 3,
+      "loopTimes": 1,
+      "lengthUnit": 0,
+      "intervalDesc": "",
+      "strengthWeight": "0-5",
+      "actionType": 1241,
+      "actionName": "Eccentric Pull-Up",
+      "selfWeightType": 0,
+      "mainPositions": [
+        19,
+        20
+      ],
+      "subPositions": [
+        10,
+        11,
+        34,
+        35
+      ]
+    },
+    {
+      "index": 4,
+      "trainingType": 1,
+      "intervalType": 2,
+      "intervalVal": 45,
+      "remindType": 3,
+      "remindUpThreshold": 140,
+      "remindDownThreshold": 110,
+      "groupId": 4,
+      "loopTimes": 1,
+      "lengthUnit": 0,
+      "intervalDesc": "",
+      "strengthWeight": "0-5",
+      "actionType": 1069,
+      "actionName": "Dynamic Plank",
+      "selfWeightType": 1,
+      "mainPositions": [
+        1,
+        2
+      ],
+      "subPositions": [
+        1,
+        2
+      ]
+    },
+    {
+      "index": 5,
+      "trainingType": 1,
+      "intervalType": 4,
+      "intervalVal": 100,
+      "remindType": 0,
+      "remindUpThreshold": 0,
+      "remindDownThreshold": 0,
+      "groupId": 5,
+      "loopTimes": 1,
+      "lengthUnit": 0,
+      "intervalDesc": "",
+      "strengthWeight": "80-3",
+      "actionType": 1706,
+      "actionName": "Dumbbell Lunge Swing",
+      "selfWeightType": 0,
+      "mainPositions": [
+        26,
+        27
+      ],
+      "subPositions": [
+        14,
+        15
+      ]
+    },
+    {
+      "index": 6,
+      "trainingType": 1,
+      "intervalType": 8,
+      "intervalVal": -1,
+      "remindType": 0,
+      "remindUpThreshold": 0,
+      "remindDownThreshold": 0,
+      "groupId": 6,
+      "loopTimes": 1,
+      "lengthUnit": 0,
+      "intervalDesc": "",
+      "strengthWeight": "350-3",
+      "actionType": 6,
+      "actionName": "Bench Press",
+      "selfWeightType": 0,
+      "mainPositions": [
+        5,
+        6
+      ],
+      "subPositions": [
+        3,
+        4,
+        22,
+        23
+      ]
+    },
+    {
+      "index": 7,
+      "trainingType": 2,
+      "intervalType": 8,
+      "intervalVal": -1,
+      "remindType": 0,
+      "remindUpThreshold": 0,
+      "remindDownThreshold": 0,
+      "groupId": 7,
+      "loopTimes": 1,
+      "lengthUnit": 0,
+      "intervalDesc": "",
+      "strengthWeight": "0-0",
+      "actionType": 0,
+      "actionName": "",
+      "selfWeightType": 0,
+      "mainPositions": [],
+      "subPositions": []
+    },
+    {
+      "index": 8,
+      "trainingType": 1,
+      "intervalType": 8,
+      "intervalVal": 0,
+      "remindType": 0,
+      "remindUpThreshold": 0,
+      "remindDownThreshold": 0,
+      "groupId": 8,
+      "loopTimes": 5,
+      "lengthUnit": 0,
+      "intervalDesc": "",
+      "strengthWeight": "225-1",
+      "actionType": 3,
+      "actionName": "Barbell Squats",
+      "selfWeightType": 0,
+      "mainPositions": [
+        14,
+        15
+      ],
+      "subPositions": [
+        26,
+        27
+      ]
+    },
+    {
+      "index": 9,
+      "trainingType": 2,
+      "intervalType": 8,
+      "intervalVal": -1,
+      "remindType": 0,
+      "remindUpThreshold": 0,
+      "remindDownThreshold": 0,
+      "groupId": 8,
+      "loopTimes": 5,
+      "lengthUnit": 0,
+      "intervalDesc": "",
+      "strengthWeight": "0-0",
+      "actionType": 0,
+      "actionName": "",
+      "selfWeightType": 0,
+      "mainPositions": [],
+      "subPositions": []
+    },
+    {
+      "index": 10,
+      "trainingType": 4,
+      "intervalType": 1,
+      "intervalVal": 45,
+      "remindType": 0,
+      "remindUpThreshold": 0,
+      "remindDownThreshold": 0,
+      "groupId": 9,
+      "loopTimes": 1,
+      "lengthUnit": 0,
+      "intervalDesc": "",
+      "strengthWeight": "0-0",
+      "actionType": 0,
+      "actionName": "",
+      "selfWeightType": 0,
+      "mainPositions": [],
+      "subPositions": []
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+syntax = "proto2";
+package xiaomi;
+option java_package = "nodomain.freeyourgadget.gadgetbridge.proto.xiaomi";
+option java_multiple_files = true;
+
+message Rpk{
+  optional RpkList rpkList = 1;
+
+  optional RpkInfo rpkInfo = 2;
+  optional RpkInfoList rpkDel = 5;
+
+  optional RpkInstallStart rpkInstallStart = 3;
+}
+
+message RpkList {
+  repeated RpkInfoList rpkInfo = 1;
+}
+
+message RpkInfo {
+  optional string id = 1;
+  optional uint32 size = 3;
+  optional uint32 unknown2 = 2; // 0
+}
+
+message RpkInfoList {
+  optional string id = 1;
+  optional string name = 5;
+  optional bytes sha = 2;
+  optional uint32 unknown3 = 3;
+  optional uint32 unknown4 = 4;
+}
+
+message RpkInstallStart {
+  optional uint32 cmd = 1;
+}

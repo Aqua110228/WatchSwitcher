@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary_light" type="color">#ff3d00</color>
+    <color name="primarydark_light" type="color">#dd2c00</color>
+
+    <color name="primary_dark" type="color">#ff3d00</color>
+    <color name="primarydark_dark" type="color">#dd2c00</color>
+
+    <color name="accent" type="color">#0091ea</color>
+
+    <color name="primarytext_light" type="color">#000000</color>
+    <color name="primarytext_dark" type="color">#ffffff</color>
+
+    <color name="secondarytext" type="color">#ff808080</color>
+    <color name="tertiarytext_light" type="color">#ffd0d0d0</color>
+    <color name="tertiarytext_dark" type="color">#ff606060</color>
+    <color name="tertiarytext_black" type="color">#000000</color>
+
+    <color name="divider" type="color">#1f000000</color>
+
+    <color name="subtab_pill_dark" type="color">#3A1512</color>
+    <color name="subtab_pill_on_dark" type="color">#FF6E5C</color>
+    <color name="subtab_pill_light" type="color">#FBDBD5</color>
+
+    <color name="bar_shade_light" type="color">#1A000000</color>
+    <color name="bar_shade_dark" type="color">#59000000</color>
+
+    <!-- Static Light theme screen background -->
+    <color name="window_background_light" type="color">#FAFAFA</color>
+    <color name="surface_container_lowest_light" type="color">#FFFFFF</color>
+    <color name="surface_container_low_light" type="color">#F5F5F5</color>
+    <color name="surface_container_light" type="color">#F0F0F0</color>
+    <color name="surface_container_high_light" type="color">#E8E8E8</color>
+    <color name="surface_container_highest_light" type="color">#E2E2E2</color>
+    <color name="on_surface_variant_light" type="color">#5A5A5A</color>
+    <color name="outline_light" type="color">#767676</color>
+    <color name="outline_variant_light" type="color">#D6D6D6</color>
+
+    <!-- Static Dark theme screen background (the "black background" option overrides it with black) -->
+    <color name="window_background_dark" type="color">#121212</color>
+    <color name="surface_container_lowest_dark" type="color">#0D0D0D</color>
+    <color name="surface_container_low_dark" type="color">#171717</color>
+    <color name="surface_container_dark" type="color">#1C1C1C</color>
+    <color name="surface_container_high_dark" type="color">#262626</color>
+    <color name="surface_container_highest_dark" type="color">#303030</color>
+    <color name="on_surface_variant_dark" type="color">#BDBDBD</color>
+    <color name="outline_dark" type="color">#8A8A8A</color>
+    <color name="outline_variant_dark" type="color">#303030</color>
+
+    <color name="chart_heartrate" type="color">#ffab40</color>
+    <color name="chart_heartrate_alternative" type="color">#8B0000</color>
+    <color name="chart_heartrate_fill" type="color">#fadab1</color>
+    <color name="chart_heartrate_minimum" type="color">#3F84E5</color>
+    <color name="chart_heartrate_resting" type="color">#01796F</color>
+    <color name="chart_heartrate_maximum" type="color">#F42C04</color>
+
+    <color name="chart_deep_sleep_light" type="color">#0054a3</color>
+    <color name="chart_deep_sleep_dark" type="color">#0054a3</color>
+
+    <color name="chart_light_sleep_light" type="color">#079ef3</color>
+    <color name="chart_light_sleep_dark" type="color">#079ef3</color>
+
+    <color name="chart_rem_sleep_light" type="color">#e427c7</color>
+    <color name="chart_rem_sleep_dark" type="color">#e427c7</color>
+
+    <color name="chart_awake_sleep_light" type="color">#ff866e</color>
+    <color name="chart_awake_sleep_dark" type="color">#ff866e</color>
+
+    <color name="chart_activity_light" type="color">#60bd6d</color>
+    <color name="chart_activity_dark" type="color">#59b22c</color>
+
+    <color name="chart_pai_weekly" type="color">#007BFF</color>
+    <color name="chart_pai_today" type="color">#2ECC71</color>
+
+    <color name="chart_not_worn_light" type="color">#545254</color>
+    <color name="chart_not_worn_dark" type="color">#d8d9d8</color>
+
+    <color name="chart_stress_unknown" type="color">#545254</color>
+    <color name="chart_stress_relaxed" type="color">#46acea</color>
+    <color name="chart_stress_mild" type="color">#59b22c</color>
+    <color name="chart_stress_moderate" type="color">#ffab40</color>
+    <color name="chart_stress_high" type="color">#8B0000</color>
+
+    <color name="hrv_status_balanced" type="color">#0c8a03</color>
+    <color name="hrv_status_unbalanced" type="color">#fc9d03</color>
+    <color name="hrv_status_low" type="color">#fc5203</color>
+    <color name="hrv_status_poor" type="color">#be03fc</color>
+    <color name="hrv_status_char_line_color" type="color">#d12a2a</color>
+    <color name="hrv_status_range_color" type="color">#99d12a2a</color>
+    <color name="hrv_status_last_night_color" type="color">#3f7dff</color>
+    <color name="hrv_status_baseline_color" type="color">#0c8a03</color>
+    <color name="hrv_status_baseline_fill_color" type="color">#660c8a03</color>
+    <color name="training_load_dark" type="color">#FFF</color>
+    <color name="training_load" type="color">#1d2436</color>
+    <color name="training_chronic_load" type="color">#8847a1</color>
+    <color name="training_load_optimal" type="color">#59b22c</color>
+    <color name="training_load_optimal_fill_color" type="color">#6659b22c</color>
+    <color name="training_load_low" type="color">#D3D3D3</color>
+    <color name="training_load_high" type="color">#d12a2a</color>
+    <color name="vo2max_running_char_line_color" type="color">#46acea</color>
+    <color name="vo2max_cycling_char_line_color" type="color">#59b22c</color>
+    <color name="vo2max_value_poor_color" type="color">#d93832</color>
+    <color name="vo2max_value_fair_color" type="color">#ffa703</color>
+    <color name="vo2max_value_good_color" type="color">#04c79c</color>
+    <color name="vo2max_value_excellent_color" type="color">#02a8e6</color>
+    <color name="vo2max_value_superior_color" type="color">#824be3</color>
+    <color name="body_energy_level_color" type="color">#5ac234</color>
+    <color name="body_energy_lost_color" type="color">#ff6c43</color>
+    <color name="chart_solar_charging_color" type="color">#ffc107</color>
+    <color name="steps_color" type="color">#00c9bf</color>
+    <color name="calories_color" type="color">#fa4502</color>
+    <color name="calories_resting_color" type="color">#1f49f2</color>
+    <color name="hydration_color" type="color">#29b6f6</color>
+    <color name="respiratory_rate_color" type="color">#163ede</color>
+    <color name="chart_temperature" type="color">#ff8f00</color>
+    <color name="chart_temperature_average" type="color">#00acc1</color>
+    <color name="spo2_color" type="color">#aad93832</color>
+    <color name="spo2_avg_color_light" type="color">#630b0d</color>
+    <color name="spo2_avg_color_dark" type="color">#ff9393</color>
+    <color name="blood_pressure_systolic_color" type="color">#d93832</color>
+    <color name="blood_pressure_diastolic_color" type="color">#3F84E5</color>
+
+    <color name="row_separator_light" type="color">#ffe2e2e5</color>
+    <color name="row_separator_dark" type="color">#2C2C2C</color>
+
+    <!-- Black (AMOLED) option: tiles and their border -->
+    <color name="stat_tile_bg_amoled" type="color">#080808</color>
+    <color name="stat_tile_border_amoled" type="color">#333333</color>
+    <color name="table_header_rule_light" type="color">#D8D4D0</color>
+    <color name="table_header_rule_dark" type="color">#3A3A3A</color>
+    <color name="gauge_line_color" type="color">#19808080</color>
+
+    <color name="hr_zone_warm_up_color" type="color">#92a4ad</color>
+    <color name="hr_zone_easy_color" type="color">#80D8FF</color>
+    <color name="hr_zone_aerobic_color" type="color">#66BB6A</color>
+    <color name="hr_zone_threshold_color" type="color">#FF7043</color>
+    <color name="hr_zone_maximum_color" type="color">#F44336</color>
+
+    <color name="training_readiness_poor" type="color">#F44336</color>
+    <color name="training_readiness_low" type="color">#FF9800</color>
+    <color name="training_readiness_moderate" type="color">#4CAF50</color>
+    <color name="training_readiness_high" type="color">#2196F3</color>
+    <color name="training_readiness_prime" type="color">#9C27B0</color>
+
+    <color name="chart_cadence_circle" type="color">#FF7043</color>
+    <color name="chart_line_speed" type="color">#80D8FF</color>
+    <color name="chart_line_elevation" type="color">#66BB6A</color>
+    <color name="chart_line_heart_rate" type="color">#F44336</color>
+    <color name="chart_line_power" type="color">#6A0DAD</color>
+    <color name="chart_line_swolf" type="color">#F9DB22</color>
+    <color name="chart_line_stroke_rate" type="color">#6495ED</color>
+    <color name="chart_highline_dolor" type="color">#ffff8800</color>
+    <color name="chart_line_depth" type="color">#ff4040ff</color>
+    <color name="chart_line_distance" type="color">#88FF88</color>
+    <color name="chart_line_stride" type="color">#FF8888</color>
+    <color name="chart_line_body_energy" type="color">#884088</color>
+    <color name="chart_line_stamina" type="color">#8888FF</color>
+    <color name="chart_line_step_length" type="color">#FF4088</color>
+    <color name="chart_cns_toxicity" type="color">#FF4040</color>
+    <color name="chart_n2_load" type="color">#FF8840</color>
+
+    <color name="chart_battery_level" type="color">#60bd6d</color>
+    <color name="chart_battery_voltage" type="color">#3F84E5</color>
+    <color name="chart_battery_current" type="color">#00796B</color>
+    <color name="chart_battery_power" type="color">#6A0DAD</color>
+    <color name="chart_battery_temperature" type="color">#ff8f00</color>
+
+    <attr name="row_separator" format="color" />
+    <attr name="stat_tile_bg" format="color" />
+    <attr name="stat_tile_border" format="color" />
+    <attr name="activity_icon_bg" format="color" />
+    <attr name="table_header_rule" format="color" />
+
+    <color name="map_track_default" type="color">#fc5203</color>
+
+    <color name="workout_step_color_warmup" type="color">#FFB74D</color>
+    <color name="workout_step_color_active" type="color">#EF5350</color>
+    <color name="workout_step_color_main" type="color">#E53935</color>
+    <color name="workout_step_color_recover" type="color">#9575CD</color>
+    <color name="workout_step_color_rest" type="color">#67A463</color>
+    <color name="workout_step_color_cooldown" type="color">#64B5F6</color>
+    <color name="workout_step_color_other" type="color">#7B7F87</color>
+    <color name="workout_step_color_group" type="color">#B0BEC5</color>
+
+    <color name="transparent">#00000000</color>
+
+    <drawable name="selected">@color/accent</drawable>
+
+</resources>

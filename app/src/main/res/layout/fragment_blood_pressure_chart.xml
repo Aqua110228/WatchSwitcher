@@ -1,0 +1,83 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/date_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="20dp"
+                android:gravity="center"
+                android:textColor="?attr/textColorPrimary"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="300sp">
+
+                <com.github.mikephil.charting.charts.LineChart
+                    android:id="@+id/blood_pressure_line_chart"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="2" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/bp_stats_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:orientation="vertical" />
+
+            <LinearLayout
+                android:id="@+id/manualMeasurements"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <nodomain.freeyourgadget.gadgetbridge.activities.workouts.SectionHeaderView
+                    android:id="@+id/titleText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:sectionTitle="@string/manual_measurements" />
+
+                <LinearLayout
+                    android:id="@+id/manualMeasurementsList"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+                    android:paddingBottom="16dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/bp_export_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:contentDescription="@string/appmanager_app_share"
+        app:srcCompat="@drawable/ic_share" />
+
+</RelativeLayout>

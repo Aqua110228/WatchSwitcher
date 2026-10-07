@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.preference.PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!--The invisible SwitchPreferenceCompat are only intended to be used
+    by the Java code (never make them visible to the user). They are used
+    to grey out the options in the menu. This is used to disable options
+    that don't make sense with the selected mode in the
+    ListPreference: pref_soundcore_ambient_sound_control -->
+
+    <SwitchPreferenceCompat
+        android:defaultValue="false"
+        android:disableDependentsState="true"
+        android:key="pref_soundcore_a30i_disable_option_ambient_mode"
+        app:isPreferenceVisible="false"/>
+
+    <SwitchPreferenceCompat
+        android:defaultValue="false"
+        android:disableDependentsState="true"
+        android:key="pref_soundcore_a30i_disable_option_ambient_sound_level"
+        app:isPreferenceVisible="false"/>
+
+    <SwitchPreferenceCompat
+        android:defaultValue="false"
+        android:disableDependentsState="true"
+        android:key="pref_soundcore_a30i_disable_option_wind_noise_reduction"
+        app:isPreferenceVisible="false"/>
+
+    <!-- Start of the visible part from the UI -->
+    <PreferenceCategory
+        android:key="pref_key_header_soundcore_ambient_sound_control"
+        android:title="@string/pref_header_sony_ambient_sound_control">
+
+
+            <ListPreference
+                android:defaultValue="noise_cancelling"
+                android:entries="@array/soundcore_ambient_sound_control_names"
+                android:entryValues="@array/soundcore_ambient_sound_control_values"
+                android:icon="@drawable/ic_hearing"
+                android:key="pref_soundcore_anc_mode"
+                android:title="@string/sony_ambient_sound"
+                app:useSimpleSummaryProvider="true" />
+
+            <ListPreference
+                android:defaultValue="transport"
+                android:dependency="pref_soundcore_a30i_disable_option_ambient_mode"
+                android:entries="@array/soundcore_anc_mode_names"
+                android:entryValues="@array/soundcore_anc_mode_values"
+                android:icon="@drawable/ic_hearing"
+                android:key="pref_soundcore_ambient_sound_control"
+                app:useSimpleSummaryProvider="true"
+                android:title="@string/prefs_ambient_mode" />
+
+            <SeekBarPreference
+                android:defaultValue="1"
+                android:dependency="pref_soundcore_a30i_disable_option_ambient_sound_level"
+                android:icon="@drawable/ic_hearing"
+                android:key="pref_sony_ambient_sound_level"
+                android:max="5"
+                app:min="1"
+                app:showSeekBarValue="true"
+                android:title="@string/prefs_active_noise_cancelling_level" />
+
+            <SwitchPreferenceCompat
+                android:defaultValue="false"
+                android:dependency="pref_soundcore_a30i_disable_option_wind_noise_reduction"
+                android:icon="@drawable/ic_block"
+                android:key="pref_soundcore_wind_noise_reduction"
+                android:layout="@layout/preference_checkbox"
+                android:title="@string/sony_ambient_sound_wind_noise_reduction" />
+        </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="pref_key_header_soundcore_general"
+        android:title="@string/pref_header_general">
+
+        <ListPreference
+            android:defaultValue="3"
+            android:entries="@array/soundcore_aerofit_auto_power_off_names"
+            android:entryValues="@array/soundcore_auto_power_off_values"
+            android:icon="@drawable/ic_power_settings_new"
+            android:key="pref_soundcore_auto_power_off"
+            android:summary="@string/soundcore_auto_power_off_summary"
+            android:title="@string/soundcore_auto_power_off_title" />
+
+        <SwitchPreferenceCompat
+            android:defaultValue="false"
+            android:icon="@drawable/ic_notification_low_battery"
+            android:key="pref_soundcore_battery_low_tone"
+            android:layout="@layout/preference_checkbox"
+            android:summary="@string/soundcore_battery_low_tone_summary"
+            android:title="@string/soundcore_battery_low_tone_title"/>
+
+        <SwitchPreferenceCompat
+            android:defaultValue="false"
+            android:icon="@drawable/ic_touch"
+            android:key="pref_soundcore_touch_tone"
+            android:layout="@layout/preference_checkbox"
+            android:summary="@string/pref_touch_tone_summary"
+            android:title="@string/pref_touch_tone" />
+
+        <SwitchPreferenceCompat
+            android:defaultValue="false"
+            android:icon="@drawable/ic_surround"
+            android:key="pref_soundcore_3d_surround"
+            android:layout="@layout/preference_checkbox"
+            android:summary="@string/soundcore_3d_surround_summary"
+            android:title="@string/soundcore_3d_surround_title" />
+    </PreferenceCategory>
+
+    <ListPreference
+        android:defaultValue="0"
+        android:entries="@array/soundcore_find_left_earbud_names"
+        android:entryValues="@array/soundcore_find_left_earbud_values"
+        android:icon="@drawable/ic_action_find_lost_device"
+        android:key="pref_soundcore_find_left_earbud"
+        android:summary="@string/earfun_find_headphones"
+        android:title="@string/earfun_earbud_mode_left" />
+
+    <ListPreference
+        android:defaultValue="0"
+        android:entries="@array/soundcore_find_right_earbud_names"
+        android:entryValues="@array/soundcore_find_right_earbud_values"
+        android:icon="@drawable/ic_action_find_lost_device"
+        android:key="pref_soundcore_find_right_earbud"
+        android:summary="@string/earfun_find_headphones"
+        android:title="@string/earfun_earbud_mode_right" />
+
+
+</androidx.preference.PreferenceScreen>

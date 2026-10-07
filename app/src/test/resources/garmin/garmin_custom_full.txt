@@ -1,0 +1,6 @@
+[FitFileId{type=WORKOUTS, manufacturer=1, product=65534, serial_number=1, number=1},
+FitFileCreator{software_version=1},
+FitWorkout{sport=0, capabilities=32, num_valid_steps=3, wkt_name=garmin_custom_full, sub_sport=0, message_index=0},
+FitWorkoutStep{duration_type=TIME, duration_value=300000, target_type=OPEN, target_value=0, intensity=WARMUP, weight_display_unit=KILOGRAM, message_index=0},
+FitWorkoutStep{duration_type=DISTANCE, duration_value=500000, target_type=SPEED, custom_target_value_low=200, custom_target_value_high=250, intensity=ACTIVE, weight_display_unit=KILOGRAM, message_index=1},
+FitWorkoutStep{duration_type=OPEN, target_type=OPEN, target_value=0, intensity=COOLDOWN, weight_display_unit=KILOGRAM, message_index=2}]

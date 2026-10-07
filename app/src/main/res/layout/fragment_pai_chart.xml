@@ -1,0 +1,213 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:context="nodomain.freeyourgadget.gadgetbridge.activities.charts.ActivityChartsActivity$PlaceholderFragment"
+        tools:ignore="UselessParent">
+
+        <TextView
+            android:id="@+id/pai_date_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textColor="?attr/textColorPrimary"
+            />
+
+        <ImageView
+            android:layout_weight="2"
+            android:layout_marginTop="@dimen/chart_section_spacing"
+            android:layout_marginBottom="@dimen/chart_section_spacing"
+            android:id="@+id/goal_minutes_gauge"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:layout_gravity="center"
+            android:scaleType="fitStart" />
+
+        <LinearLayout
+            android:id="@+id/pai_summary_stats_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:orientation="vertical" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:orientation="horizontal">
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/pai_tile_low"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginEnd="12dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="0dp"
+                app:strokeWidth="2dp"
+                app:strokeColor="?attr/row_separator"
+                app:cardBackgroundColor="?android:attr/windowBackground">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:paddingHorizontal="12dp"
+                    android:paddingVertical="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/sony_speak_to_chat_sensitivity_low"
+                        android:textColor="?attr/colorOnSurfaceVariant"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/pai_line_low_inc"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:fontFamily="sans-serif-medium"
+                        android:gravity="center"
+                        android:text="@string/stats_empty_value"
+                        android:textColor="?attr/textColorPrimary"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/pai_line_low_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:fontFamily="sans-serif-medium"
+                        android:gravity="center"
+                        android:text="@string/stats_empty_value"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/pai_tile_moderate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginEnd="12dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="0dp"
+                app:strokeWidth="2dp"
+                app:strokeColor="?attr/row_separator"
+                app:cardBackgroundColor="?android:attr/windowBackground">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:paddingHorizontal="12dp"
+                    android:paddingVertical="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/stress_moderate"
+                        android:textColor="?attr/colorOnSurfaceVariant"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/pai_line_moderate_inc"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:fontFamily="sans-serif-medium"
+                        android:gravity="center"
+                        android:text="@string/stats_empty_value"
+                        android:textColor="?attr/textColorPrimary"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/pai_line_moderate_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:fontFamily="sans-serif-medium"
+                        android:gravity="center"
+                        android:text="@string/stats_empty_value"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/pai_tile_high"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="0dp"
+                app:strokeWidth="2dp"
+                app:strokeColor="?attr/row_separator"
+                app:cardBackgroundColor="?android:attr/windowBackground">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:paddingHorizontal="12dp"
+                    android:paddingVertical="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/stress_high"
+                        android:textColor="?attr/colorOnSurfaceVariant"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/pai_line_high_inc"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:fontFamily="sans-serif-medium"
+                        android:gravity="center"
+                        android:text="@string/stats_empty_value"
+                        android:textColor="?attr/textColorPrimary"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/pai_line_high_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:fontFamily="sans-serif-medium"
+                        android:gravity="center"
+                        android:text="@string/stats_empty_value"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+        </LinearLayout>
+
+        <com.github.mikephil.charting.charts.BarChart
+            android:id="@+id/pai_chart_week"
+            android:layout_width="fill_parent"
+            android:layout_height="300dp"
+            android:layout_marginBottom="25dp"
+            android:layout_weight="2" />
+
+    </LinearLayout>
+
+</ScrollView>

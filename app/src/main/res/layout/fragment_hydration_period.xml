@@ -1,0 +1,80 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/hydration_date_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:textColor="?attr/textColorPrimary"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="250sp">
+
+            <com.github.mikephil.charting.charts.BarChart
+                android:id="@+id/hydration_chart"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2" />
+        </LinearLayout>
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@color/gauge_line_color"
+            android:columnCount="2">
+
+            <LinearLayout
+                style="@style/GridTile"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="1dp">
+
+                <TextView
+                    android:id="@+id/hydration_daily_average"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/stats_empty_value"
+                    android:textColor="?attr/textColorPrimary"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/hydration_daily_average"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/GridTile"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="2dp">
+
+                <TextView
+                    android:id="@+id/hydration_goal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/stats_empty_value"
+                    android:textColor="?attr/textColorPrimary"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/hydration_goal"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </GridLayout>
+    </LinearLayout>
+
+</ScrollView>

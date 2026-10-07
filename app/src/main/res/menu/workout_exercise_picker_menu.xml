@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/workout_exercise_picker_action_search"
+        android:icon="@drawable/ic_search"
+        android:title="@string/workout_exercise_picker_search_hint"
+        app:actionViewClass="androidx.appcompat.widget.SearchView"
+        app:iconTint="?attr/actionmenu_icon_color"
+        app:showAsAction="always|collapseActionView" />
+
+    <item
+        android:id="@+id/workout_exercise_picker_action_filter"
+        android:icon="@drawable/ic_filter_alt"
+        android:title="@string/activity_filter_filter_title"
+        android:visible="false"
+        app:iconTint="?attr/actionmenu_icon_color"
+        app:showAsAction="always" />
+
+</menu>

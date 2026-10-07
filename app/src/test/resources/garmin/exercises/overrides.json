@@ -1,0 +1,51 @@
+{
+  "90/90 Hip Switch with Reach": "CATEGORY_WARM_UP/NINETY_NINETY_HIP_SWITCH",
+  "American Swing": "CATEGORY_SQUAT/SQUAT_AMERICAN_SWING",
+  "Arm Circles": {
+    "strength": "CATEGORY_WARM_UP/ARM_CIRCLES",
+    "mobility": "CATEGORY_WARM_UP/ARM_CIRCLES",
+    "yoga": "CATEGORY_LATERAL_RAISE/ARM_CIRCLES",
+    "pilates": "CATEGORY_LATERAL_RAISE/ARM_CIRCLES"
+  },
+  "Back Roll on Foam Roller": "CATEGORY_WARM_UP/BACK_ROLL_FOAM_ROLLER",
+  "Barbell Clean": "CATEGORY_OLYMPIC_LIFT/CLEAN",
+  "Barbell Overhead Press": "CATEGORY_SHOULDER_PRESS/OVERHEAD_BARBELL_PRESS",
+  "Bear Crawl": {
+    "strength": "CATEGORY_PLANK/BEAR_CRAWL",
+    "mobility": "CATEGORY_WARM_UP/BEAR_CRAWL"
+  },
+  "Bike": "CATEGORY_BIKE_OUTDOOR/BIKE",
+  "Cable Tricep Kick-back": "CATEGORY_TRICEPS_EXTENSION/CABLE_KICKBACK",
+  "Crossed-leg Reverse Crunch": "CATEGORY_CRUNCH/CROSS_LEG_REVERSE_CRUNCH",
+  "Down Dog Split Pose, Open Hip Bent Knee": "CATEGORY_POSE/DOWN_DOG_SPLIT_OPEN_HIP_BENT_KNEE",
+  "Elevated Front-foot Dumbbell Split Squat": "CATEGORY_LUNGE/FRONT_FOOT_ELEVATED_DUMBBELL_SPLIT_SQUAT",
+  "Elliptical": "CATEGORY_ELLIPTICAL/ELLIPTICAL",
+  "Forearm Stretch": "CATEGORY_WARM_UP/STRETCH_FOREARMS",
+  "Hamstring Stretch": {
+    "strength": "CATEGORY_WARM_UP/STRETCH_HAMSTRING",
+    "mobility": "CATEGORY_WARM_UP/STRETCH_HAMSTRING",
+    "yoga": "CATEGORY_MOVE/HAMSTRING_STRETCH",
+    "pilates": "CATEGORY_MOVE/HAMSTRING_STRETCH"
+  },
+  "Hip Circles": {
+    "strength": "CATEGORY_HIP_STABILITY/HIP_CIRCLES",
+    "mobility": "CATEGORY_WARM_UP/HIP_CIRCLES"
+  },
+  "Kipping Ring Dip": "CATEGORY_LATERAL_RAISE/RING_DIP_KIPPING",
+  "One-Legged Downward-Facing Dog Pose Open Hip Bent Knee": "CATEGORY_POSE/ONE_LEGGED_DOWNWARD_FACING_POSE_OPEN_HIP_BENT_KNEE",
+  "Piriformis Stretch": {
+    "strength": "CATEGORY_WARM_UP/STRETCH_PIRIFORMIS",
+    "mobility": "CATEGORY_WARM_UP/STRETCH_PIRIFORMIS",
+    "yoga": "CATEGORY_MOVE/PIRIFORMIS_STRETCH",
+    "pilates": "CATEGORY_MOVE/PIRIFORMIS_STRETCH"
+  },
+  "Push-up on Bosu® Balance Trainer": "CATEGORY_PUSH_UP/BOSU_BALL_PUSH_UP",
+  "Rowing Machine": "CATEGORY_ROW/INDOOR_ROW",
+  "Seated Hip Stretch": "CATEGORY_MOVE/SEATED_HIP_STRETCHUP",
+  "Sprint": "CATEGORY_RUN/SPRINT",
+  "Squat Open Arm Twist Pose": "CATEGORY_POSE/SQUAT_OPEN_ARM_TWIST",
+  "Triceps Stretch": "CATEGORY_WARM_UP/STRETCH_TRICEPS",
+  "Warm-up": "CATEGORY_WARM_UP",
+  "Weighted Crossed-leg Reverse Crunch": "CATEGORY_CRUNCH/WEIGHTED_CROSS_LEG_REVERSE_CRUNCH",
+  "Weighted Push-up on Bosu® Balance Trainer": "CATEGORY_PUSH_UP/WEIGHTED_BOSU_BALL_PUSH_UP"
+}

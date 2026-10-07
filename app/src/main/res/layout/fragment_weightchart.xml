@@ -1,0 +1,315 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/weight_time_span_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textColor="?attr/textColorPrimary"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="20dp" />
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/weight_chart"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
+    <!-- Values wrap into rows of three; hidden ones let the following move up. -->
+    <com.google.android.flexbox.FlexboxLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="20dp"
+        app:flexDirection="row"
+        app:flexWrap="wrap">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingTop="12dp"
+        android:paddingRight="20dp"
+        app:layout_flexBasisPercent="33.33%">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5px"
+            android:background="?attr/value_line" />
+
+        <TextView
+            android:id="@+id/weight_latest_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:maxLines="1"
+            android:text="@string/stats_empty_value"
+            android:textColor="?attr/textColorPrimary"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/menuitem_weight"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingTop="12dp"
+        android:paddingRight="20dp"
+        app:layout_flexBasisPercent="33.33%">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5px"
+            android:background="?attr/value_line" />
+
+        <TextView
+            android:id="@+id/weight_target_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:maxLines="1"
+            android:text="@string/stats_empty_value"
+            android:textColor="?attr/textColorPrimary"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/target"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingTop="12dp"
+        android:paddingRight="20dp"
+        app:layout_flexBasisPercent="33.33%">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5px"
+            android:background="?attr/value_line" />
+
+        <TextView
+            android:id="@+id/weight_bmi_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:maxLines="1"
+            android:text="@string/stats_empty_value"
+            android:textColor="?attr/textColorPrimary"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/body_mass_index"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingTop="12dp"
+        android:paddingRight="20dp"
+        android:visibility="gone"
+        app:layout_flexBasisPercent="33.33%">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5px"
+            android:background="?attr/value_line" />
+
+        <TextView
+            android:id="@+id/weight_body_fat_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:maxLines="1"
+            android:text="@string/stats_empty_value"
+            android:textColor="?attr/textColorPrimary"
+            android:textSize="17sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/body_composition_body_fat"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingTop="12dp"
+        android:paddingRight="20dp"
+        android:visibility="gone"
+        app:layout_flexBasisPercent="33.33%">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5px"
+            android:background="?attr/value_line" />
+
+        <TextView
+            android:id="@+id/weight_body_water_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:maxLines="1"
+            android:text="@string/stats_empty_value"
+            android:textColor="?attr/textColorPrimary"
+            android:textSize="17sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/body_composition_body_water"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingTop="12dp"
+        android:paddingRight="20dp"
+        android:visibility="gone"
+        app:layout_flexBasisPercent="33.33%">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5px"
+            android:background="?attr/value_line" />
+
+        <TextView
+            android:id="@+id/weight_muscle_mass_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:maxLines="1"
+            android:text="@string/stats_empty_value"
+            android:textColor="?attr/textColorPrimary"
+            android:textSize="17sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/body_composition_muscle_mass"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingTop="12dp"
+        android:paddingRight="20dp"
+        android:visibility="gone"
+        app:layout_flexBasisPercent="33.33%">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5px"
+            android:background="?attr/value_line" />
+
+        <TextView
+            android:id="@+id/weight_bone_mass_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:maxLines="1"
+            android:text="@string/stats_empty_value"
+            android:textColor="?attr/textColorPrimary"
+            android:textSize="17sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/body_composition_bone_mass"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingTop="12dp"
+        android:paddingRight="20dp"
+        android:visibility="gone"
+        app:layout_flexBasisPercent="33.33%">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5px"
+            android:background="?attr/value_line" />
+
+        <TextView
+            android:id="@+id/weight_bmr_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:maxLines="1"
+            android:text="@string/stats_empty_value"
+            android:textColor="?attr/textColorPrimary"
+            android:textSize="17sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/body_composition_bmr"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingTop="12dp"
+        android:paddingRight="20dp"
+        android:visibility="gone"
+        app:layout_flexBasisPercent="33.33%">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5px"
+            android:background="?attr/value_line" />
+
+        <TextView
+            android:id="@+id/weight_impedance_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:maxLines="1"
+            android:text="@string/stats_empty_value"
+            android:textColor="?attr/textColorPrimary"
+            android:textSize="17sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/body_composition_impedance"
+            android:textSize="12sp" />
+    </LinearLayout>
+    </com.google.android.flexbox.FlexboxLayout>
+
+</LinearLayout>

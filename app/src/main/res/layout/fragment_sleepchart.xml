@@ -1,0 +1,84 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/sleep_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textColor="?attr/textColorPrimary"
+            />
+
+        <TextView
+            android:id="@+id/sleepchart_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/stats_empty_value"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:layout_weight="2"
+            android:layout_marginTop="@dimen/chart_section_spacing"
+            android:layout_marginBottom="@dimen/chart_section_spacing"
+            android:id="@+id/sleep_stages_gauge"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:layout_gravity="center"
+            android:scaleType="fitStart" />
+
+        <LinearLayout
+            android:id="@+id/sleep_legend_stats_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:orientation="vertical" />
+
+        <nodomain.freeyourgadget.gadgetbridge.activities.charts.sleep.SleepDetailsView
+            android:id="@+id/sleep_details"
+            android:layout_width="fill_parent"
+            android:layout_height="300dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginBottom="15dp"
+            android:layout_weight="4" />
+
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/sleep_chart_overlay_group"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            app:singleSelection="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"/>
+
+        <LinearLayout
+            android:id="@+id/sleep_stats_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:orientation="vertical"/>
+
+        <com.github.mikephil.charting.charts.LineChart
+            android:id="@+id/sleepchart"
+            android:layout_width="fill_parent"
+            android:layout_height="300dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="25dp"
+            android:layout_weight="4" />
+
+    </LinearLayout>
+</ScrollView>

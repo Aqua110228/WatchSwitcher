@@ -1,0 +1,338 @@
+syntax = "proto2";
+package xiaomi;
+option java_package = "nodomain.freeyourgadget.gadgetbridge.proto.xiaomi";
+option java_outer_classname = "XiaomiSystem";
+
+import "xiaomi/wear_common.proto";
+
+message System {
+  // 2, 1
+  optional Power power = 2;
+  // 2, 2
+  optional DeviceInfo deviceInfo = 3;
+  // 2, 3
+  optional Clock clock = 4;
+
+  // 2, 18
+  optional uint32 findDevice = 5; // 0, 1 == "found it" pressed on device
+
+  // 2, 24 get | 2, 25 set
+  optional RaiseToWake raiseToWake = 7;
+
+  // 2, 28 get | 2, 27 set
+  optional SimpleWidgets simpleWidgets = 9;
+
+  // 2, 29 get | 2, 39 set
+  optional DisplayItems displayItems = 10;
+
+  // 2, 34
+  optional DoNotDisturb dndStatus = 11;
+
+  // 2, 39
+  optional WorkoutTypes workoutTypes = 14;
+
+  // 2, 5
+  optional FirmwareInstallRequest firmwareInstallRequest = 16;
+  optional FirmwareInstallResponse firmwareInstallResponse = 17;
+
+  // 2, 9 get | 2, 21 set
+  optional Password password = 19;
+
+  // 2, 7 get | 2, 8 set
+  optional Camera camera = 15;
+
+  // 2, 6
+  optional Language language = 20;
+
+  // 2, 51 get | 2, 52 create
+  optional WidgetScreens widgetScreens = 28;
+  // 2, 53
+  optional WidgetParts widgetParts = 29;
+
+  // 2, 14
+  optional MiscSettingGet miscSettingGet = 34;
+  // 2, 15
+  optional MiscSettingSet miscSettingSet = 35;
+
+  // 2, 43
+  optional PhoneSilentModeGet phoneSilentModeGet = 36;
+
+  // 2, 44 returning to watch, 2, 45 setting from watch
+  optional PhoneSilentModeSet phoneSilentModeSet = 37;
+
+  // 2, 46
+  optional VibrationPatterns vibrationPatterns = 38;
+
+  // 2, 47
+  optional VibrationNotificationType vibrationSetPreset = 39;
+
+  // 2, 58
+  optional CustomVibrationPattern vibrationPatternCreate = 40;
+
+  // 2, 59
+  optional VibrationTest vibrationTestCustom = 41;
+
+  // 2, 61 - reference Vibrator.Removal (delete stored patterns by id)
+  optional VibrationRemove vibrationRemove = 42;
+
+  // 2, 47 - reference VibratorError (response code)
+  optional VibrationPatternAck vibrationPatternAck = 43;
+
+  // 2, 78
+  optional BasicDeviceState basicDeviceState = 48;
+
+  // 2, 79
+  optional DeviceState deviceState = 49;
+}
+
+message Power {
+  optional Battery battery = 1;
+}
+
+message Battery {
+  optional uint32 level = 1;
+  optional uint32 state = 2;
+  optional LastCharge lastCharge = 3;
+}
+
+message LastCharge {
+  optional uint32 state = 1; // 2
+  optional uint32 timestampSeconds = 2;
+}
+
+message DeviceInfo {
+  required string serialNumber = 1;
+  required string firmware = 2;
+  optional string unknown3 = 3; // "" ?
+  required string model = 4;
+}
+
+message Clock {
+  required Date date = 1;
+  required Time time = 2;
+  required TimeZone timezone = 3;
+  optional bool isNot24hour = 4;
+}
+
+
+message RaiseToWake {
+  optional uint32 mode = 1; // 0 all day 1 scheduled 2 off
+  optional HourMinute start = 2;
+  optional HourMinute end = 3;
+}
+
+message SimpleWidgets {
+  repeated SimpleWidget simpleWidget = 1;
+  optional uint32 unk2 = 2; // 41
+  optional uint32 unk3 = 3; // 3
+}
+
+message SimpleWidget {
+  optional uint32 unk1 = 1;
+  optional bool enabled = 2;
+  optional uint32 unk3 = 3;
+}
+
+message DisplayItems {
+  repeated DisplayItem displayItem = 1;
+}
+
+message DisplayItem {
+  optional string code = 1;
+  optional string name = 2;
+  optional bool disabled = 3;
+  optional uint32 isSettings = 4;
+  optional uint32 unknown5 = 5; // 1
+  optional bool inMoreSection = 6; // rarely used in official app
+}
+
+message Camera {
+  required bool enabled = 1;
+}
+
+message Language {
+  optional string code = 1; // pt_pt, en_us
+}
+
+message WorkoutTypes {
+  repeated WorkoutType workoutType = 1;
+  optional uint32 unknown2 = 2; // 1
+}
+
+message WorkoutType {
+  optional uint32 type = 1;
+  optional uint32 unknown2 = 2; // 1
+}
+
+message WidgetScreens {
+  repeated WidgetScreen widgetScreen = 1;
+  optional uint32 isFullList = 2; // 1 to overwrite the full list
+  optional WidgetsCapabilities widgetsCapabilities = 3; // only in response
+}
+
+message WidgetsCapabilities {
+  optional uint32 minWidgets = 1; // 1
+  optional uint32 maxWidgets = 2; // 7
+
+  // bitmap:
+  // - 0b0000_0011_0000_0000 (768) on bands
+  // - 0b0000_0000_0000_0111 (7) on some square/round devices (Watch S1 Active)
+  // - 0b0000_0000_1000_0111 (135) on some square/round devices (Redmi Watch 4)
+  // - 0b0111_1100_0000_0000 (31744) on portrait devices (Band 8 Pro)
+  optional uint32 supportedLayoutStyles = 3;
+}
+
+message WidgetScreen {
+  optional uint32 id = 1; // starts at 1
+  optional uint32 layout = 2; // 256 for split, 512 for tall
+  repeated WidgetPart widgetPart = 3;
+}
+
+message WidgetParts {
+  repeated WidgetPart widgetPart = 1;
+}
+
+message WidgetPart {
+  optional uint32 type = 1; // 1 for small 1x1, 2 for wide 2x1, 3 for tall 1x2
+  optional uint32 function = 2; // matches command type
+  optional uint32 id = 3; // they all seem unique
+  optional string title = 4; // not set on create
+  optional uint32 subType = 5; // usually 0 if no subtype
+  optional string appId = 6; // "" on get
+  optional string unknown7 = 7; // "" on get
+}
+
+message DoNotDisturb {
+  optional uint32 status = 1; // 0 enabled, 2 disabled
+}
+
+message MiscSettingGet {
+  optional uint32 setting = 1; // 2 dndSync
+}
+
+message MiscSettingSet {
+  optional MiscNotificationSettings miscNotificationSettings = 1;
+  optional DndSync dndSync = 2;
+  optional WearingMode wearingMode = 3;
+}
+
+message MiscNotificationSettings {
+  optional uint32 wakeScreen = 1; // 0 ignore 1 enable 2 disable
+  optional uint32 onlyWhenPhoneLocked = 2; // 0 ignore 1 enable 2 disable
+  optional uint32 onlyWhenWorn = 3; // 1 enable 2 disable
+}
+
+message DndSync {
+  optional uint32 enabled = 1; // 0/1
+}
+
+message WearingMode {
+  // 0 Band Mode (wristband)
+  // 1 Pebble Mode (show buckle)
+  // 2 Necklace mode (neck strap)
+  optional uint32 mode = 1;
+}
+
+message FirmwareInstallRequest {
+  optional uint32 unknown1 = 1; // 0
+  optional uint32 unknown2 = 2; // 0
+  optional string version = 3;
+  optional string md5 = 4;
+}
+
+message FirmwareInstallResponse {
+  optional uint32 status = 1; // 0
+}
+
+message Password {
+  optional uint32 state = 1; // 1 disabled, 2 enabled
+  optional string password = 2;
+  optional uint32 unknown3 = 3; // 0 when set on ret
+}
+
+message PhoneSilentModeGet {
+  optional uint32 unknown1 = 1; // 1
+}
+
+message PhoneSilentModeSet {
+  optional PhoneSilentMode phoneSilentMode = 1;
+}
+
+message PhoneSilentMode {
+  optional bool silent = 1;
+}
+
+// Notification / vibration category ids shared by CustomVibrationPattern.type and
+// VibrationNotificationType.notificationType. The fields stay uint32 - proto2 closed enums drop
+// unknown values (and the raw int) on the wire - so map to this enum with forNumber() in code.
+enum VibrationType {
+  VIBRATION_TYPE_NONE = 0;
+  VIBRATION_TYPE_CALL = 1;          // incoming calls (confirmed: Double -> 1)
+  VIBRATION_TYPE_TASK = 2;          // task reminders (confirmed)
+  VIBRATION_TYPE_ALARM = 3;         // alarms / clock
+  VIBRATION_TYPE_NOTIFICATION = 4;  // notifications
+  VIBRATION_TYPE_STANDING = 5;      // standing / sedentary reminders
+  VIBRATION_TYPE_SMS = 6;           // sms / messages
+  VIBRATION_TYPE_GOAL = 7;          // goal
+  VIBRATION_TYPE_EVENT = 8;         // events / calendar (confirmed)
+}
+
+message VibrationPatterns {
+  repeated VibrationNotificationType notificationType = 1;
+  optional uint32 unknown2 = 2; // 50, max patterns?
+  repeated CustomVibrationPattern customVibrationPattern = 3;
+}
+
+message CustomVibrationPattern {
+  optional uint32 id = 1;
+  optional string name = 2;
+  // The band never populates the segments on a GET response, only on create/update (phone -> watch)
+  repeated Vibration vibration = 3;
+  optional uint32 type = 4; // see VibrationType
+}
+
+message VibrationNotificationType {
+  optional uint32 notificationType = 1; // see VibrationType
+  optional uint32 preset = 2; // reference VibratorItem.id - the assigned vibrator id (0 = default)
+}
+
+message VibrationTest {
+  repeated Vibration vibration = 1;
+}
+
+// reference VibratorError: response code: 0 OK, 1 NUMBER_LIMIT, 2 ID_NOT_EXIST
+message VibrationPatternAck {
+  optional uint32 status = 1;
+}
+
+// reference Vibrator.Removal: delete stored patterns by id
+message VibrationRemove {
+  repeated uint32 id = 1;
+}
+
+message Vibration {
+  optional uint32 vibrate = 1;  // reference Segment.on (0/1)
+  optional uint32 ms = 2;       // reference Segment.duration
+  optional uint32 strength = 3; // reference Segment.strength
+}
+
+message DeviceActivityState {
+  optional uint32 activityType = 1;
+  optional uint32 currentActivityState = 2;
+}
+
+message BasicDeviceState {
+  required bool isCharging = 1; // true when connected to charger
+  optional uint32 batteryLevel = 2;
+  required bool isWorn = 3; // true when the device detects it's being worn
+  required bool isUserAsleep = 4; // true when the device detected its user is asleep
+  optional DeviceActivityState activityState = 5;
+}
+
+message DeviceState {
+  optional uint32 chargingState = 1; // 1 charging, 2 not charging
+  optional uint32 wearingState = 2; // 1 wearing, 2 not wearing
+  optional uint32 sleepState = 3; // 1 sleep detected, 2 no sleep detected
+  optional uint32 warningState = 4; // ?
+  optional DeviceActivityState activityState = 5;
+}

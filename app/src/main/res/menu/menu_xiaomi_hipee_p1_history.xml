@@ -1,0 +1,15 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/hipee_p1_history_sync"
+        android:icon="@drawable/ic_refresh"
+        android:title="@string/controlcenter_fetch_activity_data"
+        app:iconTint="?attr/actionmenu_icon_color"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/hipee_p1_history_set_date"
+        android:icon="@drawable/ic_calendar_from"
+        android:title="@string/menuitem_calendar"
+        app:iconTint="?attr/actionmenu_icon_color"
+        app:showAsAction="ifRoom" />
+</menu>

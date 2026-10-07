@@ -1,0 +1,372 @@
+syntax = "proto2";
+
+package garmin_vivomovehr;
+
+option java_package = "nodomain.freeyourgadget.gadgetbridge.proto.garmin.GdiSmartProto";
+option java_multiple_files = true;
+
+import "garmin/gdi_authentication_service.proto";
+import "garmin/gdi_device_status.proto";
+import "garmin/gdi_file_sync_service.proto";
+import "garmin/gdi_find_my_watch.proto";
+import "garmin/gdi_core.proto";
+import "garmin/gdi_http_service.proto";
+import "garmin/gdi_app_config_service.proto";
+import "garmin/gdi_installed_apps_service.proto";
+import "garmin/gdi_data_transfer_service.proto";
+import "garmin/gdi_sms_notification.proto";
+import "garmin/gdi_calendar_service.proto";
+import "garmin/gdi_settings_service.proto";
+import "garmin/gdi_notifications_service.proto";
+import "garmin/gdi_ecg_service.proto";
+import "garmin/gdi_explore_sync.proto";
+
+message Smart {
+    optional CalendarService calendar_service = 1;
+    optional HttpService http_service = 2;
+    optional AppConfigService app_config_service = 4;
+    optional InstalledAppsService installed_apps_service = 3;
+    optional DataTransferService data_transfer_service = 7;
+    optional DeviceStatusService device_status_service = 8;
+    optional Service10 service10 = 10;
+    optional Service11 service11 = 11;
+    optional FindMyWatchService find_my_watch_service = 12;
+    optional CoreService core_service = 13;
+    optional Service14 service14 = 14;
+    optional SmsNotificationService sms_notification_service = 16;
+    optional Service18 service18 = 18;
+    optional Service21 service21 = 21;
+    optional Service23 service23 = 23;
+    optional PushNotificationService push_notification_service = 24;
+    optional AuthenticationService authenticationService = 27;
+    optional ExploreSyncService explore_sync_service = 22;
+    optional Service28 service28 = 28;
+    optional Service29 service29 = 29;
+    optional Service30 service30 = 30;
+    optional Service31 service31 = 31;
+    optional Service32 service32 = 32;
+    optional EcgService ecg_service = 39;
+    optional SettingsService settings_service = 42;
+    optional FileSyncService file_sync_service = 43;
+    optional Service44 service44 = 44;
+    optional Service46 service46 = 46;
+    optional Service47 service47 = 47;
+    optional NotificationsService notifications_service = 49;
+    optional Service56 service56 = 56;
+}
+
+message UUID {
+    required fixed64 upper = 1;
+    required fixed64 lower = 2;
+}
+
+message Service10 {
+    message AudioLocale {
+        message Locale {
+            optional string language = 1;
+            optional string region = 2;
+        }
+        optional Locale locale = 1;
+    }
+    message Message14 {
+        message Message3 {
+            optional string announcement = 1; // e.g. FITNESS/FITNESS_LAP_TIME
+            optional string json_params = 2; // e.g. {"lap":1, "time":618}
+        }
+        optional uint32 unk1 = 1;
+        optional Message3 unk3 = 3;
+    }
+    optional AudioLocale from_device12 = 12;
+    optional Message14 from_device14 = 14;
+}
+
+
+message Service11 {
+    message Message9 {
+        optional bytes unk1 = 1;
+    }
+    message Message11 {
+        optional bytes unk1 = 1;
+    }
+    optional Message11 unk9 = 9;
+    optional Message11 unk11 = 11;
+}
+
+message Service14 {
+    message Message1 {
+        message Message1X {
+            optional sint32 unk1 = 1;
+            optional sint32 unk2 = 2;
+        }
+        optional Message1X unk1 = 1;
+        optional uint32 unk2 = 2;
+        repeated uint32 unk3 = 3;
+    }
+    optional Message1 unk1 = 1;
+}
+
+message Service18 {
+    message CurrentInput {
+        optional string content = 1;
+        optional uint32 content_length = 2;
+    }
+
+    message StartInput {
+        optional uint32 codeset = 1;
+        optional uint32 max_length = 2;
+        optional string content = 3;
+        optional uint32 content_length = 4;
+        optional uint32 unk5 = 5;
+    }
+
+    message EndInput {
+        enum State {
+            ABORT = 1;
+            COMMIT = 2;
+        }
+        optional State state = 1;
+    }
+
+    message Message5 {
+        optional uint32 unk1 = 1;
+    }
+
+    optional CurrentInput current_input = 1;
+    optional StartInput start_input = 2;
+    optional EndInput end_input = 4;
+    optional Message5 unk5 = 5;
+}
+
+message Service21 {
+    message Message1 {
+        optional int32 unk3 = 3;
+        optional int32 unk4 = 4;
+        optional int32 unk5 = 5;
+        optional int32 unk6 = 6;
+        optional int32 unk8 = 8;
+    }
+
+    message Message6 {
+        optional int32 unk1 = 1;
+        optional int32 unk2 = 2;
+        optional int32 unk3 = 3;
+        optional int32 unk4 = 4;
+    }
+
+    message Message7 {
+    }
+
+    message Message11 {
+        repeated uint32 unk1 = 1;
+        optional uint32 unk2 = 2;
+    }
+
+    optional Message1 from_device1 = 1;
+    optional Message6 from_device6 = 6;
+    optional Message7 from_device7 = 7;
+    optional Message11 from_device11 = 11;
+}
+
+message Service23 {
+}
+
+message PushNotificationService {
+    message LastPushNotification {
+        optional string id = 1;
+    }
+    message PushNotification {
+        optional string id = 1;
+        optional string app_id = 2; // app UUID / topic?
+        optional string payload = 3; // JSON
+    }
+    message PushNotificationAck {
+        optional string id = 1;
+        optional uint32 status = 2; // 0 = OK
+    }
+    optional LastPushNotification last_push_notification = 1;
+    optional PushNotification push_notification = 3;
+    optional PushNotificationAck push_notification_ack = 4;
+}
+
+message Service28 {
+    message Message2 {
+        message Message3 {
+            message Message2x {
+                optional uint32 unk1 = 1;
+                optional uint32 unk2 = 2;
+                optional uint32 unk3 = 3;
+            }
+            optional uint32 unk1 = 1;
+            repeated Message2x unk2 = 2;
+        }
+        optional uint32 unk1 = 1;
+        optional uint32 unk2 = 2;
+        optional Message3 unk3 = 3;
+    }
+    message Message4 {
+        optional uint32 unk1 = 1;
+    }
+    message Message6 {
+        optional uint32 unk1 = 1;
+    }
+    message Message14 {
+        optional uint32 unk1 = 1;
+    }
+    optional Message2 unk2 = 2;
+    optional Message4 unk4 = 4;
+    optional Message6 unk6 = 6;
+    optional Message14 unk14 = 14;
+}
+
+message Service29 {
+    message Message2 {
+        message Message1 {
+            message Message12 {
+                optional uint32 unk1 = 1;
+                optional uint32 unk3 = 3;
+                optional uint32 unk7 = 7;
+            }
+            optional uint32 unk1 = 1;
+            optional uint32 unk2 = 2;
+            optional uint32 unk3 = 3;
+            repeated Message12 unk12 = 12;
+        }
+        optional Message1 unk1 = 1;
+    }
+    message Message4 {
+        message Message4x {
+            optional uint32 unk1 = 1;
+        }
+        optional uint32 unk1 = 1;
+        optional Message4x unk4 = 4;
+        optional uint32 unk9 = 9;
+        optional uint32 unk10 = 10;
+        optional string unk11 = 11;
+        optional UUID unk12 = 12;
+        optional UUID unk13 = 13;
+        optional uint32 unk14 = 14;
+        optional uint32 unk15 = 15;
+        optional string unk17 = 17; // model?
+        optional uint64 unk18 = 18; // serial?
+    }
+    message Message6 {
+        optional uint32 unk1 = 1;
+    }
+    message Message14 {
+        optional uint32 unk1 = 1;
+    }
+    message Message18 {
+        optional uint32 unk1 = 1;
+    }
+    message Message25 {
+        optional uint32 unk1 = 1;
+    }
+    message Message41 {
+        optional uint32 unk1 = 1;
+    }
+    message Message43 {
+        optional uint32 unk1 = 1;
+    }
+    message Message45 {
+    }
+    optional Message2 unk2 = 2;
+    optional Message4 unk4 = 4;
+    optional Message6 unk6 = 6;
+    optional Message14 unk14 = 14;
+    optional Message18 unk18 = 18;
+    optional Message25 unk25 = 25;
+    optional Message41 unk41 = 41;
+    optional Message43 unk43 = 43;
+    optional Message45 unk45 = 45;
+}
+
+message Service30 {
+    message Message2 {
+    }
+    message Message5 {
+        repeated uint32 unk1 = 1;
+        repeated uint32 unk2 = 2;
+    }
+    optional Message2 unk2 = 2;
+    optional Message5 unk5 = 5;
+}
+
+message Service31 {
+    message Message2 {
+        optional uint32 unk1 = 1;
+    }
+    message Message4 {
+        optional uint32 unk4 = 1;
+    }
+    message Message6 {
+        optional uint32 unk6 = 1;
+    }
+    optional Message2 unk2 = 2;
+    optional Message4 unk4 = 4;
+    optional Message6 unk6 = 6;
+}
+
+message Service32 {
+    message Message2 {
+        optional uint32 unk1 = 1;
+    }
+    message Message4 {
+        optional uint32 unk1 = 1;
+    }
+    optional Message2 unk2 = 2;
+    optional Message4 unk4 = 4;
+}
+
+message Service44 {
+    message Message2 {
+        optional uint32 unk1 = 1;
+    }
+    optional Message2 unk2 = 2;
+}
+
+message Service46 {
+    message Message1 {
+        optional string uri = 1;
+    }
+    optional Message1 message_1 = 1;
+}
+
+message Service47 {
+    message Message1 {
+        optional uint32 unk1 = 1;
+        optional uint32 unk2 = 2;
+    }
+    message Message4 {
+        optional uint32 unk1 = 1;
+    }
+    message Message5 {
+    }
+    optional Message1 device_checks_for_software_update = 1;
+    optional Message4 unk4 = 4;
+    optional Message5 unk5 = 5;
+}
+
+message Service56 {
+    message Message2 {
+    }
+    message Message4 {
+    }
+    message Message6 {
+    }
+    message Message8 {
+    }
+    message Message12 {
+    }
+    message Message18 {
+        message Message1 {
+            optional uint32 unk1 = 1;
+        }
+        optional Message1 unk1 = 1;
+    }
+    optional Message2 unk2 = 2;
+    optional Message4 unk4 = 4;
+    optional Message4 unk6 = 6;
+    optional Message8 unk8 = 8;
+    optional Message12 unk12 = 12;
+    optional Message18 unk18 = 18;
+}

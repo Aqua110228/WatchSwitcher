@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/tab_bar_bg"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:paddingTop="6dp"
+                android:paddingBottom="6dp">
+
+                <com.google.android.material.tabs.TabLayout
+                    android:id="@+id/tab_layout"
+                    style="@style/Widget.App.TabLayout.Pill"
+                    android:layout_width="match_parent"
+                    android:layout_height="36dp"
+                    android:background="@null"
+                    android:visibility="gone"
+                    android:paddingStart="0dp"
+                    android:paddingEnd="0dp"
+                    android:paddingTop="0dp"
+                    android:paddingBottom="0dp"
+                    app:tabMode="fixed"
+                    app:tabGravity="fill" />
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.viewpager2.widget.ViewPager2
+                    android:id="@+id/tabs_view_pager"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone"/>
+
+                <View
+                    android:id="@+id/tab_row_shade"
+                    android:layout_width="match_parent"
+                    android:layout_height="8dp"
+                    android:background="?attr/bar_shade"
+                    android:visibility="gone" />
+            </FrameLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/loading_spinner"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/error_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="16dp"
+        android:text="@string/agps_status_error"
+        android:textColor="?android:attr/textColorSecondary"
+        android:visibility="gone" />
+
+</FrameLayout>

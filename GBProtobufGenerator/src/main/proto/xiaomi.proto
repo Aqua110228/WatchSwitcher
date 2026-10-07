@@ -1,0 +1,45 @@
+syntax = "proto2"; // we must use proto2 to serialize default values on the wire
+
+package xiaomi;
+
+option java_package = "nodomain.freeyourgadget.gadgetbridge.proto.xiaomi";
+option java_outer_classname = "XiaomiProto";
+
+import "xiaomi/wear_account.proto";
+import "xiaomi/wear_calendar.proto";
+import "xiaomi/wear_clock.proto";
+import "xiaomi/wear_common.proto";
+import "xiaomi/wear_contact.proto";
+import "xiaomi/wear_fitness.proto";
+import "xiaomi/wear_mass.proto";
+import "xiaomi/wear_media.proto";
+import "xiaomi/wear_notification.proto";
+import "xiaomi/wear_system.proto";
+import "xiaomi/wear_thirdparty_app.proto";
+import "xiaomi/wear_watch_face.proto";
+import "xiaomi/wear_weather.proto";
+
+message Command {
+  required uint32 type = 1;
+  optional uint32 subtype = 2;
+
+  optional Account auth = 3;
+  optional System system = 4;
+  optional Watchface watchface = 6;
+  // 8, 10 get
+  optional Health health = 10;
+  optional Calendar calendar = 14;
+  optional Music music = 20;
+  optional Notification notification = 9;
+  optional Weather weather = 12;
+  optional Schedule schedule = 19;
+  optional Rpk rpk = 22;
+
+  // command type 21
+  optional Phonebook phonebook = 23;
+
+  // type 22
+  optional DataUpload dataUpload = 24;
+
+  optional uint32 status = 100; // 0 on success on some
+}

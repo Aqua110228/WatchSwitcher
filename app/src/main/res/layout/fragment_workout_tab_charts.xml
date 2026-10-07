@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollViewPage2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Dynamic charts, provided by the device -->
+        <LinearLayout
+            android:id="@+id/dynamic_charts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+
+        <!-- Fallback heart rate chart (from the device's general health data), shown only when
+             the workout itself has no heart rate chart of its own but the device supports it. -->
+        <LinearLayout
+            android:id="@+id/heart_rate_chart_wrapper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?attr/row_separator" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-black"
+                android:gravity="center"
+                android:padding="16dp"
+                android:text="@string/heart_rate"
+                android:textSize="18sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?attr/row_separator" />
+
+            <FrameLayout
+                android:id="@+id/charts_fragment_holder"
+                android:layout_width="match_parent"
+                android:layout_height="300dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?attr/row_separator" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
+

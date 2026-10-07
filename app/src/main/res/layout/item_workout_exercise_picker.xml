@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/selectableItemBackground"
+    android:clickable="true"
+    android:focusable="true"
+    android:minHeight="48dp"
+    android:orientation="vertical"
+    android:paddingHorizontal="16dp"
+    android:paddingVertical="8dp">
+
+    <TextView
+        android:id="@+id/workout_exercise_picker_item_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?attr/textAppearanceListItem" />
+
+    <TextView
+        android:id="@+id/workout_exercise_picker_item_groups"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?attr/textAppearanceBodySmall" />
+
+</LinearLayout>

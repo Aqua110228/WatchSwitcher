@@ -1,0 +1,755 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- light theme -->
+    <style name="GadgetbridgeTheme" parent="Theme.Material3.Light">
+        <item name="colorSurface">@color/window_background_light</item>
+        <item name="colorSurfaceContainerLowest">@color/surface_container_lowest_light</item>
+        <item name="colorSurfaceContainerLow">@color/surface_container_low_light</item>
+        <item name="colorSurfaceContainer">@color/surface_container_light</item>
+        <item name="colorSurfaceContainerHigh">@color/surface_container_high_light</item>
+        <item name="colorSurfaceContainerHighest">@color/surface_container_highest_light</item>
+        <item name="colorSurfaceVariant">@color/surface_container_high_light</item>
+        <item name="colorOnSurface">@color/primarytext_light</item>
+        <item name="colorOnSurfaceVariant">@color/on_surface_variant_light</item>
+        <item name="colorOutline">@color/outline_light</item>
+        <item name="colorOutlineVariant">@color/outline_variant_light</item>
+
+        <item name="textColorPrimary">?attr/colorOnSurface</item>
+        <item name="textColorSecondary">?attr/colorOnSurfaceVariant</item>
+        <item name="textColorTertiary">@color/tertiarytext_light</item>
+
+        <item name="colorPrimary">?attr/tab_pill</item>
+        <item name="colorPrimaryDark">?attr/tab_pill</item>
+        <item name="colorOnPrimary">?attr/tab_pill_on</item>
+
+        <item name="colorPrimaryContainer">?attr/subtab_pill</item>
+        <item name="colorOnPrimaryContainer">?attr/subtab_pill_on</item>
+        <item name="colorSecondaryContainer">?attr/subtab_pill</item>
+        <item name="colorOnSecondaryContainer">?attr/subtab_pill_on</item>
+
+        <item name="elevationOverlayEnabled">false</item>
+
+        <item name="actionBarStyle">@style/GadgetbridgeTheme.ActionBar</item>
+        <item name="actionOverflowMenuStyle">@style/GadgetbridgeTheme.OverflowMenuStyle</item>
+        <item name="actionModeStyle">@style/GadgetbridgeTheme.ActionMode</item>
+        <item name="actionModeCloseButtonStyle">@style/GadgetbridgeTheme.ActionModeCloseButton</item>
+        <item name="preferenceTheme">@style/AppPreferenceThemeOverlay</item>
+
+        <item name="drawer_header_color">?attr/toolbar_bg</item>
+        <item name="drawer_title_color">?attr/textColorPrimary</item>
+        <item name="cardview_background_color">?attr/colorSurface</item>
+        <item name="actionmenu_icon_color">?attr/colorOnSurface</item>
+        <item name="chart_deep_sleep">@color/chart_deep_sleep_light</item>
+        <item name="chart_light_sleep">@color/chart_light_sleep_light</item>
+        <item name="chart_rem_sleep">@color/chart_rem_sleep_light</item>
+        <item name="chart_awake_sleep">@color/chart_awake_sleep_light</item>
+        <item name="chart_activity">@color/chart_activity_light</item>
+        <item name="chart_not_worn">@color/chart_not_worn_light</item>
+        <item name="spo2_avg_color">@color/spo2_avg_color_light</item>
+        <item name="training_acute_load">@color/training_load</item>
+        <item name="alternate_row_background">?attr/colorSecondaryContainer</item>
+        <item name="row_separator">@color/row_separator_light</item>
+        <item name="stat_tile_bg">?attr/colorSurface</item>
+        <item name="stat_tile_border">?attr/colorOutlineVariant</item>
+        <item name="activity_icon_bg">?attr/colorSurfaceContainerHigh</item>
+        <item name="table_header_rule">@color/table_header_rule_light</item>
+
+        <item name="tab_bar_bg">?attr/toolbar_bg</item>
+        <item name="tab_pill">@color/primarydark_light</item>
+        <item name="tab_pill_on">@android:color/white</item>
+        <item name="tab_text_off">?attr/colorOnSurfaceVariant</item>
+        <item name="subtab_pill">@color/subtab_pill_light</item>
+        <item name="subtab_pill_on">@color/primarydark_light</item>
+        <item name="subtab_text_off">?attr/colorOnSurfaceVariant</item>
+        <item name="subtab_active">?attr/tab_pill</item>
+        <item name="chip_border_off">?attr/stat_tile_border</item>
+        <item name="chip_text_off">?attr/colorOnSurfaceVariant</item>
+
+        <item name="datestep_row_bg">?attr/toolbar_bg</item>
+        <item name="datestep_bg">?attr/colorSurfaceContainerHigh</item>
+        <item name="datestep_icon">?attr/colorOnSurfaceVariant</item>
+        <item name="datestep_caption">?attr/colorOnSurfaceVariant</item>
+        <item name="datestep_primary_bg">?attr/colorPrimary</item>
+        <item name="datestep_primary_icon">?attr/colorOnPrimary</item>
+        <item name="datestep_primary_caption">?attr/colorOnPrimary</item>
+        <item name="datestep_label">?attr/colorOnSurface</item>
+
+        <item name="toolbar_bg">?attr/colorSurface</item>
+        <item name="bar_shade">@drawable/bar_shade_light</item>
+        <item name="toolbar_title">?attr/colorOnSurface</item>
+        <item name="toolbar_subtitle">?attr/colorOnSurfaceVariant</item>
+        <item name="toolbar_icon">?attr/colorOnSurfaceVariant</item>
+        <item name="main_bar_bg">?attr/toolbar_bg</item>
+        <item name="summary_tile_label">?attr/subtab_active</item>
+        <item name="accent_color">?attr/subtab_active</item>
+        <item name="value_line">?attr/colorOutlineVariant</item>
+        <item name="gauge_track">?attr/colorSurfaceContainerHighest</item>
+
+        <item name="checkmarkColor">#669900</item>
+        <item name="deviceIconPrimary">#2196f3</item>
+        <item name="deviceIconOnPrimary">#ffffff</item>
+        <item name="deviceIconLight">#1f7fdb</item>
+        <item name="deviceIconDark">#4dabf5</item>
+
+        <item name="android:windowBackground">@color/window_background_light</item>
+        <item name="android:colorBackground">@color/window_background_light</item>
+        <item name="android:statusBarColor">?attr/toolbar_bg</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="23">true</item>
+        <!-- colorSurface, not ?android:attr/windowBackground: dialogs redefine windowBackground as
+             a drawable, and windows read this as a color, which crashed when opening one -->
+        <item name="android:navigationBarColor">?attr/colorSurface</item>
+        <!-- FIXME: SDK 21 to 27 has light navbar on light background -->
+        <item name="android:windowLightNavigationBar" tools:targetApi="27">true</item>
+    </style>
+
+    <!-- dark theme -->
+    <style name="GadgetbridgeThemeDark" parent="Theme.Material3.Dark">
+        <!-- Neutral greys, instead of the slightly tinted Material 3 defaults -->
+        <item name="colorSurface">@color/window_background_dark</item>
+        <item name="colorSurfaceContainerLowest">@color/surface_container_lowest_dark</item>
+        <item name="colorSurfaceContainerLow">@color/surface_container_low_dark</item>
+        <item name="colorSurfaceContainer">@color/surface_container_dark</item>
+        <item name="colorSurfaceContainerHigh">@color/surface_container_high_dark</item>
+        <item name="colorSurfaceContainerHighest">@color/surface_container_highest_dark</item>
+        <item name="colorSurfaceVariant">@color/surface_container_high_dark</item>
+        <item name="colorOnSurface">@color/primarytext_dark</item>
+        <item name="colorOnSurfaceVariant">@color/on_surface_variant_dark</item>
+        <item name="colorOutline">@color/outline_dark</item>
+        <item name="colorOutlineVariant">@color/outline_variant_dark</item>
+
+        <item name="textColorPrimary">?attr/colorOnSurface</item>
+        <item name="textColorSecondary">?attr/colorOnSurfaceVariant</item>
+        <item name="textColorTertiary">@color/tertiarytext_dark</item>
+
+        <item name="colorPrimary">?attr/tab_pill</item>
+        <item name="colorPrimaryDark">?attr/tab_pill</item>
+        <item name="colorOnPrimary">?attr/tab_pill_on</item>
+
+        <item name="colorPrimaryContainer">?attr/subtab_pill</item>
+        <item name="colorOnPrimaryContainer">?attr/subtab_pill_on</item>
+        <item name="colorSecondaryContainer">?attr/subtab_pill</item>
+        <item name="colorOnSecondaryContainer">?attr/subtab_pill_on</item>
+
+        <item name="elevationOverlayEnabled">false</item>
+
+        <item name="actionBarStyle">@style/GadgetbridgeTheme.ActionBar</item>
+        <item name="actionOverflowMenuStyle">@style/GadgetbridgeTheme.OverflowMenuStyle</item>
+        <item name="actionModeStyle">@style/GadgetbridgeTheme.ActionMode</item>
+        <item name="actionModeCloseButtonStyle">@style/GadgetbridgeTheme.ActionModeCloseButton</item>
+        <item name="preferenceTheme">@style/AppPreferenceThemeOverlay</item>
+
+        <item name="drawer_header_color">?attr/toolbar_bg</item>
+        <item name="drawer_title_color">?attr/textColorPrimary</item>
+        <item name="cardview_background_color">?attr/colorSurface</item>
+        <item name="actionmenu_icon_color">?attr/colorOnSurface</item>
+        <item name="chart_deep_sleep">@color/chart_deep_sleep_dark</item>
+        <item name="chart_light_sleep">@color/chart_light_sleep_dark</item>
+        <item name="chart_rem_sleep">@color/chart_rem_sleep_dark</item>
+        <item name="chart_awake_sleep">@color/chart_awake_sleep_dark</item>
+        <item name="chart_activity">@color/chart_activity_dark</item>
+        <item name="chart_not_worn">@color/chart_not_worn_dark</item>
+        <item name="spo2_avg_color">@color/spo2_avg_color_dark</item>
+        <item name="training_acute_load">@color/training_load_dark</item>
+        <item name="alternate_row_background">?attr/colorSecondaryContainer</item>
+        <item name="row_separator">@color/row_separator_dark</item>
+        <item name="stat_tile_bg">?attr/colorSurface</item>
+        <item name="stat_tile_border">?attr/colorOutlineVariant</item>
+        <item name="activity_icon_bg">?attr/colorSurfaceContainerHigh</item>
+        <item name="table_header_rule">@color/table_header_rule_dark</item>
+
+        <item name="tab_bar_bg">?attr/toolbar_bg</item>
+        <item name="tab_pill">@color/primarydark_dark</item>
+        <item name="tab_pill_on">@android:color/white</item>
+        <item name="tab_text_off">?attr/colorOnSurfaceVariant</item>
+        <item name="subtab_pill">@color/subtab_pill_dark</item>
+        <item name="subtab_pill_on">@color/subtab_pill_on_dark</item>
+        <item name="subtab_text_off">?attr/colorOnSurfaceVariant</item>
+        <item name="subtab_active">?attr/tab_pill</item>
+        <item name="chip_border_off">?attr/stat_tile_border</item>
+        <item name="chip_text_off">?attr/colorOnSurfaceVariant</item>
+
+        <item name="datestep_row_bg">?attr/toolbar_bg</item>
+        <item name="datestep_bg">?attr/colorSurfaceContainerHigh</item>
+        <item name="datestep_icon">?attr/colorOnSurfaceVariant</item>
+        <item name="datestep_caption">?attr/colorOnSurfaceVariant</item>
+        <item name="datestep_primary_bg">?attr/colorPrimary</item>
+        <item name="datestep_primary_icon">?attr/colorOnPrimary</item>
+        <item name="datestep_primary_caption">?attr/colorOnPrimary</item>
+        <item name="datestep_label">?attr/colorOnSurface</item>
+
+        <item name="toolbar_bg">?attr/colorSurface</item>
+        <item name="bar_shade">@drawable/bar_shade_dark</item>
+        <item name="toolbar_title">?attr/colorOnSurface</item>
+        <item name="toolbar_subtitle">?attr/colorOnSurfaceVariant</item>
+        <item name="toolbar_icon">?attr/colorOnSurfaceVariant</item>
+        <item name="main_bar_bg">?attr/toolbar_bg</item>
+        <!-- subtab_active, not tab_pill: the White preset's pill color has no contrast against
+             the background, and the preset gives subtab_active a readable color instead -->
+        <item name="summary_tile_label">?attr/subtab_active</item>
+        <item name="accent_color">?attr/subtab_active</item>
+        <item name="value_line">?attr/colorOutlineVariant</item>
+        <item name="gauge_track">?attr/colorSurfaceContainerHighest</item>
+
+        <item name="checkmarkColor">#669900</item>
+        <item name="deviceIconPrimary">#2196f3</item>
+        <item name="deviceIconOnPrimary">#ffffff</item>
+        <item name="deviceIconLight">#1f7fdb</item>
+        <item name="deviceIconDark">#4dabf5</item>
+
+        <item name="android:windowBackground">@color/window_background_dark</item>
+        <item name="android:colorBackground">@color/window_background_dark</item>
+        <item name="android:statusBarColor">?attr/toolbar_bg</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="23">false</item>
+        <item name="android:navigationBarColor">?attr/colorSurface</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="27">false</item>
+    </style>
+
+    <!-- black theme -->
+    <style name="GadgetbridgeThemeBlack" parent="GadgetbridgeThemeDark">
+        <item name="android:windowBackground">@android:color/black</item>
+        <item name="android:colorBackground">@android:color/black</item>
+        <item name="toolbar_bg">@android:color/black</item>
+        <item name="stat_tile_bg">@color/stat_tile_bg_amoled</item>
+        <item name="stat_tile_border">@color/stat_tile_border_amoled</item>
+        <item name="android:navigationBarColor">@android:color/black</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="27">false</item>
+    </style>
+
+    <!-- Material 3 dynamic color (Material You) themes -->
+    <style name="GadgetbridgeThemeDynamicLight" parent="Theme.Material3.DynamicColors.Light">
+        <item name="textColorPrimary">?attr/colorOnSurface</item>
+        <item name="textColorSecondary">?attr/colorOnSurfaceVariant</item>
+        <item name="actionBarStyle">@style/GadgetbridgeTheme.ActionBar</item>
+        <item name="actionOverflowMenuStyle">@style/GadgetbridgeTheme.OverflowMenuStyle</item>
+        <item name="android:statusBarColor">?attr/toolbar_bg</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="23">true</item>
+        <item name="android:colorControlHighlight">?attr/colorPrimary</item>
+        <item name="drawer_header_color">?attr/toolbar_bg</item>
+        <item name="drawer_title_color">?attr/textColorPrimary</item>
+        <item name="cardview_background_color">?attr/colorSurface</item>
+        <item name="actionmenu_icon_color">?attr/colorOnSurface</item>
+        <item name="alternate_row_background">?attr/colorSecondaryContainer</item>
+        <item name="row_separator">@color/row_separator_light</item>
+        <item name="stat_tile_bg">?attr/colorSurface</item>
+        <item name="stat_tile_border">?attr/colorOutlineVariant</item>
+        <item name="activity_icon_bg">?attr/colorSurfaceContainerHigh</item>
+        <item name="table_header_rule">@color/table_header_rule_light</item>
+        <item name="preferenceTheme">@style/AppPreferenceThemeOverlay</item>
+        <item name="android:navigationBarColor">?attr/colorSurface</item>
+        <!-- FIXME: SDK 21 to 27 has light navbar on light background -->
+        <item name="android:windowLightNavigationBar" tools:targetApi="27">true</item>
+        <item name="checkmarkColor">?attr/colorPrimary</item>
+        <item name="deviceIconPrimary">?attr/colorPrimary</item>
+        <item name="deviceIconOnPrimary">?attr/colorOnPrimary</item>
+        <item name="deviceIconLight">?attr/colorPrimaryVariant</item>
+        <item name="deviceIconDark">?attr/colorPrimaryDark</item>
+        <item name="spo2_avg_color">@color/spo2_avg_color_light</item>
+        <item name="training_acute_load">@color/training_load</item>
+
+        <item name="tab_bar_bg">?attr/toolbar_bg</item>
+        <item name="tab_pill">?attr/colorPrimary</item>
+        <item name="tab_pill_on">?attr/colorOnPrimary</item>
+        <item name="tab_text_off">?attr/colorOnSurfaceVariant</item>
+        <item name="subtab_pill">?attr/colorPrimaryContainer</item>
+        <item name="subtab_pill_on">?attr/colorOnPrimaryContainer</item>
+        <item name="subtab_text_off">?attr/colorOnSurfaceVariant</item>
+        <item name="subtab_active">?attr/colorPrimary</item>
+        <item name="chip_border_off">?attr/stat_tile_border</item>
+        <item name="chip_text_off">?attr/colorOnSurfaceVariant</item>
+
+        <item name="datestep_row_bg">?attr/toolbar_bg</item>
+        <item name="datestep_bg">?attr/colorSurfaceContainerHigh</item>
+        <item name="datestep_icon">?attr/colorOnSurfaceVariant</item>
+        <item name="datestep_caption">?attr/colorOnSurfaceVariant</item>
+        <item name="datestep_primary_bg">?attr/colorPrimary</item>
+        <item name="datestep_primary_icon">?attr/colorOnPrimary</item>
+        <item name="datestep_primary_caption">?attr/colorOnPrimary</item>
+        <item name="datestep_label">?attr/colorOnSurface</item>
+
+        <item name="toolbar_bg">?attr/colorSurface</item>
+        <item name="bar_shade">@drawable/bar_shade_light</item>
+        <item name="toolbar_title">?attr/colorOnSurface</item>
+        <item name="toolbar_subtitle">?attr/colorOnSurfaceVariant</item>
+        <item name="toolbar_icon">?attr/colorOnSurfaceVariant</item>
+        <item name="main_bar_bg">?attr/toolbar_bg</item>
+        <item name="summary_tile_label">?attr/colorPrimary</item>
+        <item name="accent_color">?attr/colorPrimary</item>
+        <item name="value_line">?attr/colorOutlineVariant</item>
+        <item name="gauge_track">?attr/colorSurfaceContainerHighest</item>
+    </style>
+    <style name="GadgetbridgeThemeDynamicDark" parent="Theme.Material3.DynamicColors.Dark">
+        <item name="textColorPrimary">?attr/colorOnSurface</item>
+        <item name="textColorSecondary">?attr/colorOnSurfaceVariant</item>
+        <item name="actionBarStyle">@style/GadgetbridgeTheme.ActionBar</item>
+        <item name="actionOverflowMenuStyle">@style/GadgetbridgeTheme.OverflowMenuStyle</item>
+        <item name="android:statusBarColor">?attr/toolbar_bg</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="23">false</item>
+        <item name="android:colorControlHighlight">?attr/colorPrimary</item>
+        <item name="drawer_header_color">?attr/toolbar_bg</item>
+        <item name="drawer_title_color">?attr/textColorPrimary</item>
+        <item name="cardview_background_color">?attr/colorSurface</item>
+        <item name="actionmenu_icon_color">?attr/colorOnSurface</item>
+        <item name="alternate_row_background">?attr/colorSecondaryContainer</item>
+        <item name="row_separator">@color/row_separator_dark</item>
+        <item name="stat_tile_bg">?attr/colorSurface</item>
+        <item name="stat_tile_border">?attr/colorOutlineVariant</item>
+        <item name="activity_icon_bg">?attr/colorSurfaceContainerHigh</item>
+        <item name="table_header_rule">@color/table_header_rule_dark</item>
+        <item name="preferenceTheme">@style/AppPreferenceThemeOverlay</item>
+        <item name="android:navigationBarColor">?attr/colorSurface</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="27">false</item>
+        <item name="checkmarkColor">?attr/colorPrimary</item>
+        <item name="deviceIconPrimary">?attr/colorPrimary</item>
+        <item name="deviceIconOnPrimary">?attr/colorOnPrimary</item>
+        <item name="deviceIconLight">?attr/colorPrimaryVariant</item>
+        <item name="deviceIconDark">?attr/colorPrimaryDark</item>
+        <item name="spo2_avg_color">@color/spo2_avg_color_dark</item>
+        <item name="training_acute_load">@color/training_load_dark</item>
+
+        <item name="tab_bar_bg">?attr/toolbar_bg</item>
+        <item name="tab_pill">?attr/colorPrimary</item>
+        <item name="tab_pill_on">?attr/colorOnPrimary</item>
+        <item name="tab_text_off">?attr/colorOnSurfaceVariant</item>
+        <item name="subtab_pill">?attr/colorPrimaryContainer</item>
+        <item name="subtab_pill_on">?attr/colorOnPrimaryContainer</item>
+        <item name="subtab_text_off">?attr/colorOnSurfaceVariant</item>
+        <item name="subtab_active">?attr/colorPrimary</item>
+        <item name="chip_border_off">?attr/stat_tile_border</item>
+        <item name="chip_text_off">?attr/colorOnSurfaceVariant</item>
+
+        <item name="datestep_row_bg">?attr/toolbar_bg</item>
+        <item name="datestep_bg">?attr/colorSurfaceContainerHigh</item>
+        <item name="datestep_icon">?attr/colorOnSurfaceVariant</item>
+        <item name="datestep_caption">?attr/colorOnSurfaceVariant</item>
+        <item name="datestep_primary_bg">?attr/colorPrimary</item>
+        <item name="datestep_primary_icon">?attr/colorOnPrimary</item>
+        <item name="datestep_primary_caption">?attr/colorOnPrimary</item>
+        <item name="datestep_label">?attr/colorOnSurface</item>
+
+        <item name="toolbar_bg">?attr/colorSurface</item>
+        <item name="bar_shade">@drawable/bar_shade_dark</item>
+        <item name="toolbar_title">?attr/colorOnSurface</item>
+        <item name="toolbar_subtitle">?attr/colorOnSurfaceVariant</item>
+        <item name="toolbar_icon">?attr/colorOnSurfaceVariant</item>
+        <item name="main_bar_bg">?attr/toolbar_bg</item>
+        <item name="summary_tile_label">?attr/colorPrimary</item>
+        <item name="accent_color">?attr/colorPrimary</item>
+        <item name="value_line">?attr/colorOutlineVariant</item>
+        <item name="gauge_track">?attr/colorSurfaceContainerHighest</item>
+    </style>
+    <!-- Mirrors GadgetbridgeThemeBlack: black window and black chrome. Explicit colors: toolbar_bg is
+         read as a color, so it must not alias windowBackground. Tiles keep the AMOLED values, as a
+         wallpaper-tinted tile would break the black look. -->
+    <style name="GadgetbridgeThemeDynamicDarkAmoled" parent="GadgetbridgeThemeDynamicDark">
+        <item name="android:windowBackground">@android:color/black</item>
+        <item name="android:colorBackground">@android:color/black</item>
+        <item name="toolbar_bg">@android:color/black</item>
+        <item name="stat_tile_bg">@color/stat_tile_bg_amoled</item>
+        <item name="stat_tile_border">@color/stat_tile_border_amoled</item>
+        <item name="android:navigationBarColor">@android:color/black</item>
+    </style>
+
+    <!-- theme variants without action bar -->
+    <style name="GadgetbridgeTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="GadgetbridgeThemeDark.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="GadgetbridgeThemeBlack.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="GadgetbridgeThemeDynamicLight.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="GadgetbridgeThemeDynamicDark.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="GadgetbridgeThemeDynamicDarkAmoled.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <!-- action bar styles -->
+    <style name="TextAppearance.App.ToolbarTitle" parent="TextAppearance.Material3.TitleLarge">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:letterSpacing">-0.01</item>
+        <item name="android:textColor">?attr/toolbar_title</item>
+    </style>
+    <style name="TextAppearance.App.ToolbarSubtitle" parent="TextAppearance.Material3.BodySmall">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">?attr/toolbar_subtitle</item>
+    </style>
+    <style name="GadgetbridgeTheme.ToolbarTitleStyle" parent="TextAppearance.App.ToolbarTitle" />
+    <style name="GadgetbridgeTheme.ToolbarSubtitleStyle" parent="TextAppearance.App.ToolbarSubtitle" />
+
+    <style name="ShapeAppearance.App.RoundedPhoto" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">14dp</item>
+    </style>
+
+    <style name="GadgetbridgeTheme.ToolbarIconOverlay" parent="">
+        <item name="colorControlNormal">?attr/toolbar_icon</item>
+        <item name="actionMenuTextColor">?attr/toolbar_icon</item>
+    </style>
+
+    <style name="GadgetbridgeTheme.ActionBar" parent="Widget.Material3.ActionBar.Solid">
+        <item name="background">?attr/toolbar_bg</item>
+        <item name="android:height">52dp</item>
+        <item name="titleTextStyle">@style/GadgetbridgeTheme.ToolbarTitleStyle</item>
+        <item name="subtitleTextStyle">@style/GadgetbridgeTheme.ToolbarSubtitleStyle</item>
+        <!-- No shadow under the bar: it showed as a gradient on the tab row below -->
+        <item name="elevation">0dp</item>
+        <item name="android:theme">@style/GadgetbridgeTheme.ToolbarIconOverlay</item>
+    </style>
+    <style name="GadgetbridgeTheme.ActionMode" parent="Widget.AppCompat.ActionMode">
+        <item name="background">?attr/colorPrimary</item>
+        <item name="titleTextStyle">@style/GadgetbridgeTheme.ActionModeTitleStyle</item>
+        <item name="subtitleTextStyle">@style/GadgetbridgeTheme.ActionModeTitleStyle</item>
+        <item name="android:theme">@style/GadgetbridgeTheme.ActionModeOverlay</item>
+    </style>
+    <style name="GadgetbridgeTheme.ActionModeOverlay" parent="">
+        <item name="colorControlNormal">?attr/colorOnPrimary</item>
+        <item name="actionmenu_icon_color">?attr/colorOnPrimary</item>
+    </style>
+    <style name="GadgetbridgeTheme.ActionModeCloseButton" parent="Widget.AppCompat.ActionButton">
+        <item name="android:tint">?attr/colorOnPrimary</item>
+    </style>
+    <style name="GadgetbridgeTheme.ActionModeTitleStyle" parent="TextAppearance.Material3.ActionBar.Title">
+        <item name="android:textColor">?attr/colorOnPrimary</item>
+    </style>
+    <style name="GadgetbridgeTheme.OverflowMenuStyle" parent="Widget.Material3.PopupMenu.Overflow" />
+
+    <!-- splash screen -->
+    <style name="SplashTheme" parent="GadgetbridgeTheme.NoActionBar">
+        <item name="android:statusBarColor">@color/primarydark_dark</item>
+        <item name="android:navigationBarColor">@color/primarydark_dark</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="27">false</item>
+        <item name="android:windowBackground">@drawable/splash</item>
+    </style>
+
+    <!-- preferences screens -->
+    <style name="AppPreferenceThemeOverlay" parent="@style/PreferenceThemeOverlay">
+        <item name="switchPreferenceCompatStyle">@style/AppSwitchPreference</item>
+    </style>
+    <style name="AppSwitchPreference" parent="@style/Preference.SwitchPreferenceCompat.Material">
+        <item name="widgetLayout">@layout/preference_material_switch</item>
+    </style>
+    <style name="GridTile">
+        <item name="android:background">?android:attr/windowBackground</item>
+        <item name="android:padding">15dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_columnWeight">1</item>
+        <item name="android:layout_marginBottom">2dp</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_rowWeight">1</item>
+    </style>
+
+    <!-- Pill-style tabs (charts tabs, workout tabs, Day/Week/Month sub-tabs).
+         TitleSmall's default 20sp lineHeight doesn't fit our compact pill height and clips
+         text (descenders cut off), so it's brought back down close to the text size. -->
+    <style name="TextAppearance.App.Tab" parent="TextAppearance.Material3.TitleSmall">
+        <item name="android:textSize">14sp</item>
+        <item name="android:lineHeight">16sp</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:letterSpacing">0</item>
+    </style>
+
+    <style name="TextAppearance.App.TabSmall" parent="TextAppearance.App.Tab">
+        <item name="android:textSize">13sp</item>
+        <item name="android:lineHeight">15sp</item>
+    </style>
+
+    <!-- Top row: category tabs (charts tabs, workout Overview/Laps/Charts/Details) -->
+    <style name="Widget.App.TabLayout.Pill" parent="Widget.Material3.TabLayout">
+        <item name="android:background">?attr/tab_bar_bg</item>
+        <item name="tabMode">scrollable</item>
+        <item name="tabGravity">start</item>
+        <item name="tabIndicator">@drawable/tab_indicator_pill</item>
+        <item name="tabIndicatorColor">?attr/tab_pill</item>
+        <item name="tabIndicatorGravity">stretch</item>
+        <item name="tabIndicatorFullWidth">true</item>
+        <item name="tabIndicatorAnimationMode">elastic</item>
+        <item name="tabTextColor">@color/tab_text_pill</item>
+        <item name="tabSelectedTextColor">?attr/tab_pill_on</item>
+        <item name="tabTextAppearance">@style/TextAppearance.App.Tab</item>
+        <item name="tabRippleColor">@null</item>
+        <item name="tabUnboundedRipple">false</item>
+        <item name="tabMinWidth">0dp</item>
+        <item name="tabPaddingStart">14dp</item>
+        <item name="tabPaddingEnd">14dp</item>
+        <item name="tabPaddingTop">6dp</item>
+        <item name="tabPaddingBottom">6dp</item>
+        <item name="android:paddingStart">10dp</item>
+        <item name="android:paddingEnd">10dp</item>
+        <item name="android:paddingTop">0dp</item>
+        <item name="android:paddingBottom">0dp</item>
+        <item name="android:minHeight">0dp</item>
+    </style>
+
+    <!-- Sub row: Day / Week / Month segmented control -->
+    <style name="Widget.App.TabLayout.SubPill" parent="Widget.App.TabLayout.Pill">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="tabMode">fixed</item>
+        <item name="tabGravity">fill</item>
+        <item name="tabIndicator">@drawable/subtab_indicator_bar</item>
+        <item name="tabIndicatorGravity">bottom</item>
+        <item name="tabIndicatorHeight">3dp</item>
+        <item name="tabIndicatorColor">?attr/subtab_active</item>
+        <item name="tabTextColor">@color/subtab_text_pill</item>
+        <item name="tabSelectedTextColor">?attr/subtab_active</item>
+        <item name="tabTextAppearance">@style/TextAppearance.App.TabSmall</item>
+        <item name="tabPaddingTop">4dp</item>
+        <item name="tabPaddingBottom">4dp</item>
+        <item name="android:paddingStart">0dp</item>
+        <item name="android:paddingEnd">0dp</item>
+        <item name="android:paddingTop">0dp</item>
+        <item name="android:paddingBottom">0dp</item>
+    </style>
+
+    <!-- Chart metric-selector chips (e.g. sleep overlay Heart rate/SpO2, race predictor metric
+         chips). Background stays transparent in both states; selection is shown only via the
+         accent-colored text and border, rather than the default Choice chip's background recolor
+         (often very saturated in this app's accent themes). -->
+    <style name="Widget.App.Chip.Chart" parent="Widget.MaterialComponents.Chip.Choice">
+        <item name="chipBackgroundColor">@color/chart_chip_background</item>
+        <item name="chipStrokeColor">@color/chart_chip_stroke</item>
+        <item name="chipStrokeWidth">1dp</item>
+        <item name="android:textColor">@color/chart_chip_text</item>
+        <item name="chipIconTint">@color/chart_chip_text</item>
+        <item name="rippleColor">?attr/subtab_pill</item>
+    </style>
+
+    <!-- Date-step pill buttons (charts date bar, dashboard day arrows) -->
+    <style name="TextAppearance.App.DateLabel" parent="TextAppearance.Material3.TitleSmall">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">?attr/datestep_label</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+
+    <!-- Base: tonal dark pill, chevron on the start side -->
+    <style name="Widget.App.DateStep" parent="Widget.Material3.Button.TonalButton">
+        <item name="android:minWidth">0dp</item>
+        <item name="android:minHeight">0dp</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:paddingStart">0dp</item>
+        <item name="android:paddingEnd">0dp</item>
+        <item name="android:paddingTop">0dp</item>
+        <item name="android:paddingBottom">0dp</item>
+        <item name="cornerRadius">18dp</item>
+        <item name="backgroundTint">?attr/datestep_bg</item>
+        <item name="iconTint">?attr/datestep_icon</item>
+        <item name="iconGravity">textStart</item>
+        <item name="iconPadding">3dp</item>
+        <item name="iconSize">16dp</item>
+        <item name="android:textSize">11sp</item>
+        <item name="android:textColor">?attr/datestep_caption</item>
+        <item name="android:letterSpacing">0.04</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="rippleColor">#33FFFFFF</item>
+        <item name="android:stateListAnimator">@null</item>
+        <item name="strokeWidth">0dp</item>
+    </style>
+
+    <!-- Chevron on the end side (right-hand group) -->
+    <style name="Widget.App.DateStep.End">
+        <item name="iconGravity">textEnd</item>
+    </style>
+
+    <!-- Day buttons: filled -->
+    <style name="Widget.App.DateStep.Primary">
+        <item name="backgroundTint">?attr/datestep_primary_bg</item>
+        <item name="iconTint">?attr/datestep_primary_icon</item>
+        <item name="android:textColor">?attr/datestep_primary_caption</item>
+    </style>
+    <style name="Widget.App.DateStep.Primary.End" parent="Widget.App.DateStep.Primary">
+        <item name="iconGravity">textEnd</item>
+    </style>
+
+    <!-- Accent color presets (Settings > User interface > Accent color). Each overlay overrides
+         tab_pill/tab_pill_on and subtab_pill/subtab_pill_on; colorPrimary/colorOnPrimary and the
+         datestep_primary_* attrs alias tab_pill/tab_pill_on in the static Light/Dark themes (see
+         above), so applying one of these recolors buttons, chips, tabs and the date-step pills
+         together. subtab_active (Day/Week/Month sub-tab underline/selected text) defaults to
+         tab_pill in the base themes, so most presets don't need to touch it - only the White preset
+         (which needs its sub-tabs to look distinct from its white top-nav pill) overrides it
+         explicitly. chip_border_off (unselected chip border) is the stat tile border in every theme
+         and no preset changes it. Not applied when Dynamic Color is active - that already ties
+         these to the wallpaper palette. -->
+    <style name="ThemeOverlay.App.Accent.Red.Dark" parent="">
+        <item name="tab_pill">#E02F00</item>
+        <item name="tab_pill_on">#FFFFFF</item>
+        <item name="subtab_pill">#3A1512</item>
+        <item name="subtab_pill_on">#FF6E5C</item>
+    </style>
+    <style name="ThemeOverlay.App.Accent.Red.Light" parent="">
+        <item name="tab_pill">#E02F00</item>
+        <item name="tab_pill_on">#FFFFFF</item>
+        <item name="subtab_pill">#FFE3DC</item>
+        <item name="subtab_pill_on">#B32400</item>
+    </style>
+    <style name="ThemeOverlay.App.Accent.Coral.Dark" parent="">
+        <item name="tab_pill">#FF5A47</item>
+        <item name="tab_pill_on">#1A0806</item>
+        <item name="subtab_pill">#3D1A16</item>
+        <item name="subtab_pill_on">#FF8C7D</item>
+    </style>
+    <style name="ThemeOverlay.App.Accent.Coral.Light" parent="">
+        <item name="tab_pill">#D63A25</item>
+        <item name="tab_pill_on">#FFFFFF</item>
+        <item name="subtab_pill">#FFE5E0</item>
+        <item name="subtab_pill_on">#A82C1B</item>
+    </style>
+    <style name="ThemeOverlay.App.Accent.Orange.Dark" parent="">
+        <item name="tab_pill">#F27C1A</item>
+        <item name="tab_pill_on">#1F1000</item>
+        <item name="subtab_pill">#3D2410</item>
+        <item name="subtab_pill_on">#FFA24D</item>
+    </style>
+    <style name="ThemeOverlay.App.Accent.Orange.Light" parent="">
+        <item name="tab_pill">#C25400</item>
+        <item name="tab_pill_on">#FFFFFF</item>
+        <item name="subtab_pill">#FFE8D1</item>
+        <item name="subtab_pill_on">#8F3E00</item>
+    </style>
+    <style name="ThemeOverlay.App.Accent.Amber.Dark" parent="">
+        <item name="tab_pill">#F5B800</item>
+        <item name="tab_pill_on">#1F1700</item>
+        <item name="subtab_pill">#3A2E08</item>
+        <item name="subtab_pill_on">#FFD24D</item>
+    </style>
+    <style name="ThemeOverlay.App.Accent.Amber.Light" parent="">
+        <item name="tab_pill">#9A6F00</item>
+        <item name="tab_pill_on">#FFFFFF</item>
+        <item name="subtab_pill">#FFF0C2</item>
+        <item name="subtab_pill_on">#6B4D00</item>
+    </style>
+    <style name="ThemeOverlay.App.Accent.Lime.Dark" parent="">
+        <item name="tab_pill">#A8E02F</item>
+        <item name="tab_pill_on">#0F1A00</item>
+        <item name="subtab_pill">#26330E</item>
+        <item name="subtab_pill_on">#C4F060</item>
+    </style>
+    <style name="ThemeOverlay.App.Accent.Lime.Light" parent="">
+        <item name="tab_pill">#4F7A00</item>
+        <item name="tab_pill_on">#FFFFFF</item>
+        <item name="subtab_pill">#E6F5C2</item>
+        <item name="subtab_pill_on">#365400</item>
+    </style>
+    <style name="ThemeOverlay.App.Accent.Green.Dark" parent="">
+        <item name="tab_pill">#2FD07A</item>
+        <item name="tab_pill_on">#00170B</item>
+        <item name="subtab_pill">#0F3320</item>
+        <item name="subtab_pill_on">#5EE59A</item>
+    </style>
+    <style name="ThemeOverlay.App.Accent.Green.Light" parent="">
+        <item name="tab_pill">#0F7A40</item>
+        <item name="tab_pill_on">#FFFFFF</item>
+        <item name="subtab_pill">#D6F5E3</item>
+        <item name="subtab_pill_on">#0B5A2F</item>
+    </style>
+    <style name="ThemeOverlay.App.Accent.Teal.Dark" parent="">
+        <item name="tab_pill">#1DE9D0</item>
+        <item name="tab_pill_on">#00211D</item>
+        <item name="subtab_pill">#0F3833</item>
+        <item name="subtab_pill_on">#1DE9D0</item>
+    </style>
+    <style name="ThemeOverlay.App.Accent.Teal.Light" parent="">
+        <item name="tab_pill">#00786E</item>
+        <item name="tab_pill_on">#FFFFFF</item>
+        <item name="subtab_pill">#CFF3EE</item>
+        <item name="subtab_pill_on">#00544D</item>
+    </style>
+    <style name="ThemeOverlay.App.Accent.Cyan.Dark" parent="">
+        <item name="tab_pill">#22C2F0</item>
+        <item name="tab_pill_on">#001A24</item>
+        <item name="subtab_pill">#0D2E38</item>
+        <item name="subtab_pill_on">#6AD8F7</item>
+    </style>
+    <style name="ThemeOverlay.App.Accent.Cyan.Light" parent="">
+        <item name="tab_pill">#006E94</item>
+        <item name="tab_pill_on">#FFFFFF</item>
+        <item name="subtab_pill">#D3EEF8</item>
+        <item name="subtab_pill_on">#00506C</item>
+    </style>
+    <style name="ThemeOverlay.App.Accent.Blue.Dark" parent="">
+        <item name="tab_pill">#2A6FE0</item>
+        <item name="tab_pill_on">#FFFFFF</item>
+        <item name="subtab_pill">#132844</item>
+        <item name="subtab_pill_on">#7EB3FF</item>
+    </style>
+    <style name="ThemeOverlay.App.Accent.Blue.Light" parent="">
+        <item name="tab_pill">#2A6FE0</item>
+        <item name="tab_pill_on">#FFFFFF</item>
+        <item name="subtab_pill">#DCE8FC</item>
+        <item name="subtab_pill_on">#1D4FA8</item>
+    </style>
+    <style name="ThemeOverlay.App.Accent.Indigo.Dark" parent="">
+        <item name="tab_pill">#5252E0</item>
+        <item name="tab_pill_on">#FFFFFF</item>
+        <item name="subtab_pill">#1E1E44</item>
+        <item name="subtab_pill_on">#A0A0FF</item>
+    </style>
+    <style name="ThemeOverlay.App.Accent.Indigo.Light" parent="">
+        <item name="tab_pill">#5252E0</item>
+        <item name="tab_pill_on">#FFFFFF</item>
+        <item name="subtab_pill">#E3E3FC</item>
+        <item name="subtab_pill_on">#3A3AAD</item>
+    </style>
+    <style name="ThemeOverlay.App.Accent.Violet.Dark" parent="">
+        <item name="tab_pill">#8A3FE6</item>
+        <item name="tab_pill_on">#FFFFFF</item>
+        <item name="subtab_pill">#2A1A44</item>
+        <item name="subtab_pill_on">#C79BFF</item>
+    </style>
+    <style name="ThemeOverlay.App.Accent.Violet.Light" parent="">
+        <item name="tab_pill">#8A3FE6</item>
+        <item name="tab_pill_on">#FFFFFF</item>
+        <item name="subtab_pill">#EEE2FC</item>
+        <item name="subtab_pill_on">#6428AD</item>
+    </style>
+    <style name="ThemeOverlay.App.Accent.Pink.Dark" parent="">
+        <item name="tab_pill">#D02866</item>
+        <item name="tab_pill_on">#FFFFFF</item>
+        <item name="subtab_pill">#3E1526</item>
+        <item name="subtab_pill_on">#FF8BB5</item>
+    </style>
+    <style name="ThemeOverlay.App.Accent.Pink.Light" parent="">
+        <item name="tab_pill">#D02866</item>
+        <item name="tab_pill_on">#FFFFFF</item>
+        <item name="subtab_pill">#FCDDE8</item>
+        <item name="subtab_pill_on">#A31C4E</item>
+    </style>
+    <!-- White: achromatic preset. Unlike the hue-based presets above, its top-nav pill stays pure
+         white/black in both Dark and Light theme - white already has all the contrast it needs
+         against tab_bar_bg. Sub-tabs and the chip active state use white-on-grey instead, so they
+         read as distinct from the top nav rather than disappearing into it. -->
+    <style name="ThemeOverlay.App.Accent.White.Dark" parent="">
+        <item name="tab_pill">#FFFFFF</item>
+        <item name="tab_pill_on">#000000</item>
+        <item name="subtab_pill">#4A4A4A</item>
+        <item name="subtab_pill_on">#FFFFFF</item>
+        <item name="subtab_active">#FFFFFF</item>
+        <item name="chip_text_off">#8E8E93</item>
+    </style>
+    <style name="ThemeOverlay.App.Accent.White.Light" parent="">
+        <item name="tab_pill">#FFFFFF</item>
+        <item name="tab_pill_on">#000000</item>
+        <item name="subtab_pill">#C7C7CC</item>
+        <item name="subtab_pill_on">#000000</item>
+        <item name="subtab_active">#000000</item>
+        <item name="chip_text_off">#48484A</item>
+    </style>
+</resources>

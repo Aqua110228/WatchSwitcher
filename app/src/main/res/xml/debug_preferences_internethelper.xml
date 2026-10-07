@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.preference.PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:title="@string/prefs_internet_helper_title">
+
+    <PreferenceCategory
+        android:key="pref_debug_internethelper_request_header"
+        android:title="Versions"
+        app:iconSpaceReserved="false">
+
+        <Preference
+            android:icon="@drawable/ic_settings_applications"
+            android:key="pref_debug_internethelper_version"
+            android:persistent="false"
+            android:summary="Internet Helper not available"
+            android:title="HTTP Service" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="pref_debug_internethelper_request_header"
+        android:title="HTTP Service"
+        app:iconSpaceReserved="false">
+
+        <EditTextPreference
+            android:defaultValue="http://192.168.1.1"
+            android:icon="@drawable/ic_language"
+            android:inputType="textUri"
+            android:key="pref_debug_internethelper_url"
+            android:title="@string/url"
+            app:useSimpleSummaryProvider="true" />
+
+        <ListPreference
+            android:defaultValue="GET"
+            android:entries="@array/http_methods"
+            android:entryValues="@array/http_methods"
+            android:icon="@drawable/ic_file_open"
+            android:key="pref_debug_internethelper_method"
+            android:title="Method"
+            app:useSimpleSummaryProvider="true" />
+
+        <Preference
+            android:icon="@drawable/ic_file_upload"
+            android:key="pref_debug_internethelper_send"
+            android:persistent="false"
+            android:title="Send" />
+
+    </PreferenceCategory>
+</androidx.preference.PreferenceScreen>

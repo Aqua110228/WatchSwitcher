@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="textColorPrimary" format="color" />
+    <attr name="textColorSecondary" format="color" />
+    <attr name="textColorTertiary" format="color" />
+
+    <attr name="drawer_header_color" format="color" />
+    <attr name="drawer_title_color" format="color" />
+    <attr name="cardview_background_color" format="color" />
+    <attr name="actionmenu_icon_color" format="color" />
+
+    <attr name="chart_deep_sleep" format="color" />
+    <attr name="chart_light_sleep" format="color" />
+    <attr name="chart_rem_sleep" format="color" />
+    <attr name="chart_awake_sleep" format="color" />
+    <attr name="chart_activity" format="color" />
+    <attr name="chart_not_worn" format="color" />
+    <attr name="spo2_avg_color" format="color" />
+    <attr name="training_acute_load" format="color" />
+    <attr name="alternate_row_background" format="color" />
+
+    <attr name="checkmarkColor" format="color" />
+    <attr name="deviceIconPrimary" format="color" />
+    <attr name="deviceIconOnPrimary" format="color" />
+    <attr name="deviceIconLight" format="color" />
+    <attr name="deviceIconDark" format="color" />
+
+    <!-- Pill-style tab bars (workout tabs, charts tabs, Day/Week/Month sub-tabs) -->
+    <attr name="tab_bar_bg" format="color" />
+    <attr name="tab_pill" format="color" />
+    <attr name="tab_pill_on" format="color" />
+    <attr name="tab_text_off" format="color" />
+    <attr name="subtab_pill" format="color" />
+    <attr name="subtab_pill_on" format="color" />
+    <attr name="subtab_text_off" format="color" />
+    <attr name="subtab_active" format="color" />
+    <attr name="chip_border_off" format="color" />
+    <attr name="chip_text_off" format="color" />
+
+    <!-- Date-step pill buttons (charts date bar, dashboard day arrows) -->
+    <attr name="datestep_row_bg" format="color" />
+    <attr name="datestep_bg" format="color" />
+    <attr name="datestep_icon" format="color" />
+    <attr name="datestep_caption" format="color" />
+    <attr name="datestep_primary_bg" format="color" />
+    <attr name="datestep_primary_icon" format="color" />
+    <attr name="datestep_primary_caption" format="color" />
+    <attr name="datestep_label" format="color" />
+
+    <!-- App-wide toolbar, same color as the window -->
+    <attr name="toolbar_bg" format="color" />
+    <attr name="toolbar_title" format="color" />
+    <attr name="toolbar_subtitle" format="color" />
+    <attr name="toolbar_icon" format="color" />
+
+    <!-- Main screen's top toolbar / bottom nav bar background -->
+    <attr name="main_bar_bg" format="color" />
+    <attr name="bar_shade" format="reference" />
+
+    <!-- Caption color of the layout_widget_* summary tiles (activity list, battery info, HR dialog) -->
+    <attr name="summary_tile_label" format="color" />
+    <attr name="accent_color" format="color" />
+    <!-- Thin separator lines between chart values (weight chart) -->
+    <attr name="value_line" format="color" />
+    <!-- Unfilled track of the dashboard gauges -->
+    <attr name="gauge_track" format="color" />
+
+    <declare-styleable name="SubtitleListPreference">
+        <!-- One subtitle per entry, shown as a second line below each entry's title. -->
+        <attr name="entrySubtitles" format="reference" />
+        <!-- Whether to offer an extra "Custom…" entry that lets the user type a free-text value. -->
+        <attr name="allowCustomValue" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="SectionHeaderView">
+        <!-- The header text. -->
+        <attr name="sectionTitle" format="string" />
+        <!-- Whether a rule is drawn above the header. Defaults to true; only the first header on a screen skips it. -->
+        <attr name="sectionShowDivider" format="boolean" />
+    </declare-styleable>
+</resources>

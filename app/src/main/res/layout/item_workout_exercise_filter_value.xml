@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/selectableItemBackground"
+    android:clickable="true"
+    android:focusable="true"
+    android:gravity="center_vertical"
+    android:minHeight="48dp"
+    android:orientation="horizontal"
+    android:paddingHorizontal="12dp">
+
+    <TextView
+        android:id="@+id/workout_exercise_filter_value_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textAppearance="?attr/textAppearanceBodyLarge" />
+
+    <TextView
+        android:id="@+id/workout_exercise_filter_value_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="8dp"
+        android:textAppearance="?attr/textAppearanceBodySmall" />
+
+    <CheckBox
+        android:id="@+id/workout_exercise_filter_value_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:focusable="false" />
+
+</LinearLayout>

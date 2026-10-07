@@ -1,0 +1,39 @@
+syntax = "proto2"; // we must use proto2 to serialize default values on the wire
+
+package zeblaze;
+
+option java_package = "nodomain.freeyourgadget.gadgetbridge.proto.zeblaze";
+option java_outer_classname = "ZeblazeProto";
+
+// Protobuf payloads of the Zeblaze Beyond 3 Pro "ZH_SDK" GATT protocol,
+// reverse-engineered from a live capture of the official app's own on-device
+// plaintext debug log and a BLE HCI trace against a real device.
+//
+// All messages (requests and responses) share this top-level wrapper: field 1
+// echoes the command id, field 4 carries the payload of GET_DEVICE_INFO
+// responses behind one extra single-field wrapper level (field 4 -> field 1).
+message ZhMessage {
+    optional uint32 command_id = 1;
+    optional DeviceInfoWrapper device_info = 4;
+}
+
+message DeviceInfoWrapper {
+    optional DeviceInfo device_info = 1;
+}
+
+// Response payload of GET_DEVICE_INFO (command id 32).
+message DeviceInfo {
+    optional string firmware_version = 1;
+    optional string equipment_number = 2;
+    optional string mac = 3;
+    optional string serial_number = 4;
+    optional Battery battery = 5;
+    optional bool remote_camera_switch = 6;
+    optional bool sports_icon_function_protocol_switch = 7;
+}
+
+message Battery {
+    optional uint32 capacity = 1; // percent
+    // Only 2 (not charging) has been observed against a real device so far.
+    optional uint32 charge_status = 2;
+}

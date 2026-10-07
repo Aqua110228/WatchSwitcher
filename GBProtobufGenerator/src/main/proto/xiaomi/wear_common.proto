@@ -1,0 +1,28 @@
+syntax = "proto2";
+package xiaomi;
+option java_package = "nodomain.freeyourgadget.gadgetbridge.proto.xiaomi";
+
+message HourMinute {
+  required uint32 hour = 1;
+  required uint32 minute = 2;
+}
+
+message Date {
+  required uint32 year = 1;
+  required uint32 month = 2;
+  required uint32 day = 3;
+}
+
+message Time {
+  required uint32 hour = 1;
+  required uint32 minute = 2;
+  optional uint32 second = 3;
+  optional uint32 millisecond = 4;
+}
+
+message TimeZone {
+  // offsets are in blocks of 15 min
+  optional sint32 zoneOffset = 1;
+  optional sint32 dstOffset = 2;
+  required string name = 3;
+}

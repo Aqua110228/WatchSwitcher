@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <nodomain.freeyourgadget.gadgetbridge.util.preferences.SubtitleListPreference
+        android:defaultValue="none"
+        android:icon="@drawable/ic_devices_wearables"
+        android:key="prefs_key_device_connect_by_trigger"
+        android:title="@string/pref_title_connect_to_this_device_when_another_device_connects" />
+</PreferenceScreen>
