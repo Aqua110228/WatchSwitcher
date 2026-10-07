@@ -1,6 +1,6 @@
-/*  Copyright (C) 2026 HuaweiSwitcher contributors
+/*  Copyright (C) 2026 WatchSwitcher contributors
 
-    This file is part of HuaweiSwitcher, based on Gadgetbridge.
+    This file is part of WatchSwitcher, based on Gadgetbridge.
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU Affero General Public License as published
@@ -21,7 +21,7 @@ import nodomain.freeyourgadget.gadgetbridge.activities.NotificationManagementAct
 import nodomain.freeyourgadget.gadgetbridge.activities.charts.ActivityChartsActivity
 import nodomain.freeyourgadget.gadgetbridge.activities.devicesettings.DeviceSettingsActivity
 import nodomain.freeyourgadget.gadgetbridge.impl.GBDevice
-import nodomain.freeyourgadget.gadgetbridge.ui.theme.HuaweiSwitcherTheme
+import nodomain.freeyourgadget.gadgetbridge.ui.theme.WatchSwitcherTheme
 
 /**
  * Compose device detail screen with quick actions and feature shortcuts. The full device settings
@@ -47,7 +47,7 @@ class DeviceDetailActivity : ComponentActivity() {
         viewModel.attach(address)
 
         setContent {
-            HuaweiSwitcherTheme {
+            WatchSwitcherTheme {
                 val state = viewModel.state.collectAsStateWithLifecycle().value
                 DeviceDetailScreen(
                     state = state,

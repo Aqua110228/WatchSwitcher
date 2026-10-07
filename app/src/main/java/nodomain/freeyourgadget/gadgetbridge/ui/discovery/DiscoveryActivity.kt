@@ -1,6 +1,6 @@
-/*  Copyright (C) 2026 HuaweiSwitcher contributors
+/*  Copyright (C) 2026 WatchSwitcher contributors
 
-    This file is part of HuaweiSwitcher, based on Gadgetbridge.
+    This file is part of WatchSwitcher, based on Gadgetbridge.
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU Affero General Public License as published
@@ -24,9 +24,10 @@ import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.activity.viewModels
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
 import androidx.core.content.ContextCompat
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
-import androidx.compose.runtime.mutableStateOf
 import nodomain.freeyourgadget.gadgetbridge.activities.AuthKeyActivity
 import nodomain.freeyourgadget.gadgetbridge.devices.DeviceCoordinator
 import nodomain.freeyourgadget.gadgetbridge.devices.huawei.HuaweiCoordinator
@@ -36,14 +37,14 @@ import nodomain.freeyourgadget.gadgetbridge.ui.huawei.HuaweiIdActivity
 import nodomain.freeyourgadget.gadgetbridge.ui.huawei.applyHuaweiAccountToDevice
 import nodomain.freeyourgadget.gadgetbridge.ui.huawei.getHuaweiAccount
 import nodomain.freeyourgadget.gadgetbridge.ui.huawei.setHuaweiAccount
-import nodomain.freeyourgadget.gadgetbridge.ui.theme.HuaweiSwitcherTheme
+import nodomain.freeyourgadget.gadgetbridge.ui.theme.WatchSwitcherTheme
 import nodomain.freeyourgadget.gadgetbridge.util.BondingInterface
 import nodomain.freeyourgadget.gadgetbridge.util.BondingUtil
 import nodomain.freeyourgadget.gadgetbridge.util.DeviceHelper
 
 /**
- * Compose discovery/scan screen. Scanning reuses Gadgetbridge's GBScanEventProcessor; pairing
- * reuses BondingUtil (including the auth-key step for devices that require one).
+ * Compose discovery flow: pick brand -> (Huawei: set account ID) -> pick model -> scan and pair.
+ * Scanning reuses Gadgetbridge's GBScanEventProcessor; pairing reuses BondingUtil.
  */
 class DiscoveryActivity : ComponentActivity(), BondingInterface {
 
@@ -51,12 +52,20 @@ class DiscoveryActivity : ComponentActivity(), BondingInterface {
         const val CHILD_RESULT = 0x826983
     }
 
+    private enum class Step { BRAND, HUAWEI_ID, MODEL, SCAN }
+
     private val viewModel: DiscoveryViewModel by viewModels()
+
+    private val step = mutableStateOf(Step.BRAND)
+    private val brand = mutableStateOf<BrandOption?>(null)
+    private val model = mutableStateOf<ModelOption?>(null)
+
+    private val huaweiAccountState = mutableStateOf("")
+    private val huaweiPrompt = mutableStateOf<GBDeviceCandidate?>(null)
+    private val huaweiAccountInput = mutableStateOf("")
 
     private var deviceTarget: GBDeviceCandidate? = null
     private var bondReceiver: BroadcastReceiver? = null
-    private val huaweiPrompt = mutableStateOf<GBDeviceCandidate?>(null)
-    private val huaweiAccountInput = mutableStateOf("")
 
     private val permissionLauncher = registerForActivityResult(
         ActivityResultContracts.RequestMultiplePermissions()
@@ -80,48 +89,110 @@ class DiscoveryActivity : ComponentActivity(), BondingInterface {
         ActivityResultContracts.StartActivityForResult()
     ) {
         val account = getHuaweiAccount()
+        huaweiAccountState.value = account
         if (account.isNotBlank()) huaweiAccountInput.value = account
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
+        huaweiAccountState.value = getHuaweiAccount()
 
         setContent {
-            HuaweiSwitcherTheme {
-                val devices = viewModel.devices.collectAsStateWithLifecycle().value
-                val scanning = viewModel.scanning.collectAsStateWithLifecycle().value
-                DiscoveryScreen(
-                    devices = devices,
-                    scanning = scanning,
-                    onBack = { finish() },
-                    onToggleScan = { toggleScan() },
-                    onSelect = { onCandidateSelected(it) },
-                )
-                val prompt = huaweiPrompt.value
-                if (prompt != null) {
-                    HuaweiAccountPromptDialog(
-                        deviceName = prompt.name ?: prompt.macAddress,
-                        account = huaweiAccountInput.value,
-                        onAccountChange = { huaweiAccountInput.value = it },
-                        onDismiss = { huaweiPrompt.value = null },
-                        onAutoGet = {
-                            huaweiIdLauncher.launch(HuaweiIdActivity.newIntent(this))
-                        },
-                        onConfirm = { account ->
-                            if (account.isNotBlank()) {
-                                setHuaweiAccount(account)
-                                applyHuaweiAccountToDevice(prompt.macAddress, account)
-                            }
-                            huaweiPrompt.value = null
-                            pair(prompt)
+            WatchSwitcherTheme {
+                val brands = remember { loadBrands(this) }
+                when (step.value) {
+                    Step.BRAND -> BrandListScreen(
+                        brands = brands,
+                        onBack = { finish() },
+                        onSelectBrand = { selected ->
+                            brand.value = selected
+                            step.value = if (selected.isHuawei()) Step.HUAWEI_ID else Step.MODEL
                         },
                     )
+
+                    Step.HUAWEI_ID -> HuaweiIdStepScreen(
+                        isHuawei = true,
+                        account = huaweiAccountState.value,
+                        onBack = { step.value = Step.BRAND },
+                        onOpenHuaweiId = {
+                            huaweiIdLauncher.launch(HuaweiIdActivity.newIntent(this))
+                        },
+                        onContinue = { step.value = Step.MODEL },
+                    )
+
+                    Step.MODEL -> {
+                        val selectedBrand = brand.value
+                        if (selectedBrand == null) {
+                            step.value = Step.BRAND
+                        } else {
+                            ModelListScreen(
+                                brand = selectedBrand,
+                                onBack = {
+                                    step.value = if (selectedBrand.isHuawei()) {
+                                        Step.HUAWEI_ID
+                                    } else {
+                                        Step.BRAND
+                                    }
+                                },
+                                onSelectModel = { selectedModel ->
+                                    model.value = selectedModel
+                                    viewModel.setTypeFilter(selectedModel?.type)
+                                    step.value = Step.SCAN
+                                    ensurePermissionsAndScan()
+                                },
+                            )
+                        }
+                    }
+
+                    Step.SCAN -> {
+                        val devices = viewModel.devices.collectAsStateWithLifecycle().value
+                        val scanning = viewModel.scanning.collectAsStateWithLifecycle().value
+                        DiscoveryScreen(
+                            devices = devices,
+                            scanning = scanning,
+                            filterLabel = model.value?.name,
+                            onBack = {
+                                viewModel.stopScan()
+                                step.value = Step.MODEL
+                            },
+                            onToggleScan = { toggleScan() },
+                            onShowAll = {
+                                model.value = null
+                                viewModel.setTypeFilter(null)
+                            },
+                            onSelect = { onCandidateSelected(it) },
+                        )
+
+                        val prompt = huaweiPrompt.value
+                        if (prompt != null) {
+                            HuaweiAccountPromptDialog(
+                                deviceName = prompt.name ?: prompt.macAddress,
+                                account = huaweiAccountInput.value,
+                                onAccountChange = { huaweiAccountInput.value = it },
+                                onDismiss = { huaweiPrompt.value = null },
+                                onAutoGet = {
+                                    huaweiIdLauncher.launch(HuaweiIdActivity.newIntent(this))
+                                },
+                                onConfirm = { account ->
+                                    if (account.isNotBlank()) {
+                                        setHuaweiAccount(account)
+                                        applyHuaweiAccountToDevice(prompt.macAddress, account)
+                                    }
+                                    huaweiPrompt.value = null
+                                    pair(prompt)
+                                },
+                            )
+                        }
+                    }
                 }
             }
         }
+    }
 
-        ensurePermissionsAndScan()
+    override fun onResume() {
+        super.onResume()
+        huaweiAccountState.value = getHuaweiAccount()
     }
 
     override fun onStop() {

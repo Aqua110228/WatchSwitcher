@@ -1,6 +1,6 @@
-/*  Copyright (C) 2026 HuaweiSwitcher contributors
+/*  Copyright (C) 2026 WatchSwitcher contributors
 
-    This file is part of HuaweiSwitcher, based on Gadgetbridge.
+    This file is part of WatchSwitcher, based on Gadgetbridge.
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU Affero General Public License as published
@@ -16,7 +16,7 @@ import android.widget.Toast
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
-import nodomain.freeyourgadget.gadgetbridge.ui.theme.HuaweiSwitcherTheme
+import nodomain.freeyourgadget.gadgetbridge.ui.theme.WatchSwitcherTheme
 
 /**
  * Lets the user log into Huawei Cloud in an embedded browser so the app can read the `userId`
@@ -35,7 +35,7 @@ class HuaweiLoginActivity : ComponentActivity() {
         enableEdgeToEdge()
 
         setContent {
-            HuaweiSwitcherTheme {
+            WatchSwitcherTheme {
                 HuaweiLoginScreen(
                     onBack = { finish() },
                     onExtract = { extractAccountId() },

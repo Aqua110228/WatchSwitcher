@@ -1,6 +1,6 @@
-/*  Copyright (C) 2026 HuaweiSwitcher contributors
+/*  Copyright (C) 2026 WatchSwitcher contributors
 
-    This file is part of HuaweiSwitcher, based on Gadgetbridge.
+    This file is part of WatchSwitcher, based on Gadgetbridge.
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU Affero General Public License as published
@@ -25,7 +25,7 @@ import nodomain.freeyourgadget.gadgetbridge.ui.huawei.HuaweiIdActivity
 import nodomain.freeyourgadget.gadgetbridge.ui.huawei.isHuaweiIdOnboarded
 import nodomain.freeyourgadget.gadgetbridge.ui.huawei.setHuaweiIdOnboarded
 import nodomain.freeyourgadget.gadgetbridge.ui.settings.SettingsActivity
-import nodomain.freeyourgadget.gadgetbridge.ui.theme.HuaweiSwitcherTheme
+import nodomain.freeyourgadget.gadgetbridge.ui.theme.WatchSwitcherTheme
 import nodomain.freeyourgadget.gadgetbridge.util.PermissionsUtils
 
 /**
@@ -42,7 +42,7 @@ class HomeActivity : ComponentActivity() {
         GBApplication.deviceService().requestDeviceInfo()
 
         setContent {
-            HuaweiSwitcherTheme {
+            WatchSwitcherTheme {
                 val devices = viewModel.devices.collectAsStateWithLifecycle().value
                 HomeScreen(
                     devices = devices,

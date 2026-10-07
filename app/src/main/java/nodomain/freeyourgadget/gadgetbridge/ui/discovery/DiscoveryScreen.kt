@@ -1,6 +1,6 @@
-/*  Copyright (C) 2026 HuaweiSwitcher contributors
+/*  Copyright (C) 2026 WatchSwitcher contributors
 
-    This file is part of HuaweiSwitcher, based on Gadgetbridge.
+    This file is part of WatchSwitcher, based on Gadgetbridge.
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU Affero General Public License as published
@@ -52,20 +52,25 @@ const val HUAWEI_ACCOUNT_HELP_URL =
 fun DiscoveryScreen(
     devices: List<GBDeviceCandidate>,
     scanning: Boolean,
+    filterLabel: String?,
     onBack: () -> Unit,
     onToggleScan: () -> Unit,
+    onShowAll: () -> Unit,
     onSelect: (GBDeviceCandidate) -> Unit,
 ) {
     Scaffold(
         topBar = {
             TopAppBar(
-                title = { Text("添加设备") },
+                title = { Text(filterLabel?.let { "扫描：$it" } ?: "扫描设备") },
                 navigationIcon = {
                     IconButton(onClick = onBack) {
                         Icon(Icons.Filled.ArrowBack, contentDescription = "返回")
                     }
                 },
                 actions = {
+                    if (filterLabel != null) {
+                        TextButton(onClick = onShowAll) { Text("全部") }
+                    }
                     TextButton(onClick = onToggleScan) {
                         Text(if (scanning) "停止" else "扫描")
                     }
@@ -83,8 +88,7 @@ fun DiscoveryScreen(
                     text = if (scanning) "正在扫描附近的设备…" else "点击右上角「扫描」查找设备",
                     style = MaterialTheme.typography.bodyLarge,
                     color = MaterialTheme.colorScheme.onSurfaceVariant,
-                )
-            }
+                )            }
         } else {
             LazyColumn(
                 modifier = Modifier.fillMaxSize().padding(innerPadding),

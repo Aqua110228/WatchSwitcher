@@ -133,7 +133,7 @@ android {
     }
 
     defaultConfig {
-        applicationId "com.huaweiswitcher"
+        applicationId "com.watchswitcher"
 
         // Note: update toolchain.languageVersion when changing targetSdk
         //noinspection OldTargetApi

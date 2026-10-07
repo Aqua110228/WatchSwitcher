@@ -1,6 +1,6 @@
-/*  Copyright (C) 2026 HuaweiSwitcher contributors
+/*  Copyright (C) 2026 WatchSwitcher contributors
 
-    This file is part of HuaweiSwitcher, based on Gadgetbridge.
+    This file is part of WatchSwitcher, based on Gadgetbridge.
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU Affero General Public License as published
@@ -33,7 +33,9 @@ import nodomain.freeyourgadget.gadgetbridge.activities.discovery.GBScanEvent
 import nodomain.freeyourgadget.gadgetbridge.activities.discovery.GBScanEventProcessor
 import nodomain.freeyourgadget.gadgetbridge.impl.GBDevice
 import nodomain.freeyourgadget.gadgetbridge.impl.GBDeviceCandidate
+import nodomain.freeyourgadget.gadgetbridge.model.DeviceType
 import nodomain.freeyourgadget.gadgetbridge.util.AndroidUtils
+import nodomain.freeyourgadget.gadgetbridge.util.DeviceHelper
 
 /**
  * Bluetooth scanning for the discovery screen, reusing Gadgetbridge's [GBScanEventProcessor]
@@ -56,13 +58,31 @@ class DiscoveryViewModel(app: Application) : AndroidViewModel(app) {
 
     private val processorCallback = object : GBScanEventProcessor.Callback {
         override fun onDeviceChanged() {
-            _devices.value = processor.devices.toList()
+            _devices.value = filteredDevices()
         }
     }
     private val processor: GBScanEventProcessor = GBScanEventProcessor(processorCallback)
 
     private var adapter: BluetoothAdapter? = null
     private var receiver: BroadcastReceiver? = null
+    private var typeFilter: DeviceType? = null
+
+    /** Restrict the candidate list to the picked model. */
+    fun setTypeFilter(type: DeviceType?) {
+        typeFilter = type
+        _devices.value = filteredDevices()
+    }
+
+    private fun filteredDevices(): List<GBDeviceCandidate> {
+        val all = processor.devices
+        val filter = typeFilter ?: return all.toList()
+        return all.filter { candidate ->
+            runCatching {
+                DeviceHelper.getInstance().resolveDeviceType(candidate)
+                    .deviceCoordinator.javaClass == filter.deviceCoordinator.javaClass
+            }.getOrDefault(false)
+        }
+    }
 
     private val bleScanCallback = object : ScanCallback() {
         override fun onScanResult(callbackType: Int, result: ScanResult) {
@@ -110,7 +130,7 @@ class DiscoveryViewModel(app: Application) : AndroidViewModel(app) {
         }
         unregisterClassicReceiver()
         processor.stop()
-        _devices.value = processor.devices.toList()
+        _devices.value = filteredDevices()
     }
 
     @SuppressLint("MissingPermission")
