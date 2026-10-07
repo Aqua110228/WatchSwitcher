@@ -21,9 +21,6 @@ import kotlinx.coroutines.flow.asStateFlow
 import nodomain.freeyourgadget.gadgetbridge.GBApplication
 import nodomain.freeyourgadget.gadgetbridge.devices.DeviceManager
 import nodomain.freeyourgadget.gadgetbridge.impl.GBDevice
-import nodomain.freeyourgadget.gadgetbridge.ui.design.DesignSystem
-import nodomain.freeyourgadget.gadgetbridge.ui.design.loadDesignSystem
-import nodomain.freeyourgadget.gadgetbridge.ui.design.saveDesignSystem
 
 /**
  * Exposes the list of paired devices and mirrors Gadgetbridge's local device-change broadcasts
@@ -33,23 +30,6 @@ class HomeViewModel(app: Application) : AndroidViewModel(app) {
 
     private val _devices = MutableStateFlow<List<GBDevice>>(emptyList())
     val devices: StateFlow<List<GBDevice>> = _devices.asStateFlow()
-
-    private val _design = MutableStateFlow(loadDesignSystem())
-    val design: StateFlow<DesignSystem> = _design.asStateFlow()
-
-    fun toggleDesign() {
-        val next = if (_design.value == DesignSystem.MATERIAL3) {
-            DesignSystem.MIUIX
-        } else {
-            DesignSystem.MATERIAL3
-        }
-        saveDesignSystem(next)
-        _design.value = next
-    }
-
-    fun refreshDesign() {
-        _design.value = loadDesignSystem()
-    }
 
     private var registered = false
 

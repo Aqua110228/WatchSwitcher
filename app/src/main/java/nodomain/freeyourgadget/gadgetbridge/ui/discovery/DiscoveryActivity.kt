@@ -26,20 +26,18 @@ import androidx.activity.result.contract.ActivityResultContracts
 import androidx.activity.viewModels
 import androidx.core.content.ContextCompat
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
+import nodomain.freeyourgadget.gadgetbridge.activities.AuthKeyActivity
 import nodomain.freeyourgadget.gadgetbridge.devices.DeviceCoordinator
 import nodomain.freeyourgadget.gadgetbridge.impl.GBDeviceCandidate
 import nodomain.freeyourgadget.gadgetbridge.model.DeviceType
-import nodomain.freeyourgadget.gadgetbridge.ui.design.AppTheme
-import nodomain.freeyourgadget.gadgetbridge.ui.design.DesignSystem
-import nodomain.freeyourgadget.gadgetbridge.ui.design.loadDesignSystem
+import nodomain.freeyourgadget.gadgetbridge.ui.theme.HuaweiSwitcherTheme
 import nodomain.freeyourgadget.gadgetbridge.util.BondingInterface
 import nodomain.freeyourgadget.gadgetbridge.util.BondingUtil
 import nodomain.freeyourgadget.gadgetbridge.util.DeviceHelper
 
 /**
- * Compose discovery/scan screen (Material 3 Expressive / MiUIX). Scanning reuses
- * Gadgetbridge's [nodomain.freeyourgadget.gadgetbridge.activities.discovery.GBScanEventProcessor];
- * pairing reuses [BondingUtil], so behavior matches the classic discovery screen.
+ * Compose discovery/scan screen. Scanning reuses Gadgetbridge's GBScanEventProcessor; pairing
+ * reuses BondingUtil (including the auth-key step for devices that require one).
  */
 class DiscoveryActivity : ComponentActivity(), BondingInterface {
 
@@ -56,32 +54,35 @@ class DiscoveryActivity : ComponentActivity(), BondingInterface {
         ActivityResultContracts.RequestMultiplePermissions()
     ) { viewModel.startScan() }
 
+    private val authKeyLauncher = registerForActivityResult(
+        ActivityResultContracts.StartActivityForResult()
+    ) { result ->
+        if (result.resultCode != RESULT_OK) return@registerForActivityResult
+        val data = result.data ?: return@registerForActivityResult
+        @Suppress("DEPRECATION")
+        val candidate: GBDeviceCandidate? =
+            data.getParcelableExtra(AuthKeyActivity.EXTRA_DEVICE_CANDIDATE_RESULT)
+        if (candidate != null) {
+            val deviceType = DeviceHelper.getInstance().resolveDeviceType(candidate)
+            startPair(candidate, deviceType.deviceCoordinator)
+        }
+    }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
 
-        val design = loadDesignSystem()
         setContent {
-            val devices = viewModel.devices.collectAsStateWithLifecycle().value
-            val scanning = viewModel.scanning.collectAsStateWithLifecycle().value
-            AppTheme(design) {
-                when (design) {
-                    DesignSystem.MATERIAL3 -> DiscoveryScreen(
-                        devices = devices,
-                        scanning = scanning,
-                        onBack = { finish() },
-                        onToggleScan = { toggleScan() },
-                        onSelect = { pair(it) },
-                    )
-
-                    DesignSystem.MIUIX -> DiscoveryScreenMiuix(
-                        devices = devices,
-                        scanning = scanning,
-                        onBack = { finish() },
-                        onToggleScan = { toggleScan() },
-                        onSelect = { pair(it) },
-                    )
-                }
+            HuaweiSwitcherTheme {
+                val devices = viewModel.devices.collectAsStateWithLifecycle().value
+                val scanning = viewModel.scanning.collectAsStateWithLifecycle().value
+                DiscoveryScreen(
+                    devices = devices,
+                    scanning = scanning,
+                    onBack = { finish() },
+                    onToggleScan = { toggleScan() },
+                    onSelect = { pair(it) },
+                )
             }
         }
 
@@ -131,6 +132,14 @@ class DiscoveryActivity : ComponentActivity(), BondingInterface {
         deviceTarget = candidate
 
         val coordinator: DeviceCoordinator = deviceType.deviceCoordinator
+        if (coordinator.requiresAuthKey()) {
+            authKeyLauncher.launch(AuthKeyActivity.newIntent(this, candidate))
+        } else {
+            startPair(candidate, coordinator)
+        }
+    }
+
+    private fun startPair(candidate: GBDeviceCandidate, coordinator: DeviceCoordinator) {
         val pairingActivity = coordinator.pairingActivity
         if (pairingActivity != null) {
             val intent = Intent(this, pairingActivity)

@@ -10,7 +10,6 @@ package nodomain.freeyourgadget.gadgetbridge.ui.settings
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
-import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
@@ -22,7 +21,6 @@ import androidx.compose.material3.Button
 import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.ExperimentalMaterial3Api
-import androidx.compose.material3.FilterChip
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
 import androidx.compose.material3.MaterialTheme
@@ -32,15 +30,12 @@ import androidx.compose.material3.TopAppBar
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
-import nodomain.freeyourgadget.gadgetbridge.ui.design.DesignSystem
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun SettingsScreen(
-    design: DesignSystem,
     versionName: String,
     onBack: () -> Unit,
-    onSelectDesign: (DesignSystem) -> Unit,
     onOpenFullSettings: () -> Unit,
 ) {
     Scaffold(
@@ -63,31 +58,8 @@ fun SettingsScreen(
                 .padding(16.dp),
             verticalArrangement = Arrangement.spacedBy(16.dp),
         ) {
-            Card(
-                modifier = Modifier.fillMaxWidth(),
-                colors = CardDefaults.cardColors(
-                    containerColor = MaterialTheme.colorScheme.surfaceContainerHigh,
-                ),
-            ) {
-                Column(Modifier.padding(16.dp), verticalArrangement = Arrangement.spacedBy(12.dp)) {
-                    Text("设计风格", style = MaterialTheme.typography.titleMedium)
-                    Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
-                        FilterChip(
-                            selected = design == DesignSystem.MATERIAL3,
-                            onClick = { onSelectDesign(DesignSystem.MATERIAL3) },
-                            label = { Text("Material 3") },
-                        )
-                        FilterChip(
-                            selected = design == DesignSystem.MIUIX,
-                            onClick = { onSelectDesign(DesignSystem.MIUIX) },
-                            label = { Text("MiUIX") },
-                        )
-                    }
-                }
-            }
-
             Button(onClick = onOpenFullSettings, modifier = Modifier.fillMaxWidth()) {
-                Text("完整设置（Gadgetbridge）")
+                Text("全部设置（Gadgetbridge）")
             }
 
             Card(

@@ -35,7 +35,6 @@ import androidx.compose.material3.IconButton
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
-import androidx.compose.material3.TextButton
 import androidx.compose.material3.TopAppBar
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
@@ -56,14 +55,12 @@ fun HomeScreen(
     onToggleConnection: (GBDevice) -> Unit,
     onRefresh: () -> Unit,
     onSettings: () -> Unit,
-    onToggleDesign: () -> Unit,
 ) {
     Scaffold(
         topBar = {
             TopAppBar(
                 title = { Text(stringResource(R.string.application_name_generic)) },
                 actions = {
-                    TextButton(onClick = onToggleDesign) { Text("MiUIX") }
                     IconButton(onClick = onRefresh) {
                         Icon(Icons.Filled.Refresh, contentDescription = "刷新")
                     }

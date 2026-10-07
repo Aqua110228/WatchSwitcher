@@ -5,7 +5,6 @@ android-gradle-plugin = "9.4.1"
 androidsvg = "1.4"
 androidx-activity = "1.13.0"
 androidx-compose-material-icons = "1.7.8"
-miuix = "0.9.4"
 androidx-appcompat = "1.8.0"
 androidx-camera = "1.6.2"
 androidx-cardview = "1.0.0"
@@ -78,7 +77,6 @@ androidx-compose-bom = { group = "androidx.compose", name = "compose-bom", versi
 androidx-compose-foundation = { group = "androidx.compose.foundation", name = "foundation" }
 androidx-compose-material-icons-core = { group = "androidx.compose.material", name = "material-icons-core", version.ref = "androidx-compose-material-icons" }
 androidx-compose-material3 = { group = "androidx.compose.material3", name = "material3", version = "1.5.0-alpha29" }
-miuix-ui = { group = "top.yukonga.miuix.kmp", name = "miuix-ui-android", version.ref = "miuix" }
 androidx-compose-ui = { group = "androidx.compose.ui", name = "ui" }
 androidx-compose-ui-tooling = { group = "androidx.compose.ui", name = "ui-tooling" }
 androidx-compose-ui-tooling-preview = { group = "androidx.compose.ui", name = "ui-tooling-preview" }

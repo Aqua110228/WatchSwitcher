@@ -17,15 +17,15 @@ import androidx.activity.viewModels
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import nodomain.freeyourgadget.gadgetbridge.GBApplication
 import nodomain.freeyourgadget.gadgetbridge.activities.DeviceDeleteActivity
+import nodomain.freeyourgadget.gadgetbridge.activities.NotificationManagementActivity
+import nodomain.freeyourgadget.gadgetbridge.activities.charts.ActivityChartsActivity
 import nodomain.freeyourgadget.gadgetbridge.activities.devicesettings.DeviceSettingsActivity
 import nodomain.freeyourgadget.gadgetbridge.impl.GBDevice
-import nodomain.freeyourgadget.gadgetbridge.ui.design.AppTheme
-import nodomain.freeyourgadget.gadgetbridge.ui.design.DesignSystem
-import nodomain.freeyourgadget.gadgetbridge.ui.design.loadDesignSystem
+import nodomain.freeyourgadget.gadgetbridge.ui.theme.HuaweiSwitcherTheme
 
 /**
- * Compose device detail screen (Material 3 Expressive / MiUIX) with quick actions, replacing
- * Gadgetbridge's per-device entry point. The full device settings are still reachable from here.
+ * Compose device detail screen with quick actions and feature shortcuts. The full device settings
+ * are still reachable from here.
  */
 class DeviceDetailActivity : ComponentActivity() {
 
@@ -45,32 +45,32 @@ class DeviceDetailActivity : ComponentActivity() {
             return
         }
         viewModel.attach(address)
-        val design = loadDesignSystem()
 
         setContent {
-            val state = viewModel.state.collectAsStateWithLifecycle().value
-            AppTheme(design) {
-                when (design) {
-                    DesignSystem.MATERIAL3 -> DeviceDetailScreen(
-                        state = state,
-                        onBack = { finish() },
-                        onToggleConnection = { viewModel.toggleConnection() },
-                        onSync = { viewModel.syncNow() },
-                        onFindDevice = { viewModel.findDevice(true) },
-                        onOpenFullSettings = { openFullSettings(address) },
-                        onUnbind = { unbind(address) },
-                    )
-
-                    DesignSystem.MIUIX -> DeviceDetailScreenMiuix(
-                        state = state,
-                        onBack = { finish() },
-                        onToggleConnection = { viewModel.toggleConnection() },
-                        onSync = { viewModel.syncNow() },
-                        onFindDevice = { viewModel.findDevice(true) },
-                        onOpenFullSettings = { openFullSettings(address) },
-                        onUnbind = { unbind(address) },
-                    )
-                }
+            HuaweiSwitcherTheme {
+                val state = viewModel.state.collectAsStateWithLifecycle().value
+                DeviceDetailScreen(
+                    state = state,
+                    onBack = { finish() },
+                    onToggleConnection = { viewModel.toggleConnection() },
+                    onSync = { viewModel.syncNow() },
+                    onFindDevice = { viewModel.findDevice(true) },
+                    onOpenActivityData = {
+                        val device = currentDevice(address)
+                        if (device != null) {
+                            startActivity(
+                                Intent(this, ActivityChartsActivity::class.java)
+                                    .putExtra(GBDevice.EXTRA_DEVICE, device)
+                            )
+                        }
+                    },
+                    onOpenNotificationSettings = {
+                        startActivity(Intent(this, NotificationManagementActivity::class.java))
+                    },
+                    onOpenFullSettings = { openFullSettings(address) },
+                    onSaveHuaweiAccount = { viewModel.saveHuaweiAccount(it) },
+                    onUnbind = { unbind(address) },
+                )
             }
         }
     }

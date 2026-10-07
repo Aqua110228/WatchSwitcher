@@ -20,6 +20,8 @@ import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import nodomain.freeyourgadget.gadgetbridge.GBApplication
 import nodomain.freeyourgadget.gadgetbridge.devices.DeviceManager
+import nodomain.freeyourgadget.gadgetbridge.devices.huawei.HuaweiConstants
+import nodomain.freeyourgadget.gadgetbridge.devices.huawei.HuaweiCoordinator
 import nodomain.freeyourgadget.gadgetbridge.impl.GBDevice
 import nodomain.freeyourgadget.gadgetbridge.model.RecordedDataTypes
 
@@ -31,6 +33,8 @@ data class DeviceUiState(
     val stateString: String = "",
     val connected: Boolean = false,
     val battery: Int = -1,
+    val isHuawei: Boolean = false,
+    val huaweiAccount: String = "",
 )
 
 class DeviceDetailViewModel(app: Application) : AndroidViewModel(app) {
@@ -69,6 +73,7 @@ class DeviceDetailViewModel(app: Application) : AndroidViewModel(app) {
     fun refresh() {
         val device = device ?: return
         val context = getApplication<Application>()
+        val isHuawei = device.deviceCoordinator is HuaweiCoordinator
         _state.value = DeviceUiState(
             name = device.aliasOrName,
             model = device.model.orEmpty(),
@@ -77,6 +82,14 @@ class DeviceDetailViewModel(app: Application) : AndroidViewModel(app) {
             stateString = device.getStateString(context),
             connected = device.isConnected,
             battery = device.getBatteryLevel(0),
+            isHuawei = isHuawei,
+            huaweiAccount = if (isHuawei) {
+                GBApplication.getDeviceSpecificSharedPrefs(device.address)
+                    .getString(HuaweiConstants.PREF_HUAWEI_ACCOUNT, "")
+                    .orEmpty()
+            } else {
+                ""
+            },
         )
     }
 
@@ -95,6 +108,24 @@ class DeviceDetailViewModel(app: Application) : AndroidViewModel(app) {
     fun findDevice(start: Boolean) {
         val device = device ?: return
         GBApplication.deviceService(device).onFindDevice(start)
+    }
+
+    /**
+     * Stores the Huawei account ID for this device. It is sent to the watch during initialization
+     * (see Gadgetbridge's SendAccountRequest), which lets the watch authenticate against the account
+     * it is already bound to, instead of demanding a factory reset. Reconnecting afterwards is
+     * required for the value to take effect.
+     */
+    fun saveHuaweiAccount(value: String) {
+        val device = device ?: return
+        GBApplication.getDeviceSpecificSharedPrefs(device.address)
+            .edit()
+            .putString(HuaweiConstants.PREF_HUAWEI_ACCOUNT, value.trim())
+            .apply()
+        refresh()
+        if (device.isConnected) {
+            GBApplication.deviceService(device).disconnect()
+        }
     }
 
     override fun onCleared() {

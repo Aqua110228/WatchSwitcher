@@ -19,16 +19,14 @@ import nodomain.freeyourgadget.gadgetbridge.GBApplication
 import nodomain.freeyourgadget.gadgetbridge.activities.PermissionsActivity
 import nodomain.freeyourgadget.gadgetbridge.activities.welcome.WelcomeActivity
 import nodomain.freeyourgadget.gadgetbridge.impl.GBDevice
-import nodomain.freeyourgadget.gadgetbridge.ui.design.AppTheme
-import nodomain.freeyourgadget.gadgetbridge.ui.design.DesignSystem
 import nodomain.freeyourgadget.gadgetbridge.ui.device.DeviceDetailActivity
 import nodomain.freeyourgadget.gadgetbridge.ui.discovery.DiscoveryActivity
 import nodomain.freeyourgadget.gadgetbridge.ui.settings.SettingsActivity
+import nodomain.freeyourgadget.gadgetbridge.ui.theme.HuaweiSwitcherTheme
 import nodomain.freeyourgadget.gadgetbridge.util.PermissionsUtils
 
 /**
- * Main entry point. Replaces the classic Gadgetbridge ControlCenter with a Material 3
- * Expressive, Compose-based UI while reusing Gadgetbridge's device service underneath.
+ * Main entry point. Material 3 Expressive, Compose-based UI on top of Gadgetbridge's device service.
  */
 class HomeActivity : ComponentActivity() {
 
@@ -41,48 +39,23 @@ class HomeActivity : ComponentActivity() {
         GBApplication.deviceService().requestDeviceInfo()
 
         setContent {
-            val design = viewModel.design.collectAsStateWithLifecycle().value
-            AppTheme(design) {
+            HuaweiSwitcherTheme {
                 val devices = viewModel.devices.collectAsStateWithLifecycle().value
-                val onAddDevice: () -> Unit = {
-                    startActivity(Intent(this, DiscoveryActivity::class.java))
-                }
-                val onOpenDevice: (GBDevice) -> Unit = { device ->
-                    startActivity(
-                        Intent(this, DeviceDetailActivity::class.java)
-                            .putExtra(DeviceDetailActivity.EXTRA_DEVICE_ADDRESS, device.address)
-                    )
-                }
-                val onToggleConnection: (GBDevice) -> Unit = { device ->
-                    viewModel.toggleConnection(device)
-                }
-                val onRefresh: () -> Unit = { viewModel.refresh() }
-                val onSettings: () -> Unit = {
-                    startActivity(Intent(this, SettingsActivity::class.java))
-                }
-                val onToggleDesign: () -> Unit = { viewModel.toggleDesign() }
-
-                when (design) {
-                    DesignSystem.MATERIAL3 -> HomeScreen(
-                        devices = devices,
-                        onAddDevice = onAddDevice,
-                        onOpenDevice = onOpenDevice,
-                        onToggleConnection = onToggleConnection,
-                        onRefresh = onRefresh,
-                        onSettings = onSettings,
-                        onToggleDesign = onToggleDesign,
-                    )
-
-                    DesignSystem.MIUIX -> HomeScreenMiuix(
-                        devices = devices,
-                        onAddDevice = onAddDevice,
-                        onOpenDevice = onOpenDevice,
-                        onToggleConnection = onToggleConnection,
-                        onRefresh = onRefresh,
-                        onSettings = onSettings,
-                        onToggleDesign = onToggleDesign,
-                    )
-                }
+                HomeScreen(
+                    devices = devices,
+                    onAddDevice = {
+                        startActivity(Intent(this, DiscoveryActivity::class.java))
+                    },
+                    onOpenDevice = { device: GBDevice ->
+                        startActivity(
+                            Intent(this, DeviceDetailActivity::class.java)
+                                .putExtra(DeviceDetailActivity.EXTRA_DEVICE_ADDRESS, device.address)
+                        )
+                    },
+                    onToggleConnection = { device -> viewModel.toggleConnection(device) },
+                    onRefresh = { viewModel.refresh() },
+                    onSettings = { startActivity(Intent(this, SettingsActivity::class.java)) },
+                )
             }
         }
     }
@@ -90,7 +63,6 @@ class HomeActivity : ComponentActivity() {
     override fun onStart() {
         super.onStart()
         viewModel.start()
-        viewModel.refreshDesign()
     }
 
     override fun onStop() {
