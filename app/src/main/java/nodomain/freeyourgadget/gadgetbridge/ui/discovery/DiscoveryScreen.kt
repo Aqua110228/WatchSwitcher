@@ -32,11 +32,16 @@ import androidx.compose.material3.Text
 import androidx.compose.material3.TextButton
 import androidx.compose.material3.TopAppBar
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
+import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalUriHandler
 import androidx.compose.ui.unit.dp
 import nodomain.freeyourgadget.gadgetbridge.impl.GBDeviceCandidate
+import nodomain.freeyourgadget.gadgetbridge.ui.huawei.isValidHuaweiAccountId
 
 /** Gadgetbridge documentation on pairing Huawei/Honor devices without a factory reset. */
 const val HUAWEI_ACCOUNT_HELP_URL =
@@ -109,6 +114,7 @@ fun HuaweiAccountPromptDialog(
     onAutoGet: () -> Unit,
 ) {
     val uriHandler = LocalUriHandler.current
+    var error by remember { mutableStateOf<String?>(null) }
 
     AlertDialog(
         onDismissRequest = onDismiss,
@@ -117,13 +123,19 @@ fun HuaweiAccountPromptDialog(
             Column(verticalArrangement = Arrangement.spacedBy(8.dp)) {
                 Text(
                     text = "要连接「${deviceName}」，需要填入配对手表时用的华为账号 ID。" +
-                        "如果该手表已绑定华为账号，不填的话连接时会被要求恢复出厂（清空手表数据）。",
+                        "如果该手表已绑定华为账号，不填的话连接时会被要求恢复出厂（清空手表数据）。" +
+                        "填错会报「认证密钥协商失败 / 密钥不正确」。",
                     style = MaterialTheme.typography.bodyMedium,
                 )
                 OutlinedTextField(
                     value = account,
-                    onValueChange = onAccountChange,
+                    onValueChange = {
+                        onAccountChange(it)
+                        error = null
+                    },
                     singleLine = true,
+                    isError = error != null,
+                    supportingText = { error?.let { Text(it) } },
                     modifier = Modifier.fillMaxWidth(),
                     label = { Text("华为账号 ID（17 位数字）") },
                 )
@@ -136,7 +148,13 @@ fun HuaweiAccountPromptDialog(
             }
         },
         confirmButton = {
-            TextButton(onClick = { onConfirm(account) }) { Text("保存并连接") }
+            TextButton(onClick = {
+                if (account.isNotBlank() && !isValidHuaweiAccountId(account)) {
+                    error = "请输入 15-19 位数字的华为账号 ID（不是手机号）"
+                } else {
+                    onConfirm(account)
+                }
+            }) { Text("保存并连接") }
         },
         dismissButton = {
             TextButton(onClick = onDismiss) { Text("取消") }

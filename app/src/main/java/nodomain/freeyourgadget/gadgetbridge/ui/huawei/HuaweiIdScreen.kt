@@ -31,6 +31,10 @@ import androidx.compose.material3.Text
 import androidx.compose.material3.TextButton
 import androidx.compose.material3.TopAppBar
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
+import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalUriHandler
 import androidx.compose.ui.unit.dp
@@ -50,6 +54,7 @@ fun HuaweiIdScreen(
     onOpenWebLogin: () -> Unit,
 ) {
     val uriHandler = LocalUriHandler.current
+    var error by remember { mutableStateOf<String?>(null) }
 
     Scaffold(
         topBar = {
@@ -93,11 +98,22 @@ fun HuaweiIdScreen(
                 value = value,
                 onValueChange = onValueChange,
                 singleLine = true,
+                isError = error != null,
+                supportingText = { error?.let { Text(it) } },
                 modifier = Modifier.fillMaxWidth(),
                 label = { Text("华为账号 ID（17 位数字）") },
             )
 
-            Button(onClick = onSave, modifier = Modifier.fillMaxWidth()) {
+            Button(
+                onClick = {
+                    if (value.isNotBlank() && !isValidHuaweiAccountId(value)) {
+                        error = "请输入 15-19 位数字的华为账号 ID（不是手机号）"
+                    } else {
+                        onSave()
+                    }
+                },
+                modifier = Modifier.fillMaxWidth(),
+            ) {
                 Text("保存")
             }
 

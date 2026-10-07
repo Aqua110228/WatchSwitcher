@@ -21,6 +21,9 @@ import nodomain.freeyourgadget.gadgetbridge.devices.huawei.HuaweiConstants
 private const val KEY_HUAWEI_ACCOUNT = "huaweiswitcher_huawei_account"
 private const val KEY_ONBOARDED = "huaweiswitcher_huawei_id_onboarded"
 
+/** Huawei account IDs are 17-digit numbers (per Gadgetbridge docs); accept a small margin. */
+fun isValidHuaweiAccountId(value: String): Boolean = value.trim().matches(Regex("\\d{15,19}"))
+
 fun getHuaweiAccount(): String =
     GBApplication.getPrefs().getString(KEY_HUAWEI_ACCOUNT, "").orEmpty()
 

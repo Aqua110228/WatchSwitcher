@@ -158,14 +158,8 @@ class DiscoveryActivity : ComponentActivity(), BondingInterface {
     private fun onCandidateSelected(candidate: GBDeviceCandidate) {
         val coordinator = DeviceHelper.getInstance().resolveDeviceType(candidate).deviceCoordinator
         if (coordinator is HuaweiCoordinator) {
-            val global = getHuaweiAccount()
-            if (global.isNotBlank()) {
-                applyHuaweiAccountToDevice(candidate.macAddress, global)
-                pair(candidate)
-            } else {
-                huaweiAccountInput.value = ""
-                huaweiPrompt.value = candidate
-            }
+            huaweiAccountInput.value = getHuaweiAccount()
+            huaweiPrompt.value = candidate
         } else {
             pair(candidate)
         }
