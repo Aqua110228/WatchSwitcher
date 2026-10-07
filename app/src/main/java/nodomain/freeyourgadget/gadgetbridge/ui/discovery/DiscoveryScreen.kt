@@ -32,10 +32,6 @@ import androidx.compose.material3.Text
 import androidx.compose.material3.TextButton
 import androidx.compose.material3.TopAppBar
 import androidx.compose.runtime.Composable
-import androidx.compose.runtime.getValue
-import androidx.compose.runtime.mutableStateOf
-import androidx.compose.runtime.remember
-import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalUriHandler
@@ -106,10 +102,12 @@ fun DiscoveryScreen(
 @Composable
 fun HuaweiAccountPromptDialog(
     deviceName: String,
+    account: String,
+    onAccountChange: (String) -> Unit,
     onDismiss: () -> Unit,
     onConfirm: (String) -> Unit,
+    onAutoGet: () -> Unit,
 ) {
-    var account by remember { mutableStateOf("") }
     val uriHandler = LocalUriHandler.current
 
     AlertDialog(
@@ -124,13 +122,16 @@ fun HuaweiAccountPromptDialog(
                 )
                 OutlinedTextField(
                     value = account,
-                    onValueChange = { account = it },
+                    onValueChange = onAccountChange,
                     singleLine = true,
                     modifier = Modifier.fillMaxWidth(),
                     label = { Text("华为账号 ID（17 位数字）") },
                 )
+                TextButton(onClick = onAutoGet) {
+                    Text("登录华为云自动获取（推荐）")
+                }
                 TextButton(onClick = { uriHandler.openUri(HUAWEI_ACCOUNT_HELP_URL) }) {
-                    Text("如何获取账号 ID？（打开官方说明网页）")
+                    Text("手动获取方法（打开官方说明）")
                 }
             }
         },

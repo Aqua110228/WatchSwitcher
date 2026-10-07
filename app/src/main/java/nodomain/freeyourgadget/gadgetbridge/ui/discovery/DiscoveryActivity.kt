@@ -34,6 +34,7 @@ import nodomain.freeyourgadget.gadgetbridge.devices.huawei.HuaweiConstants
 import nodomain.freeyourgadget.gadgetbridge.devices.huawei.HuaweiCoordinator
 import nodomain.freeyourgadget.gadgetbridge.impl.GBDeviceCandidate
 import nodomain.freeyourgadget.gadgetbridge.model.DeviceType
+import nodomain.freeyourgadget.gadgetbridge.ui.huawei.HuaweiLoginActivity
 import nodomain.freeyourgadget.gadgetbridge.ui.theme.HuaweiSwitcherTheme
 import nodomain.freeyourgadget.gadgetbridge.util.BondingInterface
 import nodomain.freeyourgadget.gadgetbridge.util.BondingUtil
@@ -54,6 +55,7 @@ class DiscoveryActivity : ComponentActivity(), BondingInterface {
     private var deviceTarget: GBDeviceCandidate? = null
     private var bondReceiver: BroadcastReceiver? = null
     private val huaweiPrompt = mutableStateOf<GBDeviceCandidate?>(null)
+    private val huaweiAccountInput = mutableStateOf("")
 
     private val permissionLauncher = registerForActivityResult(
         ActivityResultContracts.RequestMultiplePermissions()
@@ -70,6 +72,16 @@ class DiscoveryActivity : ComponentActivity(), BondingInterface {
         if (candidate != null) {
             val deviceType = DeviceHelper.getInstance().resolveDeviceType(candidate)
             startPair(candidate, deviceType.deviceCoordinator)
+        }
+    }
+
+    private val huaweiLoginLauncher = registerForActivityResult(
+        ActivityResultContracts.StartActivityForResult()
+    ) { result ->
+        if (result.resultCode != RESULT_OK) return@registerForActivityResult
+        val id = result.data?.getStringExtra(HuaweiLoginActivity.EXTRA_ACCOUNT_ID)
+        if (!id.isNullOrBlank()) {
+            huaweiAccountInput.value = id
         }
     }
 
@@ -92,7 +104,12 @@ class DiscoveryActivity : ComponentActivity(), BondingInterface {
                 if (prompt != null) {
                     HuaweiAccountPromptDialog(
                         deviceName = prompt.name ?: prompt.macAddress,
+                        account = huaweiAccountInput.value,
+                        onAccountChange = { huaweiAccountInput.value = it },
                         onDismiss = { huaweiPrompt.value = null },
+                        onAutoGet = {
+                            huaweiLoginLauncher.launch(HuaweiLoginActivity.newIntent(this))
+                        },
                         onConfirm = { account ->
                             saveHuaweiAccountForCandidate(prompt, account)
                             huaweiPrompt.value = null
@@ -140,6 +157,7 @@ class DiscoveryActivity : ComponentActivity(), BondingInterface {
     private fun onCandidateSelected(candidate: GBDeviceCandidate) {
         val coordinator = DeviceHelper.getInstance().resolveDeviceType(candidate).deviceCoordinator
         if (coordinator is HuaweiCoordinator) {
+            huaweiAccountInput.value = ""
             huaweiPrompt.value = candidate
         } else {
             pair(candidate)
