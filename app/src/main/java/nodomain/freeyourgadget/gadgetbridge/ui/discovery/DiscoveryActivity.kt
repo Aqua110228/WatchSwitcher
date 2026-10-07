@@ -28,7 +28,8 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.core.content.ContextCompat
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
-import nodomain.freeyourgadget.gadgetbridge.activities.AuthKeyActivity
+import nodomain.freeyourgadget.gadgetbridge.GBApplication
+import nodomain.freeyourgadget.gadgetbridge.activities.devicesettings.DeviceSettingsPreferenceConst
 import nodomain.freeyourgadget.gadgetbridge.devices.DeviceCoordinator
 import nodomain.freeyourgadget.gadgetbridge.devices.huawei.HuaweiCoordinator
 import nodomain.freeyourgadget.gadgetbridge.impl.GBDeviceCandidate
@@ -71,19 +72,7 @@ class DiscoveryActivity : ComponentActivity(), BondingInterface {
         ActivityResultContracts.RequestMultiplePermissions()
     ) { viewModel.startScan() }
 
-    private val authKeyLauncher = registerForActivityResult(
-        ActivityResultContracts.StartActivityForResult()
-    ) { result ->
-        if (result.resultCode != RESULT_OK) return@registerForActivityResult
-        val data = result.data ?: return@registerForActivityResult
-        @Suppress("DEPRECATION")
-        val candidate: GBDeviceCandidate? =
-            data.getParcelableExtra(AuthKeyActivity.EXTRA_DEVICE_CANDIDATE_RESULT)
-        if (candidate != null) {
-            val deviceType = DeviceHelper.getInstance().resolveDeviceType(candidate)
-            startPair(candidate, deviceType.deviceCoordinator)
-        }
-    }
+    private val authKeyPrompt = mutableStateOf<Pair<GBDeviceCandidate, DeviceCoordinator>?>(null)
 
     private val huaweiIdLauncher = registerForActivityResult(
         ActivityResultContracts.StartActivityForResult()
@@ -184,6 +173,36 @@ class DiscoveryActivity : ComponentActivity(), BondingInterface {
                                 },
                             )
                         }
+
+                        val ak = authKeyPrompt.value
+                        if (ak != null) {
+                            val (candidate, coordinator) = ak
+                            val secondaryPref = coordinator.secondaryAuthKeyPref
+                            AuthKeyPromptDialog(
+                                deviceName = candidate.name ?: candidate.macAddress,
+                                secondaryHintRes = coordinator.secondaryAuthKeyHint,
+                                onDismiss = { authKeyPrompt.value = null },
+                                validate = { primary, secondary ->
+                                    coordinator.validateAuthKey(primary) &&
+                                        (secondaryPref == null || secondary.isNotBlank())
+                                },
+                                onConfirm = { primary, secondary ->
+                                    val prefs = GBApplication
+                                        .getDeviceSpecificSharedPrefs(candidate.macAddress)
+                                    prefs.edit()
+                                        .putString(
+                                            DeviceSettingsPreferenceConst.PREF_AUTH_KEY,
+                                            primary.trim(),
+                                        )
+                                        .apply()
+                                    if (secondaryPref != null) {
+                                        prefs.edit().putString(secondaryPref, secondary.trim()).apply()
+                                    }
+                                    authKeyPrompt.value = null
+                                    startPair(candidate, coordinator)
+                                },
+                            )
+                        }
                     }
                 }
             }
@@ -249,7 +268,7 @@ class DiscoveryActivity : ComponentActivity(), BondingInterface {
 
         val coordinator: DeviceCoordinator = deviceType.deviceCoordinator
         if (coordinator.requiresAuthKey()) {
-            authKeyLauncher.launch(AuthKeyActivity.newIntent(this, candidate))
+            authKeyPrompt.value = candidate to coordinator
         } else {
             startPair(candidate, coordinator)
         }
