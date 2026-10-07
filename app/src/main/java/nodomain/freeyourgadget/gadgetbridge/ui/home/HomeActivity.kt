@@ -18,12 +18,12 @@ import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import nodomain.freeyourgadget.gadgetbridge.GBApplication
 import nodomain.freeyourgadget.gadgetbridge.activities.PermissionsActivity
 import nodomain.freeyourgadget.gadgetbridge.activities.SettingsActivity
-import nodomain.freeyourgadget.gadgetbridge.activities.devicesettings.DeviceSettingsActivity
 import nodomain.freeyourgadget.gadgetbridge.activities.discovery.DiscoveryActivityV2
 import nodomain.freeyourgadget.gadgetbridge.activities.welcome.WelcomeActivity
 import nodomain.freeyourgadget.gadgetbridge.impl.GBDevice
 import nodomain.freeyourgadget.gadgetbridge.ui.design.AppTheme
 import nodomain.freeyourgadget.gadgetbridge.ui.design.DesignSystem
+import nodomain.freeyourgadget.gadgetbridge.ui.device.DeviceDetailActivity
 import nodomain.freeyourgadget.gadgetbridge.util.PermissionsUtils
 
 /**
@@ -49,8 +49,8 @@ class HomeActivity : ComponentActivity() {
                 }
                 val onOpenDevice: (GBDevice) -> Unit = { device ->
                     startActivity(
-                        Intent(this, DeviceSettingsActivity::class.java)
-                            .putExtra(GBDevice.EXTRA_DEVICE, device)
+                        Intent(this, DeviceDetailActivity::class.java)
+                            .putExtra(DeviceDetailActivity.EXTRA_DEVICE_ADDRESS, device.address)
                     )
                 }
                 val onToggleConnection: (GBDevice) -> Unit = { device ->
