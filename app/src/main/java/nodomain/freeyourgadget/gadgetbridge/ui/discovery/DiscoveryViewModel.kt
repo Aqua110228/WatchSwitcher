@@ -59,7 +59,7 @@ class DiscoveryViewModel(app: Application) : AndroidViewModel(app) {
             _devices.value = processor.devices.toList()
         }
     }
-    private val processor = GBScanEventProcessor(processorCallback)
+    private val processor: GBScanEventProcessor = GBScanEventProcessor(processorCallback)
 
     private var adapter: BluetoothAdapter? = null
     private var receiver: BroadcastReceiver? = null
