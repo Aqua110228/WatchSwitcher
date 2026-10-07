@@ -34,6 +34,7 @@ import nodomain.freeyourgadget.gadgetbridge.devices.DeviceCoordinator
 import nodomain.freeyourgadget.gadgetbridge.devices.huawei.HuaweiCoordinator
 import nodomain.freeyourgadget.gadgetbridge.impl.GBDeviceCandidate
 import nodomain.freeyourgadget.gadgetbridge.model.DeviceType
+import nodomain.freeyourgadget.gadgetbridge.ui.authkey.MiAccountActivity
 import nodomain.freeyourgadget.gadgetbridge.ui.huawei.HuaweiIdActivity
 import nodomain.freeyourgadget.gadgetbridge.ui.huawei.applyHuaweiAccountToDevice
 import nodomain.freeyourgadget.gadgetbridge.ui.huawei.getHuaweiAccount
@@ -73,6 +74,16 @@ class DiscoveryActivity : ComponentActivity(), BondingInterface {
     ) { viewModel.startScan() }
 
     private val authKeyPrompt = mutableStateOf<Pair<GBDeviceCandidate, DeviceCoordinator>?>(null)
+    private val authKeyPrimary = mutableStateOf("")
+    private val authKeySecondary = mutableStateOf("")
+
+    private val miAccountLauncher = registerForActivityResult(
+        ActivityResultContracts.StartActivityForResult()
+    ) { result ->
+        if (result.resultCode != RESULT_OK) return@registerForActivityResult
+        val key = result.data?.getStringExtra(MiAccountActivity.EXTRA_AUTH_KEY)
+        if (!key.isNullOrBlank()) authKeyPrimary.value = key
+    }
 
     private val huaweiIdLauncher = registerForActivityResult(
         ActivityResultContracts.StartActivityForResult()
@@ -181,25 +192,34 @@ class DiscoveryActivity : ComponentActivity(), BondingInterface {
                             AuthKeyPromptDialog(
                                 deviceName = candidate.name ?: candidate.macAddress,
                                 secondaryHintRes = coordinator.secondaryAuthKeyHint,
+                                primary = authKeyPrimary.value,
+                                secondary = authKeySecondary.value,
+                                onPrimaryChange = { authKeyPrimary.value = it },
+                                onSecondaryChange = { authKeySecondary.value = it },
                                 onDismiss = { authKeyPrompt.value = null },
                                 validate = { primary, secondary ->
                                     coordinator.validateAuthKey(primary) &&
                                         (secondaryPref == null || secondary.isNotBlank())
                                 },
-                                onConfirm = { primary, secondary ->
+                                onConfirm = {
                                     val prefs = GBApplication
                                         .getDeviceSpecificSharedPrefs(candidate.macAddress)
                                     prefs.edit()
                                         .putString(
                                             DeviceSettingsPreferenceConst.PREF_AUTH_KEY,
-                                            primary.trim(),
+                                            authKeyPrimary.value.trim(),
                                         )
                                         .apply()
                                     if (secondaryPref != null) {
-                                        prefs.edit().putString(secondaryPref, secondary.trim()).apply()
+                                        prefs.edit()
+                                            .putString(secondaryPref, authKeySecondary.value.trim())
+                                            .apply()
                                     }
                                     authKeyPrompt.value = null
                                     startPair(candidate, coordinator)
+                                },
+                                onAutoFetch = {
+                                    miAccountLauncher.launch(MiAccountActivity.newIntent(this))
                                 },
                             )
                         }
@@ -268,6 +288,8 @@ class DiscoveryActivity : ComponentActivity(), BondingInterface {
 
         val coordinator: DeviceCoordinator = deviceType.deviceCoordinator
         if (coordinator.requiresAuthKey()) {
+            authKeyPrimary.value = ""
+            authKeySecondary.value = ""
             authKeyPrompt.value = candidate to coordinator
         } else {
             startPair(candidate, coordinator)

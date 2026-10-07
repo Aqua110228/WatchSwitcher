@@ -30,26 +30,26 @@ import androidx.compose.ui.unit.dp
 const val AUTH_KEY_HELP_URL = "https://gadgetbridge.org/basics/pairing/huami-xiaomi-server/"
 
 /**
- * Asks for the vendor auth key of a key-protected device (Xiaomi/Huami/Zepp, CMF, …). The key is
- * a per-device secret created when pairing with the vendor app, so it must be extracted from there.
+ * Asks for the vendor auth key of a key-protected device (Xiaomi/Huami/Zepp, CMF, …). The key is a
+ * per-device secret created when pairing with the vendor app; it can be entered manually or fetched
+ * from the Xiaomi account.
  */
 @Composable
 fun AuthKeyPromptDialog(
     deviceName: String,
     secondaryHintRes: Int,
+    primary: String,
+    secondary: String,
+    onPrimaryChange: (String) -> Unit,
+    onSecondaryChange: (String) -> Unit,
     onDismiss: () -> Unit,
-    onConfirm: (primary: String, secondary: String) -> Unit,
+    onConfirm: () -> Unit,
     validate: (primary: String, secondary: String) -> Boolean,
+    onAutoFetch: () -> Unit,
 ) {
-    var primary by remember { mutableStateOf("") }
-    var secondary by remember { mutableStateOf("") }
     var error by remember { mutableStateOf<String?>(null) }
     val uriHandler = LocalUriHandler.current
-    val secondaryLabel = if (secondaryHintRes != 0) {
-        runCatching { stringResource(secondaryHintRes) }.getOrDefault("第二密钥")
-    } else {
-        null
-    }
+    val secondaryLabel = if (secondaryHintRes != 0) stringResource(secondaryHintRes) else null
 
     AlertDialog(
         onDismissRequest = onDismiss,
@@ -57,15 +57,15 @@ fun AuthKeyPromptDialog(
         text = {
             Column(verticalArrangement = Arrangement.spacedBy(8.dp)) {
                 Text(
-                    text = "「$deviceName」使用加密协议，需要授权密钥才能连接。请先用官方 App 配对该设备，" +
-                        "再从它的日志里取出密钥（例如小米穿戴 / Mi Fitness：" +
-                        "Android/data/com.xiaomi.wearable/files/log/XiaomiFit.device.log 中 " +
-                        "搜 token 或 encryptKey，32 位十六进制，可能带 0x 前缀）。",
+                    text = "「$deviceName」使用加密协议，需要授权密钥才能连接。密钥可用小米账号自动获取，" +
+                        "或先用官方 App 配对该设备后从日志里取出（小米穿戴 / Mi Fitness：" +
+                        "Android/data/com.xiaomi.wearable/files/log/XiaomiFit.device.log 中搜 " +
+                        "token / encryptKey，32 位十六进制，可能带 0x 前缀）。",
                     style = MaterialTheme.typography.bodyMedium,
                 )
                 OutlinedTextField(
                     value = primary,
-                    onValueChange = { primary = it; error = null },
+                    onValueChange = { onPrimaryChange(it); error = null },
                     singleLine = true,
                     isError = error != null,
                     supportingText = { error?.let { Text(it) } },
@@ -75,21 +75,24 @@ fun AuthKeyPromptDialog(
                 if (secondaryLabel != null) {
                     OutlinedTextField(
                         value = secondary,
-                        onValueChange = { secondary = it; error = null },
+                        onValueChange = { onSecondaryChange(it); error = null },
                         singleLine = true,
                         modifier = Modifier.fillMaxWidth(),
                         label = { Text(secondaryLabel) },
                     )
                 }
+                TextButton(onClick = onAutoFetch) {
+                    Text("从小米服务器自动获取密钥")
+                }
                 TextButton(onClick = { uriHandler.openUri(AUTH_KEY_HELP_URL) }) {
-                    Text("如何获取授权密钥（打开说明网页）")
+                    Text("手动获取方法（打开说明网页）")
                 }
             }
         },
         confirmButton = {
             TextButton(onClick = {
                 if (validate(primary, secondary)) {
-                    onConfirm(primary, secondary)
+                    onConfirm()
                 } else {
                     error = "密钥格式不正确（或第二密钥为空）"
                 }

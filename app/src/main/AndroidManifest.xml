@@ -222,6 +222,12 @@
             android:launchMode="singleTop"
             android:exported="false" />
         <activity
+            android:name=".ui.authkey.MiAccountActivity"
+            android:label="@string/app_name"
+            android:theme="@style/GadgetbridgeTheme.NoActionBar"
+            android:launchMode="singleTop"
+            android:exported="false" />
+        <activity
             android:name=".activities.ControlCenterv2"
             android:label="@string/title_activity_controlcenter"
             android:theme="@style/SplashTheme"
