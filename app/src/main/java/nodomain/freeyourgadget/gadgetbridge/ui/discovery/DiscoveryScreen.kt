@@ -69,7 +69,7 @@ fun DiscoveryScreen(
                     }
                 },
                 actions = {
-                    TextButton(onClick = onScanQr) { Text("扫码") }
+                    TextButton(onClick = onScanQr) { Text("扫码（实验）") }
                     if (filterLabel != null) {
                         TextButton(onClick = onShowAll) { Text("全部") }
                     }

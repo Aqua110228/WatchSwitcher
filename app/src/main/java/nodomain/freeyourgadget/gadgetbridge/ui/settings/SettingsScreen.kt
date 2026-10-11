@@ -37,10 +37,13 @@ import androidx.compose.ui.unit.dp
 fun SettingsScreen(
     versionName: String,
     huaweiAccount: String,
+    loggingEnabled: Boolean,
     onBack: () -> Unit,
     onOpenFullSettings: () -> Unit,
     onOpenHuaweiId: () -> Unit,
     onOpenClassicUi: () -> Unit,
+    onToggleLogging: () -> Unit,
+    onShareLogs: () -> Unit,
 ) {
     Scaffold(
         topBar = {
@@ -72,6 +75,14 @@ fun SettingsScreen(
 
             OutlinedButton(onClick = onOpenClassicUi, modifier = Modifier.fillMaxWidth()) {
                 Text("经典界面（仪表盘 / 日志 / 诊断）")
+            }
+
+            Text("排障", style = MaterialTheme.typography.titleMedium)
+            OutlinedButton(onClick = onToggleLogging, modifier = Modifier.fillMaxWidth()) {
+                Text(if (loggingEnabled) "关闭日志记录" else "开启日志记录")
+            }
+            OutlinedButton(onClick = onShareLogs, modifier = Modifier.fillMaxWidth()) {
+                Text("分享日志文件")
             }
 
             Card(
