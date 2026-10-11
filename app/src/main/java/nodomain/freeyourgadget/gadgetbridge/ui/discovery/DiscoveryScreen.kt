@@ -56,6 +56,7 @@ fun DiscoveryScreen(
     onBack: () -> Unit,
     onToggleScan: () -> Unit,
     onShowAll: () -> Unit,
+    onScanQr: () -> Unit,
     onSelect: (GBDeviceCandidate) -> Unit,
 ) {
     Scaffold(
@@ -68,6 +69,7 @@ fun DiscoveryScreen(
                     }
                 },
                 actions = {
+                    TextButton(onClick = onScanQr) { Text("扫码") }
                     if (filterLabel != null) {
                         TextButton(onClick = onShowAll) { Text("全部") }
                     }
@@ -85,7 +87,7 @@ fun DiscoveryScreen(
                 horizontalAlignment = Alignment.CenterHorizontally,
             ) {
                 Text(
-                    text = if (scanning) "正在扫描附近的设备…" else "点击右上角「扫描」查找设备",
+                    text = if (scanning) "正在扫描附近的设备…" else "点「扫描」查找设备，或点右上角「扫码」扫手表上的二维码",
                     style = MaterialTheme.typography.bodyLarge,
                     color = MaterialTheme.colorScheme.onSurfaceVariant,
                 )            }

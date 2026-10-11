@@ -46,6 +46,7 @@ mpandroidchart = "3.1.0"
 vico = "3.3.1"
 msgpack = "0.9.12"
 okhttp = "5.5.0"
+mlkit-barcode = "17.3.0"
 protobuf = "4.36.2"
 protobuf-plugin = "0.10.0"
 kaitai-plugin = "0.2.0"
@@ -122,6 +123,7 @@ mpandroidchart = { group = "com.github.PhilJay", name = "MPAndroidChart", versio
 vico-compose = { group = "com.patrykandpatrick.vico", name = "compose", version.ref = "vico" }
 msgpack = { group = "org.msgpack", name = "msgpack-core", version.ref = "msgpack" }
 okhttp = { group = "com.squareup.okhttp3", name = "okhttp", version.ref = "okhttp" }
+mlkit-barcode-scanning = { group = "com.google.mlkit", name = "barcode-scanning", version.ref = "mlkit-barcode" }
 protobuf-lite = { group = "com.google.protobuf", name = "protobuf-javalite", version.ref = "protobuf" }
 protoc = { group = "com.google.protobuf", name = "protoc", version.ref = "protobuf" }
 robolectric = { group = "org.robolectric", name = "robolectric", version.ref = "robolectric" }

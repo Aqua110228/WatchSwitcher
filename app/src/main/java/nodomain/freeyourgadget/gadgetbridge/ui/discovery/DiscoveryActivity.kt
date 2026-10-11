@@ -11,6 +11,7 @@ package nodomain.freeyourgadget.gadgetbridge.ui.discovery
 import android.Manifest
 import android.annotation.SuppressLint
 import android.bluetooth.BluetoothDevice
+import android.bluetooth.BluetoothManager
 import android.content.BroadcastReceiver
 import android.content.Context
 import android.content.Intent
@@ -32,6 +33,7 @@ import nodomain.freeyourgadget.gadgetbridge.GBApplication
 import nodomain.freeyourgadget.gadgetbridge.activities.devicesettings.DeviceSettingsPreferenceConst
 import nodomain.freeyourgadget.gadgetbridge.devices.DeviceCoordinator
 import nodomain.freeyourgadget.gadgetbridge.devices.huawei.HuaweiCoordinator
+import nodomain.freeyourgadget.gadgetbridge.impl.GBDevice
 import nodomain.freeyourgadget.gadgetbridge.impl.GBDeviceCandidate
 import nodomain.freeyourgadget.gadgetbridge.model.DeviceType
 import nodomain.freeyourgadget.gadgetbridge.ui.authkey.MiAccountActivity
@@ -39,6 +41,7 @@ import nodomain.freeyourgadget.gadgetbridge.ui.huawei.HuaweiIdActivity
 import nodomain.freeyourgadget.gadgetbridge.ui.huawei.applyHuaweiAccountToDevice
 import nodomain.freeyourgadget.gadgetbridge.ui.huawei.getHuaweiAccount
 import nodomain.freeyourgadget.gadgetbridge.ui.huawei.setHuaweiAccount
+import nodomain.freeyourgadget.gadgetbridge.ui.qr.QRScanActivity
 import nodomain.freeyourgadget.gadgetbridge.ui.theme.WatchSwitcherTheme
 import nodomain.freeyourgadget.gadgetbridge.util.BondingInterface
 import nodomain.freeyourgadget.gadgetbridge.util.BondingUtil
@@ -83,6 +86,13 @@ class DiscoveryActivity : ComponentActivity(), BondingInterface {
         if (result.resultCode != RESULT_OK) return@registerForActivityResult
         val key = result.data?.getStringExtra(MiAccountActivity.EXTRA_AUTH_KEY)
         if (!key.isNullOrBlank()) authKeyPrimary.value = key
+    }
+
+    private val qrLauncher = registerForActivityResult(
+        ActivityResultContracts.StartActivityForResult()
+    ) { result ->
+        if (result.resultCode != RESULT_OK) return@registerForActivityResult
+        handleQrContent(result.data?.getStringExtra(QRScanActivity.EXTRA_CONTENT).orEmpty())
     }
 
     private val huaweiIdLauncher = registerForActivityResult(
@@ -160,6 +170,9 @@ class DiscoveryActivity : ComponentActivity(), BondingInterface {
                             onShowAll = {
                                 model.value = null
                                 viewModel.setTypeFilter(null)
+                            },
+                            onScanQr = {
+                                qrLauncher.launch(QRScanActivity.newIntent(this))
                             },
                             onSelect = { onCandidateSelected(it) },
                         )
@@ -265,8 +278,32 @@ class DiscoveryActivity : ComponentActivity(), BondingInterface {
         return permissions
     }
 
-    private fun onCandidateSelected(candidate: GBDeviceCandidate) {
-        val coordinator = DeviceHelper.getInstance().resolveDeviceType(candidate).deviceCoordinator
+    /** Reads a scanned QR code: if it carries a Bluetooth address, connect to it directly. */
+    private fun handleQrContent(content: String) {
+        val mac = Regex("([0-9A-Fa-f]{2}[:-]){5}[0-9A-Fa-f]{2}")
+            .find(content)?.value?.replace('-', ':')?.uppercase()
+        if (mac == null) {
+            Toast.makeText(this, "二维码内容无法识别为设备地址：\n$content", Toast.LENGTH_LONG).show()
+            return
+        }
+        val adapter = (getSystemService(Context.BLUETOOTH_SERVICE) as? BluetoothManager)?.adapter
+        val bluetoothDevice = adapter?.let { runCatching { it.getRemoteDevice(mac) }.getOrNull() }
+        if (bluetoothDevice == null) {
+            Toast.makeText(this, "无法解析地址 $mac", Toast.LENGTH_LONG).show()
+            return
+        }
+        val candidate = GBDeviceCandidate(bluetoothDevice, GBDevice.RSSI_UNKNOWN, null, null)
+        val selected = model.value
+        if (selected != null) {
+            viewModel.stopScan()
+            deviceTarget = candidate
+            startPair(candidate, selected.type.deviceCoordinator)
+        } else {
+            pair(candidate)
+        }
+    }
+
+    private fun onCandidateSelected(candidate: GBDeviceCandidate) {        val coordinator = DeviceHelper.getInstance().resolveDeviceType(candidate).deviceCoordinator
         if (coordinator is HuaweiCoordinator) {
             huaweiAccountInput.value = getHuaweiAccount()
             huaweiPrompt.value = candidate

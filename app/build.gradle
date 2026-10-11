@@ -362,6 +362,7 @@ dependencies {
     implementation libs.bundles.android.emojify
     implementation libs.protobuf.lite
     implementation libs.okhttp
+    implementation libs.mlkit.barcode.scanning
     implementation libs.msgpack
     implementation libs.searchpreference
 
