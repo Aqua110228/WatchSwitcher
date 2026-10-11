@@ -23,7 +23,7 @@
     <string name="hr_appname_stopwatch">Stopwatch</string>
     <string name="hr_appname_workout">Workout</string>
     <string name="hr_appname_wellness">Wellness</string>
-    <string name="pref_summary_custom_deviceicon">Show a device specific Android notification icon instead the Gadgetbridge icon when connected</string>
+    <string name="pref_summary_custom_deviceicon">Show a device specific Android notification icon instead the WatchSwitcher icon when connected</string>
     <string name="pref_title_custom_deviceicon">Show device specific notification icon</string>
     <string name="notification_channel_high_priority_name">High-priority</string>
     <string name="find_my_phone_notification">Find my phone</string>
@@ -114,7 +114,7 @@
     <string name="pref_summary_use_custom_font">Enable this if your device has a custom font firmware for emoji support</string>
     <string name="pref_title_use_custom_font">Use custom font</string>
     <string name="pref_title_expose_hr">3rd party realtime HR access</string>
-    <string name="pref_summary_expose_hr">Allows other apps to access HR data in realtime while Gadgetbridge is connected</string>
+    <string name="pref_summary_expose_hr">Allows other apps to access HR data in realtime while WatchSwitcher is connected</string>
     <string name="menuitem_nfc">NFC</string>
     <string name="weeksleepchart_sleep_a_month">Sleep per month</string>
     <string name="weekstepschart_steps_a_month">Steps per month</string>
@@ -221,7 +221,7 @@
     <string name="preferences_fm_frequency">FM Frequency</string>
     <string name="controlcenter_change_fm_frequency">Change FM Frequency</string>
     <string name="warning">Warning!</string>
-    <string name="share_log_warning">Please keep in mind Gadgetbridge logs files that may contain lots of personal info, including but not limited to health data, unique identifiers (such as a device\'s MAC address), music preferences, etc. Consider editing the file and removing this info before sending the file to a public issue report.</string>
+    <string name="share_log_warning">Please keep in mind WatchSwitcher logs files that may contain lots of personal info, including but not limited to health data, unique identifiers (such as a device\'s MAC address), music preferences, etc. Consider editing the file and removing this info before sending the file to a public issue report.</string>
     <string name="share_log">Share log</string>
     <string name="ok">OK</string>
     <string name="mi3_night_mode_sunset">At sunset</string>
@@ -489,7 +489,7 @@
     <string name="updatefirmwareoperation_update_complete">Firmware installation complete</string>
     <string name="title_activity_notification_filter">Notification Filter</string>
     <string name="appwidget_setting_alarm">Setting alarm for %1$02d:%2$02d</string>
-    <string name="debugactivity_really_factoryreset">Doing a factory reset will delete all data from the connected device (if supported). Xiaomi/Huami devices also change Bluetooth MAC address, so they appear as a new devices to Gadgetbridge.</string>
+    <string name="debugactivity_really_factoryreset">Doing a factory reset will delete all data from the connected device (if supported). Xiaomi/Huami devices also change Bluetooth MAC address, so they appear as a new devices to WatchSwitcher.</string>
     <string name="debugactivity_really_factoryreset_title">Really factory reset\?</string>
     <string name="live_activity_max_heart_rate">Current / Max heart rate: %1$d / %2$d</string>
     <string name="no_data">No data</string>
@@ -573,7 +573,7 @@
     <string name="miband_prefs_alias">Name/Alias</string>
     <string name="candidate_item_device_image">Device image</string>
     <string name="discovery_note">Note:</string>
-    <string name="discovery_connected_devices_hint">Make your device discoverable. Currently connected devices will likely not be discovered. Activate location (e.g. GPS) on Android 6+. Disable Privacy Guard for Gadgetbridge, because it may crash and reboot your phone. If no device is found after a few minutes, try again after rebooting your mobile device.</string>
+    <string name="discovery_connected_devices_hint">Make your device discoverable. Currently connected devices will likely not be discovered. Activate location (e.g. GPS) on Android 6+. Disable Privacy Guard for WatchSwitcher, because it may crash and reboot your phone. If no device is found after a few minutes, try again after rebooting your mobile device.</string>
     <string name="appinstaller_install">Install</string>
     <string name="miband_pairing_tap_hint">When your Mi Band vibrates and blinks, tap it a few times in a row.</string>
     <string name="miband_pairing_using_dummy_userdata">No valid user data given, using dummy user data for now.</string>
@@ -610,7 +610,7 @@
     <string name="installation_successful">Installed</string>
     <string name="installation_failed_">Installation failed</string>
     <string name="installing_binary_d_d">Installing binary %1$d/%2$d</string>
-    <string name="gadgetbridge_running_generic">Gadgetbridge running</string>
+    <string name="gadgetbridge_running_generic">WatchSwitcher running</string>
     <string name="cannot_connect_bt_address_invalid_">Cannot connect. Bluetooth address invalid\?</string>
     <string name="tap_a_device_to_connect">Tap a device to connect</string>
     <string name="tap_connected_device_for_vibration">Tap connected device for vibration</string>
@@ -618,7 +618,7 @@
     <string name="tap_connected_device_for_app_mananger">Tap connected device for App manager</string>
     <string name="bluetooth_is_disabled_">Bluetooth is disabled.</string>
     <string name="bluetooth_is_not_supported_">Bluetooth is not supported.</string>
-    <string name="this_is_a_test_notification_from_gadgetbridge">This is a test notification from Gadgetbridge</string>
+    <string name="this_is_a_test_notification_from_gadgetbridge">This is a test notification from WatchSwitcher</string>
     <string name="test_notification">Test notification</string>
     <string name="test">Test</string>
     <string name="_unknown_">(unknown)</string>
@@ -634,7 +634,7 @@
     <string name="pref_title_pebble_reconnect_attempts">Reconnection attempts</string>
     <string name="pref_summary_pebble_always_ack_pebblekit">Will cause messages that are sent to external 3rd party apps to be acknowledged always and immediately</string>
     <string name="pref_title_pebble_always_ack_pebblekit">Prematurely ACK PebbleKit</string>
-    <string name="pref_summary_pebble_enable_applogs">Will cause logs from watch apps to be logged by Gadgetbridge (requires reconnect)</string>
+    <string name="pref_summary_pebble_enable_applogs">Will cause logs from watch apps to be logged by WatchSwitcher (requires reconnect)</string>
     <string name="pref_title_pebble_enable_applogs">Enable watch app logging</string>
     <string name="pref_summary_pebble_mtu_limit">If your Pebble 2/Pebble LE does not work as expected, try this setting to limit the MTU (valid range 20–512)</string>
     <string name="pref_title_pebble_mtu_limit">Pebble 2/LE GATT MTU limit</string>
@@ -704,34 +704,34 @@
     <string name="pref_header_notifications">Notifications</string>
     <string name="pref_summary_minimize_priority_on">The icon in the status bar and the notification in the lockscreen are hidden</string>
     <string name="pref_summary_minimize_priority_off">The icon in the status bar and the notification in the lockscreen are shown</string>
-    <string name="pref_title_minimize_priority">Hide the Gadgetbridge notification</string>
+    <string name="pref_title_minimize_priority">Hide the WatchSwitcher notification</string>
     <string name="pref_title_language">Language</string>
     <string name="pref_theme_dark">Dark</string>
     <string name="pref_theme_light">Light</string>
     <string name="pref_title_theme">Theme</string>
-    <string name="pref_summary_datetime_syctimeonconnect">Sync time to Gadgetbridge device when connecting, and when time or time zone changes on Android device</string>
+    <string name="pref_summary_datetime_syctimeonconnect">Sync time to WatchSwitcher device when connecting, and when time or time zone changes on Android device</string>
     <string name="pref_title_datetime_syctimeonconnect">Sync time</string>
     <string name="pref_header_datetime">Date and Time</string>
     <string name="pref_default">Default</string>
     <string name="pref_title_general_autostartonboot">Start automatically</string>
-    <string name="pref_title_general_autoconnectonbluetooth">Connect to Gadgetbridge device when Bluetooth is turned on</string>
+    <string name="pref_title_general_autoconnectonbluetooth">Connect to WatchSwitcher device when Bluetooth is turned on</string>
     <string name="pref_header_general">General settings</string>
     <string name="title_activity_settings">Settings</string>
-    <string name="miband_firmware_suggest_whitelist">If you still want to proceed and things continue to work properly afterwards, please tell the Gadgetbridge developers to whitelist the %s firmware version.</string>
-    <string name="miband_firmware_unknown_warning">This firmware is untested and may not be compatible with Gadgetbridge.
+    <string name="miband_firmware_suggest_whitelist">If you still want to proceed and things continue to work properly afterwards, please tell the WatchSwitcher developers to whitelist the %s firmware version.</string>
+    <string name="miband_firmware_unknown_warning">This firmware is untested and may not be compatible with WatchSwitcher.
 \n
 \nYou are DISCOURAGED from flashing it!</string>
-    <string name="miband_firmware_known">This firmware has been tested and is known to be compatible with Gadgetbridge.</string>
+    <string name="miband_firmware_known">This firmware has been tested and is known to be compatible with WatchSwitcher.</string>
     <string name="dbmanagementactivity_import_data_title">Import Data\?</string>
     <string name="dbmanagementactivity_error_exporting_shared">Error exporting preference: %1$s</string>
     <string name="dbmanagementactivity_error_exporting_db">Error exporting DB: %1$s</string>
     <string name="dbmanagementactivity_exported_to">Exported to: %1$s</string>
     <string name="dbmanagementactivvity_cannot_access_export_path">Cannot access export path. Please contact the developers.</string>
-    <string name="activity_db_management_import_export_explanation">The export/import operations use the following path (see below) to a directory on your device. This directory is accessible to other Android apps and your computer. Do note, that this directory and all containing files are deleted if you uninstall Gadgetbridge. The data includes:
+    <string name="activity_db_management_import_export_explanation">The export/import operations use the following path (see below) to a directory on your device. This directory is accessible to other Android apps and your computer. Do note, that this directory and all containing files are deleted if you uninstall WatchSwitcher. The data includes:
 \n Export_preference - global settings
 \n Export_preference_MAC - device specific settings
-\n Gadgetbridge - device and activity database
-\n Gadgetbridge_date - database exported on a date
+\n WatchSwitcher - device and activity database
+\n WatchSwitcher_date - database exported on a date
 \n *.gpx - GPS recordings
 \n *.log - log files
 \nExpect to find your exported files (or place the files you want to import) there:</string>
@@ -774,8 +774,8 @@
     <string name="action_quit">Quit</string>
     <string name="action_debug">Debug</string>
     <string name="action_settings">Settings</string>
-    <string name="title_activity_controlcenter_generic">Gadgetbridge</string>
-    <string name="application_name_generic">Gadgetbridge</string>
+    <string name="title_activity_controlcenter_generic">WatchSwitcher</string>
+    <string name="application_name_generic">WatchSwitcher</string>
     <string name="pref_qhybrid_save_raw_activity_files">Save raw activity files</string>
     <string name="menuitem_workout">Workout</string>
     <string name="menuitem_eventreminder">Event Reminder</string>
@@ -956,7 +956,7 @@
     <string name="activity_error_no_app_for_png">To share this screenshot, install an app which can handle image files.</string>
     <string name="pref_title_lower_button_function_long">Lower Button long</string>
     <string name="pref_title_lower_button_function_double">Lower Button double</string>
-    <string name="gpx_receiver_activity_title">GPX Receiver Gadgetbridge</string>
+    <string name="gpx_receiver_activity_title">GPX Receiver WatchSwitcher</string>
     <string name="activity_filter_name_contains">Label</string>
     <string name="sony_equalizer_band_1000">1k</string>
     <string name="watchface_dialog_widget_preset_right">Right</string>
@@ -1017,7 +1017,7 @@
     <string name="activity_summaries_statistics">Statistics</string>
     <string name="pref_title_upper_button_function_short">Upper Button short</string>
     <string name="pref_title_upper_button_function_double">Upper Button double</string>
-    <string name="about_activity_title_generic">About Gadgetbridge</string>
+    <string name="about_activity_title_generic">About WatchSwitcher</string>
     <string name="gpx_receiver_files_received">GPX file(s) received:</string>
     <string name="gpx_receiver_overwrite_some_files">Some file(s) already exist. Overwrite\?</string>
     <string name="about_additional_contributions">Many thanks to all unlisted contributors for contributing code, translations, support, ideas, motivation, bug reports, money… ✊</string>
@@ -1199,7 +1199,7 @@
     <string name="watchface_setting_title_wrist_flick">Wrist flick</string>
     <string name="watchface_dialog_widget_presets">Position presets:</string>
     <string name="pref_theme_black_background">Use black background in Dark Theme</string>
-    <string name="pref_title_weather_summary">Used for the LineageOS weather provider, other Android versions need to use an app like \"Weather notification\". Find more information in the Gadgetbridge wiki.</string>
+    <string name="pref_title_weather_summary">Used for the LineageOS weather provider, other Android versions need to use an app like \"Weather notification\". Find more information in the WatchSwitcher wiki.</string>
     <string name="discovery_entered_invalid_authkey">The secret auth key you entered is invalid! Long press on the device to edit.</string>
     <string name="charts_activity_list">Activity list</string>
     <string name="devicestatus_upload_failed">Upload has failed</string>

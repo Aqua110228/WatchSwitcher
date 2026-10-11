@@ -96,6 +96,10 @@ fun DeviceDetailScreen(
                     if (state.firmware.isNotBlank()) InfoRow("固件", state.firmware)
                     if (state.address.isNotBlank()) InfoRow("地址", state.address)
                     if (state.battery in 0..100) InfoRow("电量", "${state.battery}%")
+                    if (state.steps >= 0) InfoRow("今日步数", state.steps.toString())
+                    if (state.sleepMinutes >= 0) {
+                        InfoRow("今日睡眠", "${state.sleepMinutes / 60} 小时 ${state.sleepMinutes % 60} 分")
+                    }
                 }
             }
 

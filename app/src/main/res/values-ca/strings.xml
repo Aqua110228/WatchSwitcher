@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="application_name_generic">Gadgetbridge</string>
-    <string name="title_activity_controlcenter_generic">Gadgetbridge</string>
+    <string name="application_name_generic">WatchSwitcher</string>
+    <string name="title_activity_controlcenter_generic">WatchSwitcher</string>
     <string name="action_settings">Configuració</string>
     <string name="action_debug">Depuració</string>
     <string name="action_quit">Surt</string>
@@ -54,14 +54,14 @@
 \n
 \nPROCEDIU SOTA LA VOSTRA PRÒPIA RESPONSABILITAT!</string>
     <string name="fw_multi_upgrade_notice">Sou a punt d\'instal·lar els microprogramaris %1$s i %2$s en lloc dels que hi ha actualment a la vostra Mi Band.</string>
-    <string name="miband_firmware_known">Aquest microprogramari ha estat provat i se sap que és compatible amb el Gadgetbridge.</string>
-    <string name="miband_firmware_unknown_warning">Aquest microprogramari no ha estat provat i pot ser que no sigui compatible amb el Gadgetbridge. 
+    <string name="miband_firmware_known">Aquest microprogramari ha estat provat i se sap que és compatible amb el WatchSwitcher.</string>
+    <string name="miband_firmware_unknown_warning">Aquest microprogramari no ha estat provat i pot ser que no sigui compatible amb el WatchSwitcher. 
 \n 
 \nNO es recomana instal·lar-lo!</string>
-    <string name="miband_firmware_suggest_whitelist">Si tot i així voleu continuar i les coses continuen funcionant correctament, si us plau informeu els desenvolupadors del Gadgetbridge que la versió %s del microprogramari funciona bé.</string>
+    <string name="miband_firmware_suggest_whitelist">Si tot i així voleu continuar i les coses continuen funcionant correctament, si us plau informeu els desenvolupadors del WatchSwitcher que la versió %s del microprogramari funciona bé.</string>
     <string name="title_activity_settings">Paràmetres</string>
     <string name="pref_header_general">Paràmetres generals</string>
-    <string name="pref_title_general_autoconnectonbluetooth">Connecta\'t a l\'aparell(s) Gadgetbridge quan el Bluetooth estigui activat</string>
+    <string name="pref_title_general_autoconnectonbluetooth">Connecta\'t a l\'aparell(s) WatchSwitcher quan el Bluetooth estigui activat</string>
     <string name="pref_title_general_autostartonboot">Inicia automàticament</string>
     <string name="pref_title_general_autoreconnect">Reconnecta automàticament</string>
     <string name="pref_title_audio_player">Reproductor d\'àudio preferit</string>
@@ -69,12 +69,12 @@
     <string name="pref_title_charts_swipe">Permet lliscar cap a l\'esquerra i la dreta en els gràfics d\'activitat</string>
     <string name="pref_header_datetime">Data i Hora</string>
     <string name="pref_title_datetime_syctimeonconnect">Sincronitza l\'hora</string>
-    <string name="pref_summary_datetime_syctimeonconnect">Sincronitza l\'hora en l\'aparell(s) Gadgetbridge quan es connecti o quan es canviï l\'hora o zona horària en l\'aparell Android i periòdicament</string>
+    <string name="pref_summary_datetime_syctimeonconnect">Sincronitza l\'hora en l\'aparell(s) WatchSwitcher quan es connecti o quan es canviï l\'hora o zona horària en l\'aparell Android i periòdicament</string>
     <string name="pref_title_theme">Aparença</string>
     <string name="pref_theme_light">Clar</string>
     <string name="pref_theme_dark">Fosc</string>
     <string name="pref_title_language">Llengua</string>
-    <string name="pref_title_minimize_priority">Amaga la notificació del Gadgetbridge</string>
+    <string name="pref_title_minimize_priority">Amaga la notificació del WatchSwitcher</string>
     <string name="pref_summary_minimize_priority_off">La icona a la barra d\'estat i la notificació a la pantalla de bloqueig es mostren</string>
     <string name="pref_summary_minimize_priority_on">La icona a la barra d\'estat i la notificació a la pantalla de bloqueig no es mostren</string>
     <string name="pref_header_notifications">Notificacions</string>
@@ -144,7 +144,7 @@
     <string name="pref_title_pebble_mtu_limit">Límit de l\'MTU del GATT del Pebble 2/LE</string>
     <string name="pref_summary_pebble_mtu_limit">Si el teu Pebble 2/Pebble LE no funciona correctament, prova aquesta opció per limitar l\'MTU (rang vàlid 20 – 512)</string>
     <string name="pref_title_pebble_enable_applogs">Activa els registres de les aplicacions del rellotge</string>
-    <string name="pref_summary_pebble_enable_applogs">Produirà registres de les apps del rellotge que el Gadgetbridge guardarà (necessita reconnexió)</string>
+    <string name="pref_summary_pebble_enable_applogs">Produirà registres de les apps del rellotge que el WatchSwitcher guardarà (necessita reconnexió)</string>
     <string name="pref_title_pebble_always_ack_pebblekit">Envia l\'ACK al PebbleKit abans d\'hora</string>
     <string name="pref_summary_pebble_always_ack_pebblekit">Permetrà que missatges enviats a aplicacions de tercers siguin reconeguts sempre i immediatament</string>
     <string name="pref_title_pebble_enable_bgjs">Activa JS en segon pla</string>
@@ -162,7 +162,7 @@
     <string name="_unknown_">(desconegut)</string>
     <string name="test">Prova</string>
     <string name="test_notification">Notificació de prova</string>
-    <string name="this_is_a_test_notification_from_gadgetbridge">Això és una notificació de prova des del Gadgetbridge</string>
+    <string name="this_is_a_test_notification_from_gadgetbridge">Això és una notificació de prova des del WatchSwitcher</string>
     <string name="bluetooth_is_not_supported_">El Bluetooth no és compatible o no està implementat.</string>
     <string name="bluetooth_is_disabled_">El Bluetooth està desactivat.</string>
     <string name="tap_connected_device_for_app_mananger">Toca l\'aparell connectat per obrir el gestor d\'aplicacions</string>
@@ -170,7 +170,7 @@
     <string name="tap_connected_device_for_vibration">Toca l\'aparell per fer-lo vibrar</string>
     <string name="tap_a_device_to_connect">Toca un aparell per connectar-hi</string>
     <string name="cannot_connect_bt_address_invalid_">No es pot connectar. Potser la direcció Bluetooth és incorrecta\?</string>
-    <string name="gadgetbridge_running_generic">El Gadgetbridge està funcionant</string>
+    <string name="gadgetbridge_running_generic">El WatchSwitcher està funcionant</string>
     <string name="installing_binary_d_d">S\'està instal·lant el binari %1$d/%2$d</string>
     <string name="installation_failed_">La instal·lació ha fallat</string>
     <string name="installation_successful">Instal·lat</string>
@@ -400,7 +400,7 @@
     <string name="pref_rtl_max_line_length">Llargada màxima de línia de dreta a esquerra</string>
     <string name="pref_rtl_max_line_length_summary">Allarga o escurça les línies en què se separa el text escrit de dreta a esquerra</string>
     <string name="debugactivity_really_factoryreset_title">De debò voleu restablir als paràmetres de fàbrica\?</string>
-    <string name="debugactivity_really_factoryreset">Restablir als paràmetres de fàbrica esborrarà totes les dades de l\'aparell connectat (si és compatible). En el cas dels aparells Xiaomi o Huami, també canvia la seva adreça MAC, de manera que per al Gadgetbridge apareixeran com a un aparell nou.</string>
+    <string name="debugactivity_really_factoryreset">Restablir als paràmetres de fàbrica esborrarà totes les dades de l\'aparell connectat (si és compatible). En el cas dels aparells Xiaomi o Huami, també canvia la seva adreça MAC, de manera que per al WatchSwitcher apareixeran com a un aparell nou.</string>
     <string name="zetime_title_settings">Configuració de ZeTime</string>
     <string name="zetime_title_heartrate">Configuració del rítme cardíac</string>
     <string name="zetime_title_screentime">Durada de la pantalla encesa en segons</string>
@@ -418,7 +418,7 @@
 \nAquest microprogramari és per a la revisió del maquinari: %s</string>
     <string name="miband_pairing_using_dummy_userdata">No s\'han introduït dades vàlides. De moment es fan servir dades fictícies.</string>
     <string name="miband_pairing_tap_hint">Quan la vostra Mi Band vibri i parpallegi, toqueu-la vàries vegades seguides.</string>
-    <string name="discovery_connected_devices_hint">Feu que el vostre aparell es pugui detectar. Els aparells que ara estan connectats probablement no seran detectats. Activeu la localització (per exemple, el GPS). Desactiveu el Privacy Guard per al Gadgetbridge, perquè podria penjar-se i fer que el telèfon es reniciés. Si després d\'uns quants minuts no s\'ha trobat cap aparell, torneu-ho a provar després de reiniciar el telèfon.</string>
+    <string name="discovery_connected_devices_hint">Feu que el vostre aparell es pugui detectar. Els aparells que ara estan connectats probablement no seran detectats. Activeu la localització (per exemple, el GPS). Desactiveu el Privacy Guard per al WatchSwitcher, perquè podria penjar-se i fer que el telèfon es reniciés. Si després d\'uns quants minuts no s\'ha trobat cap aparell, torneu-ho a provar després de reiniciar el telèfon.</string>
     <string name="pref_title_dont_ack_transfer">No enviïs l\'ACK de les dades d\'activitats</string>
     <string name="pref_summary_dont_ack_transfers">Si no són notificades a la polsera, les dades d\'activitat no s\'eliminaran. Pot ser útil si feu servir el Gadgebridge junt amb altres aplicacions.</string>
     <string name="pref_summary_keep_data_on_device">Les dades d\'activitats de la Mi Band es guardaran fins i tot després de sincronitzar. Aquesta opció pot ser útil si feu servir el Gadgebridge també amb altres aplicacions. Això pot causar que el rellotge es quedi sense espai i/o deixi de sincronitzar-se correctament.</string>
@@ -427,11 +427,11 @@
     <string name="pref_summary_pebble_health_store_raw">Desa les dades \"tal qual\", tot augmentant l\'ús de la base de dades per tal de permetre possibles interpretacions més tard.</string>
     <string name="action_db_management">Gestió de dades</string>
     <string name="title_activity_db_management">Gestió de dades</string>
-    <string name="activity_db_management_import_export_explanation">Les operacions d\'exportació/importació fan servir el següent camí (vegeu a sota) cap a un directori al vostre aparell. Aquest directori és accessible des d\'altres aparells Android i des del vostre ordinador. Tingueu en compte que aquest directori i tots els seus fitxers seran esborrats si desinstal·leu Gadgetbridge. Les dades inclouen:
+    <string name="activity_db_management_import_export_explanation">Les operacions d\'exportació/importació fan servir el següent camí (vegeu a sota) cap a un directori al vostre aparell. Aquest directori és accessible des d\'altres aparells Android i des del vostre ordinador. Tingueu en compte que aquest directori i tots els seus fitxers seran esborrats si desinstal·leu WatchSwitcher. Les dades inclouen:
 \n Export_preference - configuració global
 \n Export_preference_MAC - configuració específica de l\'aparell
-\n Gadgetbridge - base de dades d\'activitat i aparell
-\n Gadgetbridge_date - base de dades exportada en una data
+\n WatchSwitcher - base de dades d\'activitat i aparell
+\n WatchSwitcher_date - base de dades exportada en una data
 \n *.gpx - gravacions GPS
 \n *.log - fitxers de registre
 \nTrobeu els vostres fitxers exportats (o deseu els fitxers que volgueu importar) aquí:</string>
@@ -567,7 +567,7 @@
     <string name="mi3_night_mode_sunset">Al capvespre</string>
     <string name="ok">D\'acord</string>
     <string name="share_log">Comparteix el registre</string>
-    <string name="share_log_warning">Si us plau, tingueu en compte que els fitxers de registre del Gadgetbridge poden contenir molta informació personal, incloent-hi, entre d\'altres, dades relacionades amb la salut, identificadors únics (com ara adreces MAC), preferències musicals, etc. Considereu editar el fitxer i suprimir aquesta informació abans d\'enviar-lo a un informe públic d\'error.</string>
+    <string name="share_log_warning">Si us plau, tingueu en compte que els fitxers de registre del WatchSwitcher poden contenir molta informació personal, incloent-hi, entre d\'altres, dades relacionades amb la salut, identificadors únics (com ara adreces MAC), preferències musicals, etc. Considereu editar el fitxer i suprimir aquesta informació abans d\'enviar-lo a un informe públic d\'error.</string>
     <string name="warning">Atenció!</string>
     <string name="preferences_led_color">Color del LED</string>
     <string name="preferences_fm_frequency">Freqüència de FM</string>
@@ -668,7 +668,7 @@
     <string name="weekstepschart_steps_a_month">Passes per mes</string>
     <string name="weeksleepchart_sleep_a_month">Son per mes</string>
     <string name="menuitem_nfc">NFC</string>
-    <string name="pref_summary_expose_hr">Permet altres aplicacions accedir a les dades de freqüència cardíaca en temps real mentre Gadgetbridge estigui connectat</string>
+    <string name="pref_summary_expose_hr">Permet altres aplicacions accedir a les dades de freqüència cardíaca en temps real mentre WatchSwitcher estigui connectat</string>
     <string name="pref_title_expose_hr">Accés a tercers a freqüència cardíaca en temps real</string>
     <string name="pref_title_use_custom_font">Utilitza un tipus de lletra personalitzat</string>
     <string name="pref_summary_use_custom_font">Activa-ho si el vostre dispositiu inclou microprogramari de tipus de lletra personalitzat amb suport per a emojis</string>
@@ -768,7 +768,7 @@
     <string name="find_my_phone_notification">Troba el meu telèfon</string>
     <string name="notification_channel_high_priority_name">Alta prioritat</string>
     <string name="pref_title_custom_deviceicon">Mostra l\'icona de notificació específica de l\'aparell</string>
-    <string name="pref_summary_custom_deviceicon">Mostra l\'icona de notificació d\'Android específica de l\'aparell enlloc de l\'icona de Gadgetbridge quan estigui connectat</string>
+    <string name="pref_summary_custom_deviceicon">Mostra l\'icona de notificació d\'Android específica de l\'aparell enlloc de l\'icona de WatchSwitcher quan estigui connectat</string>
     <string name="hr_appname_wellness">Benestar</string>
     <string name="hr_appname_workout">Entrenament</string>
     <string name="hr_appname_stopwatch">Cronòmetre</string>
@@ -848,7 +848,7 @@
     <string name="pref_sensors_bp_calibration_low">Pressió arterial diastòlica (baixa)</string>
     <string name="pref_summary_device_spec_settings_title_force_time">Força la sincronització automàtica de l\'hora al reconnectar. Les manetes analògiques poden mostrar una hora incorrecta!</string>
     <string name="pref_title_device_spec_settings_force_time">Força la sincronització de l\'hora</string>
-    <string name="pref_title_weather_summary">Usat per el proveïdor de temps de LineageOS, altres versions d\'Android requereixen fer servir una app com \"Breezy Weather\". Troba\'n més informació a la pàgina web de Gadgetbridge.</string>
+    <string name="pref_title_weather_summary">Usat per el proveïdor de temps de LineageOS, altres versions d\'Android requereixen fer servir una app com \"Breezy Weather\". Troba\'n més informació a la pàgina web de WatchSwitcher.</string>
     <string name="controlcenter_set_alias">Establir pseudònim</string>
     <string name="find_lost_device_message">Cercar %1$s\?</string>
     <string name="activity_filter_to_placeholder">avui</string>
@@ -918,7 +918,7 @@
     <string name="distanceMeters">Distància</string>
     <string name="require_location_provider">La ubicació ha d\'estar activada</string>
     <string name="about_links">Enllaços</string>
-    <string name="about_activity_title_generic">Quant a Gadgetbridge</string>
+    <string name="about_activity_title_generic">Quant a WatchSwitcher</string>
     <string name="about_version">Versió %s</string>
     <string name="about_title">Quant a</string>
     <string name="hr_widget_last_notification">Última notificació</string>
@@ -1297,7 +1297,7 @@
     <string name="watchface_setting_display_refresh_full">Actualització completa (en minuts)</string>
     <string name="sony_ambient_sound_noise_cancelling">Cancel·lació de soroll</string>
     <string name="sony_sound_position_front_right">Frontal dreta</string>
-    <string name="gpx_receiver_activity_title">Receptor GPX Gadgetbridge</string>
+    <string name="gpx_receiver_activity_title">Receptor GPX WatchSwitcher</string>
     <string name="prefs_active_noise_cancelling">Cancel·lació de soroll activa</string>
     <string name="pref_title_upper_button_function_double">Botó superior doble</string>
     <string name="pref_title_middle_button_function_double">Botó central doble</string>
@@ -1322,32 +1322,32 @@
     <string name="companiondevice_pairing">Emparellament de dispositius de companyia</string>
     <string name="qhybrid_pref_summary_external_intents">Permetre que altres aplicacions d\'Android puguin sobre/escriure fitxers</string>
     <string name="averageStride">Mitjana d\'avançada</string>
-    <string name="about_activity_title_banglejs_main">Sobre Bangle.js Gadgetbridge</string>
-    <string name="about_description_banglejs_main">L\'aplicació complementària d\'Android per a Bangle.js està construïda fonamentant-se en projecte Gadgetbridge, amb l\'afegit d\'accés a Internet .
+    <string name="about_activity_title_banglejs_main">Sobre Bangle.js WatchSwitcher</string>
+    <string name="about_description_banglejs_main">L\'aplicació complementària d\'Android per a Bangle.js està construïda fonamentant-se en projecte WatchSwitcher, amb l\'afegit d\'accés a Internet .
 \n
-\nA causa de les polítiques de la botiga del Google Play, no se\'ns permet incloure un enllaç per fer donatius a la mateixa aplicació, però si us agrada aquesta aplicació considereu fer una donació a través de la pàgina d\'inici de Gadgetbridge a continuació.</string>
+\nA causa de les polítiques de la botiga del Google Play, no se\'ns permet incloure un enllaç per fer donatius a la mateixa aplicació, però si us agrada aquesta aplicació considereu fer una donació a través de la pàgina d\'inici de WatchSwitcher a continuació.</string>
     <string name="gadgetbridge_running_banglejs_main">Bangle.js funcionant</string>
-    <string name="application_name_banglejs_main">Bangle.js Gadgetbridge</string>
-    <string name="title_activity_controlcenter_banglejs_main">Bangle.js Gadgetbridge</string>
+    <string name="application_name_banglejs_main">Bangle.js WatchSwitcher</string>
+    <string name="title_activity_controlcenter_banglejs_main">Bangle.js WatchSwitcher</string>
     <string name="appmanager_watchface_activate">Activa</string>
     <string name="custom">Personalitzat</string>
     <string name="accuracy">Precisió</string>
     <string name="gps_bds">GPS + BDS</string>
     <string name="gps">GPS</string>
-    <string name="application_name_main_nightly">Gadgetbridge (Nightly)</string>
+    <string name="application_name_main_nightly">WatchSwitcher (Nightly)</string>
     <string name="gadgetbridge_running_main_nightly">GB Nightly funcionant</string>
-    <string name="application_name_main_nopebble">Gadgetbridge (Nightly, Sense proveïdor de Pebble)</string>
-    <string name="title_activity_controlcenter_main_nopebble">Gadgetbridge Nightly Sense Pebble</string>
-    <string name="about_activity_title_main_nopebble">Sobre Gadgetbridge Nightly Sense Pebble</string>
+    <string name="application_name_main_nopebble">WatchSwitcher (Nightly, Sense proveïdor de Pebble)</string>
+    <string name="title_activity_controlcenter_main_nopebble">WatchSwitcher Nightly Sense Pebble</string>
+    <string name="about_activity_title_main_nopebble">Sobre WatchSwitcher Nightly Sense Pebble</string>
     <string name="gadgetbridge_running_main_nopebble">GB Nightly Sense Pebble funcionant</string>
-    <string name="about_activity_title_banglejs_nightly">Sobre Bangle.js Gadgetbridge (Nightly)</string>
-    <string name="title_activity_controlcenter_banglejs_nightly">Bangle.js Gadgetbridge (Nightly)</string>
+    <string name="about_activity_title_banglejs_nightly">Sobre Bangle.js WatchSwitcher (Nightly)</string>
+    <string name="title_activity_controlcenter_banglejs_nightly">Bangle.js WatchSwitcher (Nightly)</string>
     <string name="balanced">Equilibrat</string>
     <string name="power_saving">Estalvi d\'energia</string>
-    <string name="about_description_banglejs_nightly">L\'aplicació complementària d\'Android per a Bangle.js està construïda fonamentant-se en projecte Gadgetbridge, amb l\'afegit d\'accés a Internet .
+    <string name="about_description_banglejs_nightly">L\'aplicació complementària d\'Android per a Bangle.js està construïda fonamentant-se en projecte WatchSwitcher, amb l\'afegit d\'accés a Internet .
 \n
-\nA causa de les polítiques de la botiga del Google Play, no se\'ns permet incloure un enllaç per fer donatius a la mateixa aplicació, però si us agrada aquesta aplicació considereu fer una donació a través de la pàgina d\'inici de Gadgetbridge a continuació.</string>
-    <string name="about_activity_title_main_nightly">Sobre Gadgetbridge Nightly</string>
+\nA causa de les polítiques de la botiga del Google Play, no se\'ns permet incloure un enllaç per fer donatius a la mateixa aplicació, però si us agrada aquesta aplicació considereu fer una donació a través de la pàgina d\'inici de WatchSwitcher a continuació.</string>
+    <string name="about_activity_title_main_nightly">Sobre WatchSwitcher Nightly</string>
     <string name="appmanager_app_share">Comparteix</string>
     <string name="fw_upgrade_notice_amazfit_gts3">Està a punt d\'instal·lar %s microprogramari al seu Amazfit GTS 3. \n \nEl seu aparell es reiniciarà després d\'instal·lar l\'arxiu .zip. \n \nPROCEDEIXI SOTA LA SEVA RESPONSABILITAT!</string>
     <string name="fw_upgrade_notice_amazfit_gts4">Sou a punt d’instal·lar el microprogramari %s a la vostra Amazfit GTS 4.
@@ -1362,9 +1362,9 @@
 \nLa vostra polsera es reiniciarà després d’instal·lar el fitxer .zip.
 \n
 \nPROCEDIU SOTA LA VOSTRA PRÒPIA RESPONSABILITAT!</string>
-    <string name="application_name_banglejs_nightly">Bangle.js Gadgetbridge (Nightly)</string>
+    <string name="application_name_banglejs_nightly">Bangle.js WatchSwitcher (Nightly)</string>
     <string name="gadgetbridge_running_banglejs_nightly">Bangle.js Nightly funcionant</string>
-    <string name="title_activity_controlcenter_main_nightly">Gadgetbridge Nightly</string>
+    <string name="title_activity_controlcenter_main_nightly">WatchSwitcher Nightly</string>
     <string name="action_changelog">Registre de canvis</string>
     <string name="appmanager_download_started">Descàrrega de la App iniciada</string>
     <string name="appmanager_item_outdated">(Obsolet)</string>
@@ -1379,7 +1379,7 @@
     <string name="appmanager_download_app_error">Error descarregant la app</string>
     <string name="speed_first">Velocitat primer</string>
     <string name="open_fw_installer_warning_title">Avís</string>
-    <string name="about_description_main_nopebble">Substitut lliure copyleft sense núvols per a aplicacions de dispositiu Android privatives dels proveïdors. Llançaments nocturns de Gadgetbridge. No es pot instal·lar si ja tens l\'aplicació Gadgetbridge o la de Pebble, degut a un conflicte en el proveïdor de Pebble.</string>
+    <string name="about_description_main_nopebble">Substitut lliure copyleft sense núvols per a aplicacions de dispositiu Android privatives dels proveïdors. Llançaments nocturns de WatchSwitcher. No es pot instal·lar si ja tens l\'aplicació WatchSwitcher o la de Pebble, degut a un conflicte en el proveïdor de Pebble.</string>
     <string name="range_percentage_float">%1$.1f%% – %2$.1f%%</string>
     <string name="single_band">Banda única</string>
     <string name="dual_band">Banda doble</string>
@@ -1388,7 +1388,7 @@
     <string name="controlcenter_get_heartrate_measurement">Mesura el ritme cardíac</string>
     <string name="range_percentage">%1$d%% – %2$d%%</string>
     <string name="range_degrees">%1$dº – %2$dº</string>
-    <string name="about_description_main_nightly">Substitut lliure, copyleft i sense núvols per a les aplicacions privatives de dispositius Android dels fabricants. Llançaments nocturns de Gadgetbridge. No es pot instal·lar si ja tens Gadgetbridge o l\'aplicació de Pebble instal·lades, degut a un conflicte en el proveïdor de Pebble.</string>
+    <string name="about_description_main_nightly">Substitut lliure, copyleft i sense núvols per a les aplicacions privatives de dispositius Android dels fabricants. Llançaments nocturns de WatchSwitcher. No es pot instal·lar si ja tens WatchSwitcher o l\'aplicació de Pebble instal·lades, degut a un conflicte en el proveïdor de Pebble.</string>
     <string name="audio_recordings">Enregistraments d\'àudio</string>
     <string name="low_power_gps">GPS de baix consum</string>
     <string name="fw_upgrade_notice_amazfit_gtr3">Estàs a punt d’instal·lar el firmware %s al teu Amazfit GTR 3.\n\nEl teu rellotge es reiniciarà després d’instal·lar el fitxer .zip.\n\n¡PROCEEDEIX SOTA EL TEU RISC!</string>
@@ -1612,7 +1612,7 @@
     <string name="pref_summary_notification_times_enabled">Només enviar notificacions entre horaris específics</string>
     <string name="pref_title_notification_media_ignores_application_list">Les notificacions de mitjans d\'audio ignoren la llista d\'aplicacions</string>
     <string name="pref_summary_notification_media_ignores_application_list">Processar les notificacions multimèdia abans de la llista d\'aplicacions. Si aquesta preferència no està activada, les aplicacions multimèdia han d\'estar permeses a la llista d\'aplicacions perquè els controls multimèdia funcionin al dispositiu.</string>
-    <string name="pref_summary_banglejs_text_bitmap">Si una paraula no es pot renderitzar amb la font del rellotge, renderitza-la com a mapa de bits a Gadgetbridge i mostra el mapa de bits al rellotge</string>
+    <string name="pref_summary_banglejs_text_bitmap">Si una paraula no es pot renderitzar amb la font del rellotge, renderitza-la com a mapa de bits a WatchSwitcher i mostra el mapa de bits al rellotge</string>
     <string name="pref_title_banglejs_txt_bitmap_size">Mida dels mapes de bits de text</string>
     <string name="pref_summary_banglejs_txt_bitmap_size">Mida per al renderitzat de text bitmap</string>
     <string name="pref_summary_banglejs_phone_gps_enbale">Utilitza les dades GPS del telèfon per sobreescriure les dades GPS del dispositiu bangle</string>

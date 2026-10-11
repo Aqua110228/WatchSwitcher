@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="application_name_generic">Gadgetbridge</string>
-    <string name="title_activity_controlcenter_generic">Gadgetbridge</string>
+    <string name="application_name_generic">WatchSwitcher</string>
+    <string name="title_activity_controlcenter_generic">WatchSwitcher</string>
     <string name="action_settings">Axustes</string>
     <string name="action_debug">Depuración</string>
     <string name="action_quit">Saír</string>
@@ -39,11 +39,11 @@
     <string name="title_activity_fw_app_insaller">Instalador de FW/App</string>
     <string name="fw_upgrade_notice">Está a piques de instalar o firmware %s.</string>
     <string name="fw_multi_upgrade_notice">Está a piques de instalar os firmwares %1$s e %2$s no canto dos que están actualmente na súa Mi Band.</string>
-    <string name="miband_firmware_known">Este firmware foi probado e é compatíbel co Gadgetbridge.</string>
-    <string name="miband_firmware_unknown_warning">Este firmware non foi probado e pode non ser compatíbel co Gadgetbridge. 
+    <string name="miband_firmware_known">Este firmware foi probado e é compatíbel co WatchSwitcher.</string>
+    <string name="miband_firmware_unknown_warning">Este firmware non foi probado e pode non ser compatíbel co WatchSwitcher. 
 \n 
 \nRECOMENDASE QUE NON o instale!</string>
-    <string name="miband_firmware_suggest_whitelist">Se aínda así quere proceder e todo continúa a funcionar normalmente, por favor avise aos programadores do Gadgetbridge para que permitan a versión %s do firmware.</string>
+    <string name="miband_firmware_suggest_whitelist">Se aínda así quere proceder e todo continúa a funcionar normalmente, por favor avise aos programadores do WatchSwitcher para que permitan a versión %s do firmware.</string>
     <string name="title_activity_settings">Axustes</string>
     <string name="pref_header_general">Axustes xerais</string>
     <string name="pref_title_general_autoconnectonbluetooth">Conectar ao dispositivo ao activar o Bluetooth</string>
@@ -58,7 +58,7 @@
     <string name="pref_theme_light">Claro</string>
     <string name="pref_theme_dark">Escuro</string>
     <string name="pref_title_language">Idioma</string>
-    <string name="pref_title_minimize_priority">Ocultar a notificación de Gadgetbridge</string>
+    <string name="pref_title_minimize_priority">Ocultar a notificación de WatchSwitcher</string>
     <string name="pref_summary_minimize_priority_off">Amosar icono na barra de estado e notificación na pantalla de bloqueo</string>
     <string name="pref_summary_minimize_priority_on">Ocultar a icona na barra de estado e notificación na pantalla de bloqueo</string>
     <string name="pref_header_notifications">Notificacións</string>
@@ -118,7 +118,7 @@
     <string name="pref_title_pebble_forceuntested">Habilitar características non probadas</string>
     <string name="pref_title_pebble_forcele">Preferir sempre BLE</string>
     <string name="pref_title_pebble_enable_applogs">Activar rexistro das Apps do dispositivo</string>
-    <string name="pref_summary_pebble_enable_applogs">Causa que os rexistros das apps do reloxo sexan gardados polo Gadgetbridge (necesita reconectar)</string>
+    <string name="pref_summary_pebble_enable_applogs">Causa que os rexistros das apps do reloxo sexan gardados polo WatchSwitcher (necesita reconectar)</string>
     <string name="pref_title_pebble_reconnect_attempts">Intentos de reconexión</string>
     <string name="pref_title_unit_system">Unidades</string>
     <string name="pref_title_timeformat">Formato de hora</string>
@@ -131,7 +131,7 @@
     <string name="_unknown_">(descoñecido)</string>
     <string name="test">Probar</string>
     <string name="test_notification">Probar notificación</string>
-    <string name="this_is_a_test_notification_from_gadgetbridge">Esta é unha notificación de proba desde Gadgetbridge</string>
+    <string name="this_is_a_test_notification_from_gadgetbridge">Esta é unha notificación de proba desde WatchSwitcher</string>
     <string name="bluetooth_is_not_supported_">O Bluetooth non está soportado.</string>
     <string name="bluetooth_is_disabled_">O Bluetooh está desactivado.</string>
     <string name="tap_connected_device_for_app_mananger">Toque nun dispositivo conectado para xestionar as Apps</string>
@@ -139,7 +139,7 @@
     <string name="tap_connected_device_for_vibration">Toque nun dispositivo conectado para facelo Vibrar</string>
     <string name="tap_a_device_to_connect">Toque nun dispositivo para conectar</string>
     <string name="cannot_connect_bt_address_invalid_">Non foi posíbel conectar. Enderezo Bluetooth inválido?</string>
-    <string name="gadgetbridge_running_generic">Gadgetbridge funcionando</string>
+    <string name="gadgetbridge_running_generic">WatchSwitcher funcionando</string>
     <string name="installing_binary_d_d">Instalando binario %1$d/%2$d</string>
     <string name="installation_failed_">Fallou a instalación</string>
     <string name="installation_successful">Instalado</string>
@@ -189,7 +189,7 @@
     <string name="miband_pairing_using_dummy_userdata">Non se proporcionaron datos de usuario válidos, entrementres usaranse dados ficticios.</string>
     <string name="miband_pairing_tap_hint">Cando a súa MiBand vibre e parpadee, toque nela algunhas veces seguidas.</string>
     <string name="appinstaller_install">Instalar</string>
-    <string name="discovery_connected_devices_hint">Torne o seu dispositivo visíbel. Os dispositivos actualmente vinculados non son normalmente descubertos. Active a localización (i.e, GPS) no Android 6+. Desactive tamén a Protección da Privacidade para o Gadgetbridge, pois esta poderá bloquear e levar ao reinicio do seu teléfono. Se despois de algúns minutos o dispositivo non foi encontrado, tente outra vez após reiniciar o teléfono.</string>
+    <string name="discovery_connected_devices_hint">Torne o seu dispositivo visíbel. Os dispositivos actualmente vinculados non son normalmente descubertos. Active a localización (i.e, GPS) no Android 6+. Desactive tamén a Protección da Privacidade para o WatchSwitcher, pois esta poderá bloquear e levar ao reinicio do seu teléfono. Se despois de algúns minutos o dispositivo non foi encontrado, tente outra vez após reiniciar o teléfono.</string>
     <string name="discovery_note">Nota:</string>
     <string name="candidate_item_device_image">Imaxe do dispositivo</string>
     <string name="miband_prefs_alias">Nome/Alcume</string>
@@ -460,7 +460,7 @@
     <string name="kind_watchface">Watchface</string>
     <string name="choose_auto_export_location">Escolle lugar para exportar</string>
     <string name="spanish">Castelán</string>
-    <string name="notification_channel_name">Notificacións do Gadgetbridge</string>
+    <string name="notification_channel_name">Notificacións do WatchSwitcher</string>
     <string name="on">Aceso</string>
     <string name="controlcenter_start_activity_tracks">Os teus rexistros de actividade</string>
     <string name="activity_type_not_measured">Sen medir</string>
@@ -504,11 +504,11 @@
     <string name="controlcenter_change_fm_frequency">Cambiar frecuencia FM</string>
     <string name="controlcenter_change_led_color">Cambiar cor LED</string>
     <string name="find_lost_device_message">Buscar a %1$s\?</string>
-    <string name="about_activity_title_generic">Sobre Gadgetbridge</string>
+    <string name="about_activity_title_generic">Sobre WatchSwitcher</string>
     <string name="about_description_generic">Aplicación libre e sen servidor substituta das aplicacións Android de código propietario dos fabricantes de dispositivos.</string>
-    <string name="application_name_banglejs_main">Bangle.js Gadgetbridge</string>
-    <string name="title_activity_controlcenter_banglejs_main">Bangle.js Gadgetbridge</string>
-    <string name="about_activity_title_banglejs_main">Sobre Bangle.js Gadgetbridge</string>
+    <string name="application_name_banglejs_main">Bangle.js WatchSwitcher</string>
+    <string name="title_activity_controlcenter_banglejs_main">Bangle.js WatchSwitcher</string>
+    <string name="about_activity_title_banglejs_main">Sobre Bangle.js WatchSwitcher</string>
     <string name="action_changelog">Rexistro de cambios</string>
     <string name="title_activity_gps_track_installer">Instalador da ruta GPS</string>
     <string name="charts_activity_list">Lista de actividades</string>
@@ -534,7 +534,7 @@
     <string name="about_additional_contributions">Damos as grazas a todas as persoas colaboradoras que non aparecen na lista, pola súa contribución ao código, con traducións, axuda, ideas, motivación, informe de fallos, cartos… ✊</string>
     <string name="about_links">Ligazóns</string>
     <string name="pref_show_changelog">Mostrar os cambios na app ao iniciar</string>
-    <string name="pref_show_changelog_summary">Mostrar o rexistro de cambios desde a última versión após a actualización de Gadgetbridge</string>
+    <string name="pref_show_changelog_summary">Mostrar o rexistro de cambios desde a última versión após a actualización de WatchSwitcher</string>
     <string name="distanceMeters">Distancia</string>
     <string name="workout_cadence">Cadencia</string>
     <string name="maxSpeed">Máxima</string>
@@ -570,7 +570,7 @@
     <string name="huawei_trusleep_summary">Vixía a calidade do teu sono en tempo real.</string>
     <string name="huawei_trusleep_summary_light">Vixilancia mellorada do sono</string>
     <string name="pref_summary_opentracks_packagename">Utilizado para iniciar/deter a gravación de rutas GPS en aplicacións de actividade externas.</string>
-    <string name="pref_summary_opentracks_packagename_not_installed">Instalar Opentracks para iniciar/deter a gravación de rutas GPS desde Gadgetbridge.</string>
+    <string name="pref_summary_opentracks_packagename_not_installed">Instalar Opentracks para iniciar/deter a gravación de rutas GPS desde WatchSwitcher.</string>
     <string name="controlcenter_set_parent_folder">Cartafol de grupo</string>
     <string name="error_setting_parent_folder">Erro ao establecer o cartafol do grupo: %s</string>
     <string name="changelog_full_title">Rexistro de cambios</string>
@@ -684,13 +684,13 @@
         <item quantity="other">ten %d caracteres de máis</item>
     </plurals>
     <string name="first_start_overview_title">Seccións</string>
-    <string name="first_start_overview_desc">Gadgetbridge ten dúas pantallas principais, cada unha co seu propósito.</string>
+    <string name="first_start_overview_desc">WatchSwitcher ten dúas pantallas principais, cada unha co seu propósito.</string>
     <string name="first_start_overview_dashboard">O taboleiro mostra un resumo xeral de como está a ser o teu día. A vista do calendario mostra o estado dos teus obxectivos para o mes completo.</string>
     <string name="first_start_overview_devices">A vista de dispositivos mostra todos os dispositivos que configuraches e o seu estado, e tamén proporciona acceso a funcións específicas do dispositivo como gráficos detallados, axustes, apps e alarmas.</string>
     <string name="first_start_open_source_title">Código Aberto</string>
-    <string name="first_start_open_source_text">Gadgetbridge é unha aplicación de código aberto. Desenvólvea a comunidade, para a comunidade.\n\nAgradecemos calquera colaboración a través do código, documentación, realizando probas e doazóns.\n\nGadgetbridge non ten publicidade e tampouco fai seguimento. Garda os teus datos de xeito local no teu dispositivo Android, polo que é 100% respectuosa coa privacidade.\n\nVisita o noso sitio web para ter máis información, ler a documentación e ver as nosas canles de comunicación.</string>
+    <string name="first_start_open_source_text">WatchSwitcher é unha aplicación de código aberto. Desenvólvea a comunidade, para a comunidade.\n\nAgradecemos calquera colaboración a través do código, documentación, realizando probas e doazóns.\n\nWatchSwitcher non ten publicidade e tampouco fai seguimento. Garda os teus datos de xeito local no teu dispositivo Android, polo que é 100% respectuosa coa privacidade.\n\nVisita o noso sitio web para ter máis información, ler a documentación e ver as nosas canles de comunicación.</string>
     <string name="first_start_permissions_title">Permisos</string>
-    <string name="first_start_permissions_desc">Gadgetbridge precisa acceder a moitos servizos para funcionar correctamente. Revisa os permisos e o seu propósito.</string>
+    <string name="first_start_permissions_desc">WatchSwitcher precisa acceder a moitos servizos para funcionar correctamente. Revisa os permisos e o seu propósito.</string>
     <string name="first_start_permissions_request_all_button">Solicitar todos os pemisos</string>
     <string name="first_start_permissions_do_not_ask_again">Non volver preguntar</string>
     <string name="first_start_permissions_request_button">Solicitar</string>

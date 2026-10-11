@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="application_name_generic">Gadgetbridge</string>
-    <string name="title_activity_controlcenter_generic">Gadgetbridge</string>
+    <string name="application_name_generic">WatchSwitcher</string>
+    <string name="title_activity_controlcenter_generic">WatchSwitcher</string>
     <string name="action_settings">Seadistused</string>
     <string name="action_debug">Silumine</string>
     <string name="action_quit">Välju</string>
@@ -48,27 +48,27 @@
 \n 
 \nJÄTKATE OMAL RIISIKOL!</string>
     <string name="fw_multi_upgrade_notice">Oled paigaldamas %1$s ja %2$s püsivara selle asemel, mis praegu sinu Mi Bandis kasutusel on.</string>
-    <string name="miband_firmware_known">See püsivara on testitud ja on teadaolevalt sobiv koos Gadgetbridge\'iga kasutamiseks.</string>
-    <string name="miband_firmware_unknown_warning">See püsivara on testimata ja ei pruugi olla Gadgetbridge\'iga ühilduv. 
+    <string name="miband_firmware_known">See püsivara on testitud ja on teadaolevalt sobiv koos WatchSwitcher\'iga kasutamiseks.</string>
+    <string name="miband_firmware_unknown_warning">See püsivara on testimata ja ei pruugi olla WatchSwitcher\'iga ühilduv. 
 \n 
 \nEi soovita seda teie Mi Bandile paigaldada!</string>
     <string name="title_activity_settings">Seaded</string>
     <string name="pref_header_general">Üldised seaded</string>
-    <string name="pref_title_general_autoconnectonbluetooth">Bluetoothi sisselülitamisel loo ühendus Gadgetbridge\'i seadme(te)ga</string>
+    <string name="pref_title_general_autoconnectonbluetooth">Bluetoothi sisselülitamisel loo ühendus WatchSwitcher\'i seadme(te)ga</string>
     <string name="pref_title_general_autostartonboot">Käivitu automaatselt</string>
     <string name="pref_title_general_autoreconnect">Taasühendu automaatselt</string>
     <string name="pref_title_audio_player">Eelistatud heli mängija</string>
     <string name="pref_default">Vaikeväärtus</string>
     <string name="pref_header_datetime">Kuupäev ja kellaaeg</string>
     <string name="pref_title_datetime_syctimeonconnect">Sünkrooni aega</string>
-    <string name="pref_summary_datetime_syctimeonconnect">Sünkrooni kellaaeg Gadgetbridge seadme(te)ga ühendumise ajal, samuti siis kui Androidi seadmes aeg või ajavöönd muutub ning samuti perioodiliselt</string>
-    <string name="miband_firmware_suggest_whitelist">Kui sa siiski soovid jätkata ja seade jätkab tööd ka hiljem, palun annna Gadgetbridge\'i arendajatele teada, et nad lisaksid %s versiooni toetatud püsivarade loendisse.</string>
+    <string name="pref_summary_datetime_syctimeonconnect">Sünkrooni kellaaeg WatchSwitcher seadme(te)ga ühendumise ajal, samuti siis kui Androidi seadmes aeg või ajavöönd muutub ning samuti perioodiliselt</string>
+    <string name="miband_firmware_suggest_whitelist">Kui sa siiski soovid jätkata ja seade jätkab tööd ka hiljem, palun annna WatchSwitcher\'i arendajatele teada, et nad lisaksid %s versiooni toetatud püsivarade loendisse.</string>
     <string name="pref_title_charts_swipe">Luba viiped vasakule/paremale graafikute vaates</string>
     <string name="pref_title_theme">Kujundus</string>
     <string name="pref_theme_light">Hele kujundus</string>
     <string name="pref_theme_dark">Tume kujundus</string>
     <string name="pref_title_language">Keel</string>
-    <string name="pref_title_minimize_priority">Peida Gadgetbridge\'i teavitus</string>
+    <string name="pref_title_minimize_priority">Peida WatchSwitcher\'i teavitus</string>
     <string name="pref_header_notifications">Teavitused</string>
     <string name="pref_title_notifications_repetitions">Korduseid</string>
     <string name="pref_title_notifications_call">Telefonikõned</string>
@@ -158,7 +158,7 @@
     <string name="controlcenter_change_led_color">Muuda LED-i värvi</string>
     <string name="controlcenter_change_fm_frequency">Muuda FM-sagedust</string>
     <string name="debugactivity_really_factoryreset_title">Kas taastada algseaded\?</string>
-    <string name="debugactivity_really_factoryreset">Algseadete taastamine kustutab kõik andmed ühendatud seadmetest endist (kui võimalik). Xiaomi/Huami seadmed muudavad ka Bluetooth MAC aadressi ja Gadgetbridge tuvastab need edaspidi uute seadmetena.</string>
+    <string name="debugactivity_really_factoryreset">Algseadete taastamine kustutab kõik andmed ühendatud seadmetest endist (kui võimalik). Xiaomi/Huami seadmed muudavad ka Bluetooth MAC aadressi ja WatchSwitcher tuvastab need edaspidi uute seadmetena.</string>
     <string name="pref_title_support_voip_calls">Luba VoIP rakenduse kõned</string>
     <string name="pref_title_rtl">Paremalt vasakule</string>
     <string name="pref_summary_rtl">Luba see, kui seade ei saa kuvada paremalt vasakule keeli</string>
@@ -223,7 +223,7 @@
     <string name="_unknown_">(teadmata)</string>
     <string name="test">Test</string>
     <string name="test_notification">Testi märguande</string>
-    <string name="this_is_a_test_notification_from_gadgetbridge">See on Gadgetbridge test teavitus</string>
+    <string name="this_is_a_test_notification_from_gadgetbridge">See on WatchSwitcher test teavitus</string>
     <string name="bluetooth_is_not_supported_">Bluetooth ei ole toetatud.</string>
     <string name="bluetooth_is_disabled_">Bluetooth on keelatud.</string>
     <string name="tap_connected_device_for_app_mananger">Puuduta rakenduste halduri jaoks ühendatud seadet</string>
@@ -231,7 +231,7 @@
     <string name="tap_connected_device_for_vibration">Puuduta ühendatud seadet värina tekitamiseks</string>
     <string name="tap_a_device_to_connect">Puuduta seadet, et ühendada</string>
     <string name="cannot_connect_bt_address_invalid_">Ei saa ühendust. Vigane bluetooth aadress\?</string>
-    <string name="gadgetbridge_running_generic">Gadgetbridge töötab</string>
+    <string name="gadgetbridge_running_generic">WatchSwitcher töötab</string>
     <string name="installing_binary_d_d">Binaarfaili %1$d/%2$d paigaldamine</string>
     <string name="installation_failed_">Paigaldamine nurjus</string>
     <string name="installation_successful">Paigaldatud</string>
@@ -476,7 +476,7 @@
     <string name="pref_summary_pebble_always_ack_pebblekit">Märgi sõnumid kolmandate osapoolte rakendustele alati koheselt kättesaaduks</string>
     <string name="pref_title_pebble_always_ack_pebblekit">Märgi PebbleKit sõnumid enneaegselt kättesaaduks</string>
     <string name="pref_title_expose_hr">Kolmandate osapoolte juurdepääs reaalajas HR-ile</string>
-    <string name="pref_summary_expose_hr">Võimaldab teistel rakendustel juurdepääsu HR-andmetele reaalajas, kui Gadgetbridge on ühendatud</string>
+    <string name="pref_summary_expose_hr">Võimaldab teistel rakendustel juurdepääsu HR-andmetele reaalajas, kui WatchSwitcher on ühendatud</string>
     <string name="pref_summary_use_custom_font">Lülitage see sisse, kui seadmel on emoji font paigaldatud</string>
     <string name="pref_summary_authkey">Muutke autentimisvõti samasuguseks kõigis oma Androidi seadmetes, millega soovite ühenduse luua. Kõigi seadmete eelmine vaikevõti on 0123456789@ABCDE</string>
     <string name="pref_summary_allow_high_mtu">Suurendab edastuskiirust, kuid mõnes Androidi seadmes see ei pruugi töötada.</string>
@@ -524,8 +524,8 @@
     <string name="pref_summary_relax_firmware_checks">Lõdvenda püsivarale rakendatavaid kontrolle</string>
     <string name="pref_title_sync_caldendar">Sünkrooni kalendrisündmused</string>
     <string name="pref_summary_sync_calendar">Lülitab sisse kalendri märguanded, isegi siis kui seade pole ühenduses</string>
-    <string name="pref_summary_custom_deviceicon">Kui seade on ühendatud, siis näita teavitustes Gadgetbridge\'i ikooni asemel seadmekohast ikooni</string>
-    <string name="pref_title_weather_summary">Kasutatakse LineageOS-i süsteemi poolt pakutava ilmateate jaoks, teised Androidi versioonid peavad kasutama näiteks rakendust „Breezy Weather“. Lisainfo Gadgetbridge\'i vikis.</string>
+    <string name="pref_summary_custom_deviceicon">Kui seade on ühendatud, siis näita teavitustes WatchSwitcher\'i ikooni asemel seadmekohast ikooni</string>
+    <string name="pref_title_weather_summary">Kasutatakse LineageOS-i süsteemi poolt pakutava ilmateate jaoks, teised Androidi versioonid peavad kasutama näiteks rakendust „Breezy Weather“. Lisainfo WatchSwitcher\'i vikis.</string>
     <string name="fw_upgrade_notice_amazfit_trex">Olete paigaldamas %s püsivara enda Amazfit T-Rex\'ile. 
 \n 
 \nPalun veenduge, et enne paigaldate .fw faili, pärast seda .res faili ja viimasena .gps faili. Teie kell taaskäivitub pärast .fw faili paigaldust. 
@@ -670,7 +670,7 @@
     <string name="about_contributors">Kaasautorid</string>
     <string name="about_core_team_title">Tuumiktiim (järjestatud esimese koodirea kuupäeva järgi)</string>
     <string name="about_description_generic">Tasuta ja pilvevaba asendus sinu kantavate nutiseadmete ja -vidinate tootjate rakendustele.</string>
-    <string name="about_activity_title_generic">Gadgetbridge\'ist</string>
+    <string name="about_activity_title_generic">WatchSwitcher\'ist</string>
     <string name="about_title">Rakenduse teave</string>
     <string name="hr_appname_stopwatch">Stopper</string>
     <string name="hr_appname_workout">Trenn</string>
@@ -795,7 +795,7 @@
     <string name="watchface_widget_type_heart_rate">Pulsisagedus</string>
     <string name="button_watchface_preview">Eelvaata kellast</string>
     <string name="pref_dashboard_widget_today_24h_title">24h režiim</string>
-    <string name="pref_dashboard_first_summary">Gadgetbridge\'i käivitumisel kuva seadmete akna asemel juhtpaneel</string>
+    <string name="pref_dashboard_first_summary">WatchSwitcher\'i käivitumisel kuva seadmete akna asemel juhtpaneel</string>
     <string name="pref_dashboard_select_devices_title">Vali seadmed…</string>
     <string name="pref_dashboard_cards_title">Kuva kaartidel vidinad</string>
     <string name="pref_dashboard_devices_to_include">Kaasatavad seadmed</string>
@@ -807,7 +807,7 @@
     <string name="pref_dashboard_widget_today_title">Tegevusgraafik</string>
     <string name="pref_dashboard_all_devices_summary">Ühenda kõigi lisatud seadmete aktiivsuse andmed juhtpaneelil kuvatavaks kogusummaks</string>
     <string name="bottom_nav_dashboard">Juhtpaneel</string>
-    <string name="first_start_overview_desc">Gadgetbridge omab kaks peamist vaadet, millel mõlemal on oma eesmärk.</string>
+    <string name="first_start_overview_desc">WatchSwitcher omab kaks peamist vaadet, millel mõlemal on oma eesmärk.</string>
     <string name="pref_dashboard_widgets_order_summary">Vali, millised vidinad lubatakse ja millises järjekorras neid juhtpaneelil kuvatakse</string>
     <string name="pref_dashboard_widget_goals_chart_title">Eesmärkide tabel</string>
     <string name="pref_dashboard_select_devices_summary">Ühenda valitud seadmete aktiivsuse andmed juhtpaneelil kuvatavaks kogusummaks</string>
@@ -826,9 +826,9 @@
     <string name="first_start_overview_title">Ülevaade</string>
     <string name="first_start_welcome_title">Tere tulemast</string>
     <string name="pref_dashboard_widget_today_yesterday_data_title">Eilsed andmed</string>
-    <string name="title_activity_controlcenter_main_nightly">Gadgetbridge Nightly</string>
-    <string name="application_name_main_nightly">Gadgetbridge (igaöine testversioon)</string>
-    <string name="about_activity_title_main_nightly">Gadgetbridge Nightly teave</string>
+    <string name="title_activity_controlcenter_main_nightly">WatchSwitcher Nightly</string>
+    <string name="application_name_main_nightly">WatchSwitcher (igaöine testversioon)</string>
+    <string name="about_activity_title_main_nightly">WatchSwitcher Nightly teave</string>
     <string name="pref_dashboard_widget_today_yesterday_data_summary">Kuva eilsed andmed praeguse kellaaja ja kesköö vahelisel ajal</string>
     <string name="pref_dashboard_widget_today_time_indicator_summary">Kuva praegusel kellaajal indikaator, et eilse ja tänase andmed visuaalselt eraldada</string>
     <string name="pref_dashboard_widget_today_time_indicator_title">Praeguse aja indikaator</string>
@@ -885,23 +885,23 @@
     <string name="fw_upgrade_notice_amazfitbip3">Oled paigaldamas %s püsivara oma Amazfit Bip 3 kellale.\n\nPaigalda .fw fail ja pärast seda .res fail. Pärast .fw faili paigaldamist kell taaskäivitub.\n\nMärkus: .res faili ei pea paigaldama, kui tegu on juba paigaldatud versiooniga.\n\nJÄTKA OMAL VASTUTUSEL!</string>
     <string name="fw_upgrade_notice_amazfitbip3pro">Oled paigaldamas %s püsivara oma Amazfit Bip 3 PRO kellale.\n\nPaigalda .fw fail ja pärast seda .res fail. Pärast .fw faili paigaldamist kell taaskäivitub.\n\nMärkus: .res faili ei pea paigaldama, kui tegu on juba paigaldatud versiooniga..\n\nJÄTKA OMAL VASTUTUSEL!</string>
     <string name="pref_summary_notification_wake_on_open">Ärata ja ava Android-seade, kui nutiseade saadab tagasi vastuse OPEN. Peab olema usaldusväärses olekus.</string>
-    <string name="notification_gps_title">Gadgetbridge GPS</string>
-    <string name="huawei_trusleep_warning">Hoiatus: TruSleep™ pole täielikult implementeeritud. Mõne seadme puhul saad ta sisse lülitada ja siis kuvatakse Gadgetbridge\'is kogu uni kerge unena!</string>
-    <string name="pref_theme_dynamic_colors_not_available_warning">Dünaamilised värvid pole sinu seadmes saadaval, seda funktsiooni toetab ainult Android 12+. Gadgetbridge kasutab Material 3 vaikevärve.</string>
-    <string name="share_log_warning">Pea meeles, et Gadgetbridge logib failid, mis võivad sisaldada palju isiklikku teavet, sealhulgas terviseandmeid, kordumatuid identifikaatoreid (nt seadme MAC-aadress), muusikaeelistusi jne. Kaalu faili muutmist ja selle teabe eemaldamist enne faili saatmist avalikule probleemiaruandele.</string>
-    <string name="pref_show_changelog_summary">Kuva pärast uuendamist Gadgetbridge\'i muudatuste logi alates viimasest versioonist</string>
-    <string name="first_start_permissions_desc">Gadgetbridge vajab kõigi oma funktsioonide täitmiseks palju õigusi. Vaata allolevad load ja nende eesmärgid üle.</string>
+    <string name="notification_gps_title">WatchSwitcher GPS</string>
+    <string name="huawei_trusleep_warning">Hoiatus: TruSleep™ pole täielikult implementeeritud. Mõne seadme puhul saad ta sisse lülitada ja siis kuvatakse WatchSwitcher\'is kogu uni kerge unena!</string>
+    <string name="pref_theme_dynamic_colors_not_available_warning">Dünaamilised värvid pole sinu seadmes saadaval, seda funktsiooni toetab ainult Android 12+. WatchSwitcher kasutab Material 3 vaikevärve.</string>
+    <string name="share_log_warning">Pea meeles, et WatchSwitcher logib failid, mis võivad sisaldada palju isiklikku teavet, sealhulgas terviseandmeid, kordumatuid identifikaatoreid (nt seadme MAC-aadress), muusikaeelistusi jne. Kaalu faili muutmist ja selle teabe eemaldamist enne faili saatmist avalikule probleemiaruandele.</string>
+    <string name="pref_show_changelog_summary">Kuva pärast uuendamist WatchSwitcher\'i muudatuste logi alates viimasest versioonist</string>
+    <string name="first_start_permissions_desc">WatchSwitcher vajab kõigi oma funktsioonide täitmiseks palju õigusi. Vaata allolevad load ja nende eesmärgid üle.</string>
     <string name="permission_contacts_summary">Vajalik kontaktide edastamiseks nutividinatesse</string>
-    <string name="first_start_open_source_text">Gadgetbridge on avatud lähtekoodiga rakendus. Selle on välja töötanud kogukond, kogukonna jaoks.\n\nKõik on oodatud koodi kirjutamise, dokumenteerimise, testimise ja annetuste kaudu panustama.\n\nGadgetbridge ei sisalda reklaame ega jälgimist. Rakendus hoiab su andmed sinu Android-seadmes kohapeal, seega on ta 100% privaatsussõbralik.\n\nLisateabe, dokumentatsiooni ja meie suhtluskanalite linkide saamiseks külasta meie veebilehte.</string>
+    <string name="first_start_open_source_text">WatchSwitcher on avatud lähtekoodiga rakendus. Selle on välja töötanud kogukond, kogukonna jaoks.\n\nKõik on oodatud koodi kirjutamise, dokumenteerimise, testimise ja annetuste kaudu panustama.\n\nWatchSwitcher ei sisalda reklaame ega jälgimist. Rakendus hoiab su andmed sinu Android-seadmes kohapeal, seega on ta 100% privaatsussõbralik.\n\nLisateabe, dokumentatsiooni ja meie suhtluskanalite linkide saamiseks külasta meie veebilehte.</string>
     <string name="permission_background_location_summary">Bluetooth seadmete otsimine taustal ja asukoha saatmine määratud nutiseadmetele</string>
     <string name="permission_call_phone_summary">Telefonikõnede algatamine nutiseadmetest</string>
     <string name="permission_calendar_summary">Vajalik kalendreiteabe edastamiseks nutividinatesse</string>
     <string name="permission_answer_phone_calls_summary">Telefonikõnedele vastamine nutiseadmetes</string>
     <string name="permission_receive_sms_summary">SMS sõnumite edastamiseks nutividinatesse</string>
     <string name="permission_notifications_summary">Märguannete edastamine ühendatud nutiseadmetele</string>
-    <string name="pref_force_connection_type_description">Võimalik, et saad oma seadme Gadgetbridge\'iga tööle panna sundides kasutama õiget ühenduse tüüpi</string>
+    <string name="pref_force_connection_type_description">Võimalik, et saad oma seadme WatchSwitcher\'iga tööle panna sundides kasutama õiget ühenduse tüüpi</string>
     <string name="prompt_restart_gadgetbridge">Jõustamiseks taaskäivita GB.</string>
-    <string name="pref_theme_dynamic_colors_explanation">Märkus: Dünaamiliste värvide jaoks pead Androidi stiili seadetes lubama taustapildi värvid või värvipaleti. Kui seda ei tehta, kasutab Gadgetbridge Material 3 vaikevärve.</string>
+    <string name="pref_theme_dynamic_colors_explanation">Märkus: Dünaamiliste värvide jaoks pead Androidi stiili seadetes lubama taustapildi värvid või värvipaleti. Kui seda ei tehta, kasutab WatchSwitcher Material 3 vaikevärve.</string>
     <string name="permission_process_outgoing_calls_summary">Väljamineva kõne numbri lugemine selle kuvamiseks nutiseadmes</string>
     <string name="permission_read_call_log_summary">Vajalik kõnelogi edastamiseks nutividinatesse</string>
     <string name="permission_send_sms_summary">SMS-ide (eelsalvestatud vastus) saatmine nutividinatest</string>
@@ -950,8 +950,8 @@
     <string name="prefs_heartrate_alert_low_threshold">Madala pulsi hoiatuslävi</string>
     <string name="getting_heart_rate">Mõõtmine</string>
     <string name="heart_rate_result">Mõõtmistulemused</string>
-    <string name="application_name_banglejs_main">Bangle.js Gadgetbridge</string>
-    <string name="title_activity_controlcenter_banglejs_main">Bangle.js Gadgetbridge</string>
+    <string name="application_name_banglejs_main">Bangle.js WatchSwitcher</string>
+    <string name="title_activity_controlcenter_banglejs_main">Bangle.js WatchSwitcher</string>
     <string name="audio_recordings">Helisalvestised</string>
     <string name="minutes_6">6 minutit</string>
     <string name="minutes_7">7 minutit</string>
@@ -1008,12 +1008,12 @@
         <item quantity="one">%d päev</item>
         <item quantity="other">%d päeva</item>
     </plurals>
-    <string name="about_activity_title_banglejs_main">Rakenduse teave: Bangle.js Gadgetbridge</string>
-    <string name="gadgetbridge_running_banglejs_main">Bangle.js Gadgetbridge on töös</string>
-    <string name="application_name_banglejs_nightly">Bangle.js Gadgetbridge (igaöine testversioon)</string>
-    <string name="title_activity_controlcenter_banglejs_nightly">Bangle.js Gadgetbridge (igaöine testversioon)</string>
-    <string name="about_activity_title_banglejs_nightly">Rakenduse teave: Bangle.js Gadgetbridge (igaöine testversioon)</string>
-    <string name="gadgetbridge_running_banglejs_nightly">Bangle.js Gadgetbridge (igaöine testversioon) on töös</string>
+    <string name="about_activity_title_banglejs_main">Rakenduse teave: Bangle.js WatchSwitcher</string>
+    <string name="gadgetbridge_running_banglejs_main">Bangle.js WatchSwitcher on töös</string>
+    <string name="application_name_banglejs_nightly">Bangle.js WatchSwitcher (igaöine testversioon)</string>
+    <string name="title_activity_controlcenter_banglejs_nightly">Bangle.js WatchSwitcher (igaöine testversioon)</string>
+    <string name="about_activity_title_banglejs_nightly">Rakenduse teave: Bangle.js WatchSwitcher (igaöine testversioon)</string>
+    <string name="gadgetbridge_running_banglejs_nightly">Bangle.js WatchSwitcher (igaöine testversioon) on töös</string>
     <string name="fw_upgrade_notice_amazfit_band7">Oled paigaldamas %s püsivara oma Amazfit Band 7-le.\n\nPärast .zip faili paigaldamist kell taaskäivitub.\n\nJÄTKA OMAL VASTUTUSEL!</string>
     <string name="fw_upgrade_notice_amazfit_cheetah_pro">Oled paigaldamas %s püsivara oma Amazfit Cheetah Pro-le.\n\nPärast .zip faili paigaldamist kell taaskäivitub.\n\nJÄTKA OMAL VASTUTUSEL!</string>
     <string name="fw_upgrade_notice_zepp_os">Oled paigaldamas %1$s püsivara oma %2$s seadmele.\n\nPärast .zip faili paigaldamist kell taaskäivitub.\n\nJÄTKA OMAL VASTUTUSEL!</string>
@@ -1351,15 +1351,15 @@
     <string name="minutes_100m">min/100 m</string>
     <string name="minutes_100yd">min/100 jrd</string>
     <string name="minutes_500m">min/500 m</string>
-    <string name="about_description_banglejs_main">Bangle.js-i jaoks mõeldud Androidi kaasrakendus, mis on loodud Gadgetbridge’i projekti baasil ja millele on lisatud internetiühendus.\n\nGoogle Play Store’i eeskirjade tõttu ei ole meil lubatud rakenduses endas annetuse linki avaldada, kuid kui see rakendus sulle meeldib, siis võimalusel palun kaalu rahalist toetamist allpool toodud Gadgetbridge’i kodulehe kaudu.</string>
-    <string name="about_description_banglejs_nightly">Bangle.js-i jaoks mõeldud Androidi kaasrakendus, mis on loodud Gadgetbridge’i projekti baasil ja millele on lisatud internetiühendus.\n\nGoogle Play Store’i eeskirjade tõttu ei ole meil lubatud rakenduses endas annetuse linki avaldada, kuid kui see rakendus sulle meeldib, siis võimalusel palun kaalu rahalist toetamist allpool toodud Gadgetbridge’i kodulehe kaudu.</string>
-    <string name="about_description_main_nightly">Pilveteenuseta, copyleft-litsentsiga vaba tarkvara, mis asendab tootjate suletud lähtekoodiga Androidi vidina-rakendusi. Gadgetbridge’i öised versioonid. Seda ei saa paigaldada, kui sul on juba paigaldatud kas Gadgetbridge või Pebble’i rakendus, kuna see tekitab konflikti Pebble’i teenusepakkujaga.</string>
-    <string name="gadgetbridge_running_main_nightly">Kasutusel on Gadgetbridge\'i igaöine testversioon</string>
-    <string name="application_name_main_nopebble">Gadgetbridge (igaöine testversioon, ilma Pebble\'i teenusepakkujata)</string>
-    <string name="about_description_main_nopebble">Pilveteenuseta, copyleft-litsentsiga vaba tarkvara, mis asendab tootjate suletud lähtekoodiga Androidi vidina-rakendusi. Gadgetbridge’i öised versioonid. Selles versioonis on Pebble’i teenusepakkuja nimi muudetud, et vältida konflikte, mistõttu mõned Pebble’iga seotud lõimingud ei toimi, kuid seda saab paigaldada olemasoleva Gadgetbridge’i paigalduse kõrvale.</string>
-    <string name="title_activity_controlcenter_main_nopebble">Gadgetbridge\'i igaöine testversioon, ilma Pebble\'i teenusepakkujata</string>
-    <string name="about_activity_title_main_nopebble">Rakenduse teave: Gadgetbridge\'i igaöine testversioon, ilma Pebble\'i teenusepakkujata</string>
-    <string name="gadgetbridge_running_main_nopebble">Kasutusel on Gadgetbridge\'i igaöine testversioon ilma Pebble\'ita</string>
+    <string name="about_description_banglejs_main">Bangle.js-i jaoks mõeldud Androidi kaasrakendus, mis on loodud WatchSwitcher’i projekti baasil ja millele on lisatud internetiühendus.\n\nGoogle Play Store’i eeskirjade tõttu ei ole meil lubatud rakenduses endas annetuse linki avaldada, kuid kui see rakendus sulle meeldib, siis võimalusel palun kaalu rahalist toetamist allpool toodud WatchSwitcher’i kodulehe kaudu.</string>
+    <string name="about_description_banglejs_nightly">Bangle.js-i jaoks mõeldud Androidi kaasrakendus, mis on loodud WatchSwitcher’i projekti baasil ja millele on lisatud internetiühendus.\n\nGoogle Play Store’i eeskirjade tõttu ei ole meil lubatud rakenduses endas annetuse linki avaldada, kuid kui see rakendus sulle meeldib, siis võimalusel palun kaalu rahalist toetamist allpool toodud WatchSwitcher’i kodulehe kaudu.</string>
+    <string name="about_description_main_nightly">Pilveteenuseta, copyleft-litsentsiga vaba tarkvara, mis asendab tootjate suletud lähtekoodiga Androidi vidina-rakendusi. WatchSwitcher’i öised versioonid. Seda ei saa paigaldada, kui sul on juba paigaldatud kas WatchSwitcher või Pebble’i rakendus, kuna see tekitab konflikti Pebble’i teenusepakkujaga.</string>
+    <string name="gadgetbridge_running_main_nightly">Kasutusel on WatchSwitcher\'i igaöine testversioon</string>
+    <string name="application_name_main_nopebble">WatchSwitcher (igaöine testversioon, ilma Pebble\'i teenusepakkujata)</string>
+    <string name="about_description_main_nopebble">Pilveteenuseta, copyleft-litsentsiga vaba tarkvara, mis asendab tootjate suletud lähtekoodiga Androidi vidina-rakendusi. WatchSwitcher’i öised versioonid. Selles versioonis on Pebble’i teenusepakkuja nimi muudetud, et vältida konflikte, mistõttu mõned Pebble’iga seotud lõimingud ei toimi, kuid seda saab paigaldada olemasoleva WatchSwitcher’i paigalduse kõrvale.</string>
+    <string name="title_activity_controlcenter_main_nopebble">WatchSwitcher\'i igaöine testversioon, ilma Pebble\'i teenusepakkujata</string>
+    <string name="about_activity_title_main_nopebble">Rakenduse teave: WatchSwitcher\'i igaöine testversioon, ilma Pebble\'i teenusepakkujata</string>
+    <string name="gadgetbridge_running_main_nopebble">Kasutusel on WatchSwitcher\'i igaöine testversioon ilma Pebble\'ita</string>
     <string name="low_power_gps">Vähese energiatarbimisega GPS</string>
     <string name="dual_band">Kahe sagedusalaga seade</string>
     <string name="phone_gps_not_available">Telefoni GPS pole saadaval</string>

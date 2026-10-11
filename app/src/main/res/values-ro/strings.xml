@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <string name="application_name_generic">Gadgetbridge</string>
-    <string name="title_activity_controlcenter_generic">Gadgetbridge</string>
+    <string name="application_name_generic">WatchSwitcher</string>
+    <string name="title_activity_controlcenter_generic">WatchSwitcher</string>
     <string name="action_settings">Setări</string>
     <string name="action_debug">Depanare</string>
     <string name="action_quit">Ieșire</string>
@@ -29,7 +29,7 @@
     <string name="whitelist_all_for_notifications">Permite toate notificările</string>
     <string name="title_activity_fw_app_insaller">Instalare firmware</string>
     <string name="fw_multi_upgrade_notice">Ești pe punctul de a instala firmware-ul %1$s si %2$s, În locul celor deja instalate pe Mi Band.</string>
-    <string name="miband_firmware_known">Firmware-ul a fost testat și este compatibil cu Gadgetbridge.</string>
+    <string name="miband_firmware_known">Firmware-ul a fost testat și este compatibil cu WatchSwitcher.</string>
     <string name="title_activity_settings">Setări</string>
     <string name="pref_header_general">Setări generale</string>
     <string name="pref_title_general_autoconnectonbluetooth">Conectare la dispozitivele adăugate când Bluetooth este activat</string>
@@ -87,7 +87,7 @@
 \nNota: Nu este necesar sa instalezi fisierul .res daca acest fisier este identic cu cel instalat anterior.
 \n
 \nNETESTAT, V-AR PUTEA BLOCA ECHIPAMENTUL, CONTINUATI PE RISCUL DUMNEAVOASTRA!</string>
-    <string name="miband_firmware_unknown_warning">Acest firmware nu a fost testat și ar putea să nu fie compatibil cu Gadgetbridge.
+    <string name="miband_firmware_unknown_warning">Acest firmware nu a fost testat și ar putea să nu fie compatibil cu WatchSwitcher.
 \n
 \nNU ESTE RECOMANDATĂ instalarea lui!</string>
     <string name="pref_header_development">Opțiuni dezvoltator</string>
@@ -109,7 +109,7 @@
     <string name="controlcenter_change_fm_frequency">Modifică frecvența FM</string>
     <string name="controlcenter_calibrate_device">Calibrare dispozitiv</string>
     <string name="pref_title_audio_player">Player muzical preferat</string>
-    <string name="pref_title_minimize_priority">Ascunde notificarea Gadgetbridge</string>
+    <string name="pref_title_minimize_priority">Ascunde notificarea WatchSwitcher</string>
     <string name="pref_summary_minimize_priority_off">Icoana din bara de stare și notificarea din ecranul de blocare sunt afișate</string>
     <string name="pref_summary_minimize_priority_on">Pictograma din bara de stare și notificarea din ecranul de blocare sunt ascunse</string>
     <string name="pref_title_notifications_repetitions">Repetări</string>
@@ -133,32 +133,32 @@
     <string name="sonyswr12_settings_alarm_interval_summary">Intervalul de alarmă inteligentă este intervalul înainte de alarma instalată. În acest interval, dispozitivul încearcă să detecteze cea mai ușoară fază de somn pentru a trezi utilizatorul</string>
     <string name="sonyswr12_settings_low_vibration">Vibrație scăzută activată</string>
     <string name="prefs_activity_in_device_card_distance_title_summary">Distanța este calculată din numărul de pași și valoarea lungimii pașilor (reglabile în Setări - Despre tine)</string>
-    <string name="application_name_main_nopebble">Gadgetbridge (Nightly, fără funizor Pebble)</string>
+    <string name="application_name_main_nopebble">WatchSwitcher (Nightly, fără funizor Pebble)</string>
     <string name="controlcenter_power_off">Oprire</string>
     <string name="accuracy">Precizie</string>
-    <string name="title_activity_controlcenter_main_nightly">Gadgetbridge Nightly</string>
+    <string name="title_activity_controlcenter_main_nightly">WatchSwitcher Nightly</string>
     <string name="dual_band">Două benzi</string>
-    <string name="about_activity_title_banglejs_main">Despre Bangle.js Gadgetbridge</string>
+    <string name="about_activity_title_banglejs_main">Despre Bangle.js WatchSwitcher</string>
     <string name="calendar_three_months">3 luni</string>
-    <string name="title_activity_controlcenter_main_nopebble">Gadgetbridge Nightly fără Pebble</string>
-    <string name="title_activity_controlcenter_banglejs_main">Bangle.js Gadgetbridge</string>
+    <string name="title_activity_controlcenter_main_nopebble">WatchSwitcher Nightly fără Pebble</string>
+    <string name="title_activity_controlcenter_banglejs_main">Bangle.js WatchSwitcher</string>
     <string name="balanced">Echilibrat</string>
     <string name="prefs_activity_in_device_card_sleep_title">Somn</string>
     <string name="controlcenter_set_alias">Setează un pseudonim</string>
     <string name="all_satellites">Toți sateliții</string>
     <string name="accuracy_first">Precizia are prioritate</string>
-    <string name="about_activity_title_main_nopebble">Despre Gadgetbridge Nightly fără Pebble</string>
+    <string name="about_activity_title_main_nopebble">Despre WatchSwitcher Nightly fără Pebble</string>
     <string name="calendar_week">Săptămână</string>
     <string name="gps">GPS</string>
     <string name="calendar_six_months">6 luni</string>
     <string name="controlcenter_power_off_confirm_description">Ești sigur că dorești să oprești acest dispozitiv?</string>
     <string name="calendar_day">Zi</string>
     <string name="device_card_activity_card_title">Informații despre activitate pe cardul dispozitivului</string>
-    <string name="about_activity_title_main_nightly">Despre Gadgetbridge Nightly</string>
+    <string name="about_activity_title_main_nightly">Despre WatchSwitcher Nightly</string>
     <string name="single_band">Bandă simplă</string>
     <string name="gadgetbridge_running_main_nopebble">Nightly NoPebble GB rulează</string>
     <string name="calendar_two_weeks">Două săptămâni</string>
-    <string name="about_activity_title_banglejs_nightly">Despre Bangle.js Gadgetbridge (Nightly)</string>
+    <string name="about_activity_title_banglejs_nightly">Despre Bangle.js WatchSwitcher (Nightly)</string>
     <string name="calendar_year">An</string>
     <string name="power_saving">Economisirea energiei</string>
     <string name="find_lost_device_message">Cauți %1$s?</string>
@@ -166,10 +166,10 @@
     <string name="controlcenter_get_heartrate_measurement">Măsurarea pulsului</string>
     <string name="gadgetbridge_running_banglejs_main">Bangle.js rulează</string>
     <string name="prefs_activity_in_device_card_steps_title_summary">Arată numărul total de pași</string>
-    <string name="title_activity_controlcenter_banglejs_nightly">Bangle.js Gadgetbridge (Nightly)</string>
+    <string name="title_activity_controlcenter_banglejs_nightly">Bangle.js WatchSwitcher (Nightly)</string>
     <string name="prefs_activity_in_device_card_sleep_title_summary">Arată durata somnului</string>
     <string name="battery_level">Nivelul bateriei</string>
-    <string name="application_name_banglejs_main">Bangle.js Gadgetbridge</string>
+    <string name="application_name_banglejs_main">Bangle.js WatchSwitcher</string>
     <string name="calendar_month">Lună</string>
     <string name="prefs_activity_in_device_card_title">Arată informații despre activitate pe cardul dispozitivului</string>
     <string name="battery_detail_activity_title">Informații despre baterie</string>
@@ -178,16 +178,16 @@
     <string name="about_description_generic">Înlocuitor sub o licență copyleft pentru aplicațiile cu sursă închisă Android, de administrare a unor dispozitive portabile.</string>
     <string name="gadgetbridge_running_main_nightly">Nightly GB este pornit</string>
     <string name="action_changelog">Jurnal de modificări</string>
-    <string name="about_activity_title_generic">Despre Gadgetbridge</string>
-    <string name="gadgetbridge_running_generic">Gadgetbridge este pornit</string>
+    <string name="about_activity_title_generic">Despre WatchSwitcher</string>
+    <string name="gadgetbridge_running_generic">WatchSwitcher este pornit</string>
     <string name="controlcenter_power_off_confirm_title">Oprire</string>
     <string name="gps_bds">GPS + BDS</string>
     <string name="low_power_gps">GPS cu consum mic</string>
     <string name="custom">Personalizat</string>
     <string name="speed_first">Viteza are prioritate</string>
     <string name="prefs_activity_in_device_card_title_summary">Afișează numărul de pași, distanța sau somnul pe cardul dispozitivului</string>
-    <string name="application_name_banglejs_nightly">Bangle.js Gadgetbridge (Nightly)</string>
-    <string name="application_name_main_nightly">Gadgetbridge (Nightly)</string>
+    <string name="application_name_banglejs_nightly">Bangle.js WatchSwitcher (Nightly)</string>
+    <string name="application_name_main_nightly">WatchSwitcher (Nightly)</string>
     <string name="gps_galileo">GPS + GALILEO</string>
     <string name="debugactivity_really_factoryreset_title">Chiar dorești o restaurare a setărilor din fabrică?</string>
     <string name="fw_upgrade_notice_miband7">Ești pe cale să instalezi firmware-ul %s pe Xiaomi Smart Band 7.
@@ -223,9 +223,9 @@
     <string name="pref_title_notification_times_enabled">Timpul de notificare</string>
     <string name="pref_summary_banglejs_txt_bitmap_size">Dimensiunea de utilizat pentru redarea textului bitmap</string>
     <string name="pref_title_banglejs_text_bitmap">Text ca bitmap-uri</string>
-    <string name="pref_summary_banglejs_text_bitmap">Dacă cuvântul nu poate fi afișat în fontul ceasului, se convertește într-un bitmap în Gadgetbridge și se afișează bitmap-ul pe ceas</string>
+    <string name="pref_summary_banglejs_text_bitmap">Dacă cuvântul nu poate fi afișat în fontul ceasului, se convertește într-un bitmap în WatchSwitcher și se afișează bitmap-ul pe ceas</string>
     <string name="pref_message_privacy_mode_off">Afișează tot conținutul</string>
-    <string name="pref_title_weather_summary">Folosit pentru furnizorul de vreme LineageOS, alte versiuni Android trebuie să utilizeze o aplicație precum „Notificare meteo”. Găsești mai multe informații în wiki Gadgetbridge.</string>
+    <string name="pref_title_weather_summary">Folosit pentru furnizorul de vreme LineageOS, alte versiuni Android trebuie să utilizeze o aplicație precum „Notificare meteo”. Găsești mai multe informații în wiki WatchSwitcher.</string>
     <string name="pref_header_pebble_timeline">Cronologie Pebble</string>
     <string name="pref_title_sunrise_sunset">Răsărit și apus</string>
     <string name="pref_title_enable_pebblekit">Permite accesul la aplicații terțe</string>
@@ -250,9 +250,9 @@
     <string name="heartrate_bpm_145">145 bătăi/min</string>
     <string name="heartrate_bpm_185">185 bătăi/min</string>
     <string name="spo2_perc_85">85%</string>
-    <string name="about_description_banglejs_main">Aplicație însoțitoare pentru Bangle.js construită pe baza proiectului Gadgetbridge, cu adăugarea accesului la internet.
+    <string name="about_description_banglejs_main">Aplicație însoțitoare pentru Bangle.js construită pe baza proiectului WatchSwitcher, cu adăugarea accesului la internet.
 \n
-\nDin cauza politicilor Magazinului Google Play, nu ne este permis un link pentru donații în aplicația în sine, dar dacă îți place această aplicație, donează prin intermediul paginii de pornire Gadgetbridge de mai jos.</string>
+\nDin cauza politicilor Magazinului Google Play, nu ne este permis un link pentru donații în aplicația în sine, dar dacă îți place această aplicație, donează prin intermediul paginii de pornire WatchSwitcher de mai jos.</string>
     <string name="pref_header_audio">Audio</string>
     <string name="pref_header_health">Sănătate</string>
     <string name="pref_summary_datetime_syctimeonconnect">Sincronizează ora pe dispozitivele adăugate: la conectare, atunci când ora sau fusul orar se schimbă pe dispozitivul Android și periodic</string>
@@ -278,7 +278,7 @@
     <string name="female">Femeie</string>
     <string name="title_activity_sleepmonitor">Monitorizare somn</string>
     <string name="pref_screen_notification_profile_missed_call">Notificare apel pierdut</string>
-    <string name="about_description_main_nightly">O alternativă gratuită „fără nor” la aplicațiile închise de la producătorii de gadgeturi. Versiuni „Nightly” ale Gadgetbridge. Acestea nu pot fi instalate dacă aplicația Gadgetbridge sau Pebble este deja instalată, din cauza unui conflict cu furnizorul Pebble.</string>
+    <string name="about_description_main_nightly">O alternativă gratuită „fără nor” la aplicațiile închise de la producătorii de gadgeturi. Versiuni „Nightly” ale WatchSwitcher. Acestea nu pot fi instalate dacă aplicația WatchSwitcher sau Pebble este deja instalată, din cauza unui conflict cu furnizorul Pebble.</string>
     <string name="appmananger_app_delete_cache">Șterge și elimină din cache</string>
     <string name="busy_task_fetch_sports_summaries">Preluarea rezumatelor sportive</string>
     <string name="heartrate_bpm_140">140 bătăi/min</string>
@@ -304,9 +304,9 @@
     <string name="zetime_signaling_none">Silențios</string>
     <string name="prefs_hr_alarm_high">Limita superioară</string>
     <string name="initialized">Inițializat</string>
-    <string name="about_description_banglejs_nightly">Aplicație însoțitoare pentru Bangle.js construită pe baza proiectului Gadgetbridge, cu adăugarea accesului la internet.
+    <string name="about_description_banglejs_nightly">Aplicație însoțitoare pentru Bangle.js construită pe baza proiectului WatchSwitcher, cu adăugarea accesului la internet.
 \n
-\nDin cauza politicilor Magazinului Google Play, nu ne este permis un link pentru donații în aplicația în sine, dar dacă îți place această aplicație, donează prin intermediul paginii de pornire Gadgetbridge de mai jos.</string>
+\nDin cauza politicilor Magazinului Google Play, nu ne este permis un link pentru donații în aplicația în sine, dar dacă îți place această aplicație, donează prin intermediul paginii de pornire WatchSwitcher de mai jos.</string>
     <string name="pref_header_other">Altele</string>
     <string name="pref_header_system">Sistem</string>
     <string name="pref_title_notification_wake_on_open">Trezire și deblocare automată</string>
@@ -354,7 +354,7 @@
     <string name="pref_title_notification_use_as">Utilizează lista de aplicații pentru a…</string>
     <string name="pref_summary_transliteration">Activează dacă dispozitivul nu are un font pentru limba ta</string>
     <string name="pref_title_screentime">Durata de funcționare a ecranului</string>
-    <string name="miband_firmware_suggest_whitelist">Dacă instalezi acest firmware și descoperi că funcționează fără probleme, anunță dezvoltatorii Gadgetbridge. Ei vor marca această versiune de firmware (%s) ca fiind compatibilă.</string>
+    <string name="miband_firmware_suggest_whitelist">Dacă instalezi acest firmware și descoperi că funcționează fără probleme, anunță dezvoltatorii WatchSwitcher. Ei vor marca această versiune de firmware (%s) ca fiind compatibilă.</string>
     <string name="pref_theme_black_background">Utilizare fundal negru în Tema întunecată</string>
     <string name="pref_summary_notification_delay_calls">Întârziere înainte de a trimite notificări privind apelurile primite către dispozitiv, în secunde.</string>
     <string name="pref_title_canned_reply_suffix">Sufix comun</string>
@@ -448,7 +448,7 @@
     <string name="heartrate_bpm_115">115 bătăi/min</string>
     <string name="heartrate_bpm_120">120 bătăi/min</string>
     <string name="title_activity_set_contacts">Configurare contacte</string>
-    <string name="debugactivity_really_factoryreset">O resetare din fabrică va șterge toate datele de pe dispozitivul conectat (dacă este acceptat). Dispozitivele Xiaomi/Huami schimbă, de asemenea, adresa MAC Bluetooth, așa că apar ca dispozitive noi pentru Gadgetbridge.</string>
+    <string name="debugactivity_really_factoryreset">O resetare din fabrică va șterge toate datele de pe dispozitivul conectat (dacă este acceptat). Dispozitivele Xiaomi/Huami schimbă, de asemenea, adresa MAC Bluetooth, așa că apar ca dispozitive noi pentru WatchSwitcher.</string>
     <string name="appmanager_watchface_activate">Activează</string>
     <string name="appmanager_app_download">Descarcă în cache</string>
     <string name="appmanager_app_start">Pornește</string>
@@ -500,7 +500,7 @@
     <string name="pref_summary_casio_alert_email">Alertă (vibrare/bip) pentru notificări prin e-mail</string>
     <string name="pref_title_casio_alert_call">Alertă pentru apeluri primite</string>
     <string name="pref_time_sync">Sincronizare automată a timpului</string>
-    <string name="pref_summary_custom_deviceicon">Afișează pictograma de notificare Android specifică dispozitivului în loc de pictograma Gadgetbridge când este conectat</string>
+    <string name="pref_summary_custom_deviceicon">Afișează pictograma de notificare Android specifică dispozitivului în loc de pictograma WatchSwitcher când este conectat</string>
     <string name="pref_summary_casio_alert_call">Alertă (vibrație/bip) pentru apelurile primite</string>
     <string name="pref_title_casio_alert_email">Alertă pentru notificări prin e-mail</string>
     <string name="pref_title_casio_alert_sms">Alertă pentru notificări prin SMS</string>
@@ -604,7 +604,7 @@
     <string name="pref_summary_pebble_mtu_limit">Dacă Pebble 2/Pebble LE nu funcționează conform așteptărilor, încearcă această setare pentru a limita MTU (interval valid 20–512)</string>
     <string name="pref_summary_pebble_enable_bgjs">Când este activată, interfața ceasului poate afișa informații despre vreme, despre baterie etc.</string>
     <string name="pref_title_pebble_reconnect_attempts">Încercări de reconectare</string>
-    <string name="pref_summary_expose_hr">Permite altor aplicații să acceseze datele senzorului de puls în timp ce sunt conectate prin Gadgetbridge</string>
+    <string name="pref_summary_expose_hr">Permite altor aplicații să acceseze datele senzorului de puls în timp ce sunt conectate prin WatchSwitcher</string>
     <string name="pref_title_connected_advertisement">Vizibil atunci când este conectat</string>
     <string name="pref_title_use_custom_font">Utilizează font personalizat</string>
     <string name="pref_summary_allow_high_mtu">Mărește viteza de transfer, dar este posibil să nu funcționeze pe unele dispozitive Android.</string>
@@ -659,7 +659,7 @@
     <string name="pref_camera_remote_title">Telecomanda camerei</string>
     <string name="pref_camera_remote_summary">Permite ceasului să declanșeze camera telefonului</string>
     <string name="pref_workout_start_on_phone_summary">Pornește/oprește urmărirea aplicației de fitness pe telefon când începe un antrenament GPS pe bandă</string>
-    <string name="discovery_connected_devices_hint">Fă dispozitivul detectabil. Este posibil ca dispozitivele conectate în prezent să nu fie descoperite. Activează locația (de exemplu, GPS) pe Android 6+. Dezactivează Privacy Guard pentru Gadgetbridge, deoarece se poate bloca și reporni telefonul. Dacă nu se găsește niciun dispozitiv după câteva minute, încearcă din nou după repornirea dispozitivului mobil.</string>
+    <string name="discovery_connected_devices_hint">Fă dispozitivul detectabil. Este posibil ca dispozitivele conectate în prezent să nu fie descoperite. Activează locația (de exemplu, GPS) pe Android 6+. Dezactivează Privacy Guard pentru WatchSwitcher, deoarece se poate bloca și reporni telefonul. Dacă nu se găsește niciun dispozitiv după câteva minute, încearcă din nou după repornirea dispozitivului mobil.</string>
     <string name="pref_header_vibration_count">Număr de vibrații</string>
     <string name="pref_write_logfiles_not_available">Inițializarea înregistrării fișierelor a eșuat, scrierea fișierelor jurnal nu este disponibilă momentan. Repornește aplicația pentru a încerca să inițializezi din nou fișierele jurnal.</string>
     <string name="busy_task_fetch_activity_data">Preluare date de activitate</string>
@@ -712,7 +712,7 @@
     <string name="reminder_delete_confirm_title">Șterge memento-ul</string>
     <string name="contact_delete_confirm_title">Șterge contactul</string>
     <string name="pref_summary_notification_media_ignores_application_list">Procesează notificările media înainte de lista de aplicații. Dacă această preferință nu este bifată, aplicațiile media trebuie să fie permise în lista de aplicații pentru ca controalele media să funcționeze pe dispozitiv.</string>
-    <string name="about_description_main_nopebble">O alternativă gratuită „fără nor” la aplicațiile închise de la producătorii de gadgeturi. Versiuni „Nightly” ale Gadgetbridge. În această versiune, furnizorul Pebble a fost redenumit pentru a preveni conflictele, așa că unele dintre integrările Pebble nu vor funcționa, dar poate fi instalat împreună cu instalațiile Gadgetbridge existente.</string>
+    <string name="about_description_main_nopebble">O alternativă gratuită „fără nor” la aplicațiile închise de la producătorii de gadgeturi. Versiuni „Nightly” ale WatchSwitcher. În această versiune, furnizorul Pebble a fost redenumit pentru a preveni conflictele, așa că unele dintre integrările Pebble nu vor funcționa, dar poate fi instalat împreună cu instalațiile WatchSwitcher existente.</string>
     <string name="open_fw_installer_info_text">Firmware/Watchface/App/File Installer permite încărcarea/instalarea fișierelor acceptate (firmware, watchface, aplicații, GPS, resurse, fonturi...) pe dispozitiv. Vezi mai multe informații în wiki: https://codeberg.org/Freeyourgadget/Gadgetbridge/wiki/Firmware-Update</string>
     <string name="fw_upgrade_notice_amazfit_gts4_mini">Ești pe cale să instalezi firmware-ul %s pe Amazfit GTS 4 Mini.
 \n
@@ -1076,7 +1076,7 @@
     <string name="pref_header_auto_fetch">Preluare automată</string>
     <string name="connecting">Se conectează</string>
     <string name="_unknown_">(necunoscut)</string>
-    <string name="this_is_a_test_notification_from_gadgetbridge">Aceasta este o notificare de testare de la Gadgetbridge</string>
+    <string name="this_is_a_test_notification_from_gadgetbridge">Aceasta este o notificare de testare de la WatchSwitcher</string>
     <string name="watchface_install_info">Ești pe cale să instalezi următorul cadran de ceas:
 \n
 \n%1$s
@@ -1185,7 +1185,7 @@
     <string name="pref_title_user_interface">Interfață utilizator</string>
     <string name="title_activity_musicmanager">Managerul de muzică</string>
     <string name="pref_title_nagivation_apps">Aplicații de navigare</string>
-    <string name="pref_summary_pebble_enable_applogs">Jurnalele din aplicațiile ceasului vor fi înregistrate de Gadgetbridge (necesită reconectare)</string>
+    <string name="pref_summary_pebble_enable_applogs">Jurnalele din aplicațiile ceasului vor fi înregistrate de WatchSwitcher (necesită reconectare)</string>
     <string name="fw_upgrade_notice_amazfitx">Urmează să instalezi firmware-ul %s pe Amazfit X.\n\nTe rugăm să te asiguri că instalezi mai întâi fișierul .fw, iar apoi fișierul .res. Brățara ta va reporni după instalarea fișierului .fw.\n\nNotă: Nu trebuie să instalezi fișierul .res dacă este exact același cu cel instalat anterior.\n\nCONTINUĂ PE PROPRIA RĂSPUNDERE!</string>
     <string name="pref_header_external_integrations">Integrări externe</string>
     <string name="pref_header_automations">Automatizări</string>

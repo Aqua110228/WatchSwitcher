@@ -28,11 +28,11 @@
     <string name="activity_db_management_empty_DB">Veri tabanını boşalt</string>
     <string name="activity_db_management_empty_db_warning">Dikkat! Bu düğmeye basarak veri tabanınızı silecek ve sıfırdan başlayacaksınız.</string>
     <string name="activity_db_management_exportimport_label">Dışa ve İçe Aktar</string>
-    <string name="activity_db_management_import_export_explanation">Dışa/içe aktarma işlemleri, aygıtınızdaki bir dizine giden aşağıdaki yolu kullanır. Bu dizine diğer Android uygulamaları ve bilgisayarınız tarafından erişilebilir. Gadgetbridge\'i kaldırırsanız, bu dizinin ve içerdiği tüm dosyaların silineceğini unutmayın. Veriler şunları içerir:
+    <string name="activity_db_management_import_export_explanation">Dışa/içe aktarma işlemleri, aygıtınızdaki bir dizine giden aşağıdaki yolu kullanır. Bu dizine diğer Android uygulamaları ve bilgisayarınız tarafından erişilebilir. WatchSwitcher\'i kaldırırsanız, bu dizinin ve içerdiği tüm dosyaların silineceğini unutmayın. Veriler şunları içerir:
 \n Export_preference - genel ayarlar
 \n Export_preference_MAC - aygıta özel ayarlar
-\n Gadgetbridge - aygıt ve etkinlik veri tabanı
-\n Gadgetbridge_date - bir tarihte dışa aktarılan veri tabanı
+\n WatchSwitcher - aygıt ve etkinlik veri tabanı
+\n WatchSwitcher_date - bir tarihte dışa aktarılan veri tabanı
 \n * .gpx - GPS kayıtları
 \n * .log - günlük dosyaları
 \nDışa aktarılan dosyalarınızı orada bulmayı (veya içe aktarmak istediğiniz dosyaları oraya yerleştirmeyi) bekleyin:</string>
@@ -80,7 +80,7 @@
 \nSürüm %2$s, %3$s tarafından
 \n</string>
     <string name="app_move_to_top">Yukarı taşı</string>
-    <string name="application_name_generic">Gadgetbridge</string>
+    <string name="application_name_generic">WatchSwitcher</string>
     <string name="appinstaller_install">Kur</string>
     <string name="appmanager_app_openinstore">Pebble uygulama mağazasında ara</string>
     <string name="appmanager_cached_watchapps_watchfaces">Önbellekteki uygulamalar</string>
@@ -164,7 +164,7 @@
     <string name="dbmanagementactivity_overwrite_database_confirmation">Geçerli verilerin gerçekten üzerine yazılsın mı? Tüm etkinlik verilerinizin (varsa), aygıtlarınızın ve tercihlerinizin üzerine yazılacak.</string>
     <string name="dbmanagementactivity_really_delete_entire_db">Veri tabanının tamamı gerçekten silinsin mi\? Tüm etkinlik verileriniz ve aygıtlarınızla ilgili bilgileriniz kaybolacak.</string>
     <string name="dbmanagementactivvity_cannot_access_export_path">Dışa aktarma yoluna erişilemiyor. Lütfen geliştiricilerle iletişime geçin.</string>
-    <string name="debugactivity_really_factoryreset">Fabrika ayarlarına sıfırlama yapılması bağlı aygıttaki tüm verileri (destekleniyorsa) silecektir. Xiaomi/Huami aygıtları ayrıca Bluetooth MAC adresini değiştirir, bu nedenle Gadgetbridge tarafından yeni bir aygıt olarak görülürler.</string>
+    <string name="debugactivity_really_factoryreset">Fabrika ayarlarına sıfırlama yapılması bağlı aygıttaki tüm verileri (destekleniyorsa) silecektir. Xiaomi/Huami aygıtları ayrıca Bluetooth MAC adresini değiştirir, bu nedenle WatchSwitcher tarafından yeni bir aygıt olarak görülürler.</string>
     <string name="debugactivity_really_factoryreset_title">Gerçekten fabrika ayarlarına sıfırlansın mı\?</string>
     <string name="device_fw">Ürün yazılımı sürümü: %1$s</string>
     <string name="device_hw">Donanım revizyonu: %1$s</string>
@@ -173,7 +173,7 @@
     <string name="devicetype_unknown">Bilinmeyen Aygıt</string>
     <string name="discovery_attempting_to_pair">%1$s ile eşleşmeye çalışılıyor</string>
     <string name="discovery_bonding_failed_immediately">%1$s ile etkileşim anında başarısız oldu.</string>
-    <string name="discovery_connected_devices_hint">Aygıtınızı bulunabilir hale getirin. Şu anda bağlı aygıtlar muhtemelen keşfedilmeyecek. Konumu (örn. GPS) etkinleştirin. Gadgetbridge için Gizlilik Korumasını (Privacy Guard) devre dışı bırakın, çünkü çökebilir ve telefonunuzu yeniden başlatabilir. Birkaç dakika sonra hiçbir aygıt bulunmazsa, mobil aygıtınızı yeniden başlattıktan sonra tekrar deneyin.</string>
+    <string name="discovery_connected_devices_hint">Aygıtınızı bulunabilir hale getirin. Şu anda bağlı aygıtlar muhtemelen keşfedilmeyecek. Konumu (örn. GPS) etkinleştirin. WatchSwitcher için Gizlilik Korumasını (Privacy Guard) devre dışı bırakın, çünkü çökebilir ve telefonunuzu yeniden başlatabilir. Birkaç dakika sonra hiçbir aygıt bulunmazsa, mobil aygıtınızı yeniden başlattıktan sonra tekrar deneyin.</string>
     <string name="discovery_dont_pair">Eşleştirme</string>
     <string name="discovery_enable_bluetooth">Aygıtları bulmak için Bluetooth\'u etkinleştir.</string>
     <string name="discovery_need_to_enter_authkey">Bu aygıt için gizli bir kimlik doğrulama anahtarı gerekiyor, girmek için aygıta uzun basın. Daha fazla bilgi için web sitesini ziyaret edin.</string>
@@ -261,7 +261,7 @@
     <string name="fwapp_install_device_not_ready">Dosya kurulamıyor, aygıt hazır değil.</string>
     <string name="fwappinstaller_connection_state">Aygıta bağlantı: %1$s</string>
     <string name="fwinstaller_firmware_not_compatible_to_device">Bu ürün yazılımı bu aygıtla uyumlu değil</string>
-    <string name="gadgetbridge_running_generic">Gadgetbridge çalışıyor</string>
+    <string name="gadgetbridge_running_generic">WatchSwitcher çalışıyor</string>
     <string name="german">Almanca</string>
     <string name="heart_rate">Kalp ritmi</string>
     <string name="horizontal">Yatay</string>
@@ -372,9 +372,9 @@
     <string name="mi3_prefs_night_mode_summary">Geceleri bilekliğin ekran parlaklığını otomatik olarak azalt</string>
     <string name="miband2_prefs_dateformat">Tarih biçimi</string>
     <string name="miband2_prefs_timeformat">Mi2: Zaman biçimi</string>
-    <string name="miband_firmware_known">Bu ürün yazılımı test edilmiştir ve Gadgetbridge ile uyumlu olduğu bilinmektedir.</string>
-    <string name="miband_firmware_suggest_whitelist">Yine de devam etmek istiyorsanız ve sonrasında her şey düzgün çalışmaya devam ederse, lütfen Gadgetbridge geliştiricilerine %s ürün yazılımı sürümünü beyaz listeye eklemelerini söyleyin.</string>
-    <string name="miband_firmware_unknown_warning">Bu ürün yazılımı test edilmemiştir ve Gadgetbridge ile uyumlu olmayabilir.
+    <string name="miband_firmware_known">Bu ürün yazılımı test edilmiştir ve WatchSwitcher ile uyumlu olduğu bilinmektedir.</string>
+    <string name="miband_firmware_suggest_whitelist">Yine de devam etmek istiyorsanız ve sonrasında her şey düzgün çalışmaya devam ederse, lütfen WatchSwitcher geliştiricilerine %s ürün yazılımı sürümünü beyaz listeye eklemelerini söyleyin.</string>
+    <string name="miband_firmware_unknown_warning">Bu ürün yazılımı test edilmemiştir ve WatchSwitcher ile uyumlu olmayabilir.
 \n
 \nKurulması TAVSİYE EDİLMEZ!</string>
     <string name="miband_fwinstaller_compatible_version">Uyumlu sürüm</string>
@@ -507,14 +507,14 @@
     <string name="pref_summary_auto_export_interval">Her %d saatte bir dışa aktar</string>
     <string name="pref_summary_autoremove_notifications">Telefondan kapatıldığında bildirimler aygıttan otomatik olarak kaldırılır</string>
     <string name="pref_summary_contextual_arabic">Arapça içeriği desteklemek için bunu etkinleştirin</string>
-    <string name="pref_summary_custom_deviceicon">Bağlandığında Gadgetbridge simgesi yerine aygıta özel bir Android bildirim simgesi göster</string>
-    <string name="pref_summary_datetime_syctimeonconnect">Bağlanırken, Android aygıtında saat veya saat dilimi değiştiğinde ve düzenli aralıklarla saati Gadgetbridge aygıt(lar)ıyla eşzamanla</string>
+    <string name="pref_summary_custom_deviceicon">Bağlandığında WatchSwitcher simgesi yerine aygıta özel bir Android bildirim simgesi göster</string>
+    <string name="pref_summary_datetime_syctimeonconnect">Bağlanırken, Android aygıtında saat veya saat dilimi değiştiğinde ve düzenli aralıklarla saati WatchSwitcher aygıt(lar)ıyla eşzamanla</string>
     <string name="pref_summary_disable_new_ble_scanning">Tarama sırasında aygıtınız bulunamıyorsa bu seçeneği işaretleyin</string>
     <string name="pref_summary_dont_ack_transfers">Bilekliğe onay (ACK) gönderilmezse, etkinlik verileri temizlenmez. GB diğer uygulamalarla birlikte kullanılıyorsa kullanışlıdır.</string>
     <string name="pref_summary_enable_calendar_sync">Takvim etkinliklerini zaman çizelgesine gönder</string>
     <string name="pref_summary_enable_outgoing_call">Bunun devre dışı bırakılması, Pebble 2/LE aygıtının giden aramalarda titremesini durduracaktır</string>
     <string name="pref_summary_enable_pebblekit">PebbleKit kullanırken Android uygulamaları için deneysel desteği etkinleştirin</string>
-    <string name="pref_summary_expose_hr">Gadgetbridge bağlıyken diğer uygulamaların kalp ritmi verilerine gerçek zamanlı erişmesine izin verir</string>
+    <string name="pref_summary_expose_hr">WatchSwitcher bağlıyken diğer uygulamaların kalp ritmi verilerine gerçek zamanlı erişmesine izin verir</string>
     <string name="pref_summary_force_white_color_scheme">Saatinizin koyu renkli ibreleri varsa kullanışlıdır</string>
     <string name="pref_summary_keep_data_on_device">Eşzamanlamadan sonra bile etkinlik verilerini aygıt üzerinde tutar. GB diğer uygulamalarla birlikte kullanılıyorsa kullanışlıdır. Bu, saatin alanının bitmesine ve/veya düzgün eşzamanlamanın durmasına neden olabilir.</string>
     <string name="pref_summary_location_keep_uptodate">Geçerli konumu çalışma zamanında almaya çalış, depolanan konumu yedek olarak kullan</string>
@@ -524,7 +524,7 @@
     <string name="pref_summary_notification_filter">Telefonda Rahatsız Etme özelliği etkinleştirildiğinde tüm bildirimleri engelle</string>
     <string name="pref_summary_notifications_pebblemsg">PebbleKit üzerinden Pebble aygıtına bildirim gönderen uygulamalar için destek.</string>
     <string name="pref_summary_pebble_always_ack_pebblekit">Harici 3. taraf uygulamalarına gönderilen mesajların her zaman ve hemen onaylanmasına neden olur</string>
-    <string name="pref_summary_pebble_enable_applogs">Saat uygulamalarındaki günlüklerin Gadgetbridge tarafından günlüğe kaydedilmesine neden olur (yeniden bağlanma gerekir)</string>
+    <string name="pref_summary_pebble_enable_applogs">Saat uygulamalarındaki günlüklerin WatchSwitcher tarafından günlüğe kaydedilmesine neden olur (yeniden bağlanma gerekir)</string>
     <string name="pref_summary_pebble_enable_bgjs">Etkinleştirildiğinde, saat arayüzlerinin hava durumu, pil bilgisi vs. göstermesine izin verir.</string>
     <string name="pref_summary_pebble_forcele">Klasik BT yerine tüm Pebble\'ler için deneysel Pebble LE desteği kullanın. Bu önce LE olmayan ile ve daha sonra Pebble LE ile eşleştirme gerektirir</string>
     <string name="pref_summary_pebble_forceprotocol">Bu seçenek, ürün yazılımı sürümüne bağlı olarak en son bildirim protokolünü kullanmaya zorlar. NE YAPTIĞINIZI BİLİN!</string>
@@ -570,7 +570,7 @@
     <string name="pref_title_enable_pebblekit">3. taraf Android Uygulama erişimine izin ver</string>
     <string name="pref_title_expose_hr">3. taraf gerçek zamanlı kalp ritmi erişimi</string>
     <string name="pref_title_force_white_color_scheme">Beyaz üzerinde siyah renk şemasını zorla</string>
-    <string name="pref_title_general_autoconnectonbluetooth">Bluetooth açıkken Gadgetbridge aygıt(lar)ına bağlan</string>
+    <string name="pref_title_general_autoconnectonbluetooth">Bluetooth açıkken WatchSwitcher aygıt(lar)ına bağlan</string>
     <string name="pref_title_general_autoreconnect">Otomatik yeniden bağlan</string>
     <string name="pref_title_general_autostartonboot">Otomatik başlat</string>
     <string name="pref_title_keep_data_on_device">Etkinlik verilerini aygıtta sakla</string>
@@ -580,7 +580,7 @@
     <string name="pref_title_location_latitude">Enlem</string>
     <string name="pref_title_location_longitude">Boylam</string>
     <string name="pref_title_low_latency_fw_update">Ürün yazılımı kurarken düşük gecikme modu kullan</string>
-    <string name="pref_title_minimize_priority">Gadgetbridge bildirimini gizle</string>
+    <string name="pref_title_minimize_priority">WatchSwitcher bildirimini gizle</string>
     <string name="pref_title_notification_filter">Rahatsız Etme</string>
     <string name="pref_title_notifications_call">Telefon Çağrıları</string>
     <string name="pref_title_notifications_generic">Genel bildirim desteği</string>
@@ -663,7 +663,7 @@
     <string name="select_all">Tümünü seç</string>
     <string name="share">Paylaş</string>
     <string name="share_log">Günlüğü paylaş</string>
-    <string name="share_log_warning">Gadgetbridge\'in sağlık verileri, benzersiz tanımlayıcılar (bir aygıtın MAC adresi gibi), müzik tercihleri vb. dahil ancak bunlarla sınırlı olmamak üzere birçok kişisel bilgiyi günlük dosyalarına kaydettiğini lütfen unutmayın. Dosyayı herkese açık sorun bildirimi olarak göndermeden önce bu dosyayı düzenlemeyi ve bu bilgileri kaldırmayı göz önünde bulundurun.</string>
+    <string name="share_log_warning">WatchSwitcher\'in sağlık verileri, benzersiz tanımlayıcılar (bir aygıtın MAC adresi gibi), müzik tercihleri vb. dahil ancak bunlarla sınırlı olmamak üzere birçok kişisel bilgiyi günlük dosyalarına kaydettiğini lütfen unutmayın. Dosyayı herkese açık sorun bildirimi olarak göndermeden önce bu dosyayı düzenlemeyi ve bu bilgileri kaldırmayı göz önünde bulundurun.</string>
     <string name="simplified_chinese">Çince (Basitleştirilmiş)</string>
     <string name="sleep_activity_date_range">Saat %1$s ile %2$s arası</string>
     <string name="sleepchart_your_sleep">Uyku</string>
@@ -678,14 +678,14 @@
     <string name="test">Test</string>
     <string name="test_notification">Test bildirimi</string>
     <string name="thai">Tayca</string>
-    <string name="this_is_a_test_notification_from_gadgetbridge">Bu Gadgetbridge üzerinden bir test bildirimidir</string>
+    <string name="this_is_a_test_notification_from_gadgetbridge">Bu WatchSwitcher üzerinden bir test bildirimidir</string>
     <string name="timeformat_24h">24 saat</string>
     <string name="timeformat_am_pm">ÖÖ/ÖS</string>
     <string name="title_activity_alarm_details">Alarm ayrıntıları</string>
     <string name="title_activity_android_pairing">Aygıt eşleştir</string>
     <string name="title_activity_appmanager">Uygulama Yöneticisi</string>
     <string name="title_activity_charts">Etkinlik ve Uyku</string>
-    <string name="title_activity_controlcenter_generic">Gadgetbridge</string>
+    <string name="title_activity_controlcenter_generic">WatchSwitcher</string>
     <string name="title_activity_db_management">Veri yönetimi</string>
     <string name="title_activity_debug">Hata Ayıklama</string>
     <string name="title_activity_device_specific_settings">Aygıta özel ayarlar</string>
@@ -856,9 +856,9 @@
     <string name="about_contributors">Katkıda bulunanlar</string>
     <string name="about_core_team_title">Çekirdek Ekip (ilk kod katkıda bulunma sırasına göre)</string>
     <string name="about_description_generic">Satıcıların kapalı kaynaklı Android aygıt uygulamalarının yerine bulut gerektirmeyen copyleft özgür alternatif.</string>
-    <string name="about_activity_title_generic">Gadgetbridge hakkında</string>
+    <string name="about_activity_title_generic">WatchSwitcher hakkında</string>
     <string name="about_title">Hakkında</string>
-    <string name="pref_title_weather_summary">LineageOS hava durumu sağlayıcısı için kullanılır, diğer Android sürümleri \"Breezy Weather\" gibi bir uygulama kullanmalıdır. Gadgetbridge web sitesinde daha fazla bilgi bulabilirsiniz.</string>
+    <string name="pref_title_weather_summary">LineageOS hava durumu sağlayıcısı için kullanılır, diğer Android sürümleri \"Breezy Weather\" gibi bir uygulama kullanmalıdır. WatchSwitcher web sitesinde daha fazla bilgi bulabilirsiniz.</string>
     <string name="menuitem_worldclock">Dünya Saati</string>
     <string name="error_version_check_extreme_caution">DİKKAT: Sürüm bilgileri denetlenirken hata oluştu! Devam etmemelisiniz! Görülen sürüm adı \"%s\"</string>
     <string name="permission_granting_mandatory">Tüm bu izinler gereklidir ve izin verilmezse kararsızlık oluşabilir</string>
@@ -1203,7 +1203,7 @@
     <string name="button_watchface_edit_name">Adı düzenle</string>
     <string name="gpx_receiver_overwrite_some_files">Bazı dosya(lar) zaten var. Üzerine yazılsın mı\?</string>
     <string name="gpx_receiver_files_received">Alınan GPX dosya(lar)ı:</string>
-    <string name="gpx_receiver_activity_title">GPX Alıcı Gadgetbridge</string>
+    <string name="gpx_receiver_activity_title">GPX Alıcı WatchSwitcher</string>
     <string name="activity_summary_detail_editing_gpx_track">Bağlantılı GPX izlemesini düzenleme</string>
     <string name="activity_summary_detail_clear_gpx_track">GPX izlemesini temizle</string>
     <string name="activity_summary_detail_select_gpx_track">GPX izlemesi seç</string>
@@ -1466,22 +1466,22 @@
     <string name="watchface_setting_light_up_on_notification">Yeni bildirimde ışığı aç</string>
     <string name="menuitem_email">E-posta</string>
     <string name="gadgetbridge_running_banglejs_main">Bangle.js çalışıyor</string>
-    <string name="about_activity_title_main_nightly">Gadgetbridge Gecelik Hakkında</string>
-    <string name="about_description_main_nightly">Satıcıların kapalı kaynaklı Android aygıt uygulamalarının yerine bulut gerektirmeyen copyleft özgür alternatif. Gadgetbridge gecelik sürümleri. Pebble sağlayıcısındaki bir çakışma nedeniyle Gadgetbridge veya Pebble uygulaması zaten kuruluysa bu kurulamaz.</string>
+    <string name="about_activity_title_main_nightly">WatchSwitcher Gecelik Hakkında</string>
+    <string name="about_description_main_nightly">Satıcıların kapalı kaynaklı Android aygıt uygulamalarının yerine bulut gerektirmeyen copyleft özgür alternatif. WatchSwitcher gecelik sürümleri. Pebble sağlayıcısındaki bir çakışma nedeniyle WatchSwitcher veya Pebble uygulaması zaten kuruluysa bu kurulamaz.</string>
     <string name="gadgetbridge_running_main_nightly">Gecelik GB çalışıyor</string>
-    <string name="title_activity_controlcenter_main_nopebble">Gadgetbridge Gecelik Pebble Yok</string>
-    <string name="about_activity_title_main_nopebble">Gadgetbridge Gecelik Pebble Yok Hakkında</string>
+    <string name="title_activity_controlcenter_main_nopebble">WatchSwitcher Gecelik Pebble Yok</string>
+    <string name="about_activity_title_main_nopebble">WatchSwitcher Gecelik Pebble Yok Hakkında</string>
     <string name="gadgetbridge_running_main_nopebble">Gecelik PebbleYok GB çalışıyor</string>
-    <string name="title_activity_controlcenter_banglejs_main">Bangle.js Gadgetbridge</string>
-    <string name="about_activity_title_banglejs_main">Bangle.js Gadgetbridge Hakkında</string>
-    <string name="about_description_banglejs_main">Bangle.js için Gadgetbridge projesinin üzerine inşa edilmiş, internet erişimi eklenmiş Android yardımcı uygulaması.
+    <string name="title_activity_controlcenter_banglejs_main">Bangle.js WatchSwitcher</string>
+    <string name="about_activity_title_banglejs_main">Bangle.js WatchSwitcher Hakkında</string>
+    <string name="about_description_banglejs_main">Bangle.js için WatchSwitcher projesinin üzerine inşa edilmiş, internet erişimi eklenmiş Android yardımcı uygulaması.
 \n
-\nGoogle Play Store politikaları nedeniyle, uygulamanın kendisinde bir bağış bağlantısına izin verilmiyor, ancak bu uygulamayı beğendiyseniz lütfen aşağıdaki Gadgetbridge ana sayfası üzerinden bağış yapmayı düşünün.</string>
-    <string name="title_activity_controlcenter_main_nightly">Gadgetbridge Gecelik</string>
-    <string name="application_name_main_nopebble">Gadgetbridge (Gecelik, Pebble sağlayıcısı yok)</string>
-    <string name="application_name_banglejs_main">Bangle.js Gadgetbridge</string>
-    <string name="about_description_main_nopebble">Satıcıların kapalı kaynaklı Android aygıt uygulamalarının yerine bulut gerektirmeyen copyleft özgür alternatif. Gadgetbridge gecelik sürümleri. Bu sürümde, çakışmaları önlemek için Pebble sağlayıcısının adı değiştirilmiştir, bu nedenle Pebble ile ilgili bazı bütünleşmeler çalışmayacaktır, ancak mevcut bir Gadgetbridge kurulumunun yanına kurulabilir.</string>
-    <string name="application_name_main_nightly">Gadgetbridge (Gecelik)</string>
+\nGoogle Play Store politikaları nedeniyle, uygulamanın kendisinde bir bağış bağlantısına izin verilmiyor, ancak bu uygulamayı beğendiyseniz lütfen aşağıdaki WatchSwitcher ana sayfası üzerinden bağış yapmayı düşünün.</string>
+    <string name="title_activity_controlcenter_main_nightly">WatchSwitcher Gecelik</string>
+    <string name="application_name_main_nopebble">WatchSwitcher (Gecelik, Pebble sağlayıcısı yok)</string>
+    <string name="application_name_banglejs_main">Bangle.js WatchSwitcher</string>
+    <string name="about_description_main_nopebble">Satıcıların kapalı kaynaklı Android aygıt uygulamalarının yerine bulut gerektirmeyen copyleft özgür alternatif. WatchSwitcher gecelik sürümleri. Bu sürümde, çakışmaları önlemek için Pebble sağlayıcısının adı değiştirilmiştir, bu nedenle Pebble ile ilgili bazı bütünleşmeler çalışmayacaktır, ancak mevcut bir WatchSwitcher kurulumunun yanına kurulabilir.</string>
+    <string name="application_name_main_nightly">WatchSwitcher (Gecelik)</string>
     <string name="prefs_activate_display_on_lift_sensitivity">Hassasiyet</string>
     <string name="normal">Normal</string>
     <string name="sensitive">Hassas</string>
@@ -1568,13 +1568,13 @@
     <string name="pref_summary_device_intents">Bangle.js saat uygulamalarının Android istekleri göndermesine ve Android\'deki diğer uygulamaların (Tasker gibi) com.banglejs.uart.tx isteği ile Bangle.js\'ye veri göndermesine izin ver. Arka planda çalışmak için diğer uygulamalar üzerinde görüntüleme izni gerekir.</string>
     <string name="pref_title_device_intents">İsteklere İzin Ver</string>
     <string name="pref_summary_device_internet_access">Bu aygıttaki uygulamaların internete erişmesine izin ver</string>
-    <string name="pref_summary_banglejs_text_bitmap">Bir sözcük saatin yazı tipi kullanılarak görüntülenemiyorsa, onu Gadgetbridge\'de bir bit eşleme dönüştür ve bit eşlemi saatte görüntüle</string>
+    <string name="pref_summary_banglejs_text_bitmap">Bir sözcük saatin yazı tipi kullanılarak görüntülenemiyorsa, onu WatchSwitcher\'de bir bit eşleme dönüştür ve bit eşlemi saatte görüntüle</string>
     <string name="pref_title_device_internet_access">İnternet Erişimine İzin Ver</string>
     <string name="pref_workout_start_on_phone_title">Fitness uygulaması izlemesi</string>
     <string name="pref_workout_start_on_phone_summary">Bileklikte bir GPS egzersizi başlatıldığında telefonda fitness uygulaması izlemeyi başlat/durdur</string>
     <string name="pref_workout_send_gps_summary">Egzersiz sırasında geçerli GPS konumunu bilekliğe gönder</string>
     <string name="notification_channel_gps">GPS izleme</string>
-    <string name="notification_gps_title">Gadgetbridge GPS</string>
+    <string name="notification_gps_title">WatchSwitcher GPS</string>
     <string name="notification_gps_text">GPS konumu %1$d aygıta gönderiliyor</string>
     <string name="pref_device_action_phone_gps_location_listener_stop">GPS Konumu Dinleyiciyi Durdur</string>
     <string name="pref_workout_send_gps_title">Egzersiz sırasında GPS gönder</string>
@@ -1676,13 +1676,13 @@
     <string name="controlcenter_get_heartrate_measurement">Kalp ritmi ölçümünü al</string>
     <string name="pref_write_logfiles_not_available">Dosya günlüğü başlatılamadı, günlük dosyalarının yazılması şu anda kullanılamıyor. Günlük dosyalarını tekrar başlatmayı denemek için uygulamayı yeniden başlatın.</string>
     <string name="devicetype_binary_sensor">İkili sensör</string>
-    <string name="application_name_banglejs_nightly">Bangle.js Gadgetbridge (Gecelik)</string>
-    <string name="title_activity_controlcenter_banglejs_nightly">Bangle.js Gadgetbridge (Gecelik)</string>
-    <string name="about_activity_title_banglejs_nightly">Bangle.js Gadgetbridge (Gecelik) Hakkında</string>
+    <string name="application_name_banglejs_nightly">Bangle.js WatchSwitcher (Gecelik)</string>
+    <string name="title_activity_controlcenter_banglejs_nightly">Bangle.js WatchSwitcher (Gecelik)</string>
+    <string name="about_activity_title_banglejs_nightly">Bangle.js WatchSwitcher (Gecelik) Hakkında</string>
     <string name="gadgetbridge_running_banglejs_nightly">Gecelik Bangle.js çalışıyor</string>
-    <string name="about_description_banglejs_nightly">Bangle.js için Gadgetbridge projesinin üzerine inşa edilmiş, internet erişimi eklenmiş Android yardımcı uygulaması.
+    <string name="about_description_banglejs_nightly">Bangle.js için WatchSwitcher projesinin üzerine inşa edilmiş, internet erişimi eklenmiş Android yardımcı uygulaması.
 \n
-\nGoogle Play Store politikaları nedeniyle, uygulamanın kendisinde bir bağış bağlantısına izin verilmiyor, ancak bu uygulamayı beğendiyseniz lütfen aşağıdaki Gadgetbridge ana sayfası üzerinden bağış yapmayı düşünün.</string>
+\nGoogle Play Store politikaları nedeniyle, uygulamanın kendisinde bir bağış bağlantısına izin verilmiyor, ancak bu uygulamayı beğendiyseniz lütfen aşağıdaki WatchSwitcher ana sayfası üzerinden bağış yapmayı düşünün.</string>
     <string name="prefs_hourly_chime">Saatlik zil</string>
     <string name="prefs_hourly_chime_summary">Saat, saatte bir kez bip sesi çıkaracak</string>
     <string name="step_streaks_achievements_sharing_message">Günlük adım başarılarım!</string>
@@ -2143,7 +2143,7 @@
     <string name="zepp_os_watchface_guider">Kılavuz</string>
     <string name="zepp_os_watchface_free_combination">Serbest birleşim</string>
     <string name="zepp_os_watchface_pure_white">Saf beyaz</string>
-    <string name="pref_show_changelog_summary">Gadgetbridge güncellendikten sonra son sürümden bu yana yapılan değişiklik günlüğünü görüntüle</string>
+    <string name="pref_show_changelog_summary">WatchSwitcher güncellendikten sonra son sürümden bu yana yapılan değişiklik günlüğünü görüntüle</string>
     <string name="menuitem_zepp_coach">Zepp Coach</string>
     <string name="dev_tools">Geliştirici Araçları</string>
     <string name="menuitem_forecast">Tahmin</string>
@@ -2389,7 +2389,7 @@
     <string name="find_my_phone_found_it">BULUNDU</string>
     <string name="error_menu_companion_not_installed">\'HR Menu Companion\' muhtemelen kurulu değil</string>
     <string name="red">Kırmızı</string>
-    <string name="pref_theme_dynamic_colors_explanation">Not: Değişken renkler teması için Android 12 ve üzeri görünüm ayarlarınızda Duvar Kağıdı Renkleri veya Renk Paletini etkinleştirmeniz gerekir. Etkinleştirmezseniz, Gadgetbridge öntanımlı Material 3 renklerini kullanacak.</string>
+    <string name="pref_theme_dynamic_colors_explanation">Not: Değişken renkler teması için Android 12 ve üzeri görünüm ayarlarınızda Duvar Kağıdı Renkleri veya Renk Paletini etkinleştirmeniz gerekir. Etkinleştirmezseniz, WatchSwitcher öntanımlı Material 3 renklerini kullanacak.</string>
     <string name="prefs_wena3_item_large_font">Daha Büyük Yazı Tipi Boyutu</string>
     <string name="prefs_wena3_button_action_item_double">Çift Bas</string>
     <string name="prefs_wena3_button_action_item_long">Uzun Bas</string>
@@ -2404,7 +2404,7 @@
     <string name="uploadwatchfaceoperation_complete">Saat arayüzü kurulumu tamamlandı</string>
     <string name="pref_title_fossil_hr_nav_vibrate">Yeni talimatta titreşim</string>
     <string name="pref_summary_fossil_hr_nav_vibrate">Saatin her yeni veya değiştirilen navigasyon talimatında titreyip titremeyeceği (yalnızca uygulama ön plandayken)</string>
-    <string name="pref_force_connection_type_description">Aygıtınızın Gadgetbridge\'e yanıt vermemesi durumunda bağlantı türünü zorlamayı deneyebilirsiniz</string>
+    <string name="pref_force_connection_type_description">Aygıtınızın WatchSwitcher\'e yanıt vermemesi durumunda bağlantı türünü zorlamayı deneyebilirsiniz</string>
     <string name="pref_test_features_title">Özellikler</string>
     <string name="pref_test_features_summary">Bu test aygıtı için etkinleştirilen özellikler</string>
     <string name="uploadwatchfaceoperation_failed">Saat arayüzü kurulumu başarısız</string>
@@ -2427,7 +2427,7 @@
     <string name="prefs_wena3_vibration_strength_item_medium">Orta</string>
     <string name="loyalty_cards_sync_options">Eşzamanlama Seçenekleri</string>
     <string name="prefs_wena3_title_screen">Ekran Ayarları</string>
-    <string name="prefs_wena3_hint_background_sync">Wena\'nın düzenli aralıklarla Gadgetbridge\'in aygıttan etkinlik verilerini indirmesini istemesine izin ver</string>
+    <string name="prefs_wena3_hint_background_sync">Wena\'nın düzenli aralıklarla WatchSwitcher\'in aygıttan etkinlik verilerini indirmesini istemesine izin ver</string>
     <string name="prefs_wena3_hint_weather_statusbar">Ana ekranın sol üst köşesinde şu anki durum simgesini göster</string>
     <string name="prefs_wena3_item_weather_statusbar">Durum Çubuğunda Hava Durumu</string>
     <string name="prefs_wena3_title_alarm">Alarm Ayarları</string>
@@ -2510,7 +2510,7 @@
     <string name="widget_move_down">Aşağı taşı</string>
     <string name="widget_screen_x">Ekran %s</string>
     <string name="widget_move_up">Yukarı taşı</string>
-    <string name="pref_theme_dynamic_colors_not_available_warning">Değişken renkler aygıtınızda kullanılabilir değil, yalnızca Android 12 ve üstü bu işlevi destekler. Gadgetbridge öntanımlı Material 3 renklerini kullanacak.</string>
+    <string name="pref_theme_dynamic_colors_not_available_warning">Değişken renkler aygıtınızda kullanılabilir değil, yalnızca Android 12 ve üstü bu işlevi destekler. WatchSwitcher öntanımlı Material 3 renklerini kullanacak.</string>
     <string name="prefs_wena3_smart_alarm_margin_item">Akıllı Alarm Farkı</string>
     <string name="prefs_wena3_notification_settings_title">Bildirim Ayarları</string>
     <string name="prefs_wena3_notification_vibration_repetition_3">Üç defa</string>
@@ -2644,7 +2644,7 @@
     <string name="dashboard_settings">Gösterge tablosu ayarları</string>
     <string name="pref_dashboard_cards_summary">Gösterge tablosunda widget\'ların etrafına kartlar çiz</string>
     <string name="pref_dashboard_first_title">Önce gösterge tablosunu göster</string>
-    <string name="pref_dashboard_first_summary">Gadgetbridge başladığında aygıtlar ekranı yerine gösterge tablosunu göster</string>
+    <string name="pref_dashboard_first_summary">WatchSwitcher başladığında aygıtlar ekranı yerine gösterge tablosunu göster</string>
     <string name="pref_dashboard_widget_settings">Widget ayarları</string>
     <string name="pref_dashboard_widget_today_title">Etkinlik çizelgesi</string>
     <string name="pref_dashboard_all_devices_title">Tüm aygıtlar</string>
@@ -2706,7 +2706,7 @@
     <string name="cyclingPowerMin">En düşük bisiklet gücü</string>
     <string name="cyclingPowerAverage">Ortalama bisiklet gücü</string>
     <string name="cyclingPowerMax">En yüksek bisiklet gücü</string>
-    <string name="huawei_trusleep_warning">Uyarı: TruSleep™ tam olarak uygulanmamıştır. Bazı aygıtlarda bu özelliği etkinleştirmek, tüm uyku verilerinin Gadgetbridge\'de hafif uyku olarak görünmesine neden olacaktır!</string>
+    <string name="huawei_trusleep_warning">Uyarı: TruSleep™ tam olarak uygulanmamıştır. Bazı aygıtlarda bu özelliği etkinleştirmek, tüm uyku verilerinin WatchSwitcher\'de hafif uyku olarak görünmesine neden olacaktır!</string>
     <string name="pref_touch_tone_summary">Kulaklığa dokunulduğunda bir ses çalar</string>
     <string name="pref_wearing_tone">Takma Sesi</string>
     <string name="pref_touch_tone">Dokunma Sesi</string>
@@ -2743,7 +2743,7 @@
     <string name="agps_status_missing">Eksik</string>
     <string name="agps_status_pending">Bekliyor</string>
     <string name="garmin_agps_local_file">Yerel dosya</string>
-    <string name="pref_summary_garmin_default_reply_suffix">Gadgetbridge\'de ayarlanan son eke ek olarak eklenir</string>
+    <string name="pref_summary_garmin_default_reply_suffix">WatchSwitcher\'de ayarlanan son eke ek olarak eklenir</string>
     <string name="pref_title_garmin_default_reply_suffix">Önceden tanımlanan yanıt son ekini kullan</string>
     <string name="pref_garmin_agps_help">Aşağıdaki liste, saat tarafından AGPS güncellemeleri için istenen tüm URL\'leri içerir. Telefonun depolama alanından, güncelleme istediğinde saate gönderilecek bir dosya seçebilirsiniz.\n\nDosyalardan yalnızca birinin yapılandırılması gerekir.</string>
     <string name="copied_to_clipboard">Panoya kopyalandı</string>
@@ -3098,7 +3098,7 @@
     <string name="activity_db_management_backup_restore_label">Yedekle ve Geri Yükle</string>
     <string name="activity_db_management_export_to_zip">Zip olarak dışa aktar</string>
     <string name="activity_db_management_import_from_zip">Zip dosyasından içe aktar</string>
-    <string name="activity_db_management_backup_restore_explanation">İçe/dışa aktarma işlemleri, tüm Gadgetbridge ayarlarını, aygıtlarını ve verilerini bir zip dosyasına taşımanıza veya bu dosyadan yedeklemenize olanak tanır.
+    <string name="activity_db_management_backup_restore_explanation">İçe/dışa aktarma işlemleri, tüm WatchSwitcher ayarlarını, aygıtlarını ve verilerini bir zip dosyasına taşımanıza veya bu dosyadan yedeklemenize olanak tanır.
 \n
 \nBir dosyayı içe aktarmak, var olan tüm verileri, aygıtları ve tercihleri kaldıracak ve bunları tamamen yedekle değiştirecektir.</string>
     <string name="backup_restore_importing_files_i_of_n">Dosyalar içe aktarılıyor… %1$d / %2$d</string>
@@ -3192,7 +3192,7 @@
     <string name="title_activity_musicmanager">Müzik Yöneticisi</string>
     <string name="highest">En yüksek</string>
     <string name="total_calories_burnt">Toplam yakılan</string>
-    <string name="first_start_open_source_text">Gadgetbridge açık kaynaklı bir uygulamadır. Topluluk tarafından, topluluk için geliştirilmiştir.\n\nHerkes kod, dokümantasyon, test ve bağış yoluyla katkıda bulunabilir.\n\nGadgetbridge reklam ve veri toplama içermez. Verilerinizi yerel olarak Android cihazınızda tutar, bu nedenle %100 gizlilik dostudur.\n\nDaha fazla bilgi, dokümantasyon ve iletişim kanallarımıza bağlantılar için web sitemizi ziyaret edin.</string>
+    <string name="first_start_open_source_text">WatchSwitcher açık kaynaklı bir uygulamadır. Topluluk tarafından, topluluk için geliştirilmiştir.\n\nHerkes kod, dokümantasyon, test ve bağış yoluyla katkıda bulunabilir.\n\nWatchSwitcher reklam ve veri toplama içermez. Verilerinizi yerel olarak Android cihazınızda tutar, bu nedenle %100 gizlilik dostudur.\n\nDaha fazla bilgi, dokümantasyon ve iletişim kanallarımıza bağlantılar için web sitemizi ziyaret edin.</string>
     <string name="update_firmware_operation_check_failed">Ürün yazılımı kontrolü başarısız oldu</string>
     <string name="permission_post_notification_summary">Hizmetin çalışmasını sağlayan kalıcı bir bildirim gönderir</string>
     <string name="pref_music_management_summary">Saatinizdeki müzikleri yönetin</string>
@@ -3219,10 +3219,10 @@
     <string name="redmi_buds_5_pro_equalizer_preset_custom">Özel</string>
     <string name="redmi_buds_5_pro_equalizer_band_62">62 Hz</string>
     <string name="pref_override_features_title">Desteklenen özellikleri geçersiz kıl</string>
-    <string name="first_start_overview_desc">Gadgetbridge\'in her biri kendi amacına yönelik iki ana ekranı vardır.</string>
+    <string name="first_start_overview_desc">WatchSwitcher\'in her biri kendi amacına yönelik iki ana ekranı vardır.</string>
     <string name="first_start_overview_dashboard">Gösterge paneli, bugün ne durumda olduğunuz hakkında hızlı bir fikir edinmenizi sağlar. Takvim görünümü, bir ay boyunca hedeflerinizin durumunu gösterir.</string>
     <string name="first_start_permissions_title">Yetkiler</string>
-    <string name="first_start_permissions_desc">Gadgetbridge\'in tüm işlevlerini yerine getirebilmesi için birçok izne ihtiyacı vardır. Aşağıdaki izinleri ve amaçlarını gözden geçirin.</string>
+    <string name="first_start_permissions_desc">WatchSwitcher\'in tüm işlevlerini yerine getirebilmesi için birçok izne ihtiyacı vardır. Aşağıdaki izinleri ve amaçlarını gözden geçirin.</string>
     <string name="permission_manage_dnd_title">Rahatsız Etmeyin\'i Yönet</string>
     <string name="permission_post_notification_title">Bildirim gönderme</string>
     <string name="permission_bluetooth_connect_summary">Önceden eşleştirilmiş Bluetooth cihazlarına bağlanır</string>
@@ -3258,7 +3258,7 @@
     <string name="permission_read_call_log_title">Çağrı günlüğünü oku</string>
     <string name="permission_answer_phone_calls_title">Çağrılara cevap ver</string>
     <string name="permission_query_all_packages_summary">Yüklü tüm uygulamaların adlarını ve simgelerini okur</string>
-    <string name="manual_discharge_summary">devre dışı bırakıldığında (Gadgetbridge tarafından desteklenmeyen) harici bir güç ölçücü tarafından kontrol edildiği varsayılır</string>
+    <string name="manual_discharge_summary">devre dışı bırakıldığında (WatchSwitcher tarafından desteklenmeyen) harici bir güç ölçücü tarafından kontrol edildiği varsayılır</string>
     <string name="summary_battery_discharge_intervals_set">Aşağıdaki yapılandırmayı cihaza gönder</string>
     <string name="battery_minimum_charge">%% cinsinden minimum pil seviyesi</string>
     <string name="permission_disable_doze_summary">Android pil optimizasyonları tarafından engellenmeden arka planda çalışmaya izin verir</string>
@@ -3600,7 +3600,7 @@
     <string name="soundcore_battery_low_tone_summary" formatted="false">Pil seviyesi %20 ve %10\'un altına düştüğünde uyarı sesini duyun</string>
     <string name="soundcore_gaming_mode_title">Oyun Modu</string>
     <string name="soundcore_gaming_mode_summary">Gecikmeyi azaltın ve ayak sesleri ile konuşma seslerini iyileştirin. Bağlantı kararlılığını azaltabilir.</string>
-    <string name="huawei_sleep_breath_summary">Sessiz bir ortamda nefesinizi değerlendirin. Pil ömrünü etkileyebilir.\nUyarı: Henüz Gadgetbridge ile eşzamanlanmadı.</string>
+    <string name="huawei_sleep_breath_summary">Sessiz bir ortamda nefesinizi değerlendirin. Pil ömrünü etkileyebilir.\nUyarı: Henüz WatchSwitcher ile eşzamanlanmadı.</string>
     <string name="pref_enable_sms_quick_reply_title">SMS yanıtlarını etkinleştir</string>
     <string name="pref_enable_sms_quick_reply_summary">SMS yanıtıyla çağrıları reddetmeye izin ver</string>
     <string name="pref_heart_rate_realtime_mode">Gerçek zamanlı otomatik kalp ritmi ölçüm modu</string>
@@ -3736,12 +3736,12 @@
     <string name="pref_atc_ble_oepl_oepl_protocol_enable_summary">Yalnızca BLE kullanıyorsanız, güç tasarrufu için bunu devre dışı bırakın</string>
     <string name="activity_print_image_print_button">Yazdır</string>
     <string name="activity_print_label_print_size">Yazdırma boyutu (px): %1$d x %2$d</string>
-    <string name="service_notification_collector_service_title">Gadgetbridge Bildirim İzleyicisi</string>
+    <string name="service_notification_collector_service_title">WatchSwitcher Bildirim İzleyicisi</string>
     <string name="service_notification_collector_service_text">Bildirimleri arka planda izle</string>
     <string name="pref_title_time_interval">Zaman aralığı</string>
     <string name="pref_summary_time_interval">Belirli aralıklara sınırla</string>
     <string name="prefs_key_enable_deprecated_notificationcollectormonitor_title">Kullanımdan kaldırılan Bildirim Toplayıcı İzleme Hizmetini etkinleştirin</string>
-    <string name="prefs_key_enable_deprecated_notificationcollectormonitor_summary">Bildirim izleyicisini açık tutmak için ikinci bir ön plan hizmetinin kullanılmasını zorlar. Gadgetbridge bildirim almayı durdurursa bu seçeneği etkinleştirin.\nBunun ikinci bir kalıcı bildirimin gösterilmesine neden olabileceğini lütfen unutmayın.\nDeğişikliği yaptıktan sonra uygulamayı yeniden başlatın.</string>
+    <string name="prefs_key_enable_deprecated_notificationcollectormonitor_summary">Bildirim izleyicisini açık tutmak için ikinci bir ön plan hizmetinin kullanılmasını zorlar. WatchSwitcher bildirim almayı durdurursa bu seçeneği etkinleştirin.\nBunun ikinci bir kalıcı bildirimin gösterilmesine neden olabileceğini lütfen unutmayın.\nDeğişikliği yaptıktan sonra uygulamayı yeniden başlatın.</string>
     <string name="submit_button_text">Gönder</string>
     <string name="auth_key_required_message">Kimlik doğrulama anahtarı boş olamaz</string>
     <string name="invalid_auth_key_message">Geçersiz kimlik doğrulama anahtarı - lütfen tekrar deneyin</string>
@@ -3784,12 +3784,12 @@
     <string name="pref_huawei_features_config_info_title">Ek sağlık özelliklerini etkinleştir</string>
     <string name="pref_huawei_features_config_info_summary">Aşağıdaki ayarları etkinleştirdiğinizde, aygıtınızda ek sağlık özellikleri etkinleştirilir. Örneğin, duygusal veya EKG.\nNOT: Kullanılabilir özellikler aygıta bağlıdır.</string>
     <string name="pref_huawei_features_config_warning_title">Ülke kodunu ve özellik yapılandırmasını aygıta gönder.</string>
-    <string name="pref_huawei_features_config_warning_summary">Uyarı: Gadgetbridge ve satıcı uygulaması aynı anda kullanılırken bu ayarları etkinleştirmek, satıcı uygulaması ve aygıt işlevselliğinde sorunlara neden olabilir veya geçerli aygıt özelliklerini hiç etkilemeyebilir. Yanlış ülke ayarı, bölgeye göre frekans yapılandırması gibi diğer aygıt ayarlarını etkileyebilir. Kendi sorumluluğunuzda etkinleştirin.\nAygıtın yeniden bağlanması gerekir.</string>
+    <string name="pref_huawei_features_config_warning_summary">Uyarı: WatchSwitcher ve satıcı uygulaması aynı anda kullanılırken bu ayarları etkinleştirmek, satıcı uygulaması ve aygıt işlevselliğinde sorunlara neden olabilir veya geçerli aygıt özelliklerini hiç etkilemeyebilir. Yanlış ülke ayarı, bölgeye göre frekans yapılandırması gibi diğer aygıt ayarlarını etkileyebilir. Kendi sorumluluğunuzda etkinleştirin.\nAygıtın yeniden bağlanması gerekir.</string>
     <string name="pref_huawei_send_country_code_title">Ülke kodunu gönder</string>
     <string name="pref_huawei_send_country_code_summary">Ülke kodunu aygıta gönderin.\n Dikkat: ülke kodu ayarlanmalıdır</string>
     <string name="pref_huawei_country_code_title">Ülke kodu</string>
     <string name="pref_huawei_force_features_settings_title">Ülkeye göre kısıtlanan ayarları göstermeye zorla</string>
-    <string name="pref_huawei_force_features_settings_summary">Gadgetbridge uygulamasında ülkeye özgü ayarları göstermeye zorla.\n Uyarı: Gadgetbridge, aygıtın desteklediğini bildirdiği ayarları görüntüler. Bazı ayarların, aygıtınızdaki satıcı uygulaması tarafından kısıtlanabileceğini ve çalışmayabileceğini veya hatalı çalışabileceğini lütfen unutmayın.</string>
+    <string name="pref_huawei_force_features_settings_summary">WatchSwitcher uygulamasında ülkeye özgü ayarları göstermeye zorla.\n Uyarı: WatchSwitcher, aygıtın desteklediğini bildirdiği ayarları görüntüler. Bazı ayarların, aygıtınızdaki satıcı uygulaması tarafından kısıtlanabileceğini ve çalışmayabileceğini veya hatalı çalışabileceğini lütfen unutmayın.</string>
     <string name="pref_huawei_pulse_wave_arrhythmia_automatic_summary">Aygıt kalp ritminizi otomatik olarak izleyecektir.</string>
     <string name="pref_huawei_pulse_wave_arrhythmia_alert_title">Ritim bozukluğu uyarısı</string>
     <string name="pref_huawei_pulse_wave_arrhythmia_automatic_title">Otomatik ritim bozukluğu algılama</string>
@@ -3901,16 +3901,16 @@
     <string name="qhybrid_button_function_volume_up">Sesi yükselt</string>
     <string name="qhybrid_button_function_volume_down">Sesi düşür</string>
     <string name="qs_tile_cycle_values_all">Tüm değerler</string>
-    <string name="qs_tile_label_1">Gadgetbridge 1</string>
-    <string name="qs_tile_label_2">Gadgetbridge 2</string>
-    <string name="qs_tile_label_3">Gadgetbridge 3</string>
-    <string name="qs_tile_label_4">Gadgetbridge 4</string>
-    <string name="qs_tile_label_5">Gadgetbridge 5</string>
-    <string name="qs_tile_label_6">Gadgetbridge 6</string>
-    <string name="qs_tile_label_7">Gadgetbridge 7</string>
-    <string name="qs_tile_label_8">Gadgetbridge 8</string>
-    <string name="qs_tile_label_9">Gadgetbridge 9</string>
-    <string name="qs_tile_label_10">Gadgetbridge 10</string>
+    <string name="qs_tile_label_1">WatchSwitcher 1</string>
+    <string name="qs_tile_label_2">WatchSwitcher 2</string>
+    <string name="qs_tile_label_3">WatchSwitcher 3</string>
+    <string name="qs_tile_label_4">WatchSwitcher 4</string>
+    <string name="qs_tile_label_5">WatchSwitcher 5</string>
+    <string name="qs_tile_label_6">WatchSwitcher 6</string>
+    <string name="qs_tile_label_7">WatchSwitcher 7</string>
+    <string name="qs_tile_label_8">WatchSwitcher 8</string>
+    <string name="qs_tile_label_9">WatchSwitcher 9</string>
+    <string name="qs_tile_label_10">WatchSwitcher 10</string>
     <string name="activity_summary_set_header_photo_title">Başlık fotoğrafını ayarla</string>
     <string name="activity_summary_remove_header_photo_title">Başlık fotoğrafını kaldır</string>
     <string name="qs_tile_not_connected">%s bağlı değil</string>
@@ -3943,7 +3943,7 @@
     <string name="open_app">%s aç</string>
     <string name="install_app_fail">%s kurmak için uygulama mağazası açılamadı</string>
     <string name="loyalty_cards_app_not_installed">Sadakat kartlarını yönetmek için bir sadakat kartı uygulaması gereklidir. Lütfen aşağıda desteklenen uygulamalardan birini kurun.</string>
-    <string name="loyalty_cards_app_not_compatible">Kurulu %1$s sürümü Gadgetbridge ile uyumlu değil. Lütfen en son %1$s ve Gadgetbridge sürümlerine güncelleyin.</string>
+    <string name="loyalty_cards_app_not_compatible">Kurulu %1$s sürümü WatchSwitcher ile uyumlu değil. Lütfen en son %1$s ve WatchSwitcher sürümlerine güncelleyin.</string>
     <string name="internet_firewall_action">Eylem</string>
     <string name="internet_firewall_allow">İzin ver</string>
     <string name="internet_firewall_block">Engelle</string>

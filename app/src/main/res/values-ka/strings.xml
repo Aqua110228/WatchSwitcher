@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="application_name_generic">Gadgetbridge</string>
-    <string name="title_activity_controlcenter_generic">Gadgetbridge</string>
+    <string name="application_name_generic">WatchSwitcher</string>
+    <string name="title_activity_controlcenter_generic">WatchSwitcher</string>
     <string name="action_settings">პარამეტრები</string>
     <string name="action_quit">შეწყვეტა</string>
     <string name="action_donate">დონაცია</string>
@@ -148,7 +148,7 @@
     <string name="controlcenter_navigation_drawer_close">სანავიგაციო უჯრის დახურვა</string>
     <string name="controlcenter_navigation_drawer_open">სანავიგაციო უჯრის გასახსნელად</string>
     <string name="prefs_autoremove_message">ავტომატურად ამოიღონ SMS შეტყობინებები</string>
-    <string name="debugactivity_really_factoryreset">ქარხნის გადატვირთვისას წაიშლება ყველა მონაცემი დაკავშირებული მოწყობილობიდან (თუ მხარდაჭერილია). Xiaomi/Huami მოწყობილობები ასევე ცვლის Bluetooth MAC მისამართს, ამიტომ ისინი Gadgetbridge- ისთვის ახალი მოწყობილობებით გამოჩნდებიან.</string>
+    <string name="debugactivity_really_factoryreset">ქარხნის გადატვირთვისას წაიშლება ყველა მონაცემი დაკავშირებული მოწყობილობიდან (თუ მხარდაჭერილია). Xiaomi/Huami მოწყობილობები ასევე ცვლის Bluetooth MAC მისამართს, ამიტომ ისინი WatchSwitcher- ისთვის ახალი მოწყობილობებით გამოჩნდებიან.</string>
     <string name="title_activity_debug">გამართვა</string>
     <string name="calendar_year">წელი</string>
     <string name="calendar_six_months">ექვსი თვე</string>
@@ -163,7 +163,7 @@
     <string name="controlcenter_take_screenshot">გაკეთება სკრინშოტი</string>
     <string name="action_debug">გამართვა</string>
     <string name="calendar_three_months">3 თვე</string>
-    <string name="about_activity_title_generic">Gadgetbridge შესახებ</string>
+    <string name="about_activity_title_generic">WatchSwitcher შესახებ</string>
     <string name="blacklist_all_for_notifications">შეტყობინებებიდან ყველას გაცხრილვა</string>
     <string name="whitelist_all_for_notifications">ყველა გაფრთხილების თეთრ სიაში ჩასმა</string>
     <string name="pref_header_sensors_calibration">სენსორის კალიბრაცია</string>

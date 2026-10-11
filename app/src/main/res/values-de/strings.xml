@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <string name="application_name_generic">Gadgetbridge</string>
-    <string name="title_activity_controlcenter_generic">Gadgetbridge</string>
+    <string name="application_name_generic">WatchSwitcher</string>
+    <string name="title_activity_controlcenter_generic">WatchSwitcher</string>
     <string name="action_settings">Einstellungen</string>
     <string name="action_debug">Debug</string>
     <string name="action_quit">Beenden</string>
@@ -42,25 +42,25 @@
     <string name="title_activity_fw_app_insaller">FW/App-Installer</string>
     <string name="fw_upgrade_notice">Du bist dabei, die %s zu installieren.</string>
     <string name="fw_multi_upgrade_notice">Du bist dabei anstelle der aktuell auf dem Mi Band vorhandenen Firmware, die Firmware %1$s und %2$s zu installieren.</string>
-    <string name="miband_firmware_known">Diese Firmware wurde getestet und ist mit Gadgetbridge kompatibel.</string>
-    <string name="miband_firmware_unknown_warning">Diese Firmware/AGPS-Bundle wurde nicht getestet und ist möglicherweise nicht mit Gadgetbridge kompatibel.\n\nDas Flashen wird ausdrücklich nicht empfohlen!</string>
-    <string name="miband_firmware_suggest_whitelist">Wenn du trotzdem fortfahren möchtest und danach weiterhin alles wie gewünscht funktioniert, informiere bitte die Gadgetbridge-Entwickler, damit die Firmware-Version %s auf die Whitelist gesetzt wird.</string>
+    <string name="miband_firmware_known">Diese Firmware wurde getestet und ist mit WatchSwitcher kompatibel.</string>
+    <string name="miband_firmware_unknown_warning">Diese Firmware/AGPS-Bundle wurde nicht getestet und ist möglicherweise nicht mit WatchSwitcher kompatibel.\n\nDas Flashen wird ausdrücklich nicht empfohlen!</string>
+    <string name="miband_firmware_suggest_whitelist">Wenn du trotzdem fortfahren möchtest und danach weiterhin alles wie gewünscht funktioniert, informiere bitte die WatchSwitcher-Entwickler, damit die Firmware-Version %s auf die Whitelist gesetzt wird.</string>
     <!--Strings related to Settings-->
     <string name="title_activity_settings">Einstellungen</string>
     <string name="pref_header_general">Allgemeine Einstellungen</string>
-    <string name="pref_title_general_autoconnectonbluetooth">Verbindung mit Gadgetbridge-Gerät(en) herstellen, wenn Bluetooth eingeschaltet ist</string>
+    <string name="pref_title_general_autoconnectonbluetooth">Verbindung mit WatchSwitcher-Gerät(en) herstellen, wenn Bluetooth eingeschaltet ist</string>
     <string name="pref_title_general_autostartonboot">Automatisch starten</string>
     <string name="pref_title_general_autoreconnect">Verbindung automatisch wiederherstellen</string>
     <string name="pref_title_audio_player">Bevorzugter Audioplayer</string>
     <string name="pref_default">Standard</string>
     <string name="pref_header_datetime">Datum und Uhrzeit</string>
     <string name="pref_title_datetime_syctimeonconnect">Uhrzeit synchronisieren</string>
-    <string name="pref_summary_datetime_syctimeonconnect">Synchronisierung der Zeit mit dem/den Gadgetbridge-Gerät(en), wenn eine Verbindung hergestellt wird, und wenn sich die Zeit oder die Zeitzone auf dem Android-Gerät ändert, sowie in regelmäßigen Abständen</string>
+    <string name="pref_summary_datetime_syctimeonconnect">Synchronisierung der Zeit mit dem/den WatchSwitcher-Gerät(en), wenn eine Verbindung hergestellt wird, und wenn sich die Zeit oder die Zeitzone auf dem Android-Gerät ändert, sowie in regelmäßigen Abständen</string>
     <string name="pref_title_theme">Farbschema</string>
     <string name="pref_theme_light">Hell</string>
     <string name="pref_theme_dark">Dunkel</string>
     <string name="pref_title_language">Sprache</string>
-    <string name="pref_title_minimize_priority">Gadgetbridge-Benachrichtigung ausblenden</string>
+    <string name="pref_title_minimize_priority">WatchSwitcher-Benachrichtigung ausblenden</string>
     <string name="pref_summary_minimize_priority_off">Das Symbol in der Statusleiste und die Benachrichtigung auf dem Sperrbildschirm werden angezeigt</string>
     <string name="pref_summary_minimize_priority_on">Das Symbol in der Statusleiste und die Benachrichtigung auf dem Sperrbildschirm werden nicht angezeigt</string>
     <string name="pref_header_notifications">Benachrichtigungen</string>
@@ -130,7 +130,7 @@
     <string name="pref_title_pebble_mtu_limit">Pebble 2/LE GATT MTU Limit</string>
     <string name="pref_summary_pebble_mtu_limit">Wenn deine Pebble 2/Pebble LE nicht so wie erwartet funktioniert, versuche die MTU zu begrenzen (erlaubte Werte 20 - 512)</string>
     <string name="pref_title_pebble_enable_applogs">Protokollierung von Smartwatch-Apps aktivieren</string>
-    <string name="pref_summary_pebble_enable_applogs">Smartwatch-App-Logs werden von Gadgetbridge erfasst (erneute Verbindung nötig)</string>
+    <string name="pref_summary_pebble_enable_applogs">Smartwatch-App-Logs werden von WatchSwitcher erfasst (erneute Verbindung nötig)</string>
     <string name="pref_title_pebble_always_ack_pebblekit">PebbleKit Nachrichten direkt bestätigen</string>
     <string name="pref_summary_pebble_always_ack_pebblekit">Nachrichten, die an externe Drittanbieteranwendungen geschickt werden, immer und sofort bestätigen</string>
     <string name="pref_title_pebble_reconnect_attempts">Verbindungsversuche</string>
@@ -146,7 +146,7 @@
     <string name="_unknown_">(unbekannt)</string>
     <string name="test">Test</string>
     <string name="test_notification">Testbenachrichtigung</string>
-    <string name="this_is_a_test_notification_from_gadgetbridge">Dies ist eine Testbenachrichtigung von Gadgetbridge</string>
+    <string name="this_is_a_test_notification_from_gadgetbridge">Dies ist eine Testbenachrichtigung von WatchSwitcher</string>
     <string name="bluetooth_is_not_supported_">Bluetooth wird nicht unterstützt.</string>
     <string name="bluetooth_is_disabled_">Bluetooth ist deaktiviert.</string>
     <string name="tap_connected_device_for_app_mananger">Tippe auf das verbundene Gerät, um den App-Manager zu starten</string>
@@ -154,7 +154,7 @@
     <string name="tap_connected_device_for_vibration">Tippe auf das verbundene Gerät, um es vibrieren zu lassen</string>
     <string name="tap_a_device_to_connect">Tippe auf ein Gerät, um eine Verbindung herzustellen</string>
     <string name="cannot_connect_bt_address_invalid_">Keine Verbindung möglich. Bluetooth-Adresse ungültig\?</string>
-    <string name="gadgetbridge_running_generic">Gadgetbridge läuft</string>
+    <string name="gadgetbridge_running_generic">WatchSwitcher läuft</string>
     <string name="installing_binary_d_d">Binärdatei %1$d/%2$d wird installiert</string>
     <string name="installation_failed_">Installation fehlgeschlagen</string>
     <string name="installation_successful">Installiert</string>
@@ -193,7 +193,7 @@
     <string name="miband_pairing_using_dummy_userdata">Keine gültigen Benutzerdaten angegeben, es werden jetzt Dummy-Benutzerdaten verwendet.</string>
     <string name="miband_pairing_tap_hint">Wenn dein Mi Band vibriert und blinkt, tippe es ein paar Mal hintereinander an.</string>
     <string name="appinstaller_install">Installieren</string>
-    <string name="discovery_connected_devices_hint">Mache dein Gerät auffindbar. Derzeit verbundene Geräte werden wahrscheinlich nicht erkannt. Aktiviere die Standortbestimmung (zum Beispiel GPS). Deaktiviere Privacy Guard für Gadgetbridge, da er zu Abstürzen und Neustarts deines Telefons führen kann. Wenn nach einigen Minuten kein Gerät erkannt wird, versuche es nach dem Neustart deines mobilen Gerätes erneut.</string>
+    <string name="discovery_connected_devices_hint">Mache dein Gerät auffindbar. Derzeit verbundene Geräte werden wahrscheinlich nicht erkannt. Aktiviere die Standortbestimmung (zum Beispiel GPS). Deaktiviere Privacy Guard für WatchSwitcher, da er zu Abstürzen und Neustarts deines Telefons führen kann. Wenn nach einigen Minuten kein Gerät erkannt wird, versuche es nach dem Neustart deines mobilen Gerätes erneut.</string>
     <string name="discovery_note">Hinweis:</string>
     <string name="candidate_item_device_image">Gerätesymbol</string>
     <string name="miband_prefs_alias">Name/Alias</string>
@@ -285,7 +285,7 @@
     <string name="weeksteps_today_steps_description">Schritte heute, Ziel: %1$s</string>
     <string name="pref_title_dont_ack_transfer">Übertragung der Aktivitätsdaten nicht bestätigen (ACK)</string>
     <string name="pref_summary_dont_ack_transfers">Ohne ACK (Bestätigung), löscht das Band die Aktivitätsdaten nicht. Nützlich, wenn GB zusammen mit anderen Apps verwendet wird.</string>
-    <string name="pref_summary_keep_data_on_device">Behält Aktivitätsdaten auch nach der Synchronisierung auf dem Gerät. Nützlich, wenn Gadgetbridge mit anderen Apps verwendet wird. Kann zu Speicherproblemen oder Synchronisierungsfehlern führen.</string>
+    <string name="pref_summary_keep_data_on_device">Behält Aktivitätsdaten auch nach der Synchronisierung auf dem Gerät. Nützlich, wenn WatchSwitcher mit anderen Apps verwendet wird. Kann zu Speicherproblemen oder Synchronisierungsfehlern führen.</string>
     <string name="pref_title_low_latency_fw_update">Verwende den Low-Latency-Modus für Firmwareaktualisierung</string>
     <string name="pref_summary_low_latency_fw_update">Dies kann bei Geräten helfen, bei denen Firmwareupdates fehlschlagen.</string>
     <string name="live_activity_steps_history">Schrittverlauf</string>
@@ -346,11 +346,11 @@
     <string name="pref_summary_pebble_health_store_raw">Speichert Daten unverändert, benötigt aber mehr Speicher für spätere Auswertung.</string>
     <string name="action_db_management">Datenmanagement</string>
     <string name="title_activity_db_management">Datenmanagement</string>
-    <string name="activity_db_management_import_export_explanation">Die Export-/Importvorgänge verwenden den folgenden Pfad (siehe unten) zu einem Verzeichnis auf deinem Gerät. Auf dieses Verzeichnis können andere Android-Apps und dein Computer zugreifen. Beachte, dass dieses Verzeichnis und alle enthaltenen Dateien gelöscht werden, wenn du Gadgetbridge deinstallierst. Die Daten umfassen:
+    <string name="activity_db_management_import_export_explanation">Die Export-/Importvorgänge verwenden den folgenden Pfad (siehe unten) zu einem Verzeichnis auf deinem Gerät. Auf dieses Verzeichnis können andere Android-Apps und dein Computer zugreifen. Beachte, dass dieses Verzeichnis und alle enthaltenen Dateien gelöscht werden, wenn du WatchSwitcher deinstallierst. Die Daten umfassen:
 \n Export_preference - globale Einstellungen
 \n Export_preference_MAC - gerätespezifische Einstellungen
-\n Gadgetbridge - Geräte- und Aktivitätsdatenbank
-\n Gadgetbridge_date - Datenbank, die an einem Datum exportiert wurde
+\n WatchSwitcher - Geräte- und Aktivitätsdatenbank
+\n WatchSwitcher_date - Datenbank, die an einem Datum exportiert wurde
 \n * .gpx - GPS-Aufzeichnungen
 \n * .log - Protokolldateien
 \nDie exportierten Dateien (oder die Dateien, die du importieren möchtest) findest du dort:</string>
@@ -563,7 +563,7 @@
     <string name="pref_summary_contextual_arabic">Aktivieren, um kontextabhängiges Arabisch zu unterstützen</string>
     <string name="preferences_rtl_settings">Unterstützung für Rechts-nach-Links-Schrift (RTL)</string>
     <string name="share_log">Protokoll teilen</string>
-    <string name="share_log_warning">Bitte beachte, in den Protokolldateien von Gadgetbridge können personenbezogene Informationen enthalten sein. Dies können Gesundheitsdaten, eindeutige Identifikatoren (wie die MAC-Adresse eines Geräts), Musikpräferenzen und mehr sein. Erwäge die Datei zu bearbeiten und diese Informationen zu entfernen, bevor du die Datei in einem Fehlerbericht öffentlich zur Verfügung stellst.</string>
+    <string name="share_log_warning">Bitte beachte, in den Protokolldateien von WatchSwitcher können personenbezogene Informationen enthalten sein. Dies können Gesundheitsdaten, eindeutige Identifikatoren (wie die MAC-Adresse eines Geräts), Musikpräferenzen und mehr sein. Erwäge die Datei zu bearbeiten und diese Informationen zu entfernen, bevor du die Datei in einem Fehlerbericht öffentlich zur Verfügung stellst.</string>
     <string name="title_activity_notification_filter">Benachrichtigungsfilter</string>
     <string name="edittext_notification_filter_words_hint">Gewünschte Wörter eingeben, neue Zeile für jedes Wort</string>
     <string name="toast_notification_filter_saved_successfully">Benachrichtigungsfilter gespeichert</string>
@@ -653,7 +653,7 @@
     <string name="weekstepschart_steps_a_month">Schritte pro Monat</string>
     <string name="weeksleepchart_sleep_a_month">Schlaf pro Monat</string>
     <string name="menuitem_nfc">NFC</string>
-    <string name="pref_summary_expose_hr">Ermöglicht anderen Anwendungen den Zugriff auf HR-Daten in Echtzeit, während Gadgetbridge verbunden ist</string>
+    <string name="pref_summary_expose_hr">Ermöglicht anderen Anwendungen den Zugriff auf HR-Daten in Echtzeit, während WatchSwitcher verbunden ist</string>
     <string name="pref_title_expose_hr">Echtzeit-HR-Zugang von Drittanbietern</string>
     <string name="pref_title_use_custom_font">Benutzerdefinierte Schriftart verwenden</string>
     <string name="pref_summary_use_custom_font">Aktiviere das, wenn dein Gerät über eine benutzerdefinierte Schriftarten-Firmware für die Emoji-Unterstützung verfügt</string>
@@ -731,7 +731,7 @@
     <string name="find_my_phone_notification">Mein Telefon finden</string>
     <string name="notification_channel_high_priority_name">Hohe Priorität</string>
     <string name="pref_title_custom_deviceicon">Gerätespezifisches Benachrichtigungssymbol anzeigen</string>
-    <string name="pref_summary_custom_deviceicon">Zeige ein gerätespezifisches Android-Benachrichtigungssymbol anstelle des Gadgetbridge-Symbols, wenn eine Verbindung besteht</string>
+    <string name="pref_summary_custom_deviceicon">Zeige ein gerätespezifisches Android-Benachrichtigungssymbol anstelle des WatchSwitcher-Symbols, wenn eine Verbindung besteht</string>
     <string name="hr_appname_wellness">Wellness</string>
     <string name="hr_appname_workout">Training</string>
     <string name="hr_appname_stopwatch">Stoppuhr</string>
@@ -791,9 +791,9 @@
     <string name="about_contributors">Beitragende</string>
     <string name="about_core_team_title">Kernteam (Reihenfolge der ersten Mitwirkung am Code)</string>
     <string name="about_description_generic">Cloudfreie, copyleft-lizenzierte, freie Alternative zu proprietären Android-Gadget-Apps der Hersteller.</string>
-    <string name="about_activity_title_generic">Über Gadgetbridge</string>
+    <string name="about_activity_title_generic">Über WatchSwitcher</string>
     <string name="about_title">Über</string>
-    <string name="pref_title_weather_summary">Wird für den Wetterdienst von LineageOS verwendet; andere Android-Versionen benötigen eine App wie „Breezy Weather“. Weitere Informationen finden Sie auf der Gadgetbridge-Website.</string>
+    <string name="pref_title_weather_summary">Wird für den Wetterdienst von LineageOS verwendet; andere Android-Versionen benötigen eine App wie „Breezy Weather“. Weitere Informationen finden Sie auf der WatchSwitcher-Website.</string>
     <string name="menuitem_worldclock">Weltuhr</string>
     <string name="error_version_check_extreme_caution">ACHTUNG: Fehler beim Prüfen der Information zur Version! Du solltest nicht fortfahren! Versionsname \"%s\" gefunden</string>
     <string name="permission_granting_mandatory">Alle Berechtigungen sind notwendig und es kann zu Problemen führen, wenn sie nicht genehmigt werden</string>
@@ -1121,7 +1121,7 @@
     <string name="button_watchface_edit_name">Name bearbeiten</string>
     <string name="gpx_receiver_overwrite_some_files">Einige Datei(en) sind bereits vorhanden. Überschreiben\?</string>
     <string name="gpx_receiver_files_received">GPX-Datei(en) empfangen:</string>
-    <string name="gpx_receiver_activity_title">GPX-Empfänger Gadgetbridge</string>
+    <string name="gpx_receiver_activity_title">GPX-Empfänger WatchSwitcher</string>
     <string name="activity_summary_detail_editing_gpx_track">Verknüpften GPX-Track bearbeiten</string>
     <string name="activity_summary_detail_clear_gpx_track">GPX-Track löschen</string>
     <string name="activity_summary_detail_select_gpx_track">GPX-Track auswählen</string>
@@ -1393,24 +1393,24 @@
     <string name="watchface_setting_light_up_on_notification">Aufleuchten bei neuer Benachrichtigung</string>
     <string name="activity_db_management_autoexport_location">Standort ermittelt nicht möglich. Wahrscheinlich ein Problem des neueren Android-Berechtigungssystems. Höchstwahrscheinlich funktioniert der autom. Export jetzt nicht.</string>
     <string name="menuitem_email">E-Mail</string>
-    <string name="application_name_banglejs_main">Bangle.js Gadgetbridge</string>
-    <string name="title_activity_controlcenter_banglejs_main">Bangle.js Gadgetbridge</string>
-    <string name="about_description_banglejs_main">Android-Begleit-App für Bangle.js, die auf dem Gadgetbridge-Projekt aufbaut, mit zusätzlichem Internetzugang. \n \nAufgrund der Richtlinien des Google Play Stores dürfen wir keinen Spendenlink direkt in der App einfügen. Wenn dir diese App gefällt, freuen wir uns jedoch über eine Spende über die Gadgetbridge-Homepage unten.</string>
+    <string name="application_name_banglejs_main">Bangle.js WatchSwitcher</string>
+    <string name="title_activity_controlcenter_banglejs_main">Bangle.js WatchSwitcher</string>
+    <string name="about_description_banglejs_main">Android-Begleit-App für Bangle.js, die auf dem WatchSwitcher-Projekt aufbaut, mit zusätzlichem Internetzugang. \n \nAufgrund der Richtlinien des Google Play Stores dürfen wir keinen Spendenlink direkt in der App einfügen. Wenn dir diese App gefällt, freuen wir uns jedoch über eine Spende über die WatchSwitcher-Homepage unten.</string>
     <string name="gadgetbridge_running_banglejs_main">Bangle.js läuft</string>
-    <string name="application_name_main_nightly">Gadgetbridge (Nightly)</string>
-    <string name="title_activity_controlcenter_main_nightly">Gadgetbridge (Nightly)</string>
-    <string name="about_activity_title_main_nightly">Über Gadgetbridge (Nightly)</string>
-    <string name="about_description_main_nightly">Cloudloser und freier quelloffener Ersatz für Closed-Source Android-Gadget-Apps von Anbietern. Nächtliche Veröffentlichungen von Gadgetbridge. Es kann nicht installiert werden, wenn du bereits die Gadgetbridge- oder die Pebble-App installiert hast, da es einen Konflikt mit dem Pebble-Anbieter gibt.</string>
+    <string name="application_name_main_nightly">WatchSwitcher (Nightly)</string>
+    <string name="title_activity_controlcenter_main_nightly">WatchSwitcher (Nightly)</string>
+    <string name="about_activity_title_main_nightly">Über WatchSwitcher (Nightly)</string>
+    <string name="about_description_main_nightly">Cloudloser und freier quelloffener Ersatz für Closed-Source Android-Gadget-Apps von Anbietern. Nächtliche Veröffentlichungen von WatchSwitcher. Es kann nicht installiert werden, wenn du bereits die WatchSwitcher- oder die Pebble-App installiert hast, da es einen Konflikt mit dem Pebble-Anbieter gibt.</string>
     <string name="gadgetbridge_running_main_nightly">Nightly GB läuft</string>
-    <string name="application_name_main_nopebble">Gadgetbridge (Nightly, kein Pebble-Anbieter)</string>
-    <string name="title_activity_controlcenter_main_nopebble">Gadgetbridge (Nightly, kein Pebble)</string>
-    <string name="about_activity_title_main_nopebble">Über Gadgetbridge (Nightly, kein Pebble)</string>
+    <string name="application_name_main_nopebble">WatchSwitcher (Nightly, kein Pebble-Anbieter)</string>
+    <string name="title_activity_controlcenter_main_nopebble">WatchSwitcher (Nightly, kein Pebble)</string>
+    <string name="about_activity_title_main_nopebble">Über WatchSwitcher (Nightly, kein Pebble)</string>
     <string name="gadgetbridge_running_main_nopebble">Nightly kein Pebble GB läuft</string>
     <string name="prefs_activate_display_on_lift_sensitivity">Empfindlichkeit</string>
     <string name="normal">Normal</string>
     <string name="sensitive">Empfindlich</string>
-    <string name="about_activity_title_banglejs_main">Über Bangle.js Gadgetbridge</string>
-    <string name="about_description_main_nopebble">Cloudloser und freier quelloffener Ersatz für Closed-Source Android-Gadget-Apps von Anbietern. Nächtliche Veröffentlichungen von Gadgetbridge. Bei dieser Version wurde der Pebble-Provider umbenannt, um Konflikte zu vermeiden. Daher werden einige Pebble-bezogene Integrationen nicht funktionieren, aber sie kann neben einer bestehenden Gadgetbridge-Installation installiert werden.</string>
+    <string name="about_activity_title_banglejs_main">Über Bangle.js WatchSwitcher</string>
+    <string name="about_description_main_nopebble">Cloudloser und freier quelloffener Ersatz für Closed-Source Android-Gadget-Apps von Anbietern. Nächtliche Veröffentlichungen von WatchSwitcher. Bei dieser Version wurde der Pebble-Provider umbenannt, um Konflikte zu vermeiden. Daher werden einige Pebble-bezogene Integrationen nicht funktionieren, aber sie kann neben einer bestehenden WatchSwitcher-Installation installiert werden.</string>
     <string name="pref_device_action_fitness_app_control_toggle">Fitness-App Tracking umschalten</string>
     <string name="pref_title_banglejs_text_bitmap">Text als Bitmaps</string>
     <string name="pref_screen_notification_profile_event_reminder">Ereigniserinnerung</string>
@@ -1428,7 +1428,7 @@
     <string name="world_clock_label">Beschriftung</string>
     <string name="world_clock_no_free_slots_description">Das Gerät hat keine freien Plätze mehr für Weltuhren (insgesamt: %1$s)</string>
     <string name="activity_type_elliptical">Elliptisch</string>
-    <string name="pref_summary_banglejs_text_bitmap">Wenn ein Wort nicht mit der Schriftart der Smartwatch dargestellt werden kann, wird es in Gadgetbridge als Bitmap gerendert und auf der Smartwatch angezeigt</string>
+    <string name="pref_summary_banglejs_text_bitmap">Wenn ein Wort nicht mit der Schriftart der Smartwatch dargestellt werden kann, wird es in WatchSwitcher als Bitmap gerendert und auf der Smartwatch angezeigt</string>
     <string name="pref_title_device_internet_access">Internetzugang zulassen</string>
     <string name="pref_summary_device_internet_access">Apps auf diesem Gerät Internetzugriff erlauben</string>
     <string name="pref_title_device_intents">Eingriffe erlauben</string>
@@ -1507,7 +1507,7 @@
     <string name="quick_alarm_description">Alarm vom Widget</string>
     <string name="pref_device_action_phone_gps_location_listener_stop">GPS-Standort Stopp</string>
     <string name="notification_channel_gps">GPS-Ortung</string>
-    <string name="notification_gps_title">Gadgetbridge GPS</string>
+    <string name="notification_gps_title">WatchSwitcher GPS</string>
     <string name="portuguese_pt">Portugiesisch (Portugal)</string>
     <string name="notification_gps_text">Senden des GPS-Standorts an %1$d Geräte</string>
     <string name="controlcenter_set_parent_folder">Überordner setzen</string>
@@ -1601,10 +1601,10 @@
     <string name="controlcenter_get_heartrate_measurement">Herzfrequenzmessung</string>
     <string name="pref_write_logfiles_not_available">Initialisierung der Datei-Protokollierung fehlgeschlagen, das Schreiben von Protokolldateien ist derzeit nicht möglich. Starte die Anwendung neu, um die Initialisierung der Protokolldateien erneut zu versuchen.</string>
     <string name="devicetype_binary_sensor">Binärer Sensor</string>
-    <string name="application_name_banglejs_nightly">Bangle.js Gadgetbridge (Nightly)</string>
-    <string name="title_activity_controlcenter_banglejs_nightly">Bangle.js Gadgetbridge (Nightly)</string>
-    <string name="about_activity_title_banglejs_nightly">Über Bangle.js Gadgetbridge (Nightly)</string>
-    <string name="about_description_banglejs_nightly">Android-Begleit-App für Bangle.js, die auf dem Gadgetbridge-Projekt aufbaut, mit zusätzlichem Internetzugang. \n \nAufgrund der Richtlinien des Google Play Stores dürfen wir keinen Spendenlink direkt in der App einfügen. Wenn dir diese App gefällt, freuen wir uns jedoch über eine Spende über die Gadgetbridge-Homepage unten.</string>
+    <string name="application_name_banglejs_nightly">Bangle.js WatchSwitcher (Nightly)</string>
+    <string name="title_activity_controlcenter_banglejs_nightly">Bangle.js WatchSwitcher (Nightly)</string>
+    <string name="about_activity_title_banglejs_nightly">Über Bangle.js WatchSwitcher (Nightly)</string>
+    <string name="about_description_banglejs_nightly">Android-Begleit-App für Bangle.js, die auf dem WatchSwitcher-Projekt aufbaut, mit zusätzlichem Internetzugang. \n \nAufgrund der Richtlinien des Google Play Stores dürfen wir keinen Spendenlink direkt in der App einfügen. Wenn dir diese App gefällt, freuen wir uns jedoch über eine Spende über die WatchSwitcher-Homepage unten.</string>
     <string name="gadgetbridge_running_banglejs_nightly">Bangle.js (Nightly) wird ausgeführt</string>
     <string name="prefs_hourly_chime">Stündlicher Klang</string>
     <string name="prefs_hourly_chime_summary">Die Smartwatch gibt einmal pro Stunde einen Signalton ab</string>
@@ -2061,11 +2061,11 @@
     <string name="preferences_miband_1_2_warning">Warnung: Diese Einstellungen gelten nur für die Mi Bands 1 und 2.</string>
     <string name="pref_activity_full_sync_trigger_summary">Vollständige Synchronisation aller Aktivitätsdaten durchführen</string>
     <string name="pref_show_changelog">Änderungsprotokoll beim Starten anzeigen</string>
-    <string name="pref_show_changelog_summary">Anzeige des Änderungsprotokolls seit der letzten Version, nachdem Gadgetbridge aktualisiert wurde</string>
+    <string name="pref_show_changelog_summary">Anzeige des Änderungsprotokolls seit der letzten Version, nachdem WatchSwitcher aktualisiert wurde</string>
     <string name="pref_activity_full_sync_trigger_title">Vollständige Synchronisation</string>
     <string name="pref_activity_full_sync_trigger_warning">Dadurch wird eine vollständige Synchronisation aller Aktivitätsdaten des Geräts ausgelöst. Es kann einige Minuten dauern, bis der Vorgang abgeschlossen ist.</string>
-    <string name="pref_theme_dynamic_colors_not_available_warning">Dynamische Farben sind auf deinem Gerät nicht verfügbar, nur Android 12+ unterstützt diese Funktion. Gadgetbridge verwendet die Standardfarben von Material 3.</string>
-    <string name="pref_theme_dynamic_colors_explanation">Hinweis: Für das Design mit dynamischen Farben musst du Hintergrundbildfarben oder Farbpalette in deinen Android 12+ Darstellungseinstellungen aktivieren. Wenn du das nicht tust, wird Gadgetbridge die Standardfarben von Material 3 verwenden.</string>
+    <string name="pref_theme_dynamic_colors_not_available_warning">Dynamische Farben sind auf deinem Gerät nicht verfügbar, nur Android 12+ unterstützt diese Funktion. WatchSwitcher verwendet die Standardfarben von Material 3.</string>
+    <string name="pref_theme_dynamic_colors_explanation">Hinweis: Für das Design mit dynamischen Farben musst du Hintergrundbildfarben oder Farbpalette in deinen Android 12+ Darstellungseinstellungen aktivieren. Wenn du das nicht tust, wird WatchSwitcher die Standardfarben von Material 3 verwenden.</string>
     <string name="menuitem_zepp_coach">Zepp Coach</string>
     <string name="fw_upgrade_notice_amazfit_cheetah_pro">Du bist dabei, die Firmware %s auf deine Amazfit Cheetah Pro zu installieren. \n \nDeine Smartwatch wird nach der Installation der .zip-Datei neu starten. \n \nINSTALLATION AUF EIGENE GEFAHR!</string>
     <string name="fw_upgrade_notice_zepp_os">Du bist dabei, die Firmware %1$s auf deiner %2$s.zu installieren.\n\nDeine Smartwatch wird nach der Installation der .zip-Datei neu gestartet.\n\nDURCHFÜHRUNG AUF EIGENE GEFAHR!</string>
@@ -2236,7 +2236,7 @@
     <string name="busy_task_fetch_temperature">Abrufen der Temperaturdaten</string>
     <string name="prefs_wearmode">Tragemodus</string>
     <string name="zepp_os_watchface_starry_sky">Sternenhimmel</string>
-    <string name="prefs_wena3_hint_background_sync">Erlaube Wena, Gadgetbridge in regelmäßigen Abständen aufzufordern, Aktivitätsdaten vom Gerät herunterzuladen</string>
+    <string name="prefs_wena3_hint_background_sync">Erlaube Wena, WatchSwitcher in regelmäßigen Abständen aufzufordern, Aktivitätsdaten vom Gerät herunterzuladen</string>
     <string name="fossil_hr_nav_app_not_installed_notify_title">Navigations-App nicht auf der Smartwatch installiert</string>
     <string name="call_rejection_method_reject">Ablehnen</string>
     <string name="pref_sleep_mode_schedule_title">Zeitplan für Schlafmodus</string>
@@ -2264,7 +2264,7 @@
     <string name="pref_enable_call_accept">Annehmen von Anrufen aktivieren</string>
     <string name="fossil_hr_nav_app_not_installed_notify_text">Navigation gestartet, aber keine Navigations-App auf der Smartwatch installiert. Bitte installiere sie über den App-Manager.</string>
     <string name="pref_summary_fossil_hr_nav_foreground">Ob die Navigations-App automatisch in den Vordergrund kommen soll, wenn sie eine Navigationsanweisung erhält</string>
-    <string name="pref_force_connection_type_description">Du kannst versuchen, den Verbindungstyp zu erzwingen, falls dein Gerät nicht auf Gadgetbridge reagiert</string>
+    <string name="pref_force_connection_type_description">Du kannst versuchen, den Verbindungstyp zu erzwingen, falls dein Gerät nicht auf WatchSwitcher reagiert</string>
     <string name="pref_force_connection_type_auto">Automatisch</string>
     <string name="pref_force_connection_type_ble">Bluetooth-LE</string>
     <string name="pref_device_action_dnd_alarms">Bitte-Nicht-Stören - nur Alarme</string>
@@ -2319,7 +2319,7 @@
     <string name="pref_device_action_dnd_priority">Bitte-Nicht-Stören - nur Prioritäten</string>
     <string name="menuitem_running">Laufen</string>
     <string name="sony_protocol_v1">Version 1</string>
-    <string name="info_menu_structure_set">JSON-Menüstruktur in Gadgetbridge gesetzt</string>
+    <string name="info_menu_structure_set">JSON-Menüstruktur in WatchSwitcher gesetzt</string>
     <string name="zepp_os_watchface_the_ultima">The Ultima</string>
     <string name="zepp_os_watchface_city_of_speed">City of Speed</string>
     <string name="widget_screen">Widget-Bildschirm</string>
@@ -2459,7 +2459,7 @@
     <string name="scan_scanning_multiple_devices">Scannen von %d Geräten</string>
     <string name="notification_channel_scan_service_name">Scan-Dienst</string>
     <string name="auto_reconnect_ble_scan_title">Wiederverbindung per BLE Scan</string>
-    <string name="prompt_restart_gadgetbridge">Bitte Gadgetbridge neu starten, damit es wirksam wird.</string>
+    <string name="prompt_restart_gadgetbridge">Bitte WatchSwitcher neu starten, damit es wirksam wird.</string>
     <string name="pref_header_sony_sound_control">Klangkontrolle</string>
     <string name="pref_wide_area_tap_summary">Klopfen zwischen Wangen und Ohren erkennen</string>
     <string name="pref_adaptive_volume_control_summary">Automatische Erhöhung der Lautstärke bei lauten Umgebungsgeräuschen</string>
@@ -2521,7 +2521,7 @@
     <string name="bottom_nav_dashboard">Dashboard</string>
     <string name="bottom_nav_devices">Geräte</string>
     <string name="pref_dashboard_first_title">Dashboard zuerst anzeigen</string>
-    <string name="pref_dashboard_first_summary">Zeige beim Start von Gadgetbridge das Dashboard anstelle des Gerätebildschirms an</string>
+    <string name="pref_dashboard_first_summary">Zeige beim Start von WatchSwitcher das Dashboard anstelle des Gerätebildschirms an</string>
     <string name="pref_dashboard_cards_title">Widgets auf Karten anzeigen</string>
     <string name="pref_dashboard_widget_today_hr_interval_summary">Anzahl der Minuten, die das Diagramm nach jeder erfolgreichen Puls­messung als „getragen“ anzeigt</string>
     <string name="pref_dashboard_cards_summary">Zeichne Karten um die Widgets auf dem Dashboard</string>
@@ -2620,7 +2620,7 @@
     <string name="pref_agps_status">AGPS-Status</string>
     <string name="agps_status_pending">Ausstehend</string>
     <string name="agps_status_current">Aktuell</string>
-    <string name="pref_summary_garmin_default_reply_suffix">Zusätzlich zu dem in Gadgetbridge eingestellten Suffix angefügt</string>
+    <string name="pref_summary_garmin_default_reply_suffix">Zusätzlich zu dem in WatchSwitcher eingestellten Suffix angefügt</string>
     <string name="none">Keine</string>
     <string name="garmin_agps_url_i">AGPS %1$d URL</string>
     <string name="pref_garmin_agps_help">Diese Liste zeigt alle von der Smartwatch angeforderten AGPS-URLs. Du kannst eine Datei vom Telefon auswählen, die bei Bedarf an die Smartwatch übertragen wird.\n\nEs muss nur eine der Dateien konfiguriert werden.</string>
@@ -2963,7 +2963,7 @@
     <string name="first_start_welcome_title">Willkommen</string>
     <string name="first_start_intro_welcome_to">Willkommen zu</string>
     <string name="activity_db_management_import_from_zip">ZIP importieren</string>
-    <string name="activity_db_management_backup_restore_explanation">Das Sichern und Wiederherstellen ermöglicht es, alle Gadgetbridge-Einstellungen, -Geräte und -Daten mittels ZIP-Datei zu migrieren oder zu sichern.\n\nBeim Wiederherstellen werden alle bestehenden Daten, Geräte und Einstellungen entfernt und vollständig durch die Sicherung ersetzt.</string>
+    <string name="activity_db_management_backup_restore_explanation">Das Sichern und Wiederherstellen ermöglicht es, alle WatchSwitcher-Einstellungen, -Geräte und -Daten mittels ZIP-Datei zu migrieren oder zu sichern.\n\nBeim Wiederherstellen werden alle bestehenden Daten, Geräte und Einstellungen entfernt und vollständig durch die Sicherung ersetzt.</string>
     <string name="backup_restore_abort_export_confirmation">Export abbrechen? Die unvollständige ZIP-Datei wird gelöscht.</string>
     <string name="totalJumps">Anzahl Sprünge</string>
     <string name="jumps_minute">Sprünge/min</string>
@@ -3029,7 +3029,7 @@
     <string name="backup_restore_importing_files_i_of_n">Importiere Dateien … %1$d von %2$d</string>
     <string name="first_start_overview_devices">Die Geräteansicht zeigt alle Geräte an, die Sie konfiguriert haben und gibt Zugriff auf gerätespezifische Funktionen wie detaillierte Diagramme, Einstellungen, Apps und Alarme.</string>
     <string name="first_start_get_started_title">Ersteinrichtung</string>
-    <string name="first_start_permissions_desc">Gadgetbridge braucht für viele Berechtigungen, damit alle Funktionen funktionieren. Überprüfe die Berechtigungen und ihre Zwecke unten.</string>
+    <string name="first_start_permissions_desc">WatchSwitcher braucht für viele Berechtigungen, damit alle Funktionen funktionieren. Überprüfe die Berechtigungen und ihre Zwecke unten.</string>
     <string name="first_start_permissions_request_all_button">Alle Berechtigungen anfordern</string>
     <string name="first_start_get_started_go_to_app_button">Zur App</string>
     <string name="permission_fine_location_summary">Nach Bluetooth-Geräten suchen</string>
@@ -3045,7 +3045,7 @@
     <string name="first_start_intro_tag_line">Befreie dich von proprietären Apps und den Clouddiensten der Gadgethersteller.</string>
     <string name="permission_bluetooth_title">Bluetooth</string>
     <string name="label_distance_trip">Trip: %.1f km</string>
-    <string name="first_start_overview_desc">Gadgetbridge hat zwei Hauptansichten, welche jeweils ihren eigenen Zweck haben.</string>
+    <string name="first_start_overview_desc">WatchSwitcher hat zwei Hauptansichten, welche jeweils ihren eigenen Zweck haben.</string>
     <string name="permission_displayover_title">Über anderen Apps anzeigen</string>
     <string name="permission_manage_dnd_title">Nicht-Stören verwalten</string>
     <string name="about_build_details_copied_to_clipboard">Details des Builds wurden in die Zwischenablage kopiert</string>
@@ -3081,7 +3081,7 @@
     <string name="first_start_open_source_title">Open Source</string>
     <string name="first_start_overview_dashboard">Das Dashboard gibt dir einen schnellen Überblick darüber, wie du dich heute schlägst. Die Kalenderansicht zeigt dir den Status deiner Ziele über einen ganzen Monat an.</string>
     <string name="first_start_get_started_desc">Um zu Beginnen, füge dein erstes Gerät direkt von diesem Bildschirm hinzu, stelle ein Backup wieder her oder starte direkt mit einer sauberen Datenbank.</string>
-    <string name="first_start_open_source_text">Gadgetbridge ist eine Open Source App. Sie wird von der Gemeinschaft für die Gemeinschaft entwickelt.\n\nJeder ist willkommen, mit Code, Dokumentation, Tests und Spenden beizutragen.\n\nGadgetbridge enthält keine Anzeigen und kein Tracking. Alle deine Daten werden lokal auf Ihrem Android-Gerät gespeichert. Daher ist sie zu 100% datenschutzfreundlich.\n\nBesuche unsere Website für weitere Informationen, Dokumentationen und Links zu unseren Kommunikationskanälen.</string>
+    <string name="first_start_open_source_text">WatchSwitcher ist eine Open Source App. Sie wird von der Gemeinschaft für die Gemeinschaft entwickelt.\n\nJeder ist willkommen, mit Code, Dokumentation, Tests und Spenden beizutragen.\n\nWatchSwitcher enthält keine Anzeigen und kein Tracking. Alle deine Daten werden lokal auf Ihrem Android-Gerät gespeichert. Daher ist sie zu 100% datenschutzfreundlich.\n\nBesuche unsere Website für weitere Informationen, Dokumentationen und Links zu unseren Kommunikationskanälen.</string>
     <string name="workoutSets">Sätze</string>
     <string name="activity_type_padel">Padle-Tennis</string>
     <string name="activity_type_aerobic_combo">Aerobic-Kombination</string>
@@ -3165,7 +3165,7 @@
     <string name="idasen_pref_sit_height">Höhe der Sitzposition (in Zentimetern)</string>
     <string name="weight_lbs">%1$.2f lbs</string>
     <string name="redmi_buds_5_pro_equalizer_1">1 dB</string>
-    <string name="manual_discharge_summary">Wenn deaktiviert, wird davon ausgegangen, dass die Entladung intelligent von einem externen Stromzähler gesteuert wird (nicht von Gadgetbridge unterstützt)</string>
+    <string name="manual_discharge_summary">Wenn deaktiviert, wird davon ausgegangen, dass die Entladung intelligent von einem externen Stromzähler gesteuert wird (nicht von WatchSwitcher unterstützt)</string>
     <string name="redmi_buds_5_pro_transparency_regular">Regelmäßig</string>
     <string name="redmi_buds_5_pro_combo_all">ANC / Transparenz / Aus</string>
     <string name="redmi_buds_5_pro_double_connection">Doppelverbindung</string>
@@ -3683,7 +3683,7 @@
     <string name="activity_print_image_apply_dithering_switch">Dithering anwenden</string>
     <string name="activity_print_image_upscale_switch">Bild hochskalieren</string>
     <string name="activity_print_label_print_size">Druckgröße (px): %1$d x %2$d</string>
-    <string name="service_notification_collector_service_title">Gadgetbridge Benachrichtigungsmonitor</string>
+    <string name="service_notification_collector_service_title">WatchSwitcher Benachrichtigungsmonitor</string>
     <string name="service_notification_collector_service_text">Hintergrundüberwachung von Benachrichtigungen</string>
     <string name="pref_title_time_interval">Zeitintervall</string>
     <string name="pref_summary_time_interval">Auf bestimmte Intervalle beschränken</string>
@@ -3716,7 +3716,7 @@
     <string name="exercise_category_total_body">Ganzkörper</string>
     <string name="exercise_category_triceps_extension">Trizepsstrecken</string>
     <string name="category">Kategorie</string>
-    <string name="pref_printer_print_received_text">Text zum Drucken an Gadgetbridge gesendet</string>
+    <string name="pref_printer_print_received_text">Text zum Drucken an WatchSwitcher gesendet</string>
     <string name="busy_task_processing_files">Dateien werden verarbeitet</string>
     <string name="busy_task_progress_int">%1$d of %2$d</string>
     <string name="diving_avg_depth">Ø Tiefe</string>
@@ -3794,7 +3794,7 @@
     <string name="manual_measurements">Manuelle Messungen</string>
     <string name="workout_power">Leistung</string>
     <string name="Other">Sonstiges</string>
-    <string name="huawei_sleep_breath_summary">Bewerte deine Atmung in einer ruhigen Umgebung. Kann die Akkulaufzeit beeinträchtigen.\nWarnung: Noch nicht mit Gadgetbridge synchronisiert.</string>
+    <string name="huawei_sleep_breath_summary">Bewerte deine Atmung in einer ruhigen Umgebung. Kann die Akkulaufzeit beeinträchtigen.\nWarnung: Noch nicht mit WatchSwitcher synchronisiert.</string>
     <string name="unset">Nicht festgelegt</string>
     <string name="intent_api_allow_trigger_zip_export_title">ZIP-Export erlauben</string>
     <string name="intent_api_allow_trigger_zip_export_summary">ZIP-Export über Intent-API erlauben</string>
@@ -3913,12 +3913,12 @@
     <string name="pref_huawei_features_config_info_title">Zusätzliche Gesundheitsfunktionen aktivieren</string>
     <string name="pref_huawei_features_config_info_summary">Das Aktivieren der folgenden Einstellungen schaltet zusätzliche Gesundheitsfunktionen auf deinem Gerät frei, z. B. Emotionserkennung oder EKG.\nHinweis: Die verfügbaren Funktionen hängen vom jeweiligen Gerät ab.</string>
     <string name="pref_huawei_features_config_warning_title">Ländercode und Funktionskonfiguration an das Gerät senden.</string>
-    <string name="pref_huawei_features_config_warning_summary">Warnung: Das Aktivieren dieser Einstellungen, während sowohl Gadgetbridge als auch die Hersteller-App verwendet werden, kann zu Problemen mit der Hersteller-App oder der Gerätefunktion führen – oder unter Umständen keine Wirkung haben. Eine falsche Länderauswahl kann andere Geräteeinstellungen beeinflussen, z. B. regionsabhängige Frequenzkonfigurationen. Aktivierung auf eigene Verantwortung.\nEin erneutes Verbinden des Geräts ist erforderlich.</string>
+    <string name="pref_huawei_features_config_warning_summary">Warnung: Das Aktivieren dieser Einstellungen, während sowohl WatchSwitcher als auch die Hersteller-App verwendet werden, kann zu Problemen mit der Hersteller-App oder der Gerätefunktion führen – oder unter Umständen keine Wirkung haben. Eine falsche Länderauswahl kann andere Geräteeinstellungen beeinflussen, z. B. regionsabhängige Frequenzkonfigurationen. Aktivierung auf eigene Verantwortung.\nEin erneutes Verbinden des Geräts ist erforderlich.</string>
     <string name="pref_huawei_send_country_code_title">Ländercode senden</string>
     <string name="pref_huawei_send_country_code_summary">Ländercode an das Gerät senden.\nAchtung: Der Ländercode muss zuvor festgelegt sein</string>
     <string name="pref_huawei_country_code_title">Ländercode</string>
     <string name="pref_huawei_force_features_settings_title">Anzeige länderbeschränkter Einstellungen erzwingen</string>
-    <string name="pref_huawei_force_features_settings_summary">Anzeige landesspezifischer Einstellungen in der Gadgetbridge-App erzwingen.\nWarnung: Gadgetbridge zeigt die vom Gerät als unterstützt gemeldeten Einstellungen an. Einige davon können jedoch von der Hersteller-App eingeschränkt sein und möglicherweise nicht oder nur fehlerhaft funktionieren.</string>
+    <string name="pref_huawei_force_features_settings_summary">Anzeige landesspezifischer Einstellungen in der WatchSwitcher-App erzwingen.\nWarnung: WatchSwitcher zeigt die vom Gerät als unterstützt gemeldeten Einstellungen an. Einige davon können jedoch von der Hersteller-App eingeschränkt sein und möglicherweise nicht oder nur fehlerhaft funktionieren.</string>
     <string name="pref_huawei_pulse_wave_arrhythmia">Pulswellenarrhythmie</string>
     <string name="pref_huawei_pulse_wave_arrhythmia_enable_title">Pulswellenarrhythmie aktivieren</string>
     <string name="pref_huawei_pulse_wave_arrhythmia_enable_summary">Pulswellenarrhythmie auf dem Gerät aktivieren</string>
@@ -4061,7 +4061,7 @@
     <string name="rebble_appstore_download_failed_wrong_content_type">Download fehlgeschlagen, falscher Inhaltstyp: %1$s</string>
     <string name="rebble_appstore_download_failed">Download fehlgeschlagen: %1$s</string>
     <string name="internet_helper_permission_title">Internet-Helfer-Add-on</string>
-    <string name="internet_helper_permission_summary">Zugriff auf das Internet für die Gadgetbridge-Add-on-App zulassen</string>
+    <string name="internet_helper_permission_summary">Zugriff auf das Internet für die WatchSwitcher-Add-on-App zulassen</string>
     <string name="notification_channel_pebble_js_runner">Pebble JS runner</string>
     <string name="notification_pebble_js_service_title">Pebble JavaScript Service</string>
     <string name="notification_pebble_js_service_text">Ausführen der Pebble-App/Watchface JavaScript</string>
@@ -4096,7 +4096,7 @@
     <string name="pref_health_connect_manual_settings">Health Connect-Daten verwalten</string>
     <string name="pref_health_connect_settings">Health Connect-Einstellungen</string>
     <string name="pref_health_connect_settings_summary">Android Health Connect-Einstellungen öffnen</string>
-    <string name="pref_health_connect_disable_notice">Um Health Connect Export zu deaktivieren, entferne alle Berechtigungen von Gadgetbridge aus der Health Connect App</string>
+    <string name="pref_health_connect_disable_notice">Um Health Connect Export zu deaktivieren, entferne alle Berechtigungen von WatchSwitcher aus der Health Connect App</string>
     <string name="pref_health_connect_sync_notice">Je nach Datenmenge kann eine Health Connect-Synchronisierung mehrere Minuten dauern.</string>
     <string name="pref_health_connect_device_selection">Geräte auswählen</string>
     <string name="pref_health_connect_device_selection_summary">Wähle aus, von welchen Geräten Daten für die Freigabe mit Health Connect übernommen werden sollen</string>
@@ -4106,7 +4106,7 @@
     <string name="pref_health_connect_sync_on_event_title">Synchronisieren nach Gerätesynchronisierung</string>
     <string name="pref_health_connect_sync_on_event_summary">Mit Health Connect synchronisieren, nachdem ein ausgewähltes Gerät die Synchronisierung seiner Aktivitätsdaten abgeschlossen hat.</string>
     <string name="health_connect_permissions_rationale_title">Datenschutzerklärung und Berechtigungen</string>
-    <string name="health_connect_permissions_rationale_message">Gadgetbridge sammelt Daten von deinen Geräten und gibt diese mit deiner Zustimmung an Health Connect weiter. Diese Daten werden auf deinem Gerät gespeichert und nicht an Dritte weitergegeben.</string>
+    <string name="health_connect_permissions_rationale_message">WatchSwitcher sammelt Daten von deinen Geräten und gibt diese mit deiner Zustimmung an Health Connect weiter. Diese Daten werden auf deinem Gerät gespeichert und nicht an Dritte weitergegeben.</string>
     <string name="health_connect_sync_notification_title">Health Connect Synchronisierung</string>
     <string name="menuitem_diary">Tagebuch</string>
     <string name="menuitem_calorie_intake_record">Kalorienaufnahme-Protokoll</string>
@@ -4120,7 +4120,7 @@
     <string name="health_connect_sync_notification_message">Daten mit Health Connect synchronisieren …</string>
     <string name="health_connect_unavailable_summary">Health Connect ist auf diesem System nicht verfügbar.</string>
     <string name="health_connect_permission_check_error">Fehler bei der Überprüfung der Health Connect-Berechtigungen.</string>
-    <string name="health_connect_all_denied">Alle Health Connect-Berechtigungen für die Datentypen von Gadgetbridge wurden verweigert oder widerrufen.</string>
+    <string name="health_connect_all_denied">Alle Health Connect-Berechtigungen für die Datentypen von WatchSwitcher wurden verweigert oder widerrufen.</string>
     <string name="health_connect_failed_init">Die Initialisierung des Health Connect-Clients nach der Berechtigungsänderung ist fehlgeschlagen.</string>
     <string name="pref_health_connect_detailed_workout_sync_title">Detaillierte Trainingssynchronisierung</string>
     <string name="pref_health_connect_detailed_workout_sync_summary">Synchronisiere GPS-Routen und sekundengenaue Messwerte (Herzfrequenz, Geschwindigkeit, Leistung) für Trainingseinheiten. Liefert umfangreichere Daten, kann jedoch länger dauern.</string>
@@ -4137,7 +4137,7 @@
     <string name="health_connect_sync_now_message">Möchtest du jetzt mit der Synchronisierung deiner Daten mit Health Connect beginnen?</string>
     <string name="health_connect_sync_now">Jetzt synchronisieren</string>
     <string name="health_connect_sync_later">Später synchronisieren</string>
-    <string name="health_connect_prompt_full_dao_reset">Alle Health Connect-Berechtigungen für Gadgetbridge wurden widerrufen. Hast du auch alle Daten gelöscht? Wenn ja, kannst du durch Zurücksetzen des Synchronisierungsverlaufs alle alten Daten erneut synchronisieren, wenn du die Berechtigungen erneut erteilst.</string>
+    <string name="health_connect_prompt_full_dao_reset">Alle Health Connect-Berechtigungen für WatchSwitcher wurden widerrufen. Hast du auch alle Daten gelöscht? Wenn ja, kannst du durch Zurücksetzen des Synchronisierungsverlaufs alle alten Daten erneut synchronisieren, wenn du die Berechtigungen erneut erteilst.</string>
     <string name="health_connect_reset_sync_history">Synchronisierungsverlauf zurücksetzen</string>
     <string name="health_connect_keep_sync_history">Synchronisierungsverlauf beibehalten</string>
     <string name="health_connect_exception">Health Connect-Datensynchronisierung:</string>
@@ -4147,7 +4147,7 @@
     <string name="health_connect_sync_error_for_device">Synchronisierungsfehler für %1$s (%2$s): %3$s</string>
     <string name="health_connect_permission_denied">Zugriff verweigert: %1$s. Bitte überprüfee die Berechtigungen für Health Connect.</string>
     <string name="health_connect_sleep_session_title">Schlaf-Sitzung von %1$s</string>
-    <string name="health_connect_sleep_session_notes">Schlafdaten vom Gadgetbridge-Gerät: %1$s.</string>
+    <string name="health_connect_sleep_session_notes">Schlafdaten vom WatchSwitcher-Gerät: %1$s.</string>
     <string name="infinitime_filesystem_access_disabled">Dateisystemzugriff in InfiniTime deaktiviert</string>
     <string name="infinitime_resource_upload_progress_status">Aktion %1$d von %2$d wird ausgeführt.\n%3$s %4$s</string>
     <string name="health_connect_all_granted">Health Connect aktiviert. Die Datensynchronisierung beginnt für die entsprechenden Datentypen.</string>
@@ -4189,7 +4189,7 @@
     <string name="auto_export_invalid_location">Ungültiger Exportspeicherort: %s</string>
     <string name="pref_summary_supported_devices">Diese Funktion wird nicht von allen Geräten unterstützt. Klicken Sie hier für weitere Informationen.</string>
     <string name="activity_type_floorball">Unihockey</string>
-    <string name="intent_api_allow_global_settings_summary">Erlauben Sie Drittanbieter-Apps, globale Gadgetbridge-Einstellungen festzulegen. Bitte starten Sie Gadgetbridge neu, damit die Änderungen wirksam werden.</string>
+    <string name="intent_api_allow_global_settings_summary">Erlauben Sie Drittanbieter-Apps, globale WatchSwitcher-Einstellungen festzulegen. Bitte starten Sie WatchSwitcher neu, damit die Änderungen wirksam werden.</string>
     <string name="uploading_rpk">rpk wird hochgeladen …</string>
     <string name="uploadrpkoperation_complete">Rpk installation abgeschlossen</string>
     <string name="uploadrpkoperation_failed">Rpk installation fehlgeschlagen</string>
@@ -4242,8 +4242,8 @@
     <string name="open_app">%s öffnen</string>
     <string name="install_app_fail">App Store konnte nicht geöffnet werden, um %s zu installieren</string>
     <string name="loyalty_cards_app_not_installed">Zur Verwaltung der Kundenkarten benötigst du eine entsprechende App. Bitte installiere eine der unten aufgeführten unterstützten Apps.</string>
-    <string name="loyalty_cards_app_not_compatible">Die installierte Version von %1$s ist nicht mit Gadgetbridge kompatibel. Bitte aktualisiere %1$s und Gadgetbridge auf die aktuelle Version.</string>
-    <string name="loyalty_cards_app_permissions_summary">Gadgetbridge benötigt Leserechte für die %1s Karten, um sie zu synchronisieren. Tippe auf diese Taste, um die Berechtigungen zu erteilen.</string>
+    <string name="loyalty_cards_app_not_compatible">Die installierte Version von %1$s ist nicht mit WatchSwitcher kompatibel. Bitte aktualisiere %1$s und WatchSwitcher auf die aktuelle Version.</string>
+    <string name="loyalty_cards_app_permissions_summary">WatchSwitcher benötigt Leserechte für die %1s Karten, um sie zu synchronisieren. Tippe auf diese Taste, um die Berechtigungen zu erteilen.</string>
     <string name="weight_scale_gram_format">%1$d g</string>
     <string name="qhybrid_button_function_forward">An Telefon weiterleiten</string>
     <string name="qhybrid_button_function_forward_multi">An Telefon weiterleiten (Multifunktion)</string>
@@ -4376,16 +4376,16 @@
     <string name="minutes_500m">min/500m</string>
     <string name="xiaomi_vibration_default">Standard</string>
     <string name="qs_tile_device">Gerät</string>
-    <string name="qs_tile_label_6">Gadgetbridge 6</string>
-    <string name="qs_tile_label_5">Gadgetbridge 5</string>
-    <string name="qs_tile_label_1">Gadgetbridge 1</string>
-    <string name="qs_tile_label_2">Gadgetbridge 2</string>
-    <string name="qs_tile_label_3">Gadgetbridge 3</string>
-    <string name="qs_tile_label_4">Gadgetbridge 4</string>
-    <string name="qs_tile_label_7">Gadgetbridge 7</string>
-    <string name="qs_tile_label_8">Gadgetbridge 8</string>
-    <string name="qs_tile_label_9">Gadgetbridge 9</string>
-    <string name="qs_tile_label_10">Gadgetbridge 10</string>
+    <string name="qs_tile_label_6">WatchSwitcher 6</string>
+    <string name="qs_tile_label_5">WatchSwitcher 5</string>
+    <string name="qs_tile_label_1">WatchSwitcher 1</string>
+    <string name="qs_tile_label_2">WatchSwitcher 2</string>
+    <string name="qs_tile_label_3">WatchSwitcher 3</string>
+    <string name="qs_tile_label_4">WatchSwitcher 4</string>
+    <string name="qs_tile_label_7">WatchSwitcher 7</string>
+    <string name="qs_tile_label_8">WatchSwitcher 8</string>
+    <string name="qs_tile_label_9">WatchSwitcher 9</string>
+    <string name="qs_tile_label_10">WatchSwitcher 10</string>
     <string name="electrical_current">Stromstärke</string>
     <string name="stamina_min">Mindeststamina</string>
     <string name="workout_distance_meters_calibrated">Kalibrierte Distanz</string>

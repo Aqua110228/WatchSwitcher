@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <string name="application_name_generic">Gadgetbridge</string>
-    <string name="title_activity_controlcenter_generic">Gadgetbridge</string>
+    <string name="application_name_generic">WatchSwitcher</string>
+    <string name="title_activity_controlcenter_generic">WatchSwitcher</string>
     <string name="action_settings">設定</string>
     <string name="action_debug">デバッグ</string>
     <string name="action_quit">終了</string>
@@ -42,15 +42,15 @@
     <string name="title_activity_fw_app_insaller">ファームウェア/アプリのインストール</string>
     <string name="fw_upgrade_notice">%s をインストールしようとしています。</string>
     <string name="fw_multi_upgrade_notice">Mi Bandに、現在のファームウェアの代わりに %1$s および %2$s をインストールしようとしています。</string>
-    <string name="miband_firmware_known">このファームウェアはテスト済みで、Gadgetbridgeと互換性があることが確認されています。</string>
-    <string name="miband_firmware_unknown_warning">このファームウェアは未テストで、Gadgetbridgeと互換性がない可能性があります。
+    <string name="miband_firmware_known">このファームウェアはテスト済みで、WatchSwitcherと互換性があることが確認されています。</string>
+    <string name="miband_firmware_unknown_warning">このファームウェアは未テストで、WatchSwitcherと互換性がない可能性があります。
 \n
 \nフラッシュすることは推奨されません！</string>
-    <string name="miband_firmware_suggest_whitelist">続行し、もし正しく動作した場合は、Gadgetbridgeの開発者にファームウェアバージョン %s をホワイトリストに入れるよう伝えてください。</string>
+    <string name="miband_firmware_suggest_whitelist">続行し、もし正しく動作した場合は、WatchSwitcherの開発者にファームウェアバージョン %s をホワイトリストに入れるよう伝えてください。</string>
     <!--Strings related to Settings-->
     <string name="title_activity_settings">設定</string>
     <string name="pref_header_general">全般設定</string>
-    <string name="pref_title_general_autoconnectonbluetooth">Bluetoothがオンになったときに Gadgetbridge デバイスに接続する</string>
+    <string name="pref_title_general_autoconnectonbluetooth">Bluetoothがオンになったときに WatchSwitcher デバイスに接続する</string>
     <string name="pref_title_general_autostartonboot">自動的に開始する</string>
     <string name="pref_title_general_autoreconnect">自動的に再接続する</string>
     <string name="pref_title_audio_player">優先する音楽プレイヤー</string>
@@ -62,7 +62,7 @@
     <string name="pref_theme_light">ライト</string>
     <string name="pref_theme_dark">ダーク</string>
     <string name="pref_title_language">言語</string>
-    <string name="pref_title_minimize_priority">Gadgetbridge の通知を非表示にする</string>
+    <string name="pref_title_minimize_priority">WatchSwitcher の通知を非表示にする</string>
     <string name="pref_summary_minimize_priority_off">ステータスバーのアイコンとロック画面の通知が表示されます</string>
     <string name="pref_summary_minimize_priority_on">ステータスバーのアイコンとロック画面の通知は表示されません</string>
     <string name="pref_header_notifications">通知</string>
@@ -132,7 +132,7 @@
     <string name="pref_title_pebble_mtu_limit">Pebble 2/LE GATT MTU 制限</string>
     <string name="pref_summary_pebble_mtu_limit">Pebble 2/Pebble LE が期待どおりに機能しない場合は、この設定を試して MTU を制限してください (有効範囲 20–512)</string>
     <string name="pref_title_pebble_enable_applogs">ウォッチアプリのログを有効にする</string>
-    <string name="pref_summary_pebble_enable_applogs">Gadgetbridge がウォッチアプリからログを記録するようにします(再接続が必要です)</string>
+    <string name="pref_summary_pebble_enable_applogs">WatchSwitcher がウォッチアプリからログを記録するようにします(再接続が必要です)</string>
     <string name="pref_title_pebble_always_ack_pebblekit">早期 ACK PebbleKit</string>
     <string name="pref_summary_pebble_always_ack_pebblekit">外部のサードパーティアプリケーションに送信されたメッセージは、常に即座に承認されます</string>
     <string name="pref_title_pebble_reconnect_attempts">再接続の試行</string>
@@ -148,7 +148,7 @@
     <string name="_unknown_">(不明)</string>
     <string name="test">テスト</string>
     <string name="test_notification">通知のテスト</string>
-    <string name="this_is_a_test_notification_from_gadgetbridge">これは Gadgetbridge からのテスト通知です</string>
+    <string name="this_is_a_test_notification_from_gadgetbridge">これは WatchSwitcher からのテスト通知です</string>
     <string name="bluetooth_is_not_supported_">Bluetooth はサポートされていません。</string>
     <string name="bluetooth_is_disabled_">Bluetooth が無効です。</string>
     <string name="tap_connected_device_for_app_mananger">接続済みのデバイスをタップしてアプリの管理を表示</string>
@@ -156,7 +156,7 @@
     <string name="tap_connected_device_for_vibration">接続済みのデバイスをタップして振動する</string>
     <string name="tap_a_device_to_connect">接続するデバイスをタップ</string>
     <string name="cannot_connect_bt_address_invalid_">接続できません。 Bluetoothアドレスが無効ですか？</string>
-    <string name="gadgetbridge_running_generic">Gadgetbridge は動作中です</string>
+    <string name="gadgetbridge_running_generic">WatchSwitcher は動作中です</string>
     <string name="installing_binary_d_d">バイナリーのインストール中 %1$d/%2$d</string>
     <string name="installation_failed_">インストールに失敗しました</string>
     <string name="installation_successful">インストールしました</string>
@@ -195,7 +195,7 @@
     <string name="miband_pairing_using_dummy_userdata">有効なユーザーデータが与えられていないため、現在はダミーのユーザーデータを使用しています。</string>
     <string name="miband_pairing_tap_hint">Mi Band が振動し点滅したら数回連続してタップしてください。</string>
     <string name="appinstaller_install">インストール</string>
-    <string name="discovery_connected_devices_hint">デバイスを検出可能な状態にしてください。現在接続中のデバイスはおそらく検出されません。Android 6 以降では位置情報 （例： GPS）を有効にしてください。不具合を引き起こす可能性があるため、Gadgetbridge に対してプライバシーガードを無効にしてください。数分経ってもデバイスが表示されない場合、Android デバイスを再起動してから再試行してください。</string>
+    <string name="discovery_connected_devices_hint">デバイスを検出可能な状態にしてください。現在接続中のデバイスはおそらく検出されません。Android 6 以降では位置情報 （例： GPS）を有効にしてください。不具合を引き起こす可能性があるため、WatchSwitcher に対してプライバシーガードを無効にしてください。数分経ってもデバイスが表示されない場合、Android デバイスを再起動してから再試行してください。</string>
     <string name="discovery_note">注：</string>
     <string name="candidate_item_device_image">デバイスイメージ</string>
     <string name="miband_prefs_alias">名前/別名</string>
@@ -288,7 +288,7 @@
     <string name="weeksteps_today_steps_description">今日の歩数、目標: %1$s</string>
     <string name="pref_title_dont_ack_transfer">アクティビティデータ転送に応答しない</string>
     <string name="pref_summary_dont_ack_transfers">アクティビティデータは、バンドが応答しない場合は、クリアされません。 GBを他のアプリと一緒に使用する場合に便利です。</string>
-    <string name="pref_summary_keep_data_on_device">同期後もデバイスにアクティビティデータを保持します。 Gadgetbridge を他のアプリと一緒に使用する場合に便利です。</string>
+    <string name="pref_summary_keep_data_on_device">同期後もデバイスにアクティビティデータを保持します。 WatchSwitcher を他のアプリと一緒に使用する場合に便利です。</string>
     <string name="pref_title_low_latency_fw_update">ファームウェアの書き込みに低遅延モードを使用する</string>
     <string name="pref_summary_low_latency_fw_update">ファームウェアの書き込みに失敗するデバイスで役立つことがあります。</string>
     <string name="live_activity_steps_history">歩数履歴</string>
@@ -498,7 +498,7 @@
     <string name="controlcenter_change_fm_frequency">FM の周波数を変更</string>
     <string name="controlcenter_calibrate_device">デバイスの調整</string>
     <string name="debugactivity_really_factoryreset_title">工場出荷状態にリセットしますか？</string>
-    <string name="debugactivity_really_factoryreset">工場出荷状態にリセットすると、接続されているデバイスからすべてのデータを削除します(サポートされている場合)。 Xiaomi/HuamiデバイスではBluetoothのMACアドレスも変更するため、Gadgetbridgeには新しいデバイスとして表示されます。</string>
+    <string name="debugactivity_really_factoryreset">工場出荷状態にリセットすると、接続されているデバイスからすべてのデータを削除します(サポートされている場合)。 Xiaomi/HuamiデバイスではBluetoothのMACアドレスも変更するため、WatchSwitcherには新しいデバイスとして表示されます。</string>
     <string name="blacklist_all_for_notifications">すべて通知のブラックリストにする</string>
     <string name="whitelist_all_for_notifications">すべて通知のホワイトリストにする</string>
     <string name="fw_upgrade_notice_miband3">Mi Band 3 に %s ファームウェアをインストールします。
@@ -568,7 +568,7 @@
     <string name="pref_summary_contextual_arabic">有効にすると文脈アラビア語をサポートします</string>
     <string name="preferences_rtl_settings">右横書きのサポート</string>
     <string name="share_log">ログを共有</string>
-    <string name="share_log_warning">GadgetBridge は、健康データやユニークID（デバイスの MAC アドレスなど）、音楽の好みなど、多くの個人情報を含む可能性があるファイルを記録します。問題報告を送信する前に、ファイルを編集してこれらの情報を削除することを検討してください。</string>
+    <string name="share_log_warning">WatchSwitcher は、健康データやユニークID（デバイスの MAC アドレスなど）、音楽の好みなど、多くの個人情報を含む可能性があるファイルを記録します。問題報告を送信する前に、ファイルを編集してこれらの情報を削除することを検討してください。</string>
     <string name="warning">注意！</string>
     <string name="no_data">データなし</string>
     <string name="preferences_led_color">LED の色</string>
@@ -598,7 +598,7 @@
 \n注: 以前にインストールしたものとまったく同じ場合、.res をインストールする必要はありません。
 \n
 \nご自身の責任で行ってください！</string>
-    <string name="pref_summary_expose_hr">Gadgetbridge の接続中に、他のアプリが HR データにリアルタイムでアクセスできるようにします</string>
+    <string name="pref_summary_expose_hr">WatchSwitcher の接続中に、他のアプリが HR データにリアルタイムでアクセスできるようにします</string>
     <string name="pref_title_expose_hr">サードパーティのリアルタイム HR アクセス</string>
     <string name="pref_title_use_custom_font">カスタムフォントを使用する</string>
     <string name="pref_summary_use_custom_font">デバイスに絵文字に対応したスタムフォントファームウェアがある場合、これを有効にしてください</string>
@@ -671,7 +671,7 @@
     <string name="maxAltitude">最大</string>
     <string name="distanceMeters">距離</string>
     <string name="about_contributors">貢献者</string>
-    <string name="about_activity_title_generic">Gadgetbridge について</string>
+    <string name="about_activity_title_generic">WatchSwitcher について</string>
     <string name="about_title">このアプリについて</string>
     <string name="hr_widget_last_notification">最後の通知</string>
     <string name="hr_appname_commute">Commute</string>
@@ -728,7 +728,7 @@
     <string name="prefs_wena3_vibration_step_down">ステップ・ダウン</string>
     <string name="prefs_wena3_vibration_smart_item">スマートバイブ</string>
     <string name="prefs_wena3_home_icon_name_riiiver">Riiiver</string>
-    <string name="prefs_wena3_hint_background_sync">Wenaから定期の同期化要求を受信した際にGadgetbridgeにアクティビティデータを同期化します</string>
+    <string name="prefs_wena3_hint_background_sync">Wenaから定期の同期化要求を受信した際にWatchSwitcherにアクティビティデータを同期化します</string>
     <string name="prefs_wena3_home_icon_name_suica">Suica残高</string>
     <string name="prefs_wena3_vibration_strength_item_medium">普通</string>
     <string name="prefs_wena3_title_activity">アクティビティ設定</string>
@@ -796,7 +796,7 @@
     <string name="blue">青</string>
     <string name="prefs_wena3_button_action_name_activity_screen">アクティビティ画面</string>
     <string name="prefs_wena3_notification_settings_title">通知設定</string>
-    <string name="application_name_banglejs_nightly">Bangle.js Gadgetbridge (Nightly)</string>
+    <string name="application_name_banglejs_nightly">Bangle.js WatchSwitcher (Nightly)</string>
     <string name="pref_pair_bluetooth_calls_help_title">Bluetooth 通話の着信方法</string>
     <string name="fw_upgrade_notice_miband7">Xiaomi Smart Band 7 に %s ファームウェアをインストールしようとしています。
 \n
@@ -843,9 +843,9 @@
     <string name="gps_galileo">GPS + GALILEO</string>
     <string name="speed_first">速度優先</string>
     <string name="accuracy_first">精度優先</string>
-    <string name="application_name_main_nightly">Gadgetbridge (Nightly)</string>
-    <string name="title_activity_controlcenter_main_nightly">Gadgetbridge Nightly</string>
-    <string name="about_activity_title_main_nightly">Gadgetbridge Nightly について</string>
+    <string name="application_name_main_nightly">WatchSwitcher (Nightly)</string>
+    <string name="title_activity_controlcenter_main_nightly">WatchSwitcher Nightly</string>
+    <string name="about_activity_title_main_nightly">WatchSwitcher Nightly について</string>
     <string name="controlcenter_power_off_confirm_title">電源を切る</string>
     <string name="controlcenter_power_off_confirm_description">デバイスの電源を切りますか？</string>
     <string name="pref_header_other">その他</string>
@@ -859,7 +859,7 @@
 \n.fwファイルをインストールすると、バンドが再起動します。
 \n
 \n自己責任の下で行ってください！</string>
-    <string name="about_activity_title_banglejs_nightly">Bangle.js Gadgetbridge (Nightly) について</string>
+    <string name="about_activity_title_banglejs_nightly">Bangle.js WatchSwitcher (Nightly) について</string>
     <string name="pref_title_notification_wake_on_open">自動点灯とロック解除</string>
     <string name="pref_display_caller_title">連絡先の情報を表示する</string>
     <string name="pref_summary_notifications_ignore_low_priority">優先度の低い通知をウォッチに送信しないようにします</string>
@@ -869,7 +869,7 @@
     <string name="pref_title_notification_use_as_allow">選択したアプリからの通知を許可する</string>
     <string name="pref_message_privacy_mode_complete">すべての内容を非表示</string>
     <string name="pref_message_privacy_mode_bodyonly">本文のみ非表示</string>
-    <string name="pref_title_weather_summary">LineageOS の Weather provider に使用されますが、他の Android バージョンでは \"Weather notification\" のようなアプリを使用する必要があります。詳しくは Gadgetbridge の Wiki をご覧ください。</string>
+    <string name="pref_title_weather_summary">LineageOS の Weather provider に使用されますが、他の Android バージョンでは \"Weather notification\" のようなアプリを使用する必要があります。詳しくは WatchSwitcher の Wiki をご覧ください。</string>
     <string name="pref_applications_settings">アプリケーション一覧</string>
     <string name="debugactivity_confirm_remove_device_preferences">接続されたすべてのデバイスの環境設定を削除しますがよろしいですか？</string>
     <string name="pref_title_general_reconnectonlytoconnected">接続中のデバイスにのみ再接続する</string>
@@ -878,7 +878,7 @@
     <string name="pref_pair_bluetooth_calls_help_2">2. Android の Bluetooth の設定に移動し、表示された新しいデバイスとペアリングします（使用中のウォッチと似た名前ですが、ウォッチの名前の末尾に接頭辞が付きます。例： Amazfit GTR 4 - AFC8）。</string>
     <string name="pref_title_notifications_generic_settings">Android 通知設定</string>
     <string name="pref_title_notifications_ignore_work_profile">仕事用プロファイルを非表示にする</string>
-    <string name="pref_summary_banglejs_text_bitmap">ウォッチ内蔵のフォントで表示できない場合に Gadgetbridge でフォントをビットマップでレンダリングし、ウォッチに表示します</string>
+    <string name="pref_summary_banglejs_text_bitmap">ウォッチ内蔵のフォントで表示できない場合に WatchSwitcher でフォントをビットマップでレンダリングし、ウォッチに表示します</string>
     <string name="pref_summary_banglejs_txt_bitmap_size">フォントをビットマップにレンダリングするときの大きさ</string>
     <string name="pref_title_banglejs_phone_gps_enbale">Android の GPS データを使用する</string>
     <string name="pref_title_banglejs_phone_gps_network_only">測位にネットワークのみを使用する</string>
@@ -974,7 +974,7 @@
     <string name="pref_header_workout">ワークアウト</string>
     <string name="pref_title_message_privacy_mode">メッセージのプライバシー設定</string>
     <string name="pref_message_privacy_mode_off">すべての内容を表示</string>
-    <string name="title_activity_controlcenter_banglejs_nightly">Bangle.js Gadgetbridge (Nightly)</string>
+    <string name="title_activity_controlcenter_banglejs_nightly">Bangle.js WatchSwitcher (Nightly)</string>
     <string name="prefs_activity_in_device_card_distance_title_summary">距離は歩数と歩幅から算出されています（設定 - ユーザー情報 で調整できます）</string>
     <string name="appmanager_app_share">共有</string>
     <string name="check_all_applications">すべてのアプリを確認する</string>
@@ -1025,7 +1025,7 @@
     <string name="bluetooth_calls_pairing">Bluetooth 通話のペアリング</string>
     <string name="bluetooth_calls_settings">Bluetooth 通話の設定</string>
     <string name="pref_display_caller_summary">着信時に電話番号か名前を表示します</string>
-    <string name="pref_summary_custom_deviceicon">接続時に Gadgetbridge のアイコンの代わりに デバイス固有の Android 通知アイコンを表示します</string>
+    <string name="pref_summary_custom_deviceicon">接続時に WatchSwitcher のアイコンの代わりに デバイス固有の Android 通知アイコンを表示します</string>
     <string name="pref_title_preview_message_in_title">タイトルにメッセージのプレビューを表示する</string>
     <string name="pref_summary_notification_cache_while_disconnected">接続が途切れたデバイスが再接続されたときに見逃した通知を送信します</string>
     <string name="fw_upgrade_notice_amazfitbip3">Amazfit Bip 3 に %s のファームウェアをインストールしようとしています。
@@ -1047,12 +1047,12 @@
     <string name="open_fw_installer_pick_file">ファイルの選択</string>
     <string name="open_fw_installer_info_text_title">ファイル インストーラ</string>
     <string name="open_fw_installer_connect_minimum_one_device">ファイルを送信したいデバイスを少なくとも1つ接続してください。</string>
-    <string name="application_name_banglejs_main">Bangle.js Gadgetbridge</string>
-    <string name="title_activity_controlcenter_banglejs_main">Bangle.js Gadgetbridge</string>
-    <string name="about_activity_title_banglejs_main">Bangle.js Gadgetbridge について</string>
-    <string name="about_description_banglejs_main">Gadgetbridge プロジェクト上に構築された Bangle.js の Android コンパニオン アプリ。インターネット アクセスが追加されています。
+    <string name="application_name_banglejs_main">Bangle.js WatchSwitcher</string>
+    <string name="title_activity_controlcenter_banglejs_main">Bangle.js WatchSwitcher</string>
+    <string name="about_activity_title_banglejs_main">Bangle.js WatchSwitcher について</string>
+    <string name="about_description_banglejs_main">WatchSwitcher プロジェクト上に構築された Bangle.js の Android コンパニオン アプリ。インターネット アクセスが追加されています。
 \n
-\nGoogle Play ストアのポリシーにより、アプリ自体に寄付リンクを使用することはできませんが、このアプリを気に入っていただけましたら、以下の Gadgetbridge ホームページから寄付をご検討ください。</string>
+\nGoogle Play ストアのポリシーにより、アプリ自体に寄付リンクを使用することはできませんが、このアプリを気に入っていただけましたら、以下の WatchSwitcher ホームページから寄付をご検討ください。</string>
     <string name="busy_task_fetch_spo2_data">SpO2 のデータを取得中</string>
     <string name="reminder_every_year">毎年</string>
     <string name="pref_screen_notification_profile_todo_list">To-Do リスト</string>
@@ -1576,7 +1576,7 @@
     <string name="menuitem_workout">ワークアウト</string>
     <string name="menuitem_widgets">ウィジェット</string>
     <string name="notification_channel_high_priority_name">優先度 高</string>
-    <string name="notification_gps_title">Gadgetbridge GPS</string>
+    <string name="notification_gps_title">WatchSwitcher GPS</string>
     <string name="activity_type_core_training">体幹トレーニング</string>
     <string name="activity_type_hiit">高強度インターバルトレーニング（HIIT）</string>
     <string name="activity_type_boxing">ボクシング</string>
@@ -1707,11 +1707,11 @@
     <string name="pref_title_mb_intents">メディアボタンのインテントを直接送信する</string>
     <string name="low_power_gps">省電力 GPS</string>
     <string name="all_satellites">すべての衛星</string>
-    <string name="gadgetbridge_running_main_nightly">Gadgetbridge Nightly は動作中です</string>
-    <string name="application_name_main_nopebble">Gadgetbridge (Nightly, No Pebble provider)</string>
-    <string name="title_activity_controlcenter_main_nopebble">Gadgetbridge Nightly No Pebble</string>
-    <string name="about_activity_title_main_nopebble">Gadgetbridge Nightly No Pebble について</string>
-    <string name="gadgetbridge_running_main_nopebble">Gadgetbridge Nightly No Pebble は動作中です</string>
+    <string name="gadgetbridge_running_main_nightly">WatchSwitcher Nightly は動作中です</string>
+    <string name="application_name_main_nopebble">WatchSwitcher (Nightly, No Pebble provider)</string>
+    <string name="title_activity_controlcenter_main_nopebble">WatchSwitcher Nightly No Pebble</string>
+    <string name="about_activity_title_main_nopebble">WatchSwitcher Nightly No Pebble について</string>
+    <string name="gadgetbridge_running_main_nopebble">WatchSwitcher Nightly No Pebble は動作中です</string>
     <string name="appmanager_item_outdated">(古いバージョン)</string>
     <string name="uncheck_all_applications">すべてのアプリを未確認にする</string>
     <string name="about_description_generic">メーカーが提供するクローズドソースの Android アプリの代替として開発された、クラウドレスでコピーレフトの自由なアプリ。</string>
@@ -1719,15 +1719,15 @@
     <string name="permission_location">%1$s は、画面がオフの状態でもウォッチとの接続を維持するためにバックグラウンドで位置情報にアクセスする権限が必要です。 \n \n\'%2$s\' をタップして同意します。</string>
     <string name="permission_granting_mandatory">これらすべての許可がなければ、アプリが正しく動作しない可能性があります</string>
     <string name="gadgetbridge_running_banglejs_main">Bangle.js は動作中です</string>
-    <string name="about_description_banglejs_nightly">Gadgetbridge プロジェクト上に構築された Bangle.js の Android コンパニオン アプリ。インターネット アクセスが追加されています。
+    <string name="about_description_banglejs_nightly">WatchSwitcher プロジェクト上に構築された Bangle.js の Android コンパニオン アプリ。インターネット アクセスが追加されています。
 \n
-\nGoogle Play ストアのポリシーにより、アプリ自体に寄付リンクを使用することはできませんが、このアプリを気に入っていただけましたら、以下の Gadgetbridge ホームページから寄付をご検討ください。</string>
-    <string name="about_description_main_nightly">メーカーが提供するクローズドソースの Android アプリの代替として開発された、クラウドレスでコピーレフトの自由なアプリ。Gadgetbridge の Nightly リリース。すでに Gadgetbridge か Pebble アプリがインストールされている場合、Pebble provider の競合のためインストールできません。</string>
-    <string name="about_description_main_nopebble">メーカーが提供するクローズドソースの Android アプリの代替として開発された、クラウドレスでコピーレフトの自由なアプリ。このバージョンは競合を避けるために Pebble provider の名前が変更されているため Pebble 関連の機能は動作しませんが、既存の Gadgetbridge と一緒にインストールすることができます。</string>
+\nGoogle Play ストアのポリシーにより、アプリ自体に寄付リンクを使用することはできませんが、このアプリを気に入っていただけましたら、以下の WatchSwitcher ホームページから寄付をご検討ください。</string>
+    <string name="about_description_main_nightly">メーカーが提供するクローズドソースの Android アプリの代替として開発された、クラウドレスでコピーレフトの自由なアプリ。WatchSwitcher の Nightly リリース。すでに WatchSwitcher か Pebble アプリがインストールされている場合、Pebble provider の競合のためインストールできません。</string>
+    <string name="about_description_main_nopebble">メーカーが提供するクローズドソースの Android アプリの代替として開発された、クラウドレスでコピーレフトの自由なアプリ。このバージョンは競合を避けるために Pebble provider の名前が変更されているため Pebble 関連の機能は動作しませんが、既存の WatchSwitcher と一緒にインストールすることができます。</string>
     <string name="single_band">シングルバンド</string>
     <string name="dual_band">デュアルバンド</string>
     <string name="gadgetbridge_running_banglejs_nightly">Nightly Bangle.js は動作中です</string>
-    <string name="permission_display_over_other_apps">%1$s は、 %1$s がバックグラウンドで動作しているときに Bangle.js ウォッチがインテントを経由してアクティビティを開始するために、他のアプリの上に重ねて表示する権限が必要です。 \n \nこれによって、音楽アプリを起動して音楽を再生したり、その他いろいろなことができます。 \n \n\'%2$s\' をタップし、 \'%1$s\' を選択して \'他のアプリの上に重ねて表示できるようにする\' を有効にし、戻るをタップして %1$s に戻ってください。 \n \n%1$s がこの権限を求めるのを停止するには Gadgetbridge の設定を開き、 \'権限の状態を確認する\' をオフにしてください。 \n \nアプリを期待通りに動作させるには、必要な権限を %1$s に与えてください。</string>
+    <string name="permission_display_over_other_apps">%1$s は、 %1$s がバックグラウンドで動作しているときに Bangle.js ウォッチがインテントを経由してアクティビティを開始するために、他のアプリの上に重ねて表示する権限が必要です。 \n \nこれによって、音楽アプリを起動して音楽を再生したり、その他いろいろなことができます。 \n \n\'%2$s\' をタップし、 \'%1$s\' を選択して \'他のアプリの上に重ねて表示できるようにする\' を有効にし、戻るをタップして %1$s に戻ってください。 \n \n%1$s がこの権限を求めるのを停止するには WatchSwitcher の設定を開き、 \'権限の状態を確認する\' をオフにしてください。 \n \nアプリを期待通りに動作させるには、必要な権限を %1$s に与えてください。</string>
     <string name="device_experimental">試験的</string>
     <string name="debugactivity_confirm_remove_device_preferences_title">デバイスの環境設定を削除しますか？</string>
     <string name="device_unsupported">未サポート</string>
@@ -1745,7 +1745,7 @@
     <string name="strokes_minute">ストローク/秒</string>
     <string name="aerobicTrainingEffect">有酸素の効果</string>
     <string name="pref_show_changelog">起動時に Changelog を表示</string>
-    <string name="pref_show_changelog_summary">Gadgetbridge が更新された後に前バージョンからの変更履歴を表示します</string>
+    <string name="pref_show_changelog_summary">WatchSwitcher が更新された後に前バージョンからの変更履歴を表示します</string>
     <string name="laps_unit">周</string>
     <string name="bpm">bpm</string>
     <string name="Strokes">ストローク</string>
@@ -2069,7 +2069,7 @@
     <string name="pref_activity_recognition_mode_auto">自動</string>
     <string name="pref_navigation_app_osmand">OsmAnd(+)</string>
     <string name="sony_button_mode_off">Off</string>
-    <string name="huawei_trusleep_warning">注意：これを有効にすると Gadgetbridge に睡眠が表示されなくなります！了承する場合はここをタップしてください。</string>
+    <string name="huawei_trusleep_warning">注意：これを有効にすると WatchSwitcher に睡眠が表示されなくなります！了承する場合はここをタップしてください。</string>
     <string name="pref_activity_recognition_mode_none">なし</string>
     <string name="temperature_scale_celsius">摂氏</string>
     <string name="temperature_scale_fahrenheit">華氏</string>
@@ -2240,7 +2240,7 @@
     <string name="wifi_hotspot_start_summary">ウォッチ上で Wi-Fi ホットスポットを開始します</string>
     <string name="contact_phone_number">電話番号</string>
     <string name="dashboard_settings">ダッシュボードの設定</string>
-    <string name="pref_dashboard_first_summary">Gadgetbridge 起動時にデバイスの一覧ではなく、ダッシュボードを表示します</string>
+    <string name="pref_dashboard_first_summary">WatchSwitcher 起動時にデバイスの一覧ではなく、ダッシュボードを表示します</string>
     <string name="bottom_nav_devices">デバイス</string>
     <string name="pref_dashboard_cards_title">ウィジェットをカードの上に表示する</string>
     <string name="pref_dashboard_cards_summary">ダッシュボード上のウィジェットの周りに枠を付けます</string>
@@ -2303,7 +2303,7 @@
     <string name="prefs_stress_monitoring_title">ストレスモニタリング</string>
     <string name="changelog_ok_button">OK</string>
     <string name="loyalty_cards_catima">Catima</string>
-    <string name="pref_theme_dynamic_colors_explanation">注意: ダイナミックカラーのテーマを使用するには、Android 12 以上の外観設定で壁紙の色またはカラーパレットを有効にする必要があります。有効にしない場合、Gadgetbridge はデフォルトの Material 3 カラーを使用します。</string>
+    <string name="pref_theme_dynamic_colors_explanation">注意: ダイナミックカラーのテーマを使用するには、Android 12 以上の外観設定で壁紙の色またはカラーパレットを有効にする必要があります。有効にしない場合、WatchSwitcher はデフォルトの Material 3 カラーを使用します。</string>
     <string name="withings_calibration_text_hours">下のダイヤルを使って時針を 12 に合わせてください。</string>
     <string name="activity_info">アクティビティ情報</string>
     <string name="loyalty_cards_sync_archived">アーカイブしたカードを同期する</string>
@@ -2326,8 +2326,8 @@
     <string name="withings_calibration_text_activity_target">最後に、アクティビティの針を 100% に合わせてください。この針は時計回りにしか動きません。</string>
     <string name="loyalty_cards_sync_groups_only">特定のグループのみ同期する</string>
     <string name="loyalty_cards_sync_groups">同期するグループ</string>
-    <string name="pref_theme_dynamic_colors_not_available_warning">ダイナミックカラーは Android 12 未満のデバイスでは利用できません。Gadgetbridge はデフォルトの Material 3 カラーを使用します。</string>
-    <string name="prompt_restart_gadgetbridge">反映するには Gadgetbridge を再起動してください。</string>
+    <string name="pref_theme_dynamic_colors_not_available_warning">ダイナミックカラーは Android 12 未満のデバイスでは利用できません。WatchSwitcher はデフォルトの Material 3 カラーを使用します。</string>
+    <string name="prompt_restart_gadgetbridge">反映するには WatchSwitcher を再起動してください。</string>
     <string name="uploadwatchfaceoperation_in_progress">ウォッチフェイスをアップロードしています</string>
     <string name="pref_speak_notifications_aloud_title">通知を読み上げる</string>
     <string name="pref_speak_notifications_focus_exclusive_summary_on">通知の読み上げ中は他のアプリの音声を一時停止します</string>
@@ -2345,7 +2345,7 @@
     <string name="sports_activity_quick_filter_7days">7日間</string>
     <string name="sports_activity_quick_filter_30days">30日間</string>
     <string name="uploadwatchfaceoperation_failed">ウォッチフェイスのインストールに失敗しました</string>
-    <string name="pref_force_connection_type_description">デバイスが Gadgetbridge に応答しない場合、接続形式を指定してみてください</string>
+    <string name="pref_force_connection_type_description">デバイスが WatchSwitcher に応答しない場合、接続形式を指定してみてください</string>
     <string name="pref_auto_reply_calls_summary">着信があったときに自動で電話に出ます</string>
     <string name="sports_activity_quick_filter_last_week">先週</string>
     <string name="sports_activity_quick_filter_this_week">先週</string>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <string name="application_name_generic">Gadgetbridge</string>
-    <string name="title_activity_controlcenter_generic">Gadgetbridge</string>
+    <string name="application_name_generic">WatchSwitcher</string>
+    <string name="title_activity_controlcenter_generic">WatchSwitcher</string>
     <string name="action_settings">הגדרות</string>
     <string name="action_debug">ניפוי שגיאות</string>
     <string name="action_quit">יציאה</string>
@@ -35,27 +35,27 @@
     <string name="title_activity_fw_app_insaller">התקנת קושחה/יישומון</string>
     <string name="fw_upgrade_notice">פעולה זו תוביל להתקנת %s.</string>
     <string name="fw_multi_upgrade_notice">הקושחות המועמדות להתקנה הנן %1$s ו־%2$s במקום אלו המותקנת על ה־Mi Band שלך נכון לעכשיו.</string>
-    <string name="miband_firmware_known">קושחה זו נבדקה וידוע כי היא נתמכת ב־Gadgetbridge.</string>
-    <string name="miband_firmware_unknown_warning">קושחה זו לא נבדקה ויתכן כי אינה נתמכת ב־Gadgetbridge.
+    <string name="miband_firmware_known">קושחה זו נבדקה וידוע כי היא נתמכת ב־WatchSwitcher.</string>
+    <string name="miband_firmware_unknown_warning">קושחה זו לא נבדקה ויתכן כי אינה נתמכת ב־WatchSwitcher.
 \n
 \nלא מומלץ להתקין אותה!</string>
-    <string name="miband_firmware_suggest_whitelist">אם בכל זאת בחרת להמשיך והדברים ממשיכים לעבוד כרגיל, נא לספר למפתחים של Gadgetbridge להוסיף לרשימת ההיתר את גרסת הקושחה %s.</string>
+    <string name="miband_firmware_suggest_whitelist">אם בכל זאת בחרת להמשיך והדברים ממשיכים לעבוד כרגיל, נא לספר למפתחים של WatchSwitcher להוסיף לרשימת ההיתר את גרסת הקושחה %s.</string>
     <!--Strings related to Settings-->
     <string name="title_activity_settings">הגדרות</string>
     <string name="pref_header_general">הגדרות כלליות</string>
-    <string name="pref_title_general_autoconnectonbluetooth">התחברות להתקני Gadgetbridge כאשר ה־Bluetooth פועל</string>
+    <string name="pref_title_general_autoconnectonbluetooth">התחברות להתקני WatchSwitcher כאשר ה־Bluetooth פועל</string>
     <string name="pref_title_general_autostartonboot">התחלה אוטומטית</string>
     <string name="pref_title_general_autoreconnect">התחברות אוטומטית מחדש</string>
     <string name="pref_title_audio_player">נגן מדיה מועדף</string>
     <string name="pref_default">בררת מחדל</string>
     <string name="pref_header_datetime">שעה ותאריך</string>
     <string name="pref_title_datetime_syctimeonconnect">סנכרון השעה</string>
-    <string name="pref_summary_datetime_syctimeonconnect">סנכרון השעה בהתקני Gadgetbridge בעת ההתחברות וכאשר השעה או אזור הזמן משתנים בהתקן ה־Android ומדי פעם בפעם</string>
+    <string name="pref_summary_datetime_syctimeonconnect">סנכרון השעה בהתקני WatchSwitcher בעת ההתחברות וכאשר השעה או אזור הזמן משתנים בהתקן ה־Android ומדי פעם בפעם</string>
     <string name="pref_title_theme">ערכת עיצוב</string>
     <string name="pref_theme_light">בהירה</string>
     <string name="pref_theme_dark">כהה</string>
     <string name="pref_title_language">שפה</string>
-    <string name="pref_title_minimize_priority">הסתרת ההודעות של Gadgetbridge</string>
+    <string name="pref_title_minimize_priority">הסתרת ההודעות של WatchSwitcher</string>
     <string name="pref_summary_minimize_priority_off">הסמל בשורת המצב והדיווח במסך הנעילה מופיעים</string>
     <string name="pref_summary_minimize_priority_on">הסמל בשורת המצב והדיווח במסך הנעילה מוסתרים</string>
     <string name="pref_header_notifications">הודעות</string>
@@ -119,7 +119,7 @@
     <string name="pref_title_pebble_mtu_limit">מגבלת ה־MTU של GATT ל־Pebble 2/LE</string>
     <string name="pref_summary_pebble_mtu_limit">אם ה־Pebble 2/Pebble LE שלך אינו עובד כצפוי, יש לנסות אפשרות זאת כדי להגביל את כמות הנתונים המועברת - MTU (טווח תקני 20–512)</string>
     <string name="pref_title_pebble_enable_applogs">הפעלת מעקב רישום אחר יישומון השעון</string>
-    <string name="pref_summary_pebble_enable_applogs">יגרום לרישומים מיישומי השעון להיות מתועדים ב־Gadgetbridge (נדרשת הפעלה מחדש)</string>
+    <string name="pref_summary_pebble_enable_applogs">יגרום לרישומים מיישומי השעון להיות מתועדים ב־WatchSwitcher (נדרשת הפעלה מחדש)</string>
     <string name="pref_title_pebble_always_ack_pebblekit">אישור מסירה מוקדם מצד PebbleKit</string>
     <string name="pref_summary_pebble_always_ack_pebblekit">יגרום להודעות שנשלחות ליישומוני צד שלישי לקבל אישור מסירה תמיד ובאופן מיידי</string>
     <string name="pref_title_pebble_reconnect_attempts">ניסיונות חיבור מחדש</string>
@@ -135,7 +135,7 @@
     <string name="_unknown_">(לא ידוע)</string>
     <string name="test">בדיקה</string>
     <string name="test_notification">התראה לבדיקה</string>
-    <string name="this_is_a_test_notification_from_gadgetbridge">זוהי התראה לבדיקה מ־Gadgetbridge</string>
+    <string name="this_is_a_test_notification_from_gadgetbridge">זוהי התראה לבדיקה מ־WatchSwitcher</string>
     <string name="bluetooth_is_not_supported_">אין תמיכה ב־Bluetooth.</string>
     <string name="bluetooth_is_disabled_">ה־Bluetooth מושבת.</string>
     <string name="tap_connected_device_for_app_mananger">נקישה על ההתקן המחובר למנהל היישומים</string>
@@ -143,7 +143,7 @@
     <string name="tap_connected_device_for_vibration">נקישה על ההתקן המחובר לרטט</string>
     <string name="tap_a_device_to_connect">יש לגעת בהתקן כדי להתחבר</string>
     <string name="cannot_connect_bt_address_invalid_">לא ניתן להתחבר. כתובת ה־Bluetooth שגויה?</string>
-    <string name="gadgetbridge_running_generic">Gadgetbridge פעיל</string>
+    <string name="gadgetbridge_running_generic">WatchSwitcher פעיל</string>
     <string name="installing_binary_d_d">התקנת הבינרי %1$d/%2$d</string>
     <string name="installation_failed_">ההתקנה נכשלה</string>
     <string name="installation_successful">ההתקנה הצליחה</string>
@@ -179,7 +179,7 @@
     <string name="miband_pairing_using_dummy_userdata">לא ניתנו נתוני משתמש, נעשה שימוש בנתוני דמה לבינתיים.</string>
     <string name="miband_pairing_tap_hint">כאשר ה־Mi Band שלך רוטט ומהבהב, יש לגעת בו מספר פעמים ברצף.</string>
     <string name="appinstaller_install">התקנה</string>
-    <string name="discovery_connected_devices_hint">יש להפעיל את האפשרות לאיתור ההתקן שלך. התקנים שכבר מחוברים כעת לא יתגלו. יש להפעיל מיקום (GPS). יש לכבות את הגנת הפרטיות עבור Gadgetbridge כיוון שהיכולת הזאת עלולה להקריס ולהפעיל מחדש את הטלפון שלך. אם לא נמצא אף התקן לאחר מספר דקות יש לנסות שוב לאחר הפעלת הטלפון הנייד שלך מחדש.</string>
+    <string name="discovery_connected_devices_hint">יש להפעיל את האפשרות לאיתור ההתקן שלך. התקנים שכבר מחוברים כעת לא יתגלו. יש להפעיל מיקום (GPS). יש לכבות את הגנת הפרטיות עבור WatchSwitcher כיוון שהיכולת הזאת עלולה להקריס ולהפעיל מחדש את הטלפון שלך. אם לא נמצא אף התקן לאחר מספר דקות יש לנסות שוב לאחר הפעלת הטלפון הנייד שלך מחדש.</string>
     <string name="discovery_note">לתשומת לבך:</string>
     <string name="candidate_item_device_image">תמונת ההתקן</string>
     <string name="miband_prefs_alias">שם/כינוי</string>
@@ -262,8 +262,8 @@
     <string name="liveactivity_live_activity">פעילות חיה</string>
     <string name="weeksteps_today_steps_description">צעדים היום, יעד: %1$s</string>
     <string name="pref_title_dont_ack_transfer">לא לשלוח אישור על העברת נתוני פעילות</string>
-    <string name="pref_summary_dont_ack_transfers">אם הנתונים לא יאושרו בצמיד, נתוני הפעילות לא יימחקו. שימושי אם נעשה שימוש ביישומונים שונים למעט Gadgetbridge.</string>
-    <string name="pref_summary_keep_data_on_device">תכונה זו תגרום לשמירת נתוני הפעילות על ההתקן גם לאחר הסנכרון. שימושי אם נעשה שימוש ביישומונים שונים למעט Gadgetbridge. יכול לגמור את המקום הפנוי ו/או לעצור את הסנכרון.</string>
+    <string name="pref_summary_dont_ack_transfers">אם הנתונים לא יאושרו בצמיד, נתוני הפעילות לא יימחקו. שימושי אם נעשה שימוש ביישומונים שונים למעט WatchSwitcher.</string>
+    <string name="pref_summary_keep_data_on_device">תכונה זו תגרום לשמירת נתוני הפעילות על ההתקן גם לאחר הסנכרון. שימושי אם נעשה שימוש ביישומונים שונים למעט WatchSwitcher. יכול לגמור את המקום הפנוי ו/או לעצור את הסנכרון.</string>
     <string name="pref_title_low_latency_fw_update">שימוש במצב חיבור מהיר לעדכוני קושחה</string>
     <string name="pref_summary_low_latency_fw_update">הפעלת אפשרות זו עשויה לסייע במקרים שבהם עדכון הקושחה נכשל.</string>
     <string name="live_activity_steps_history">היסטוריית הצעדים</string>
@@ -311,11 +311,11 @@
     <string name="pref_summary_pebble_health_store_raw">הנתונים מאוחסנים כמו שהם, מה שיגרום להגדלת נפח מסד הנתונים לצד אפשרות לפענוח בעתיד.</string>
     <string name="action_db_management">ניהול נתונים</string>
     <string name="title_activity_db_management">ניהול נתונים</string>
-    <string name="activity_db_management_import_export_explanation">פעולות ייבוא/ייצוא משתמשות בנתיב הבא (מופיע להלן) במכשיר שלך. התיקייה הזאת חשופה ליישומוני Android אחרים ולמחשב שלך. נא לשים לב שהתיקייה הסרת על כל תוכנה תימחק בכל הסרת Gadgetbridge. הנתונים כוללים:
+    <string name="activity_db_management_import_export_explanation">פעולות ייבוא/ייצוא משתמשות בנתיב הבא (מופיע להלן) במכשיר שלך. התיקייה הזאת חשופה ליישומוני Android אחרים ולמחשב שלך. נא לשים לב שהתיקייה הסרת על כל תוכנה תימחק בכל הסרת WatchSwitcher. הנתונים כוללים:
 \nExport_preference - הגדרות גלובליות
 \nExport_preference_MAC - הגדרות למכשיר מסוים
-\n Gadgetbridge - מסד נתוני מכשיר ופעילות
-\n Gadgetbridge_date - התאריך בוא ייוצא מסד הנתונים
+\n WatchSwitcher - מסד נתוני מכשיר ופעילות
+\n WatchSwitcher_date - התאריך בוא ייוצא מסד הנתונים
 \n ‎*.gpx - הקלטות GPS
 \n ‎*.log - קובצי יומנים
 \nהקבצים שלך אמורים להיות (או ששם עליך להביא את מה שמיועד לייבוא) פה:</string>
@@ -550,7 +550,7 @@
     <string name="mi3_night_mode_sunset">בשקיעה</string>
     <string name="ok">אישור</string>
     <string name="share_log">שיתוף יומן</string>
-    <string name="share_log_warning">נא לשים לב שקובצי היומן של Gadgetbridge עשויים להכיל פרטים אישיים רבים, לרבות אך לא רק נתונים רפואיים, מזהים ייחודיים (כגון כתובת החומרה של המכשיר), העדפות מוזיקליות וכו׳. מוטב לערוך את הקובץ ולהסיר את המידע הזה בטרם הגשתו באופן ציבורי כדי לדווח על תקלה.</string>
+    <string name="share_log_warning">נא לשים לב שקובצי היומן של WatchSwitcher עשויים להכיל פרטים אישיים רבים, לרבות אך לא רק נתונים רפואיים, מזהים ייחודיים (כגון כתובת החומרה של המכשיר), העדפות מוזיקליות וכו׳. מוטב לערוך את הקובץ ולהסיר את המידע הזה בטרם הגשתו באופן ציבורי כדי לדווח על תקלה.</string>
     <string name="warning">אזהרה!</string>
     <string name="controlcenter_change_led_color">החלפת צבע נורית</string>
     <string name="controlcenter_change_fm_frequency">החלפת תדירות FM</string>
@@ -576,7 +576,7 @@
     <string name="no_data">אין נתונים</string>
     <string name="live_activity_max_heart_rate">דופק נוכחי / מרבי: %1$d ‏/ %2$d</string>
     <string name="debugactivity_really_factoryreset_title">לאפס להגדרות יצרן\?</string>
-    <string name="debugactivity_really_factoryreset">איפוס להגדרות יצרן ימחק את כל הנתונים מההתקן המקושר (אם יש תמיכה בזה). מכשירים מבית Xiaomi/Huami גם משנים את כתובת החומרה (MAC), כך שבעיני Gadgetbridge הם נחשבים למכשירים חדשים.</string>
+    <string name="debugactivity_really_factoryreset">איפוס להגדרות יצרן ימחק את כל הנתונים מההתקן המקושר (אם יש תמיכה בזה). מכשירים מבית Xiaomi/Huami גם משנים את כתובת החומרה (MAC), כך שבעיני WatchSwitcher הם נחשבים למכשירים חדשים.</string>
     <string name="title_activity_notification_filter">מסנן התראות</string>
     <string name="edittext_notification_filter_words_hint">נא להקליד את המילים המבוקשות, אחת בכל שורה</string>
     <string name="toast_notification_filter_saved_successfully">מסנן ההתראות נשמר</string>
@@ -672,7 +672,7 @@
     <string name="weekstepschart_steps_a_month">צעדים בחודש</string>
     <string name="weeksleepchart_sleep_a_month">שינה בחודש</string>
     <string name="menuitem_nfc">תקשורת קרבה</string>
-    <string name="pref_summary_expose_hr">מאפשר ליישומונים אחרים לגשת לנתוני דופק בזמן אמת כש־Gadgetbridge מחובר</string>
+    <string name="pref_summary_expose_hr">מאפשר ליישומונים אחרים לגשת לנתוני דופק בזמן אמת כש־WatchSwitcher מחובר</string>
     <string name="pref_title_expose_hr">גישה של צד־שלישי לדופק בזמן אמת</string>
     <string name="pref_title_use_custom_font">גופן מותאם</string>
     <string name="pref_summary_use_custom_font">יש להפעיל תכונה זו אם למכשיר שלך יש קושחה עם גופן שתומך באמוג׳י</string>
@@ -770,7 +770,7 @@
     <string name="find_my_phone_notification">איתור הטלפון שלי</string>
     <string name="notification_channel_high_priority_name">עדיפות גבוהה</string>
     <string name="pref_title_custom_deviceicon">הצגת סמל התראה ייעודי למכשיר</string>
-    <string name="pref_summary_custom_deviceicon">הצגת התראת Android תואמת מכשיר במקום הסמל של Gadgetbridge כשיש חיבור</string>
+    <string name="pref_summary_custom_deviceicon">הצגת התראת Android תואמת מכשיר במקום הסמל של WatchSwitcher כשיש חיבור</string>
     <string name="hr_appname_wellness">רווחה</string>
     <string name="hr_appname_workout">אימון</string>
     <string name="hr_appname_stopwatch">שעון עצר</string>
@@ -836,9 +836,9 @@
     <string name="about_contributors">תורמים</string>
     <string name="about_core_team_title">צוות הליבה (מסודרים לפי מועד תרומת הקוד הראשונה)</string>
     <string name="about_description_generic">חלופה חופשית ונטולת ענן ליישומוני ה־Android לחפיצים עם הקוד הסגור של היצרנים.</string>
-    <string name="about_activity_title_generic">על אודות Gadgetbridge</string>
+    <string name="about_activity_title_generic">על אודות WatchSwitcher</string>
     <string name="about_title">על אודות</string>
-    <string name="pref_title_weather_summary">משמש לספק מזג האוויר של LineageOS, גרסאות אחרות של Android צריכות להשתמש ביישומונים כמו „התראות מזג אוויר”. אפשר למצוא מידע נוסף בוויקי של Gadgetbridge.</string>
+    <string name="pref_title_weather_summary">משמש לספק מזג האוויר של LineageOS, גרסאות אחרות של Android צריכות להשתמש ביישומונים כמו „התראות מזג אוויר”. אפשר למצוא מידע נוסף בוויקי של WatchSwitcher.</string>
     <string name="menuitem_worldclock">שעון עולמי</string>
     <string name="permission_granting_mandatory">כל ההרשאות האלו נדרשות ואם לא תוענקנה היציבות תתערער</string>
     <string name="error_version_check_extreme_caution">אזהרה: בדיקת פרטי הגרסה נתקלה בשגיאה! עדיף שלא להמשיך! הגרסה שנצפתה היא %s</string>
@@ -1146,7 +1146,7 @@
     <string name="pref_theme_black_background">להשתמש ברקע שחור בערכת עיצוב כהה</string>
     <string name="gpx_receiver_overwrite_some_files">חלק מהקבצים כבר קיימים. לדרוס\?</string>
     <string name="gpx_receiver_files_received">קובצי GPX שהתקבלו:</string>
-    <string name="gpx_receiver_activity_title">מקלט GPX ל־Gadgetbridge</string>
+    <string name="gpx_receiver_activity_title">מקלט GPX ל־WatchSwitcher</string>
     <string name="activity_summary_detail_editing_gpx_track">עריכת מסלול GPX מקושר</string>
     <string name="activity_summary_detail_clear_gpx_track">מחיקת מסלול GPX</string>
     <string name="activity_summary_detail_select_gpx_track">בחירת מסלול GPX</string>
@@ -1455,23 +1455,23 @@
     <string name="watchface_dialog_pre_setting_position">המיקום מוגדר מראש לכדי %s</string>
     <string name="watchface_setting_light_up_on_notification">הארה עם התראות חדשות</string>
     <string name="menuitem_email">דוא״ל</string>
-    <string name="application_name_banglejs_main">Bangle.js Gadgetbridge</string>
-    <string name="title_activity_controlcenter_main_nightly">גרסה נסיונית של Gadgetbridge</string>
-    <string name="about_activity_title_main_nightly">על הגרסה הנסיונית של Gadgetbridge</string>
-    <string name="title_activity_controlcenter_banglejs_main">Bangle.js Gadgetbridge</string>
-    <string name="about_activity_title_banglejs_main">על Bangle.js Gadgetbridge</string>
-    <string name="about_description_banglejs_main">יישומון Android מלווה ל־Bangle.js שנבנה על גבי מיזם Gadgetbridge עם תוספת של גישה לאינטרנט.
+    <string name="application_name_banglejs_main">Bangle.js WatchSwitcher</string>
+    <string name="title_activity_controlcenter_main_nightly">גרסה נסיונית של WatchSwitcher</string>
+    <string name="about_activity_title_main_nightly">על הגרסה הנסיונית של WatchSwitcher</string>
+    <string name="title_activity_controlcenter_banglejs_main">Bangle.js WatchSwitcher</string>
+    <string name="about_activity_title_banglejs_main">על Bangle.js WatchSwitcher</string>
+    <string name="about_description_banglejs_main">יישומון Android מלווה ל־Bangle.js שנבנה על גבי מיזם WatchSwitcher עם תוספת של גישה לאינטרנט.
 \n
-\nעקב מדיניות של חנות Google Play, אסור לנו להציב קישור תרומה ביישומון עצמו אך אם היישומון נושא חן בעיניך אפשר לתרום דרך עמוד הבית של Gadgetbridge להלן.</string>
-    <string name="application_name_main_nightly">Gadgetbridge (גרסה ניסיונית)</string>
+\nעקב מדיניות של חנות Google Play, אסור לנו להציב קישור תרומה ביישומון עצמו אך אם היישומון נושא חן בעיניך אפשר לתרום דרך עמוד הבית של WatchSwitcher להלן.</string>
+    <string name="application_name_main_nightly">WatchSwitcher (גרסה ניסיונית)</string>
     <string name="gadgetbridge_running_banglejs_main">Bangle.js פעיל</string>
     <string name="gadgetbridge_running_main_nightly">GB במהדורה לילית פעיל</string>
-    <string name="about_activity_title_main_nopebble">על מהדורה לילית של Gadgetbridge בלי Pebble</string>
+    <string name="about_activity_title_main_nopebble">על מהדורה לילית של WatchSwitcher בלי Pebble</string>
     <string name="gadgetbridge_running_main_nopebble">GB ללא Pebble במהדורה לילית פעיל</string>
-    <string name="about_description_main_nightly">חלופה חופשית ונטולת ענן ליישומוני הגאדג׳טים הסגורים ל־Android מהיצרנים. מהדורות ליליות של Gadgetbridge. אי אפשר להתקין אם כבר יש לך את היישומונים Gadgetbridge או Pebble מותקנים עקב סתירה בספק ה־Pebble.</string>
-    <string name="title_activity_controlcenter_main_nopebble">מהדורה לילית של Gadgetbridge בלי Pebble</string>
-    <string name="application_name_main_nopebble">Gadgetbridge (מהדורה לילית, בלי ספק Pebble)</string>
-    <string name="about_description_main_nopebble">חלופה חופשית ונטולת ענן ליישומוני הגאדג׳טים הסגורים ל־Android מהיצרנים. מהדורות ליליות של Gadgetbridge. במהדורה זו שמו של ספק ה־Pebble השתנה כדי למנוע סתירות, לכן כמה מהשילובים מול Pebble לא יעבדו אך ניתן להתקין אותו לצד התקנה קיימת של Gadgetbridge.</string>
+    <string name="about_description_main_nightly">חלופה חופשית ונטולת ענן ליישומוני הגאדג׳טים הסגורים ל־Android מהיצרנים. מהדורות ליליות של WatchSwitcher. אי אפשר להתקין אם כבר יש לך את היישומונים WatchSwitcher או Pebble מותקנים עקב סתירה בספק ה־Pebble.</string>
+    <string name="title_activity_controlcenter_main_nopebble">מהדורה לילית של WatchSwitcher בלי Pebble</string>
+    <string name="application_name_main_nopebble">WatchSwitcher (מהדורה לילית, בלי ספק Pebble)</string>
+    <string name="about_description_main_nopebble">חלופה חופשית ונטולת ענן ליישומוני הגאדג׳טים הסגורים ל־Android מהיצרנים. מהדורות ליליות של WatchSwitcher. במהדורה זו שמו של ספק ה־Pebble השתנה כדי למנוע סתירות, לכן כמה מהשילובים מול Pebble לא יעבדו אך ניתן להתקין אותו לצד התקנה קיימת של WatchSwitcher.</string>
     <string name="prefs_activate_display_on_lift_sensitivity">רגישות</string>
     <string name="normal">רגילה</string>
     <string name="sensitive">רגישה</string>
@@ -1557,12 +1557,12 @@
     <string name="pref_title_banglejs_text_bitmap">טקסט כמפת סיביות</string>
     <string name="pref_title_device_internet_access">לאפשר גישה לאינטרנט</string>
     <string name="pref_summary_device_internet_access">לאפשר ליישומונים במכשיר הזה לגשת לאינטרנט</string>
-    <string name="pref_summary_banglejs_text_bitmap">אם אי אפשר לעבד תמונות עם גופן השעון, הוא יומר למפת סיביות ב־Gadgetbridge שתוצג בשעון</string>
+    <string name="pref_summary_banglejs_text_bitmap">אם אי אפשר לעבד תמונות עם גופן השעון, הוא יומר למפת סיביות ב־WatchSwitcher שתוצג בשעון</string>
     <string name="pref_summary_device_intents">לאפשר ליישומוני שעון של Bangle.js לשלוח Intents ל־Android ולאפשר ליישומי Android אחרים (כמו Tasker) לשלוח נתונים ל־Bangle.js באמצעות ה־Intent ‏com.banglejs.uart.tx. דורש הרשאות כדי להציג על גבי יישומונים אחרים שפועלים ברקע.</string>
     <string name="pref_title_device_intents">לאפשר Intents</string>
     <string name="pref_workout_send_gps_title">שליחת GPS במהלך אימון</string>
     <string name="pref_workout_send_gps_summary">שליחת מיקום ה־GPS הנוכחי לצמיד במהלך אימון</string>
-    <string name="notification_gps_title">GPS של Gadgetbridge</string>
+    <string name="notification_gps_title">GPS של WatchSwitcher</string>
     <string name="notification_gps_text">שליחת מיקום GPS ל־%1$d מכשירים</string>
     <string name="pref_device_action_phone_gps_location_listener_stop">עצירת האזנת מיקום GPS</string>
     <string name="pref_workout_start_on_phone_title">מעקב ביישומון חיטוב</string>
@@ -1666,17 +1666,17 @@
     <string name="controlcenter_get_heartrate_measurement">משיכת מדידת דופק</string>
     <string name="pref_write_logfiles_not_available">התחלת תיעוד לקבצים נכשלה, כתיבת קובצי יומן אינה זמינה כעת. יש להפעיל את היישומון מחדש כדי לנסות להתחיל את קובצי היומן מחדש.</string>
     <string name="devicetype_binary_sensor">חיישן בינרי</string>
-    <string name="about_activity_title_banglejs_nightly">על Bangle.js Gadgetbridge (Nightly)</string>
-    <string name="application_name_banglejs_nightly">Bangle.js Gadgetbridge (Nightly)</string>
+    <string name="about_activity_title_banglejs_nightly">על Bangle.js WatchSwitcher (Nightly)</string>
+    <string name="application_name_banglejs_nightly">Bangle.js WatchSwitcher (Nightly)</string>
     <string name="gadgetbridge_running_banglejs_nightly">Nightly Bangle.js פעיל</string>
-    <string name="title_activity_controlcenter_banglejs_nightly">Bangle.js Gadgetbridge (Nightly)</string>
+    <string name="title_activity_controlcenter_banglejs_nightly">Bangle.js WatchSwitcher (Nightly)</string>
     <string name="step_streaks_achievements_sharing_message">הישגי הצעדים היומיים שלי!</string>
     <string name="step_streaks_achievements_sharing_title">הישגי צעדים</string>
     <string name="prefs_hourly_chime_summary">השעון יצפצף כל שעה</string>
     <string name="prefs_hourly_chime">התראה שעתית</string>
-    <string name="about_description_banglejs_nightly">יישומון נלווה ל־Bangle.js לסביבת Android שנבנה על גבי מיזם Gadgetbridge בתוספת גישה לאינטרנט.
+    <string name="about_description_banglejs_nightly">יישומון נלווה ל־Bangle.js לסביבת Android שנבנה על גבי מיזם WatchSwitcher בתוספת גישה לאינטרנט.
 \n
-\nעקב מדיניות של חנות Google Play אסור לנו להציב קישור תרומה ביישומון עצמו אבל אם היישומון הזה נושא חן בעיניך, נא לשקול לתרום לו דרך האתר של Gadgetbridge שלהלן.</string>
+\nעקב מדיניות של חנות Google Play אסור לנו להציב קישור תרומה ביישומון עצמו אבל אם היישומון הזה נושא חן בעיניך, נא לשקול לתרום לו דרך האתר של WatchSwitcher שלהלן.</string>
     <string name="permission_display_over_other_apps">%1$s זקוק להרשאות כדי להציג על פני יישומונים אחרים כדי לאפשר לשעוני Bangle.js להריץ פעילויות דרך Intens כאשר %1$s פועל ברקע. \n \nאפשר להשתמש בזה כדי להפעיל יישומון מוזיקה ולנגן שיר ולעוד מגוון משימות. \n \nנא לגעת ב־‚%2$s’ ואז ב־‚%1$s’ ולסמן את ‚לאפשר הצגה על גבי יישומונים אחרים’, ואז לגעת ב־‚חזרה’ כדי לחזור אל %1$s. \n \nכדי לעצור את בקשת ההרשאות מצד %1$s יש לגשת אל ההגדרות ולבטל את הסימון ‚בדיקת מצב הרשאות’. \n \nנא לוודא שהענקת ל־%1$s את ההרשאות הנדרשות כדי שיפעל כראוי.</string>
     <string name="pref_header_calendar">לוח שנה</string>
     <string name="pref_header_connection">חיבור</string>
@@ -2157,12 +2157,12 @@
     <string name="find_my_phone_found_it">מצאתי אותו</string>
     <string name="pref_activity_full_sync_trigger_title">סנכרון מלא</string>
     <string name="pref_show_changelog">הצגת יומן שינויים בעלייה</string>
-    <string name="pref_show_changelog_summary">הצגת יומן השינויים מאז הגרסה האחרונה לאחר עדכון Gadgetbridge</string>
+    <string name="pref_show_changelog_summary">הצגת יומן השינויים מאז הגרסה האחרונה לאחר עדכון WatchSwitcher</string>
     <string name="pref_activity_full_sync_trigger_summary">הקפצת סנכרון מלא של כל נתוני הפעילות</string>
     <string name="pref_activity_full_sync_trigger_warning">פעולה זו תקפיץ סנכרון מלא של כל נתוני הפעילות מול המכשיר. עלול לארוך כמה דקות עד שיושלם.</string>
     <string name="menuitem_zepp_coach">Zepp Coach‎</string>
-    <string name="pref_theme_dynamic_colors_explanation">לתשומת לבך: לטובת ערכת הצבעים הדינמיים יש להפעיל צבעי טפט או ערכת צבעים בהגדרות המראה ב־Android 12+‎ שלך. אם לא, Gadgetbridge ישתמש בצבעי Material 3 כברירת מחדל.</string>
-    <string name="pref_theme_dynamic_colors_not_available_warning">צבעים דינמיים לא זמינים במכשיר שלך, רק Android 12 ומעלה תומך ביכולת הזאת. Gadgetbridge ישתמש בצבעי ברירת המחדל של Material 3.</string>
+    <string name="pref_theme_dynamic_colors_explanation">לתשומת לבך: לטובת ערכת הצבעים הדינמיים יש להפעיל צבעי טפט או ערכת צבעים בהגדרות המראה ב־Android 12+‎ שלך. אם לא, WatchSwitcher ישתמש בצבעי Material 3 כברירת מחדל.</string>
+    <string name="pref_theme_dynamic_colors_not_available_warning">צבעים דינמיים לא זמינים במכשיר שלך, רק Android 12 ומעלה תומך ביכולת הזאת. WatchSwitcher ישתמש בצבעי ברירת המחדל של Material 3.</string>
     <string name="fw_upgrade_notice_amazfitbip3pro">פעולה זו תתקין את הקושחה %s על ה־Amazfit Bip 3 Pro שלך.
 \n
 \nנא לוודא את התקנת קושחת ה־‎.fw בהתחלה, לאחר מכן את קובץ ה־‎.res השעון שלך יופעל מחדש לאחר התקנת קובץ ה־fw.
@@ -2221,7 +2221,7 @@
     <string name="prefs_wena3_vibration_step_down">הולך ונחלש</string>
     <string name="prefs_wena3_vibration_smart_item">רטט חכם</string>
     <string name="prefs_wena3_home_icon_name_riiiver">Riiiver‎</string>
-    <string name="prefs_wena3_hint_background_sync">לאפשר ל־Wena לבקש מ־Gadgetbridge להוריד נתוני פעילות מהמכשיר מדי פעם בפעם</string>
+    <string name="prefs_wena3_hint_background_sync">לאפשר ל־Wena לבקש מ־WatchSwitcher להוריד נתוני פעילות מהמכשיר מדי פעם בפעם</string>
     <string name="prefs_wena3_home_icon_name_suica">יתרה ב־Suica</string>
     <string name="prefs_wena3_vibration_strength_item_medium">בינונית</string>
     <string name="prefs_wena3_title_activity">הגדרות פעילות</string>
@@ -2301,7 +2301,7 @@
     <string name="prefs_wearmode">מצב עטייה</string>
     <string name="pref_sleep_mode_schedule_summary">לשלוח תזכורת ולהיכנס למצב שינה בזמן השינה. במועד ההשכמה המתוזמן, תושמע התראת ההשכמה.</string>
     <string name="pref_vitality_score_7_day_summary">קבלת הודעה כאשר דירוג החיונית שלך מגיע ל־30, 60 או 100 ב־7 הימים החולפים</string>
-    <string name="pref_force_connection_type_description">אפשר לנסות לכפות את סוג החיבור אם ההתקן שלך לא מגיב ל־Gadgetbridge</string>
+    <string name="pref_force_connection_type_description">אפשר לנסות לכפות את סוג החיבור אם ההתקן שלך לא מגיב ל־WatchSwitcher</string>
     <string name="fossil_hr_nav_app_not_installed_notify_text">הניווט החל אך navigationApp (יישומון הניווט) לא מותקן בשעון שלך. נא להתקין אותו ממנהל היישומונים.</string>
     <string name="pref_call_rejection_method_summary">איזו פעולה לנקוט כששיחה נכנסת נדחית בשעון</string>
     <string name="huawei_ignore_wakeup_status_start_description">יכול לסייע עם זיהוי נכון של שינה. גלוי מיידית בתצוגת הפעילויות היומית.</string>
@@ -2601,7 +2601,7 @@
     <string name="bottom_nav_devices">התקנים</string>
     <string name="dashboard_settings">הגדרות לוח בקרה</string>
     <string name="pref_dashboard_first_title">להציג את לוח הבקרה תחילה</string>
-    <string name="pref_dashboard_first_summary">להציג את לוח הבקרה עם הפעלת Gadgetbridge במקום את מסך ההתקנים</string>
+    <string name="pref_dashboard_first_summary">להציג את לוח הבקרה עם הפעלת WatchSwitcher במקום את מסך ההתקנים</string>
     <string name="pref_dashboard_widget_today_24h_title">מצב 24 שעות</string>
     <string name="pref_dashboard_cards_title">הצגת וידג׳טים על הכרטיסים</string>
     <string name="pref_dashboard_widget_today_title">תרשים פעילות</string>
@@ -2640,7 +2640,7 @@
     <string name="pref_adaptive_volume_control_title">בקרת עוצמת שמע מסתגלת</string>
     <string name="watchface_resolution_doesnt_match">רזולוציית פני השעון לא תואמת למסך ההתקן. פני השעון הם %1$s מסך ההתקן הוא %2$s</string>
     <string name="pref_title_bottom_navigation_bar">סרגל ניווט תחתון</string>
-    <string name="huawei_trusleep_warning">אזהרה: הפעלת ההגדרה הזאת תגרום לכל השינה להופיע כקלילה ב־Gadgetbridge! יש ללחוץ כאן אם זה מקובל עליך.</string>
+    <string name="huawei_trusleep_warning">אזהרה: הפעלת ההגדרה הזאת תגרום לכל השינה להופיע כקלילה ב־WatchSwitcher! יש ללחוץ כאן אם זה מקובל עליך.</string>
     <string name="pref_sleepasandroid_device_summary">נא לבחור התקן כספק נתונים ל־Sleep As Android</string>
     <string name="pref_sleepasandroid_enable_summary">הפעלת שילוב מול Sleep As Android</string>
     <string name="prefs_active_noise_cancelling_light">ביטול רעשים פעיל קליל</string>

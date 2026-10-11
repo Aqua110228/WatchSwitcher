@@ -20,14 +20,14 @@
     <string name="controlcenter_snackbar_disconnecting">正在中斷連接</string>
     <string name="title_activity_debug">除錯</string>
     <string name="debugactivity_really_factoryreset_title">真的要重置？</string>
-    <string name="debugactivity_really_factoryreset">執行重置將刪除連接的設備中所有資料（如果受支持）。小米/華米設備也會更改藍牙 MAC 位址，因此它們顯示為 Gadgetbridge 的新設備。</string>
+    <string name="debugactivity_really_factoryreset">執行重置將刪除連接的設備中所有資料（如果受支持）。小米/華米設備也會更改藍牙 MAC 位址，因此它們顯示為 WatchSwitcher 的新設備。</string>
     <string name="appmanager_installed_watchapps">已安裝的程式</string>
     <string name="appmananger_app_delete">刪除</string>
     <string name="appmananger_app_delete_cache">刪除並清除緩存</string>
     <string name="appmananger_app_reinstall">重新安裝</string>
     <string name="mi2_prefs_button_press_broadcast_default_value" translatable="false">nodomain.freeyourgadget.gadgetbridge.ButtonPressed</string>
-    <string name="application_name_generic">Gadgetbridge</string>
-    <string name="title_activity_controlcenter_generic">Gadgetbridge</string>
+    <string name="application_name_generic">WatchSwitcher</string>
+    <string name="title_activity_controlcenter_generic">WatchSwitcher</string>
     <string name="controlcenter_snackbar_connecting">連線中…</string>
     <string name="controlcenter_snackbar_requested_screenshot">截取裝置的螢幕截圖</string>
     <string name="controlcenter_calibrate_device">校準裝置</string>
@@ -42,22 +42,22 @@
     <string name="appmanager_weather_activate">啟動系統天氣應用程式</string>
     <string name="appmanager_weather_deactivate">停用系統天氣應用程式</string>
     <string name="fw_upgrade_notice_miband3">您即將在您的 Mi Band 3 上安裝韌體 %s。\n\n請確定先安裝 .fw 檔，然後再安裝 .res 檔。您的手環將在安裝完 .fw 檔後重新啟動。 \n\n注意：如果您安裝的是與先前同樣的版本，您就不必再安裝 .res 檔。 \n\n過程中的風險請自負！</string>
-    <string name="miband_firmware_known">此韌體已經過測試且確認與 Gadgetbridge 相容。</string>
+    <string name="miband_firmware_known">此韌體已經過測試且確認與 WatchSwitcher 相容。</string>
     <string name="title_activity_settings">設定</string>
     <string name="pref_header_general">一般設定</string>
-    <string name="pref_title_general_autoconnectonbluetooth">在藍牙開啟時連線到 Gadgetbridge 裝置</string>
+    <string name="pref_title_general_autoconnectonbluetooth">在藍牙開啟時連線到 WatchSwitcher 裝置</string>
     <string name="pref_title_general_autostartonboot">自動啟動</string>
     <string name="pref_title_general_autoreconnect">自動重新連線</string>
     <string name="pref_title_audio_player">預設音樂播放器</string>
     <string name="pref_default">預設</string>
     <string name="pref_header_datetime">日期與時間</string>
     <string name="pref_title_datetime_syctimeonconnect">時間同步</string>
-    <string name="pref_summary_datetime_syctimeonconnect">當 Android 裝置的時間、時區改變或連線到 Gadgetbridge 裝置時，定期同步時間</string>
+    <string name="pref_summary_datetime_syctimeonconnect">當 Android 裝置的時間、時區改變或連線到 WatchSwitcher 裝置時，定期同步時間</string>
     <string name="pref_title_theme">主題</string>
     <string name="pref_theme_light">亮色</string>
     <string name="pref_theme_dark">暗色</string>
     <string name="pref_title_language">語言</string>
-    <string name="pref_title_minimize_priority">隱藏 Gadgetbridge 通知</string>
+    <string name="pref_title_minimize_priority">隱藏 WatchSwitcher 通知</string>
     <string name="pref_header_notifications">通知</string>
     <string name="pref_title_notifications_sms">簡訊通知</string>
     <string name="pref_title_notifications_generic">一般通知支援</string>
@@ -117,10 +117,10 @@
     <string name="whitelist_all_for_notifications">將所有通知列入白名單</string>
     <string name="title_activity_fw_app_insaller">FW/App 安裝程式</string>
     <string name="fw_upgrade_notice_miband4">您即將在您的小米手環4上安裝韌體 %s。\n\n請確定先安裝 .fw 檔，然後再安裝 .res 檔。您的手環將在安裝完 .fw 檔後重新啟動。\n\n注意：如果您安裝的是與先前同樣的版本，您就不必再安裝 .res 檔。\n\n過程中的風險請自負！</string>
-    <string name="miband_firmware_unknown_warning">此韌體未經測試，可能與 Gadgetbridge 不相容。
+    <string name="miband_firmware_unknown_warning">此韌體未經測試，可能與 WatchSwitcher 不相容。
 \n
 \n不建議您安裝它！</string>
-    <string name="miband_firmware_suggest_whitelist">如果您仍要繼續，並且後續仍能正常使用，請告訴 Gadgetbridge 開發人員將韌體版本 %s 加入白名單。</string>
+    <string name="miband_firmware_suggest_whitelist">如果您仍要繼續，並且後續仍能正常使用，請告訴 WatchSwitcher 開發人員將韌體版本 %s 加入白名單。</string>
     <string name="pref_summary_minimize_priority_off">顯示狀態列中的圖示和鎖定螢幕中的通知</string>
     <string name="pref_summary_minimize_priority_on">隱藏狀態列中的圖示和鎖定螢幕中的通知</string>
     <string name="pref_title_notifications_call">電話通知</string>
@@ -309,11 +309,11 @@
     <string name="mi2_prefs_inactivity_warnings_summary">手環將在您一段時間未活動時震動</string>
     <string name="mi2_prefs_inactivity_warnings_threshold">未活動閾值（分鐘）</string>
     <string name="mi2_prefs_inactivity_warnings_dnd_summary">在時間內停用久坐提醒</string>
-    <string name="activity_db_management_import_export_explanation">匯出/匯入動作將使用這些(見下方)在裝置上的路徑。此資料夾可供其他 Android 應用程式及您的電腦存取。請注意，如果您移除 Gadgetbridge，此目錄和所有內含檔案都會被刪除。這些資料包含：
+    <string name="activity_db_management_import_export_explanation">匯出/匯入動作將使用這些(見下方)在裝置上的路徑。此資料夾可供其他 Android 應用程式及您的電腦存取。請注意，如果您移除 WatchSwitcher，此目錄和所有內含檔案都會被刪除。這些資料包含：
 \n Export_preference - 全域設定
 \n Export_preference_MAC - 裝置額外設定
-\n Gadgetbridge - 裝置及活動的資料庫
-\n Gadgetbridge_date - 在某個日期匯出的資料庫
+\n WatchSwitcher - 裝置及活動的資料庫
+\n WatchSwitcher_date - 在某個日期匯出的資料庫
 \n *.gpx - GPS 紀錄
 \n *.log - 記錄檔
 \n您可以在那裏找到已匯出的檔案（或放入要匯入的檔案）：</string>
@@ -339,7 +339,7 @@
     <string name="choose_auto_export_location">選擇匯出位置</string>
     <string name="menuitem_music">音樂</string>
     <string name="share_log">分享日誌檔</string>
-    <string name="share_log_warning">請注意，Gadgetbridge 可能會記錄包含大量的個人資訊，包括但不限於健康資料、唯一識別碼（如裝置的 MAC 位址）、音樂偏好設定等。在將檔案傳送到公開的問題回報平台之前，請考慮編輯該檔案並刪除這些資訊。</string>
+    <string name="share_log_warning">請注意，WatchSwitcher 可能會記錄包含大量的個人資訊，包括但不限於健康資料、唯一識別碼（如裝置的 MAC 位址）、音樂偏好設定等。在將檔案傳送到公開的問題回報平台之前，請考慮編輯該檔案並刪除這些資訊。</string>
     <string name="warning">警告！</string>
     <string name="appwidget_not_connected">未連線，鬧鐘未設定。</string>
     <string name="widget_set_alarm_after">設定多久後的鬧鐘：</string>
@@ -386,7 +386,7 @@
     <string name="pairing">正在與 %s 配對…</string>
     <string name="message_cannot_pair_no_mac">未輸入 MAC 位址，無法配對。</string>
     <string name="miband_pairing_using_dummy_userdata">未提供有效的使用者資料，目前使用假定資料。</string>
-    <string name="discovery_connected_devices_hint">請確認您的裝置可以被偵測到。已連線的裝置將無法被偵測。請在 Android 6 以上的裝置啟用位置權限（如：GPS）。請對 Gadgetbridge 停用隱私守衛，因為這可能會導致您的手機崩潰並重新啟動。如果在數分鐘後仍未找到任何裝置，請重新啟動您的手機並再試一次。</string>
+    <string name="discovery_connected_devices_hint">請確認您的裝置可以被偵測到。已連線的裝置將無法被偵測。請在 Android 6 以上的裝置啟用位置權限（如：GPS）。請對 WatchSwitcher 停用隱私守衛，因為這可能會導致您的手機崩潰並重新啟動。如果在數分鐘後仍未找到任何裝置，請重新啟動您的手機並再試一次。</string>
     <string name="discovery_note">備註：</string>
     <string name="initializing">正在初始化</string>
     <string name="pref_screen_notification_profile_low_power">低電量警告</string>
@@ -478,7 +478,7 @@
     <string name="title_activity_mi_band_pairing">配對您的小米手環</string>
     <string name="title_activity_android_pairing">配對裝置</string>
     <string name="initialized">初始化完成</string>
-    <string name="gadgetbridge_running_generic">Gadgetbridge 正在執行</string>
+    <string name="gadgetbridge_running_generic">WatchSwitcher 正在執行</string>
     <string name="tap_a_device_to_connect">點擊一個裝置以進行連線</string>
     <string name="bluetooth_is_not_supported_">不支援藍牙。</string>
     <string name="zetime_calories_type_all">涵蓋活動與未活動時消耗的卡路里</string>
@@ -526,17 +526,17 @@
     <string name="companiondevice_pairing">使用 CompanionDevice 進行配對</string>
     <string name="pref_check_permission_status">檢查權限狀態</string>
     <string name="device_is_currently_bonded">已綁定</string>
-    <string name="pref_title_weather_summary">用於 LineageOS 的天氣提供者，其他 Android 版本則需要使用類似「Breezy Weather」的應用程式。更多資訊請造訪 Gadgetbridge 網站。</string>
+    <string name="pref_title_weather_summary">用於 LineageOS 的天氣提供者，其他 Android 版本則需要使用類似「Breezy Weather」的應用程式。更多資訊請造訪 WatchSwitcher 網站。</string>
     <string name="about_additional_contributions">非常感謝所有未列出的貢獻者貢獻了程式碼、翻譯、支持、想法、動力、錯誤報告、金錢……✊</string>
     <string name="about_additional_device_support">額外裝置支援</string>
     <string name="about_contributors">貢獻者</string>
     <string name="about_core_team_title">核心團隊（按第一次程式碼貢獻順序排列）</string>
     <string name="about_description_generic">取代閉源 Android 配件應用程式的離線、無版權、自由軟體。</string>
-    <string name="about_activity_title_generic">關於 Gadgetbridge</string>
+    <string name="about_activity_title_generic">關於 WatchSwitcher</string>
     <string name="about_title">關於</string>
     <string name="activity_summaries">運動活動</string>
     <string name="activity_type_swimming">游泳</string>
-    <string name="this_is_a_test_notification_from_gadgetbridge">這是一個來自 Gadgetbridge 的測試通知</string>
+    <string name="this_is_a_test_notification_from_gadgetbridge">這是一個來自 WatchSwitcher 的測試通知</string>
     <string name="test_notification">測試通知</string>
     <string name="sonyswr12_settings_title">Sony SWR12 设置</string>
     <string name="sonyswr12_settings_low_vibration">低振动启用</string>
@@ -636,17 +636,17 @@
     <string name="watchface_setting_light_up_on_notification">新通知時亮起</string>
     <string name="fw_upgrade_notice_amazfitneo">您將要在Amazfit Neo上安裝%s固件。\n\n安裝 .fw 檔後，您的手環將重新啟動。\n\n過程中的風險請自負！</string>
     <string name="fw_upgrade_notice_amazfitx">您將要在Amazfit X上安裝%s固件。\n\n請確定先安裝 .fw 檔，然後再安裝 .res 檔。您的手環將在安裝完 .fw 檔後重新啟動。\n\n注意：如果您安裝的是與先前同樣的版本，您就不必再安裝 .res 檔。\n\n過程中的風險請自負！</string>
-    <string name="about_activity_title_banglejs_main">關於 Bangle.js Gadgetbridge</string>
+    <string name="about_activity_title_banglejs_main">關於 Bangle.js WatchSwitcher</string>
     <string name="gadgetbridge_running_banglejs_main">Bangle.js 正在執行</string>
-    <string name="about_activity_title_banglejs_nightly">關於 Bangle.js Gadgetbridge（先行版）</string>
+    <string name="about_activity_title_banglejs_nightly">關於 Bangle.js WatchSwitcher（先行版）</string>
     <string name="supercars_lights_blinking_label">閃爍</string>
     <string name="mi2_prefs_button_actions">按鈕動作</string>
     <string name="prefs_disconnect_notification_summary">當與藍芽斷線時，裝置上會發出通知。</string>
     <string name="mi2_prefs_button_actions_summary">指定按下按鍵的動作</string>
     <string name="accuracy">準確</string>
-    <string name="title_activity_controlcenter_main_nightly">Gadgetbridge 先行版</string>
-    <string name="application_name_main_nightly">Gadgetbridge (先行版)</string>
-    <string name="about_activity_title_main_nightly">關於 Gadgetbridge 先行版</string>
+    <string name="title_activity_controlcenter_main_nightly">WatchSwitcher 先行版</string>
+    <string name="application_name_main_nightly">WatchSwitcher (先行版)</string>
+    <string name="about_activity_title_main_nightly">關於 WatchSwitcher 先行版</string>
     <string name="controlcenter_get_heartrate_measurement">取得心率測量</string>
     <string name="action_changelog">更新日誌</string>
     <string name="search">搜尋</string>
@@ -777,7 +777,7 @@
     <string name="huawei_alarm_event_description">請勿勾選智能喚醒選項。</string>
     <string name="huawei_trusleep_title">HUAWEI TruSleep ™</string>
     <string name="huawei_trusleep_summary_light">改善的睡眠監測</string>
-    <string name="huawei_trusleep_warning">警告：TruSleep™ 尚未完整實作。在部分裝置上啟用此功能，將導致所有睡眠資料在 Gadgetbridge 中皆顯示為淺眠!</string>
+    <string name="huawei_trusleep_warning">警告：TruSleep™ 尚未完整實作。在部分裝置上啟用此功能，將導致所有睡眠資料在 WatchSwitcher 中皆顯示為淺眠!</string>
     <string name="prefs_activity_recognition">活動識別設置</string>
     <string name="pref_activity_recognize_walking">識別行走</string>
     <string name="pref_activity_recognition_mode_none">無</string>
@@ -797,7 +797,7 @@
     <string name="purple">紫色</string>
     <string name="white">白色</string>
     <string name="prefs_wena3_title_activity">活動設定</string>
-    <string name="prefs_wena3_hint_background_sync">允許 Wena 定期請求 Gadgetbridge 從設備下載活動數據</string>
+    <string name="prefs_wena3_hint_background_sync">允許 Wena 定期請求 WatchSwitcher 從設備下載活動數據</string>
     <string name="prefs_wena3_item_large_font">較大字型</string>
     <string name="prefs_wena3_hint_large_font">增加日曆、通知等的字體大小。</string>
     <string name="prefs_wena3_hint_rich_design">在主屏幕圖標周圍添加圓角矩形</string>
@@ -876,7 +876,7 @@
     <string name="pref_summary_notification_times_enabled">僅在特定時間內傳送通知</string>
     <string name="pref_title_notification_media_ignores_application_list">媒體通知忽略應用程式列表</string>
     <string name="pref_title_banglejs_text_bitmap">文字作為位圖</string>
-    <string name="pref_summary_banglejs_text_bitmap">如果一個詞無法使用手錶的字體顯示，則在Gadgetbridge中將其渲染為位圖並在手錶上顯示該位圖</string>
+    <string name="pref_summary_banglejs_text_bitmap">如果一個詞無法使用手錶的字體顯示，則在WatchSwitcher中將其渲染為位圖並在手錶上顯示該位圖</string>
     <string name="pref_summary_banglejs_txt_bitmap_size">用於位圖文字渲染的大小</string>
     <string name="pref_title_banglejs_phone_gps_enbale">使用手機 GPS 資料</string>
     <string name="pref_summary_banglejs_phone_gps_network_only">僅使用網路提供者來定位。可以減少功耗，但會降低精確度。需要重新連接。</string>
@@ -938,10 +938,10 @@
     <string name="audio_codec">音頻編碼</string>
     <string name="qhybrid_title_background_image">背景圖片</string>
     <string name="sony_ambient_sound_focus_voice">專注於聲音</string>
-    <string name="about_description_banglejs_main">基於 Gadgetbridge 專案的 Bangle.js Android 伴侶應用程式，並增加了網際網路存取。\n\n由於 Google Play 商店的政策，我們無法在應用程式中提供捐贈連結，但如果您喜歡這個應用程式，請考慮通過下面的 Gadgetbridge 首頁進行捐贈。</string>
-    <string name="about_description_banglejs_nightly">基於 Gadgetbridge 項目的 Bangle.js Android 伴侶應用程式，並新增了互聯網訪問功能。\n\n由於 Google Play 商店的政策，我們不能在應用程式中放置捐款連結，但如果您喜歡這個應用程式，請考慮通過下面的 Gadgetbridge 主頁進行捐款。</string>
+    <string name="about_description_banglejs_main">基於 WatchSwitcher 專案的 Bangle.js Android 伴侶應用程式，並增加了網際網路存取。\n\n由於 Google Play 商店的政策，我們無法在應用程式中提供捐贈連結，但如果您喜歡這個應用程式，請考慮通過下面的 WatchSwitcher 首頁進行捐贈。</string>
+    <string name="about_description_banglejs_nightly">基於 WatchSwitcher 項目的 Bangle.js Android 伴侶應用程式，並新增了互聯網訪問功能。\n\n由於 Google Play 商店的政策，我們不能在應用程式中放置捐款連結，但如果您喜歡這個應用程式，請考慮通過下面的 WatchSwitcher 主頁進行捐款。</string>
     <string name="gadgetbridge_running_banglejs_nightly">先行版 Bangle.js 執行中</string>
-    <string name="about_activity_title_main_nopebble">關於 Gadgetbridge Nightly 無 Pebble</string>
+    <string name="about_activity_title_main_nopebble">關於 WatchSwitcher Nightly 無 Pebble</string>
     <string name="gadgetbridge_running_main_nopebble">先行版 NoPebble GB 執行中</string>
     <string name="appmanager_app_start">開始</string>
     <string name="appmanager_app_download">下載到快取</string>
@@ -1005,7 +1005,7 @@
     <string name="pref_title_pebble_sync_misfit">同步不合</string>
     <string name="pref_summary_enable_calendar_sync">將日曆事件發送到時間線</string>
     <string name="pref_title_custom_deviceicon">顯示設備特定的通知圖標</string>
-    <string name="pref_summary_custom_deviceicon">當連接時顯示設備特定的 Android 通知圖標，而不是 Gadgetbridge 圖標</string>
+    <string name="pref_summary_custom_deviceicon">當連接時顯示設備特定的 Android 通知圖標，而不是 WatchSwitcher 圖標</string>
     <string name="pref_title_preview_message_in_title">在標題中顯示消息的預覽</string>
     <string name="pref_summary_casio_alert_call">來電時提醒（震動/響鈴）</string>
     <string name="pref_title_casio_alert_email">電子郵件通知警報</string>
@@ -1024,7 +1024,7 @@
     <string name="pref_summary_pebble_mtu_limit">如果您的 Pebble 2/Pebble LE 沒有如預期般運作，請嘗試這個設置來限制 MTU（有效範圍 20 – 512）</string>
     <string name="pref_summary_pebble_gatt_clientonly">這僅適用於 Pebble 2 並且是實驗性的，如果您遇到連接問題，請嘗試這個</string>
     <string name="pref_title_pebble_mtu_limit">Pebble 2/LE GATT MTU 限制</string>
-    <string name="pref_summary_pebble_enable_applogs">將導致來自手錶應用程式的日誌被Gadgetbridge記錄（需要重新連接）</string>
+    <string name="pref_summary_pebble_enable_applogs">將導致來自手錶應用程式的日誌被WatchSwitcher記錄（需要重新連接）</string>
     <string name="pref_summary_pebble_always_ack_pebblekit">將使發送到外部第三方應用的消息始終立即得到確認</string>
     <string name="pref_title_overwrite_settings_on_connection">在連接上覆蓋設置</string>
     <string name="pref_summary_pebble_enable_bgjs">啟用後，允許表盤顯示天氣、電池信息等。</string>
@@ -1397,7 +1397,7 @@
     <string name="notification_channel_high_priority_name">高優先級</string>
     <string name="notification_channel_transfer_name">資料傳輸</string>
     <string name="notification_channel_gps">GPS 追蹤</string>
-    <string name="notification_gps_title">Gadgetbridge GPS</string>
+    <string name="notification_gps_title">WatchSwitcher GPS</string>
     <string name="menuitem_last_workout">最後一次鍛鍊</string>
     <string name="menuitem_total_workout">總鍛鍊</string>
     <string name="menuitem_vo2_max">最大攝氧量</string>
@@ -1445,14 +1445,14 @@
     <string name="prefs_button_long_press_action_selection_title">長按按鈕操作</string>
     <string name="pref_qhybrid_save_raw_activity_files">保存原始活動文件</string>
     <string name="hr_widget_last_notification">最後通知</string>
-    <string name="gpx_receiver_activity_title">GPX 接收器 Gadgetbridge</string>
+    <string name="gpx_receiver_activity_title">GPX 接收器 WatchSwitcher</string>
     <string name="text_receiver_activity_title">將文字發送到設備</string>
     <string name="gpx_receiver_files_received">收到 GPX 檔案：</string>
     <string name="gpx_receiver_overwrite_some_files">某些檔案已經存在。要覆蓋嗎？</string>
     <string name="error_background_service">無法啟動背景服務</string>
     <string name="error_background_service_reason_truncated">啟動背景服務失敗，因為…</string>
     <string name="device_unsupported">不支援</string>
-    <string name="pref_show_changelog_summary">在Gadgetbridge更新後顯示自上個版本以來的變更記錄</string>
+    <string name="pref_show_changelog_summary">在WatchSwitcher更新後顯示自上個版本以來的變更記錄</string>
     <string name="error_exporting_device_preferences">導出設備特定偏好設置時出錯</string>
     <string name="steps_avg">步數平均</string>
     <string name="steps_total">步數總計</string>
@@ -1792,7 +1792,7 @@
     <string name="loyalty_cards_sync_groups_only">僅同步特定群組</string>
     <string name="loyalty_cards_sync_archived">同步已存檔的卡片</string>
     <string name="loyalty_cards_sync_summary">點擊以同步卡片至手錶</string>
-    <string name="pref_theme_dynamic_colors_explanation">注意：對於動態顏色主題，您需要在 Android 12 以上的外觀設置中啟用壁紙顏色或顏色調色板。如果不啟用，Gadgetbridge 將使用默認的 Material 3 顏色。</string>
+    <string name="pref_theme_dynamic_colors_explanation">注意：對於動態顏色主題，您需要在 Android 12 以上的外觀設置中啟用壁紙顏色或顏色調色板。如果不啟用，WatchSwitcher 將使用默認的 Material 3 顏色。</string>
     <string name="prefs_home_icon_left_item">左</string>
     <string name="prefs_wena3_vibration_smart_item">智慧震動</string>
     <string name="prefs_wena3_hint_weather_statusbar">在主屏幕的左上角顯示當前條件圖標</string>
@@ -1843,7 +1843,7 @@
     <string name="uploadwatchfaceoperation_complete">錶面安裝完成</string>
     <string name="uploadwatchfaceoperation_failed">表面安裝失敗</string>
     <string name="pref_force_connection_type_title">強制連接類型</string>
-    <string name="pref_force_connection_type_description">如果您的設備對 Gadgetbridge 沒有反應，您可以嘗試強制設置連接類型</string>
+    <string name="pref_force_connection_type_description">如果您的設備對 WatchSwitcher 沒有反應，您可以嘗試強制設置連接類型</string>
     <string name="auto_reconnect_ble_scan_summary">等待裝置掃描，而不是盲目的連接嘗試</string>
     <string name="prompt_restart_gadgetbridge">請重新啟動GB以使其生效。</string>
     <string name="waiting_for_bluetooth">等待藍牙…</string>
@@ -1872,7 +1872,7 @@
     <string name="pref_speak_notifications_focus_exclusive_summary_on">在通知被朗讀時，其他應用程式的播放將會暫停</string>
     <string name="pref_header_calls_and_notifications">通話和通知</string>
     <string name="pref_summary_bottom_navigation_bar_off">僅使用橫向滑動在主屏幕之間切換</string>
-    <string name="pref_summary_garmin_default_reply_suffix">附加在Gadgetbridge中設置的後綴之外</string>
+    <string name="pref_summary_garmin_default_reply_suffix">附加在WatchSwitcher中設置的後綴之外</string>
     <string name="pref_title_garmin_default_reply_suffix">使用預定義的回覆後綴</string>
     <string name="pref_dashboard_widget_today_upside_down_title">午夜在底部</string>
     <string name="pref_dashboard_widget_today_upside_down_summary">在24小時模式下，將午夜畫在圖表的底部，正午畫在圖表的頂部</string>
@@ -1927,7 +1927,7 @@
     <string name="activity_db_management_backup_restore_label">備份和還原</string>
     <string name="activity_db_management_export_to_zip">匯出壓縮檔</string>
     <string name="activity_db_management_import_from_zip">導入壓縮檔</string>
-    <string name="activity_db_management_backup_restore_explanation">進口/出口操作允許您將所有Gadgetbridge設置、設備和數據從zip文件中遷移或備份。
+    <string name="activity_db_management_backup_restore_explanation">進口/出口操作允許您將所有WatchSwitcher設置、設備和數據從zip文件中遷移或備份。
 \n
 \n導入文件將刪除所有現有數據、設備和偏好設置，並完全用備份替換它們。</string>
     <string name="backup_restore_importing_files_i_of_n">正在匯入檔案… 第 %1$d 項，共 %2$d 項</string>
@@ -1939,9 +1939,9 @@
     <string name="backup_restore_restart_title">重啟</string>
     <string name="label_distance_trip">行程：%.1f 公里</string>
     <string name="label_distance_total">總計: %.1f 公里</string>
-    <string name="title_activity_controlcenter_banglejs_nightly">Bangle.js Gadgetbridge（先行版）</string>
-    <string name="about_description_main_nopebble">取代閉源 Android 配件應用程式的離線、無版權、自由軟體。Gadgetbridge 的先行版。此版本已將 Pebble 提供者重新命名以防止衝突，因此某些整合了 Pebble 的功能會無法運作，但可以與已安裝的 Gadgetbridge 並存。</string>
-    <string name="about_description_main_nightly">取代閉源 Android 配件應用程式的離線、無版權、自由軟體。Gadgetbridge 的先行版。如果已安裝 Gadgetbridge 或 Pebble 應用程式，則無法安裝此版本，因為 Pebble 提供者存在衝突。</string>
+    <string name="title_activity_controlcenter_banglejs_nightly">Bangle.js WatchSwitcher（先行版）</string>
+    <string name="about_description_main_nopebble">取代閉源 Android 配件應用程式的離線、無版權、自由軟體。WatchSwitcher 的先行版。此版本已將 Pebble 提供者重新命名以防止衝突，因此某些整合了 Pebble 的功能會無法運作，但可以與已安裝的 WatchSwitcher 並存。</string>
+    <string name="about_description_main_nightly">取代閉源 Android 配件應用程式的離線、無版權、自由軟體。WatchSwitcher 的先行版。如果已安裝 WatchSwitcher 或 Pebble 應用程式，則無法安裝此版本，因為 Pebble 提供者存在衝突。</string>
     <string name="pref_title_pebble_settings">Pebble 設定</string>
     <string name="pref_title_notifications_pebblemsg">Pebble 訊息</string>
     <string name="pref_gps_header">GPS</string>
@@ -1978,11 +1978,11 @@
     <string name="reminder_delete_confirm_title">刪除提醒</string>
     <string name="firmware_update_progress">上傳進行中\n%1$d%% 以 %2$.2fkbps 的速度上傳 (平均 %3$.2fkbps)\n第 %4$d 部份，共 %5$d 部份</string>
     <string name="pref_summary_overwrite_settings_on_connection">連接到音響時，覆蓋其上的所有設置。</string>
-    <string name="application_name_banglejs_main">Bangle.js Gadgetbridge</string>
-    <string name="title_activity_controlcenter_banglejs_main">Bangle.js Gadgetbridge</string>
+    <string name="application_name_banglejs_main">Bangle.js WatchSwitcher</string>
+    <string name="title_activity_controlcenter_banglejs_main">Bangle.js WatchSwitcher</string>
     <string name="gadgetbridge_running_main_nightly">先行版 GB 執行中</string>
-    <string name="application_name_main_nopebble">Gadgetbridge（先行版，無 Pebble 提供者)</string>
-    <string name="title_activity_controlcenter_main_nopebble">Gadgetbridge 先行版 無 Pebble</string>
+    <string name="application_name_main_nopebble">WatchSwitcher（先行版，無 Pebble 提供者)</string>
+    <string name="title_activity_controlcenter_main_nopebble">WatchSwitcher 先行版 無 Pebble</string>
     <string name="bedtime">睡覺時間</string>
     <string name="widget_screen_delete_confirm_description">您確定要刪除「%1$s」嗎？</string>
     <string name="heartrate_bpm_115">115 拍每分鐘</string>
@@ -2084,7 +2084,7 @@
     <string name="open_fw_installer_connect_minimum_one_device">請至少連接一個您想要發送檔案的設備。</string>
     <string name="pref_blacklist_calendars_summary">被列入黑名單的日曆將不會同步到設備</string>
     <string name="pref_summary_pebble_forceprotocol">此選項強制根據韌體版本使用最新的通知協議。知道你在做什麼！</string>
-    <string name="application_name_banglejs_nightly">Bangle.js Gadgetbridge（先行版）</string>
+    <string name="application_name_banglejs_nightly">Bangle.js WatchSwitcher（先行版）</string>
     <string name="fw_multi_upgrade_notice">您即將安裝 %1$s 和 %2$s 固件，而不是目前在您的 Mi Band 上的固件。</string>
     <string name="unbind_before_pair_message">此設備已在 Android 設定中綁定，這可能會導致某些設備配對失敗。
 \n
@@ -2560,7 +2560,7 @@
     <string name="companion_pairing_request_title">伴隨設備</string>
     <string name="bottom_nav_devices">設備</string>
     <string name="pref_dashboard_first_title">首先顯示儀表板</string>
-    <string name="pref_dashboard_first_summary">當 Gadgetbridge 啟動時顯示儀表板，而不是設備螢幕</string>
+    <string name="pref_dashboard_first_summary">當 WatchSwitcher 啟動時顯示儀表板，而不是設備螢幕</string>
     <string name="pref_dashboard_widget_settings">小工具設定</string>
     <string name="pref_dashboard_select_devices_title">選擇設備…</string>
     <string name="pref_speak_notifications_focus_exclusive_summary_off">在通知被朗讀時，其他應用程式的播放音量將會降低</string>
@@ -2840,7 +2840,7 @@
     <string name="pref_activity_full_sync_trigger_summary">觸發所有活動數據的完整同步</string>
     <string name="pref_activity_full_sync_trigger_title">完全同步</string>
     <string name="pref_activity_full_sync_trigger_warning">這將觸發設備上所有活動數據的完全同步。這可能需要幾分鐘才能完成。</string>
-    <string name="pref_theme_dynamic_colors_not_available_warning">動態顏色在您的設備上不可用，只有 Android 12 以上的版本支持此功能。Gadgetbridge 將使用默認的 Material 3 顏色。</string>
+    <string name="pref_theme_dynamic_colors_not_available_warning">動態顏色在您的設備上不可用，只有 Android 12 以上的版本支持此功能。WatchSwitcher 將使用默認的 Material 3 顏色。</string>
     <string name="info_menu_structure_set">在英國設置的菜單結構 JSON</string>
     <string name="error_invalid_menu_structure">無效的菜單結構 JSON</string>
     <string name="button_open_menu_companion">打開菜單伴侶應用程式</string>
@@ -2989,7 +2989,7 @@
     <string name="maps_download_title">下載地圖</string>
     <string name="first_start_intro_welcome_to">歡迎使用</string>
     <string name="first_start_open_source_title">開源</string>
-    <string name="first_start_permissions_desc">Gadgetbridge 需要取得很多權限，才能執行所有功能。請查看以下權限及其用途。</string>
+    <string name="first_start_permissions_desc">WatchSwitcher 需要取得很多權限，才能執行所有功能。請查看以下權限及其用途。</string>
     <string name="range_degrees">%1$dº – %2$dº</string>
     <string name="range_percentage">%1$d%% – %2$d%%</string>
     <string name="permission_bluetooth_title">藍牙</string>

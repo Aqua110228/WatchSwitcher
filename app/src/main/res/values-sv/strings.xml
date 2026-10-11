@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="application_name_generic">Gadgetbridge</string>
-    <string name="title_activity_controlcenter_generic">Gadgetbridge</string>
+    <string name="application_name_generic">WatchSwitcher</string>
+    <string name="title_activity_controlcenter_generic">WatchSwitcher</string>
     <string name="action_settings">Inställningar</string>
     <string name="action_quit">Avsluta</string>
     <string name="action_donate">Donera</string>
@@ -24,7 +24,7 @@
     <string name="controlcenter_calibrate_device">Kalibrera enhet</string>
     <string name="title_activity_debug">Avlusa</string>
     <string name="debugactivity_really_factoryreset_title">Vill du verkligen återställa till fabriksinställningar\?</string>
-    <string name="debugactivity_really_factoryreset">En återställning till fabriksinställningar kommer att radera all data från den anslutna enheten (om detta stöds). Enheter från Xiaomi/Huami kommer också att få nya/ändrade Blåtands- och MAC-adresser, och kommer att synas som nya enheter i Gadgetbridge.</string>
+    <string name="debugactivity_really_factoryreset">En återställning till fabriksinställningar kommer att radera all data från den anslutna enheten (om detta stöds). Enheter från Xiaomi/Huami kommer också att få nya/ändrade Blåtands- och MAC-adresser, och kommer att synas som nya enheter i WatchSwitcher.</string>
     <string name="title_activity_appmanager">Apphanterare</string>
     <string name="appmanager_cached_watchapps_watchfaces">Appar i cachen</string>
     <string name="appmanager_installed_watchapps">Installerade appar</string>
@@ -52,11 +52,11 @@
     <string name="sonyswr12_settings_low_vibration_summary">Aktivera låg vibrationsintensitet på armbandet</string>
     <string name="sonyswr12_settings_stamina_summary">Energisparläget stänger av periodisk automatisk mätning av hjärtfrekvensen, vilket ökar arbetstiden</string>
     <string name="sonyswr12_settings_alarm_interval_summary">Smart alarmintervall är intervall före installerat larm. I detta intervall försöker enheten att upptäcka den lättaste fasen av sömn för att vakna användare</string>
-    <string name="about_activity_title_generic">Om Gadgetbridge</string>
-    <string name="about_activity_title_main_nightly">Om Gadgetbridge Nightly</string>
+    <string name="about_activity_title_generic">Om WatchSwitcher</string>
+    <string name="about_activity_title_main_nightly">Om WatchSwitcher Nightly</string>
     <string name="gadgetbridge_running_banglejs_main">Bangle.js körs</string>
-    <string name="about_description_main_nightly">Fri mjukvara utan molnlagring som ersätter produkttillverkares proprietära androidappar. Nattliga släpp av Gadgetbridge. Den kan inte installeras om du redan har antingen Gadgetbridge eller Pebble-appen installerad, på grund av en konflikt i Pebble-leverantören.</string>
-    <string name="about_description_main_nopebble">Fri mjukvara utan molnlagring som ersätter produkttillverkares proprietära androidappar. Nattliga utgivningar av Gadgetbridge. Den här versionen har bytt namn på Pebble-leverantören för att förhindra konflikter, så vissa Pebble-relaterade integrationer kommer inte att fungera, men den kan installeras tillsammans med en befintlig Gadgetbridge-installation.</string>
+    <string name="about_description_main_nightly">Fri mjukvara utan molnlagring som ersätter produkttillverkares proprietära androidappar. Nattliga släpp av WatchSwitcher. Den kan inte installeras om du redan har antingen WatchSwitcher eller Pebble-appen installerad, på grund av en konflikt i Pebble-leverantören.</string>
+    <string name="about_description_main_nopebble">Fri mjukvara utan molnlagring som ersätter produkttillverkares proprietära androidappar. Nattliga utgivningar av WatchSwitcher. Den här versionen har bytt namn på Pebble-leverantören för att förhindra konflikter, så vissa Pebble-relaterade integrationer kommer inte att fungera, men den kan installeras tillsammans med en befintlig WatchSwitcher-installation.</string>
     <string name="all_satellites">Alla satelliter</string>
     <string name="find_lost_device_message">Sök efter %1$s\?</string>
     <string name="speed_first">Hastighet först</string>
@@ -71,14 +71,14 @@
     <string name="dual_band">Dubbelband</string>
     <string name="low_power_gps">Strömsnål GPS</string>
     <string name="accuracy_first">Noggrannhet först</string>
-    <string name="gadgetbridge_running_generic">Gadgetbridge körs</string>
-    <string name="about_activity_title_banglejs_main">Om Bangle.js Gadgetbridge</string>
-    <string name="about_description_banglejs_main">Följeslagarapp för Bangle.js byggd på Gadgetbridge projektet, med Internetåtkomst.
+    <string name="gadgetbridge_running_generic">WatchSwitcher körs</string>
+    <string name="about_activity_title_banglejs_main">Om Bangle.js WatchSwitcher</string>
+    <string name="about_description_banglejs_main">Följeslagarapp för Bangle.js byggd på WatchSwitcher projektet, med Internetåtkomst.
 \n
-\nPå grund av Google Play Butikens policyer får vi inte ha en donationslänk i själva appen. Men om du gillar den här appen kan du överväga att donera via Gadgetbridges hemsida nedan.</string>
+\nPå grund av Google Play Butikens policyer får vi inte ha en donationslänk i själva appen. Men om du gillar den här appen kan du överväga att donera via WatchSwitchers hemsida nedan.</string>
     <string name="about_description_generic">Fri mjukvara utan molnlagring som ersätter produkttillverkares proprietära androidappar.</string>
     <string name="gadgetbridge_running_main_nightly">Nightly GB körs</string>
-    <string name="about_activity_title_main_nopebble">Om Gadgetbridge Nightly No Pebble</string>
+    <string name="about_activity_title_main_nopebble">Om WatchSwitcher Nightly No Pebble</string>
     <string name="prefs_activity_in_device_card_title">Visa aktivitetsinformation på enhetskortet</string>
     <string name="gadgetbridge_running_main_nopebble">Nightly NoPebble GB körs</string>
     <string name="controlcenter_power_off_confirm_description">Är du säker på att du vill stänga av enheten\?</string>
@@ -88,10 +88,10 @@
     <string name="action_debug">Felsök</string>
     <string name="controlcenter_get_heartrate_measurement">Utför pulsmätning</string>
     <string name="prefs_activity_in_device_card_title_summary">Visa aktuella steg, avstånd eller viloläge på enhetskortet</string>
-    <string name="about_activity_title_banglejs_nightly">Om Bangle.js Gadgetbridge (Nightly)</string>
-    <string name="about_description_banglejs_nightly">Följeslagarapp för Bangle.js byggd på Gadgetbridge projektet, med Internetåtkomst.
+    <string name="about_activity_title_banglejs_nightly">Om Bangle.js WatchSwitcher (Nightly)</string>
+    <string name="about_description_banglejs_nightly">Följeslagarapp för Bangle.js byggd på WatchSwitcher projektet, med Internetåtkomst.
 \n
-\nPå grund av Google Play Butikens policyer får vi inte ha en donationslänk i själva appen. Men om du gillar den här appen kan du överväga att donera via Gadgetbridges hemsida nedan.</string>
+\nPå grund av Google Play Butikens policyer får vi inte ha en donationslänk i själva appen. Men om du gillar den här appen kan du överväga att donera via WatchSwitchers hemsida nedan.</string>
     <string name="gadgetbridge_running_banglejs_nightly">Nightly Bangle.js körs</string>
     <string name="appmanager_watchface_activate">Aktivera</string>
     <string name="appmanager_app_download">Ladda ner till chache</string>
@@ -162,8 +162,8 @@
 \n
 \nFORTSÄTT PÅ EGEN RISK!</string>
     <string name="fw_multi_upgrade_notice">Du är på väg att installera %1$s och %2$s firmware, istället för de som för närvarande finns på ditt Mi Band.</string>
-    <string name="miband_firmware_suggest_whitelist">Om du fortfarande vill fortsätta och saker och ting fortsätter att fungera korrekt efteråt, vänligen berätta för Gadgetbridge-utvecklarna att vitlista %s firmwareversion.</string>
-    <string name="miband_firmware_known">Detta firmware har testats och är känt för att vara kompatibelt med Gadgetbridge.</string>
+    <string name="miband_firmware_suggest_whitelist">Om du fortfarande vill fortsätta och saker och ting fortsätter att fungera korrekt efteråt, vänligen berätta för WatchSwitcher-utvecklarna att vitlista %s firmwareversion.</string>
+    <string name="miband_firmware_known">Detta firmware har testats och är känt för att vara kompatibelt med WatchSwitcher.</string>
     <string name="calendar_three_months">Tre månader</string>
     <string name="fw_upgrade_notice_amazfitcor">Du är på väg att installera %s firmware på din Amazfit Cor.
 \n
@@ -234,7 +234,7 @@
 \nObs: Du behöver inte installera .res om det är exakt samma som det tidigare installerade.
 \n
 \nFORTSÄTT PÅ EGEN RISK!</string>
-    <string name="miband_firmware_unknown_warning">Detta firmware är otestat och kanske inte kompatibelt med Gadgetbridge.
+    <string name="miband_firmware_unknown_warning">Detta firmware är otestat och kanske inte kompatibelt med WatchSwitcher.
 \n
 \nDu AVRÅDS från att \"flasha\" det!</string>
     <string name="fw_upgrade_notice_amazfit_gtr3_pro">Du är på väg att installera %s firmware på din Amazfit GTR 3 Pro.
@@ -263,7 +263,7 @@
     <string name="open_fw_installer_connect_minimum_one_device">Vänligen anslut MINST EN enhet som du vill skicka filen till.</string>
     <string name="pref_default">Standard</string>
     <string name="pref_header_time">Tid</string>
-    <string name="application_name_main_nopebble">Gadgetbridge (Nightly, Ingen Pebble-leverantör)</string>
+    <string name="application_name_main_nopebble">WatchSwitcher (Nightly, Ingen Pebble-leverantör)</string>
     <string name="pref_title_general_autoreconnect">Återanslut automatiskt</string>
     <string name="pref_summary_minimize_priority_off">Ikonen i statusfältet och på låsskärmen visas</string>
     <string name="pref_title_notifications_call">Telefonsamtal</string>
@@ -271,7 +271,7 @@
     <string name="pref_theme_dark">Mörk</string>
     <string name="pref_summary_mb_intents">Aktivera om enhetens mediekontroll inte fungerar för vissa appar</string>
     <string name="pref_title_notifications_repetitions">Upprepningar</string>
-    <string name="title_activity_controlcenter_main_nightly">Gadgetbridge (Nattbygge)</string>
+    <string name="title_activity_controlcenter_main_nightly">WatchSwitcher (Nattbygge)</string>
     <string name="pref_title_theme">Tema</string>
     <string name="prefs_wena3_led_none">Ingen LED</string>
     <string name="appmanager_app_start">Start</string>
@@ -286,15 +286,15 @@
     <string name="pref_title_notification_delay_calls">Fördröjning av samtalsaviseringar</string>
     <string name="pref_display_caller_summary">Visa telefonnummer eller namn för inkommande samtal</string>
     <string name="pref_pair_bluetooth_calls_help_1">1. Tryck på knappen nedan för att starta ihopparningsprocessen.</string>
-    <string name="title_activity_controlcenter_main_nopebble">Gadgetbridge Nightly Utan Pebble</string>
+    <string name="title_activity_controlcenter_main_nopebble">WatchSwitcher Nightly Utan Pebble</string>
     <string name="pref_header_cannned_messages">Förfyllda meddelanden</string>
-    <string name="title_activity_controlcenter_banglejs_main">Bangle.js Gadgetbridge</string>
+    <string name="title_activity_controlcenter_banglejs_main">Bangle.js WatchSwitcher</string>
     <string name="pref_theme_light">Ljus</string>
     <string name="pref_pair_bluetooth_calls_help_warning">VARNING: Om du aktiverar bluetooth-samtal utan att para ihop med den andra instansen kanske samtalsaviseringar inte fungerar som förväntat.</string>
     <string name="pref_theme_dynamic">Dynamiska färger</string>
     <string name="pref_title_audio_player">Föredragen ljudspelare</string>
     <string name="open_fw_installer_warning_title">Varning</string>
-    <string name="pref_summary_datetime_syctimeonconnect">Synkronisera tiden till Gadgetbridge-enheter vid anslutning, när tiden eller tidszonen ändras på Android-enheten, samt synkronisera tiden periodiskt</string>
+    <string name="pref_summary_datetime_syctimeonconnect">Synkronisera tiden till WatchSwitcher-enheter vid anslutning, när tiden eller tidszonen ändras på Android-enheten, samt synkronisera tiden periodiskt</string>
     <string name="pref_pair_bluetooth_calls_help_3">3. Aktivera inställningen för Bluetooth-samtal nedan.</string>
     <string name="pref_header_other">Övrigt</string>
     <string name="gps">GPS</string>
@@ -319,7 +319,7 @@
     <string name="pref_header_general">Allmänna inställningar</string>
     <string name="pref_summary_receive_calls_watch">Utför och ta emot samtal direkt på klockan</string>
     <string name="pref_header_notifications">Aviseringar</string>
-    <string name="pref_title_minimize_priority">Dölj Gadgetbridge-aviseringen</string>
+    <string name="pref_title_minimize_priority">Dölj WatchSwitcher-aviseringen</string>
     <string name="fw_upgrade_notice_amazfit_cheetah_pro">Du är på väg att installera mjukvaran %s på din Amazfit Cheetah Pro.
 \n
 \nDitt armband kommer att starta om efter installationen av .zip-filen.
@@ -329,12 +329,12 @@
     <string name="pref_theme_system">System</string>
     <string name="title_activity_settings">Inställningar</string>
     <string name="open_fw_installer_pick_file">Välj fil</string>
-    <string name="title_activity_controlcenter_banglejs_nightly">Bangle.js Gadgetbridge (Nightly)</string>
+    <string name="title_activity_controlcenter_banglejs_nightly">Bangle.js WatchSwitcher (Nightly)</string>
     <string name="pref_summary_notification_delay_calls">Fördröj innan aviseringar skickas om inkommande samtal till enheten, i sekunder.</string>
     <string name="open_fw_installer_warning_text">Denna funktion kan potentiellt orsaka att din enhet inte kan starta. Med det sagt, detta har aldrig hänt någon av utvecklarna vid flashning, kom ihåg att detta är på egen risk.</string>
-    <string name="application_name_banglejs_main">Bangle.js Gadgetbridge</string>
+    <string name="application_name_banglejs_main">Bangle.js WatchSwitcher</string>
     <string name="fw_upgrade_notice_zepp_os">Du är på väg att installera firmware %1$s på din %2$s. \n \nDin klocka kommer att startas om efter installationen av .zip-filen. \n \nFORTSÄTT PÅ EGEN RISK!</string>
-    <string name="pref_title_general_autoconnectonbluetooth">Anslut till Gadgetbridge-enheten/-enheterna när Bluetooth aktiveras</string>
+    <string name="pref_title_general_autoconnectonbluetooth">Anslut till WatchSwitcher-enheten/-enheterna när Bluetooth aktiveras</string>
     <string name="pref_title_general_autostartonboot">Starta automatiskt</string>
     <string name="pref_title_language">Språk</string>
     <string name="open_fw_installer_select_file">Välj en fil som du vill överföra till enheten: %s</string>
@@ -347,8 +347,8 @@
     <string name="pref_header_display">Skärm</string>
     <string name="pref_pair_bluetooth_calls_help_title">Hur man tar emot bluetooth-samtal</string>
     <string name="gps_bds">GPS + BDS</string>
-    <string name="application_name_banglejs_nightly">Bangle.js Gadgetbridge Nightly</string>
-    <string name="application_name_main_nightly">Gadgetbridge (Nattbygge)</string>
+    <string name="application_name_banglejs_nightly">Bangle.js WatchSwitcher Nightly</string>
+    <string name="application_name_main_nightly">WatchSwitcher (Nattbygge)</string>
     <string name="pref_header_datetime">Datum och tid</string>
     <string name="gps_galileo">GPS + GALILEO</string>
     <string name="pref_time_sync"/>
@@ -639,5 +639,5 @@
     <string name="map_theme_biker">Biker</string>
     <string name="map_theme_indigo">Indigo</string>
     <string name="pref_title_block_screenshot">Blockera skärmbilder</string>
-    <string name="pref_summary_block_screenshots">Förhindra skärmbilder och visning av osäkra skärmar. Kräver en omstart av Gadgetbridge för att verkställas.</string>
+    <string name="pref_summary_block_screenshots">Förhindra skärmbilder och visning av osäkra skärmar. Kräver en omstart av WatchSwitcher för att verkställas.</string>
 </resources>

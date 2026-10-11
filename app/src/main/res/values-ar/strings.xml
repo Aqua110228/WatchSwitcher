@@ -40,7 +40,7 @@
     <string name="calendar_two_weeks">إسبوعين</string>
     <string name="calendar_month">شهر</string>
     <string name="controlcenter_snackbar_need_longpress">اضغط لفترة طويلة على البطاقة لقطع الاتصال</string>
-    <string name="debugactivity_really_factoryreset">سيؤدي إجراء إعادة ضبط المصنع إلى حذف جميع البيانات من الجهاز المتصل (إذا كان مدعومًا). تقوم أجهزة Xiaomi / Huami أيضًا بتغيير Bluetooth MAC address ، بحيث تظهر كأجهزة جديدة في Gadgetbridge.</string>
+    <string name="debugactivity_really_factoryreset">سيؤدي إجراء إعادة ضبط المصنع إلى حذف جميع البيانات من الجهاز المتصل (إذا كان مدعومًا). تقوم أجهزة Xiaomi / Huami أيضًا بتغيير Bluetooth MAC address ، بحيث تظهر كأجهزة جديدة في WatchSwitcher.</string>
     <string name="controlcenter_take_screenshot">خد لقطة للشاشة</string>
     <string name="controlcenter_change_fm_frequency">تغيير تردد FM</string>
     <string name="controlcenter_disconnect">قطع الاتصال</string>
@@ -213,7 +213,7 @@
 \nملاحظة: لا يلزم تثبيت .res و .gps إذا كانت هذه الملفات هي نفسها تماما مثل الملفات المثبتة مسبقا.
 \n
 \nالمضي قدما على مسؤوليتك الخاصة!</string>
-    <string name="miband_firmware_known">تم اختبار هذا البرنامج الثابت ومن المعروف أنه متوافق مع Gadgetbridge.</string>
+    <string name="miband_firmware_known">تم اختبار هذا البرنامج الثابت ومن المعروف أنه متوافق مع WatchSwitcher.</string>
     <string name="pref_header_other">أخرى</string>
     <string name="pref_header_calendar">التقويم</string>
     <string name="fw_upgrade_notice_miband7">أنت على وشك تثبيت البرنامج الثابت %s على Xiaomi Smart Band 7.
@@ -251,17 +251,17 @@
 \nستتم إعادة تشغيل السوار بعد تثبيت ملف zip.
 \n
 \nالمضي قدما على مسؤوليتك الخاصة!</string>
-    <string name="about_activity_title_generic">حول Gadgetbridge</string>
+    <string name="about_activity_title_generic">حول WatchSwitcher</string>
     <string name="about_description_generic">استبدال حر متروك الحقوق بدون سحابة لتطبيقات و أدوات اندرويد مغلقة المصدر من البائعين.</string>
-    <string name="gadgetbridge_running_generic">Gadgetbridge قيد التشغيل</string>
-    <string name="about_activity_title_banglejs_main">حول Bangle.js Gadgetbridge</string>
-    <string name="about_description_banglejs_main">تطبيق مصاحب لنظام Android لـ Bangle.js مبني على قمة مشروع Gadgetbridge ، مع وصول إضافي إلى الإنترنت.
+    <string name="gadgetbridge_running_generic">WatchSwitcher قيد التشغيل</string>
+    <string name="about_activity_title_banglejs_main">حول Bangle.js WatchSwitcher</string>
+    <string name="about_description_banglejs_main">تطبيق مصاحب لنظام Android لـ Bangle.js مبني على قمة مشروع WatchSwitcher ، مع وصول إضافي إلى الإنترنت.
 \n
-\nنظرًا لسياسات متجر Google Play ، لا يُسمح لنا باستخدام رابط تبرع في التطبيق نفسه ، ولكن إذا أعجبك هذا التطبيق ، فيرجى التفكير في التبرع عبر صفحة Gadgetbridge الرئيسية أدناه.</string>
+\nنظرًا لسياسات متجر Google Play ، لا يُسمح لنا باستخدام رابط تبرع في التطبيق نفسه ، ولكن إذا أعجبك هذا التطبيق ، فيرجى التفكير في التبرع عبر صفحة WatchSwitcher الرئيسية أدناه.</string>
     <string name="gadgetbridge_running_banglejs_main">Bangle.js قيد التشغيل</string>
-    <string name="about_description_main_nightly">تطبيق حر مفتوح المصدر متروك الحقوق بدون سحابة بديل لتطبيقات أدوات اندرويد مغلقة المصدر من المصنعين. الإصدارات الليلية من Gadgetbridge. لا يمكن تثبيتها إذا كنت بالفعل مثبتا Gadgetbridge أو تطبيق Pebble ، بسبب تعارض في موفر Pebble.</string>
-    <string name="application_name_main_nopebble">Gadgetbridge (اليلي, لايوجد موفر Pebble)</string>
-    <string name="about_description_main_nopebble">استبدال حر بدون حقوق متروكة الحقوق بدون سحابة لتطبيقات أدوات اندرويد مغلقة المصدر من البائعين. الإصدارات الليلية من Gadgetbridge. يحتوي هذا الإصدار على موفر Pebble الذي تمت إعادة تسميته لمنع التعارضات ، لذلك لن تعمل بعض عمليات التكامل ذات الصلة بـ Pebble ، ولكن يمكن تثبيتها جنبًا إلى جنب مع تثبيت Gadgetbridge الحالي.</string>
+    <string name="about_description_main_nightly">تطبيق حر مفتوح المصدر متروك الحقوق بدون سحابة بديل لتطبيقات أدوات اندرويد مغلقة المصدر من المصنعين. الإصدارات الليلية من WatchSwitcher. لا يمكن تثبيتها إذا كنت بالفعل مثبتا WatchSwitcher أو تطبيق Pebble ، بسبب تعارض في موفر Pebble.</string>
+    <string name="application_name_main_nopebble">WatchSwitcher (اليلي, لايوجد موفر Pebble)</string>
+    <string name="about_description_main_nopebble">استبدال حر بدون حقوق متروكة الحقوق بدون سحابة لتطبيقات أدوات اندرويد مغلقة المصدر من البائعين. الإصدارات الليلية من WatchSwitcher. يحتوي هذا الإصدار على موفر Pebble الذي تمت إعادة تسميته لمنع التعارضات ، لذلك لن تعمل بعض عمليات التكامل ذات الصلة بـ Pebble ، ولكن يمكن تثبيتها جنبًا إلى جنب مع تثبيت WatchSwitcher الحالي.</string>
     <string name="controlcenter_power_off">إيقاف التشغيل</string>
     <string name="controlcenter_power_off_confirm_title">إيقاف التشغيل</string>
     <string name="controlcenter_power_off_confirm_description">هل أنت متأكد من أنك تريد إيقاف تشغيل الجهاز؟</string>
@@ -278,7 +278,7 @@
 \nملاحظة: لا يلزم تثبيت .res و .gps إذا كانت هذه الملفات هي نفسها تماما مثل الملفات المثبتة مسبقا.
 \n
 \nالمضي قدما على مسؤوليتك الخاصة!</string>
-    <string name="pref_summary_datetime_syctimeonconnect">مزامنة الوقت مع أجهزة Gadgetbridge عند الاتصال، وعندما يتغير الوقت أو المنطقة الزمنية على جهاز اندرويد، وبشكل دوري</string>
+    <string name="pref_summary_datetime_syctimeonconnect">مزامنة الوقت مع أجهزة WatchSwitcher عند الاتصال، وعندما يتغير الوقت أو المنطقة الزمنية على جهاز اندرويد، وبشكل دوري</string>
     <string name="fw_upgrade_notice_amazfit_gts4">أنت على وشك تثبيت البرنامج الثابت %s على Amazfit GTS 4.
 \n
 \nستتم إعادة تشغيل السوار بعد تثبيت ملف zip.
@@ -300,10 +300,10 @@
     <string name="pref_header_system">النظام</string>
     <string name="pref_header_health">الصحة</string>
     <string name="pref_header_equalizer">المعادل</string>
-    <string name="pref_title_minimize_priority">إخفاء إشعار Gadgetbridge</string>
-    <string name="about_description_banglejs_nightly">تطبيق مصاحب لنظام Android لـ Bangle.js مبني على مشروع Gadgetbridge ، مع وصول إضافي إلى الإنترنت.
+    <string name="pref_title_minimize_priority">إخفاء إشعار WatchSwitcher</string>
+    <string name="about_description_banglejs_nightly">تطبيق مصاحب لنظام Android لـ Bangle.js مبني على مشروع WatchSwitcher ، مع وصول إضافي إلى الإنترنت.
 \n
-\nنظرًا لسياسات متجر Google Play ، لا يُسمح لنا باستخدام رابط تبرع في التطبيق نفسه ، ولكن إذا أعجبك هذا التطبيق ، فيرجى التفكير في التبرع عبر صفحة Gadgetbridge الرئيسية أدناه.</string>
+\nنظرًا لسياسات متجر Google Play ، لا يُسمح لنا باستخدام رابط تبرع في التطبيق نفسه ، ولكن إذا أعجبك هذا التطبيق ، فيرجى التفكير في التبرع عبر صفحة WatchSwitcher الرئيسية أدناه.</string>
     <string name="fw_multi_upgrade_notice">أنت على وشك تثبيت البرامج الثابتة %1$s و %2$s ، بدلاً من البرامج الموجودة حاليًا على Mi Band.</string>
     <string name="open_fw_installer_info_text_title">مثبت الملفات</string>
     <string name="open_fw_installer_getting_files_text">نظرًا لأننا قد لا نوزع ملفات البرامج الثابتة ، فسيتعين عليك الحصول على الملفات بنفسك. هذا يعني أنك ستحتاج إلى البحث عن الملفات في ملفات apk ، عبر الإنترنت ، في المنتديات ، على Amazfitwatchfaces (لأجهزة Miband / Amazfit) وما إلى ذلك.</string>
@@ -424,12 +424,12 @@
 \nستتم إعادة تشغيل السوار بعد تثبيت ملف zip.
 \n
 \nالمضي قدما على مسؤوليتك الخاصة!</string>
-    <string name="miband_firmware_unknown_warning">لم يتم اختبار هذا البرنامج الثابت وقد لا يكون متوافقا مع Gadgetbridge.
+    <string name="miband_firmware_unknown_warning">لم يتم اختبار هذا البرنامج الثابت وقد لا يكون متوافقا مع WatchSwitcher.
 \n
 \nأنت ممنوع من تثبيتها!</string>
-    <string name="miband_firmware_suggest_whitelist">إذا كنت لا تزال ترغب في المتابعة واستمرت الأمور في العمل بشكل صحيح بعد ذلك ، فالرجاء إخبار مطوري Gadgetbridge بإدراج إصدار البرنامج الثابت %s في القائمة البيضاء.</string>
+    <string name="miband_firmware_suggest_whitelist">إذا كنت لا تزال ترغب في المتابعة واستمرت الأمور في العمل بشكل صحيح بعد ذلك ، فالرجاء إخبار مطوري WatchSwitcher بإدراج إصدار البرنامج الثابت %s في القائمة البيضاء.</string>
     <string name="open_fw_installer_info_text">يسمح لك برنامج Firmware / Watchface / App / File Installer بتحميل / تثبيت الملفات المدعومة (البرامج الثابتة ، وواجهات المراقبة ، والتطبيقات ، ونظام تحديد المواقع العالمي (GPS) ، والموارد ، والخطوط ...) على الجهاز. اطلع على مزيد من المعلومات في الويكي: https://codeberg.org/Freeyourgadget/Gadgetbridge/wiki/Firmware-Update</string>
-    <string name="pref_title_general_autoconnectonbluetooth">قم بالاتصال بالجهاز/أجهزة Gadgetbridge عند تشغيل Bluetooth</string>
+    <string name="pref_title_general_autoconnectonbluetooth">قم بالاتصال بالجهاز/أجهزة WatchSwitcher عند تشغيل Bluetooth</string>
     <string name="open_fw_installer_connect_minimum_one_device">الرجاء توصيل جهاز واحد على الأقل الذي تريد إرسال الملف إليه.</string>
     <string name="pref_summary_minimize_priority_off">يتم عرض الرمز الموجود في شريط الحالة والإشعار في شاشة القفل</string>
     <string name="pref_title_notification_cache_while_disconnected">التخزين المؤقت خارج النطاق</string>
@@ -499,7 +499,7 @@
     <string name="share">مشاركة</string>
     <string name="error_no_location_access">يجب منح الوصول إلى الموقع وتمكينه للمسح ليعمل بشكل صحيح</string>
     <string name="error_background_service_reason">فشل بدء تشغيل خدمة الخلفية بسبب استثناء - انقر هنا لمزيد من المعلومات.\n\nخطأ:</string>
-    <string name="pref_summary_pebble_enable_applogs">سيؤدي إلى تسجيل السجلات من تطبيقات الساعة بواسطة Gadgetbridge (يتطلب إعادة الاتصال)</string>
+    <string name="pref_summary_pebble_enable_applogs">سيؤدي إلى تسجيل السجلات من تطبيقات الساعة بواسطة WatchSwitcher (يتطلب إعادة الاتصال)</string>
     <string name="test">الاختبار</string>
     <string name="mi2_prefs_goal_notification_summary">سيهتز السوار عند الوصول إلى هدف الخطوات اليومية</string>
     <string name="menuitem_timer">العد التنازلي</string>
@@ -539,7 +539,7 @@
     <string name="czesh">التشيكية</string>
     <string name="pref_title_pebble_sync_health">مزامنة Pebble Health</string>
     <string name="pref_summary_enable_outgoing_call">سيؤدي تعطيل هذا أيضًا إلى إيقاف Pebble 2 / LE ليهتز عند المكالمات الصادرة</string>
-    <string name="pref_summary_custom_deviceicon">إظهار رمز إشعار Android الخاص بجهاز معين بدلا من رمز Gadgetbridge عند الاتصال</string>
+    <string name="pref_summary_custom_deviceicon">إظهار رمز إشعار Android الخاص بجهاز معين بدلا من رمز WatchSwitcher عند الاتصال</string>
     <string name="pref_title_autoremove_notifications">الإزالة التلقائية للإشعارات المرفوضة</string>
     <string name="pref_summary_autoremove_notifications">تتم إزالة الإشعارات تلقائيًا من الجهاز عند رفضها من الهاتف</string>
     <string name="pref_pebble_privacy_mode_off">الإشعارات العادية</string>
@@ -713,22 +713,22 @@
     <string name="pref_summary_notification_cache_while_disconnected">إرسال إشعارات فائتة عند إعادة اتصال الجهاز بعد خروجه عن النطاق</string>
     <string name="pref_header_notification_application_settings">إعدادات لكل تطبيق</string>
     <string name="pref_title_notification_use_as_deny">رفض الإشعارات من التطبيقات المحددة</string>
-    <string name="pref_summary_banglejs_text_bitmap">إذا تعذر عرض كلمة بخط الساعة، فقم بتحويلها إلى صورة نقطية في Gadgetbridge واعرض الصورة النقطية على الساعة</string>
-    <string name="pref_title_weather_summary">تستخدم إصدارات Android الأخرى ، المستخدمة لمزود خدمة الطقس LineageOS ، تطبيقًا مثل \"إشعار الطقس\". اعثر على مزيد من المعلومات في Gadgetbridge wiki.</string>
+    <string name="pref_summary_banglejs_text_bitmap">إذا تعذر عرض كلمة بخط الساعة، فقم بتحويلها إلى صورة نقطية في WatchSwitcher واعرض الصورة النقطية على الساعة</string>
+    <string name="pref_title_weather_summary">تستخدم إصدارات Android الأخرى ، المستخدمة لمزود خدمة الطقس LineageOS ، تطبيقًا مثل \"إشعار الطقس\". اعثر على مزيد من المعلومات في WatchSwitcher wiki.</string>
     <string name="pref_blacklist_calendars">تقويمات القائمة السوداء</string>
     <string name="pref_blacklist_calendars_summary">لن تتم مزامنة التقويمات المدرجة في القائمة السوداء مع الجهاز</string>
     <string name="pref_title_canned_reply_suffix">لاحقة مشتركة</string>
     <string name="pref_header_pebble_timeline">Pebble الجدول الزمني</string>
     <string name="pref_title_screen_on_on_notifications">الشاشة قيد التشغيل عند الإشعارات</string>
     <string name="pref_title_pebble_forcele">تفضيل BLE دائمًا</string>
-    <string name="pref_summary_expose_hr">يسمح للتطبيقات الأخرى بالوصول إلى بيانات الموارد في الوقت الفعلي أثناء اتصال Gadgetbridge</string>
+    <string name="pref_summary_expose_hr">يسمح للتطبيقات الأخرى بالوصول إلى بيانات الموارد في الوقت الفعلي أثناء اتصال WatchSwitcher</string>
     <string name="pref_summary_device_internet_access">اسمح للتطبيقات الموجودة على هذا الجهاز بالوصول إلى الإنترنت</string>
     <string name="pref_explanation_authkey">تتطلب بعض الأجهزة مفتاح إقران خاص من أجل التهيئة الأولى للجهاز. انقر هنا لمزيد من التفاصيل في الويكي.</string>
     <string name="pref_morning_updates_title">تحديثات الصباح</string>
     <string name="right">يمين</string>
     <string name="horizontal">أفقي</string>
     <string name="appinstaller_install">تثبيت</string>
-    <string name="discovery_connected_devices_hint">اجعل جهازك قابلاً للاكتشاف. من المحتمل ألا يتم اكتشاف الأجهزة المتصلة حاليًا. قم بتنشيط الموقع (مثل GPS) على Android 6+. تعطيل Privacy Guard لـ Gadgetbridge ، لأنه قد يتعطل ويعيد تشغيل هاتفك. إذا لم يتم العثور على أي جهاز بعد بضع دقائق ، فحاول مرة أخرى بعد إعادة تشغيل جهازك المحمول.</string>
+    <string name="discovery_connected_devices_hint">اجعل جهازك قابلاً للاكتشاف. من المحتمل ألا يتم اكتشاف الأجهزة المتصلة حاليًا. قم بتنشيط الموقع (مثل GPS) على Android 6+. تعطيل Privacy Guard لـ WatchSwitcher ، لأنه قد يتعطل ويعيد تشغيل هاتفك. إذا لم يتم العثور على أي جهاز بعد بضع دقائق ، فحاول مرة أخرى بعد إعادة تشغيل جهازك المحمول.</string>
     <string name="pref_screen_vibration_patterns_summary">تكوين أنماط الاهتزاز للإشعارات المختلفة</string>
     <string name="miband_prefs_alias">الاسم/ المستعار</string>
     <string name="initializing">جار تهيئة</string>
@@ -829,7 +829,7 @@
     <string name="menuitem_barometer">البارومتر</string>
     <string name="pref_summary_canned_messages_set">إرسال الرسائل التي تم تكوينها أدناه إلى جهازك</string>
     <string name="enable_vibrations_summary">الاهتزازات للمكالمات والرسائل والإشعارات والمزيد</string>
-    <string name="share_log_warning">يرجى مراعاة ملفات سجلات Gadgetbridge التي قد تحتوي على الكثير من المعلومات الشخصية ، بما في ذلك على سبيل المثال لا الحصر البيانات الصحية والمعرفات الفريدة (مثل عنوان MAC للجهاز) وتفضيلات الموسيقى وما إلى ذلك. ضع في اعتبارك تحرير الملف وإزالة هذه المعلومات قبل إرسال ملف إلى تقرير قضية عامة.</string>
+    <string name="share_log_warning">يرجى مراعاة ملفات سجلات WatchSwitcher التي قد تحتوي على الكثير من المعلومات الشخصية ، بما في ذلك على سبيل المثال لا الحصر البيانات الصحية والمعرفات الفريدة (مثل عنوان MAC للجهاز) وتفضيلات الموسيقى وما إلى ذلك. ضع في اعتبارك تحرير الملف وإزالة هذه المعلومات قبل إرسال ملف إلى تقرير قضية عامة.</string>
     <string name="pref_pair_bluetooth_calls_help_2">2. انتقل إلى إعدادات البلوتوث بهاتفك ، وقم بالاقتران بالجهاز الجديد الذي سيظهر (اسم مشابه لساعتك الحالية ، ولكن مع لاحقة ، على سبيل المثال \"Amazfit GTR 4 - AFC8\".</string>
     <string name="pref_pair_bluetooth_calls_help_3">3. قم بتمكين إعداد مكالمات البلوتوث أدناه.</string>
     <string name="pref_title_notifications_ignore_low_priority">تجاهل الإشعارات ذات الأولوية المنخفضة</string>
@@ -844,11 +844,11 @@
     <string name="pref_summary_pebble_forceprotocol">يفرض هذا الخيار استخدام أحدث بروتوكول اشعار بناءً على إصدار البرنامج الثابت. لابد ان تعرف ما تقوم به!</string>
     <string name="pref_summary_pebble_gatt_clientonly">هذا لـ Pebble 2 فقط و تجريبي ، جرب هذا إذا كانت لديك مشاكل في الاتصال</string>
     <string name="pref_summary_pebble_enable_bgjs">عند التمكين ، يسمح لواجهات الساعة بإظهار الطقس ومعلومات البطارية وما إلى ذلك.</string>
-    <string name="activity_db_management_import_export_explanation">تستخدم عمليات التصدير / الاستيراد المسار التالي (انظر أدناه) إلى دليل على جهازك. هذا الدليل متاح لتطبيقات Android الأخرى وجهاز الكمبيوتر الخاص بك. لاحظ أن هذا الدليل وجميع الملفات التي تحتوي عليها يتم حذفها إذا قمت بإلغاء تثبيت Gadgetbridge. تشمل البيانات:
+    <string name="activity_db_management_import_export_explanation">تستخدم عمليات التصدير / الاستيراد المسار التالي (انظر أدناه) إلى دليل على جهازك. هذا الدليل متاح لتطبيقات Android الأخرى وجهاز الكمبيوتر الخاص بك. لاحظ أن هذا الدليل وجميع الملفات التي تحتوي عليها يتم حذفها إذا قمت بإلغاء تثبيت WatchSwitcher. تشمل البيانات:
 \n Export_preference - إعدادات عامة
 \n Export_preference_MAC - إعدادات خاصة بالجهاز
-\n Gadgetbridge - قاعدة بيانات الجهاز والنشاط
-\n Gadgetbridge_date - تم تصدير قاعدة البيانات في تاريخ
+\n WatchSwitcher - قاعدة بيانات الجهاز والنشاط
+\n WatchSwitcher_date - تم تصدير قاعدة البيانات في تاريخ
 \n * .gpx - تسجيلات GPS
 \n * .log - ملفات السجل
 \nتوقع العثور على الملفات التي تم تصديرها (أو ضع الملفات التي تريد استيرادها) هناك:</string>
@@ -887,7 +887,7 @@
     <string name="prefs_in_ear_detection_summary">قم بتشغيل المكالمات من خلال سماعات الأذن الخاصة بك عندما تكون في أذنيك</string>
     <string name="pref_summary_connected_advertisement">يجعل الجهاز قابلاً للاكتشاف عبر البلوتوث حتى عند الاتصال</string>
     <string name="sony_speak_to_chat_summary">قم بإيقاف تشغيل إلغاء الضوضاء تلقائيا عند بدء التحدث.</string>
-    <string name="this_is_a_test_notification_from_gadgetbridge">هذا إشعار اختبار من Gadgetbridge</string>
+    <string name="this_is_a_test_notification_from_gadgetbridge">هذا إشعار اختبار من WatchSwitcher</string>
     <string name="installer_activity_wait_while_determining_status">يرجى الانتظار أثناء تحديد حالة التثبيت …</string>
     <string name="prefs_events_forwarding_summary">استخدام أحداث الجهاز لتشغيل الإجراءات وعمليات البث على اندرويد</string>
     <string name="pref_summary_canned_messages_dismisscall">تجاهل المكالمات من الساعة برسالة SMS</string>
@@ -955,14 +955,14 @@
     <string name="pref_title_device_spec_settings_force_time">فرض مزامنة الوقت</string>
     <string name="pref_title_device_spec_settings_show_raw_graph">إظهار بيانات RAW على الرسم البياني للنشاط</string>
     <string name="zetime_date_format_3">شهر / يوم / سنة</string>
-    <string name="application_name_generic">Gadgetbridge</string>
-    <string name="title_activity_controlcenter_generic">Gadgetbridge</string>
-    <string name="application_name_banglejs_main">Bangle.js Gadgetbridge</string>
-    <string name="title_activity_controlcenter_banglejs_main">Bangle.js Gadgetbridge</string>
-    <string name="application_name_main_nightly">Gadgetbridge (اليلي)</string>
-    <string name="about_activity_title_main_nightly">حول Gadgetbridge Nightly</string>
-    <string name="title_activity_controlcenter_main_nightly">Gadgetbridge اليلي</string>
-    <string name="about_activity_title_main_nopebble">حول Gadgetbridge Nightly No Pebble</string>
+    <string name="application_name_generic">WatchSwitcher</string>
+    <string name="title_activity_controlcenter_generic">WatchSwitcher</string>
+    <string name="application_name_banglejs_main">Bangle.js WatchSwitcher</string>
+    <string name="title_activity_controlcenter_banglejs_main">Bangle.js WatchSwitcher</string>
+    <string name="application_name_main_nightly">WatchSwitcher (اليلي)</string>
+    <string name="about_activity_title_main_nightly">حول WatchSwitcher Nightly</string>
+    <string name="title_activity_controlcenter_main_nightly">WatchSwitcher اليلي</string>
+    <string name="about_activity_title_main_nopebble">حول WatchSwitcher Nightly No Pebble</string>
     <string name="zetime_calories_type_all">السعرات الحرارية المحروقة النشطة وغير النشطة</string>
     <string name="zetime_calories_type">نوع السعرات الحرارية</string>
     <string name="zetime_calories_type_active">حرق السعرات الحرارية النشطة فقط</string>
@@ -1041,9 +1041,9 @@
     <string name="pref_summary_developer_settings">الإعدادات والوظائف المستخدمة من قبل المطورين</string>
     <string name="qhybrid_pref_summary_actions">إجراءات لتطبيق التنقل</string>
     <string name="error_setting_parent_folder">خطأ في إعداد المجلد الأصل: %s</string>
-    <string name="application_name_banglejs_nightly">Bangle.js Gadgetbridge (اليلي)</string>
-    <string name="title_activity_controlcenter_banglejs_nightly">Bangle.js Gadgetbridge (اليلي)</string>
-    <string name="about_activity_title_banglejs_nightly">حول Bangle.js Gadgetbridge (اليلي)</string>
+    <string name="application_name_banglejs_nightly">Bangle.js WatchSwitcher (اليلي)</string>
+    <string name="title_activity_controlcenter_banglejs_nightly">Bangle.js WatchSwitcher (اليلي)</string>
+    <string name="about_activity_title_banglejs_nightly">حول Bangle.js WatchSwitcher (اليلي)</string>
     <string name="gadgetbridge_running_banglejs_nightly">اليلي Bangle.js يعمل</string>
     <string name="pref_notifications_and_calls_enable_misscall">الإشعار عن المكالمات الفائتة</string>
     <string name="pref_summary_notifications_and_calls_title_reject">إيقاف - تجاهل ، تشغيل - رفض</string>
@@ -1126,7 +1126,7 @@
     <string name="menuitem_phone">الهاتف</string>
     <string name="pref_title_pebble_mtu_limit">حد Pebble 2 / LE GATT MTU</string>
     <string name="gadgetbridge_running_main_nightly">اليلي GB يعمل</string>
-    <string name="title_activity_controlcenter_main_nopebble">Gadgetbridge اليلي لا Pebble</string>
+    <string name="title_activity_controlcenter_main_nopebble">WatchSwitcher اليلي لا Pebble</string>
     <string name="gadgetbridge_running_main_nopebble">ليلاً NoPebble GB قيد التشغيل</string>
     <string name="menuitem_hr">معدل نبضات القلب</string>
     <string name="menuitem_pomodoro">Pomodoro متتبع</string>
@@ -1391,7 +1391,7 @@
     <string name="hr_widget_heart_rate">معدل نبضات القلب</string>
     <string name="prefs_button_double_press_action_selection_title">إجراء الحدث 2</string>
     <string name="prefs_button_variable_actions">إعدادات مفصلة للضغط على الزر</string>
-    <string name="gpx_receiver_activity_title">جهاز استقبال GPX Gadgetbridge</string>
+    <string name="gpx_receiver_activity_title">جهاز استقبال GPX WatchSwitcher</string>
     <string name="prefs_button_single_press_action_selection_title">إجراء الحدث 1</string>
     <string name="pref_title_equalizer_dynamic">ديناميكي</string>
     <string name="pref_device_action_broadcast">إرسال البث</string>
@@ -1530,7 +1530,7 @@
     <string name="activity_type_rowing">تجديف</string>
     <string name="activity_type_indoor_fitness">اللياقة البدنية الداخلية</string>
     <string name="activity_type_pilates">بيلاتيس</string>
-    <string name="notification_gps_title">Gadgetbridge GPS</string>
+    <string name="notification_gps_title">WatchSwitcher GPS</string>
     <string name="menuitem_nothing">لا شيء</string>
     <string name="menuitem_activity">سجل التمرين</string>
     <string name="menuitem_forecast">تنبؤ بالمناخ</string>
@@ -2150,11 +2150,11 @@
     <string name="preferences_miband_1_2_settings" tools:ignore="TypographyFractions">Mi Band 1/2 اعدادات</string>
     <string name="preferences_miband_1_2_warning">تحذير: تنطبق هذه التفضيلات فقط على Mi Bands 1 و 2.</string>
     <string name="pref_show_changelog">إظهار سجل التغيير عند بدء التشغيل</string>
-    <string name="pref_show_changelog_summary">اعرض سجل التغيير منذ الإصدار الأخير بعد تحديث Gadgetbridge</string>
+    <string name="pref_show_changelog_summary">اعرض سجل التغيير منذ الإصدار الأخير بعد تحديث WatchSwitcher</string>
     <string name="pref_activity_full_sync_trigger_warning">سيؤدي هذا إلى تشغيل مزامنة كاملة لجميع بيانات النشاط من الجهاز. قد يستغرق الأمر بضع دقائق حتى يكتمل.</string>
     <string name="menuitem_zepp_coach">مدرب زيب</string>
-    <string name="pref_theme_dynamic_colors_not_available_warning">الألوان الديناميكية ليست متاحة على جهازك فقط أندرويد 12+ يدعم هذه الوظيفة Gadgetbridge سيستخدم ألوان المواد 3.</string>
-    <string name="pref_theme_dynamic_colors_explanation">ملاحظة: بالنسبة إلى سمة الألوان الديناميكية ، تحتاج إلى تمكين ألوان الخلفية أو لوحة الألوان في إعدادات مظهر Android 12+. إذا لم تقم بذلك ، فسيستخدم Gadgetbridge الألوان الافتراضية للمواد 3.</string>
+    <string name="pref_theme_dynamic_colors_not_available_warning">الألوان الديناميكية ليست متاحة على جهازك فقط أندرويد 12+ يدعم هذه الوظيفة WatchSwitcher سيستخدم ألوان المواد 3.</string>
+    <string name="pref_theme_dynamic_colors_explanation">ملاحظة: بالنسبة إلى سمة الألوان الديناميكية ، تحتاج إلى تمكين ألوان الخلفية أو لوحة الألوان في إعدادات مظهر Android 12+. إذا لم تقم بذلك ، فسيستخدم WatchSwitcher الألوان الافتراضية للمواد 3.</string>
     <string name="fw_upgrade_notice_amazfitbip3pro">أنت على وشك تثبيت البرنامج%s الثابت على Amazfit Bip 3 Pro.
 \n
 \nيرجى التأكد من تثبيت ملف .fw ، وبعد ذلك ملف .res. ستتم إعادة تشغيل ساعتك بعد تثبيت ملف .fw.
@@ -2203,7 +2203,7 @@
     <string name="prefs_wena3_vibration_step_down">تنحي للاسفل</string>
     <string name="prefs_wena3_vibration_smart_item">الاهتزاز الذكي</string>
     <string name="prefs_wena3_home_icon_name_riiiver">Riiiver</string>
-    <string name="prefs_wena3_hint_background_sync">اسمح لـ Wena بأن تطلب بشكل دوري من Gadgetbridge تنزيل بيانات النشاط من الجهاز</string>
+    <string name="prefs_wena3_hint_background_sync">اسمح لـ Wena بأن تطلب بشكل دوري من WatchSwitcher تنزيل بيانات النشاط من الجهاز</string>
     <string name="prefs_wena3_home_icon_name_suica">رصيد سويكا</string>
     <string name="prefs_wena3_vibration_strength_item_medium">متوسط</string>
     <string name="prefs_wena3_title_activity">إعدادات النشاط</string>
@@ -2413,7 +2413,7 @@
     <string name="protocol_version">إصدار البروتوكول</string>
     <string name="uploadwatchfaceoperation_in_progress">جارٍ تحميل واجهة الساعة</string>
     <string name="pref_force_connection_type_bt_classic">بلوتوث كلاسيك</string>
-    <string name="pref_force_connection_type_description">يمكنك محاولة فرض نوع الاتصال في حالة عدم استجابة جهازك لـ Gadgetbridge</string>
+    <string name="pref_force_connection_type_description">يمكنك محاولة فرض نوع الاتصال في حالة عدم استجابة جهازك لـ WatchSwitcher</string>
     <string name="pref_activity_recognize_rowing">التعرف على التجديف</string>
     <string name="pref_activity_recognition_mode_none">لاشيء</string>
     <string name="pref_enable_call_accept_summary">تمكين قبول المكالمات من الجهاز</string>
@@ -2634,7 +2634,7 @@
     <string name="bottom_nav_devices">الأجهزة</string>
     <string name="bottom_nav_dashboard">اللوحة</string>
     <string name="pref_dashboard_first_title">اظهر اللوحة أولا</string>
-    <string name="pref_dashboard_first_summary">إظهار لوحة المعلومات عند بدء تشغيل Gadgetbridge، بدلاً من شاشة الأجهزة</string>
+    <string name="pref_dashboard_first_summary">إظهار لوحة المعلومات عند بدء تشغيل WatchSwitcher، بدلاً من شاشة الأجهزة</string>
     <string name="pref_dashboard_cards_title">عرض الأدوات على البطاقات</string>
     <string name="pref_dashboard_cards_summary">ارسم بطاقات حول الأدوات على لوحة المعلومات</string>
     <string name="pref_dashboard_widget_settings">إعدادات الويدجيت</string>
@@ -2696,7 +2696,7 @@
     <string name="cyclingPowerMax">أقصى قوة ركوب الدراجة</string>
     <string name="cyclingPowerAverage">متوسط قوة ركوب الدراجة</string>
     <string name="cyclingPowerMin">الحد الأدنى من قوة ركوب الدراجة</string>
-    <string name="huawei_trusleep_warning">تحذير: لم يتم تفعيل ميزة TruSleep™ بالكامل. سيؤدي تفعيلها على بعض الأجهزة إلى ظهور جميع بيانات النوم على أنها ”نوم خفيف“ في Gadgetbridge!</string>
+    <string name="huawei_trusleep_warning">تحذير: لم يتم تفعيل ميزة TruSleep™ بالكامل. سيؤدي تفعيلها على بعض الأجهزة إلى ظهور جميع بيانات النوم على أنها ”نوم خفيف“ في WatchSwitcher!</string>
     <string name="pref_touch_tone">نغمة اللمس</string>
     <string name="pref_touch_tone_summary">يصدر نغمة عند لمس سماعة الأذن</string>
     <string name="pref_wearing_tone">نغمة الإرتداء</string>
@@ -2736,7 +2736,7 @@
     <string name="garmin_agps_local_file">الملف المحلي</string>
     <string name="pref_garmin_agps_help">تحتوي القائمة أدناه على جميع عناوين الويب التي تطلبها الساعة للحصول على تحديثات AGPS. يمكنك اختيار ملف من ذاكرة الهاتف ليتم إرساله إلى الساعة عندما تطلب تحديثًا.\n\nيكفي تكوين ملف واحد فقط.</string>
     <string name="copied_to_clipboard">تم النسخ إلى الحافظة</string>
-    <string name="pref_summary_garmin_default_reply_suffix">تم إلحاقه بالإضافة إلى اللاحقة المعينة في Gadgetbridge</string>
+    <string name="pref_summary_garmin_default_reply_suffix">تم إلحاقه بالإضافة إلى اللاحقة المعينة في WatchSwitcher</string>
     <string name="intent_api_broadcast_activity_sync_title">البث عند انتهاء مزامنة النشاط</string>
     <string name="intent_api_broadcast_activity_sync_summary">قم ببث نية عندما تنتهي مزامنة النشاط لأي جهاز</string>
     <string name="activity_prefs_height_inches">الطول بالبوصة</string>
@@ -2938,7 +2938,7 @@
     <string name="prefs_summary_gatt_client_api_package">تقييد اتصال واجهة برمجة التطبيقات نية BLE بهذه الحزمة</string>
     <string name="inactivity_warnings_minimum_steps_summary">الحد الأدنى من الخطوات التي يجب اتخاذها خلال دقائق العتبة</string>
     <string name="pref_summary_sync_birthdays">مزامنة ايام الميلاد لجهات الاتصال مع أحداث التقويم</string>
-    <string name="activity_db_management_backup_restore_explanation">تسمح لك عمليات الاستيراد/التصدير بترحيل أو نسخ جميع إعدادات Gadgetbridge والأجهزة والبيانات من وإلى ملف مضغوط.\n\nسيؤدي استيراد ملف إلى إزالة جميع البيانات والأجهزة والتفضيلات الموجودة، واستبدالها بالكامل بالنسخة الاحتياطية.</string>
+    <string name="activity_db_management_backup_restore_explanation">تسمح لك عمليات الاستيراد/التصدير بترحيل أو نسخ جميع إعدادات WatchSwitcher والأجهزة والبيانات من وإلى ملف مضغوط.\n\nسيؤدي استيراد ملف إلى إزالة جميع البيانات والأجهزة والتفضيلات الموجودة، واستبدالها بالكامل بالنسخة الاحتياطية.</string>
     <string name="pref_dnd_follow_phone_summary">عند تمكين وضع عدم الإزعاج أو تعطيله على الهاتف، قم بتبديله تلقائيًا على الجهاز أيضًا</string>
     <string name="pref_title_calendar_lookahead">عدد الأيام المقبلة</string>
     <string name="pref_summary_calendar_lookahead">مزامنة ما يصل إلى %1s أيام من أحداث التقويم</string>

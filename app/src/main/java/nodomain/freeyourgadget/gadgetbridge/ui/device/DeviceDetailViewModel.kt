@@ -23,8 +23,10 @@ import nodomain.freeyourgadget.gadgetbridge.devices.DeviceManager
 import nodomain.freeyourgadget.gadgetbridge.devices.huawei.HuaweiConstants
 import nodomain.freeyourgadget.gadgetbridge.devices.huawei.HuaweiCoordinator
 import nodomain.freeyourgadget.gadgetbridge.impl.GBDevice
+import nodomain.freeyourgadget.gadgetbridge.model.DailyTotals
 import nodomain.freeyourgadget.gadgetbridge.model.RecordedDataTypes
 import nodomain.freeyourgadget.gadgetbridge.ui.huawei.getHuaweiAccount
+import java.util.Calendar
 
 data class DeviceUiState(
     val name: String = "",
@@ -36,6 +38,8 @@ data class DeviceUiState(
     val battery: Int = -1,
     val isHuawei: Boolean = false,
     val huaweiAccount: String = "",
+    val steps: Long = -1,
+    val sleepMinutes: Long = -1,
 )
 
 class DeviceDetailViewModel(app: Application) : AndroidViewModel(app) {
@@ -44,6 +48,7 @@ class DeviceDetailViewModel(app: Application) : AndroidViewModel(app) {
     val state: StateFlow<DeviceUiState> = _state.asStateFlow()
 
     private var device: GBDevice? = null
+    private var lastTotalsAt = 0L
 
     private var registered = false
 
@@ -92,7 +97,27 @@ class DeviceDetailViewModel(app: Application) : AndroidViewModel(app) {
             } else {
                 ""
             },
+            steps = _state.value.steps,
+            sleepMinutes = _state.value.sleepMinutes,
         )
+        refreshDailyTotals(device)
+    }
+
+    /** Reads today's steps / sleep from the local database (throttled). */
+    private fun refreshDailyTotals(device: GBDevice) {
+        if (!device.isInitialized) return
+        val now = System.currentTimeMillis()
+        if (now - lastTotalsAt < 30_000L) return
+        lastTotalsAt = now
+        Thread {
+            val totals = runCatching {
+                DailyTotals.getDailyTotalsForDevice(device, Calendar.getInstance())
+            }.getOrNull() ?: return@Thread
+            _state.value = _state.value.copy(
+                steps = totals.steps,
+                sleepMinutes = totals.sleep,
+            )
+        }.start()
     }
 
     fun toggleConnection() {

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <string name="application_name_generic">Gadgetbridge</string>
-    <string name="title_activity_controlcenter_generic">Gadgetbridge</string>
+    <string name="application_name_generic">WatchSwitcher</string>
+    <string name="title_activity_controlcenter_generic">WatchSwitcher</string>
     <string name="action_settings">Pengaturan</string>
     <string name="action_quit">Keluar</string>
     <string name="action_donate">Donasi</string>
@@ -32,7 +32,7 @@
     <string name="appmanager_installed_watchapps">Aplikasi terpasang</string>
     <string name="appmanager_cached_watchapps_watchfaces">Aplikasi dalam cache</string>
     <string name="title_activity_appmanager">Pengelola Aplikasi</string>
-    <string name="debugactivity_really_factoryreset">Mengembalikan ke pengaturan pabrik akan mengkapus semua data dari perangkat yang terhubung (jika mendukung). Perangkat Xiaomi/Huami juga mengubah alamat MAC Bluetooth, agar muncul sebagai perangkat baru di Gadgetbridge.</string>
+    <string name="debugactivity_really_factoryreset">Mengembalikan ke pengaturan pabrik akan mengkapus semua data dari perangkat yang terhubung (jika mendukung). Perangkat Xiaomi/Huami juga mengubah alamat MAC Bluetooth, agar muncul sebagai perangkat baru di WatchSwitcher.</string>
     <string name="action_debug">Debug</string>
     <string name="sonyswr12_settings_title">Pengaturan Sony SWR12</string>
     <string name="sonyswr12_settings_alarm_interval">Interval alarm pintar dalam beberapa menit</string>
@@ -168,9 +168,9 @@
     <string name="hr_widget_weather">Cuaca</string>
     <string name="hr_widget_battery">Baterai</string>
     <string name="hr_widget_calories">Kalori</string>
-    <string name="gpx_receiver_activity_title">Penerima GPX Gadgetbridge</string>
+    <string name="gpx_receiver_activity_title">Penerima GPX WatchSwitcher</string>
     <string name="require_location_provider">Lokasi harus diaktifkan</string>
-    <string name="about_activity_title_generic">Tentang Gadgetbridge</string>
+    <string name="about_activity_title_generic">Tentang WatchSwitcher</string>
     <string name="about_version">Versi %s</string>
     <string name="about_title">Tentang</string>
     <string name="about_links">Tautan</string>
@@ -242,7 +242,7 @@
     <string name="uncheck_all_applications">Hapus centang semua aplikasi</string>
     <string name="pref_default">Bawaan</string>
     <string name="pref_title_notifications_call">Panggilan Telepon</string>
-    <string name="pref_title_general_autoconnectonbluetooth">Sambungkan ke perangkat Gadgetbridge saat Bluetooth diaktifkan</string>
+    <string name="pref_title_general_autoconnectonbluetooth">Sambungkan ke perangkat WatchSwitcher saat Bluetooth diaktifkan</string>
     <string name="pref_title_general_autostartonboot">Mulai otomatis</string>
     <string name="pref_title_audio_player">Audioplayer Pilihan</string>
     <string name="pref_title_notifications_repetitions">Repetisi</string>
@@ -576,9 +576,9 @@
     <string name="fossil_hr_commute_processing">Mengolah permintaan…</string>
     <string name="pref_summary_developer_settings">Pengaturan dan kemampuan digunakan oleh pengembang</string>
     <string name="pref_title_banglejs_webview_url">URL pemuat aplikasi</string>
-    <string name="about_description_banglejs_main">Aplikasi pendamping Android untuk Bangle.js dibuat di atas proyek Gadgetbridge, dengan tambahan akses internet. 
+    <string name="about_description_banglejs_main">Aplikasi pendamping Android untuk Bangle.js dibuat di atas proyek WatchSwitcher, dengan tambahan akses internet. 
 \n 
-\nKarena kebijakan Google Play Store, kami tidak diperbolehkan untuk menambahkan tautan donasi dalam aplikasi sendiri, tetapi jika Anda suka aplikasi ini pertimbangkan untuk berdonasi melalui laman beranda Gadgetbridge di bawah.</string>
+\nKarena kebijakan Google Play Store, kami tidak diperbolehkan untuk menambahkan tautan donasi dalam aplikasi sendiri, tetapi jika Anda suka aplikasi ini pertimbangkan untuk berdonasi melalui laman beranda WatchSwitcher di bawah.</string>
     <string name="pref_summary_sunrise_sunset">Kirim waktu matahari terbit dan matahari terbenam berdasarkan lokasi ke linimasa Pebble</string>
     <string name="pref_title_sync_caldendar">Sinkron acara kalender</string>
     <string name="pref_summary_relax_firmware_checks">Nonaktifkan pemeriksaan perangkat tegar</string>
@@ -625,7 +625,7 @@
     <string name="pref_header_sound_vibration">Suara &amp; Getaran</string>
     <string name="pref_header_offline_voice">Suara Luring</string>
     <string name="pref_title_banglejs_text_bitmap">Teks sebagai Bitmap</string>
-    <string name="pref_summary_banglejs_text_bitmap">Jika sebuah kata tidak dapat ditampilkan dengan fon jam tangan, tampilkan sebagai bitmap dalam Gadgetbridge dan tampilkan bitmap pada jam tangan</string>
+    <string name="pref_summary_banglejs_text_bitmap">Jika sebuah kata tidak dapat ditampilkan dengan fon jam tangan, tampilkan sebagai bitmap dalam WatchSwitcher dan tampilkan bitmap pada jam tangan</string>
     <string name="pref_rtl_max_line_length">Panjang Baris Kanan ke Kiri Maks</string>
     <string name="pref_title_screen_on_on_notifications">Layar Nyala pada Notifikasi</string>
     <string name="pref_summary_screen_on_on_notifications">Nyalakan layar perangkat saat notifikasi masuk</string>
@@ -742,7 +742,7 @@
     <string name="pref_header_location">Lokasi</string>
     <string name="pref_title_pebble_forcele">Selalu gunakan BLE</string>
     <string name="pref_summary_location_keep_uptodate">Coba dapatkan lokasi saat ini saat berjalan, gunakan lokasi yang disimpan sebagai cadangan</string>
-    <string name="pref_summary_pebble_enable_applogs">Akan membuat catatan dari aplikasi jam tangan untuk dicatat oleh Gadgetbridge (membutuhkan koneksi ulang)</string>
+    <string name="pref_summary_pebble_enable_applogs">Akan membuat catatan dari aplikasi jam tangan untuk dicatat oleh WatchSwitcher (membutuhkan koneksi ulang)</string>
     <string name="pref_title_pebble_gatt_clientonly">Hanya klien GATT</string>
     <string name="pref_title_screentime">Layar pada durasi</string>
     <string name="preferences_hplus_settings">Pengaturan HPlus/Makibes</string>
@@ -848,14 +848,14 @@
     <string name="nothing_prefs_inear_title">Deteksi dalam telinga</string>
     <string name="sony_speak_to_chat_focus_on_voice">Fokus pada Suara</string>
     <string name="about_description_generic">Pengganti untuk aplikasi gawai Android sumber tertutup dari vendor yang bebas dan tanpa awan.</string>
-    <string name="gadgetbridge_running_generic">Gadgetbridge berjalan</string>
-    <string name="application_name_banglejs_main">Bangle.js Gadgetbridge</string>
-    <string name="about_activity_title_banglejs_main">Tentang Bangle.js Gadgetbridge</string>
+    <string name="gadgetbridge_running_generic">WatchSwitcher berjalan</string>
+    <string name="application_name_banglejs_main">Bangle.js WatchSwitcher</string>
+    <string name="about_activity_title_banglejs_main">Tentang Bangle.js WatchSwitcher</string>
     <string name="gadgetbridge_running_banglejs_main">Bangle.js berjalan</string>
-    <string name="title_activity_controlcenter_main_nightly">Gadgetbridge Nightly</string>
+    <string name="title_activity_controlcenter_main_nightly">WatchSwitcher Nightly</string>
     <string name="gadgetbridge_running_main_nightly">Nightly GB sedang berjalan</string>
-    <string name="application_name_main_nopebble">Gadgetbridge (Nightly, Tanpa penyedia Pebble)</string>
-    <string name="about_activity_title_main_nopebble">Tentang Gadgetbridge Nightly Tanpa Pebble</string>
+    <string name="application_name_main_nopebble">WatchSwitcher (Nightly, Tanpa penyedia Pebble)</string>
+    <string name="about_activity_title_main_nopebble">Tentang WatchSwitcher Nightly Tanpa Pebble</string>
     <string name="gadgetbridge_running_main_nopebble">Nightly GB TanpaPebble berjalan</string>
     <string name="pref_summary_minimize_priority_off">Ikon dalam bilah status dan notifikasi di layar kunci ditampilkan</string>
     <string name="pref_title_notification_use_as_allow">Perbolehkan notifikasi dari aplikasi yang dipilih</string>
@@ -1030,8 +1030,8 @@
 \n 
 \nLANJUTKAN DENGAN RISIKO ANDA SENDIRI!</string>
     <string name="pref_title_notification_use_as_deny">Mengabaikan notifikasi dari aplikasi yang dipilih</string>
-    <string name="pref_title_weather_summary">Digunakan untuk weather provider LineageOS, versi Android lainnya perlu menggunakan aplikasi seperti \"Breezy Weather\". Informasi lebih lanjut tersedia di situs web Gadgetbridge.</string>
-    <string name="miband_firmware_suggest_whitelist">Jika Anda tetap ingin melanjutkan dan setelah itu semuanya masih berfungsi dengan baik, mohon beri tahu para pengembang Gadgetbridge untuk memasukkan versi firmware %s ke daftar whitelist.</string>
+    <string name="pref_title_weather_summary">Digunakan untuk weather provider LineageOS, versi Android lainnya perlu menggunakan aplikasi seperti \"Breezy Weather\". Informasi lebih lanjut tersedia di situs web WatchSwitcher.</string>
+    <string name="miband_firmware_suggest_whitelist">Jika Anda tetap ingin melanjutkan dan setelah itu semuanya masih berfungsi dengan baik, mohon beri tahu para pengembang WatchSwitcher untuk memasukkan versi firmware %s ke daftar whitelist.</string>
     <string name="open_fw_installer_info_text">Penginstal Firmware/Watchface/Aplikasi/File memungkinkan Anda mengunggah/menginstal file yang didukung (firmware, watchface, aplikasi, GPS, sumber daya, font…) ke perangkat. Lihat informasi lebih lanjut di situs web: [https://gadgetbridge.org/internals/features/installer/](https://gadgetbridge.org/internals/features/installer/)</string>
     <string name="seconds_5">5 detil</string>
     <string name="seconds_10">10 detik</string>
@@ -1127,7 +1127,7 @@
 \nCatatan: Anda tidak harus memasang .res dan .gps jika berkas ini sama persis dengan yang sebelumnya dipasang. 
 \n 
 \nLANJUTKAN DENGAN RISIKO ANDA SENDIRI!</string>
-    <string name="miband_firmware_unknown_warning">Firmware ini belum dicoba dan mungkin tidak kompatibel dengan Gadgetbridge. 
+    <string name="miband_firmware_unknown_warning">Firmware ini belum dicoba dan mungkin tidak kompatibel dengan WatchSwitcher. 
 \n 
 \nAnda DIHARUSKAN UNTUK TIDAK flash perangkat tegar ini!</string>
     <string name="open_fw_installer_warning_title">Peringatan</string>
@@ -1136,7 +1136,7 @@
     <string name="open_fw_installer_connect_minimum_one_device">Mohon hubungkan SETIDAKNYA SATU perangkat yang Anda ingin kirim berkas ke perangkat tersebut.</string>
     <string name="pref_header_other">Lain</string>
     <string name="open_fw_installer_connect_maximum_one_device">Mohon hubungkan HANYA SATU perangkat yang Anda ingin kirim berkas ke perangkat tersebut.</string>
-    <string name="pref_title_minimize_priority">Sembunyikan notifikasi Gadgetbridge</string>
+    <string name="pref_title_minimize_priority">Sembunyikan notifikasi WatchSwitcher</string>
     <string name="pref_summary_notification_filter">Blokir semua notifikasi ketika Jangan Ganggu diaktifkan di ponsel</string>
     <string name="pref_title_pebble_privacy_mode">Mode privasi</string>
     <string name="pref_title_pebble_forceprotocol">Paksa protokol notifikasi</string>
@@ -1208,7 +1208,7 @@
     <string name="activity_type_indoor_ice_skating">Seluncur Es Dalam Ruangan</string>
     <string name="activity_type_boxing">Tinju</string>
     <string name="menuitem_personal_activity_intelligence">Kecerdasan Aktivitas Pribadi</string>
-    <string name="notification_gps_title">Gadgetbridge GPS</string>
+    <string name="notification_gps_title">WatchSwitcher GPS</string>
     <string name="menuitem_countdown">Hitungan mundur</string>
     <string name="note">Catatan</string>
     <string name="qhybrid_second_timezone_offset_relative_to_utc">Offset zona waktu kedua relatif terhadap UTC</string>
@@ -1317,7 +1317,7 @@
     <string name="sony_anc_optimizer_status_finished">Menyelesaikan…</string>
     <string name="sony_speak_to_chat_timeout_standard">Standar (30s)</string>
     <string name="sony_connect_two_devices">Hubungkan ke 2 perangkat bersamaan</string>
-    <string name="share_log_warning">Diingat bahwa Gadgetbridge mencatat berkas yang mungkin berisi banyak informasi pribadi, termasuk tetapi tidak terbatas dengan data kesehatan, pengenal unik (seperti alamat MAC perangkat), preferensi musik, dll. Pertimbangkan untuk menyunting berkas dan menghapus informasi ini sebelum mengirim berkas ke laporan masalah publik.</string>
+    <string name="share_log_warning">Diingat bahwa WatchSwitcher mencatat berkas yang mungkin berisi banyak informasi pribadi, termasuk tetapi tidak terbatas dengan data kesehatan, pengenal unik (seperti alamat MAC perangkat), preferensi musik, dll. Pertimbangkan untuk menyunting berkas dan menghapus informasi ini sebelum mengirim berkas ke laporan masalah publik.</string>
     <string name="preferences_fm_frequency">Frekuensi FM</string>
     <string name="preferences_rtl_settings">Dukungan Kanan Ke Kiri</string>
     <string name="filter_mode">Mode Saring</string>
@@ -1332,8 +1332,8 @@
     <string name="zetime_signaling_vibrate_twice">Getar dua kali</string>
     <string name="pref_title_authkey">Kunci Otentikasi</string>
     <string name="medley">Campuran</string>
-    <string name="title_activity_controlcenter_banglejs_nightly">Bangle.js Gadgetbridge (Nightly)</string>
-    <string name="about_activity_title_banglejs_nightly">Tentang Bangle.js Gadgetbridge (Nightly)</string>
+    <string name="title_activity_controlcenter_banglejs_nightly">Bangle.js WatchSwitcher (Nightly)</string>
+    <string name="about_activity_title_banglejs_nightly">Tentang Bangle.js WatchSwitcher (Nightly)</string>
     <string name="gadgetbridge_running_banglejs_nightly">Nightly Bangle.js berjalan</string>
     <string name="title_activity_LenovoWatch_calibration">Kalibrasi Watch X Plus</string>
     <string name="sony_automatic_power_off">Daya Mati Otomatis</string>
@@ -1394,7 +1394,7 @@
 \nGelang Anda akan dinyalakan ulang setelah memasang berkas .fw. 
 \n 
 \nLANJUTKAN DENGAN RISIKO ANDA SENDIRI!</string>
-    <string name="miband_firmware_known">Firmware ini telah dicoba dan diketahui kompatibel dengan Gadgetbridge.</string>
+    <string name="miband_firmware_known">Firmware ini telah dicoba dan diketahui kompatibel dengan WatchSwitcher.</string>
     <string name="pref_title_notifications_generic">Dukungan notifikasi generik</string>
     <string name="pref_title_notification_media_ignores_application_list">Daftar abaikan aplikasi notifikasi media</string>
     <string name="pref_summary_transliteration">Aktifkan ini jika perangkat Anda tidak memiliki dukungan untuk fon bahasa Anda</string>
@@ -1402,7 +1402,7 @@
     <string name="pref_title_message_privacy_mode">Mode privasi pesan</string>
     <string name="pref_message_privacy_mode_off">Tampilkan semua konten</string>
     <string name="pref_applications_settings">Daftar aplikasi</string>
-    <string name="pref_summary_expose_hr">Perbolehkan aplikasi lain untuk mengakses data detak jantung saat Gadgetbridge sedang terhubung</string>
+    <string name="pref_summary_expose_hr">Perbolehkan aplikasi lain untuk mengakses data detak jantung saat WatchSwitcher sedang terhubung</string>
     <string name="pref_title_connected_advertisement">Terlihat saat sedang terhubung</string>
     <string name="pref_summary_pebble_mtu_limit">Jika Pebble 2/Pebble LE Anda tidak berfungsi sebagaimana mestinya, coba pengaturan ini untuk membatasi MTU (rentang valid 20 – 512)</string>
     <string name="pref_title_pebble_enable_applogs">Aktifkan pencatatan aplikasi jam tangan</string>
@@ -1462,7 +1462,7 @@
     <string name="pref_voice_detect_duration_10">10 detik</string>
     <string name="error_deleting_device">Kesalahan menghapus perangkat: %s</string>
     <string name="open_fw_installer_ensure_device_connected">Pastikan bahwa perangkat %s dihubungkan</string>
-    <string name="pref_summary_datetime_syctimeonconnect">Sinkronkan waktu ke perangkat Gadgetbridge ketika menghubungkan, ketika waktu atau zona waktu berubah di perangkat Android, dan secara berkala</string>
+    <string name="pref_summary_datetime_syctimeonconnect">Sinkronkan waktu ke perangkat WatchSwitcher ketika menghubungkan, ketika waktu atau zona waktu berubah di perangkat Android, dan secara berkala</string>
     <string name="pref_summary_minimize_priority_on">Ikon dalam bilah status dan notifikasi di layar kunci disembunyikan</string>
     <string name="pref_summary_notification_media_ignores_application_list">Proses notifikasi media sebelum daftar aplikasi. Jika preferensi ini tidak dicentang, aplikasi media harus diperbolehkan di daftar aplikasi untuk kendali media bekerja pada perangkat.</string>
     <string name="pref_title_canned_messages_set">Perbarui di perangkat</string>
@@ -1532,7 +1532,7 @@
     <string name="connected">Terhubung</string>
     <string name="test">Uji coba</string>
     <string name="test_notification">Uji coba notifikasi</string>
-    <string name="this_is_a_test_notification_from_gadgetbridge">Ini adalah notifikasi uji coba dari Gadgetbridge</string>
+    <string name="this_is_a_test_notification_from_gadgetbridge">Ini adalah notifikasi uji coba dari WatchSwitcher</string>
     <string name="tap_connected_device_for_app_mananger">Ketuk perangkat terhubung untuk pengelola aplikasi</string>
     <string name="tap_connected_device_for_vibration">Ketuk perangkat terhubung untuk getaran</string>
     <string name="tap_a_device_to_connect">Ketuk sebuah perangkat untuk menghubungkan</string>
@@ -1746,11 +1746,11 @@
     <string name="quick_alarm">Alarm cepat</string>
     <string name="ascentDistance">Jarak naik</string>
     <string name="gps_bds">GPS + BDS</string>
-    <string name="application_name_banglejs_nightly">Bangle.js Gadgetbridge (Nightly)</string>
-    <string name="about_description_banglejs_nightly">Aplikasi pendamping Android untuk Bangle.js dibuat di atas proyek Gadgetbridge, dengan tambahan akses internet. 
+    <string name="application_name_banglejs_nightly">Bangle.js WatchSwitcher (Nightly)</string>
+    <string name="about_description_banglejs_nightly">Aplikasi pendamping Android untuk Bangle.js dibuat di atas proyek WatchSwitcher, dengan tambahan akses internet. 
 \n 
-\nKarena kebijakan Google Play Store, kami tidak diperbolehkan untuk menambahkan tautan donasi dalam aplikasi sendiri, tetapi jika Anda suka aplikasi ini pertimbangkan untuk berdonasi melalui laman beranda Gadgetbridge di bawah.</string>
-    <string name="application_name_main_nightly">Gadgetbridge (Nightly)</string>
+\nKarena kebijakan Google Play Store, kami tidak diperbolehkan untuk menambahkan tautan donasi dalam aplikasi sendiri, tetapi jika Anda suka aplikasi ini pertimbangkan untuk berdonasi melalui laman beranda WatchSwitcher di bawah.</string>
+    <string name="application_name_main_nightly">WatchSwitcher (Nightly)</string>
     <string name="dual_band">Dual Band</string>
     <string name="fw_upgrade_notice_amazfitgtr">Anda akan memasang perangkat tegar %s pada Amazfit GTR Anda. 
 \n 
@@ -1759,10 +1759,10 @@
 \nCatatan: Anda tidak harus memasang .res dan .gps jika berkas ini sama persis dengan yang sebelumnya dipasang. 
 \n 
 \nLANJUTKAN DENGAN RISIKO ANDA SENDIRI!</string>
-    <string name="title_activity_controlcenter_banglejs_main">Bangle.js Gadgetbridge</string>
-    <string name="about_description_main_nightly">Pengganti untuk aplikasi gawai Android sumber tertutup dari vendor yang bebas dan tanpa awan. Rilis nightly dari Gadgetbridge. Tidak dapat dipasang jika Anda sudah punya aplikasi Gadgetbridge atau Pebble, karena konflik dalam penyedia Pebble.</string>
-    <string name="title_activity_controlcenter_main_nopebble">Gadgetbridge Nightly Tanpa Pebble</string>
-    <string name="about_description_main_nopebble">Pengganti untuk aplikasi gawai Android sumber tertutup dari vendor yang bebas dan tanpa awan. Rilis nightly dari Gadgetbridge. Versi ini mengubah nama penyedia Pebble untuk mencegah konflik sehingga beberapa integrasi terkait dengan Pebble tidak dapat bekerja, tetapi tetap dapat dipasang bersamaan dengan Gadgetbridge yang sudah ada.</string>
+    <string name="title_activity_controlcenter_banglejs_main">Bangle.js WatchSwitcher</string>
+    <string name="about_description_main_nightly">Pengganti untuk aplikasi gawai Android sumber tertutup dari vendor yang bebas dan tanpa awan. Rilis nightly dari WatchSwitcher. Tidak dapat dipasang jika Anda sudah punya aplikasi WatchSwitcher atau Pebble, karena konflik dalam penyedia Pebble.</string>
+    <string name="title_activity_controlcenter_main_nopebble">WatchSwitcher Nightly Tanpa Pebble</string>
+    <string name="about_description_main_nopebble">Pengganti untuk aplikasi gawai Android sumber tertutup dari vendor yang bebas dan tanpa awan. Rilis nightly dari WatchSwitcher. Versi ini mengubah nama penyedia Pebble untuk mencegah konflik sehingga beberapa integrasi terkait dengan Pebble tidak dapat bekerja, tetapi tetap dapat dipasang bersamaan dengan WatchSwitcher yang sudah ada.</string>
     <string name="gps">GPS</string>
     <string name="fw_upgrade_notice_amazfitgts">Anda akan memasang perangkat tegar %s pada Amazfit GTS Anda. 
 \n 
@@ -1772,7 +1772,7 @@
 \n 
 \nLANJUTKAN DENGAN RISIKO ANDA SENDIRI!</string>
     <string name="fw_multi_upgrade_notice">Anda akan memasang perangkat tegar %1$s dan %2$s, daripada yang sudah ada saat ini pada Mi Band Anda.</string>
-    <string name="about_activity_title_main_nightly">Tentang Gadgetbridge Nightly</string>
+    <string name="about_activity_title_main_nightly">Tentang WatchSwitcher Nightly</string>
     <string name="custom">Kustom</string>
     <string name="gps_galileo">GPS + GALILEO</string>
     <string name="fw_upgrade_notice_amazfit_band7">Anda akan memasang perangkat tegar %s pada Amazfit Band 7 Anda. 
@@ -1798,7 +1798,7 @@
     <string name="pref_header_sensors_calibration">Kalibrasi Sensor</string>
     <string name="zetime_title_alarm_signaling">Tetapkan jenis isyarat untuk alarm</string>
     <string name="pref_title_pebble_sync_misfit">Sinkron Misfit</string>
-    <string name="pref_summary_custom_deviceicon">Tampilkan sebuah ikon notifikasi Android spesifik perangkat daripada ikon Gadgetbridge ketika terhubung</string>
+    <string name="pref_summary_custom_deviceicon">Tampilkan sebuah ikon notifikasi Android spesifik perangkat daripada ikon WatchSwitcher ketika terhubung</string>
     <string name="pref_title_autoremove_notifications">Hapus notifikasi yang diabaikan secara otomatis</string>
     <string name="pref_summary_autoremove_notifications">Notifikasi dihapus dari perangkat secara otomatis ketika diabaikan dari ponsel</string>
     <string name="pref_pebble_privacy_mode_content">Geser teks notifikasi di luar layar</string>
@@ -1819,7 +1819,7 @@
     <string name="world_clock_delete_confirm_title">Hapus \"%1$s\"</string>
     <string name="title_activity_world_clock_details">Detail Jam Dunia</string>
     <string name="buttons_on_left">Tombol di kiri</string>
-    <string name="discovery_connected_devices_hint">Buat perangkat Anda dapat ditemukan. Perangkat yang sedang terhubung kemungkinan besar tidak akan ditemukan. Aktifkan lokasi (mis. GPS). Nonaktifkan Privacy Guard untuk Gadgetbridge, karena dapat menyebabkan ponsel Anda crash dan reboot. Jika tidak ada perangkat yang ditemukan setelah beberapa menit, coba lagi setelah me-reboot perangkat seluler Anda.</string>
+    <string name="discovery_connected_devices_hint">Buat perangkat Anda dapat ditemukan. Perangkat yang sedang terhubung kemungkinan besar tidak akan ditemukan. Aktifkan lokasi (mis. GPS). Nonaktifkan Privacy Guard untuk WatchSwitcher, karena dapat menyebabkan ponsel Anda crash dan reboot. Jika tidak ada perangkat yang ditemukan setelah beberapa menit, coba lagi setelah me-reboot perangkat seluler Anda.</string>
     <string name="discovery_need_to_enter_authkey">Perangkat ini memerlukan secret auth key, tekan lama pada perangkat untuk memasukkannya. Informasi lebih lanjut ada di situs web.</string>
     <string name="pref_screen_notification_profile_calendar">Notifikasi kalender</string>
     <string name="interval_fifteen_minutes">setiap 15 menit</string>
@@ -1884,11 +1884,11 @@
     <string name="permission_location">%1$s memerlukan akses ke lokasi Anda di latar belakang agar tetap dapat terhubung ke jam tangan Anda meskipun layar Anda mati.\n\nSilakan pilih \"%2$s\" pada layar berikut, lalu ketuk \"Kembali\" untuk kembali ke %1$s.</string>
     <string name="permission_notification_listener">%1$s memerlukan akses ke Notifikasi agar dapat menampilkannya di jam tangan Anda saat layar ponsel Anda mati.\n\nSilakan ketuk \"%2$s\" lalu \"%1$s\" dan aktifkan \"Izinkan Akses Notifikasi\", lalu ketuk \"Kembali\" untuk kembali ke %1$s.</string>
     <string name="permission_display_over_other_apps">%1$s memerlukan izin untuk tampil di atas aplikasi lain agar jam tangan Bangle.js dapat memulai aktivitas melalui intent saat %1$s berjalan di latar belakang.\n\nIni dapat digunakan untuk memulai aplikasi musik dan memutar lagu, serta banyak hal lainnya.\n\nSilakan ketuk \"%2$s\" lalu \"%1$s\" dan aktifkan \"Izinkan tampil di atas aplikasi lain\", lalu ketuk \"Kembali\" untuk kembali ke %1$s.\n\nUntuk menghentikan %1$s meminta izin, buka \"Pengaturan\" dan hapus centang \"Periksa status izin\".\n\nPastikan Anda memberikan izin yang dibutuhkan %1$s agar dapat berfungsi sesuai harapan Anda.</string>
-    <string name="activity_db_management_import_export_explanation">Operasi ekspor/impor menggunakan jalur berikut (lihat di bawah) ke sebuah direktori di perangkat Anda. Direktori ini dapat diakses oleh aplikasi Android lain dan komputer Anda. Dicatat, bahwa direktori dan semua berkas yang berisi akan dihapus jika Anda menghapus Gadgetbridge. Data berisi: 
+    <string name="activity_db_management_import_export_explanation">Operasi ekspor/impor menggunakan jalur berikut (lihat di bawah) ke sebuah direktori di perangkat Anda. Direktori ini dapat diakses oleh aplikasi Android lain dan komputer Anda. Dicatat, bahwa direktori dan semua berkas yang berisi akan dihapus jika Anda menghapus WatchSwitcher. Data berisi: 
 \n Export_preference - pengaturan global 
 \n Export_preference_MAC - pengaturan spesifik perangkat
-\n Gadgetbridge - basis data perangkat dan aktivitas
-\n Gadgetbridge_date - basis data yang diekspor pada sebuah tanggal 
+\n WatchSwitcher - basis data perangkat dan aktivitas
+\n WatchSwitcher_date - basis data yang diekspor pada sebuah tanggal 
 \n *.gpx - rekaman GPS 
 \n *.log - berkas catatan
 \nPastikan Anda sudah tahu tempat untuk mencari berkas yang telah diekspor (atau tempatkan berkas yang Anda ingin impor) di situ:</string>
@@ -2156,9 +2156,9 @@
     <string name="pref_show_changelog">Tampilkan catatan perubahan saat aplikasi dibuka</string>
     <string name="pref_canned_message">Pesan</string>
     <string name="preferences_miband_1_2_warning">Peringatan: Preferensi ini hanya berlaku pada Mi Band 1 dan 2.</string>
-    <string name="pref_show_changelog_summary">Tampilkan catatan perubahan sejak versi terakhir setelah Gadgetbridge diperbarui</string>
-    <string name="pref_theme_dynamic_colors_not_available_warning">Warna dinamis tidak tersedia pada perangkat Anda, hanya Android 12+ mendukung fitur ini. Gadgetbridge akan menggunakan warna Materia) 3 bawaan.</string>
-    <string name="pref_theme_dynamic_colors_explanation">Catatan: untuk tema warna dinamis, Anda perlu mengaktifkan Warna Wallpaper atau Palet Warma di pengaturan Android 12+ Anda. Jika tidak, Gadgetbridge akan menggunakan warna Material 3 bawaan.</string>
+    <string name="pref_show_changelog_summary">Tampilkan catatan perubahan sejak versi terakhir setelah WatchSwitcher diperbarui</string>
+    <string name="pref_theme_dynamic_colors_not_available_warning">Warna dinamis tidak tersedia pada perangkat Anda, hanya Android 12+ mendukung fitur ini. WatchSwitcher akan menggunakan warna Materia) 3 bawaan.</string>
+    <string name="pref_theme_dynamic_colors_explanation">Catatan: untuk tema warna dinamis, Anda perlu mengaktifkan Warna Wallpaper atau Palet Warma di pengaturan Android 12+ Anda. Jika tidak, WatchSwitcher akan menggunakan warna Material 3 bawaan.</string>
     <string name="fw_upgrade_notice_amazfitbip3pro">Anda akan memasang perangkat tegar %s pada Amazfit Bip 3 Pro Anda. 
 \n 
 \nPastikan Anda memasang berkas .fw, dan setelah itu berkas .res. Jam tangan Anda akan dinyalakan ulang setelah memasang berkas .fw. 
@@ -2218,7 +2218,7 @@
     <string name="prefs_wena3_vibration_step_down">Melangkah Bawah</string>
     <string name="prefs_wena3_vibration_smart_item">Getaran Pintar</string>
     <string name="prefs_wena3_home_icon_name_riiiver">Riiiver</string>
-    <string name="prefs_wena3_hint_background_sync">Perbolehkan Wena untuk meminta Gadgetbridge mengunduh data aktivitas dari perangkat</string>
+    <string name="prefs_wena3_hint_background_sync">Perbolehkan Wena untuk meminta WatchSwitcher mengunduh data aktivitas dari perangkat</string>
     <string name="prefs_wena3_home_icon_name_suica">Saldo Suica</string>
     <string name="prefs_wena3_vibration_strength_item_medium">Sedang</string>
     <string name="prefs_wena3_vibration_continuous">Berkelanjutan</string>
@@ -2546,7 +2546,7 @@
     <string name="uploadwatchfaceoperation_failed">Pemasangan wajah jam gagal</string>
     <string name="pref_force_connection_type_auto">Otomatis</string>
     <string name="pref_force_connection_type_title">Paksa jenis koneksi</string>
-    <string name="pref_force_connection_type_description">Anda dapat memaksakan jenis koneksi jika perangkat Anda tidak merespons ke Gadgetbridge</string>
+    <string name="pref_force_connection_type_description">Anda dapat memaksakan jenis koneksi jika perangkat Anda tidak merespons ke WatchSwitcher</string>
     <string name="pref_force_connection_type_ble">Bluetooth LE</string>
     <string name="widget_screen_delete_confirm_description">Apakah Anda yakin ingin menghapus \"%1$s\"?</string>
     <string name="widget_screen_x">Layar %s</string>
@@ -2628,7 +2628,7 @@
     <string name="dashboard_settings">Pengaturan dasbor</string>
     <string name="bottom_nav_devices">Perangkat</string>
     <string name="pref_dashboard_first_title">Tampilkan dasbor terlebih dahulu</string>
-    <string name="pref_dashboard_first_summary">Tampilkan dasbor ketika Gadgetbridge dibuka, daripada layar perangkat</string>
+    <string name="pref_dashboard_first_summary">Tampilkan dasbor ketika WatchSwitcher dibuka, daripada layar perangkat</string>
     <string name="pref_dashboard_cards_title">Tampilkan widget pada kartu</string>
     <string name="pref_dashboard_widget_today_title">Bagan aktivitas</string>
     <string name="pref_dashboard_widget_today_24h_title">Mode 24j</string>
@@ -2692,7 +2692,7 @@
     <string name="cyclingPowerAverage">Daya bersepeda rata-rata</string>
     <string name="cyclingPowerMin">Daya bersepeda minimum</string>
     <string name="cyclingPowerMax">Daya bersepeda maksimum</string>
-    <string name="huawei_trusleep_warning">Peringatan: TruSleep™ belum sepenuhnya diimplementasikan. Mengaktifkannya pada beberapa perangkat akan menyebabkan semua data tidur muncul sebagai tidur ringan di Gadgetbridge!</string>
+    <string name="huawei_trusleep_warning">Peringatan: TruSleep™ belum sepenuhnya diimplementasikan. Mengaktifkannya pada beberapa perangkat akan menyebabkan semua data tidur muncul sebagai tidur ringan di WatchSwitcher!</string>
     <string name="battery_percentage_str">%1$s%%</string>
     <string name="toggle_debug_mode">Saklar mode pengawakutuan</string>
     <string name="toast_setting_requires_reconnect">Pengaturan ini akan diterapkan setelah penghubungan ulang</string>
@@ -2779,7 +2779,7 @@
     <string name="agps_status_current">Saat ini</string>
     <string name="agps_status_error">Kesalahan</string>
     <string name="pref_agps_status">Status AGPS</string>
-    <string name="pref_summary_garmin_default_reply_suffix">Disertakan dengan tambahan set akhiran dalam Gadgetbridge</string>
+    <string name="pref_summary_garmin_default_reply_suffix">Disertakan dengan tambahan set akhiran dalam WatchSwitcher</string>
     <string name="pref_speak_notifications_focus_exclusive_summary_off">Volume pemutaran aplikasi lain akan direndahkan ketika notifikasi ini diucapkan</string>
     <string name="pref_title_notification_times_enabled">Waktu notifikasi</string>
     <string name="pref_summary_notification_times_enabled">Hanya kirim notifikasi pada waktu tertentu</string>
@@ -3838,7 +3838,7 @@
     <string name="idasen_pref_sit_height">Tinggi posisi duduk (dalam sentimeter)</string>
     <string name="idasen_pref_stand_height">Tinggi posisi berdiri (dalam sentimeter)</string>
     <string name="idasen_pref_value_warning">Nilai harus antara 62 – 126 cm</string>
-    <string name="huawei_sleep_breath_summary">Nilai pernapasan Anda di lingkungan yang tenang. Dapat memengaruhi daya tahan baterai.\nPeringatan: Belum disinkronkan ke Gadgetbridge.</string>
+    <string name="huawei_sleep_breath_summary">Nilai pernapasan Anda di lingkungan yang tenang. Dapat memengaruhi daya tahan baterai.\nPeringatan: Belum disinkronkan ke WatchSwitcher.</string>
     <string name="pref_continuous_skin_temperature_measurement_title">Pengukuran suhu kulit berkelanjutan</string>
     <string name="pref_summary_supported_devices">Fitur ini tidak didukung oleh semua perangkat. Klik di sini untuk informasi lebih lanjut.</string>
     <string name="pref_title_supported_devices">Perangkat yang didukung</string>
@@ -3860,7 +3860,7 @@
     <string name="intent_api_broadcast_zip_export_title">Siaran saat ekspor zip</string>
     <string name="intent_api_broadcast_zip_export_summary">Siarkan intent saat ekspor zip selesai</string>
     <string name="intent_activity_sync_title">Sinkronisasi aktivitas</string>
-    <string name="intent_api_allow_global_settings_summary">Izinkan aplikasi pihak ketiga menetapkan pengaturan global Gadgetbridge melalui intent. Harap mulai ulang Gadgetbridge agar berlaku.</string>
+    <string name="intent_api_allow_global_settings_summary">Izinkan aplikasi pihak ketiga menetapkan pengaturan global WatchSwitcher melalui intent. Harap mulai ulang WatchSwitcher agar berlaku.</string>
     <string name="pref_device_logs_summary">Aktifkan logging dari perangkat</string>
     <string name="pref_device_logs_title">Log perangkat</string>
     <string name="pref_app_connection_duration">Durasi koneksi aplikasi</string>
@@ -3873,8 +3873,8 @@
     <string name="open_app">Buka %s</string>
     <string name="install_app_fail">Gagal membuka toko aplikasi untuk menginstal %s</string>
     <string name="loyalty_cards_app_not_installed">Aplikasi kartu loyalitas diperlukan untuk mengelola kartu loyalitas. Silakan instal salah satu yang didukung di bawah ini.</string>
-    <string name="loyalty_cards_app_not_compatible">Versi %1$s yang terinstal tidak kompatibel dengan Gadgetbridge. Silakan perbarui %1$s dan Gadgetbridge ke versi terbaru.</string>
-    <string name="loyalty_cards_app_permissions_summary">Gadgetbridge memerlukan izin baca pada kartu %1s untuk menyinkronkannya. Ketuk tombol ini untuk memberikannya.</string>
+    <string name="loyalty_cards_app_not_compatible">Versi %1$s yang terinstal tidak kompatibel dengan WatchSwitcher. Silakan perbarui %1$s dan WatchSwitcher ke versi terbaru.</string>
+    <string name="loyalty_cards_app_permissions_summary">WatchSwitcher memerlukan izin baca pada kartu %1s untuk menyinkronkannya. Ketuk tombol ini untuk memberikannya.</string>
     <string name="dual_device_mode_title">Mode dua perangkat</string>
     <string name="dual_device_mode_summary">Izinkan menghubungkan headphone ke dua perangkat secara bersamaan</string>
     <string name="reminder">Pengingat</string>
@@ -3932,7 +3932,7 @@
     <string name="activity_db_management_backup_restore_label">Cadangkan dan Pulihkan</string>
     <string name="activity_db_management_export_to_zip">Ekspor zip</string>
     <string name="activity_db_management_import_from_zip">Impor zip</string>
-    <string name="activity_db_management_backup_restore_explanation">Operasi impor/ekspor memungkinkan Anda memigrasikan atau mencadangkan semua pengaturan, perangkat, dan data Gadgetbridge ke dan dari file zip.\n\nMengimpor file akan menghapus semua data, perangkat, dan preferensi yang ada, lalu sepenuhnya menggantinya dengan cadangan.</string>
+    <string name="activity_db_management_backup_restore_explanation">Operasi impor/ekspor memungkinkan Anda memigrasikan atau mencadangkan semua pengaturan, perangkat, dan data WatchSwitcher ke dan dari file zip.\n\nMengimpor file akan menghapus semua data, perangkat, dan preferensi yang ada, lalu sepenuhnya menggantinya dengan cadangan.</string>
     <string name="backup_restore_exporting">Mengekspor ke zip…</string>
     <string name="backup_restore_exporting_preferences">Mengekspor preferensi…</string>
     <string name="backup_restore_exporting_database">Mengekspor basis data…</string>
@@ -3993,13 +3993,13 @@
     <string name="first_start_intro_welcome_to">Selamat datang di</string>
     <string name="first_start_intro_tag_line">Bebaskan diri dari aplikasi proprietary dan layanan cloud milik vendor gawai.</string>
     <string name="first_start_overview_title">Ringkasan</string>
-    <string name="first_start_overview_desc">Gadgetbridge memiliki dua tampilan utama, masing-masing dengan tujuannya sendiri.</string>
+    <string name="first_start_overview_desc">WatchSwitcher memiliki dua tampilan utama, masing-masing dengan tujuannya sendiri.</string>
     <string name="first_start_overview_dashboard">Dasbor memungkinkan Anda mendapatkan gambaran cepat tentang kondisi Anda hari ini. Tampilan kalender menunjukkan status target Anda selama satu bulan penuh.</string>
     <string name="first_start_overview_devices">Tampilan perangkat menampilkan semua perangkat yang telah Anda konfigurasi beserta statusnya, dan memberikan akses ke fungsi khusus perangkat seperti grafik terperinci, pengaturan, aplikasi, dan alarm.</string>
     <string name="first_start_open_source_title">Open Source</string>
-    <string name="first_start_open_source_text">Gadgetbridge adalah aplikasi open source. Aplikasi ini dikembangkan oleh komunitas, untuk komunitas.\n\nSiapa pun dipersilakan untuk berkontribusi melalui kode, dokumentasi, pengujian, dan donasi.\n\nGadgetbridge tidak berisi iklan dan tidak melakukan pelacakan. Aplikasi ini menyimpan data Anda secara lokal di perangkat Android Anda, sehingga 100% ramah privasi.\n\nKunjungi situs web kami untuk informasi lebih lanjut, dokumentasi, dan tautan ke saluran komunikasi kami.</string>
+    <string name="first_start_open_source_text">WatchSwitcher adalah aplikasi open source. Aplikasi ini dikembangkan oleh komunitas, untuk komunitas.\n\nSiapa pun dipersilakan untuk berkontribusi melalui kode, dokumentasi, pengujian, dan donasi.\n\nWatchSwitcher tidak berisi iklan dan tidak melakukan pelacakan. Aplikasi ini menyimpan data Anda secara lokal di perangkat Android Anda, sehingga 100% ramah privasi.\n\nKunjungi situs web kami untuk informasi lebih lanjut, dokumentasi, dan tautan ke saluran komunikasi kami.</string>
     <string name="first_start_permissions_title">Izin</string>
-    <string name="first_start_permissions_desc">Gadgetbridge memerlukan banyak izin untuk menjalankan semua fungsinya. Tinjau izin dan tujuannya di bawah ini.</string>
+    <string name="first_start_permissions_desc">WatchSwitcher memerlukan banyak izin untuk menjalankan semua fungsinya. Tinjau izin dan tujuannya di bawah ini.</string>
     <string name="first_start_permissions_request_all_button">Minta semua izin</string>
     <string name="first_start_permissions_do_not_ask_again">Jangan tanya lagi</string>
     <string name="first_start_permissions_do_not_ask_warning_summary">Tidak memberikan izin dapat menyebabkan masalah. Anda dapat membuka layar ini lagi dari layar Pengaturan.</string>
@@ -4061,7 +4061,7 @@
     <string name="discharge_interval_5">Interval pengosongan 5</string>
     <string name="power_w">Daya dalam W</string>
     <string name="output_power_grid">Daya keluaran ke jaringan dalam W</string>
-    <string name="manual_discharge_summary">saat dinonaktifkan, ini mengasumsikan pengosongan cerdas yang dikendalikan oleh meter daya eksternal (tidak didukung oleh Gadgetbridge)</string>
+    <string name="manual_discharge_summary">saat dinonaktifkan, ini mengasumsikan pengosongan cerdas yang dikendalikan oleh meter daya eksternal (tidak didukung oleh WatchSwitcher)</string>
     <string name="manual_discharge">Interval pengosongan manual</string>
     <string name="summary_battery_discharge_intervals_set">Kirim konfigurasi di bawah ke perangkat</string>
     <string name="battery_minimum_charge">Muatan baterai minimum dalam %</string>
@@ -4276,13 +4276,13 @@
     <string name="activity_print_image_apply_dithering_switch">Terapkan dithering</string>
     <string name="activity_print_image_upscale_switch">Perbesar gambar</string>
     <string name="activity_print_label_print_size">Ukuran cetak (px): %1$d x %2$d</string>
-    <string name="service_notification_collector_service_title">Monitor Notifikasi Gadgetbridge</string>
+    <string name="service_notification_collector_service_title">Monitor Notifikasi WatchSwitcher</string>
     <string name="service_notification_collector_service_text">Memantau notifikasi di latar belakang</string>
     <string name="pref_title_time_interval">Interval waktu</string>
     <string name="pref_summary_time_interval">Batasi ke interval tertentu</string>
     <string name="prefs_key_enable_deprecated_notificationcollectormonitor_title">Aktifkan Notification Collector Monitor Service yang sudah usang</string>
-    <string name="prefs_key_enable_deprecated_notificationcollectormonitor_summary">Memaksa penggunaan layanan foreground kedua untuk menjaga monitor Notifikasi tetap aktif, aktifkan opsi ini jika Gadgetbridge berhenti menerima notifikasi.\nHarap perhatikan bahwa ini dapat menyebabkan notifikasi persisten kedua ditampilkan.\nMulai ulang aplikasi setelah mengalihkan.</string>
-    <string name="pref_printer_print_received_text">Cetak teks yang dibagikan ke Gadgetbridge</string>
+    <string name="prefs_key_enable_deprecated_notificationcollectormonitor_summary">Memaksa penggunaan layanan foreground kedua untuk menjaga monitor Notifikasi tetap aktif, aktifkan opsi ini jika WatchSwitcher berhenti menerima notifikasi.\nHarap perhatikan bahwa ini dapat menyebabkan notifikasi persisten kedua ditampilkan.\nMulai ulang aplikasi setelah mengalihkan.</string>
+    <string name="pref_printer_print_received_text">Cetak teks yang dibagikan ke WatchSwitcher</string>
     <string name="error_queue_is_dead">antrean pemrosesan GB mati</string>
     <string name="error_sender_is_dead">thread pengirim GB mati</string>
     <string name="error_receiver_is_dead">thread penerima GB mati</string>
@@ -4353,12 +4353,12 @@
     <string name="pref_huawei_features_config_info_title">Aktifkan fitur kesehatan tambahan</string>
     <string name="pref_huawei_features_config_info_summary">Mengaktifkan pengaturan di bawah ini akan mengaktifkan fitur kesehatan tambahan pada perangkat Anda. Misalnya, emosi atau ECG.\nCATATAN: Fitur yang tersedia bergantung pada perangkat.</string>
     <string name="pref_huawei_features_config_warning_title">Kirim kode negara dan konfigurasi fitur ke perangkat.</string>
-    <string name="pref_huawei_features_config_warning_summary">Peringatan: Mengaktifkan pengaturan ini saat Gadgetbridge dan aplikasi vendor sama-sama digunakan dapat menyebabkan masalah pada aplikasi vendor dan fungsi perangkat, atau mungkin sama sekali tidak memengaruhi kemampuan perangkat saat ini. Menyetel negara yang salah dapat memengaruhi pengaturan perangkat lain, seperti konfigurasi frekuensi berbasis wilayah, dll. Aktifkan dengan risiko Anda sendiri.\nPerlu menyambungkan ulang perangkat.</string>
+    <string name="pref_huawei_features_config_warning_summary">Peringatan: Mengaktifkan pengaturan ini saat WatchSwitcher dan aplikasi vendor sama-sama digunakan dapat menyebabkan masalah pada aplikasi vendor dan fungsi perangkat, atau mungkin sama sekali tidak memengaruhi kemampuan perangkat saat ini. Menyetel negara yang salah dapat memengaruhi pengaturan perangkat lain, seperti konfigurasi frekuensi berbasis wilayah, dll. Aktifkan dengan risiko Anda sendiri.\nPerlu menyambungkan ulang perangkat.</string>
     <string name="pref_huawei_send_country_code_title">Kirim kode negara</string>
     <string name="pref_huawei_send_country_code_summary">Kirim kode negara ke perangkat.\n Perhatian: kode negara harus diatur</string>
     <string name="pref_huawei_country_code_title">Kode negara</string>
     <string name="pref_huawei_force_features_settings_title">Paksa tampilkan pengaturan yang dibatasi negara</string>
-    <string name="pref_huawei_force_features_settings_summary">Paksa menampilkan pengaturan khusus negara di aplikasi Gadgetbridge.\n Peringatan: Gadgetbridge akan menampilkan pengaturan yang dilaporkan perangkat Anda sebagai didukung. Harap perhatikan bahwa beberapa pengaturan mungkin dibatasi oleh aplikasi vendor pada perangkat Anda dan mungkin tidak berfungsi, atau mungkin berfungsi dengan tidak benar.</string>
+    <string name="pref_huawei_force_features_settings_summary">Paksa menampilkan pengaturan khusus negara di aplikasi WatchSwitcher.\n Peringatan: WatchSwitcher akan menampilkan pengaturan yang dilaporkan perangkat Anda sebagai didukung. Harap perhatikan bahwa beberapa pengaturan mungkin dibatasi oleh aplikasi vendor pada perangkat Anda dan mungkin tidak berfungsi, atau mungkin berfungsi dengan tidak benar.</string>
     <string name="pref_huawei_pulse_wave_arrhythmia">Aritmia gelombang nadi</string>
     <string name="pref_huawei_pulse_wave_arrhythmia_enable_title">Aktifkan aritmia gelombang nadi</string>
     <string name="pref_huawei_pulse_wave_arrhythmia_enable_summary">Aktifkan aritmia gelombang nadi pada perangkat</string>
@@ -4413,7 +4413,7 @@
     <string name="rebble_appstore_fetch_app_info_failed_content_type">Gagal mengambil info aplikasi, content-type salah: %1$s</string>
     <string name="rebble_appstore_fetching_download_file_failed">Gagal mengambil file unduhan: %1$s</string>
     <string name="internet_helper_permission_title">Add-on Internet Helper</string>
-    <string name="internet_helper_permission_summary">Izinkan akses ke aplikasi add-on Internet Helper untuk Gadgetbridge</string>
+    <string name="internet_helper_permission_summary">Izinkan akses ke aplikasi add-on Internet Helper untuk WatchSwitcher</string>
     <string name="notification_channel_pebble_js_runner">Pebble JS runner</string>
     <string name="notification_pebble_js_service_title">Layanan JavaScript Pebble</string>
     <string name="notification_pebble_js_service_text">Menjalankan JavaScript aplikasi/watchface Pebble</string>
@@ -4472,7 +4472,7 @@
     <string name="pref_health_connect_manual_settings">Kelola Data Health Connect</string>
     <string name="pref_health_connect_settings">Pengaturan Health Connect</string>
     <string name="pref_health_connect_settings_summary">Buka pengaturan Android Health Connect</string>
-    <string name="pref_health_connect_disable_notice">Untuk menonaktifkan Ekspor Health Connect, hapus semua izin Gadgetbridge dari aplikasi Health Connect</string>
+    <string name="pref_health_connect_disable_notice">Untuk menonaktifkan Ekspor Health Connect, hapus semua izin WatchSwitcher dari aplikasi Health Connect</string>
     <string name="pref_health_connect_sync_notice">Tergantung pada jumlah data, sinkronisasi Health Connect mungkin memerlukan beberapa menit.</string>
     <string name="pref_health_connect_device_selection">Pilih perangkat</string>
     <string name="pref_health_connect_device_selection_summary">Pilih perangkat mana yang datanya akan disertakan untuk dibagikan ke Health Connect</string>
@@ -4482,12 +4482,12 @@
     <string name="pref_health_connect_sync_on_event_title">Sinkronkan setelah sinkronisasi perangkat</string>
     <string name="pref_health_connect_sync_on_event_summary">Sinkronkan ke Health Connect setelah perangkat yang dipilih selesai menyinkronkan data aktivitasnya.</string>
     <string name="health_connect_permissions_rationale_title">Kebijakan Privasi dan Izin</string>
-    <string name="health_connect_permissions_rationale_message">Gadgetbridge mengumpulkan data dari perangkat Anda dan, dengan izin Anda, membagikannya ke Health Connect. Data ini disimpan di perangkat Anda dan tidak dibagikan kepada pihak ketiga mana pun.</string>
+    <string name="health_connect_permissions_rationale_message">WatchSwitcher mengumpulkan data dari perangkat Anda dan, dengan izin Anda, membagikannya ke Health Connect. Data ini disimpan di perangkat Anda dan tidak dibagikan kepada pihak ketiga mana pun.</string>
     <string name="health_connect_sync_notification_title">Sinkronisasi Health Connect</string>
     <string name="health_connect_sync_notification_message">Menyinkronkan data dengan Health Connect…</string>
     <string name="health_connect_unavailable_summary">Health Connect tidak tersedia di sistem ini.</string>
     <string name="health_connect_permission_check_error">Kesalahan saat memeriksa izin Health Connect.</string>
-    <string name="health_connect_all_denied">Semua izin Health Connect untuk tipe data Gadgetbridge ditolak atau dicabut.</string>
+    <string name="health_connect_all_denied">Semua izin Health Connect untuk tipe data WatchSwitcher ditolak atau dicabut.</string>
     <string name="health_connect_failed_init">Gagal menginisialisasi klien Health Connect setelah perubahan izin.</string>
     <string name="health_connect_all_granted">Health Connect diaktifkan. Sinkronisasi data akan dimulai untuk tipe data yang diizinkan.</string>
     <string name="health_connect_permission_changed">Izin Health Connect berubah.</string>
@@ -4519,7 +4519,7 @@
     <string name="health_connect_sync_now_message">Apakah Anda ingin mulai menyinkronkan data Anda ke Health Connect sekarang?</string>
     <string name="health_connect_sync_now">Sinkronkan Sekarang</string>
     <string name="health_connect_sync_later">Sinkronkan Nanti</string>
-    <string name="health_connect_prompt_full_dao_reset">Semua izin Health Connect untuk Gadgetbridge telah dicabut. Apakah Anda juga menghapus semua Data? Jika ya, mengatur ulang riwayat sinkronisasi akan memungkinkan penyinkronan ulang semua data lama jika Anda memberikan izin lagi.</string>
+    <string name="health_connect_prompt_full_dao_reset">Semua izin Health Connect untuk WatchSwitcher telah dicabut. Apakah Anda juga menghapus semua Data? Jika ya, mengatur ulang riwayat sinkronisasi akan memungkinkan penyinkronan ulang semua data lama jika Anda memberikan izin lagi.</string>
     <string name="health_connect_reset_sync_history">Setel Ulang Riwayat Sinkronisasi</string>
     <string name="health_connect_keep_sync_history">Pertahankan Riwayat Sinkronisasi</string>
     <string name="health_connect_exception">Sinkronisasi Data Health Connect:</string>
@@ -4529,7 +4529,7 @@
     <string name="health_connect_sync_error_for_device">Kesalahan sinkronisasi untuk %1$s (%2$s): %3$s</string>
     <string name="health_connect_permission_denied">Izin ditolak: %1$s. Silakan periksa izin Health Connect.</string>
     <string name="health_connect_sleep_session_title">Sesi Tidur dari %1$s</string>
-    <string name="health_connect_sleep_session_notes">Data tidur dari perangkat Gadgetbridge: %1$s.</string>
+    <string name="health_connect_sleep_session_notes">Data tidur dari perangkat WatchSwitcher: %1$s.</string>
     <string name="infinitime_filesystem_access_disabled">Akses filesystem dinonaktifkan di InfiniTime</string>
     <string name="infinitime_resource_upload_progress_status">Melakukan tindakan %1$d dari %2$d\n%3$s %4$s</string>
     <string name="pref_title_qhybrid_top_button_function">Fungsi tombol atas</string>
@@ -4640,7 +4640,7 @@
     <string name="casio_interval_timer_repeat">Ulangi otomatis</string>
     <string name="casio_interval_timer_default_label">Timer %1$d</string>
     <string name="casio_interval_timer_total">Total: %1$s × %2$d = %3$s</string>
-    <string name="location_permission_required">Izin lokasi diperlukan untuk fitur ini. Untuk mengizinkan pembaruan saat Gadgetbridge berjalan di latar belakang, buka Izin &gt; Lokasi pada layar berikutnya dan pilih “Izinkan setiap waktu”.</string>
+    <string name="location_permission_required">Izin lokasi diperlukan untuk fitur ini. Untuk mengizinkan pembaruan saat WatchSwitcher berjalan di latar belakang, buka Izin &gt; Lokasi pada layar berikutnya dan pilih “Izinkan setiap waktu”.</string>
     <string name="pref_title_xiaomi_device_id">ID Perangkat</string>
     <string name="pref_summary_xiaomi_device_id">Pengidentifikasi ponsel sebagaimana terdaftar di jam tangan saat dipasangkan dengan aplikasi vendor. Diperlukan selain kunci autentikasi oleh jam tangan yang menjalankan Wear OS.</string>
     <string name="create_watchface">Buat watchface</string>
@@ -4668,7 +4668,7 @@
     <string name="expiration_notifications_title">Notifikasi kedaluwarsa</string>
     <string name="auth_expiration_notifications_summary">Tampilkan notifikasi saat autentikasi kedaluwarsa.</string>
     <string name="garmin_oauth_expired_description">Autentikasi untuk %1$s telah kedaluwarsa, beberapa fungsi mungkin tidak berfungsi. Ketuk di sini untuk informasi selengkapnya.</string>
-    <string name="garmin_auth_expired_activity_description">Token autentikasi untuk \'%1$s\' telah kedaluwarsa, sehingga beberapa fungsi (seperti cuaca dan pembaruan AGPS) mungkin berhenti bekerja hingga diautentikasi ulang dengan aplikasi Garmin Connect resmi.\n\nSebagai solusi sementara, Gadgetbridge dapat mengirim respons autentikasi palsu ke jam tangan. Jangan aktifkan ini jika Anda berencana menggunakan aplikasi Garmin Connect resmi atau menghubungkan jam tangan ke internet, karena Anda mungkin perlu melakukan reset pabrik pada jam tangan setelahnya untuk mengautentikasi ulang.</string>
+    <string name="garmin_auth_expired_activity_description">Token autentikasi untuk \'%1$s\' telah kedaluwarsa, sehingga beberapa fungsi (seperti cuaca dan pembaruan AGPS) mungkin berhenti bekerja hingga diautentikasi ulang dengan aplikasi Garmin Connect resmi.\n\nSebagai solusi sementara, WatchSwitcher dapat mengirim respons autentikasi palsu ke jam tangan. Jangan aktifkan ini jika Anda berencana menggunakan aplikasi Garmin Connect resmi atau menghubungkan jam tangan ke internet, karena Anda mungkin perlu melakukan reset pabrik pada jam tangan setelahnya untuk mengautentikasi ulang.</string>
     <string name="dont_show_again">Jangan tampilkan lagi</string>
     <string name="activity_type_e_scooter">Skuter Listrik</string>
     <string name="menuitem_zepp_os_wake_hybridcharge">Bangunkan HybridCharge</string>
@@ -4728,7 +4728,7 @@
     <string name="sony_voice_assistant_mobile_device">Asisten Suara (Perangkat Seluler)</string>
     <string name="haylou_s35_anc_eq_classic">Klasik</string>
     <string name="haylou_s35_anc_eq_bass">Bass</string>
-    <string name="pref_summary_opentracks_packagename_not_installed">Instal OpenTracks untuk memulai/menghentikan perekaman trek GPS dari Gadgetbridge.</string>
+    <string name="pref_summary_opentracks_packagename_not_installed">Instal OpenTracks untuk memulai/menghentikan perekaman trek GPS dari WatchSwitcher.</string>
     <string name="subtitle_list_custom_value_required">Nilai tidak boleh kosong</string>
     <string name="scooter_lock_motor_title">Kunci motor</string>
     <string name="scooter_lock_motor_summary">Setelah 24 jam, skuter akan mati otomatis dan tidak akan tetap terkunci saat mati. Fungsi ini tidak dapat melindungi skuter dari pencurian.</string>
@@ -4893,20 +4893,20 @@
     <string name="qs_tile_clear">Hapus</string>
     <string name="qs_tile_cycle_values">Putar nilai</string>
     <string name="qs_tile_cycle_values_all">Semua nilai</string>
-    <string name="qs_tile_label_1">Gadgetbridge 1</string>
-    <string name="qs_tile_label_2">Gadgetbridge 2</string>
-    <string name="qs_tile_label_3">Gadgetbridge 3</string>
-    <string name="qs_tile_label_4">Gadgetbridge 4</string>
-    <string name="qs_tile_label_5">Gadgetbridge 5</string>
-    <string name="qs_tile_label_6">Gadgetbridge 6</string>
-    <string name="qs_tile_label_7">Gadgetbridge 7</string>
-    <string name="qs_tile_label_8">Gadgetbridge 8</string>
-    <string name="qs_tile_label_9">Gadgetbridge 9</string>
-    <string name="qs_tile_label_10">Gadgetbridge 10</string>
+    <string name="qs_tile_label_1">WatchSwitcher 1</string>
+    <string name="qs_tile_label_2">WatchSwitcher 2</string>
+    <string name="qs_tile_label_3">WatchSwitcher 3</string>
+    <string name="qs_tile_label_4">WatchSwitcher 4</string>
+    <string name="qs_tile_label_5">WatchSwitcher 5</string>
+    <string name="qs_tile_label_6">WatchSwitcher 6</string>
+    <string name="qs_tile_label_7">WatchSwitcher 7</string>
+    <string name="qs_tile_label_8">WatchSwitcher 8</string>
+    <string name="qs_tile_label_9">WatchSwitcher 9</string>
+    <string name="qs_tile_label_10">WatchSwitcher 10</string>
     <string name="activity_summary_set_header_photo_title">Atur foto header</string>
     <string name="activity_summary_remove_header_photo_title">Hapus foto header</string>
     <string name="usb_connect_title">Perangkat USB ditemukan</string>
-    <string name="usb_connect_permission_needed">Gadgetbridge memerlukan izin untuk menggunakan perangkat USB ini.</string>
+    <string name="usb_connect_permission_needed">WatchSwitcher memerlukan izin untuk menggunakan perangkat USB ini.</string>
     <string name="usb_connect_permission_denied">Izin untuk menggunakan perangkat USB ditolak.</string>
     <string name="usb_connect_select_device_type">Pilih jenis perangkat</string>
     <string name="discovery_connect_usb">Hubungkan ke USB</string>

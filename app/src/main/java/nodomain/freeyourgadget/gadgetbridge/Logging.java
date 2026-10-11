@@ -83,7 +83,7 @@ public class Logging {
                 stopFileLogger();
             }
             LOG.info(
-                    "Gadgetbridge version: {}-{}{} {} {}",
+                    "WatchSwitcher version: {}-{}{} {} {}",
                     BuildConfig.VERSION_NAME,
                     BuildConfig.GIT_HASH_SHORT,
                     BuildConfig.GIT_DIRTY_STATUS,
@@ -314,7 +314,7 @@ public class Logging {
         final RollingFileAppender<ILoggingEvent> fileAppender = new RollingFileAppender<>();
 
         rollingPolicy.setContext(lc);
-        rollingPolicy.setFileNamePattern(logDirectory + "/gadgetbridge-%d{yyyy-MM-dd}.%i.log.zip");
+        rollingPolicy.setFileNamePattern(logDirectory + "/watchswitcher-%d{yyyy-MM-dd}.%i.log.zip");
         rollingPolicy.setParent(fileAppender);
         rollingPolicy.setMaxFileSize(FileSize.valueOf(BuildConfig.DEBUG ? "100MB" : "10MB"));
         rollingPolicy.setMaxHistory(10);
@@ -323,7 +323,7 @@ public class Logging {
         fileAppender.setContext(lc);
         fileAppender.setName("FILE");
         fileAppender.setLazy(true);
-        fileAppender.setFile(logDirectory + "/gadgetbridge.log");
+        fileAppender.setFile(logDirectory + "/watchswitcher.log");
         fileAppender.setEncoder(ple);
         // to debug crashes, set immediateFlush to true, otherwise keep it false to improve throughput
         fileAppender.setImmediateFlush(false);

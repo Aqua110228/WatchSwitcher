@@ -41,7 +41,6 @@ fun SettingsScreen(
     onBack: () -> Unit,
     onOpenFullSettings: () -> Unit,
     onOpenHuaweiId: () -> Unit,
-    onOpenClassicUi: () -> Unit,
     onToggleLogging: () -> Unit,
     onShareLogs: () -> Unit,
 ) {
@@ -71,10 +70,6 @@ fun SettingsScreen(
 
             Button(onClick = onOpenFullSettings, modifier = Modifier.fillMaxWidth()) {
                 Text("全部设置")
-            }
-
-            OutlinedButton(onClick = onOpenClassicUi, modifier = Modifier.fillMaxWidth()) {
-                Text("经典界面（仪表盘 / 日志 / 诊断）")
             }
 
             Text("排障", style = MaterialTheme.typography.titleMedium)

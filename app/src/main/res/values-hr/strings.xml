@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="application_name_generic">Gadgetbridge</string>
+    <string name="application_name_generic">WatchSwitcher</string>
     <string name="male">Muško</string>
     <string name="female">Žensko</string>
     <string name="other">Ostalo</string>
@@ -25,14 +25,14 @@
     <string name="controlcenter_set_alias">Postavi pseudonim</string>
     <string name="action_quit">Izlaz</string>
     <string name="action_debug">Debug</string>
-    <string name="title_activity_controlcenter_generic">Gadgetbridge</string>
+    <string name="title_activity_controlcenter_generic">WatchSwitcher</string>
     <string name="dbmanagementactivity_delete_old_activitydb_confirmation">Stvarno izbrisati staru bazu podataka aktivnosti\? Podaci aktivnosti koji nisu uvezeni će se izgubiti.</string>
     <string name="dbmanagementactivity_delete_old_activity_db">Izbrisati staru bazu podataka aktivnosti\?</string>
     <string name="dbmanagementactivity_database_successfully_deleted">Podaci izbrisani.</string>
     <string name="dbmanagementactivity_really_delete_entire_db">Stvarno izbrisati cijelu bazu podataka\? Svi vaši podaci o aktivnostima i podaci o vašim uređajima bit će izgubljeni.</string>
     <string name="dbmanagementactivity_delete_activity_data_title">Izbrisati podatke aktivnosti\?</string>
     <string name="appmananger_app_delete_cache">Izbriši i ukloni iz predmemorije</string>
-    <string name="debugactivity_really_factoryreset">Vraćanjem na tvorničke postavke izbrisat će se svi podaci s povezanog uređaja (ako je podržano). Xiaomi/Huami uređaji također mijenjaju Bluetooth MAC adresu, tako da se pojavljuju kao novi uređaji za Gadgetbridge.</string>
+    <string name="debugactivity_really_factoryreset">Vraćanjem na tvorničke postavke izbrisat će se svi podaci s povezanog uređaja (ako je podržano). Xiaomi/Huami uređaji također mijenjaju Bluetooth MAC adresu, tako da se pojavljuju kao novi uređaji za WatchSwitcher.</string>
     <string name="appmananger_app_delete">Izbriši</string>
     <string name="dbmanagementactivity_old_activity_db_successfully_deleted">Stari podaci o aktivnostima su izbrisani.</string>
     <string name="activity_DB_delete_legacy_button">Izbriši stari DB</string>
@@ -170,7 +170,7 @@
     <string name="unknown_state">Nepoznato stanje</string>
     <string name="_unknown_">(nepoznato)</string>
     <string name="test_notification">Testna obavijest</string>
-    <string name="this_is_a_test_notification_from_gadgetbridge">Ovo je testna obavijest s Gadgetbridge-a</string>
+    <string name="this_is_a_test_notification_from_gadgetbridge">Ovo je testna obavijest s WatchSwitcher-a</string>
     <string name="find_my_phone_notification">Pronađi moj telefon</string>
     <string name="bluetooth_is_not_supported_">Bluetooth nije podržan.</string>
     <string name="bluetooth_is_disabled_">Bluetooth je onemogućen.</string>
@@ -195,11 +195,11 @@
     <string name="pref_chart_heartrate_color_red">Crvena</string>
     <string name="activity_prefs_chart_min_steps_per_minute_for_run">Minimalni broj koraka u minuti za otkrivanje trčanja</string>
     <string name="title_activity_db_management">Upravljanje podacima</string>
-    <string name="activity_db_management_import_export_explanation">Operacije izvoza/uvoza koriste sljedeći put (pogledajte dolje) do direktorija na vašem uređaju. Ovaj direktorij je dostupan drugim Android aplikacijama i vašem računalu. Imajte na umu da se ovaj direktorij i sve datoteke u njemu brišu ako deinstalirate Gadgetbridge. Podaci uključuju:
+    <string name="activity_db_management_import_export_explanation">Operacije izvoza/uvoza koriste sljedeći put (pogledajte dolje) do direktorija na vašem uređaju. Ovaj direktorij je dostupan drugim Android aplikacijama i vašem računalu. Imajte na umu da se ovaj direktorij i sve datoteke u njemu brišu ako deinstalirate WatchSwitcher. Podaci uključuju:
 \n Export_preference - globalne postavke
 \n Export_preference_MAC - postavke specifične za uređaj
-\n Gadgetbridge - bazu podataka uređaja i aktivnosti
-\n Gadgetbridge_date - baza podataka izvezena na datum
+\n WatchSwitcher - bazu podataka uređaja i aktivnosti
+\n WatchSwitcher_date - baza podataka izvezena na datum
 \n *.gpx - GPS zapise
 \n *.log - datoteke zapisa
 \nOčekujte da ćete tamo pronaći svoje izvezene datoteke (ili smjestiti datoteke koje želite uvesti).:</string>
@@ -214,7 +214,7 @@
     <string name="menuitem_goal">Cilj aktivnosti</string>
     <string name="preferences_rtl_settings">Podrška zdesna nalijevo</string>
     <string name="share_log">Dijeli zapisnik</string>
-    <string name="share_log_warning">Imajte na umu da datoteke zapisnika Gadgetbridgea koje mogu sadržavati mnogo osobnih podataka, uključujući, ali ne ograničavajući se na zdravstvene podatke, jedinstvene identifikatore (kao što je MAC adresa uređaja), glazbene postavke itd. Razmislite o uređivanju datoteke i uklanjanju ovih informacija prije slanja datoteke javnom izvješću o problemu.</string>
+    <string name="share_log_warning">Imajte na umu da datoteke zapisnika WatchSwitchera koje mogu sadržavati mnogo osobnih podataka, uključujući, ali ne ograničavajući se na zdravstvene podatke, jedinstvene identifikatore (kao što je MAC adresa uređaja), glazbene postavke itd. Razmislite o uređivanju datoteke i uklanjanju ovih informacija prije slanja datoteke javnom izvješću o problemu.</string>
     <string name="toast_app_must_be_selected">Aplikacija mora biti odabrana da bi se konfigurirala</string>
     <string name="edittext_notification_filter_words_hint">Unesite željene riječi, novi redak za svaku</string>
     <string name="hr_widget_battery">Baterija</string>
@@ -620,14 +620,14 @@
 \n
 \nNASTAVITE NA VLASTITU ODGOVORNOST!</string>
     <string name="pref_title_general_autostartonboot">Pokreni automatski</string>
-    <string name="miband_firmware_unknown_warning">Ovaj firmware nije testiran i možda nije kompatibilan s Gadgetbridgeom.
+    <string name="miband_firmware_unknown_warning">Ovaj firmware nije testiran i možda nije kompatibilan s WatchSwitcherom.
 \n
 \nOBESHRABLJENI ste da ga flešate!</string>
-    <string name="pref_title_general_autoconnectonbluetooth">Povežite se s Gadgetbridge uređajima kada je Bluetooth uključen</string>
+    <string name="pref_title_general_autoconnectonbluetooth">Povežite se s WatchSwitcher uređajima kada je Bluetooth uključen</string>
     <string name="pref_title_general_autoreconnect">Automatsko ponovno povezivanje</string>
     <string name="pref_title_audio_player">Željeni audioplayer</string>
     <string name="pref_theme_dark">Tamna</string>
-    <string name="pref_title_minimize_priority">Sakrij Gadgetbridge obavijest</string>
+    <string name="pref_title_minimize_priority">Sakrij WatchSwitcher obavijest</string>
     <string name="pref_header_notifications">Obavijesti</string>
     <string name="pref_title_notifications_repetitions">Ponavljanja</string>
     <string name="pref_title_notifications_call">Telefonski pozivi</string>
@@ -657,7 +657,7 @@
     <string name="pref_summary_pebble_mtu_limit">Ako vaš Pebble 2/Pebble LE ne radi prema očekivanjima, pokušajte s ovom postavkom ograničiti MTU (važeći raspon 20 – 512)</string>
     <string name="pref_title_pebble_always_ack_pebblekit">Preuranjeno ACK PebbleKit</string>
     <string name="pref_summary_pebble_enable_bgjs">Kada je omogućeno, dopušta brojčanicima prikaz vremena, podataka o bateriji itd.</string>
-    <string name="pref_summary_expose_hr">Omogućuje drugim aplikacijama pristup HR podacima u stvarnom vremenu dok je Gadgetbridge povezan</string>
+    <string name="pref_summary_expose_hr">Omogućuje drugim aplikacijama pristup HR podacima u stvarnom vremenu dok je WatchSwitcher povezan</string>
     <string name="pref_title_expose_hr">pristup HR-u treće strane u stvarnom vremenu</string>
     <string name="pref_title_use_custom_font">Koristite prilagođeni font</string>
     <string name="pref_display_add_device_fab">Gumb za povezivanje novog uređaja</string>
@@ -696,7 +696,7 @@
     <string name="preferences_category_device_specific_settings">Postavke specifične za uređaj</string>
     <string name="horizontal">Horizontalno</string>
     <string name="vertical">Okomito</string>
-    <string name="discovery_connected_devices_hint">Učinite svoj uređaj vidljivim. Trenutno povezani uređaji vjerojatno neće biti otkriveni. Aktivirajte lokaciju (npr. GPS). Onemogućite Privacy Guard za Gadgetbridge jer se može srušiti i ponovno pokrenuti vaš telefon. Ako se uređaj ne pronađe nakon nekoliko minuta, pokušajte ponovno nakon ponovnog pokretanja mobilnog uređaja.</string>
+    <string name="discovery_connected_devices_hint">Učinite svoj uređaj vidljivim. Trenutno povezani uređaji vjerojatno neće biti otkriveni. Aktivirajte lokaciju (npr. GPS). Onemogućite Privacy Guard za WatchSwitcher jer se može srušiti i ponovno pokrenuti vaš telefon. Ako se uređaj ne pronađe nakon nekoliko minuta, pokušajte ponovno nakon ponovnog pokretanja mobilnog uređaja.</string>
     <string name="watch9_pairing_tap_hint">Kada vaš sat vibrira, protresite uređaj ili pritisnite njegov gumb.</string>
     <string name="title_activity_sleepmonitor">Nadzor spavanja</string>
     <string name="pref_write_logfiles">Pisanje datoteka dnevnika</string>
@@ -965,7 +965,7 @@
     <string name="watchface_dialog_widget_timeout_hide_text">Sakrij tekst nakon isteka vremena</string>
     <string name="menuitem_mutephone">Bešumno</string>
     <string name="qhybrid_time_shift">vremenski pomak</string>
-    <string name="gpx_receiver_activity_title">Gadgetbridge GPX prijemnika</string>
+    <string name="gpx_receiver_activity_title">WatchSwitcher GPX prijemnika</string>
     <string name="gpx_receiver_files_received">Primljene GPX datoteke:</string>
     <string name="gpx_receiver_overwrite_some_files">Neke datoteke već postoje. Prepisati\?</string>
     <string name="pref_check_permission_status">Provjerite status dopuštenja</string>
@@ -1163,7 +1163,7 @@
     <string name="add_widget">Dodaj widget</string>
     <string name="appwidget_setting_alarm">Postavljanje alarma za %1$02d:%2$02d</string>
     <string name="about_version">Verzija %s</string>
-    <string name="about_activity_title_generic">O Gadgetbridge</string>
+    <string name="about_activity_title_generic">O WatchSwitcher</string>
     <string name="about_description_generic">Zamjena za libre bez oblaka bez kopiranja za zatvorene aplikacije za Android gadgete od dobavljača.</string>
     <string name="about_core_team_title">Osnovni tim (po redoslijedu doprinosa prvog koda)</string>
     <string name="qhybrid_title_watchface">Konfiguracija brojčanika</string>
@@ -1232,17 +1232,17 @@
     <string name="pref_theme_system">Sustav</string>
     <string name="pref_theme_light">Svjetla</string>
     <string name="pref_title_datetime_syctimeonconnect">Vrijeme sinkronizacije</string>
-    <string name="pref_summary_datetime_syctimeonconnect">Sinkroniziraj vrijeme s Gadgetbridge uređajima prilikom povezivanja, kada se promijeni vrijeme ili vremenska zona na Android uređaju i povremeno</string>
+    <string name="pref_summary_datetime_syctimeonconnect">Sinkroniziraj vrijeme s WatchSwitcher uređajima prilikom povezivanja, kada se promijeni vrijeme ili vremenska zona na Android uređaju i povremeno</string>
     <string name="pref_header_datetime">Datum i vrijeme</string>
     <string name="pref_default">Zadano</string>
-    <string name="miband_firmware_suggest_whitelist">Ako dalje želite nastaviti i stvari nakon toga nastavi raditi ispravno, recitirajte programima Gadgetbridge-a da nastavite u popisu dopuštene verzije %s firmware-a.</string>
-    <string name="miband_firmware_known">Ovaj firmware je testiran i poznato je da je kompatibilan s Gadgetbridgeom.</string>
+    <string name="miband_firmware_suggest_whitelist">Ako dalje želite nastaviti i stvari nakon toga nastavi raditi ispravno, recitirajte programima WatchSwitcher-a da nastavite u popisu dopuštene verzije %s firmware-a.</string>
+    <string name="miband_firmware_known">Ovaj firmware je testiran i poznato je da je kompatibilan s WatchSwitcherom.</string>
     <string name="discovery_attempting_to_pair">Pokušaj uparivanja s %1$s</string>
     <string name="firmware_install_warning">POKUŠAVATE INSTALIRATI FIRMWARE, NASTAVITE NA VLASTITU ODGOVORNOST.
 \n
 \n
 \n Ovaj firmware je za HW reviziju: %s</string>
-    <string name="gadgetbridge_running_generic">Gadgetbridge je pokrenut</string>
+    <string name="gadgetbridge_running_generic">WatchSwitcher je pokrenut</string>
     <string name="tap_a_device_to_connect">Dodirnite uređaj za povezivanje</string>
     <string name="test">Test</string>
     <string name="not_connected">Nije povezano</string>
@@ -1300,7 +1300,7 @@
     <string name="pref_title_pebble_reconnect_attempts">Pokušaji ponovnog povezivanja</string>
     <string name="pref_title_pebble_enable_bgjs">Omogući pozadinski JS</string>
     <string name="pref_summary_pebble_always_ack_pebblekit">Doći će do toga da poruke koje se šalju vanjskim aplikacijama trećih strana uvijek i odmah budu potvrđene</string>
-    <string name="pref_summary_pebble_enable_applogs">Gadgetbridge će zabilježiti zapisnike iz aplikacija za sat (zahtijeva ponovno povezivanje)</string>
+    <string name="pref_summary_pebble_enable_applogs">WatchSwitcher će zabilježiti zapisnike iz aplikacija za sat (zahtijeva ponovno povezivanje)</string>
     <string name="pref_summary_pebble_gatt_clientonly">Ovo je samo za Pebble 2 i eksperimentalno, pokušajte s ovim ako imate problema s povezivanjem</string>
     <string name="pref_title_pebble_gatt_clientonly">Samo GATT klijent</string>
     <string name="pref_title_pebble_enable_applogs">Omogući bilježenje aplikacije za gledanje</string>
@@ -1318,7 +1318,7 @@
     <string name="pref_header_location">Lokacija</string>
     <string name="pref_pebble_privacy_mode_content">Prebacite tekst obavijesti izvan zaslona</string>
     <string name="pref_title_autoremove_notifications">Automatski ukloni odbačene obavijesti</string>
-    <string name="pref_summary_custom_deviceicon">Prikaži ikonu obavijesti za Android za određeni uređaj umjesto ikone Gadgetbridgea kada je spojen</string>
+    <string name="pref_summary_custom_deviceicon">Prikaži ikonu obavijesti za Android za određeni uređaj umjesto ikone WatchSwitchera kada je spojen</string>
     <string name="pref_title_enable_calendar_sync">Sinkroniziraj kalendar</string>
     <string name="pref_summary_enable_calendar_sync">Pošalji događaje iz kalendara na vremensku traku</string>
     <string name="pref_title_custom_deviceicon">Prikaži ikonu obavijesti specifične za uređaj</string>
@@ -1334,7 +1334,7 @@
     <string name="pref_title_canned_reply_suffix">Uobičajeni sufiks</string>
     <string name="pref_blacklist_calendars">Kalendari na crnoj listi</string>
     <string name="pref_header_cannned_messages">Sadržajne poruke</string>
-    <string name="pref_title_weather_summary">Koristi se za pružatelja usluge vremenske prognoze LineageOS, druge verzije Androida moraju koristiti aplikaciju kao što je „Breezy Weather”. Više informacija potražite na Gadgetbridge web-stranici.</string>
+    <string name="pref_title_weather_summary">Koristi se za pružatelja usluge vremenske prognoze LineageOS, druge verzije Androida moraju koristiti aplikaciju kao što je „Breezy Weather”. Više informacija potražite na WatchSwitcher web-stranici.</string>
     <string name="pref_title_weather">Vrijeme</string>
     <string name="pref_title_weather_location">Vremenska lokacija (za davatelja vremena LineageOS)</string>
     <string name="pref_call_privacy_mode_name">Sakrij ime, ali prikaži broj</string>
@@ -1453,9 +1453,9 @@
     <string name="watchface_setting_light_up_on_notification">Zasvijetli pri novoj obavijesti</string>
     <string name="pref_summary_opentracks_packagename">Koristi se za pokretanje/prekidanje snimanja GPS zapisa u vanjskoj aplikaciji za fitness.</string>
     <string name="menuitem_email">E-mail</string>
-    <string name="title_activity_controlcenter_banglejs_main">Bangle.js Gadgetbridge</string>
-    <string name="about_activity_title_banglejs_main">O Bangle.js Gadgetbridge</string>
-    <string name="application_name_banglejs_main">Bangle.js Gadgetbridge</string>
+    <string name="title_activity_controlcenter_banglejs_main">Bangle.js WatchSwitcher</string>
+    <string name="about_activity_title_banglejs_main">O Bangle.js WatchSwitcher</string>
+    <string name="application_name_banglejs_main">Bangle.js WatchSwitcher</string>
     <string name="appmanager_watchface_activate">Aktiviraj</string>
     <string name="vibration_profile_default">Zadano</string>
     <string name="watchface_dialog_widget_cat_custom_widget">Prilagođeni widget</string>

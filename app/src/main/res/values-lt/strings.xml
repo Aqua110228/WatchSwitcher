@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="application_name_generic">Gadgetbridge</string>
-    <string name="title_activity_controlcenter_generic">Gadgetbridge</string>
+    <string name="application_name_generic">WatchSwitcher</string>
+    <string name="title_activity_controlcenter_generic">WatchSwitcher</string>
     <string name="action_settings">Nustatymai</string>
     <string name="action_debug">Šalinti riktus</string>
     <string name="action_quit">Išeiti</string>
@@ -61,25 +61,25 @@
 \nPastaba. Neprivalote instaliuoti .res failo jei failas yra identiškas prieš tai instaliuotam.
 \n
 \nVYKDYKITE TAI SAVO ATSAKOMYBE!</string>
-    <string name="miband_firmware_known">Ši programinė įranga ištestuota ir žinoma, kad suderinama su Gadgetbridge.</string>
-    <string name="miband_firmware_unknown_warning">Ši programinė įranga netestuota ir nežinoma ar ji suderinama su Gadgetbridge.
+    <string name="miband_firmware_known">Ši programinė įranga ištestuota ir žinoma, kad suderinama su WatchSwitcher.</string>
+    <string name="miband_firmware_unknown_warning">Ši programinė įranga netestuota ir nežinoma ar ji suderinama su WatchSwitcher.
 \n
 \nJūs ĮSPĖTAS prieš įrašant!</string>
     <string name="title_activity_settings">Nustatymai</string>
     <string name="pref_header_general">Pagrindiniai nustatymai</string>
-    <string name="pref_title_general_autoconnectonbluetooth">Prisijungti prie Gadgetbridge įrenginio kai Bluetooth bus įjungtas</string>
+    <string name="pref_title_general_autoconnectonbluetooth">Prisijungti prie WatchSwitcher įrenginio kai Bluetooth bus įjungtas</string>
     <string name="pref_title_general_autostartonboot">Paleisti automatiškai</string>
     <string name="pref_title_general_autoreconnect">Pakartotinai prisijungti automatiškai</string>
     <string name="pref_title_audio_player">Pageidaujamas audio grotuvas</string>
     <string name="pref_default">Numatytieji</string>
     <string name="pref_header_datetime">Data ir laikas</string>
     <string name="pref_title_datetime_syctimeonconnect">Sinchronizacijos laikas</string>
-    <string name="pref_summary_datetime_syctimeonconnect">Atnaujinti laiką Gadgetbridge įrenginy jungiantis ir kai laiko ar laiko zonos keičiasi android įrenginy</string>
+    <string name="pref_summary_datetime_syctimeonconnect">Atnaujinti laiką WatchSwitcher įrenginy jungiantis ir kai laiko ar laiko zonos keičiasi android įrenginy</string>
     <string name="pref_title_theme">Tema</string>
     <string name="pref_theme_light">Šviesi</string>
     <string name="pref_theme_dark">Tamsi</string>
     <string name="pref_title_language">Kalba</string>
-    <string name="pref_title_minimize_priority">Slėpti Gadgetbridge pranešimus</string>
+    <string name="pref_title_minimize_priority">Slėpti WatchSwitcher pranešimus</string>
     <string name="pref_summary_minimize_priority_off">Ikonėlė paraštės juostoje ir pranešimas užkrato ekrane rodomi</string>
     <string name="pref_summary_minimize_priority_on">Ikonėlė paraštės juostoje ir pranešimas užkrato ekrane slepiami</string>
     <string name="pref_header_notifications">Pranešimai</string>
@@ -148,11 +148,11 @@
     <string name="_unknown_">(nežinoma)</string>
     <string name="test">Testas</string>
     <string name="test_notification">Testinis pranešimas</string>
-    <string name="this_is_a_test_notification_from_gadgetbridge">Šis testinis pranešimas iš Gadgetbridge</string>
+    <string name="this_is_a_test_notification_from_gadgetbridge">Šis testinis pranešimas iš WatchSwitcher</string>
     <string name="bluetooth_is_not_supported_">Bluetooth nepalaikomas.</string>
     <string name="bluetooth_is_disabled_">Bluetooth išjungtas.</string>
     <string name="tap_a_device_to_connect">Bagstelėkite įrenginį, kad prisijungtumėte</string>
-    <string name="gadgetbridge_running_generic">Gadgetbridge paleistas</string>
+    <string name="gadgetbridge_running_generic">WatchSwitcher paleistas</string>
     <string name="installation_successful">Instaluota</string>
     <string name="title_activity_discovery">Įrenginio paieška</string>
     <string name="discovery_stop_scanning">Stabdyti skenavimą</string>
@@ -224,7 +224,7 @@
     <string name="pref_summary_rtl">Leisti jei įrenginys nerodo kalbų iš dešinės į kairę</string>
     <string name="pref_rtl_max_line_length">Maksimalus iš dešinės į kairę eilutės ilgis</string>
     <string name="debugactivity_really_factoryreset_title">Ar tikrai atkurti gamyklinius nustatymus\?</string>
-    <string name="debugactivity_really_factoryreset">Atkuriant gamyklinius nustatymus bus pašalinti visi duomenys ir prijungto įrenginio (jei palaikoma). Taip pat Xiaomi/Huami įrenginiai pasikeis Bluetooth MAC adresą, todėl jie bus matomi kaip nauji įrenginiai Gadgetbridge.</string>
+    <string name="debugactivity_really_factoryreset">Atkuriant gamyklinius nustatymus bus pašalinti visi duomenys ir prijungto įrenginio (jei palaikoma). Taip pat Xiaomi/Huami įrenginiai pasikeis Bluetooth MAC adresą, todėl jie bus matomi kaip nauji įrenginiai WatchSwitcher.</string>
     <string name="zetime_title_settings">ZeTime nustatymai</string>
     <string name="zetime_title_heartrate">Širdies ritmo nustatymai</string>
     <string name="zetime_heart_rate_alarm_enable">Leisti širdies ritmo aliarmą</string>
@@ -331,8 +331,8 @@
     <string name="pref_summary_device_spec_settings_title_force_time">Priverstinai automatiškai sinchronizuoti laiką prisijungus iš naujo. Analoginės rodyklės gali rodyti neteisingą laiką!</string>
     <string name="pref_title_device_spec_settings_show_raw_graph">Rodyti neapdorotus duomenis aktyvumo diagramoje</string>
     <string name="initialized">inicializuotas</string>
-    <string name="about_activity_title_generic">Apie Gadgetbridge</string>
-    <string name="about_activity_title_banglejs_main">Apie Bangle.js Gadgetbridge</string>
+    <string name="about_activity_title_generic">Apie WatchSwitcher</string>
+    <string name="about_activity_title_banglejs_main">Apie Bangle.js WatchSwitcher</string>
     <string name="controlcenter_power_off">Išjungti</string>
     <string name="controlcenter_power_off_confirm_title">Išjungti</string>
     <string name="controlcenter_power_off_confirm_description">Ar tikrai norite išjungti įrenginį\?</string>
@@ -366,7 +366,7 @@
     <string name="pref_title_message_privacy_mode">Žinučių privatumo režimas</string>
     <string name="pref_message_privacy_mode_off">Rodyti turinį</string>
     <string name="pref_message_privacy_mode_complete">Slėpti turinį</string>
-    <string name="pref_summary_expose_hr">Leisti kitoms programėlėms pasiekti širdies ritmo duomenis realiu laiku, kai Gadgetbridge yra prisijungęs</string>
+    <string name="pref_summary_expose_hr">Leisti kitoms programėlėms pasiekti širdies ritmo duomenis realiu laiku, kai WatchSwitcher yra prisijungęs</string>
     <string name="pref_summary_sync_calendar">Įjungia kalendoriaus įspėjimus, net atsijungus</string>
     <string name="pref_sensors_bp_calibration_low">Kraujo spaudimas DIASTOLINIS (apatinis)</string>
     <string name="pref_sensors_bp_calibration_high">Kraujo spaudimas SISTOLINIS (viršutinis)</string>
@@ -389,7 +389,7 @@
     <string name="find_lost_device_message">Ieškoti %1$s\?</string>
     <string name="appmanager_item_outdated">(pasenęs)</string>
     <string name="pref_summary_notification_delay_calls">Palaukti prieš siunčiant pranešimą apie įeinantį skambutį, sekundėmis.</string>
-    <string name="pref_title_weather_summary">Nadojama LineageOS orų šaltiniui, kitos Android versijos turi naudoti programėlę pvz. \"Weather notification\". Daugiau informacijos rasite Gadgetbridge wiki.</string>
+    <string name="pref_title_weather_summary">Nadojama LineageOS orų šaltiniui, kitos Android versijos turi naudoti programėlę pvz. \"Weather notification\". Daugiau informacijos rasite WatchSwitcher wiki.</string>
     <string name="pref_summary_canned_replies">Atsakyti iš laikrodžio naudojant paruoštus pranešimus</string>
     <string name="pref_summary_connected_advertisement">Padarys įrenginį aptinkamą per Bluetooth, net kai jis prisijungęs</string>
     <string name="pref_title_connected_advertisement">Matomas kai prisijungęs</string>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <string name="application_name_generic">Gadgetbridge</string>
-    <string name="title_activity_controlcenter_generic">Gadgetbridge</string>
+    <string name="application_name_generic">WatchSwitcher</string>
+    <string name="title_activity_controlcenter_generic">WatchSwitcher</string>
     <string name="action_settings">Nastavení</string>
     <string name="action_debug">Ladění</string>
     <string name="action_quit">Ukončit</string>
@@ -40,15 +40,15 @@
     <string name="title_activity_fw_app_insaller">Instalátor FW/aplikací</string>
     <string name="fw_upgrade_notice">Chystáte se nainstalovat %s.</string>
     <string name="fw_multi_upgrade_notice">Chystáte se nainstalovat firmware %1$s a %2$s, namísto firmwaru, který se aktuálně nachází na vašem Mi Band.</string>
-    <string name="miband_firmware_known">Tento firmware byl otestován a je kompatibilní s aplikací Gadgetbridge.</string>
-    <string name="miband_firmware_unknown_warning">Tento firmware nebyl otestován a nemusí být kompatibilní s aplikací Gadgetbridge.
+    <string name="miband_firmware_known">Tento firmware byl otestován a je kompatibilní s aplikací WatchSwitcher.</string>
+    <string name="miband_firmware_unknown_warning">Tento firmware nebyl otestován a nemusí být kompatibilní s aplikací WatchSwitcher.
 \n
 \nNEDOPORUČUJEME jej flashovat!</string>
-    <string name="miband_firmware_suggest_whitelist">Pokud přesto chcete pokračovat a bude-li vše správně fungovat i po aktualizaci, oznamte prosím vývojářům Gadgetbridge, aby označili verzi firmwaru %s jako funkční.</string>
+    <string name="miband_firmware_suggest_whitelist">Pokud přesto chcete pokračovat a bude-li vše správně fungovat i po aktualizaci, oznamte prosím vývojářům WatchSwitcher, aby označili verzi firmwaru %s jako funkční.</string>
     <!--Strings related to Settings-->
     <string name="title_activity_settings">Nastavení</string>
     <string name="pref_header_general">Obecná nastavení</string>
-    <string name="pref_title_general_autoconnectonbluetooth">Připojit Gadgetbridge k zařízením při zapnutí Bluetooth</string>
+    <string name="pref_title_general_autoconnectonbluetooth">Připojit WatchSwitcher k zařízením při zapnutí Bluetooth</string>
     <string name="pref_title_general_autostartonboot">Spouštět automaticky</string>
     <string name="pref_title_general_autoreconnect">Automaticky znovu připojit</string>
     <string name="pref_title_audio_player">Preferovaný přehrávač hudby</string>
@@ -60,7 +60,7 @@
     <string name="pref_theme_light">Světlý</string>
     <string name="pref_theme_dark">Tmavý</string>
     <string name="pref_title_language">Jazyk</string>
-    <string name="pref_title_minimize_priority">Skrýt oznámení Gadgetbridge</string>
+    <string name="pref_title_minimize_priority">Skrýt oznámení WatchSwitcher</string>
     <string name="pref_summary_minimize_priority_off">Ikona ve stavové liště a oznámení na zamčené obrazovce budou zobrazeny</string>
     <string name="pref_summary_minimize_priority_on">Ikona ve stavové liště a oznámení na zamčené obrazovce budou skryty</string>
     <string name="pref_header_notifications">Oznámení</string>
@@ -125,7 +125,7 @@
     <string name="pref_title_pebble_mtu_limit">Pebble 2/LE GATT MTU limity</string>
     <string name="pref_summary_pebble_mtu_limit">Pokud vaše Pebble 2/Pebble LE nepracuje jak má, zkuste toto nastavení pro omezení MTU (povolený rozsah 20–512)</string>
     <string name="pref_title_pebble_enable_applogs">Zapnout logování aplikací hodinek</string>
-    <string name="pref_summary_pebble_enable_applogs">Protokoly aplikací hodinek budou zapisovány aplikací Gadgetbridge (vyžaduje opětovné připojení)</string>
+    <string name="pref_summary_pebble_enable_applogs">Protokoly aplikací hodinek budou zapisovány aplikací WatchSwitcher (vyžaduje opětovné připojení)</string>
     <string name="pref_title_pebble_always_ack_pebblekit">Předčasné potvrzení (ACK) pro PebbleKit</string>
     <string name="pref_summary_pebble_always_ack_pebblekit">Způsobí, že zprávy zaslané externím aplikacím 3. stran budou potvrzeny vždy a okamžitě</string>
     <string name="pref_title_pebble_reconnect_attempts">Pokusů o znovupřipojení</string>
@@ -141,7 +141,7 @@
     <string name="_unknown_">(neznámé)</string>
     <string name="test">Test</string>
     <string name="test_notification">Test oznámení</string>
-    <string name="this_is_a_test_notification_from_gadgetbridge">Toto je testovací oznámení z Gadgetbridge</string>
+    <string name="this_is_a_test_notification_from_gadgetbridge">Toto je testovací oznámení z WatchSwitcher</string>
     <string name="bluetooth_is_not_supported_">Bluetooth není podporován.</string>
     <string name="bluetooth_is_disabled_">Bluetooth je vypnutý.</string>
     <string name="tap_connected_device_for_app_mananger">Dotkněte se zařízení pro App Manager</string>
@@ -149,7 +149,7 @@
     <string name="tap_connected_device_for_vibration">Dotkněte se zařízení pro vibrace</string>
     <string name="tap_a_device_to_connect">Dotkněte se zařízení pro připojení</string>
     <string name="cannot_connect_bt_address_invalid_">Nelze se připojit. Je Bluetooth adresa v pořádku?</string>
-    <string name="gadgetbridge_running_generic">Gadgetbridge běží</string>
+    <string name="gadgetbridge_running_generic">WatchSwitcher běží</string>
     <string name="installing_binary_d_d">Instaluji soubor %1$d/%2$d</string>
     <string name="installation_failed_">Instalace selhala</string>
     <string name="installation_successful">Instalace úspěšná</string>
@@ -188,7 +188,7 @@
     <string name="miband_pairing_using_dummy_userdata">Data uživatele nejsou platná, nyní používám vzorová.</string>
     <string name="miband_pairing_tap_hint">Když Mi Band zavibruje a blikne, dotkněte se jej několikrát po sobě.</string>
     <string name="appinstaller_install">Instalovat</string>
-    <string name="discovery_connected_devices_hint">Nastavte své zařízení jako viditelné. Již připojená zařízení nejspíše nebudou nalezena. Povolte polohu (GPS). Vypněte hlídání soukromí (Privacy Guard) pro Gadgetbridge, protože může způsobit nestabilitu telefonu. Pokud nebude zařízení nalezeno během několika minut, zkuste to znovu po restartu telefonu.</string>
+    <string name="discovery_connected_devices_hint">Nastavte své zařízení jako viditelné. Již připojená zařízení nejspíše nebudou nalezena. Povolte polohu (GPS). Vypněte hlídání soukromí (Privacy Guard) pro WatchSwitcher, protože může způsobit nestabilitu telefonu. Pokud nebude zařízení nalezeno během několika minut, zkuste to znovu po restartu telefonu.</string>
     <string name="discovery_note">Poznámka:</string>
     <string name="candidate_item_device_image">Obrázek zařízení</string>
     <string name="miband_prefs_alias">Jméno/přezdívka</string>
@@ -320,7 +320,7 @@
     <string name="pref_summary_pebble_health_store_raw">Ukládá data v původní podobě, takže je databáze větší, ale umožňuje pozdější vyhodnocení.</string>
     <string name="action_db_management">Správa dat</string>
     <string name="title_activity_db_management">Správa dat</string>
-    <string name="activity_db_management_import_export_explanation">Operace s databází použijí následující cestu (viz níže) ke složce v zařízení. Tato složka je dostupná pro ostatní aplikace Androidu a váš počítač. Nezapomeňte, že tato složka a její obsah jsou vymazány při odinstalaci Gadgetbridge. Soubory obsahují:\n Export_preference - globální nastavení\n Export_preference_MAC - nastavení specifická pro zařízení\n Gadgetbridge - databáze zařízení a aktivit\n Gadgetbridge_date - databáze exportována k datu\n *.gpx - GPS záznamy\n *.log - log soubory\nExportovaná data (nebo místo pro import dat) naleznete zde:</string>
+    <string name="activity_db_management_import_export_explanation">Operace s databází použijí následující cestu (viz níže) ke složce v zařízení. Tato složka je dostupná pro ostatní aplikace Androidu a váš počítač. Nezapomeňte, že tato složka a její obsah jsou vymazány při odinstalaci WatchSwitcher. Soubory obsahují:\n Export_preference - globální nastavení\n Export_preference_MAC - nastavení specifická pro zařízení\n WatchSwitcher - databáze zařízení a aktivit\n WatchSwitcher_date - databáze exportována k datu\n *.gpx - GPS záznamy\n *.log - log soubory\nExportovaná data (nebo místo pro import dat) naleznete zde:</string>
     <string name="dbmanagementactivvity_cannot_access_export_path">Nelze přistoupit na zadanou cestu. Kontaktujte vývojáře.</string>
     <string name="dbmanagementactivity_exported_to">Exportováno do: %1$s</string>
     <string name="dbmanagementactivity_error_exporting_db">Chyba při exportu DB: %1$s</string>
@@ -562,7 +562,7 @@
     <string name="pref_summary_contextual_arabic">Zapnout podporu pro kontextuální arabštinu</string>
     <string name="preferences_rtl_settings">Podpora jazyků zprava doleva</string>
     <string name="share_log">Sdílet protokol</string>
-    <string name="share_log_warning">Nezapomeňte prosím, že ladicí záznamy Gadgetbridge mohou obsahovat osobní informace, zahrnující například zdravotní data, identifikátory (například adresu MAC), hudební preference a podobně. Tyto informace můžete vymazat před odesláním souboru do veřejného hlášení o chybě.</string>
+    <string name="share_log_warning">Nezapomeňte prosím, že ladicí záznamy WatchSwitcher mohou obsahovat osobní informace, zahrnující například zdravotní data, identifikátory (například adresu MAC), hudební preference a podobně. Tyto informace můžete vymazat před odesláním souboru do veřejného hlášení o chybě.</string>
     <string name="warning">Upozornění!</string>
     <string name="no_data">Žádná data</string>
     <string name="preferences_led_color">Barva LED</string>
@@ -571,7 +571,7 @@
     <string name="pref_invalid_frequency_message">Nastavte frekvenci mezi 87.5 a 108.0</string>
     <string name="language_and_region_prefs">Jazyk a místní nastavení</string>
     <string name="debugactivity_really_factoryreset_title">Opravdu uvést do továrního nastavení\?</string>
-    <string name="debugactivity_really_factoryreset">Uvedení do továrního nastavení smaže z připojeného zařízení všechna data (je-li toto podporováno). Xiaomi/Huami také provedou změnu Bluetooth MAC adresy a budou se pro Gadgetbridge tvářit jako nová zařízení.</string>
+    <string name="debugactivity_really_factoryreset">Uvedení do továrního nastavení smaže z připojeného zařízení všechna data (je-li toto podporováno). Xiaomi/Huami také provedou změnu Bluetooth MAC adresy a budou se pro WatchSwitcher tvářit jako nová zařízení.</string>
     <string name="activity_type_exercise">Cvičení</string>
     <string name="title_activity_notification_filter">Filtr oznámení</string>
     <string name="edittext_notification_filter_words_hint">Zadejte požadovaná slova, jedno na řádek</string>
@@ -667,7 +667,7 @@
     <string name="weekstepschart_steps_a_month">Kroky za měsíc</string>
     <string name="weeksleepchart_sleep_a_month">Spánek za měsíc</string>
     <string name="menuitem_nfc">NFC</string>
-    <string name="pref_summary_expose_hr">Umožní ostatním aplikacím přistupovat k datům čidla srdečního tepu dokud Gadgetbridge běží</string>
+    <string name="pref_summary_expose_hr">Umožní ostatním aplikacím přistupovat k datům čidla srdečního tepu dokud WatchSwitcher běží</string>
     <string name="pref_title_expose_hr">Přístup cizích aplikací k čidlu tepu</string>
     <string name="pref_title_use_custom_font">Využít vlastní font</string>
     <string name="pref_summary_use_custom_font">Vaše zařízení má vlastní font s podporou emoji</string>
@@ -765,7 +765,7 @@
     <string name="find_my_phone_notification">Najít telefon</string>
     <string name="notification_channel_high_priority_name">Vysoká priorita</string>
     <string name="pref_title_custom_deviceicon">V notifikační liště použít ikonu zařízení</string>
-    <string name="pref_summary_custom_deviceicon">V notifikační liště Androidu zobrazit ikonu konkrétního připojeného zařízení namísto ikony Gadgetbridge</string>
+    <string name="pref_summary_custom_deviceicon">V notifikační liště Androidu zobrazit ikonu konkrétního připojeného zařízení namísto ikony WatchSwitcher</string>
     <string name="hr_appname_wellness">Wellness</string>
     <string name="hr_appname_workout">Cvičení</string>
     <string name="hr_appname_stopwatch">Stopky</string>
@@ -831,10 +831,10 @@
     <string name="about_contributors">Přispěvatelé</string>
     <string name="about_core_team_title">Centrální tým (v pořadí příspěvku prvního kódu)</string>
     <string name="about_description_generic">Bezcloudová svobodná náhrada za uzavřené Android aplikace gadgetů od jejich výrobců.</string>
-    <string name="about_activity_title_generic">O aplikaci Gadgetbridge</string>
+    <string name="about_activity_title_generic">O aplikaci WatchSwitcher</string>
     <string name="about_title">O aplikaci</string>
     <string name="menuitem_worldclock">Světový Čas</string>
-    <string name="pref_title_weather_summary">Použito pro poskytovatele počasí v systému LineageOS. Ostatní verze Androidu vyžadují aplikaci jako například „Breezy Weather“. Více informací naleznete na webu Gadgetbridge.</string>
+    <string name="pref_title_weather_summary">Použito pro poskytovatele počasí v systému LineageOS. Ostatní verze Androidu vyžadují aplikaci jako například „Breezy Weather“. Více informací naleznete na webu WatchSwitcher.</string>
     <string name="error_version_check_extreme_caution">POZOR: Chyba při kontrole verze! Nedoporučujeme pokračovat! Verze má název „%s“</string>
     <string name="permission_granting_mandatory">Všechna tato oprávnění jsou vyžadována a pokud nebudou udělena, může dojít k nestabilitě</string>
     <string name="activity_detail_show_gps_label">Zobrazit trasu GPS</string>
@@ -1139,7 +1139,7 @@
     <string name="pref_theme_black_background">Ve tmavém motivu použít černé pozadí</string>
     <string name="gpx_receiver_overwrite_some_files">Některé soubory již existují. Přepsat\?</string>
     <string name="gpx_receiver_files_received">GPX soubor(ů) přijato:</string>
-    <string name="gpx_receiver_activity_title">GPX přijímač Gadgetbridge</string>
+    <string name="gpx_receiver_activity_title">GPX přijímač WatchSwitcher</string>
     <string name="activity_summary_detail_editing_gpx_track">Úprava propojené trasy GPX</string>
     <string name="activity_summary_detail_clear_gpx_track">Vymazat trasu GPX</string>
     <string name="activity_summary_detail_select_gpx_track">Vybrat trasu GPX</string>
@@ -1448,22 +1448,22 @@
     <string name="activity_db_management_autoexport_scheduled_no">Automatický export zatím nebyl naplánován.</string>
     <string name="menuitem_email">E-mail</string>
     <string name="gadgetbridge_running_banglejs_main">Bangle.js běží</string>
-    <string name="title_activity_controlcenter_main_nightly">Gadgetbridge Nightly</string>
-    <string name="title_activity_controlcenter_banglejs_main">Bangle.js Gadgetbridge</string>
-    <string name="application_name_banglejs_main">Bangle.js Gadgetbridge</string>
-    <string name="about_activity_title_banglejs_main">O Bangle.js Gadgetbridge</string>
-    <string name="about_description_banglejs_main">Doprovodná aplikace pro Bangle.js pro Android vytvořená na základě projektu Gadgetbridge s přidaným přístupem k internetu.
+    <string name="title_activity_controlcenter_main_nightly">WatchSwitcher Nightly</string>
+    <string name="title_activity_controlcenter_banglejs_main">Bangle.js WatchSwitcher</string>
+    <string name="application_name_banglejs_main">Bangle.js WatchSwitcher</string>
+    <string name="about_activity_title_banglejs_main">O Bangle.js WatchSwitcher</string>
+    <string name="about_description_banglejs_main">Doprovodná aplikace pro Bangle.js pro Android vytvořená na základě projektu WatchSwitcher s přidaným přístupem k internetu.
 \n
-\nVzhledem k pravidlům obchodu Google Play nemůžeme v samotné aplikaci uvést odkaz na dárcovství, pokud se vám tato aplikace ale líbí, zvažte prosím možnost přispět prostřednictvím níže uvedené domovské stránky Gadgetbridge.</string>
-    <string name="application_name_main_nightly">Gadgetbridge (Nightly)</string>
-    <string name="about_activity_title_main_nightly">O aplikaci Gadgetbridge Nightly</string>
+\nVzhledem k pravidlům obchodu Google Play nemůžeme v samotné aplikaci uvést odkaz na dárcovství, pokud se vám tato aplikace ale líbí, zvažte prosím možnost přispět prostřednictvím níže uvedené domovské stránky WatchSwitcher.</string>
+    <string name="application_name_main_nightly">WatchSwitcher (Nightly)</string>
+    <string name="about_activity_title_main_nightly">O aplikaci WatchSwitcher Nightly</string>
     <string name="gadgetbridge_running_main_nightly">Nightly GB běží</string>
-    <string name="application_name_main_nopebble">Gadgetbridge (Nightly, bez poskytovatele služeb Pebble)</string>
-    <string name="about_activity_title_main_nopebble">O aplikaci Gadgetbridge Nightly, bez Pebble</string>
+    <string name="application_name_main_nopebble">WatchSwitcher (Nightly, bez poskytovatele služeb Pebble)</string>
+    <string name="about_activity_title_main_nopebble">O aplikaci WatchSwitcher Nightly, bez Pebble</string>
     <string name="watchface_setting_light_up_on_notification">Rozsvítit obrazovku při oznámení</string>
-    <string name="about_description_main_nightly">Svobodná a lokální náhrada za uzavřenou aplikaci vašeho gadgetu. Nightly vydání Gadgetbridge. Tato verze nelze nainstalovat, máte-li již nainstalovanou jinou verzi aplikace Gadgetbridge nebo Pebble, z důvodu konfliktu v poskytovali služeb Pebble.</string>
-    <string name="title_activity_controlcenter_main_nopebble">Gadgetbridge Nightly, bez Pebble</string>
-    <string name="about_description_main_nopebble">Svobodná a lokální náhrada za uzavřenou aplikaci vašeho gadgetu. Nightly vydání Gadgetbridge. Tato verze má přejmenovanou službu poskytovatele Pebble pro zabránění konfliktů, takže některé integrace Pebble nebudou fungovat, ale tuto verzi je možno nainstalovat paralelně k již nainstalované jiné verzi Gadgetbridge.</string>
+    <string name="about_description_main_nightly">Svobodná a lokální náhrada za uzavřenou aplikaci vašeho gadgetu. Nightly vydání WatchSwitcher. Tato verze nelze nainstalovat, máte-li již nainstalovanou jinou verzi aplikace WatchSwitcher nebo Pebble, z důvodu konfliktu v poskytovali služeb Pebble.</string>
+    <string name="title_activity_controlcenter_main_nopebble">WatchSwitcher Nightly, bez Pebble</string>
+    <string name="about_description_main_nopebble">Svobodná a lokální náhrada za uzavřenou aplikaci vašeho gadgetu. Nightly vydání WatchSwitcher. Tato verze má přejmenovanou službu poskytovatele Pebble pro zabránění konfliktů, takže některé integrace Pebble nebudou fungovat, ale tuto verzi je možno nainstalovat paralelně k již nainstalované jiné verzi WatchSwitcher.</string>
     <string name="gadgetbridge_running_main_nopebble">Nightly NoPebble GB běží</string>
     <string name="pref_screen_notification_idle_alerts">Upozornění na nečinnost</string>
     <string name="pref_screen_vibration_patterns_title">Vzory vibrací</string>
@@ -1505,7 +1505,7 @@
     <string name="prefs_in_ear_detection_summary">Přehrávání hovorů do sluchátek, jsou li v uších</string>
     <string name="heartrate_bpm_130">130 tepů/min</string>
     <string name="pref_title_banglejs_text_bitmap">Text jako Bitmapa</string>
-    <string name="pref_summary_banglejs_text_bitmap">Pokud není možno zobrazit dané slovo pomocí fontu hodinek, Gadgetbridge vykreslí obrázek, který se na hodinkách zobrazí</string>
+    <string name="pref_summary_banglejs_text_bitmap">Pokud není možno zobrazit dané slovo pomocí fontu hodinek, WatchSwitcher vykreslí obrázek, který se na hodinkách zobrazí</string>
     <string name="heartrate_bpm_135">135 tepů/min</string>
     <string name="heartrate_bpm_150">150 tepů/min</string>
     <string name="prefs_stress_monitoring_title">Sledování stresu</string>
@@ -1568,7 +1568,7 @@
     <string name="pref_workout_send_gps_title">Během cvičení posílat GPS do náramku</string>
     <string name="pref_workout_send_gps_summary">Během tréninku odesílat do náramku aktuální GPS polohu</string>
     <string name="notification_gps_text">Odesílání polohy GPS do %1$d zařízení</string>
-    <string name="notification_gps_title">Gadgetbridge GPS</string>
+    <string name="notification_gps_title">WatchSwitcher GPS</string>
     <string name="quick_alarm">Rychlý budík</string>
     <string name="pref_title_banglejs_webview_url">Adresa URL zavaděče aplikací</string>
     <string name="pref_summary_banglejs_webview_url">Pokud chcete vlastní zavaděč aplikací, zadejte sem adresu URL ve formátu https://.../android.html. V opačném případě zanechte prázdné pro https://banglejs.com/apps</string>
@@ -1659,17 +1659,17 @@
     <string name="watchface_setting_button_toggle_backlight">Zapnutí podsvícení</string>
     <string name="pref_write_logfiles_not_available">Inicializace zapisování logů se nezdařila, zápis do souboru není dostupný. Restartujte aplikaci pro pokus o novou inicializaci.</string>
     <string name="devicetype_binary_sensor">Binární senzor</string>
-    <string name="title_activity_controlcenter_banglejs_nightly">Bangle.js Gadgetbridge (Nightly)</string>
-    <string name="about_description_banglejs_nightly">Doprovodná aplikace pro Bangle.js pro Android vytvořená na základě projektu Gadgetbridge s přidaným přístupem k internetu.
+    <string name="title_activity_controlcenter_banglejs_nightly">Bangle.js WatchSwitcher (Nightly)</string>
+    <string name="about_description_banglejs_nightly">Doprovodná aplikace pro Bangle.js pro Android vytvořená na základě projektu WatchSwitcher s přidaným přístupem k internetu.
 \n
-\nVzhledem k pravidlům Obchodu Google Play nemůžeme v samotné aplikaci uvést odkaz na finanční dary, pokud se vám ale tato aplikace líbí, zvažte prosím možnost přispět prostřednictvím níže uvedené domovské stránky Gadgetbridge.</string>
+\nVzhledem k pravidlům Obchodu Google Play nemůžeme v samotné aplikaci uvést odkaz na finanční dary, pokud se vám ale tato aplikace líbí, zvažte prosím možnost přispět prostřednictvím níže uvedené domovské stránky WatchSwitcher.</string>
     <string name="gadgetbridge_running_banglejs_nightly">Nightly Bangle.js běží</string>
     <string name="prefs_hourly_chime">Hodinový signál</string>
     <string name="prefs_hourly_chime_summary">Hodinky pípnou jednou za hodinu</string>
     <string name="step_streaks_achievements_sharing_title">Úspěchy v krocích</string>
-    <string name="application_name_banglejs_nightly">Bangle.js Gadgetbridge (Nightly)</string>
+    <string name="application_name_banglejs_nightly">Bangle.js WatchSwitcher (Nightly)</string>
     <string name="step_streaks_achievements_sharing_message">Moje úspěchy denních cílů kroků!</string>
-    <string name="about_activity_title_banglejs_nightly">O aplikace Bangle.js Gadgetbridge (Nightly)</string>
+    <string name="about_activity_title_banglejs_nightly">O aplikace Bangle.js WatchSwitcher (Nightly)</string>
     <string name="pref_header_time">Čas</string>
     <string name="pref_header_workout">Cvičení</string>
     <string name="pref_summary_screen_on_on_notifications">Zapnout podsvícení displeje při obdržení oznámení</string>
@@ -2040,7 +2040,7 @@
     <string name="quick_attention">Rychlá pozornost</string>
     <string name="changelog_show_full">Více…</string>
     <string name="pref_show_changelog">Zobrazit seznam změn při spuštění aplikace</string>
-    <string name="pref_show_changelog_summary">Zobrazí seznam změn od poslední aktualizace Gadgetbridge</string>
+    <string name="pref_show_changelog_summary">Zobrazí seznam změn od poslední aktualizace WatchSwitcher</string>
     <string name="activity_detail_share_raw_summary">Sdílet nezpracovaný souhrn dat</string>
     <string name="activity_detail_share_raw_details">Sdílet nezpracované podrobnosti</string>
     <string name="stress_relaxed">Uvolněný</string>
@@ -2081,8 +2081,8 @@
     <string name="pref_app_logs_start_summary">Zapnout zaznamenávání ladících informací aplikací</string>
     <string name="changelog_title">Co je nového</string>
     <string name="loyalty_cards_sync_groups">Skupiny k synchronizaci</string>
-    <string name="pref_theme_dynamic_colors_not_available_warning">Dynamické barvy nejsou ve vašem zařízení k dispozici , tato funkce je dostupná pouze od Androidu 12+. Gadgetbridge použije výchozí barvy Material 3.</string>
-    <string name="pref_theme_dynamic_colors_explanation">Poznámka: pro využití barev dynamického tématu je nutno povolit barvy tapety nebo barevné palety v nastavení stylu Androidu 12+. V opačném případě použije Gadgetbridge výchozí barvy Material 3.</string>
+    <string name="pref_theme_dynamic_colors_not_available_warning">Dynamické barvy nejsou ve vašem zařízení k dispozici , tato funkce je dostupná pouze od Androidu 12+. WatchSwitcher použije výchozí barvy Material 3.</string>
+    <string name="pref_theme_dynamic_colors_explanation">Poznámka: pro využití barev dynamického tématu je nutno povolit barvy tapety nebo barevné palety v nastavení stylu Androidu 12+. V opačném případě použije WatchSwitcher výchozí barvy Material 3.</string>
     <string name="georgian">Gruzíjština</string>
     <string name="menuitem_one_tap_measuring">Měření jednotapů</string>
     <string name="activity_type_weightlifting">Vzpírání</string>
@@ -2435,7 +2435,7 @@
     <string name="pref_summary_fossil_hr_nav_vibrate">Zda mají hodinky vibrovat při každém novém nebo změněném navigačním pokynu (pouze, pokud je aplikace v popředí)</string>
     <string name="uploading_watchface">Nahrávám ciferník…</string>
     <string name="pref_force_connection_type_title">Vynutit typ spojení</string>
-    <string name="pref_force_connection_type_description">Můžete zkusit vynutit typ spojení, pokud vaše zařízení neodpovídá aplikaci Gadgetbridge</string>
+    <string name="pref_force_connection_type_description">Můžete zkusit vynutit typ spojení, pokud vaše zařízení neodpovídá aplikaci WatchSwitcher</string>
     <string name="pref_force_connection_type_auto">Automatické</string>
     <string name="pref_force_connection_type_bt_classic">Bluetooth klasický</string>
     <string name="prefs_wena3_hint_weather_statusbar">Zobrazení ikony aktuálních podmínek v levém horním rohu domovské obrazovky</string>
@@ -2547,7 +2547,7 @@
     <string name="activity_type_functional_training">Funkční trénink</string>
     <string name="pref_adaptive_noise_cancelling_summary">Automaticky nastavovat sílu potlačení hluku v závislosti na úrovni hladině okolního zvuku</string>
     <string name="huawei_alarm_smart_description">Neodškrtávejte zaškrtávací políčko inteligentní probuzení.</string>
-    <string name="huawei_trusleep_warning">Varování: funkce TruSleep™ není plně implementována. Její povolení způsobí v Gadgetbridge u některých zařízení zobrazení všech dat o spánku jako lehký spánek!</string>
+    <string name="huawei_trusleep_warning">Varování: funkce TruSleep™ není plně implementována. Její povolení způsobí v WatchSwitcher u některých zařízení zobrazení všech dat o spánku jako lehký spánek!</string>
     <string name="pref_force_enable_spo2_support">Vynutit podporu SpO2</string>
     <string name="purple">Fialová</string>
     <string name="prefs_wena3_item_background_sync">Synchronizace dat aktivit na pozadí</string>
@@ -2557,7 +2557,7 @@
     <string name="huawei_reparse_workout_data">Znovu zpracovat data o cvičení</string>
     <string name="white">Bílá</string>
     <string name="prefs_wena3_title_screen">Nastavení displeje</string>
-    <string name="prefs_wena3_hint_background_sync">Povolit Wena pravidelně žádat Gadgetbridge o stažení dat aktivit ze zařízení</string>
+    <string name="prefs_wena3_hint_background_sync">Povolit Wena pravidelně žádat WatchSwitcher o stažení dat aktivit ze zařízení</string>
     <string name="prefs_wena3_item_rich_design">Použít pěkný vzhled</string>
     <string name="huawei_ignore_wakeup_status_start_description">Může pomoci se správnou detekcí spánku. Viditelné ihned v přehledu denních aktivit.</string>
     <string name="prefs_wena3_hint_rich_design">Přidá zaoblené čtverce kolem ikon na domovské obrazovce</string>
@@ -2708,7 +2708,7 @@
     <string name="devicesetting_scannable_rssi_summary">Minimální hranice RSSI pro detekci</string>
     <string name="dashboard_settings">Nastavení nástěnky</string>
     <string name="sleepasandroid_settings">Sleep As Android</string>
-    <string name="pref_dashboard_first_summary">Po spuštění aplikace Gadgetbridge zobrazit nástěnku namísto obrazovky zařízení</string>
+    <string name="pref_dashboard_first_summary">Po spuštění aplikace WatchSwitcher zobrazit nástěnku namísto obrazovky zařízení</string>
     <string name="pref_dashboard_cards_summary">Vykreslit karty kolem widgetů na nástěnce</string>
     <string name="pref_auto_reply_calls_summary">Mobil automaticky přijme příchozí hovory</string>
     <string name="pref_dashboard_widget_today_upside_down_title">Půlnoc dole</string>
@@ -2741,7 +2741,7 @@
     <string name="pref_dashboard_widget_today_24h_title">24h režim</string>
     <string name="devicesetting_scannable_rssi">Minimální hranice RSSI</string>
     <string name="pref_speak_notifications_aloud_summary">Oznámení budou nahlas přečtena skrze sluchátka</string>
-    <string name="pref_summary_garmin_default_reply_suffix">Přidáno navíc k příponě nastavené v Gadgetbridge</string>
+    <string name="pref_summary_garmin_default_reply_suffix">Přidáno navíc k příponě nastavené v WatchSwitcher</string>
     <string name="pref_summary_huawei_account">Účet Huawei používaný v procesu párování. Jeho nastavení umožňuje párování bez továrního nastavení.</string>
     <string name="pref_summary_wheel_diameter">Průměr kola v palcích. Obvykle 29, 27,5 nebo 26.</string>
     <string name="toast_camera_permission_required">Pro tuto funkci je vyžadováno oprávnění k fotoaparátu.</string>
@@ -3073,7 +3073,7 @@
     <string name="backup_restore_importing">Importování ze souboru zip…</string>
     <string name="backup_restore_importing_files_i_of_n">Importování souborů… %1$d z %2$d</string>
     <string name="activity_db_management_import_from_zip">Importovat zip</string>
-    <string name="activity_db_management_backup_restore_explanation">Operace importu/exportu umožňují migrovat nebo zálohovat všechna nastavení Gadgetbridge, zařízení a data do a ze souboru zip.
+    <string name="activity_db_management_backup_restore_explanation">Operace importu/exportu umožňují migrovat nebo zálohovat všechna nastavení WatchSwitcher, zařízení a data do a ze souboru zip.
 \n
 \nImportováním souboru odstraníte všechna existující data, zařízení a předvolby a kompletně je nahradíte zálohou.</string>
     <string name="backup_restore_exporting">Exportování do souboru zip…</string>
@@ -3197,8 +3197,8 @@
     <string name="permission_manage_dnd_summary">Změna nastavení oznámení v režimu Nerušit</string>
     <string name="menuitem_calories_active_goal">Cíl kalorií (aktivní)</string>
     <string name="first_start_overview_devices">Zobrazení zařízení zobrazuje všechna nastavená zařízení a jejich stav a umožňuje přístup ke specifickým funkcím zařízení, jako jsou podrobné grafy, nastavení, aplikace a budíky.</string>
-    <string name="first_start_overview_desc">Gadgetbridge má dva hlavní pohledy, každý s vlastním účelem.</string>
-    <string name="first_start_open_source_text">Gadgetbridge je aplikace s otevřeným zdrojovým kódem. Je vyvíjena komunitou pro komunitu.\n\nKaždý může přispět prostřednictvím kódu, dokumentace, testování a darů.\n\nGadgetbridge neobsahuje žádné reklamy ani sledování. Vaše data uchovává lokálně ve vašem zařízení, takže je 100% přívětivý k vašemu soukromí.\n\nNavštivte naše webové stránky, kde najdete další informace, dokumentaci a odkazy na naše komunikační kanály.</string>
+    <string name="first_start_overview_desc">WatchSwitcher má dva hlavní pohledy, každý s vlastním účelem.</string>
+    <string name="first_start_open_source_text">WatchSwitcher je aplikace s otevřeným zdrojovým kódem. Je vyvíjena komunitou pro komunitu.\n\nKaždý může přispět prostřednictvím kódu, dokumentace, testování a darů.\n\nWatchSwitcher neobsahuje žádné reklamy ani sledování. Vaše data uchovává lokálně ve vašem zařízení, takže je 100% přívětivý k vašemu soukromí.\n\nNavštivte naše webové stránky, kde najdete další informace, dokumentaci a odkazy na naše komunikační kanály.</string>
     <string name="permission_bluetooth_admin_title">Správa Bluetooth</string>
     <string name="permission_bluetooth_title">Bluetooth</string>
     <string name="permission_bluetooth_summary">Připojení k Bluetooth zařízením</string>
@@ -3216,7 +3216,7 @@
     <string name="first_start_overview_title">Přehled</string>
     <string name="first_start_overview_dashboard">Pomocí nástěnky získáte rychlý přehled o tom, jak se vám dnes daří. Zobrazení kalendáře ukazuje stav vašich cílů za celý měsíc.</string>
     <string name="first_start_open_source_title">Open Source</string>
-    <string name="first_start_permissions_desc">Gadgetbridge potřebuje k provádění všech svých funkcí velké množství oprávnění. Níže si prohlédněte jednotlivá oprávnění a jejich účel.</string>
+    <string name="first_start_permissions_desc">WatchSwitcher potřebuje k provádění všech svých funkcí velké množství oprávnění. Níže si prohlédněte jednotlivá oprávnění a jejich účel.</string>
     <string name="first_start_permissions_request_all_button">Vyžádat všechna oprávnění</string>
     <string name="first_start_permissions_request_button">Vyžádat</string>
     <string name="first_start_get_started_title">Začínáme</string>
@@ -3328,7 +3328,7 @@
     <string name="battery_allow_pass_through">Umožnit průchod baterií</string>
     <string name="about_build_details_copied_to_clipboard">Podrobnosti o sestavení zkopírovány do schránky</string>
     <string name="discharge_interval_5">Interval vybíjení 5</string>
-    <string name="manual_discharge_summary">pokud je vypnuto, předpokládá se inteligentní vybíjení řízené externím měřičem spotřeby (není podporováno aplikací Gadgetbridge)</string>
+    <string name="manual_discharge_summary">pokud je vypnuto, předpokládá se inteligentní vybíjení řízené externím měřičem spotřeby (není podporováno aplikací WatchSwitcher)</string>
     <string name="activity_type_lower_body">Dolní část těla</string>
     <string name="activity_type_upper_body">Horní část těla</string>
     <string name="pref_override_features_title">Přepsat podporované funkce</string>
@@ -3777,7 +3777,7 @@
     <string name="activity_print_image_apply_dithering_switch">Použít dithering</string>
     <string name="activity_print_image_upscale_switch">Upscalovat obrázek</string>
     <string name="activity_print_label_print_size">Velikost tisku (px): %1$d x %2$d</string>
-    <string name="service_notification_collector_service_title">Monitor oznámení Gadgetbridge</string>
+    <string name="service_notification_collector_service_title">Monitor oznámení WatchSwitcher</string>
     <string name="service_notification_collector_service_text">Monitorování oznámení na pozadí</string>
     <string name="phone_calls">Telefonní hovory</string>
     <string name="interval_1_hour">každou hodinu</string>
@@ -3798,7 +3798,7 @@
     <string name="pref_title_time_interval">Časový interval</string>
     <string name="pref_summary_time_interval">Omezit na určité intervaly</string>
     <string name="prefs_key_enable_deprecated_notificationcollectormonitor_title">Povolit zastaralou Službu monitoru sběrače oznámení</string>
-    <string name="prefs_key_enable_deprecated_notificationcollectormonitor_summary">Vynutí použití druhé služby na popředí pro udržení monitoru oznámení v provozu. Tuto možnost aktivujte, pokud Gadgetbridge přestal přijímat oznámení.\nUpozorňujeme, že funkce může způsobit zobrazení druhého trvalého oznámení.\nPo přepnutí restartujte aplikaci.</string>
+    <string name="prefs_key_enable_deprecated_notificationcollectormonitor_summary">Vynutí použití druhé služby na popředí pro udržení monitoru oznámení v provozu. Tuto možnost aktivujte, pokud WatchSwitcher přestal přijímat oznámení.\nUpozorňujeme, že funkce může způsobit zobrazení druhého trvalého oznámení.\nPo přepnutí restartujte aplikaci.</string>
     <string name="exercise_category_bench_press">Bench-press</string>
     <string name="exercise_category_calf_raise">Výpony lýtek</string>
     <string name="exercise_category_carry">Carry</string>
@@ -3845,7 +3845,7 @@
     <string name="helium_content">Obsah hélia</string>
     <string name="oxygen_content">Obsah kyslíku</string>
     <string name="nitrogen_content">Obsah dusíku</string>
-    <string name="pref_printer_print_received_text">Vytisknout text sdílený do Gadgetbridge</string>
+    <string name="pref_printer_print_received_text">Vytisknout text sdílený do WatchSwitcher</string>
     <string name="error_queue_is_dead">Fronta zpracování GB je mrtvá</string>
     <string name="error_sender_is_dead">Vlákno odesílání GB je mrtvé</string>
     <string name="error_receiver_is_dead">Vlákno přijímání GB je mrtvé</string>
@@ -3919,7 +3919,7 @@
     <string name="notif_export_location_not_set">Umístění exportu nenastaveno</string>
     <string name="notif_export_zip_failed_title">Exportování souboru zip selhalo! Zkontrolujte prosím svá nastavení.</string>
     <string name="unknown_error">Neznámá chyba</string>
-    <string name="huawei_sleep_breath_summary">Sledujte své dýchání v tichém prostředí. Může ovlivnit výdrž baterie.\nVarování: zatím není synchronizováno s Gadgetbridge.</string>
+    <string name="huawei_sleep_breath_summary">Sledujte své dýchání v tichém prostředí. Může ovlivnit výdrž baterie.\nVarování: zatím není synchronizováno s WatchSwitcher.</string>
     <string name="intent_api_allow_trigger_zip_export_title">Povolit export souboru zip</string>
     <string name="intent_api_allow_trigger_zip_export_summary">Povolit spuštění exportu souboru zip skrze Intent API</string>
     <string name="intent_api_broadcast_zip_export_title">Vysílat zprávu při exportu souboru zip</string>
@@ -4023,12 +4023,12 @@
     <string name="pref_huawei_features_config_info_title">Povolit doplňkové zdravotní funkce</string>
     <string name="pref_huawei_features_config_info_summary">Povolení nastavení níže aktivuje doplňkové zdravotní funkce na vašem zařízení. Například hlídání emocí nebo EKG.\nUPOZORNĚNÍ: Dostupné funkce závisí na zařízení.</string>
     <string name="pref_huawei_features_config_warning_title">Posílat kódy zemí a nastavení funkcí do zařízení.</string>
-    <string name="pref_huawei_features_config_warning_summary">Varování: Povolení těchto nastavení, když používáte Gadgetbridge i aplikace výrobce, může způsobit problémy s aplikací výrobce a funkcionalitou zařízení, případně nebudete moci vůbec ovládat aktuální zařízení. Nastavení nesprávné země může ovlivnit další nastavení zařízení, například nastavení frekvence založené na oblasti apod. Povolte na vlastní nebezpečí.\nJe vyžadováno opětovné připojení k zařízení.</string>
+    <string name="pref_huawei_features_config_warning_summary">Varování: Povolení těchto nastavení, když používáte WatchSwitcher i aplikace výrobce, může způsobit problémy s aplikací výrobce a funkcionalitou zařízení, případně nebudete moci vůbec ovládat aktuální zařízení. Nastavení nesprávné země může ovlivnit další nastavení zařízení, například nastavení frekvence založené na oblasti apod. Povolte na vlastní nebezpečí.\nJe vyžadováno opětovné připojení k zařízení.</string>
     <string name="pref_huawei_send_country_code_title">Poslat kód země</string>
     <string name="pref_huawei_send_country_code_summary">Poslat kód země do zařízení.\n Upozornění: měl by být nastaven kód země</string>
     <string name="pref_huawei_country_code_title">Kód země</string>
     <string name="pref_huawei_force_features_settings_title">Vynutit zobrazení nastavení omezených na zemi</string>
-    <string name="pref_huawei_force_features_settings_summary">Vynutit zobrazení nastavení specifických pro země v aplikaci Gadgetbridge.\n Varování: Gadgetbridge zobrazí nastavení, která vaše zařízení nahlásí jako podporovaná. Upozorňujeme, že některá nastavení mohou být omezena aplikací výrobce na vašem zařízení a nemusí fungovat, nebo mohou fungovat nesprávně.</string>
+    <string name="pref_huawei_force_features_settings_summary">Vynutit zobrazení nastavení specifických pro země v aplikaci WatchSwitcher.\n Varování: WatchSwitcher zobrazí nastavení, která vaše zařízení nahlásí jako podporovaná. Upozorňujeme, že některá nastavení mohou být omezena aplikací výrobce na vašem zařízení a nemusí fungovat, nebo mohou fungovat nesprávně.</string>
     <string name="pref_huawei_pulse_wave_arrhythmia">Arytmie pulzní vlny</string>
     <string name="pref_huawei_pulse_wave_arrhythmia_enable_title">Povolit arytmii pulzní vlny</string>
     <string name="pref_huawei_pulse_wave_arrhythmia_enable_summary">Aktivovat arytmii pulzní vlny na zařízení</string>
@@ -4100,7 +4100,7 @@
     <string name="rebble_appstore_fetch_app_info_failed_content_type">Získávání informací o aplikaci selhalo, nesprávný typ obsahu: %1$s</string>
     <string name="rebble_appstore_fetching_download_file_failed">Získávání souboru ke stažení selhalo: %1$s</string>
     <string name="internet_helper_permission_title">Doplněk pomocníka s internetem</string>
-    <string name="internet_helper_permission_summary">Udělit přístup k doplňkové aplikaci Pomocník s internetem Gadgetbridge</string>
+    <string name="internet_helper_permission_summary">Udělit přístup k doplňkové aplikaci Pomocník s internetem WatchSwitcher</string>
     <string name="notification_channel_pebble_js_runner">Spouštěč Pebble JS</string>
     <string name="notification_pebble_js_service_title">JavaScriptová služba Pebble</string>
     <string name="notification_pebble_js_service_text">Spouštím JavaScript aplikací/ciferníků Pebble</string>
@@ -4151,7 +4151,7 @@
     <string name="pref_health_connect_manual_settings">Spravovat data služby Health Connect</string>
     <string name="pref_health_connect_settings">Nastavení služby Health Connect</string>
     <string name="pref_health_connect_settings_summary">Otevřít nastavení systému Android pro Health Connect</string>
-    <string name="pref_health_connect_disable_notice">Pro zakázání exportu do služby Health Connect odstraňte všechna oprávnění aplikace Gadgetbridge z aplikace Health Connect</string>
+    <string name="pref_health_connect_disable_notice">Pro zakázání exportu do služby Health Connect odstraňte všechna oprávnění aplikace WatchSwitcher z aplikace Health Connect</string>
     <string name="pref_health_connect_sync_notice">V závislosti na množství dat může synchronizace se službou Health Connect zabrat několik minut.</string>
     <string name="pref_health_connect_device_selection">Vybrat zařízení</string>
     <string name="pref_health_connect_device_selection_summary">Vyberte, ze kterých zařízení chcete zahrnout data ke sdílení se službou Health Connect</string>
@@ -4161,12 +4161,12 @@
     <string name="pref_health_connect_sync_on_event_title">Synchronizovat po synchronizaci zařízení</string>
     <string name="pref_health_connect_sync_on_event_summary">Synchronizovat se službou Health Connect po dokončení synchronizace dat o aktivitách ze zvoleného zařízení.</string>
     <string name="health_connect_permissions_rationale_title">Ochrana soukromí a oprávnění</string>
-    <string name="health_connect_permissions_rationale_message">Aplikace Gadgetbridge sbírá data z vašich zařízení a s vaším svolením je sdílí se službou Health Connect. Tato data jsou uložena na vašem zařízení a nejsou sdílena s žádnými třetími stranami.</string>
+    <string name="health_connect_permissions_rationale_message">Aplikace WatchSwitcher sbírá data z vašich zařízení a s vaším svolením je sdílí se službou Health Connect. Tato data jsou uložena na vašem zařízení a nejsou sdílena s žádnými třetími stranami.</string>
     <string name="health_connect_sync_notification_title">Synchronizace s Health Connect</string>
     <string name="health_connect_sync_notification_message">Synchronizace dat se službou Health Connect…</string>
     <string name="health_connect_unavailable_summary">Služba Health Connect není na tomto systému dostupná.</string>
     <string name="health_connect_permission_check_error">Chyba při kontrole oprávnění služby Health Connect.</string>
-    <string name="health_connect_all_denied">Všechna oprávnění služby Health Connect pro typy dat aplikace Gadgetbridge byla zamítnuta nebo odvolána.</string>
+    <string name="health_connect_all_denied">Všechna oprávnění služby Health Connect pro typy dat aplikace WatchSwitcher byla zamítnuta nebo odvolána.</string>
     <string name="health_connect_failed_init">Nepodařilo se inicializovat klienta Health Connect po změně oprávnění.</string>
     <string name="health_connect_all_granted">Služba Health Connect povolena. Bude spuštěna synchronizace dat u zadaných typů dat.</string>
     <string name="health_connect_permission_changed">Oprávnění služby Health Connect byly změněny.</string>
@@ -4196,7 +4196,7 @@
     <string name="health_connect_sync_now_message">Chcete nyní spustit synchronizaci vašich dat se službou Health Connect?</string>
     <string name="health_connect_sync_now">Synchronizovat nyní</string>
     <string name="health_connect_sync_later">Synchronizovat později</string>
-    <string name="health_connect_prompt_full_dao_reset">Všechna oprávnění služby Health Connect pro aplikaci Gadgetbridge byla odvolána. Smazali jste také všechna data? Pokud ano, resetování historie synchronizace umožní opětovnou synchronizaci starých dat, pokud opět udělíte oprávnění.</string>
+    <string name="health_connect_prompt_full_dao_reset">Všechna oprávnění služby Health Connect pro aplikaci WatchSwitcher byla odvolána. Smazali jste také všechna data? Pokud ano, resetování historie synchronizace umožní opětovnou synchronizaci starých dat, pokud opět udělíte oprávnění.</string>
     <string name="health_connect_reset_sync_history">Resetovat historii synchronizace</string>
     <string name="health_connect_keep_sync_history">Ponechat historii synchronizace</string>
     <string name="health_connect_exception">Synchronizace dat se službou Health Connect:</string>
@@ -4206,7 +4206,7 @@
     <string name="health_connect_sync_error_for_device">Chyba synchronizace %1$s (%2$s): %3$s</string>
     <string name="health_connect_permission_denied">Oprávnění zamítnuto: %1$s. Zkontrolujte prosím oprávnění Health Connect.</string>
     <string name="health_connect_sleep_session_title">Relace spánku od %1$s</string>
-    <string name="health_connect_sleep_session_notes">Data o spánku ze zařízení Gadgetbridge: %1$s.</string>
+    <string name="health_connect_sleep_session_notes">Data o spánku ze zařízení WatchSwitcher: %1$s.</string>
     <string name="pref_header_dashboard">Nástěnka</string>
     <string name="busy_task_fetch_glucose_data">Stahování dat o glukóze</string>
     <string name="glucose_level_threshold_high">Práh vysoké glukózy</string>
@@ -4299,7 +4299,7 @@
     <string name="activity_type_floorball">Florbal</string>
     <string name="pref_summary_supported_devices">Tato funkce není podporována všemi zařízeními. Klikněte sem pro více informací.</string>
     <string name="pref_title_supported_devices">Podporovaná zařízení</string>
-    <string name="intent_api_allow_global_settings_summary">Povolit aplikacím třetích stran nastavovat globální nastavení Gadgetbridge skrze intenty. Pro použití změny restartujte Gadgetbridge.</string>
+    <string name="intent_api_allow_global_settings_summary">Povolit aplikacím třetích stran nastavovat globální nastavení WatchSwitcher skrze intenty. Pro použití změny restartujte WatchSwitcher.</string>
     <string name="pref_title_nautical_units">Námořní jednotky</string>
     <string name="pref_summary_nautical_units">Zobrazit jednotky rychlosti a vzdálenost v uzlech / mílích pro námořní aktivity</string>
     <string name="pref_title_unit_distance">Jednotka vzdálenosti</string>
@@ -4373,8 +4373,8 @@
     <string name="open_app">Otevřít %s</string>
     <string name="install_app_fail">Nepodařilo se otevřít obchod s aplikacemi pro nainstalování %s</string>
     <string name="loyalty_cards_app_not_installed">Pro správu věrnostních kartiček je potřeba samostatná aplikace. Nainstalujte si prosím jednu z podorovaných níže.</string>
-    <string name="loyalty_cards_app_not_compatible">Nainstalovaná verze aplikace %1$s není kompatibilní s Gadgetbridge. Aktualizujte prosím aplikacei %1$s a Gadgetbridge na nejnovější verze.</string>
-    <string name="loyalty_cards_app_permissions_summary">Gadgetbridge potřebuje oprávnění aplikace %1s ke čteníkaret pro jejich synchronizaci. Klepněte na toto tlačítko pro jejich udělení.</string>
+    <string name="loyalty_cards_app_not_compatible">Nainstalovaná verze aplikace %1$s není kompatibilní s WatchSwitcher. Aktualizujte prosím aplikacei %1$s a WatchSwitcher na nejnovější verze.</string>
+    <string name="loyalty_cards_app_permissions_summary">WatchSwitcher potřebuje oprávnění aplikace %1s ke čteníkaret pro jejich synchronizaci. Klepněte na toto tlačítko pro jejich udělení.</string>
     <string name="weight_scale_gram_format">%1$d g</string>
     <string name="internet_firewall_note_subdomain">Domény musí obsahovat celou subdoménu, bez protokolu. Například: „subdomena.example.org“.</string>
     <string name="gymlink_title">GymLink</string>
@@ -4681,16 +4681,16 @@
     <string name="qs_tile_clear">Vymazat</string>
     <string name="qs_tile_cycle_values">Procházet hodnotami</string>
     <string name="qs_tile_cycle_values_all">Všechny hodnoty</string>
-    <string name="qs_tile_label_1">Gadgetbridge 1</string>
-    <string name="qs_tile_label_2">Gadgetbridge 2</string>
-    <string name="qs_tile_label_3">Gadgetbridge 3</string>
-    <string name="qs_tile_label_4">Gadgetbridge 4</string>
-    <string name="qs_tile_label_5">Gadgetbridge 5</string>
-    <string name="qs_tile_label_6">Gadgetbridge 6</string>
-    <string name="qs_tile_label_7">Gadgetbridge 7</string>
-    <string name="qs_tile_label_8">Gadgetbridge 8</string>
-    <string name="qs_tile_label_9">Gadgetbridge 9</string>
-    <string name="qs_tile_label_10">Gadgetbridge 10</string>
+    <string name="qs_tile_label_1">WatchSwitcher 1</string>
+    <string name="qs_tile_label_2">WatchSwitcher 2</string>
+    <string name="qs_tile_label_3">WatchSwitcher 3</string>
+    <string name="qs_tile_label_4">WatchSwitcher 4</string>
+    <string name="qs_tile_label_5">WatchSwitcher 5</string>
+    <string name="qs_tile_label_6">WatchSwitcher 6</string>
+    <string name="qs_tile_label_7">WatchSwitcher 7</string>
+    <string name="qs_tile_label_8">WatchSwitcher 8</string>
+    <string name="qs_tile_label_9">WatchSwitcher 9</string>
+    <string name="qs_tile_label_10">WatchSwitcher 10</string>
     <string name="sony_capture_voice_during_call">Zaznamenávat hlas během hovoru</string>
     <string name="sony_capture_voice_during_call_summary">Váš hlas půjde během hovoru lépe slyšet. Pokud je váš hlas příliš nahlas nebo je zvuk na pozadí příliš rušivý, vypněte prosím tuto funkci.</string>
     <string name="sony_service_link">Odkaz na službu</string>
@@ -4779,7 +4779,7 @@
     <string name="expiration_notifications_title">Oznámení o vypršení</string>
     <string name="auth_expiration_notifications_summary">Zobrazit oznámení po vypršení autentifikace.</string>
     <string name="garmin_oauth_expired_description">Autentifikace %1$s vypršela, některé funkce nemusejí fungovat. Klepněte sem pro více informací.</string>
-    <string name="garmin_auth_expired_activity_description">Autentifikační token „%1$s“ vypršel, takže některé funkce (jako aktualizace počasí a AGPS) mohou přestat fungovat, dokud se opět neautentifikujete pomocí oficiální aplikace Garmin Connect.\n\nJako dočasné řešení může Gadgetbridge místo toho odesílat do hodinek falešné autentifikační odpovědi. Tuto funkci nezapínejte, pokud plánujete používat oficiální aplikaci Garmin Connect nebo připojit hodinky k internetu, protože poté možná budete muset hodinky obnovit do továrního nastavení, abyste je mohli znovu ověřit.</string>
+    <string name="garmin_auth_expired_activity_description">Autentifikační token „%1$s“ vypršel, takže některé funkce (jako aktualizace počasí a AGPS) mohou přestat fungovat, dokud se opět neautentifikujete pomocí oficiální aplikace Garmin Connect.\n\nJako dočasné řešení může WatchSwitcher místo toho odesílat do hodinek falešné autentifikační odpovědi. Tuto funkci nezapínejte, pokud plánujete používat oficiální aplikaci Garmin Connect nebo připojit hodinky k internetu, protože poté možná budete muset hodinky obnovit do továrního nastavení, abyste je mohli znovu ověřit.</string>
     <string name="dont_show_again">Již nezobrazovat</string>
     <string name="activity_type_e_scooter">Elektrokoloběžka</string>
     <string name="permission_navigation_comaps">%1$s potřebuje oprávnění ke čtení navigačních dat CoMaps. Klepněte na „%2$s“ pro přesměrování do systémového nastavení aplikace a povolte oprávnění, poté se vraťte sem a znovu přepněte možnost.</string>
@@ -4869,7 +4869,7 @@
     <string name="menuitem_zepp_os_wake_hybridcharge">Wake HybridCharge</string>
     <string name="menuitem_training_calendar">Tréninkový kalendář</string>
     <string name="usb_connect_title">Nalezeno USB zařízení</string>
-    <string name="usb_connect_permission_needed">Gadgetbridge potřebuje oprávnění k použití tohoto USB zařízení.</string>
+    <string name="usb_connect_permission_needed">WatchSwitcher potřebuje oprávnění k použití tohoto USB zařízení.</string>
     <string name="usb_connect_permission_denied">Oprávnění k použití USB zařízení bylo zamítnuto.</string>
     <string name="usb_connect_select_device_type">Vyberte typ zařízení</string>
     <string name="discovery_connect_usb">Připojit k USB</string>
@@ -4877,12 +4877,12 @@
     <string name="url_development">Vývojová</string>
     <string name="pref_title_xiaomi_device_id">ID zařízení</string>
     <string name="pref_summary_xiaomi_device_id">Identifikátor telefonu tak, jak byl zaregistrován na hodinkách při spárování s aplikací výrobce. Vyžadováno navíc k autentifikačnímu klíči hodinkami, které používají Wear OS.</string>
-    <string name="pref_summary_opentracks_packagename_not_installed">Nainstalujte si OpenTracks pro spuštění/zastavení nahrávání GPS stop z Gadgetbridge.</string>
+    <string name="pref_summary_opentracks_packagename_not_installed">Nainstalujte si OpenTracks pro spuštění/zastavení nahrávání GPS stop z WatchSwitcher.</string>
     <string name="subtitle_list_custom_value_required">Hodnota nemůže být prázdná</string>
     <string name="gpx_include_navigation">Zahrnout podrobnou navigaci</string>
     <string name="gpx_include_navigation_straight">Zahrnout instrukce „Pokračujte rovně“</string>
     <string name="gpx_roundabout_exit">Výjezd %1$d</string>
-    <string name="location_permission_required">Tato funkce vyžaduje oprávnění k přístupu k poloze. Pro umožnění aktualizací při běhu Gadgetbridge na pozadí otevřete na další obrazovce Oprávnění &gt; Poloha a vyberte „Povolit vždy“.</string>
+    <string name="location_permission_required">Tato funkce vyžaduje oprávnění k přístupu k poloze. Pro umožnění aktualizací při běhu WatchSwitcher na pozadí otevřete na další obrazovce Oprávnění &gt; Poloha a vyberte „Povolit vždy“.</string>
     <string name="minutes_360">360 minut</string>
     <string name="minutes_480">480 minut</string>
     <string name="training_optimal_load">Optimální zátěž</string>

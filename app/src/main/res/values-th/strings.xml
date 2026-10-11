@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="about_activity_title_generic">เกี่ยวกับ Gadgetbridge</string>
-    <string name="application_name_generic">Gadgetbridge</string>
-    <string name="gadgetbridge_running_generic">Gadgetbridge กำลังทำงาน</string>
+    <string name="about_activity_title_generic">เกี่ยวกับ WatchSwitcher</string>
+    <string name="application_name_generic">WatchSwitcher</string>
+    <string name="gadgetbridge_running_generic">WatchSwitcher กำลังทำงาน</string>
     <string name="about_description_generic">แอปเสรีไม่สงวนลิขสิทธิ์ ไม่พึ่งระบบคลาวด์ สำหรับใช้ทดแทนแอปจากผู้ผลิตที่ไม่เปิดเผยโค้ดอิสระ</string>
-    <string name="title_activity_controlcenter_generic">Gadgetbridge</string>
-    <string name="about_activity_title_banglejs_main">เกี่ยวกับ Bangle.js Gadgetbridge</string>
+    <string name="title_activity_controlcenter_generic">WatchSwitcher</string>
+    <string name="about_activity_title_banglejs_main">เกี่ยวกับ Bangle.js WatchSwitcher</string>
     <string name="gadgetbridge_running_banglejs_main">Bangle.js กำลังทำงานอยู่</string>
-    <string name="application_name_banglejs_nightly">Bangle.js Gadgetbridge (Nightly)</string>
-    <string name="title_activity_controlcenter_banglejs_nightly">Bangle.js Gadgetbridge (Nightly)</string>
+    <string name="application_name_banglejs_nightly">Bangle.js WatchSwitcher (Nightly)</string>
+    <string name="title_activity_controlcenter_banglejs_nightly">Bangle.js WatchSwitcher (Nightly)</string>
     <string name="gadgetbridge_running_banglejs_nightly">Nightly Bangle.js กำลังทำงานอยู่</string>
-    <string name="about_activity_title_main_nightly">เกี่ยวกับ Gadgetbridge รุ่นทดสอบ</string>
-    <string name="title_activity_controlcenter_main_nightly">Gadgetbridge Nightly</string>
+    <string name="about_activity_title_main_nightly">เกี่ยวกับ WatchSwitcher รุ่นทดสอบ</string>
+    <string name="title_activity_controlcenter_main_nightly">WatchSwitcher Nightly</string>
     <string name="gadgetbridge_running_main_nightly">Nightly GB กำลังทำงานอยู่</string>
-    <string name="application_name_main_nopebble">Gadgetbridge (Nightly โดยไม่มี Pebble provider)</string>
-    <string name="title_activity_controlcenter_main_nopebble">Gadgetbridge Nightly แบบไม่มี Pebbleล</string>
-    <string name="about_activity_title_main_nopebble">About Gadgetbridge Nightly No Pebble</string>
+    <string name="application_name_main_nopebble">WatchSwitcher (Nightly โดยไม่มี Pebble provider)</string>
+    <string name="title_activity_controlcenter_main_nopebble">WatchSwitcher Nightly แบบไม่มี Pebbleล</string>
+    <string name="about_activity_title_main_nopebble">About WatchSwitcher Nightly No Pebble</string>
     <string name="action_settings">การตั้งค่า</string>
     <string name="action_debug">ดีบั้ก</string>
     <string name="action_quit">ออก</string>
@@ -67,28 +67,28 @@
     <string name="title_activity_debug">ดีบั้ก</string>
     <string name="debugactivity_really_factoryreset_title">คืนค่าเรื่มต้นจากโรงงาน?</string>
     <string name="debugactivity_confirm_remove_device_preferences_title">ลบการตั้งค่าของอุปกรณ์?</string>
-    <string name="about_activity_title_banglejs_nightly">เกี่ยวกับ Bangle.js Gadgetbridge (รุ่นทดสอบ)</string>
-    <string name="about_description_main_nightly">แอปเสรีไม่สงวนลิขสิทธิ์ ไม่พึ่งระบบคลาวด์ สำหรับใช้ทดแทนแอปแก็ดเจ็ตต่างๆจากผู้ผลิตที่ไม่เปิดเผยโค้ดอิสระ เวอร์ชั่นทดสอบของ Gadgetbridge ไม่สามารถติดตั้งคู่กันได้หากคุณมีแอป Gadgetbridge หรือ Pebble ติดตั้งอยู่แล้ว เนื่องจากการขัดแย้งกันของ Pebble provider</string>
+    <string name="about_activity_title_banglejs_nightly">เกี่ยวกับ Bangle.js WatchSwitcher (รุ่นทดสอบ)</string>
+    <string name="about_description_main_nightly">แอปเสรีไม่สงวนลิขสิทธิ์ ไม่พึ่งระบบคลาวด์ สำหรับใช้ทดแทนแอปแก็ดเจ็ตต่างๆจากผู้ผลิตที่ไม่เปิดเผยโค้ดอิสระ เวอร์ชั่นทดสอบของ WatchSwitcher ไม่สามารถติดตั้งคู่กันได้หากคุณมีแอป WatchSwitcher หรือ Pebble ติดตั้งอยู่แล้ว เนื่องจากการขัดแย้งกันของ Pebble provider</string>
     <string name="controlcenter_delete_device">ลบอุปกรณ์</string>
     <string name="prefs_activity_in_device_card_title">แสดงข้อมูลกิจกรรมบนการ์ดของอุปกรณ์</string>
     <string name="prefs_activity_in_device_card_title_summary">แสดงจำนวนก้าวเดินปัจจุบัน ระยะทางหรือการนอนหลับบนการ์ดของอุปกรณ์</string>
     <string name="prefs_activity_in_device_card_sleep_title">การนอน</string>
     <string name="prefs_activity_in_device_card_sleep_title_summary">แสดงระยะเวลาการนอน</string>
-    <string name="about_description_banglejs_main">แอป Android ที่ใช้คู่กับ Bangle.js ที่สร้างขึ้นมาจากโครงการ Gadgetbridge อีกที โดยเพื่มเชื่อมต่ออินเตอร์เน็ตเข้ามา
+    <string name="about_description_banglejs_main">แอป Android ที่ใช้คู่กับ Bangle.js ที่สร้างขึ้นมาจากโครงการ WatchSwitcher อีกที โดยเพื่มเชื่อมต่ออินเตอร์เน็ตเข้ามา
 \n
-\nเนื่องจากนโยบายของ Google Play เราจึงไม่สามารถเพื่มช่องการบริจาคในแอปได้โดยตรง แต่ถ้าคุณชอบแอปนี้โปรดพิจารณาบริจาคผ่านหน้าหลักของ Gadgetbridge ด้านล่างนี้</string>
-    <string name="about_description_banglejs_nightly">แอป Android ที่ใช้คู่กับ Bangle.js ที่สร้างขึ้นมาจากโครงการ Gadgetbridge อีกที โดยเพื่มเชื่อมต่ออินเตอร์เน็ตเข้ามา
+\nเนื่องจากนโยบายของ Google Play เราจึงไม่สามารถเพื่มช่องการบริจาคในแอปได้โดยตรง แต่ถ้าคุณชอบแอปนี้โปรดพิจารณาบริจาคผ่านหน้าหลักของ WatchSwitcher ด้านล่างนี้</string>
+    <string name="about_description_banglejs_nightly">แอป Android ที่ใช้คู่กับ Bangle.js ที่สร้างขึ้นมาจากโครงการ WatchSwitcher อีกที โดยเพื่มเชื่อมต่ออินเตอร์เน็ตเข้ามา
 \n
-\nเนื่องจากนโยบายของ Google Play เราจึงไม่สามารถเพื่มช่องการบริจาคในแอปได้โดยตรง แต่ถ้าคุณชอบแอปนี้โปรดพิจารณาบริจาคผ่านหน้าหลักของ Gadgetbridge ด้านล่างนี้</string>
-    <string name="debugactivity_really_factoryreset">การคืนค่าโรงงานจะลบข้อมูลทุกอย่างของอุปกรณ์ Xiaomi/Huami (ที่รองรับ) และยังเปลี่ยนที่อยู่ Bluetooth MAC address ฉะนั้น Gadgetbridge จะมองเห็นเป็นอุปกรณ์ใหม่</string>
-    <string name="application_name_banglejs_main">Bangle.js Gadgetbridge</string>
-    <string name="title_activity_controlcenter_banglejs_main">Bangle.js Gadgetbridge</string>
-    <string name="application_name_main_nightly">Gadgetbridge (รุ่นทดสอบ)</string>
+\nเนื่องจากนโยบายของ Google Play เราจึงไม่สามารถเพื่มช่องการบริจาคในแอปได้โดยตรง แต่ถ้าคุณชอบแอปนี้โปรดพิจารณาบริจาคผ่านหน้าหลักของ WatchSwitcher ด้านล่างนี้</string>
+    <string name="debugactivity_really_factoryreset">การคืนค่าโรงงานจะลบข้อมูลทุกอย่างของอุปกรณ์ Xiaomi/Huami (ที่รองรับ) และยังเปลี่ยนที่อยู่ Bluetooth MAC address ฉะนั้น WatchSwitcher จะมองเห็นเป็นอุปกรณ์ใหม่</string>
+    <string name="application_name_banglejs_main">Bangle.js WatchSwitcher</string>
+    <string name="title_activity_controlcenter_banglejs_main">Bangle.js WatchSwitcher</string>
+    <string name="application_name_main_nightly">WatchSwitcher (รุ่นทดสอบ)</string>
     <string name="about_links">ลิงก์</string>
     <string name="single_band">ช่องความถี่เดี่ยว</string>
     <string name="dual_band">ช่องความถี่คู่</string>
     <string name="debugactivity_confirm_remove_device_preferences">นี่จะเป็นการรีเซ็ตการตั้งค่าของทุกอุปกรณ์ที่เชื่อมต่ออยู่ แน่ใจหรือ?</string>
-    <string name="about_description_main_nopebble">แอปเสรีไม่สงวนลิขสิทธิ์ ไม่พึ่งระบบคลาวด์ สำหรับใช้ทดแทนแอปแก็ดเจ็ตต่างๆจากผู้ผลิตที่ไม่เปิดเผยโค้ดอิสระ เวอร์ชั่นทดสอบของ Gadgetbridge มี Pebble provider ที่ถูกเปลี่ยนชื่อเพื่อป้องกันการขัดแย้งกัน ฉะนั้นการทำงานร่วมกับฟีเจอร์บางอย่างของ Pebble อาจใช้ไม่ได้ แต่สามารถติดตั้งแอปนี้คู่กับแอป Gadgetbridge ที่มีอยู่แล้วได้</string>
+    <string name="about_description_main_nopebble">แอปเสรีไม่สงวนลิขสิทธิ์ ไม่พึ่งระบบคลาวด์ สำหรับใช้ทดแทนแอปแก็ดเจ็ตต่างๆจากผู้ผลิตที่ไม่เปิดเผยโค้ดอิสระ เวอร์ชั่นทดสอบของ WatchSwitcher มี Pebble provider ที่ถูกเปลี่ยนชื่อเพื่อป้องกันการขัดแย้งกัน ฉะนั้นการทำงานร่วมกับฟีเจอร์บางอย่างของ Pebble อาจใช้ไม่ได้ แต่สามารถติดตั้งแอปนี้คู่กับแอป WatchSwitcher ที่มีอยู่แล้วได้</string>
     <string name="appmanager_installed_watchapps">แอปที่ติดตั้งแล้ว</string>
     <string name="appmanager_installed_watchfaces">หน้าปัดนาฬิกาที่ติดตั้งแล้ว</string>
     <string name="about_core_team_title">ผู้ร่วมพัฒนาหลักๆ(ตั้งแต่เรื่มพัฒนาแรกๆ)</string>
@@ -132,7 +132,7 @@
     <string name="discovery_bluetooth_scan">อุปกรณ์บลูทูธที่พบ:</string>
     <string name="menuitem_bluetooth">บลูทูธ</string>
     <string name="discovery_bluetooth_le_scan">อุปกรณ์บลูทูธ LE ที่พบ:</string>
-    <string name="discovery_connected_devices_hint">ตั้งค่าอุปกรณ์ของคุณให้ค้นพบได้, อุปกรณ์ที่เชื่อมต่ออยู่ในปัจจุบันมักจะค้นพบไม่ค่อยได้, เปิดใช้งานตำแหน่ง(เช่น GPS)บน Android 6 ขึ้นไป, ปิดใช้งานฟีเจอร์ Privacy Guard กับ Gadgetbridge เพราะอาจจะทำให้แอปแครชแล้วรีสตาร์ทอุปกรณ์ของคุณ, หากผ่านไปสักพักแล้วไม่พบอุปกรณ์ ให้ลองใหม่อีกครั้งหลังจากรีสตาร์ทอุปกรณ์ชองคุณ</string>
+    <string name="discovery_connected_devices_hint">ตั้งค่าอุปกรณ์ของคุณให้ค้นพบได้, อุปกรณ์ที่เชื่อมต่ออยู่ในปัจจุบันมักจะค้นพบไม่ค่อยได้, เปิดใช้งานตำแหน่ง(เช่น GPS)บน Android 6 ขึ้นไป, ปิดใช้งานฟีเจอร์ Privacy Guard กับ WatchSwitcher เพราะอาจจะทำให้แอปแครชแล้วรีสตาร์ทอุปกรณ์ของคุณ, หากผ่านไปสักพักแล้วไม่พบอุปกรณ์ ให้ลองใหม่อีกครั้งหลังจากรีสตาร์ทอุปกรณ์ชองคุณ</string>
     <string name="search">ค้นหา</string>
     <string name="phone_gps_not_available">GPS ของมือถือไม่สามารถใช้งานได้</string>
     <string name="title_activity_appmanager">ตัวจัดการแอป</string>

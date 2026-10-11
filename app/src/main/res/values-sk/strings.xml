@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <string name="application_name_generic">Gadgetbridge</string>
-    <string name="title_activity_controlcenter_generic">Gadgetbridge</string>
+    <string name="application_name_generic">WatchSwitcher</string>
+    <string name="title_activity_controlcenter_generic">WatchSwitcher</string>
     <string name="action_settings">Nastavenia</string>
     <string name="action_debug">Ladenie</string>
     <string name="action_quit">Ukončiť</string>
@@ -53,11 +53,11 @@
 \n
 \nNETESTOVANÉ, MÔŽE UMŔTVIŤ VAŠE ZARIADENIE, ROBÍTE TO NA VLASTNÉ RIZIKO!</string>
     <string name="fw_multi_upgrade_notice">Nainštaluje firmvér %1$s a %2$s do Mi Band miesto existujúceho.</string>
-    <string name="miband_firmware_known">Tento firmware bol testovaný a je kompatibilný s Gadgetbridge.</string>
-    <string name="miband_firmware_unknown_warning">Tento firmware nebol testovaný a nemusí byť kompatibilný s Gadgetbridge.
+    <string name="miband_firmware_known">Tento firmware bol testovaný a je kompatibilný s WatchSwitcher.</string>
+    <string name="miband_firmware_unknown_warning">Tento firmware nebol testovaný a nemusí byť kompatibilný s WatchSwitcher.
 \n
 \nNedoporučujeme ho nahrávať do Mi Band!</string>
-    <string name="miband_firmware_suggest_whitelist">Ak budete pokračovať a všetko bude dobre fungovať aj potom, upozornite vývojárov Gadgetbridge, aby označili tento firmvér: %s ako vyskúšaný</string>
+    <string name="miband_firmware_suggest_whitelist">Ak budete pokračovať a všetko bude dobre fungovať aj potom, upozornite vývojárov WatchSwitcher, aby označili tento firmvér: %s ako vyskúšaný</string>
     <string name="title_activity_settings">Nastavenia</string>
     <string name="pref_header_general">Základné nastavenia</string>
     <string name="pref_title_general_autoconnectonbluetooth">Pripojiť zariadenie ak je BT zapnutý</string>
@@ -73,7 +73,7 @@
     <string name="pref_theme_light">Svetlá</string>
     <string name="pref_theme_dark">Tmavá</string>
     <string name="pref_title_language">Jazyk</string>
-    <string name="pref_title_minimize_priority">Skryť upozornenia Gadgetbridge</string>
+    <string name="pref_title_minimize_priority">Skryť upozornenia WatchSwitcher</string>
     <string name="pref_summary_minimize_priority_off">Zobraziť ikonu v stavovom riadku a upozornenia na uzamknutej obrazovke</string>
     <string name="pref_summary_minimize_priority_on">V stavovom riadku na obrazovke uzamknutia nebude zobrazená ikona a upozornenie</string>
     <string name="pref_header_notifications">Upozornenia</string>
@@ -145,7 +145,7 @@
     <string name="pref_title_pebble_mtu_limit">Pebble 2/LE GATT MTU ohraničenie</string>
     <string name="pref_summary_pebble_mtu_limit">Ak vaše Pebble 2/Pebble LE nepracuje správne, skúste toto nastavenie pre omezenie MTU (povolený rozsah 20–512)</string>
     <string name="pref_title_pebble_enable_applogs">Zapnúť logovanie Watch App</string>
-    <string name="pref_summary_pebble_enable_applogs">Spôsobí, že logy z aplikácií v hodinkách budú zaznamenávané aplikáciou Gadgetbridge (vyžaduje opätovné pripojenie)</string>
+    <string name="pref_summary_pebble_enable_applogs">Spôsobí, že logy z aplikácií v hodinkách budú zaznamenávané aplikáciou WatchSwitcher (vyžaduje opätovné pripojenie)</string>
     <string name="pref_title_pebble_always_ack_pebblekit">Predčasné potvrdenie (ACK) pre PebbleKit</string>
     <string name="pref_summary_pebble_always_ack_pebblekit">Spôsobí, že správy odosielané externým aplikáciám tretích strán budú vždy a okamžite potvrdené</string>
     <string name="pref_title_pebble_enable_bgjs">Zapnúť JS na pozadí</string>
@@ -168,7 +168,7 @@
     <string name="_unknown_">(neznáme)</string>
     <string name="test">Test</string>
     <string name="test_notification">Test upozornení</string>
-    <string name="this_is_a_test_notification_from_gadgetbridge">Toto je upozornenie z Gadgetbridge</string>
+    <string name="this_is_a_test_notification_from_gadgetbridge">Toto je upozornenie z WatchSwitcher</string>
     <string name="bluetooth_is_not_supported_">BT nie je podporovaný.</string>
     <string name="bluetooth_is_disabled_">BT je vypnutý.</string>
     <string name="tap_connected_device_for_app_mananger">Dotknite sa pripojeného zariadenia pre zobrazenie správcu aplikácií</string>
@@ -176,7 +176,7 @@
     <string name="tap_connected_device_for_vibration">Dotknite sa pripojeného zariadenia pre vibrácie</string>
     <string name="tap_a_device_to_connect">Dotknite sa pripojeného zariadenia pre pripojenie</string>
     <string name="cannot_connect_bt_address_invalid_">Nie je možné pripojiť. Je BT adresa v poriadku?</string>
-    <string name="gadgetbridge_running_generic">Gadgetbridge je spustený</string>
+    <string name="gadgetbridge_running_generic">WatchSwitcher je spustený</string>
     <string name="installing_binary_d_d">Instalujem binárny súbor %1$d/%2$d</string>
     <string name="installation_failed_">Inštalácia zlyhala</string>
     <string name="installation_successful">Inštalácia bola úspešná</string>
@@ -215,7 +215,7 @@
     <string name="miband_pairing_using_dummy_userdata">Užívateľské dáta nie sú platné, teraz používam predvolené.</string>
     <string name="miband_pairing_tap_hint">Keď Mi Band zavibruje a blikne, dotknite sa ho niekoľkokrát po sebe.</string>
     <string name="appinstaller_install">Nainštalovať</string>
-    <string name="discovery_connected_devices_hint">Nastavte svoje zariadenie pre vyhľadanie. Už pripojené zariadenia nebudú vyhľadané. Zapnite lokalizáciu (GPS) na mobiloch s Androidom 6 a vyšším. Vypnite stráženie súkromia pre Gadgetbridge, pretože môže spôsobiť nestabilitu mobilu. Ak nie je zariadenie vyhľadané v priebehu niekoľkých minút, skúste to znovu po reštarte mobilu.</string>
+    <string name="discovery_connected_devices_hint">Nastavte svoje zariadenie pre vyhľadanie. Už pripojené zariadenia nebudú vyhľadané. Zapnite lokalizáciu (GPS) na mobiloch s Androidom 6 a vyšším. Vypnite stráženie súkromia pre WatchSwitcher, pretože môže spôsobiť nestabilitu mobilu. Ak nie je zariadenie vyhľadané v priebehu niekoľkých minút, skúste to znovu po reštarte mobilu.</string>
     <string name="discovery_note">Poznámka:</string>
     <string name="candidate_item_device_image">Obraz zariadenia</string>
     <string name="miband_prefs_alias">Názov/prezývka</string>
@@ -459,7 +459,7 @@
     <string name="kind_watchface">Ciferník</string>
     <string name="devicetype_unknown">Neznáme zariadenie</string>
     <string name="choose_auto_export_location">Vyberte umiestnenie exportu</string>
-    <string name="notification_channel_name">Gadgetbridge upozornenia</string>
+    <string name="notification_channel_name">WatchSwitcher upozornenia</string>
     <string name="controlcenter_connect">Pripojiť</string>
     <string name="on">Zap.</string>
     <string name="mi2_prefs_button_press_broadcast_default_value" translatable="false">nodomain.freeyourgadget.gadgetbridge.ButtonPressed</string>
@@ -472,7 +472,7 @@
     <string name="sonyswr12_settings_alarm_interval_summary">Interval inteligentného alarmu je interval pred nainštalovaným alarmom. V tomto intervale sa zariadenie pokúša zistiť najľahšiu fázu spánku, aby sa používateľ zobudil</string>
     <string name="controlcenter_change_led_color">Zmena farby LED</string>
     <string name="pref_show_changelog">Zobraziť zoznam zmien pri štarte aplikácie</string>
-    <string name="about_activity_title_generic">O aplikácii Gadgetbridge</string>
+    <string name="about_activity_title_generic">O aplikácii WatchSwitcher</string>
     <string name="pref_title_bottom_navigation_bar">Spodná navigačná lišta</string>
     <string name="title_activity_notification_management">Nastavenie upozornení</string>
     <string name="pref_check_permission_status">Kontrolovať stav oprávnení</string>
@@ -591,7 +591,7 @@
     <string name="pref_header_heartrate_sleep">Spánok</string>
     <string name="controlcenter_set_parent_folder">Nastaviť nadradený priečinok</string>
     <string name="steps_streaks_total_steps_hint_totals">Celkový počet krokov, ktoré boli zaznamenané</string>
-    <string name="pref_dashboard_first_summary">Zobraziť nástenku, keď Gadgetbridge začne, namiesto obrazovky zariadení</string>
+    <string name="pref_dashboard_first_summary">Zobraziť nástenku, keď WatchSwitcher začne, namiesto obrazovky zariadení</string>
     <string name="pref_dashboard_widget_show_legend_title">Zobraziť legendu</string>
     <string name="pref_sleepasandroid_feat_notifications">Upozornenia</string>
     <string name="permission_calendar_summary">Odosielanie kalendára do gadgets</string>

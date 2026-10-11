@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <string name="application_name_generic">Gadgetbridge</string>
-    <string name="title_activity_controlcenter_generic">Gadgetbridge</string>
+    <string name="application_name_generic">WatchSwitcher</string>
+    <string name="title_activity_controlcenter_generic">WatchSwitcher</string>
     <string name="action_settings">Ρυθμίσεις</string>
     <string name="action_debug">Αποσφαλμάτωση</string>
     <string name="action_quit">Έξοδος</string>
@@ -53,12 +53,12 @@
 \n
 \nΠΡΟΧΩΡΗΣΤΕ ΜΕ ΔΙΚΗ ΣΑΣ ΕΥΘΥΝΗ!</string>
     <string name="fw_multi_upgrade_notice">Πρόκειται να εγκαταστήσετε τα λογισμικά %1$s και %2$s αντ\'αυτών που υπάρχουν στο Mi Band σας.</string>
-    <string name="miband_firmware_known">Αυτό το λογισμικό έχει δοκιμαστεί και είναι συμβατό με το Gadgetbridge.</string>
-    <string name="miband_firmware_unknown_warning">Αυτό το λογισμικό δεν έχει δοκιμαστεί και ενδέχεται να μην είναι συμβατό με το Gadgetbridge. 
+    <string name="miband_firmware_known">Αυτό το λογισμικό έχει δοκιμαστεί και είναι συμβατό με το WatchSwitcher.</string>
+    <string name="miband_firmware_unknown_warning">Αυτό το λογισμικό δεν έχει δοκιμαστεί και ενδέχεται να μην είναι συμβατό με το WatchSwitcher. 
 \n 
 \nΔΕΝ συνίσταται η εγκατάσταση του!</string>
     <string name="title_activity_appmanager">Διαχειριστής εφαρμογών</string>
-    <string name="miband_firmware_suggest_whitelist">Αν ακόμη θέλετε να προχωρήσετε και μετά όλα λειτουργούν κανονικά, παρακαλούμε ενημερώστε τους δημιουργούς του Gadgetbridge σχετικά με την %s έκδοση.</string>
+    <string name="miband_firmware_suggest_whitelist">Αν ακόμη θέλετε να προχωρήσετε και μετά όλα λειτουργούν κανονικά, παρακαλούμε ενημερώστε τους δημιουργούς του WatchSwitcher σχετικά με την %s έκδοση.</string>
     <string name="title_activity_settings">Ρυθμίσεις</string>
     <string name="pref_header_general">Γενικές ρυθμίσεις</string>
     <string name="pref_title_general_autoconnectonbluetooth">Σύνδεση με τη φορετή συσκευή όταν το Bluetooth στο κινητό ενεργοποιείται</string>
@@ -74,7 +74,7 @@
     <string name="pref_theme_light">Φωτεινό</string>
     <string name="pref_theme_dark">Σκοτεινό</string>
     <string name="pref_title_language">Γλώσσα</string>
-    <string name="pref_title_minimize_priority">Απόκρυψη του εικονιδίου της εφαρμογής Gadgetbridge από τη μπάρα ειδοποιήσεων</string>
+    <string name="pref_title_minimize_priority">Απόκρυψη του εικονιδίου της εφαρμογής WatchSwitcher από τη μπάρα ειδοποιήσεων</string>
     <string name="pref_summary_minimize_priority_off">Το εικονίδιο θα φαίνεται στη γραμμή κατάστασης και οι ειδοποιήσεις στην οθόνη κλειδώματος</string>
     <string name="pref_summary_minimize_priority_on">Απόκρυψη του εικονίδιου από τη γραμμή κατάστασης και των ειδοποιήσεων από την οθόνη κλειδώματος</string>
     <string name="pref_header_notifications">Ειδοποιήσεις</string>
@@ -144,7 +144,7 @@
     <string name="pref_title_pebble_mtu_limit">Όριο Pebble 2/LE GATT MTU</string>
     <string name="pref_summary_pebble_mtu_limit">Αν το Pebble 2/Pebble LE δεν λειτουργεί αναμενόμενα, προσπαθήστε να βάλετε όριο στο MTU (από 20 έως 512)</string>
     <string name="pref_title_pebble_enable_applogs">Να επιτρέπεται η καταγραφή δεδομένων</string>
-    <string name="pref_summary_pebble_enable_applogs">Θα αναγκάσει τις καταγραφές από τις εφαρμογές του smartwatch να καταγράφονται από το Gadgetbridge (απαιτεί επανασύνδεση)</string>
+    <string name="pref_summary_pebble_enable_applogs">Θα αναγκάσει τις καταγραφές από τις εφαρμογές του smartwatch να καταγράφονται από το WatchSwitcher (απαιτεί επανασύνδεση)</string>
     <string name="pref_title_pebble_always_ack_pebblekit">Πρόωρο ACK PebbleKit</string>
     <string name="pref_summary_pebble_always_ack_pebblekit">Θα αναγκάσει τα μηνύματα που στέλνονται από εφαρμογές τρίτων να γνωστοποιούνται πάντα και άμεσα</string>
     <string name="pref_title_pebble_enable_bgjs">Χρήση JS στο παρασκήνιο</string>
@@ -162,7 +162,7 @@
     <string name="_unknown_">(άγνωστο)</string>
     <string name="test">Τεστ</string>
     <string name="test_notification">Δοκιμαστική ειδοποίηση</string>
-    <string name="this_is_a_test_notification_from_gadgetbridge">Αυτή είναι μία δοκιμαστική ειδοποίηση από το Gadgetbridge</string>
+    <string name="this_is_a_test_notification_from_gadgetbridge">Αυτή είναι μία δοκιμαστική ειδοποίηση από το WatchSwitcher</string>
     <string name="bluetooth_is_not_supported_">Το Bluetooth δεν υποστηρίζεται.</string>
     <string name="bluetooth_is_disabled_">Το Bluetooth είναι απενεργοποιημένο.</string>
     <string name="tap_connected_device_for_app_mananger">Πατήστε τη συνδεδεμένη συσκευή για τον διαχειριστή εφαρμογών</string>
@@ -170,7 +170,7 @@
     <string name="tap_connected_device_for_vibration">Πατήστε τη συνδεδεμένη συσκευή για δόνηση</string>
     <string name="tap_a_device_to_connect">Πατήστε μία συσκευή για να συνδεθεί</string>
     <string name="cannot_connect_bt_address_invalid_">Δεν μπορεί να γίνει σύνδεση. Μήπως δεν είναι έγκυρη η διεύθυνση Bluetooth;</string>
-    <string name="gadgetbridge_running_generic">Το Gadgetbridge εκτελείται</string>
+    <string name="gadgetbridge_running_generic">Το WatchSwitcher εκτελείται</string>
     <string name="installing_binary_d_d">Γίνεται εγκατάσταση των βιβλιοθηκών %1$d/%2$d</string>
     <string name="installation_failed_">Η εγκατάσταση απέτυχε</string>
     <string name="installation_successful">Εγκατεστημένο</string>
@@ -209,7 +209,7 @@
     <string name="miband_pairing_using_dummy_userdata">Δεν δόθηκαν αρκετά δεδομένα για τον χρήστη, θα χρησιμοποιηθούν προκαθορισμένα δεδομένα για την ώρα.</string>
     <string name="miband_pairing_tap_hint">Όταν το Mi Band σας δονείται και αναβοσβήνει, πιέστε ελαφρά το κουμπί λίγες φορές συνεχόμενα.</string>
     <string name="appinstaller_install">Εγκατάσταση</string>
-    <string name="discovery_connected_devices_hint">Ενεργοποιήστε την επιλογή \"εντοπισμού bluetooth\". Οι συνδεδεμένες συσκευές είναι πιθανόν να μην εντοπιστούν. Σε εκδόσεις του Android από το 6 και νεότερες ενεργοποιήστε τις υπηρεσίες τοποθεσίας του κινητού (π.χ. GPS). Απενεργοποιήστε το Gadgetbridge από το Privacy Guard, επειδή μπορεί να κάνει το κινητό σας τυχαίες επανεκκινήσεις. Αν, μετά από λίγα λεπτά, δεν βρεθεί καμία συσκευή, ξαναδοκιμάστε αφού πρώτα επανεκκινήσετε το τηλέφωνό σας.</string>
+    <string name="discovery_connected_devices_hint">Ενεργοποιήστε την επιλογή \"εντοπισμού bluetooth\". Οι συνδεδεμένες συσκευές είναι πιθανόν να μην εντοπιστούν. Σε εκδόσεις του Android από το 6 και νεότερες ενεργοποιήστε τις υπηρεσίες τοποθεσίας του κινητού (π.χ. GPS). Απενεργοποιήστε το WatchSwitcher από το Privacy Guard, επειδή μπορεί να κάνει το κινητό σας τυχαίες επανεκκινήσεις. Αν, μετά από λίγα λεπτά, δεν βρεθεί καμία συσκευή, ξαναδοκιμάστε αφού πρώτα επανεκκινήσετε το τηλέφωνό σας.</string>
     <string name="discovery_note">Σημείωση:</string>
     <string name="candidate_item_device_image">Εικόνα της συσκευής</string>
     <string name="miband_prefs_alias">Όνομα/Ψευδώνυμο</string>
@@ -307,8 +307,8 @@
     <string name="liveactivity_live_activity">Η δραστηριότητα live</string>
     <string name="weeksteps_today_steps_description">Βήματα σήμερα, στόχος: %1$s</string>
     <string name="pref_title_dont_ack_transfer">Μην επιβεβαιώσετε τη μεταφορά δεδομένων δραστηριότητας</string>
-    <string name="pref_summary_dont_ack_transfers">Εάν η μεταφορά των δεδομένων δραστηριότητας δεν επιβεβαιωθεί, τα δεδομένα δεν θα διαγραφούν. Χρήσιμο αν το Gadgetbridge χρησιμοποιείται παράλληλα με άλλες εφαρμογές.</string>
-    <string name="pref_summary_keep_data_on_device">Θα κρατηθούν τα δεδομένα της δραστηριότητας στη συσκευή και μετά τον συγχρονισμό. Χρήσιμο αν το Gadgetbridge χρησιμοποιείται παράλληλα με άλλες εφαρμογές. Αυτό μπορεί να προκαλέσει την εξάντληση του χώρου του ρολογιού ή/και τη διακοπή του συγχρονισμού.</string>
+    <string name="pref_summary_dont_ack_transfers">Εάν η μεταφορά των δεδομένων δραστηριότητας δεν επιβεβαιωθεί, τα δεδομένα δεν θα διαγραφούν. Χρήσιμο αν το WatchSwitcher χρησιμοποιείται παράλληλα με άλλες εφαρμογές.</string>
+    <string name="pref_summary_keep_data_on_device">Θα κρατηθούν τα δεδομένα της δραστηριότητας στη συσκευή και μετά τον συγχρονισμό. Χρήσιμο αν το WatchSwitcher χρησιμοποιείται παράλληλα με άλλες εφαρμογές. Αυτό μπορεί να προκαλέσει την εξάντληση του χώρου του ρολογιού ή/και τη διακοπή του συγχρονισμού.</string>
     <string name="installhandler_firmware_name">%1$s: %2$s %3$s</string>
     <string name="pref_title_low_latency_fw_update">Χρήση της λειτουργίας χαμηλής καθυστέρησης για τις αναβαθμίσεις λογισμικού</string>
     <string name="pref_summary_low_latency_fw_update">Αυτό μπορεί να βοηθήσει για συσκευές που η αναβάθμιση λογισμικού αποτυγχάνει.</string>
@@ -386,7 +386,7 @@
     <string name="pref_summary_pebble_health_store_raw">Με αυτή την επιλογή θα αποθηκευτούν τα δεδομένα \"ως έχουν\", μεγαλώνοντας τη χρήση της βάσης δεδομένων για να είναι διαθέσιμα για ερμηνεία αργότερα.</string>
     <string name="action_db_management">Διαχείριση δεδομένων</string>
     <string name="title_activity_db_management">Διαχείριση δεδομένων</string>
-    <string name="activity_db_management_import_export_explanation">Η λειτουργία της βάσης δεδομένων χρησιμοποιεί τον ακόλουθο φάκελο στη συσκευή σας. Ο φάκελος αυτός είναι προσπελάσιμος από άλλες εφαρμογές Android και από τον υπολογιστή. Σημειώστε, ότι αυτός ο φάκελος και όλα τα αρχεία που περιέχει διαγράφονται εάν απεγκαταστήσετε το Gadgetbridge. Τα βάση περιλαμβάνει:\nExport_preference - ρυθμίσεις εφαρμογής\nExport_preference_MAC - ρυθμίσεις συσκευών\nGadgetbridge - βάση δεδομένων συσκευών και δραστηριοτήτων\nGadgetbridge_date - βάση δεδομένων που εξήχθη σε μια ημερομηνία\n*.gpx - εγγραφές GPS\n*.log - αρχεία καταγραφής\nΕκεί θα βρείτε την βάση δεδομένων που θα εξάγετε (ή βάλτε εκεί τη βάση δεδομένων που θέλετε να εισάγετε):</string>
+    <string name="activity_db_management_import_export_explanation">Η λειτουργία της βάσης δεδομένων χρησιμοποιεί τον ακόλουθο φάκελο στη συσκευή σας. Ο φάκελος αυτός είναι προσπελάσιμος από άλλες εφαρμογές Android και από τον υπολογιστή. Σημειώστε, ότι αυτός ο φάκελος και όλα τα αρχεία που περιέχει διαγράφονται εάν απεγκαταστήσετε το WatchSwitcher. Τα βάση περιλαμβάνει:\nExport_preference - ρυθμίσεις εφαρμογής\nExport_preference_MAC - ρυθμίσεις συσκευών\nWatchSwitcher - βάση δεδομένων συσκευών και δραστηριοτήτων\nWatchSwitcher_date - βάση δεδομένων που εξήχθη σε μια ημερομηνία\n*.gpx - εγγραφές GPS\n*.log - αρχεία καταγραφής\nΕκεί θα βρείτε την βάση δεδομένων που θα εξάγετε (ή βάλτε εκεί τη βάση δεδομένων που θέλετε να εισάγετε):</string>
     <string name="dbmanagementactivvity_cannot_access_export_path">Δεν είναι δυνατή η πρόσβαση στον φάκελο. Παρακαλώ επικοινωνήστε με τους προγραμματιστές.</string>
     <string name="dbmanagementactivity_exported_to">Εξαγωγή στο: %1$s</string>
     <string name="dbmanagementactivity_error_exporting_db">Σφάλμα κατά την εξαγωγή της βάσης δεδομένων: %1$s</string>
@@ -663,7 +663,7 @@
     <string name="weekstepschart_steps_a_month">Βήματα ανά μήνα</string>
     <string name="weeksleepchart_sleep_a_month">Ύπνος ανά μήνα</string>
     <string name="menuitem_nfc">NFC</string>
-    <string name="pref_summary_expose_hr">Επιτρέπει σε άλλες εφαρμογές να έχουν πρόσβαση στα δεδομένα καρδιακού παλμού σε πραγματικό χρόνο, ενώ το Gadgetbridge είναι συνδεδεμένο</string>
+    <string name="pref_summary_expose_hr">Επιτρέπει σε άλλες εφαρμογές να έχουν πρόσβαση στα δεδομένα καρδιακού παλμού σε πραγματικό χρόνο, ενώ το WatchSwitcher είναι συνδεδεμένο</string>
     <string name="pref_title_expose_hr">Πρόσβαση δεδομένων καρδιακών παλμών σε πραγματικό χρόνο από τρίτες εφαρμογές</string>
     <string name="pref_title_use_custom_font">Χρήση προσαρμοσμένης γραμματοσειράς</string>
     <string name="pref_summary_use_custom_font">Ενεργοποίηση αυτής της επιλογής σε περίπτωση που η συσκευή σας διαθέτει υποστήριξη προσαρμοσμένης γραμματοσειράς για υποστήριξη emoji</string>
@@ -707,7 +707,7 @@
     <string name="pref_summary_sync_calendar">Ενεργοποιεί τις ειδοποιήσεις ημερολογίου ακόμα και όταν η συσκευή δεν είναι συνδεδεμένη</string>
     <string name="pref_summary_allow_high_mtu">Αυξάνει την ταχύτητα μεταφοράς, αλλά μπορεί να μην λειτουργεί για μερικές Android συσκευές.</string>
     <string name="pref_title_allow_high_mtu">Υψηλό MTU</string>
-    <string name="pref_summary_custom_deviceicon">Εμφάνιση ενός συγκεκριμένου εικονιδίου ειδοποίησης Android αντί για το εικονίδιο του Gadgetbridge όταν η συσκευή είναι συνδεδεμένη</string>
+    <string name="pref_summary_custom_deviceicon">Εμφάνιση ενός συγκεκριμένου εικονιδίου ειδοποίησης Android αντί για το εικονίδιο του WatchSwitcher όταν η συσκευή είναι συνδεδεμένη</string>
     <string name="pref_title_custom_deviceicon">Εμφάνιση συγκεκριμένων εικονιδίων ειδοποιήσεων συσκευές</string>
     <string name="pref_theme_system">Σύστημα</string>
     <string name="fw_upgrade_notice_amazfitgtr">—Πρόκειται να εγκαταστήσετε το υλικολογισμικό %s στο Amazfit GTR σας. 
@@ -819,10 +819,10 @@
     <string name="about_contributors">Συντελεστές</string>
     <string name="about_core_team_title">Βασική ομάδα (κατά σειρά μεγαλύτερης συνεισφοράς κώδικα)</string>
     <string name="about_description_generic">Μια δωρεάν, ελεύθερου κώδικα και χωρίς πρόσβαση στο διαδίκτυο εφαρμογή Android για να αντικαταστήσει τις υπάρχουσες εφαρμογές κλειστού κώδικα των κατασκευαστών του smartwatch σας.</string>
-    <string name="about_activity_title_generic">Σχετικά με το Gadgetbridge</string>
+    <string name="about_activity_title_generic">Σχετικά με το WatchSwitcher</string>
     <string name="about_title">Σχετικά</string>
     <string name="menuitem_worldclock">Παγκόσμιο Ρολόι</string>
-    <string name="pref_title_weather_summary">Χρησιμοποιείται για την υπηρεσία παροχής καιρού του LineageOS, άλλες εκδόσεις Android πρέπει να χρησιμοποιούν μια εφαρμογή όπως το \"Breezy Weather\". Βρείτε περισσότερες πληροφορίες στην ιστοσελίδα του Gadgetbridge.</string>
+    <string name="pref_title_weather_summary">Χρησιμοποιείται για την υπηρεσία παροχής καιρού του LineageOS, άλλες εκδόσεις Android πρέπει να χρησιμοποιούν μια εφαρμογή όπως το \"Breezy Weather\". Βρείτε περισσότερες πληροφορίες στην ιστοσελίδα του WatchSwitcher.</string>
     <string name="fw_upgrade_notice_amazfit_trex">—Πρόκειται να εγκαταστήσετε το υλικολογισμικό %s στο Amazfit T-Rex σας. 
 \n 
 \nΠαρακαλώ βεβαιωθείτε ότι έχετε εγκαταστήσει πρώτα το αρχείο .fw στη συνέχεια το αρχείο .res και τέλος το .gps αρχείο. Η συσκευή πρόκειται να επανακινήσει μετά την εγκατάσταση του αρχείου .fw. 
@@ -920,23 +920,23 @@
     <string name="calendar_day">Μέρα</string>
     <string name="battery_level">Επίπεδο μπαταρίας</string>
     <string name="lefun_prefs_interface_language_title">Γλώσσα</string>
-    <string name="application_name_banglejs_main">Bangle.js Gadgetbridge</string>
-    <string name="title_activity_controlcenter_banglejs_main">Bangle.js Gadgetbridge</string>
-    <string name="about_activity_title_banglejs_main">Σχετικά με το Bangle.js Gadgetbridge</string>
-    <string name="about_description_banglejs_main">Συνοδευτική εφαρμογή Android για το Bangle.js, χτισμένη πάνω στο έργο Gadgetbridge, με πρόσθετη πρόσβαση στο διαδίκτυο.\n\nΛόγω των πολιτικών του Google Play Store, δεν επιτρέπεται να έχουμε σύνδεσμο δωρεάς μέσα στην ίδια την εφαρμογή, αλλά αν σας αρέσει αυτή η εφαρμογή, παρακαλούμε σκεφτείτε να κάνετε μια δωρεά μέσω της αρχικής σελίδας του Gadgetbridge παρακάτω.</string>
+    <string name="application_name_banglejs_main">Bangle.js WatchSwitcher</string>
+    <string name="title_activity_controlcenter_banglejs_main">Bangle.js WatchSwitcher</string>
+    <string name="about_activity_title_banglejs_main">Σχετικά με το Bangle.js WatchSwitcher</string>
+    <string name="about_description_banglejs_main">Συνοδευτική εφαρμογή Android για το Bangle.js, χτισμένη πάνω στο έργο WatchSwitcher, με πρόσθετη πρόσβαση στο διαδίκτυο.\n\nΛόγω των πολιτικών του Google Play Store, δεν επιτρέπεται να έχουμε σύνδεσμο δωρεάς μέσα στην ίδια την εφαρμογή, αλλά αν σας αρέσει αυτή η εφαρμογή, παρακαλούμε σκεφτείτε να κάνετε μια δωρεά μέσω της αρχικής σελίδας του WatchSwitcher παρακάτω.</string>
     <string name="gadgetbridge_running_banglejs_main">Bangle.js εκτελείται</string>
-    <string name="application_name_banglejs_nightly">Bangle.js Gadgetbridge (Nightly)</string>
-    <string name="title_activity_controlcenter_banglejs_nightly">Bangle.js Gadgetbridge (Nightly)</string>
-    <string name="about_activity_title_banglejs_nightly">Σχετικά με το Bangle.js Gadgetbridge (Nightly)</string>
-    <string name="about_description_banglejs_nightly">Συνοδευτική εφαρμογή Android για το Bangle.js, χτισμένη πάνω στο έργο Gadgetbridge, με πρόσθετη πρόσβαση στο διαδίκτυο.\n\nΛόγω των πολιτικών του Google Play Store, δεν επιτρέπεται να έχουμε σύνδεσμο δωρεάς μέσα στην ίδια την εφαρμογή, αλλά αν σας αρέσει αυτή η εφαρμογή, παρακαλούμε σκεφτείτε να κάνετε μια δωρεά μέσω της αρχικής σελίδας του Gadgetbridge παρακάτω.</string>
+    <string name="application_name_banglejs_nightly">Bangle.js WatchSwitcher (Nightly)</string>
+    <string name="title_activity_controlcenter_banglejs_nightly">Bangle.js WatchSwitcher (Nightly)</string>
+    <string name="about_activity_title_banglejs_nightly">Σχετικά με το Bangle.js WatchSwitcher (Nightly)</string>
+    <string name="about_description_banglejs_nightly">Συνοδευτική εφαρμογή Android για το Bangle.js, χτισμένη πάνω στο έργο WatchSwitcher, με πρόσθετη πρόσβαση στο διαδίκτυο.\n\nΛόγω των πολιτικών του Google Play Store, δεν επιτρέπεται να έχουμε σύνδεσμο δωρεάς μέσα στην ίδια την εφαρμογή, αλλά αν σας αρέσει αυτή η εφαρμογή, παρακαλούμε σκεφτείτε να κάνετε μια δωρεά μέσω της αρχικής σελίδας του WatchSwitcher παρακάτω.</string>
     <string name="gadgetbridge_running_banglejs_nightly">Nightly Bangle.js εκτελείται</string>
-    <string name="application_name_main_nightly">Gadgetbridge (Nightly)</string>
-    <string name="title_activity_controlcenter_main_nightly">Gadgetbridge Nightly</string>
-    <string name="about_activity_title_main_nightly">Σχετικά με το Gadgetbridge Nightly</string>
+    <string name="application_name_main_nightly">WatchSwitcher (Nightly)</string>
+    <string name="title_activity_controlcenter_main_nightly">WatchSwitcher Nightly</string>
+    <string name="about_activity_title_main_nightly">Σχετικά με το WatchSwitcher Nightly</string>
     <string name="gadgetbridge_running_main_nightly">Nightly GB εκτελείται</string>
-    <string name="application_name_main_nopebble">Gadgetbridge (Nightly, Χωρίς πάροχο Pebble)</string>
-    <string name="title_activity_controlcenter_main_nopebble">Gadgetbridge Nightly Χωρίς Pebble</string>
-    <string name="about_activity_title_main_nopebble">Σχετικά με το Gadgetbridge Nightly Χωρίς Pebble</string>
+    <string name="application_name_main_nopebble">WatchSwitcher (Nightly, Χωρίς πάροχο Pebble)</string>
+    <string name="title_activity_controlcenter_main_nopebble">WatchSwitcher Nightly Χωρίς Pebble</string>
+    <string name="about_activity_title_main_nopebble">Σχετικά με το WatchSwitcher Nightly Χωρίς Pebble</string>
     <plurals name="amount_of_days">
         <item quantity="one">%d ώρα</item>
         <item quantity="other">%d ώρες</item>
@@ -1070,12 +1070,12 @@
     <string name="pref_title_notification_use_as_deny">Απόρριψη ειδοποιήσεων από επιλεγμένες εφαρμογές</string>
     <string name="pref_title_notification_use_as_allow">Να επιτρέπονται ειδοποιήσεις από επιλεγμένες εφαρμογές</string>
     <string name="pref_title_banglejs_text_bitmap">Κείμενο ως Bitmaps</string>
-    <string name="pref_summary_banglejs_text_bitmap">Εάν μια λέξη δεν μπορεί να εμφανιστεί με τη γραμματοσειρά του ρολογιού, εμφάνισέ την σε bitmap στο Gadgetbridge και εμφάνισε το γrαφικό bitmap στο ρολόι</string>
+    <string name="pref_summary_banglejs_text_bitmap">Εάν μια λέξη δεν μπορεί να εμφανιστεί με τη γραμματοσειρά του ρολογιού, εμφάνισέ την σε bitmap στο WatchSwitcher και εμφάνισε το γrαφικό bitmap στο ρολόι</string>
     <string name="pref_title_banglejs_txt_bitmap_size">Μέγεθος κειμένου Bitmap</string>
     <string name="pref_title_banglejs_phone_gps_enbale">Χρησιμοποιήστε δεδομένα gps του τηλεφώνου</string>
     <string name="pref_title_banglejs_phone_gps_network_only">Χρησιμοποιήστε μόνο το δίκτυο για να καθορίσετε την τοποθεσία</string>
     <string name="pref_summary_banglejs_phone_gps_network_only">Χρησιμοποιήστε μόνο τον πάροχο δικτύου για να καθορίσετε την τοποθεσία. Αυτό μειώνει την κατανάλωση ενέργειας με κόστος ακρίβειας. Χρειάζεται επανασύνδεση.</string>
-    <string name="about_description_main_nightly">Ελευθερή αντικατάσταση χωρίς cloud και copyright για κλειστές εφαρμογές Android gadget από προμηθευτές. Nightly εκδοχές απο το Gadgetbridge. Δεν μπορεί να εγκατασταθεί αν έχετε ήδη είτε το Gadgetbridge ή την εφαρμογή Pebble εγκατεστημένη, λόγω μιας σύγκρουσης στον πάροχο Pebble.</string>
+    <string name="about_description_main_nightly">Ελευθερή αντικατάσταση χωρίς cloud και copyright για κλειστές εφαρμογές Android gadget από προμηθευτές. Nightly εκδοχές απο το WatchSwitcher. Δεν μπορεί να εγκατασταθεί αν έχετε ήδη είτε το WatchSwitcher ή την εφαρμογή Pebble εγκατεστημένη, λόγω μιας σύγκρουσης στον πάροχο Pebble.</string>
     <string name="open_fw_installer_getting_files_title">Λήψη του αρχείου firmware/εφαρμογής</string>
     <string name="open_fw_installer_info_text_title">Πρόγραμμα Εγκατάστασης Αρχείων</string>
     <string name="title_activity_musicmanager">Διαχείριση μουσικής</string>

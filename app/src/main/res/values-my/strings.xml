@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="application_name_generic">Gadgetbridge</string>
-    <string name="title_activity_controlcenter_generic">Gadgetbridge</string>
+    <string name="application_name_generic">WatchSwitcher</string>
+    <string name="title_activity_controlcenter_generic">WatchSwitcher</string>
     <string name="action_settings">ခ်ိန္ညွိရန္</string>
     <string name="action_debug">ျပစ္ခ်က္</string>
     <string name="action_quit">ထြက္မည္</string>
@@ -47,9 +47,9 @@
     <string name="find_lost_device_message">အားရှာဖွေခြင်း%1$s\?</string>
     <string name="controlcenter_power_off">ပါဝါပိတ်ရန်</string>
     <string name="controlcenter_power_off_confirm_title">ပါဝါပိတ်ရန်</string>
-    <string name="application_name_banglejs_main">Bangle.js Gadgetbridge</string>
-    <string name="title_activity_controlcenter_banglejs_main">Bangle.js Gadgetbridge</string>
-    <string name="about_activity_title_banglejs_main">Bangle.js Gadgetbridge အကြောင်း</string>
+    <string name="application_name_banglejs_main">Bangle.js WatchSwitcher</string>
+    <string name="title_activity_controlcenter_banglejs_main">Bangle.js WatchSwitcher</string>
+    <string name="about_activity_title_banglejs_main">Bangle.js WatchSwitcher အကြောင်း</string>
     <string name="gadgetbridge_running_banglejs_main">Bangle.js ဖွင့်ထားသည်</string>
     <string name="gadgetbridge_running_main_nightly">Nightly GB ဖွင့်ထားသည်</string>
     <string name="sony_button_mode_right">ခလုတ်မုဒ် (ညာဘက်)</string>
@@ -62,12 +62,12 @@
     <string name="watchface_dialog_widget_update_timeout">Update လုပ်ချိန်ကုန်ဆုံးမှု မိနစ်အား သတ်မှတ်ခြင်း</string>
     <string name="watchface_dialog_widget_timeout_hide_text">စာသားဝှတ်ထားရန်ချိန် သတ်မှတ်ခြင်း</string>
     <string name="controlcenter_navigation_drawer_close">အချက်ပြချက်များအား ပိတ်မည်</string>
-    <string name="about_activity_title_generic">Gadgetbridge အကြောင်း</string>
-    <string name="gadgetbridge_running_generic">Gadgetbridge ဖွင့်ထားသည်</string>
+    <string name="about_activity_title_generic">WatchSwitcher အကြောင်း</string>
+    <string name="gadgetbridge_running_generic">WatchSwitcher ဖွင့်ထားသည်</string>
     <string name="controlcenter_power_off_confirm_description">စက်ကို ပါဝါပိတ်မှာ သေချာလား\?</string>
     <string name="controlcenter_set_alias">နာမည် ပေးမည်</string>
     <string name="controlcenter_navigation_drawer_open">အချက်ပြချက်များအား ဖွင့်မည်</string>
-    <string name="about_activity_title_main_nightly">Gadgetbridge Nightly အကြောင်း</string>
+    <string name="about_activity_title_main_nightly">WatchSwitcher Nightly အကြောင်း</string>
     <string name="watchface_dialog_widget_timeout_show_circle">အဝိုင်းအားပြရန် အချိန်သတ်မှတ်ခြင်း</string>
     <string name="steps_streaks_total_steps_average_hint">တစ်နေ့လျှင် စုစုပေါင်း ပျမ်းမျှ %d ခြေလှမ်</string>
     <string name="qhybrid_title_on_device_confirmation">စိတ်ချိန်စက်ရန် အတည်ပြုချက်အား ဖွင့်ခြင်း</string>

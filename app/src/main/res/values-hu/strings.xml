@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <string name="application_name_generic">Gadgetbridge</string>
-    <string name="title_activity_controlcenter_generic">Gadgetbridge </string>
+    <string name="application_name_generic">WatchSwitcher</string>
+    <string name="title_activity_controlcenter_generic">WatchSwitcher </string>
     <string name="action_settings">Beállítások</string>
     <string name="action_debug">Hibakeresés</string>
     <string name="action_quit">Kilépés</string>
@@ -40,27 +40,27 @@
     <string name="title_activity_fw_app_insaller">FW/alkalmazás telepítő</string>
     <string name="fw_upgrade_notice">A(z) %s firmware-t akarja telepíteni.</string>
     <string name="fw_multi_upgrade_notice">A(z) %1$s és a(z) %2$s firmware-változatokat akarja telepíteni az Mi Band eszközére a mostani helyett.</string>
-    <string name="miband_firmware_known">Ez a firmware tesztelt és kompatibilis a Gadgetbridge-dzsel.</string>
-    <string name="miband_firmware_unknown_warning">Ez a firmware nincs tesztelve, lehetséges, hogy nem kompatibilis a Gadgetbridge-dzsel.
+    <string name="miband_firmware_known">Ez a firmware tesztelt és kompatibilis a WatchSwitcher-dzsel.</string>
+    <string name="miband_firmware_unknown_warning">Ez a firmware nincs tesztelve, lehetséges, hogy nem kompatibilis a WatchSwitcher-dzsel.
 \n
 \nNEM javasoljuk, ezen firmware telepítését!</string>
-    <string name="miband_firmware_suggest_whitelist">Ha mégis folytatni szeretné, és a dolgok jól működnek utána, jelezze a Gadgetbridge fejlesztőinek, hogy az engedélyezési listára tehessék a(z) %s firmware-változatot.</string>
+    <string name="miband_firmware_suggest_whitelist">Ha mégis folytatni szeretné, és a dolgok jól működnek utána, jelezze a WatchSwitcher fejlesztőinek, hogy az engedélyezési listára tehessék a(z) %s firmware-változatot.</string>
     <!--Strings related to Settings-->
     <string name="title_activity_settings">Beállítások</string>
     <string name="pref_header_general">Általános beállítások</string>
-    <string name="pref_title_general_autoconnectonbluetooth">Kapcsolódás a Gadgetbridge-eszköz(ök)höz a Bluetooth bekapcsolásakor</string>
+    <string name="pref_title_general_autoconnectonbluetooth">Kapcsolódás a WatchSwitcher-eszköz(ök)höz a Bluetooth bekapcsolásakor</string>
     <string name="pref_title_general_autostartonboot">Automatikus indítás</string>
     <string name="pref_title_general_autoreconnect">Automatikus újrakapcsolódás</string>
     <string name="pref_title_audio_player">Előnyben részesített zenelejátszó</string>
     <string name="pref_default">Alapértelmezett</string>
     <string name="pref_header_datetime">Dátum és idő</string>
     <string name="pref_title_datetime_syctimeonconnect">Idő szinkronizálása</string>
-    <string name="pref_summary_datetime_syctimeonconnect">Idő szinkronizálása kapcsolódáskor a Gadgetbridge-eszköz(ök)kel, amikor az idő vagy az időzóna megváltozik az Android-eszközön, és időszakosan</string>
+    <string name="pref_summary_datetime_syctimeonconnect">Idő szinkronizálása kapcsolódáskor a WatchSwitcher-eszköz(ök)kel, amikor az idő vagy az időzóna megváltozik az Android-eszközön, és időszakosan</string>
     <string name="pref_title_theme">Téma</string>
     <string name="pref_theme_light">Világos</string>
     <string name="pref_theme_dark">Sötét</string>
     <string name="pref_title_language">Nyelv</string>
-    <string name="pref_title_minimize_priority">Gadgetbridge értesítés elrejtése</string>
+    <string name="pref_title_minimize_priority">WatchSwitcher értesítés elrejtése</string>
     <string name="pref_summary_minimize_priority_off">Az ikon megjelenik az állapotsoron és az értesítés a záróképernyőn</string>
     <string name="pref_summary_minimize_priority_on">Az ikon nem jelenik meg az állapotsoron, sem az értesítés a záróképernyőn</string>
     <string name="pref_header_notifications">Értesítések</string>
@@ -129,7 +129,7 @@
     <string name="pref_title_pebble_mtu_limit">Pebble 2/LE GATT MTU határérték</string>
     <string name="pref_summary_pebble_mtu_limit">Ha a Pebble 2/Pebble LE nem működik megfelelően, próbálja meg ezzel a beállítással korlátozni az MTU-t (érvényes tartomány 20 – 512)</string>
     <string name="pref_title_pebble_enable_applogs">Óraalkalmazás-naplózás engedélyezése</string>
-    <string name="pref_summary_pebble_enable_applogs">A Gadgetbridge naplózza az óraalkalmazások naplóit (újrakapcsolódás szükséges)</string>
+    <string name="pref_summary_pebble_enable_applogs">A WatchSwitcher naplózza az óraalkalmazások naplóit (újrakapcsolódás szükséges)</string>
     <string name="pref_title_pebble_always_ack_pebblekit">Korai ACK PebbleKit</string>
     <string name="pref_summary_pebble_always_ack_pebblekit">Minden esetben azonnal felismeri az üzeneteket, amelyeket külső harmadik alkalmazásoknak küldenek</string>
     <string name="pref_title_pebble_reconnect_attempts">Újrakapcsolódási kísérletek</string>
@@ -145,7 +145,7 @@
     <string name="_unknown_">(ismeretlen)</string>
     <string name="test">Teszt</string>
     <string name="test_notification">Teszt értesítés</string>
-    <string name="this_is_a_test_notification_from_gadgetbridge">Ez egy teszt értesítés a Gadgetbridge-től</string>
+    <string name="this_is_a_test_notification_from_gadgetbridge">Ez egy teszt értesítés a WatchSwitcher-től</string>
     <string name="bluetooth_is_not_supported_">A Bluetooth nem támogatott.</string>
     <string name="bluetooth_is_disabled_">A Bluetooth ki van kapcsolva.</string>
     <string name="tap_connected_device_for_app_mananger">Koppintson a csatlakoztatott eszközre az „Alkalmazáskezelő” megnyitásához</string>
@@ -153,7 +153,7 @@
     <string name="tap_connected_device_for_vibration">Koppintson a csatlakoztatott eszközre a rezgéshez</string>
     <string name="tap_a_device_to_connect">Koppintson egy eszközre a csatlakozáshoz</string>
     <string name="cannot_connect_bt_address_invalid_">Nem lehet csatlakozni. Érvénytelen a Bluetooth-cím?</string>
-    <string name="gadgetbridge_running_generic">A Gadgetbridge fut</string>
+    <string name="gadgetbridge_running_generic">A WatchSwitcher fut</string>
     <string name="installing_binary_d_d">%1$d/%2$d bináris telepítése</string>
     <string name="installation_failed_">A telepítés nem sikerült</string>
     <string name="installation_successful">Telepítve</string>
@@ -189,7 +189,7 @@
     <string name="miband_pairing_using_dummy_userdata">Érvénytelen felhasználói adatok vannak megadva, alapértelmezett adatok használata.</string>
     <string name="miband_pairing_tap_hint">Amikor rezegni kezd a Mi Band-je, érintse meg párszor egymás után.</string>
     <string name="appinstaller_install">Telepítés</string>
-    <string name="discovery_connected_devices_hint">Tegye felderíthetővé az eszközt. A jelenleg csatlakoztatott eszközök nem fognak felderíthetőként megjelenni. Aktiválja a helymeghatározást (például: GPS). Kapcsolja ki a Privacy Guardban a Gadgetbridge-et, különben az alkalmazás összeomolhat, illetve újraindulhat a telefonja. Ha nem található az eszköz pár percen belül, próbálja meg újraindítani a telefonját.</string>
+    <string name="discovery_connected_devices_hint">Tegye felderíthetővé az eszközt. A jelenleg csatlakoztatott eszközök nem fognak felderíthetőként megjelenni. Aktiválja a helymeghatározást (például: GPS). Kapcsolja ki a Privacy Guardban a WatchSwitcher-et, különben az alkalmazás összeomolhat, illetve újraindulhat a telefonja. Ha nem található az eszköz pár percen belül, próbálja meg újraindítani a telefonját.</string>
     <string name="discovery_note">Megjegyzés:</string>
     <string name="candidate_item_device_image">Eszközkép</string>
     <string name="miband_prefs_alias">Név/álnév</string>
@@ -280,8 +280,8 @@
     <string name="liveactivity_live_activity">Valós idejű tevékenység</string>
     <string name="weeksteps_today_steps_description">Lépések ma, cél: %1$s</string>
     <string name="pref_title_dont_ack_transfer">Ne erősítse meg a tevékenységadatok átvitelét</string>
-    <string name="pref_summary_dont_ack_transfers">Ha az eszköz nem kap megerősítést, az tevékenységadatok nem törlődnek. Hasznos, ha a Gadgetbridge alkalmazást más alkalmazásokkal együtt használja.</string>
-    <string name="pref_summary_keep_data_on_device">A szinkronizálás után is megtartja a tevékenységadatokat az eszközön. Hasznos, ha a Gadgetbridge alkalmazást más alkalmazásokkal együtt használja. Ez azt okozhatja, hogy az óra kifogy a helyből és/vagy leáll a megfelelő szinkronizálás.</string>
+    <string name="pref_summary_dont_ack_transfers">Ha az eszköz nem kap megerősítést, az tevékenységadatok nem törlődnek. Hasznos, ha a WatchSwitcher alkalmazást más alkalmazásokkal együtt használja.</string>
+    <string name="pref_summary_keep_data_on_device">A szinkronizálás után is megtartja a tevékenységadatokat az eszközön. Hasznos, ha a WatchSwitcher alkalmazást más alkalmazásokkal együtt használja. Ez azt okozhatja, hogy az óra kifogy a helyből és/vagy leáll a megfelelő szinkronizálás.</string>
     <string name="pref_title_low_latency_fw_update">Alacsony késleltetésű mód használata a firmware frissítéshez</string>
     <string name="pref_summary_low_latency_fw_update">Ez segíthet azon az eszközökön, ahol a firmware telepítése nem sikerül.</string>
     <string name="live_activity_steps_history">Lépéselőzmények</string>
@@ -342,7 +342,7 @@
     <string name="pref_summary_pebble_health_store_raw">Az adatokat „eredeti formában tárolja”, növelve az adatbázis-használatot a későbbi feldolgozás lehetővé tétele érdekében.</string>
     <string name="action_db_management">Adatkezelés</string>
     <string name="title_activity_db_management">Adatkezelés</string>
-    <string name="activity_db_management_import_export_explanation">Az exportálás/importálás műveletek a következő könyvtár útvonalát (lásd lentebb) használják az eszközén. Ez a könyvtár elérhető más Android- alkalmazások és a számítógépe számára. Jegyezze meg, hogy ez a könyvár és az összes tartalmazott fájl törölve lesz, ha eltávolítja a Gadgetbridge-et. Az adatok tartalmazzák: \n Export_preference - globális beállítások \n Export_preference_MAC - eszközspecifikus beállítások \n Gadgetbridge - eszköz- és tevékenység-adatbázis \n Gadgetbridge_date - egy dátumon exportált adatbázis \n *.gpx - GPS-rögzítés \n *.log - naplófájlok \nVárhatóan itt megtalálja az exportált fájlokat (vagy helyezze ide az importálandó fájlokat):</string>
+    <string name="activity_db_management_import_export_explanation">Az exportálás/importálás műveletek a következő könyvtár útvonalát (lásd lentebb) használják az eszközén. Ez a könyvtár elérhető más Android- alkalmazások és a számítógépe számára. Jegyezze meg, hogy ez a könyvár és az összes tartalmazott fájl törölve lesz, ha eltávolítja a WatchSwitcher-et. Az adatok tartalmazzák: \n Export_preference - globális beállítások \n Export_preference_MAC - eszközspecifikus beállítások \n WatchSwitcher - eszköz- és tevékenység-adatbázis \n WatchSwitcher_date - egy dátumon exportált adatbázis \n *.gpx - GPS-rögzítés \n *.log - naplófájlok \nVárhatóan itt megtalálja az exportált fájlokat (vagy helyezze ide az importálandó fájlokat):</string>
     <string name="dbmanagementactivvity_cannot_access_export_path">Nem érhető el az exportálási útvonal. Vegye fel a kapcsolatot a fejlesztőkkel.</string>
     <string name="dbmanagementactivity_exported_to">Exportálva ide: %1$s</string>
     <string name="dbmanagementactivity_error_exporting_db">Hiba történt az adatbázis exportálásakor: %1$s</string>
@@ -445,7 +445,7 @@
     <string name="minutes_30">30 perc</string>
     <string name="notif_battery_low">%1$s akkumulátora merül</string>
     <string name="notif_battery_low_extended">%1$s akkumulátora alacsony szinten: %2$s</string>
-    <string name="debugactivity_really_factoryreset">A gyári beállítások visszaállítása minden adatot töröl a párosított eszközről (ha támogatott). A Xiaomi/Huami eszközöknek emellett megváltozik a Bluetooth MAC-címe is, így új eszközként jelennek meg a Gadgetbridge számára.</string>
+    <string name="debugactivity_really_factoryreset">A gyári beállítások visszaállítása minden adatot töröl a párosított eszközről (ha támogatott). A Xiaomi/Huami eszközöknek emellett megváltozik a Bluetooth MAC-címe is, így új eszközként jelennek meg a WatchSwitcher számára.</string>
     <string name="mi2_prefs_button_press_broadcast_default_value" translatable="false">nodomain.freeyourgadget.gadgetbridge.ButtonPressed</string>
     <string name="prefs_title_heartrate_measurement_interval">Egész napos pulzusmérés</string>
     <string name="prefs_screen_orientation">Képernyő tájolása</string>
@@ -479,7 +479,7 @@
     <string name="pref_summary_allow_high_mtu">Növeli az adatátvitel sebességét, de egyes Android-eszközökön nem működhet.</string>
     <string name="pref_title_allow_high_mtu">Magas MTU engedélyezése</string>
     <string name="pref_title_use_custom_font">Egyéni betűtípus használata</string>
-    <string name="pref_summary_expose_hr">Lehetővé teszi, hogy más alkalmazások valós időben hozzáférjenek a HR-adatokhoz, miközben a Gadgetbridge kapcsolódva van</string>
+    <string name="pref_summary_expose_hr">Lehetővé teszi, hogy más alkalmazások valós időben hozzáférjenek a HR-adatokhoz, miközben a WatchSwitcher kapcsolódva van</string>
     <string name="pref_title_pebble_gatt_clientonly">Csak GATT kliens</string>
     <string name="pref_title_custom_deviceicon">Eszközspecifikus értesítés ikon megjelenítése</string>
     <string name="pref_title_notifications_timeout">Minimum időköz az értesítések között</string>
@@ -521,7 +521,7 @@
     <string name="blacklist_all_for_notifications">Összes értesítés tiltólistára</string>
     <string name="check_all_applications">Az összes alkalmazás kijelölése</string>
     <string name="uncheck_all_applications">Az összes alkalmazás kijelölésének törlése</string>
-    <string name="about_activity_title_generic">A Gadgetbridge névjegye</string>
+    <string name="about_activity_title_generic">A WatchSwitcher névjegye</string>
     <string name="appmanager_app_share">Megosztás</string>
     <string name="button_watchface_select_image">Háttérkép megváltoztatása</string>
     <string name="about_links">Hivatkozások</string>
@@ -554,9 +554,9 @@
     <string name="zetime_analog_mode_hands">Csak kezek</string>
     <string name="share_log">Napló megosztása</string>
     <string name="about_description_generic">Felhőmentes, szerzői jogmentes, szabad szoftveres alternatíva a zárt forráskódú Android-kütyüalkalmazások helyett, amelyeket a gyártók kínálnak.</string>
-    <string name="application_name_banglejs_main">Bangle.js Gadgetbridge</string>
-    <string name="title_activity_controlcenter_banglejs_main">Bangle.js Gadgetbridge</string>
-    <string name="about_activity_title_banglejs_main">A Bangle.js Gadgetbridge névjegye</string>
+    <string name="application_name_banglejs_main">Bangle.js WatchSwitcher</string>
+    <string name="title_activity_controlcenter_banglejs_main">Bangle.js WatchSwitcher</string>
+    <string name="about_activity_title_banglejs_main">A Bangle.js WatchSwitcher névjegye</string>
     <string name="watchface_dialog_widget_color_white">Fehér</string>
     <string name="watchface_dialog_widget_color">Szín</string>
     <string name="watchface_dialog_widget_x_coordinate">X koordináta (max 240)</string>
@@ -616,7 +616,7 @@
     <string name="quick_alarm">Gyors riasztás</string>
     <string name="sony_automatic_power_off_1_hour">1 óra</string>
     <string name="activity_prefs_goal_fat_burn_time_minutes">Napi cél: zsírégetés ideje percben</string>
-    <string name="title_activity_controlcenter_main_nightly">Gadgetbridge Nightly</string>
+    <string name="title_activity_controlcenter_main_nightly">WatchSwitcher Nightly</string>
     <string name="sony_automatic_power_off_5_min">5 perc</string>
     <string name="sony_speak_to_chat_sensitivity_auto">Automatikus</string>
     <string name="reminder_time_every_day">%1$s, minden nap</string>
@@ -627,15 +627,15 @@
     <string name="hr_appname_workout">Edzés</string>
     <string name="pref_workout_keep_screen_on_title">Képernyő bekapcsolva tartása edzés közben</string>
     <string name="activity_summary_yesterday">Tegnap</string>
-    <string name="title_activity_controlcenter_main_nopebble">Gadgetbridge Nightly (Pebble nélkül)</string>
+    <string name="title_activity_controlcenter_main_nopebble">WatchSwitcher Nightly (Pebble nélkül)</string>
     <string name="pref_workout_send_gps_title">GPS küldése edzés közben</string>
     <string name="menuitem_total_workout">Összes edzés</string>
     <string name="sony_equalizer_band_6300">6.3k</string>
     <string name="menuitem_workout_history">Edzéselőzmények</string>
     <string name="appwidget_sleep_alarm_widget_label">Alvásriasztás</string>
     <string name="menuitem_workout">Edzés</string>
-    <string name="pref_show_changelog_summary">Változáslista megjelenítése a Gadgetbridge frissítése után</string>
-    <string name="about_activity_title_main_nopebble">A Gadgetbridge Nightly (Pebble nélkül) névjegye</string>
+    <string name="pref_show_changelog_summary">Változáslista megjelenítése a WatchSwitcher frissítése után</string>
+    <string name="about_activity_title_main_nopebble">A WatchSwitcher Nightly (Pebble nélkül) névjegye</string>
     <string name="activity_prefs_goal_standing_time_minutes">Napi cél: állásidő percben</string>
     <string name="automatic">Automatikus</string>
     <string name="title_activity_LenovoWatch_calibration">Watch X Plus kalibráció</string>
@@ -651,13 +651,13 @@
         <item quantity="one">%1$d:%2$02d óra</item>
         <item quantity="other">%1$d:%2$02d óra</item>
     </plurals>
-    <string name="about_activity_title_main_nightly">A Gadgetbridge Nightly névjegye</string>
+    <string name="about_activity_title_main_nightly">A WatchSwitcher Nightly névjegye</string>
     <string name="single_band">Egysávos</string>
     <string name="menuitem_last_workout">Utolsó edzés</string>
     <string name="pref_show_changelog">Változáslista megjelenítése indításkor</string>
     <string name="pref_title_device_spec_settings_show_raw_graph">Nyers adatok megjelenítése a tevékenységi grafikonon</string>
     <string name="changelog_title">Újdonságok</string>
-    <string name="about_activity_title_banglejs_nightly">A Bangle.js Gadgetbridge (korai hozzáférésű kiadás) névjegye</string>
+    <string name="about_activity_title_banglejs_nightly">A Bangle.js WatchSwitcher (korai hozzáférésű kiadás) névjegye</string>
     <string name="sony_automatic_power_off_3_hour">3 óra</string>
     <string name="yesterdays_activity">Tegnapi tevékenység</string>
     <string name="zetime_activity_tracking">Tevékenységkövetés</string>
@@ -667,7 +667,7 @@
     <string name="activity_prefs_distance_meters">Napi cél: távolság méterben</string>
     <string name="steps_streaks_total_steps_average_hint">Összesen %d lépés naponta</string>
     <string name="pref_workout_detection_ask_first">Kérdezzen először</string>
-    <string name="title_activity_controlcenter_banglejs_nightly">Bangle.js Gadgetbridge (korai hozzáférésű kiadás)</string>
+    <string name="title_activity_controlcenter_banglejs_nightly">Bangle.js WatchSwitcher (korai hozzáférésű kiadás)</string>
     <string name="sony_equalizer_band_1000">1k</string>
     <string name="pref_workout_detection_enabled">Észlelés engedélyezése</string>
     <string name="pref_workout_detection_time">Észlelés előtti aktív percek</string>
@@ -783,7 +783,7 @@
     <string name="activity_type_treadmill">Futópad</string>
     <string name="prefs_sensors_button_bp_calibration">Kalibrálás</string>
     <string name="pref_summary_auto_export_interval">Exportálás minden %d. órában</string>
-    <string name="pref_theme_dynamic_colors_not_available_warning">A dinamikus színek nem érhetők el az eszközén, csak az Android 12+ verziók támogatják ezt a funkciót. A Gadgetbridge az alapértelmezett Material 3 színeket fogja használni.</string>
+    <string name="pref_theme_dynamic_colors_not_available_warning">A dinamikus színek nem érhetők el az eszközén, csak az Android 12+ verziók támogatják ezt a funkciót. A WatchSwitcher az alapértelmezett Material 3 színeket fogja használni.</string>
     <string name="hr_appname_commute">Ingázás</string>
     <string name="averageHR">Átlagos pulzusszám</string>
     <string name="kind_gps">GPS firmware</string>
@@ -992,8 +992,8 @@
     <string name="custom">Egyéni</string>
     <string name="menuitem_nothing">Semmi</string>
     <string name="speed_first">Sebesség először</string>
-    <string name="application_name_banglejs_nightly">Bangle.js Gadgetbridge (korai hozzáférésű kiadás)</string>
-    <string name="application_name_main_nightly">Gadgetbridge (Nightly)</string>
+    <string name="application_name_banglejs_nightly">Bangle.js WatchSwitcher (korai hozzáférésű kiadás)</string>
+    <string name="application_name_main_nightly">WatchSwitcher (Nightly)</string>
     <string name="Steps">Lépések</string>
     <string name="activity_type_climbing">Mászás</string>
     <string name="activity_list_summary_distance">Távolság</string>
@@ -1227,7 +1227,7 @@
     <string name="prefs_wena3_notification_default_call_vibration">Rezgés bejövő híváskor</string>
     <string name="pref_cache_weather_summary">Az időjárás-információ gyorsítótárazva lesz az alkalmazás újraindításai között.</string>
     <string name="zepp_os_watchface_vast_sky">Vast Sky</string>
-    <string name="about_description_main_nopebble">Felhőmentes, szerzői jogmentes, szabad szoftveres alternatíva a zárt forráskódú Android-kütyüalkalmazások helyett, amelyeket a gyártók kínálnak. A Gadgetbridge korai hozzáférésű kiadása. Ebben a verzióban a Pebble szolgáltatót átnevezték az ütközések elkerülése érdekében, így egyes Pebble eszközökkel kapcsolatos integrációk nem működnek, de telepíthető a meglévő Gadgetbridge-telepítés mellé.</string>
+    <string name="about_description_main_nopebble">Felhőmentes, szerzői jogmentes, szabad szoftveres alternatíva a zárt forráskódú Android-kütyüalkalmazások helyett, amelyeket a gyártók kínálnak. A WatchSwitcher korai hozzáférésű kiadása. Ebben a verzióban a Pebble szolgáltatót átnevezték az ütközések elkerülése érdekében, így egyes Pebble eszközökkel kapcsolatos integrációk nem működnek, de telepíthető a meglévő WatchSwitcher-telepítés mellé.</string>
     <string name="zepp_os_watchface_simplicity_data">Simplicity Data</string>
     <string name="pref_title_huami_force_new_protocol">Új hitelesítési protokoll</string>
     <string name="qhybrid_title_watchface">Számlap konfigurálása</string>
@@ -1248,7 +1248,7 @@
     <string name="zetime_title_heart_rate_alarm_summary">Az óra figyelmeztetni fog, amikor a pulzusszám átlépi a határokat.</string>
     <string name="lefun_prefs_antilost_summary">A karkötő rezegni fog, ha a telefon leválasztódik a karkötőről</string>
     <string name="zepp_os_watchface_multiple_data">Multiple Data</string>
-    <string name="about_description_main_nightly">Felhőmentes, szerzői jogmentes, szabad szoftveres alternatíva a zárt forráskódú Android-kütyüalkalmazások helyett, amelyeket a gyártók kínálnak. A Gadgetbridge korai hozzáférésű kiadásai. Nem telepíthető, ha már telepítve van a Gadgetbridge vagy a Pebble alkalmazás, a Pebble szolgáltató ütközése miatt.</string>
+    <string name="about_description_main_nightly">Felhőmentes, szerzői jogmentes, szabad szoftveres alternatíva a zárt forráskódú Android-kütyüalkalmazások helyett, amelyeket a gyártók kínálnak. A WatchSwitcher korai hozzáférésű kiadásai. Nem telepíthető, ha már telepítve van a WatchSwitcher vagy a Pebble alkalmazás, a Pebble szolgáltató ütközése miatt.</string>
     <string name="prefs_wena3_notification_default_vibration_repetition">Értesítés rezgés ismétlés</string>
     <string name="zepp_os_watchface_rotating_earth">Rotating Earth</string>
     <string name="about_hash">%s véglegesítése</string>
@@ -1262,11 +1262,11 @@
     <string name="prefs_wena3_vibration_strength_item_strong">Erős</string>
     <string name="prefs_wena3_vibration_triple">Háromszor</string>
     <string name="pref_explanation_authkey">Néhány eszköz speciális párosítási kulcsot igényel az első előkészítéskor. Koppintson ide a weboldalon található részletekért.</string>
-    <string name="about_description_banglejs_main">A Gadgetbridge projektre épülő Android társalkalmazás a Bangle.js számára, hozzáadott internet-hozzáféréssel. \n \nA Google Play Áruház szabályzata miatt nem engedélyezzük az adományozási hivatkozást magában az alkalmazásban, de ha tetszik az alkalmazás, fontolja meg az adományozást az alábbi Gadgetbridge honlapon keresztül.</string>
+    <string name="about_description_banglejs_main">A WatchSwitcher projektre épülő Android társalkalmazás a Bangle.js számára, hozzáadott internet-hozzáféréssel. \n \nA Google Play Áruház szabályzata miatt nem engedélyezzük az adományozási hivatkozást magában az alkalmazásban, de ha tetszik az alkalmazás, fontolja meg az adományozást az alábbi WatchSwitcher honlapon keresztül.</string>
     <string name="sony_quick_access_triple_tap">Gyors elérés (három érintés)</string>
-    <string name="gadgetbridge_running_main_nightly">A Gadgetbridge Nightly fut</string>
-    <string name="application_name_main_nopebble">Gadgetbridge (Nightly, Pebble szolgáltató nélkül)</string>
-    <string name="gadgetbridge_running_main_nopebble">A Pebble nélküli Gadgetbridge Nightly fut</string>
+    <string name="gadgetbridge_running_main_nightly">A WatchSwitcher Nightly fut</string>
+    <string name="application_name_main_nopebble">WatchSwitcher (Nightly, Pebble szolgáltató nélkül)</string>
+    <string name="gadgetbridge_running_main_nopebble">A Pebble nélküli WatchSwitcher Nightly fut</string>
     <string name="activity_type_indoor_cycling">Beltéri kerékpározás</string>
     <string name="gadgetbridge_running_banglejs_nightly">Korai hozzáférésű Bangle.js kiadás fut</string>
     <string name="activity_type_indoor_fitness">Beltéri fitnesz</string>
@@ -1282,7 +1282,7 @@
     <string name="wearmode_pebble">Pebble (cipőcsat)</string>
     <string name="pref_summary_pebble_gatt_clientonly">Ez csak a Pebble 2 számára készült és kísérleti verzió, próbálja ki ezt, ha kapcsolódási problémái vannak</string>
     <string name="pref_activity_recognize_running">futás felismerése</string>
-    <string name="about_description_banglejs_nightly">A Gadgetbridge projektre épülő Android-társalkalmazás a Bangle.js számára, hozzáadott internet-hozzáféréssel. \n \nA Google Play Áruház szabályzata miatt nem engedélyezzük az adományozási hivatkozást magában az alkalmazásban, de ha tetszik az alkalmazás, fontolja meg az adományozást az alábbi Gadgetbridge honlapon keresztül.</string>
+    <string name="about_description_banglejs_nightly">A WatchSwitcher projektre épülő Android-társalkalmazás a Bangle.js számára, hozzáadott internet-hozzáféréssel. \n \nA Google Play Áruház szabályzata miatt nem engedélyezzük az adományozási hivatkozást magában az alkalmazásban, de ha tetszik az alkalmazás, fontolja meg az adományozást az alábbi WatchSwitcher honlapon keresztül.</string>
     <string name="activity_type_outdoor_running">Kültéri futás</string>
     <string name="_pebble_watch_open_on_phone">Megnyitás az Android-eszközön</string>
     <string name="activity_type_outdoor_cycling">Kültéri kerékpározás</string>
@@ -1330,7 +1330,7 @@
     <string name="pref_title_general_reconnectonlytoconnected">Újrakapcsolódás csak a csatlakoztatott eszközökhöz</string>
     <string name="pref_title_notifications_ignore_low_priority">Alacsony prioritású értesítések mellőzése</string>
     <string name="pref_summary_notifications_ignore_work_profile">Ne küldjön értesítéseket a munkaprofilban lévő alkalmazásokból az órára</string>
-    <string name="pref_summary_banglejs_text_bitmap">Ha egy szó nem jeleníthető meg az óra betűtípusával, akkor jelenjen meg bittérképként a Gadgetbridge alkalmazásban, az órán pedig bitképként jelenjen meg</string>
+    <string name="pref_summary_banglejs_text_bitmap">Ha egy szó nem jeleníthető meg az óra betűtípusával, akkor jelenjen meg bittérképként a WatchSwitcher alkalmazásban, az órán pedig bitképként jelenjen meg</string>
     <string name="fw_upgrade_notice_amazfitneo">A(z) %s firmware-t akarja telepíteni az Amazfit Neo eszközre. \n \nA .fw fájl telepítése után a karkötője újraindul. \n \nCSAK SAJÁT FELELŐSSÉGÉRE FOLYTASSA!</string>
     <string name="open_fw_installer_warning_text">Ez a funkció képes tönkretenni az eszközét. Ez azonban még soha nem történt meg egyik fejlesztővel sem a telepítéskor, de ne feledje, hogy ezt saját felelősségére teszi.</string>
     <string name="open_fw_installer_getting_files_text">Mivel a firmware fájlokat nem áll módunkban terjeszteni, a fájlokat saját magának kell beszereznie. Ez azt jelenti, hogy meg kell keresnie a fájlokat az apk fájlokban, az interneten, a fórumokon, az Amazfitwatchfaces-en (Miband/Amazfit eszközök esetében) stb.</string>
@@ -1359,13 +1359,13 @@
     <string name="pref_title_notifications_ignore_work_profile">Munkaprofil-értesítések mellőzése</string>
     <string name="pref_title_banglejs_phone_gps_enbale">Telefon GPS-adatainak használata</string>
     <string name="pref_title_banglejs_webview_url">Alkalmazásbetöltő webcím</string>
-    <string name="pref_summary_custom_deviceicon">Kapcsolódáskor egy eszközspecifikus Android értesítési ikont jelenjen meg a Gadgetbridge ikon helyett</string>
+    <string name="pref_summary_custom_deviceicon">Kapcsolódáskor egy eszközspecifikus Android értesítési ikont jelenjen meg a WatchSwitcher ikon helyett</string>
     <string name="pref_title_screen_on_on_notifications">Képernyő bekapcsolása értesítések érkezésekor</string>
     <string name="pref_summary_banglejs_phone_gps_network_only">Csak a hálózati szolgáltató használata a helyszín meghatározásához. Ez csökkenti az energiafogyasztást a pontosság rovására. Újrakapcsolódás szükséges.</string>
     <string name="pref_title_banglejs_phone_gps_update_interval">GPS-adatfrissítési időköz</string>
     <string name="pref_summary_banglejs_webview_url">Ha egyéni alkalmazásbetöltőt szeretne használni, akkor itt adja meg a https://…/android.html webcímét. Ellenkező esetben hagyja üresen a https://banglejs.com/apps használatához</string>
     <string name="pref_title_message_privacy_mode">Üzenet adatvédelmi mód</string>
-    <string name="pref_title_weather_summary">A LineageOS időjárásszolgáltatóhoz használatos, más Android-verziókhoz olyan alkalmazás szükséges, mint a „Breezy Weather”. További információ a Gadgetbridge weboldalán talál.</string>
+    <string name="pref_title_weather_summary">A LineageOS időjárásszolgáltatóhoz használatos, más Android-verziókhoz olyan alkalmazás szükséges, mint a „Breezy Weather”. További információ a WatchSwitcher weboldalán talál.</string>
     <string name="pref_title_device_intents">Intentek engedélyezése</string>
     <string name="pref_title_preview_message_in_title">Az üzenet előnézetének megjelenítése a címben</string>
     <string name="pref_summary_preview_message_in_title">Megjeleníti az üzenet előnézetét az értesítés címében, ahogy azt az eszköz engedélyezi</string>
@@ -1759,7 +1759,7 @@
     <string name="preferences_rtl_settings">Jobbról balra támogatás</string>
     <string name="activity_type_exercise">Gyakorlás</string>
     <string name="activity_type_riding">Lovaglás</string>
-    <string name="notification_gps_title">Gadgetbridge GPS</string>
+    <string name="notification_gps_title">WatchSwitcher GPS</string>
     <string name="activity_type_trail_run">Tájfutás</string>
     <string name="activity_type_wrestling">Birkózás</string>
     <string name="activity_summary_detail_clear_gpx_track">GPX-nyomvonal törlése</string>
@@ -1845,10 +1845,10 @@
     <string name="pref_title_middle_button_function_short">Középső gomb röviden</string>
     <string name="prefs_button_double_press_action_selection_title">2. esemény művelet</string>
     <string name="prefs_button_triple_press_action_selection_title">3. esemény művelet</string>
-    <string name="gpx_receiver_activity_title">Gadgetbridge GPX-vevő</string>
+    <string name="gpx_receiver_activity_title">WatchSwitcher GPX-vevő</string>
     <string name="gpx_receiver_overwrite_some_files">Néhány fájl már létezik. Felülírja?</string>
     <string name="error_version_check_extreme_caution">FIGYELEM: Hiba történt a verzióinformáció ellenőrzésénél! Nem szabad folytatni! „%s” verzió nevét láttam</string>
-    <string name="share_log_warning">Ne feledje, hogy a Gadgetbridge olyan fájlokat naplóz, amelyek sok személyes adatot tartalmazhatnak, többek között egészségügyi adatokat, egyedi azonosítókat (például az eszköz MAC-címét), zenei beállításokat stb. Fontolja meg a fájl szerkesztését és ezen információk eltávolítását, mielőtt elküldi a fájlt egy nyilvános hibajelentésre.</string>
+    <string name="share_log_warning">Ne feledje, hogy a WatchSwitcher olyan fájlokat naplóz, amelyek sok személyes adatot tartalmazhatnak, többek között egészségügyi adatokat, egyedi azonosítókat (például az eszköz MAC-címét), zenei beállításokat stb. Fontolja meg a fájl szerkesztését és ezen információk eltávolítását, mielőtt elküldi a fájlt egy nyilvános hibajelentésre.</string>
     <string name="pref_title_upper_button_long_press_action">Felső gomb hosszú megnyomású művelet</string>
     <string name="pref_title_lower_button_function_long">Alsó gomb hosszan</string>
     <string name="pref_title_middle_button_function_double">Középső gomb duplán</string>
@@ -2247,7 +2247,7 @@
     <string name="prefs_workmode">Munka mód</string>
     <string name="pref_activity_recognition_mode_none">nincs</string>
     <string name="huawei_trusleep_summary_light">Fejlesztett alvásfigyelés</string>
-    <string name="huawei_trusleep_warning">Figyelmeztetés: A TruSleep™ nincs teljesen implementálva. Engedélyezése néhány eszközön az összes alvásadatot könnyű alvásnak jeleníti meg a Gadgetbridge-ben!</string>
+    <string name="huawei_trusleep_warning">Figyelmeztetés: A TruSleep™ nincs teljesen implementálva. Engedélyezése néhány eszközön az összes alvásadatot könnyű alvásnak jeleníti meg a WatchSwitcher-ben!</string>
     <string name="pref_summary_navigation_forward">A navigációs alkalmazások utasításainak továbbítása az órára</string>
     <string name="error_deleting_device">Hiba történt az eszköz törlésekor: %s</string>
     <string name="fossil_hr_confirmation_skipped">Eszközön történő jóváhagyás kihagyása</string>
@@ -2389,7 +2389,7 @@
     <string name="loyalty_cards_sync_groups_only">Csak bizonyos csoportok szinkronizálása</string>
     <string name="loyalty_cards_sync_groups">Szinkronizálandó csoportok</string>
     <string name="prefs_wena3_smart_alarm_margin_item">Intelligens riasztási margó</string>
-    <string name="pref_summary_garmin_default_reply_suffix">A Gadgetbridge alkalmazásban beállított utótaghoz hozzáfűzve</string>
+    <string name="pref_summary_garmin_default_reply_suffix">A WatchSwitcher alkalmazásban beállított utótaghoz hozzáfűzve</string>
     <string name="none">Nincs</string>
     <string name="min_val">Minimális: %d</string>
     <string name="prefs_title_ble_intent_api">BLE Intent API</string>
@@ -2496,7 +2496,7 @@
     <string name="music_huawei_device_info">Támogatott formátumok: %1$s\nÓra tárhelye: %2$d MB</string>
     <string name="first_start_welcome_title">Üdvözöljük</string>
     <string name="first_start_permissions_title">Engedélyek</string>
-    <string name="first_start_permissions_desc">A Gadgetbridge alkalmazásnak számos engedélyre van szüksége ahhoz, hogy minden funkcióját el tudja látni. Tekintse át az engedélyeket és azok célját az alábbiakban.</string>
+    <string name="first_start_permissions_desc">A WatchSwitcher alkalmazásnak számos engedélyre van szüksége ahhoz, hogy minden funkcióját el tudja látni. Tekintse át az engedélyeket és azok célját az alábbiakban.</string>
     <string name="first_start_permissions_request_all_button">Minden engedély megadása</string>
     <string name="first_start_permissions_request_button">Engedély megadása</string>
     <string name="first_start_get_started_title">Kezdje el</string>
@@ -2774,7 +2774,7 @@
     <string name="fossil_hr_pairing_successful">Az óra párosítása sikeres</string>
     <string name="contact_missing_number">A névjegy száma üres</string>
     <string name="withings_calibration_text_activity_target">Végül igazítsa a tevékenységmutatót 100%-ra. Vegye figyelembe, hogy ez a mutató csak az óramutató járásával megegyező irányba tud mozogni.</string>
-    <string name="pref_theme_dynamic_colors_explanation">Megjegyzés: a dinamikus színek témához engedélyeznie kell a Háttérkép színei vagy a Színpaletta funkciót az Android 12+ megjelenési beállításaiban. Ha ezt nem teszi meg, akkor a Gadgetbridge az alapértelmezett Material 3 színeket fogja használni.</string>
+    <string name="pref_theme_dynamic_colors_explanation">Megjegyzés: a dinamikus színek témához engedélyeznie kell a Háttérkép színei vagy a Színpaletta funkciót az Android 12+ megjelenési beállításaiban. Ha ezt nem teszi meg, akkor a WatchSwitcher az alapértelmezett Material 3 színeket fogja használni.</string>
     <string name="prefs_wena3_item_background_sync">Háttérben végzett tevékenységadatok szinkronizálása</string>
     <string name="pref_vitality_score_daily_summary">Kapjon értesítést, ha elérte a napi maximális életerőpontok számát</string>
     <string name="widget_layout_top_2_bot_2">2 felül, 2 alul</string>
@@ -2787,8 +2787,8 @@
     <string name="pref_fetch_unknown_files_summary">Ismeretlen tevékenységfájlok lekérése az óráról. Ezek nem kerülnek feldolgozásra, de el lesznek mentve a telefonon.</string>
     <string name="file_already_exists">A fájl már létezik</string>
     <string name="prefs_title_gatt_client_notification_intents">GATT értesítési szándékok továbbítása BLE Intent API-n keresztül</string>
-    <string name="activity_db_management_backup_restore_explanation">Az importálás/exportálás műveletek lehetővé teszik a Gadgetbridge összes beállításának, eszközének és adatának átköltöztetését vagy biztonsági mentését egy zip-fájlba és egy zip-fájlból.\n\nA fájl importálása eltávolítja az összes meglévő adatot, eszközt és beállítást, és teljesen a biztonsági mentéssel helyettesíti azokat.</string>
-    <string name="first_start_overview_desc">A Gadgetbridge két fő nézetből áll, melyeknek megvan a maguk célja.</string>
+    <string name="activity_db_management_backup_restore_explanation">Az importálás/exportálás műveletek lehetővé teszik a WatchSwitcher összes beállításának, eszközének és adatának átköltöztetését vagy biztonsági mentését egy zip-fájlba és egy zip-fájlból.\n\nA fájl importálása eltávolítja az összes meglévő adatot, eszközt és beállítást, és teljesen a biztonsági mentéssel helyettesíti azokat.</string>
+    <string name="first_start_overview_desc">A WatchSwitcher két fő nézetből áll, melyeknek megvan a maguk célja.</string>
     <string name="first_start_overview_devices">Az eszközök nézete megjeleníti az összes konfigurált eszközt és azok állapotát, és hozzáférést biztosít az eszközökre vonatkozó specifikus funkciókhoz, mint például a részletes grafikonok, beállítások, alkalmazások és riasztások.</string>
     <string name="permission_contacts_summary">Névjegyek küldése a kütyükre</string>
     <string name="permission_send_sms_title">SMS küldése</string>
@@ -2809,7 +2809,7 @@
     <string name="discharge_interval_2">Lemerülési időköz 2</string>
     <string name="discharge_interval_3">Lemerülési időköz 3</string>
     <string name="discharge_interval_4">Lemerülési időköz 4</string>
-    <string name="manual_discharge_summary">ha le van tiltva, ez azt feltételezi, hogy az intelligens lemerülést egy külső árammérő vezérli (amit a Gadgetbridge nem támogat)</string>
+    <string name="manual_discharge_summary">ha le van tiltva, ez azt feltételezi, hogy az intelligens lemerülést egy külső árammérő vezérli (amit a WatchSwitcher nem támogat)</string>
     <string name="battery_allow_pass_through">Hálózati áram használatát töltés közben</string>
     <string name="pref_header_hrv_status">Szívfrekvencia-variabilitás állapota</string>
     <string name="garmin_agps_url_i">AGPS %1$d webcím</string>
@@ -2886,7 +2886,7 @@
     <string name="miscale_weight_unit_metric">Metrikus (kg)</string>
     <string name="miscale_weight_unit_imperial">Birodalmi (font - lbs)</string>
     <string name="mijia_lywsd_comfort_level_summary">A megjelenített emodzsi hőmérséklet- és páratartalom-határértékeinek beállítása</string>
-    <string name="prefs_wena3_hint_background_sync">Lehetővé teszi, hogy a Wena időszakosan kérje a Gadgetbridge-től a tevékenységadatok letöltését az eszközről</string>
+    <string name="prefs_wena3_hint_background_sync">Lehetővé teszi, hogy a Wena időszakosan kérje a WatchSwitcher-től a tevékenységadatok letöltését az eszközről</string>
     <string name="pref_screen_auto_brightness_title">Automatikus fényerő</string>
     <string name="pref_device_action_broadcast">Közvetítés küldése</string>
     <string name="idasen_control_button_sit">SIT</string>
@@ -2920,7 +2920,7 @@
     <string name="pref_vitality_score_7_day_title">7 napos fejlődés</string>
     <string name="pref_vitality_score_daily_title">Napi fejlődés</string>
     <string name="pref_summary_fossil_hr_nav_vibrate">Az óra rezegjen-e minden új vagy módosított navigációs utasításnál (csak akkor, ha az alkalmazás előtérben van)</string>
-    <string name="pref_force_connection_type_description">Megpróbálhatja kényszeríteni a kapcsolódás típusát, ha az eszköz nem reagál a Gadgetbridge alkalmazásnak</string>
+    <string name="pref_force_connection_type_description">Megpróbálhatja kényszeríteni a kapcsolódás típusát, ha az eszköz nem reagál a WatchSwitcher alkalmazásnak</string>
     <string name="pref_force_connection_type_auto">Automatikus</string>
     <string name="pref_dashboard_all_devices_summary">Kombinálja az összes hozzáadott eszközök tevékenységadatait a műszerfalon megjelenő összegekhez</string>
     <string name="pref_auto_reply_calls_delay_title">Automatikus válaszkésleltetés</string>
@@ -2963,7 +2963,7 @@
     <string name="music_add_to_playlist">Hozzáadás a lejátszási listához</string>
     <string name="music_new_playlist">Új lejátszási lista</string>
     <string name="music_error">Hiba történt</string>
-    <string name="first_start_open_source_text">A Gadgetbridge egy nyílt forráskódú alkalmazás, amelyet a közösség fejleszt a közösség számára.\n\nBárki hozzájárulhat a fejlesztéshez kóddal, dokumentációval, teszteléssel vagy adományokkal.\n\nA Gadgetbridge nem tartalmaz hirdetéseket és nem követi Önt. Az adatokat helyben, az Android-eszközén tárolja, így 100%-ban adatvédelem-barát.\n\nLátogasson el weboldalunkra a további információkért, dokumentációkért és a kommunikációs csatornáink eléréséhez.</string>
+    <string name="first_start_open_source_text">A WatchSwitcher egy nyílt forráskódú alkalmazás, amelyet a közösség fejleszt a közösség számára.\n\nBárki hozzájárulhat a fejlesztéshez kóddal, dokumentációval, teszteléssel vagy adományokkal.\n\nA WatchSwitcher nem tartalmaz hirdetéseket és nem követi Önt. Az adatokat helyben, az Android-eszközén tárolja, így 100%-ban adatvédelem-barát.\n\nLátogasson el weboldalunkra a további információkért, dokumentációkért és a kommunikációs csatornáink eléréséhez.</string>
     <string name="permission_bluetooth_scan_summary">Új Bluetooth-eszközök beolvasása</string>
     <string name="permission_read_call_log_title">Híváslista olvasása</string>
     <string name="permission_read_call_log_summary">Hívásnapló továbbítása a kütyükre</string>
@@ -3153,7 +3153,7 @@
     <string name="soundcore_equalizer_band6">6. sáv</string>
     <string name="soundcore_equalizer_band7">7. sáv</string>
     <string name="huawei_reparse_workout_data">Edzésadatok javítása</string>
-    <string name="info_menu_structure_set">Menüelrendezési .json-fájl beállítása a Gadgetbridge-ben</string>
+    <string name="info_menu_structure_set">Menüelrendezési .json-fájl beállítása a WatchSwitcher-ben</string>
     <string name="activity_type_worn">Viselt</string>
     <string name="max_val">Maximális: %d</string>
     <string name="workoutSets">Sorozatok</string>
@@ -3566,7 +3566,7 @@
     <string name="map_theme_biker">Motoros</string>
     <string name="map_theme_indigo">Indigó</string>
     <string name="pref_title_block_screenshot">Képernyőkép készítésének megakadályozása</string>
-    <string name="pref_summary_block_screenshots">Megakadályozza a képernyőképek készítését és megjelenítését nem biztonságos kijelzőn. A teljes hatályba lépéshez újra kell indítani a Gadgetbridge-et.</string>
+    <string name="pref_summary_block_screenshots">Megakadályozza a képernyőképek készítését és megjelenítését nem biztonságos kijelzőn. A teljes hatályba lépéshez újra kell indítani a WatchSwitcher-et.</string>
     <string name="phone_calls">Telefonhívások</string>
     <string name="pref_title_notifications_when_screen_saver">…képernyővédő bekapcsolásakor is</string>
     <string name="pref_title_screen_on_on_notifications_timeout">Értesítés kijelzési ideje</string>
@@ -3719,7 +3719,7 @@
     <string name="soundcore_battery_low_tone_title">Alacsony akkumulátorszint-jelzés</string>
     <string name="soundcore_gaming_mode_title">Játékmód</string>
     <string name="soundcore_gaming_mode_summary">Csökkenti a késleltetést és felerősíti a lépések és a hangok hangjait. Csökkentheti a kapcsolat stabilitását.</string>
-    <string name="huawei_sleep_breath_summary">Légzés kiértékelése csendes környezetben. Hatással lehet az akkumulátor élettartamára.\nFigyelmeztetés: Még nincs szinkronizálva a Gadgetbridge alkalmazással.</string>
+    <string name="huawei_sleep_breath_summary">Légzés kiértékelése csendes környezetben. Hatással lehet az akkumulátor élettartamára.\nFigyelmeztetés: Még nincs szinkronizálva a WatchSwitcher alkalmazással.</string>
     <string name="pref_enable_sms_quick_reply_title">SMS-válaszok engedélyezése</string>
     <string name="pref_enable_sms_quick_reply_summary">Lehetővé teszi a hívások elutasítását SMS-válasszal</string>
     <string name="unset">Nincs beállítva</string>
@@ -3798,16 +3798,16 @@
     <string name="activity_print_image_print_button">Nyomtatás</string>
     <string name="activity_print_image_upscale_switch">Képfelbontás növelése</string>
     <string name="activity_print_label_print_size">Nyomtatási méret (képpont): %1$d x %2$d</string>
-    <string name="service_notification_collector_service_title">Gadgetbridge Értesítésfigyelő</string>
+    <string name="service_notification_collector_service_title">WatchSwitcher Értesítésfigyelő</string>
     <string name="service_notification_collector_service_text">Értesítések figyelése a háttérben</string>
     <string name="pref_title_time_interval">Időköz</string>
     <string name="pref_summary_time_interval">Korlátozás adott időközre</string>
     <string name="prefs_key_enable_deprecated_notificationcollectormonitor_title">Az elavult Értesítésgyűjtő Figyelőszolgáltatás engedélyezése</string>
-    <string name="prefs_key_enable_deprecated_notificationcollectormonitor_summary">Kényszeríti a második előtétszolgáltatás használatát az Értesítésfigyelő életben tartásához, aktiválja ezt a beállítást, ha a Gadgetbridge nem kap értesítéseket.\nVegye figyelembe, hogy egy második állandó értesítés megjelenítését okozhatja.\nIndítsa újra az alkalmazást a váltás után.</string>
-    <string name="pref_printer_print_received_text">A Gadgetbridge alkalmazással megosztott szöveg nyomtatása</string>
+    <string name="prefs_key_enable_deprecated_notificationcollectormonitor_summary">Kényszeríti a második előtétszolgáltatás használatát az Értesítésfigyelő életben tartásához, aktiválja ezt a beállítást, ha a WatchSwitcher nem kap értesítéseket.\nVegye figyelembe, hogy egy második állandó értesítés megjelenítését okozhatja.\nIndítsa újra az alkalmazást a váltás után.</string>
+    <string name="pref_printer_print_received_text">A WatchSwitcher alkalmazással megosztott szöveg nyomtatása</string>
     <string name="error_queue_is_dead">A GB-feldolgozási sora leállt</string>
-    <string name="error_sender_is_dead">A Gadgetbridge küldőszála leállt</string>
-    <string name="error_receiver_is_dead">A Gadgetbridge fogadószála leállt</string>
+    <string name="error_sender_is_dead">A WatchSwitcher küldőszála leállt</string>
+    <string name="error_receiver_is_dead">A WatchSwitcher fogadószála leállt</string>
     <string name="submit_button_text">Küldés</string>
     <string name="auth_key_required_message">A hitelesítési kulcs nem lehet üres</string>
     <string name="invalid_auth_key_message">Érvénytelen hitelesítési kulcs – próbálja újra</string>
@@ -3873,12 +3873,12 @@
     <string name="pref_huawei_features_config_info_title">További egészségfunkciók engedélyezése</string>
     <string name="pref_huawei_features_config_info_summary">Az alábbi beállítások engedélyezése további egészségfunkciókat aktivál az eszközön. Például érzelmi vagy EKG-t.\nMEGJEGYZÉS: Az elérhető funkciók az eszköztől függenek.</string>
     <string name="pref_huawei_features_config_warning_title">Országkód és funkciók konfigurációinak küldése az eszközre.</string>
-    <string name="pref_huawei_features_config_warning_summary">Figyelmeztetés: Ezeknek a beállításoknak az engedélyezése, amikor a Gadgetbridge és a gyártói alkalmazás is használatban van, problémákat okozhat a gyártói alkalmazással és az eszköz működésével, vagy egyáltalán nem befolyásolhatja az eszköz jelenlegi képességeit. Helytelen ország beállítása befolyásolhatja az eszköz egyéb beállításait, például a régióalapú frekvenciakonfigurációt stb. Saját felelősségére engedélyezze.\nAz eszköz újrapárosítása szükséges.</string>
+    <string name="pref_huawei_features_config_warning_summary">Figyelmeztetés: Ezeknek a beállításoknak az engedélyezése, amikor a WatchSwitcher és a gyártói alkalmazás is használatban van, problémákat okozhat a gyártói alkalmazással és az eszköz működésével, vagy egyáltalán nem befolyásolhatja az eszköz jelenlegi képességeit. Helytelen ország beállítása befolyásolhatja az eszköz egyéb beállításait, például a régióalapú frekvenciakonfigurációt stb. Saját felelősségére engedélyezze.\nAz eszköz újrapárosítása szükséges.</string>
     <string name="pref_huawei_send_country_code_title">Országkód küldése</string>
     <string name="pref_huawei_send_country_code_summary">Országkód küldése az eszközre.\n Figyelem: az országkódnak be kell lennie állítva</string>
     <string name="pref_huawei_country_code_title">Országkód</string>
     <string name="pref_huawei_force_features_settings_title">Ország szerint korlátozott beállítások megjelenítésének kényszerítése</string>
-    <string name="pref_huawei_force_features_settings_summary">Az országspecifikus beállítások megjelenítésének kényszerítése a Gadgetbridge alkalmazásban.\n Figyelmeztetés: A Gadgetbridge megjeleníti az eszköz által támogatottnak jelentett beállításokat. Vegye figyelembe, hogy néhány beállítást korlátozhat az eszközön a gyártói alkalmazás, és nem működhetnek, vagy helytelenül működhetnek.</string>
+    <string name="pref_huawei_force_features_settings_summary">Az országspecifikus beállítások megjelenítésének kényszerítése a WatchSwitcher alkalmazásban.\n Figyelmeztetés: A WatchSwitcher megjeleníti az eszköz által támogatottnak jelentett beállításokat. Vegye figyelembe, hogy néhány beállítást korlátozhat az eszközön a gyártói alkalmazás, és nem működhetnek, vagy helytelenül működhetnek.</string>
     <string name="pref_huawei_pulse_wave_arrhythmia">Pulzushullám-aritmia</string>
     <string name="pref_huawei_pulse_wave_arrhythmia_enable_title">Pulzushullám-aritmia engedélyezése</string>
     <string name="pref_huawei_pulse_wave_arrhythmia_enable_summary">Pulzushullám-aritmia aktiválása az eszközön</string>
@@ -3939,7 +3939,7 @@
     <string name="rebble_appstore_fetch_app_info_failed_content_type">Nem sikerült lekérni az alkalmazás adatait, helytelen tartalomtípus: %1$s</string>
     <string name="rebble_appstore_fetching_download_file_failed">Nem sikerült lekérni a letöltési fájlt: %1$s</string>
     <string name="internet_helper_permission_title">Internetsegéd-bővítmény</string>
-    <string name="internet_helper_permission_summary">Engedélyezze az internethozzáférést Gadgetbridge internetsegéd-bővítménye számára</string>
+    <string name="internet_helper_permission_summary">Engedélyezze az internethozzáférést WatchSwitcher internetsegéd-bővítménye számára</string>
     <string name="notification_channel_pebble_js_runner">Pebble JS-futtató</string>
     <string name="notification_pebble_js_service_title">Pebble JavaScript szolgáltatás</string>
     <string name="notification_pebble_js_service_text">JavaScript futtatása a Pebble alkalmazásban/számlapon</string>
@@ -3993,7 +3993,7 @@
     <string name="pref_health_connect_manual_settings">Health Connect adatok kezelése</string>
     <string name="pref_health_connect_settings">Health Connect beállítások</string>
     <string name="pref_health_connect_settings_summary">Android Health Connect beállítások megnyitása</string>
-    <string name="pref_health_connect_disable_notice">A Health Connect adat-exportálás letiltásához vonja vissza a Gadgetbridge összes engedélyét a Health Connect alkalmazásban</string>
+    <string name="pref_health_connect_disable_notice">A Health Connect adat-exportálás letiltásához vonja vissza a WatchSwitcher összes engedélyét a Health Connect alkalmazásban</string>
     <string name="pref_health_connect_sync_notice">Az adatok mennyiségétől függően a Health Connect szinkronizálás több percig is eltarthat.</string>
     <string name="pref_health_connect_device_selection">Eszközök kiválasztása</string>
     <string name="pref_health_connect_device_selection_summary">Válassza ki azokat az eszközöket, amelyek adatait meg szeretné osztani a Health Connecttel</string>
@@ -4003,12 +4003,12 @@
     <string name="pref_health_connect_sync_on_event_title">Szinkronizálás az eszköz szinkronizálása után</string>
     <string name="pref_health_connect_sync_on_event_summary">Szinkronizálás a Health Connecttel, miután a kiválasztott eszköz befejezte az aktivitási adatok szinkronizálását.</string>
     <string name="health_connect_permissions_rationale_title">Adatvédelmi irányelvek és engedélyek</string>
-    <string name="health_connect_permissions_rationale_message">A Gadgetbridge adatokat gyűjt az eszközeiről, és az engedélyével megosztja azokat a Health Connecttel. Ezek az adatok az eszközön tárolódnak, és nem lesznek megosztva harmadik felekkel.</string>
+    <string name="health_connect_permissions_rationale_message">A WatchSwitcher adatokat gyűjt az eszközeiről, és az engedélyével megosztja azokat a Health Connecttel. Ezek az adatok az eszközön tárolódnak, és nem lesznek megosztva harmadik felekkel.</string>
     <string name="health_connect_sync_notification_title">Health Connect szinkronizálás</string>
     <string name="health_connect_sync_notification_message">Adatok szinkronizálása a Health Connecttel…</string>
     <string name="health_connect_unavailable_summary">A Health Connect nem érhető el ezen a rendszeren.</string>
     <string name="health_connect_permission_check_error">Hiba a Health Connect engedélyek ellenőrzésekor.</string>
-    <string name="health_connect_all_denied">A Gadgetbridge adattípusaihoz tartozó összes Health Connect engedély el lett utasítva vagy vissza lett vonva.</string>
+    <string name="health_connect_all_denied">A WatchSwitcher adattípusaihoz tartozó összes Health Connect engedély el lett utasítva vagy vissza lett vonva.</string>
     <string name="health_connect_failed_init">Nem sikerült előkészíteni a Health Connect klienst az engedélyek módosítása után.</string>
     <string name="health_connect_all_granted">Health Connect engedélyezve. Az adatszinkronizálás megkezdődik a jóváhagyott adattípusoknál.</string>
     <string name="health_connect_permission_changed">A Health Connect engedélyek megváltoztak.</string>
@@ -4038,7 +4038,7 @@
     <string name="health_connect_sync_now_message">Szeretné most elindítani az adatok szinkronizálását a Health Connecttel?</string>
     <string name="health_connect_sync_now">Szinkronizálás most</string>
     <string name="health_connect_sync_later">Szinkronizálás később</string>
-    <string name="health_connect_prompt_full_dao_reset">A Gadgetbridge összes Health Connect engedélye vissza lett vonva. Törölte az összes adatot is? Ha igen, a szinkronizálási előzmények törlésével újraszinkronizálhatja a régi adatokat, ha ismét megadja az engedélyeket.</string>
+    <string name="health_connect_prompt_full_dao_reset">A WatchSwitcher összes Health Connect engedélye vissza lett vonva. Törölte az összes adatot is? Ha igen, a szinkronizálási előzmények törlésével újraszinkronizálhatja a régi adatokat, ha ismét megadja az engedélyeket.</string>
     <string name="health_connect_reset_sync_history">Szinkronizálási előzmények törlése</string>
     <string name="health_connect_keep_sync_history">Szinkronizálási előzmények megtartása</string>
     <string name="health_connect_exception">Health Connect adatok szinkronizálása:</string>
@@ -4048,7 +4048,7 @@
     <string name="health_connect_sync_error_for_device">Szinkronizálási hiba a következőnél: %1$s (%2$s): %3$s</string>
     <string name="health_connect_permission_denied">Hozzáférés megtagadva: %1$s. Ellenőrizze a Health Connect engedélyeit.</string>
     <string name="health_connect_sleep_session_title">Alvási ciklus ekkortól: %1$s</string>
-    <string name="health_connect_sleep_session_notes">Alvási adatok a következő Gadgetbridge-eszközről: %1$s.</string>
+    <string name="health_connect_sleep_session_notes">Alvási adatok a következő WatchSwitcher-eszközről: %1$s.</string>
     <string name="pref_header_dashboard">Műszerfal</string>
     <string name="glucose_value_mg_dl">%1$d mg/dL</string>
     <string name="device_delete_in_progress">Eszköz törlése…</string>
@@ -4142,7 +4142,7 @@
     <string name="pref_summary_supported_devices">Ezt a funkciót nem minden eszköz támogatja. További információért koppintson ide.</string>
     <string name="pref_title_supported_devices">Támogatott eszközök</string>
     <string name="activity_type_floorball">Floorball</string>
-    <string name="intent_api_allow_global_settings_summary">Harmadik féltől származó alkalmazások számára engedélyezi a Gadgetbridge globális beállításainak módosítását intenteken keresztül. A módosítások érvénybe lépéséhez indítsa újra a Gadgetbridge-et.</string>
+    <string name="intent_api_allow_global_settings_summary">Harmadik féltől származó alkalmazások számára engedélyezi a WatchSwitcher globális beállításainak módosítását intenteken keresztül. A módosítások érvénybe lépéséhez indítsa újra a WatchSwitcher-et.</string>
     <string name="uploading_rpk">RPK feltöltése…</string>
     <string name="uploadrpkoperation_complete">RPK-telepítés kész</string>
     <string name="uploadrpkoperation_failed">RPK-telepítés sikertelen</string>
@@ -4216,8 +4216,8 @@
     <string name="open_app">%s megnyitása</string>
     <string name="install_app_fail">Nem sikerült megnyitni az alkalmazásáruházat a(z) %s telepítéséhez</string>
     <string name="loyalty_cards_app_not_installed">A hűségkártyák kezeléséhez egy hűségkártya-alkalmazásra van szükség. Telepítsen egyet az alább támogatottak közül.</string>
-    <string name="loyalty_cards_app_not_compatible">A telepített %1$s verzió nem kompatibilis a Gadgetbridge alkalmazással. Frissítse a(z) %1$s alkalmazást és a Gadgetbridge alkalmazást a legújabb verzióra.</string>
-    <string name="loyalty_cards_app_permissions_summary">A Gadgetbridge alkalmazásnak olvasási jogosultságra van szüksége a(z) %1s kártyákhoz a szinkronizáláshoz. Érintse meg ezt a gombot a megadásukhoz.</string>
+    <string name="loyalty_cards_app_not_compatible">A telepített %1$s verzió nem kompatibilis a WatchSwitcher alkalmazással. Frissítse a(z) %1$s alkalmazást és a WatchSwitcher alkalmazást a legújabb verzióra.</string>
+    <string name="loyalty_cards_app_permissions_summary">A WatchSwitcher alkalmazásnak olvasási jogosultságra van szüksége a(z) %1s kártyákhoz a szinkronizáláshoz. Érintse meg ezt a gombot a megadásukhoz.</string>
     <string name="weight_scale_gram_format">%1$d g</string>
     <string name="internet_firewall_note_subdomain">A domaineknek tartalmazniuk kell a teljes aldomaint, protokoll nélkül. Például: „subdomain.example.org”.</string>
     <string name="gymlink_title">GymLink</string>
@@ -4522,16 +4522,16 @@
     <string name="qs_tile_clear">Törlés</string>
     <string name="qs_tile_cycle_values">Léptessen az értékek között</string>
     <string name="qs_tile_cycle_values_all">Összes érték</string>
-    <string name="qs_tile_label_1">Gadgetbridge 1</string>
-    <string name="qs_tile_label_2">Gadgetbridge 2</string>
-    <string name="qs_tile_label_3">Gadgetbridge 3</string>
-    <string name="qs_tile_label_4">Gadgetbridge 4</string>
-    <string name="qs_tile_label_5">Gadgetbridge 5</string>
-    <string name="qs_tile_label_6">Gadgetbridge 6</string>
-    <string name="qs_tile_label_7">Gadgetbridge 7</string>
-    <string name="qs_tile_label_8">Gadgetbridge 8</string>
-    <string name="qs_tile_label_9">Gadgetbridge 9</string>
-    <string name="qs_tile_label_10">Gadgetbridge 10</string>
+    <string name="qs_tile_label_1">WatchSwitcher 1</string>
+    <string name="qs_tile_label_2">WatchSwitcher 2</string>
+    <string name="qs_tile_label_3">WatchSwitcher 3</string>
+    <string name="qs_tile_label_4">WatchSwitcher 4</string>
+    <string name="qs_tile_label_5">WatchSwitcher 5</string>
+    <string name="qs_tile_label_6">WatchSwitcher 6</string>
+    <string name="qs_tile_label_7">WatchSwitcher 7</string>
+    <string name="qs_tile_label_8">WatchSwitcher 8</string>
+    <string name="qs_tile_label_9">WatchSwitcher 9</string>
+    <string name="qs_tile_label_10">WatchSwitcher 10</string>
     <string name="sony_capture_voice_during_call">Hangrögzítés hívás közben</string>
     <string name="sony_capture_voice_during_call_summary">A saját hangját könnyebben hallhatja a hívás közben. Ha túl hangosnak érzi a saját hangját, vagy a háttérzaj zavaró, kapcsolja ki ezt a funkciót.</string>
     <string name="sony_service_link_summary">Integráció engedélyezése más szolgáltatásokkal, beleértve a Spotify-t és az Endelt</string>

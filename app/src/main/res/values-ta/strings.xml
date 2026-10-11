@@ -2400,7 +2400,7 @@
     <string name="pref_cache_weather_summary">பயன்பாட்டு மறுதொடக்கங்கள் முழுவதும் வானிலை தகவல்கள் தற்காலிகமாக சேமிக்கப்படும்.</string>
     <string name="busy_task_fetch_activity_data">செயல்பாட்டு தரவைப் பெறுதல்</string>
     <string name="miband_pairing_tap_hint">உங்கள் மி பேண்ட் அதிர்வுறும் மற்றும் சிமிட்டும் போது, அதை ஒரு வரிசையில் சில முறை தட்டவும்.</string>
-    <string name="discovery_connected_devices_hint">உங்கள் சாதனத்தைக் கண்டறியும்படி செய்யுங்கள். தற்போது இணைக்கப்பட்ட சாதனங்கள் கண்டறியப்படாது. இருப்பிடத்தை இயக்கு (எ.கா. சி.பி.எச்). Gadgetbridgeக்கான தனியுரிமை காவலரை முடக்கவும், ஏனெனில் அது உங்கள் மொபைலை செயலிழக்கச் செய்து மறுதொடக்கம் செய்யக்கூடும். சில நிமிடங்களுக்குப் பிறகு எந்த சாதனமும் கிடைக்கவில்லை என்றால், உங்கள் மொபைல் சாதனத்தை மறுதொடக்கம் செய்த பிறகு மீண்டும் முயற்சிக்கவும்.</string>
+    <string name="discovery_connected_devices_hint">உங்கள் சாதனத்தைக் கண்டறியும்படி செய்யுங்கள். தற்போது இணைக்கப்பட்ட சாதனங்கள் கண்டறியப்படாது. இருப்பிடத்தை இயக்கு (எ.கா. சி.பி.எச்). WatchSwitcherக்கான தனியுரிமை காவலரை முடக்கவும், ஏனெனில் அது உங்கள் மொபைலை செயலிழக்கச் செய்து மறுதொடக்கம் செய்யக்கூடும். சில நிமிடங்களுக்குப் பிறகு எந்த சாதனமும் கிடைக்கவில்லை என்றால், உங்கள் மொபைல் சாதனத்தை மறுதொடக்கம் செய்த பிறகு மீண்டும் முயற்சிக்கவும்.</string>
     <string name="busy_task_fetch_sports_summaries">விளையாட்டு சுருக்கங்களைப் பெறுதல்</string>
     <string name="reminder_every_week">ஒவ்வொரு வாரமும்</string>
     <string name="busy_task_fetch_sports_details">விளையாட்டு விவரங்களைப் பெறுதல்</string>
@@ -3820,7 +3820,7 @@
     <string name="soundcore_battery_low_tone_summary" formatted="false">பேட்டரி நிலை 20% மற்றும் 10%க்குக் குறைவாக இருக்கும்போது, உடனடி டோனைக் கேட்கவும்</string>
     <string name="soundcore_gaming_mode_title">கேமிங் பயன்முறை</string>
     <string name="soundcore_gaming_mode_summary">தாமதத்தைக் குறைத்து, அடிச்சுவடுகள் மற்றும் குரல்களின் ஒலிகளை அதிகரிக்கவும். இணைப்பு நிலைத்தன்மையைக் குறைக்கலாம்.</string>
-    <string name="huawei_sleep_breath_summary">அமைதியான சூழலில் உங்கள் சுவாசத்தை மதிப்பிடுங்கள். பேட்டரி ஆயுளை பாதிக்கலாம். \nஎச்சரிக்கை: Gadgetbridge உடன் இன்னும் ஒத்திசைக்கப்படவில்லை.</string>
+    <string name="huawei_sleep_breath_summary">அமைதியான சூழலில் உங்கள் சுவாசத்தை மதிப்பிடுங்கள். பேட்டரி ஆயுளை பாதிக்கலாம். \nஎச்சரிக்கை: WatchSwitcher உடன் இன்னும் ஒத்திசைக்கப்படவில்லை.</string>
     <string name="info_no_devices_to_sync">இணைக்கப்பட்ட சாதனங்கள் தரவு ஒத்திசைவை ஆதரிக்காது</string>
     <string name="controlcenter_test_new_function">புதிய செயல்பாட்டை சோதிக்கவும்</string>
     <string name="device_delete_in_progress">சாதனத்தை நீக்குகிறது…</string>
@@ -3881,7 +3881,7 @@
     <string name="even_realities_no_calendar_events">வரவிருக்கும் நிகழ்வுகள் இல்லை</string>
     <string name="prefs_key_enable_deprecated_notificationcollectormonitor_title">நிராகரிக்கப்பட்ட அறிவிப்பு கலெக்டர் கண்காணிப்பு சேவையை இயக்கவும்</string>
     <string name="prefs_key_enable_deprecated_notificationcollectormonitor_summary">அறிவிப்பு மானிட்டரை உயிருடன் வைத்திருக்க இரண்டாவது முன்புற சேவையைப் பயன்படுத்துவதை கட்டாயப்படுத்துகிறது, கேட்செட்பிரிட்ச் அறிவிப்புகளைப் பெறுவதை நிறுத்தினால், இந்த விருப்பத்தை செயல்படுத்தவும். \nஇது இரண்டாவது தொடர்ச்சியான அறிவிப்பு காட்டப்படுவதற்கு காரணமாக இருக்கலாம் என்பதை நினைவில் கொள்ளவும். \nநிலைமாற்றத்திற்குப் பிறகு பயன்பாட்டை மறுதொடக்கம் செய்யவும்.</string>
-    <string name="pref_printer_print_received_text">அச்சு உரை Gadgetbridge இல் பகிரப்பட்டது</string>
+    <string name="pref_printer_print_received_text">அச்சு உரை WatchSwitcher இல் பகிரப்பட்டது</string>
     <string name="error_queue_is_dead">சிபியின் செயலாக்க வரிசை செயலிழந்தது</string>
     <string name="error_sender_is_dead">GB இன் அனுப்புனர் நூல் செயலிழந்தது</string>
     <string name="error_receiver_is_dead">சிபியின் ரிசீவர் த்ரெட் இறந்துவிட்டது</string>
@@ -3952,7 +3952,7 @@
     <string name="pref_huawei_features_config_info_title">கூடுதல் சுகாதார அம்சங்களை இயக்கவும்</string>
     <string name="pref_huawei_features_config_info_summary">கீழே உள்ள அமைப்புகளை இயக்குவது உங்கள் சாதனத்தில் கூடுதல் சுகாதார அம்சங்களைச் செயல்படுத்தும். உதாரணமாக, உணர்ச்சி அல்லது ஈ.சி.சி. \nகுறிப்பு: கிடைக்கக்கூடிய நற்பொருத்தங்கள் சாதனத்தைப் பொறுத்தது.</string>
     <string name="pref_huawei_features_config_warning_title">நாட்டின் குறியீடு மற்றும் அம்சங்களை உள்ளமைவை சாதனத்திற்கு அனுப்பவும்.</string>
-    <string name="pref_huawei_features_config_warning_summary">எச்சரிக்கை: Gadgetbridge மற்றும் விற்பனையாளர் பயன்பாடு ஆகிய இரண்டும் பயன்பாட்டில் இருக்கும்போது இந்த அமைப்புகளை இயக்குவது விற்பனையாளர் பயன்பாடு மற்றும் சாதனத்தின் செயல்பாட்டில் சிக்கல்களை ஏற்படுத்தலாம் அல்லது தற்போதைய சாதன திறன்களை பாதிக்காது. தவறான நாட்டை அமைப்பது பிராந்திய அடிப்படையிலான அதிர்வெண் உள்ளமைவு போன்ற பிற சாதன அமைப்புகளைப் பாதிக்கலாம். உங்கள் சொந்த ஆபத்தில் இயக்கவும். \nசாதனத்தை மீண்டும் இணைக்க வேண்டும்.</string>
+    <string name="pref_huawei_features_config_warning_summary">எச்சரிக்கை: WatchSwitcher மற்றும் விற்பனையாளர் பயன்பாடு ஆகிய இரண்டும் பயன்பாட்டில் இருக்கும்போது இந்த அமைப்புகளை இயக்குவது விற்பனையாளர் பயன்பாடு மற்றும் சாதனத்தின் செயல்பாட்டில் சிக்கல்களை ஏற்படுத்தலாம் அல்லது தற்போதைய சாதன திறன்களை பாதிக்காது. தவறான நாட்டை அமைப்பது பிராந்திய அடிப்படையிலான அதிர்வெண் உள்ளமைவு போன்ற பிற சாதன அமைப்புகளைப் பாதிக்கலாம். உங்கள் சொந்த ஆபத்தில் இயக்கவும். \nசாதனத்தை மீண்டும் இணைக்க வேண்டும்.</string>
     <string name="pref_huawei_send_country_code_title">நாட்டின் குறியீட்டை அனுப்பவும்</string>
     <string name="pref_huawei_send_country_code_summary">சாதனத்திற்கு நாட்டின் குறியீட்டை அனுப்பவும். \nகவனம்: நாட்டின் குறியீடு அமைக்கப்பட வேண்டும்</string>
     <string name="pref_huawei_country_code_title">நாட்டின் குறியீடு</string>
@@ -4011,7 +4011,7 @@
     <string name="rebble_appstore_fetch_app_info_failed_content_type">பயன்பாட்டுத் தகவலைப் பெறுவதில் தோல்வி, தவறான உள்ளடக்க வகை: %1$s</string>
     <string name="rebble_appstore_fetching_download_file_failed">பதிவிறக்கக் கோப்பைப் பெறுவதில் தோல்வி: %1$s</string>
     <string name="internet_helper_permission_title">இணைய உதவி செருகு நிரல்</string>
-    <string name="internet_helper_permission_summary">Gadgetbridge ஆட்-ஆன் பயன்பாட்டிற்கான இணைய உதவிக்கான அணுகலை அனுமதிக்கவும்</string>
+    <string name="internet_helper_permission_summary">WatchSwitcher ஆட்-ஆன் பயன்பாட்டிற்கான இணைய உதவிக்கான அணுகலை அனுமதிக்கவும்</string>
     <string name="notification_channel_pebble_js_runner">பெப்பிள் JS ரன்னர்</string>
     <string name="notification_pebble_js_service_title">பெப்பிள் சாவாச்கிரிப்ட் பணி</string>
     <string name="notification_pebble_js_service_text">பெப்பிள் பயன்பாடு/வாட்ச்ஃபேச் சாவாச்கிரிப்ட் இயங்குகிறது</string>
@@ -4056,12 +4056,12 @@
     <string name="pref_health_connect_sync_on_event_title">சாதன ஒத்திசைவுக்குப் பிறகு ஒத்திசைக்கவும்</string>
     <string name="pref_health_connect_sync_on_event_summary">தேர்ந்தெடுக்கப்பட்ட சாதனம் அதன் செயல்பாட்டுத் தரவை ஒத்திசைத்த பிறகு, Health இணை உடன் ஒத்திசைக்கவும்.</string>
     <string name="health_connect_permissions_rationale_title">தனியுரிமைக் கொள்கை மற்றும் அனுமதிகள்</string>
-    <string name="health_connect_permissions_rationale_message">Gadgetbridge உங்கள் சாதனங்களிலிருந்து தரவைச் சேகரித்து, உங்கள் அனுமதியுடன், Health இணை உடன் பகிரும். இந்தத் தரவு உங்கள் சாதனத்தில் சேமிக்கப்பட்டு, எந்த மூன்றாம் தரப்பினருடனும் பகிரப்படவில்லை.</string>
+    <string name="health_connect_permissions_rationale_message">WatchSwitcher உங்கள் சாதனங்களிலிருந்து தரவைச் சேகரித்து, உங்கள் அனுமதியுடன், Health இணை உடன் பகிரும். இந்தத் தரவு உங்கள் சாதனத்தில் சேமிக்கப்பட்டு, எந்த மூன்றாம் தரப்பினருடனும் பகிரப்படவில்லை.</string>
     <string name="health_connect_sync_notification_title">எல்த் கனெக்ட் ஒத்திசைவு</string>
     <string name="health_connect_sync_notification_message">Health இணை உடன் தரவை ஒத்திசைக்கிறது…</string>
     <string name="health_connect_unavailable_summary">இந்த அமைப்பில் எல்த் கனெக்ட் இல்லை.</string>
     <string name="health_connect_permission_check_error">Health இணை அனுமதிகளைச் சரிபார்ப்பதில் பிழை.</string>
-    <string name="health_connect_all_denied">Gadgetbridge இன் தரவு வகைகளுக்கான அனைத்து Health இணை அனுமதிகளும் மறுக்கப்பட்டன அல்லது ரத்து செய்யப்பட்டன.</string>
+    <string name="health_connect_all_denied">WatchSwitcher இன் தரவு வகைகளுக்கான அனைத்து Health இணை அனுமதிகளும் மறுக்கப்பட்டன அல்லது ரத்து செய்யப்பட்டன.</string>
     <string name="health_connect_failed_init">இசைவு மாற்றத்திற்குப் பிறகு Health இணை கிளையண்டைத் தொடங்குவதில் தோல்வி.</string>
     <string name="health_connect_all_granted">எல்த் கனெக்ட் இயக்கப்பட்டது. வழங்கப்பட்ட தரவு வகைகளுக்கு தரவு ஒத்திசைவு தொடங்கும்.</string>
     <string name="health_connect_permission_changed">எல்த் கனெக்ட் அனுமதிகள் மாற்றப்பட்டன.</string>
@@ -4093,7 +4093,7 @@
     <string name="health_connect_sync_now_message">இப்போது உங்கள் தரவை Health இணை உடன் ஒத்திசைக்கத் தொடங்க விரும்புகிறீர்களா?</string>
     <string name="health_connect_sync_now">இப்போது ஒத்திசைக்கவும்</string>
     <string name="health_connect_sync_later">பின்னர் ஒத்திசைக்கவும்</string>
-    <string name="health_connect_prompt_full_dao_reset">Gadgetbridgeக்கான அனைத்து எல்த் கனெக்ட் அனுமதிகளும் ரத்து செய்யப்பட்டுள்ளன. நீங்கள் எல்லா தரவையும் அகற்றினீர்களா? ஆம் எனில், நீங்கள் மீண்டும் அனுமதிகளை வழங்கினால், ஒத்திசைவு வரலாற்றை மீட்டமைப்பது பழைய தரவு அனைத்தையும் மீண்டும் ஒத்திசைக்க அனுமதிக்கும்.</string>
+    <string name="health_connect_prompt_full_dao_reset">WatchSwitcherக்கான அனைத்து எல்த் கனெக்ட் அனுமதிகளும் ரத்து செய்யப்பட்டுள்ளன. நீங்கள் எல்லா தரவையும் அகற்றினீர்களா? ஆம் எனில், நீங்கள் மீண்டும் அனுமதிகளை வழங்கினால், ஒத்திசைவு வரலாற்றை மீட்டமைப்பது பழைய தரவு அனைத்தையும் மீண்டும் ஒத்திசைக்க அனுமதிக்கும்.</string>
     <string name="health_connect_reset_sync_history">ஒத்திசைவு வரலாற்றை மீட்டமைக்கவும்</string>
     <string name="health_connect_keep_sync_history">ஒத்திசைவு வரலாற்றை வைத்திருங்கள்</string>
     <string name="health_connect_exception">எல்த் கனெக்ட் டேட்டா ஒத்திசைவு:</string>
@@ -4103,7 +4103,7 @@
     <string name="health_connect_sync_error_for_device">%1$s (%2$s)க்கான ஒத்திசைவுப் பிழை: %3$s</string>
     <string name="health_connect_permission_denied">இசைவு மறுக்கப்பட்டது: %1$s. Health இணை அனுமதிகளைச் சரிபார்க்கவும்.</string>
     <string name="health_connect_sleep_session_title">%1$s இலிருந்து உறக்க அமர்வு</string>
-    <string name="health_connect_sleep_session_notes">Gadgetbridge சாதனத்திலிருந்து உறக்கத் தரவு: %1$s.</string>
+    <string name="health_connect_sleep_session_notes">WatchSwitcher சாதனத்திலிருந்து உறக்கத் தரவு: %1$s.</string>
     <string name="infinitime_filesystem_access_disabled">InfiniTimeல் கோப்பு முறைமை அணுகல் முடக்கப்பட்டுள்ளது</string>
     <string name="infinitime_resource_upload_progress_status">%1$d இன் %2$d செயலைச் செய்கிறது \n%3$s %4$s</string>
 </resources>
