@@ -163,6 +163,15 @@ android {
                 keyPassword System.getProperty("nightly_key_password")
             }
         }
+        // Fixed dev/test key so every CI build has the same signature and can update
+        // the previous install in place (instead of a fresh debug key per run).
+        // For a real release, replace this with your own private key kept out of the repo.
+        watchswitcher {
+            storeFile file("${rootDir}/keystore/watchswitcher.jks")
+            storePassword "watchswitcher"
+            keyAlias "watchswitcher"
+            keyPassword "watchswitcher"
+        }
     }
 
     flavorDimensions += "device_type"
@@ -205,12 +214,12 @@ android {
     }
 
     buildTypes {
-        //debug {
-        //    minifyEnabled true
-        //    proguardFiles getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro"
-        //}
+        debug {
+            signingConfig signingConfigs.watchswitcher
+        }
 
         release {
+            signingConfig signingConfigs.watchswitcher
             minifyEnabled true
             proguardFiles getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro"
         }

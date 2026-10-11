@@ -79,3 +79,7 @@ __pycache__/
 
 # AiCode local AI memory (not project source)
 .aicode/memory/
+
+# Dev/test signing key, intentionally committed so CI builds are signed
+# identically and can update each other in place.
+!keystore/watchswitcher.jks
