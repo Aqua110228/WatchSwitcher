@@ -67,6 +67,7 @@ class DiscoveryActivity : ComponentActivity(), BondingInterface {
 
     private val huaweiAccountState = mutableStateOf("")
     private val qrResult = mutableStateOf<String?>(null)
+    private val qrDeviceName = mutableStateOf<String?>(null)
     private val huaweiPrompt = mutableStateOf<GBDeviceCandidate?>(null)
     private val huaweiAccountInput = mutableStateOf("")
 
@@ -162,7 +163,7 @@ class DiscoveryActivity : ComponentActivity(), BondingInterface {
                         DiscoveryScreen(
                             devices = devices,
                             scanning = scanning,
-                            filterLabel = model.value?.name,
+                            filterLabel = qrDeviceName.value?.let { "设备名：$it" } ?: model.value?.name,
                             onBack = {
                                 viewModel.stopScan()
                                 step.value = Step.MODEL
@@ -170,7 +171,9 @@ class DiscoveryActivity : ComponentActivity(), BondingInterface {
                             onToggleScan = { toggleScan() },
                             onShowAll = {
                                 model.value = null
+                                qrDeviceName.value = null
                                 viewModel.setTypeFilter(null)
+                                viewModel.setNameFilter(null)
                             },
                             onScanQr = {
                                 qrLauncher.launch(QRScanActivity.newIntent(this))
@@ -285,29 +288,47 @@ class DiscoveryActivity : ComponentActivity(), BondingInterface {
         return permissions
     }
 
-    /** Reads a scanned QR code: if it carries a Bluetooth address, connect to it directly. */
+    /** Reads a scanned QR code: connect by Bluetooth address, or scan by the encoded device name. */
     private fun handleQrContent(content: String) {
         val mac = extractMac(content)
-        if (mac == null) {
-            qrResult.value = content
+        if (mac != null) {
+            val adapter = (getSystemService(Context.BLUETOOTH_SERVICE) as? BluetoothManager)?.adapter
+            val bluetoothDevice = adapter?.let { runCatching { it.getRemoteDevice(mac) }.getOrNull() }
+            if (bluetoothDevice != null) {
+                val candidate = GBDeviceCandidate(bluetoothDevice, GBDevice.RSSI_UNKNOWN, null, null)
+                val selected = model.value
+                viewModel.stopScan()
+                deviceTarget = candidate
+                if (selected != null) {
+                    startPair(candidate, selected.type.deviceCoordinator)
+                } else {
+                    pair(candidate)
+                }
+                return
+            }
+        }
+        // Huawei's pairing QR carries the watch's Bluetooth name ("n=..."), not a MAC.
+        val name = extractQrDeviceName(content)
+        if (name != null) {
+            qrDeviceName.value = name
+            viewModel.setNameFilter(name)
+            ensurePermissionsAndScan()
             return
         }
-        val adapter = (getSystemService(Context.BLUETOOTH_SERVICE) as? BluetoothManager)?.adapter
-        val bluetoothDevice = adapter?.let { runCatching { it.getRemoteDevice(mac) }.getOrNull() }
-        if (bluetoothDevice == null) {
-            qrResult.value = content
-            return
-        }
-        val candidate = GBDeviceCandidate(bluetoothDevice, GBDevice.RSSI_UNKNOWN, null, null)
-        val selected = model.value
-        if (selected != null) {
-            viewModel.stopScan()
-            deviceTarget = candidate
-            startPair(candidate, selected.type.deviceCoordinator)
-        } else {
-            pair(candidate)
-        }
+        qrResult.value = content
     }
+
+    private fun extractQrDeviceName(content: String): String? = runCatching {
+        val query = java.net.URI(content).rawQuery ?: return@runCatching null
+        query.split("&").firstNotNullOfOrNull { part ->
+            val idx = part.indexOf('=')
+            if (idx > 0 && part.substring(0, idx) == "n") {
+                java.net.URLDecoder.decode(part.substring(idx + 1), "UTF-8").trim()
+            } else {
+                null
+            }
+        }
+    }.getOrNull()?.takeIf { it.isNotBlank() }
 
     private fun extractMac(content: String): String? {
         val texts = listOf(

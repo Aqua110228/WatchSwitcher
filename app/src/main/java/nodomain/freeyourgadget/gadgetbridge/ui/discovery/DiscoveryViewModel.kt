@@ -66,6 +66,7 @@ class DiscoveryViewModel(app: Application) : AndroidViewModel(app) {
     private var adapter: BluetoothAdapter? = null
     private var receiver: BroadcastReceiver? = null
     private var typeFilter: DeviceType? = null
+    private var nameFilter: String? = null
 
     /** Restrict the candidate list to the picked model. */
     fun setTypeFilter(type: DeviceType?) {
@@ -73,12 +74,24 @@ class DiscoveryViewModel(app: Application) : AndroidViewModel(app) {
         _devices.value = filteredDevices()
     }
 
+    /** Restrict the candidate list to a device name (e.g. read from the watch's QR code). */
+    fun setNameFilter(name: String?) {
+        nameFilter = name
+        _devices.value = filteredDevices()
+    }
+
     private fun filteredDevices(): List<GBDeviceCandidate> {
-        val all = processor.devices
-        // No brand pre-filter here: during scanning a device may not be resolved yet, and
-        // filtering by resolved type would hide it. Only the explicit model picker narrows.
-        val filter = typeFilter ?: return all.toList()
-        return all.filter { candidate ->
+        var result = processor.devices.toList()
+        nameFilter?.takeIf { it.isNotBlank() }?.let { filter ->
+            result = result.filter { candidate ->
+                val name = candidate.name ?: return@filter false
+                name.contains(filter, ignoreCase = true) || filter.contains(name, ignoreCase = true)
+            }
+        }
+        // No brand pre-filter: during scanning a device may not be resolved yet, and filtering
+        // by resolved type would hide it. Only the explicit model picker narrows further.
+        val filter = typeFilter ?: return result
+        return result.filter { candidate ->
             runCatching {
                 DeviceHelper.getInstance().resolveDeviceType(candidate)
                     .deviceCoordinator.javaClass == filter.deviceCoordinator.javaClass
@@ -106,6 +119,7 @@ class DiscoveryViewModel(app: Application) : AndroidViewModel(app) {
 
         _devices.value = emptyList()
         processor.clear()
+        processor.start()
         _scanning.value = true
 
         registerClassicReceiver(context)
