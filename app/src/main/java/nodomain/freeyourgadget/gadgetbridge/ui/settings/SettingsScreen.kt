@@ -67,7 +67,7 @@ fun SettingsScreen(
             }
 
             Button(onClick = onOpenFullSettings, modifier = Modifier.fillMaxWidth()) {
-                Text("全部设置（Gadgetbridge）")
+                Text("全部设置")
             }
 
             OutlinedButton(onClick = onOpenClassicUi, modifier = Modifier.fillMaxWidth()) {
@@ -88,7 +88,7 @@ fun SettingsScreen(
                         color = MaterialTheme.colorScheme.onSurfaceVariant,
                     )
                     Text(
-                        "基于 Gadgetbridge，以 AGPL-3.0 发布。绕开华为运动健康直连手表。",
+                        "以 AGPL-3.0 开源发布。绕开华为运动健康直连手表。",
                         style = MaterialTheme.typography.bodyMedium,
                         color = MaterialTheme.colorScheme.onSurfaceVariant,
                     )

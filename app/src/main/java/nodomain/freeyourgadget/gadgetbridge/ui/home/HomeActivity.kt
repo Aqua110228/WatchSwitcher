@@ -8,22 +8,24 @@
     (at your option) any later version.  */
 package nodomain.freeyourgadget.gadgetbridge.ui.home
 
+import android.Manifest
 import android.content.Intent
+import android.content.pm.PackageManager
+import android.os.Build
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
+import androidx.activity.result.contract.ActivityResultContracts
 import androidx.activity.viewModels
+import androidx.core.content.ContextCompat
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import nodomain.freeyourgadget.gadgetbridge.GBApplication
-import nodomain.freeyourgadget.gadgetbridge.activities.PermissionsActivity
-import nodomain.freeyourgadget.gadgetbridge.activities.welcome.WelcomeActivity
 import nodomain.freeyourgadget.gadgetbridge.impl.GBDevice
 import nodomain.freeyourgadget.gadgetbridge.ui.device.DeviceDetailActivity
 import nodomain.freeyourgadget.gadgetbridge.ui.discovery.DiscoveryActivity
 import nodomain.freeyourgadget.gadgetbridge.ui.settings.SettingsActivity
 import nodomain.freeyourgadget.gadgetbridge.ui.theme.WatchSwitcherTheme
-import nodomain.freeyourgadget.gadgetbridge.util.PermissionsUtils
 
 /**
  * Main entry point. Material 3 Expressive, Compose-based UI on top of Gadgetbridge's device service.
@@ -32,10 +34,36 @@ class HomeActivity : ComponentActivity() {
 
     private val viewModel: HomeViewModel by viewModels()
 
+    private var pendingConnect: GBDevice? = null
+    private val permissionLauncher = registerForActivityResult(
+        ActivityResultContracts.RequestMultiplePermissions()
+    ) {
+        pendingConnect?.let { device -> viewModel.toggleConnection(device) }
+        pendingConnect = null
+    }
+
+    private fun requiredPermissions(): List<String> = if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
+        listOf(Manifest.permission.BLUETOOTH_SCAN, Manifest.permission.BLUETOOTH_CONNECT)
+    } else {
+        listOf(Manifest.permission.ACCESS_FINE_LOCATION)
+    }
+
+    /** Permissions are requested only when a connection is actually started. */
+    private fun toggleConnection(device: GBDevice) {
+        val missing = requiredPermissions().filter {
+            ContextCompat.checkSelfPermission(this, it) != PackageManager.PERMISSION_GRANTED
+        }
+        if (missing.isEmpty()) {
+            viewModel.toggleConnection(device)
+        } else {
+            pendingConnect = device
+            permissionLauncher.launch(missing.toTypedArray())
+        }
+    }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        handleFirstRunAndPermissions()
         GBApplication.deviceService().requestDeviceInfo()
 
         setContent {
@@ -52,7 +80,7 @@ class HomeActivity : ComponentActivity() {
                                 .putExtra(DeviceDetailActivity.EXTRA_DEVICE_ADDRESS, device.address)
                         )
                     },
-                    onToggleConnection = { device -> viewModel.toggleConnection(device) },
+                    onToggleConnection = { device -> toggleConnection(device) },
                     onRefresh = { viewModel.refresh() },
                     onSettings = { startActivity(Intent(this, SettingsActivity::class.java)) },
                 )
@@ -68,19 +96,5 @@ class HomeActivity : ComponentActivity() {
     override fun onStop() {
         super.onStop()
         viewModel.stop()
-    }
-
-    private fun handleFirstRunAndPermissions() {
-        val prefs = GBApplication.getPrefs()
-        if (prefs.getBoolean("first_run", true)) {
-            startActivity(Intent(this, WelcomeActivity::class.java))
-        } else if (prefs.getBoolean("permission_pestering", true) &&
-            !PermissionsUtils.checkAllPermissions(this)
-        ) {
-            startActivity(
-                Intent(this, PermissionsActivity::class.java)
-                    .putExtra(PermissionsActivity.ARG_SHOW_DO_NOT_ASK_BUTTON, true)
-            )
-        }
     }
 }
