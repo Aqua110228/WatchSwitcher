@@ -19,7 +19,8 @@ import androidx.core.content.FileProvider
 import nodomain.freeyourgadget.gadgetbridge.BuildConfig
 import nodomain.freeyourgadget.gadgetbridge.GBApplication
 import nodomain.freeyourgadget.gadgetbridge.Logging
-import nodomain.freeyourgadget.gadgetbridge.ui.huawei.HuaweiIdActivityimport nodomain.freeyourgadget.gadgetbridge.ui.huawei.getHuaweiAccount
+import nodomain.freeyourgadget.gadgetbridge.ui.huawei.HuaweiIdActivity
+import nodomain.freeyourgadget.gadgetbridge.ui.huawei.getHuaweiAccount
 import nodomain.freeyourgadget.gadgetbridge.ui.theme.WatchSwitcherTheme
 import nodomain.freeyourgadget.gadgetbridge.activities.SettingsActivity as GbSettingsActivity
 import java.io.File
