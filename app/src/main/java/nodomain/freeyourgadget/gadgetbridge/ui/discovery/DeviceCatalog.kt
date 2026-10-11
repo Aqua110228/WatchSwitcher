@@ -28,6 +28,8 @@ fun loadBrands(context: Context): List<BrandOption> {
         val coordinator = runCatching { type.deviceCoordinator }.getOrNull() ?: continue
         val brand = runCatching { coordinator.manufacturer }.getOrNull()
             ?.takeIf { it.isNotBlank() } ?: continue
+        // Huawei/Honor share the protocol, but this build targets Huawei only.
+        if (brand != "Huawei") continue
         val nameRes = runCatching { coordinator.deviceNameResource }.getOrDefault(0)
         val modelName = if (nameRes != 0) {
             runCatching { context.getString(nameRes) }.getOrDefault(type.name)

@@ -21,9 +21,6 @@ import nodomain.freeyourgadget.gadgetbridge.activities.welcome.WelcomeActivity
 import nodomain.freeyourgadget.gadgetbridge.impl.GBDevice
 import nodomain.freeyourgadget.gadgetbridge.ui.device.DeviceDetailActivity
 import nodomain.freeyourgadget.gadgetbridge.ui.discovery.DiscoveryActivity
-import nodomain.freeyourgadget.gadgetbridge.ui.huawei.HuaweiIdActivity
-import nodomain.freeyourgadget.gadgetbridge.ui.huawei.isHuaweiIdOnboarded
-import nodomain.freeyourgadget.gadgetbridge.ui.huawei.setHuaweiIdOnboarded
 import nodomain.freeyourgadget.gadgetbridge.ui.settings.SettingsActivity
 import nodomain.freeyourgadget.gadgetbridge.ui.theme.WatchSwitcherTheme
 import nodomain.freeyourgadget.gadgetbridge.util.PermissionsUtils
@@ -71,23 +68,6 @@ class HomeActivity : ComponentActivity() {
     override fun onStop() {
         super.onStop()
         viewModel.stop()
-    }
-
-    override fun onResume() {
-        super.onResume()
-        maybeShowHuaweiIdOnboarding()
-    }
-
-    /**
-     * Right after the initial welcome flow, offer to set the Huawei account ID once, so pairing
-     * a Huawei/Honor watch later works without a factory reset. Shown at most once.
-     */
-    private fun maybeShowHuaweiIdOnboarding() {
-        val prefs = GBApplication.getPrefs()
-        if (prefs.getBoolean("first_run", true)) return
-        if (isHuaweiIdOnboarded()) return
-        setHuaweiIdOnboarded()
-        startActivity(HuaweiIdActivity.newIntent(this))
     }
 
     private fun handleFirstRunAndPermissions() {
