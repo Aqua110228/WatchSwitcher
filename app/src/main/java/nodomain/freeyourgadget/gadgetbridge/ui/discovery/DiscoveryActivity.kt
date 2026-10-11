@@ -66,6 +66,7 @@ class DiscoveryActivity : ComponentActivity(), BondingInterface {
     private val model = mutableStateOf<ModelOption?>(null)
 
     private val huaweiAccountState = mutableStateOf("")
+    private val qrResult = mutableStateOf<String?>(null)
     private val huaweiPrompt = mutableStateOf<GBDeviceCandidate?>(null)
     private val huaweiAccountInput = mutableStateOf("")
 
@@ -236,6 +237,11 @@ class DiscoveryActivity : ComponentActivity(), BondingInterface {
                                 },
                             )
                         }
+
+                        val qr = qrResult.value
+                        if (qr != null) {
+                            QrContentDialog(content = qr, onDismiss = { qrResult.value = null })
+                        }
                     }
                 }
             }
@@ -268,28 +274,28 @@ class DiscoveryActivity : ComponentActivity(), BondingInterface {
     }
 
     private fun requiredPermissions(): List<String> {
-        val permissions = mutableListOf<String>()
+        val permissions = mutableListOf(
+            Manifest.permission.ACCESS_FINE_LOCATION,
+            Manifest.permission.ACCESS_COARSE_LOCATION,
+        )
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
             permissions += Manifest.permission.BLUETOOTH_SCAN
             permissions += Manifest.permission.BLUETOOTH_CONNECT
-        } else {
-            permissions += Manifest.permission.ACCESS_FINE_LOCATION
         }
         return permissions
     }
 
     /** Reads a scanned QR code: if it carries a Bluetooth address, connect to it directly. */
     private fun handleQrContent(content: String) {
-        val mac = Regex("([0-9A-Fa-f]{2}[:-]){5}[0-9A-Fa-f]{2}")
-            .find(content)?.value?.replace('-', ':')?.uppercase()
+        val mac = extractMac(content)
         if (mac == null) {
-            Toast.makeText(this, "二维码内容无法识别为设备地址：\n$content", Toast.LENGTH_LONG).show()
+            qrResult.value = content
             return
         }
         val adapter = (getSystemService(Context.BLUETOOTH_SERVICE) as? BluetoothManager)?.adapter
         val bluetoothDevice = adapter?.let { runCatching { it.getRemoteDevice(mac) }.getOrNull() }
         if (bluetoothDevice == null) {
-            Toast.makeText(this, "无法解析地址 $mac", Toast.LENGTH_LONG).show()
+            qrResult.value = content
             return
         }
         val candidate = GBDeviceCandidate(bluetoothDevice, GBDevice.RSSI_UNKNOWN, null, null)
@@ -301,6 +307,16 @@ class DiscoveryActivity : ComponentActivity(), BondingInterface {
         } else {
             pair(candidate)
         }
+    }
+
+    private fun extractMac(content: String): String? {
+        val texts = listOf(
+            content,
+            runCatching { java.net.URLDecoder.decode(content, "UTF-8") }.getOrDefault(content),
+        )
+        return texts.firstNotNullOfOrNull { text ->
+            Regex("([0-9A-Fa-f]{2}[:-]){5}[0-9A-Fa-f]{2}").find(text)?.value
+        }?.replace('-', ':')?.uppercase()
     }
 
     private fun onCandidateSelected(candidate: GBDeviceCandidate) {        val coordinator = DeviceHelper.getInstance().resolveDeviceType(candidate).deviceCoordinator

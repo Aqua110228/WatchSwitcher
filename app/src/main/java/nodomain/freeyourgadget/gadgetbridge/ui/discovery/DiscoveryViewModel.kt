@@ -34,7 +34,6 @@ import nodomain.freeyourgadget.gadgetbridge.activities.discovery.GBScanEventProc
 import nodomain.freeyourgadget.gadgetbridge.impl.GBDevice
 import nodomain.freeyourgadget.gadgetbridge.impl.GBDeviceCandidate
 import nodomain.freeyourgadget.gadgetbridge.model.DeviceType
-import nodomain.freeyourgadget.gadgetbridge.devices.huawei.HuaweiCoordinator
 import nodomain.freeyourgadget.gadgetbridge.util.AndroidUtils
 import nodomain.freeyourgadget.gadgetbridge.util.DeviceHelper
 
@@ -75,21 +74,17 @@ class DiscoveryViewModel(app: Application) : AndroidViewModel(app) {
     }
 
     private fun filteredDevices(): List<GBDeviceCandidate> {
-        // This build targets Huawei only (Honor shares the protocol but is excluded).
-        val huawei = processor.devices.filter { isHuaweiDevice(it) }
-        val filter = typeFilter ?: return huawei
-        return huawei.filter { candidate ->
+        val all = processor.devices
+        // No brand pre-filter here: during scanning a device may not be resolved yet, and
+        // filtering by resolved type would hide it. Only the explicit model picker narrows.
+        val filter = typeFilter ?: return all.toList()
+        return all.filter { candidate ->
             runCatching {
                 DeviceHelper.getInstance().resolveDeviceType(candidate)
                     .deviceCoordinator.javaClass == filter.deviceCoordinator.javaClass
             }.getOrDefault(false)
         }
     }
-
-    private fun isHuaweiDevice(candidate: GBDeviceCandidate): Boolean = runCatching {
-        val coordinator = DeviceHelper.getInstance().resolveDeviceType(candidate).deviceCoordinator
-        coordinator is HuaweiCoordinator && coordinator.manufacturer.equals("Huawei", ignoreCase = true)
-    }.getOrDefault(false)
 
     private val bleScanCallback = object : ScanCallback() {
         override fun onScanResult(callbackType: Int, result: ScanResult) {
